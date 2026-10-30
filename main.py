@@ -501,10 +501,10 @@ class KeysAILive:
         )
         if self._enhanced_live:
             # Affective dialog: hears tone/emotion and adapts its voice.
-            # Proactive audio: stays silent when speech isn't addressed to it
-            # (background chatter, talking to someone else in the room).
+            # Proactive audio is NOT sent: the native-audio preview model
+            # rejects the field outright (1007, Unknown name "proactivity" at
+            # 'setup'), which failed the first Live connect on every launch.
             cfg["enable_affective_dialog"] = True
-            cfg["proactivity"] = types.ProactivityConfig(proactive_audio=True)
         return types.LiveConnectConfig(**cfg)
 
     async def _execute_tool(self, fc) -> types.FunctionResponse:

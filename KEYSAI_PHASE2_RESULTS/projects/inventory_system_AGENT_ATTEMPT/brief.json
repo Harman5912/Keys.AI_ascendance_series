@@ -1,0 +1,18 @@
+{
+  "request": "Build a small inventory management system: Python + Flask + SQLite, HTML/CSS/JS front end, a JSON API, dashboard statistics and stock movement history.",
+  "requirements": "data source: SQLite file in the project folder (no server)\nentities: products (name, category, quantity, unit_price, reorder_level) and stock_movements (product_id, movement_type, quantity_change, reason)\napi: list/create/read/update/delete products, dashboard stats, movement history\nmetrics: product count, total inventory value, low-stock count, units\ncharts: KPI cards, a low-stock bar and a category breakdown drawn from the API responses\nstack: Flask + vanilla HTML/CSS/JS, parameterised SQL only\ntests: python unittest covering CRUD and the dashboard totals\nscope: local single user, no login",
+  "artifact": "app",
+  "answered": [
+    "data_source",
+    "metrics",
+    "charts",
+    "stack",
+    "scope"
+  ],
+  "assumptions": [],
+  "recipes": [
+    "dashboard",
+    "mysql"
+  ],
+  "path": "app"
+}

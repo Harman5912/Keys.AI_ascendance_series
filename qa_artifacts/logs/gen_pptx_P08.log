@@ -1,0 +1,11 @@
+# P08 exit=0 timeout=False seconds=39.6
+# ---- stdout ----
+[FileProcessor] CREATE PPTX | P08_security_awareness.pptx
+[P08] 39.4s  exists=True  bytes=35217  result=Created PowerPoint presentation: P08_security_awareness.pptx (34.4 KB)
+Saved to: C:\Users\harma\Desktop\PROJEC
+restored file_processor task model -> {'provider': 'gemini', 'model': 'gemini-2.5-flash', 'url': ''}
+
+DONE 1 pptx artifact(s) in C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\generated_presentations
+
+# ---- stderr ----
+

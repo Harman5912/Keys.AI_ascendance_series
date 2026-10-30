@@ -1,0 +1,18 @@
+{
+  "slug": "marketing_02_halo_notes",
+  "artifact": "page",
+  "kind": "website",
+  "studio_requested": "newsroom",
+  "studio": "Newsroom",
+  "studio_used": "Crown Code Studio \u2014 Newsroom",
+  "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\pages\\marketing_02_halo_notes\\index.html",
+  "bytes": 27995,
+  "ok": true,
+  "finished": true,
+  "problems": [],
+  "browser": "ok",
+  "browser_problems": [],
+  "checklist_score": "",
+  "adopted": true,
+  "message": "verified from disk with check_html + browser_audit"
+}

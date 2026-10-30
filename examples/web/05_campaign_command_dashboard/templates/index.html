@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campaign Command — marketing BI</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main>
+    <header class="masthead">
+      <div>
+        <p class="eyebrow">Marketing · rolling 30 days</p>
+        <h1>Campaign Command</h1>
+      </div>
+      <div class="filters">
+        <label for="channel">Channel</label>
+        <select id="channel"><option value="">All channels</option></select>
+        <label for="range">Window</label>
+        <select id="range"><option value="7">7 days</option><option value="30" selected>30 days</option></select>
+        <p class="backend">Source: <span id="backend">—</span></p>
+      </div>
+    </header>
+
+    <p class="error" id="error" hidden></p>
+
+    <section class="kpis" aria-label="Headline metrics">
+      <article class="kpi"><p>Spend</p><strong id="k-spend">–</strong><small>paid media</small></article>
+      <article class="kpi"><p>Revenue</p><strong id="k-revenue">–</strong><small>attributed</small></article>
+      <article class="kpi"><p>ROAS</p><strong id="k-roas">–</strong><small>revenue ÷ spend</small></article>
+      <article class="kpi"><p>CTR</p><strong id="k-ctr">–</strong><small>clicks ÷ impressions</small></article>
+    </section>
+
+    <section class="grid two">
+      <article class="card">
+        <h2>Spend vs revenue</h2>
+        <div class="chart" id="trend" role="img" aria-label="Spend and revenue over the window"></div>
+      </article>
+      <article class="card">
+        <h2>Funnel</h2>
+        <ul class="funnel" id="funnel"></ul>
+      </article>
+    </section>
+
+    <section class="grid two">
+      <article class="card">
+        <h2>Channel performance</h2>
+        <table>
+          <thead><tr><th>Channel</th><th>Spend</th><th>Revenue</th><th>ROAS</th><th>CPC</th></tr></thead>
+          <tbody id="channels"><tr><td colspan="5">Loading…</td></tr></tbody>
+        </table>
+      </article>
+      <article class="card">
+        <h2>Top channels by revenue</h2>
+        <div class="chart" id="channel-bars" role="img" aria-label="Revenue by channel"></div>
+      </article>
+    </section>
+
+    <section class="card tasks">
+      <div class="tasks-head">
+        <div>
+          <h2>Work in flight</h2>
+          <p class="hint">Tasks come from the <code>tasks</code> table. Click a task to move it to the next column — the API writes it back.</p>
+        </div>
+        <p class="count" id="task-count">–</p>
+      </div>
+      <div class="board" id="board">
+        <div class="col" data-status="todo"><h3>To do</h3><div class="cards"></div></div>
+        <div class="col" data-status="doing"><h3>In progress</h3><div class="cards"></div></div>
+        <div class="col" data-status="done"><h3>Done</h3><div class="cards"></div></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Campaign Command · marketing BI demo · <span id="backend-2">—</span></p>
+    </footer>
+  </main>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

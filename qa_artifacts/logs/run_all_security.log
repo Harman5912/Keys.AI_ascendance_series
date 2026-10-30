@@ -1,0 +1,18 @@
+$ C:\Users\harma\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -X utf8 qa_artifacts/security_scan.py
+exit=0 seconds=8.0
+
+---- stdout ----
+Security scan — secret leakage
+Credential fields checked: gemini_api_key, google_oauth_client_secret, firebase_api_key
+Patterns checked: google_api_key, openai_style_key, private_key_block, bearer_token
+
+Files scanned: 932
+
+FINDINGS: 0 — no credential value or credential-shaped token found outside the config store.
+Synthetic placeholders ignored (listed for review): 1
+PATTERN google_api_key in test_agent_control.py (offset 4058) — synthetic canary/placeholder, listed for review, not a credential
+
+Local exposure findings: 0 (no 0.0.0.0 bind found)
+
+---- stderr ----
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rivergate Institute</title>
+<style>
+* { box-sizing: border-box; max-width: 100%; margin: 0; padding: 0; }
+a:focus-visible, button:focus-visible { outline: 2px solid blue; outline-offset: 4px; }
+body { font-family: Arial, sans-serif; background-color: #f5f5f5; }
+header { background-color: #333; color: white; padding: 1rem 0; text-align: center; }
+main { padding: 2rem; }
+h1, h2, h3 { color: #333; margin-bottom: 1rem; }
+p { color: #666; margin-bottom: 1rem; }
+ul, ol { margin-left: 1.5rem; }
+footer { background-color: #333; color: white; text-align: center; padding: 1rem 0; position: fixed; bottom: 0; width: 100%; }
+</style>
+</head>
+<body>
+<header>
+<h1>Welcome to Rivergate Institute</h1>
+</header>
+<main>
+<section id="hero">
+<h2>Our Mission</h2>
+<p>Rivergate Institute is dedicated to providing exceptional education and empowering students to succeed in their academic and professional endeavors.</p>
+</section>
+<section id="programmes">
+<h2>Programmes</h2>
+<ul>
+<li><strong>Programme 1: Bachelor of Science in Computer Science</strong><br>Duration: 4 years<br>Description: A comprehensive program covering fundamental concepts and advanced topics in computer science.</li>
+<li><strong>Programme 2: Master of Education in Mathematics</strong><br>Duration: 2 years<br>Description: Specialized education in mathematics for those passionate about numbers and logic.</li>
+<li><strong>Programme 3: Bachelor of Fine Arts in Visual Arts</strong><br>Duration: 4 years<br>Description: Creative arts program focusing on painting, sculpture, and digital media.</li>
+<li><strong>Programme 4: Master of Business Administration (MBA)</strong><br>Duration: 2 years<br>Description: Business management program for career advancement in various industries.</li>
+</ul>
+</section>
+<section id="admissions">
+<h2>Admissions Steps</h2>
+<ol>
+<li><a href="#application">Apply Online</a></li>
+<li><a href="#interview">Interview</a></li>
+<li><a href="#enrollment">Enrollment</a></li>
+<li><a href="#orientation">Orientation</a></li>
+</ol>
+<div id="application" style="display:none;">
+<h3>Application Form</h3>
+<p>Please fill out the form below to apply for admission.</p>
+<form>
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name"><br>
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email"><br>
+<button type="button" onclick="document.getElementById('application').style.display='none'; document.getElementById('interview').style.display='block';">Next</button>
+</form>
+</div>
+<div id="interview" style="display:none;">
+<h3>Interview Preparation</h3>
+<p>Please prepare the following for your interview.</p>
+<ul>
+<li>Personal Statement</li>
+<li>Resume</li>
+<li>Reference Letters</li>
+</ul>
+<button type="button" onclick="document.getElementById('interview').style.display='none'; document.getElementById('enrollment').style.display='block';">Next</button>
+</div>
+<div id="enrollment" style="display:none;">
+<h3>Enrollment Confirmation</h3>
+<p>Your application has been received. Our team will be in touch with you soon to confirm enrollment.</p>
+<button type="button" onclick="document.getElementById('enrollment').style.display='none'; document.getElementById('orientation').style.display='block';">Next</button>
+</div>
+<div id="orientation" style="display:none;">
+<h3>Orientation Day</h3>
+<p>Welcome to Rivergate Institute! Orientation day includes an overview of your programme, resources, and tips for success.</p>
+<button type="button" onclick="alert('Orientation day will be held on [Date].');">Learn More</button>
+</div>
+</section>
+<section id="faq">
+<h2>FAQ</h2>
+<details>
+<summary>What is the tuition fee for Rivergate Institute?</summary>
+<p>The tuition fees vary depending on the programme. Please contact us for detailed information.</p>
+</details>
+<details>
+<summary>Do you offer scholarships?</summary>
+<p>Scholarships are available based on merit and financial need. Apply by [Deadline].</p>
+</details>
+<details>
+<summary>What is the campus life like at Rivergate Institute?</summary>
+<p>Rivergate Institute offers a vibrant learning environment with state-of-the-art facilities, libraries, and student support services.</p>
+</details>
+<details>
+<summary>How can I contact Rivergate Institute?</summary>
+<p>Email: info@rivergateinstitute.com<br>Phone: +1 (555) 123-4567</p>
+</details>
+</section>
+</main>
+<footer>
+<p>Contact us at info@rivergateinstitute.com or call +1 (555) 123-4567</p>
+</footer>
+<script>
+document.querySelectorAll('a, button').forEach(el => {
+ el.addEventListener('focus', () => el.classList.add('focus-visible'));
+ el.addEventListener('blur', () => el.classList.remove('focus-visible'));
+});
+</script>
+</body>
+</html>

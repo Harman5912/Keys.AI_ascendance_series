@@ -1,0 +1,11 @@
+{
+  "request": "Electron desktop app: quick notes that persist to disk.",
+  "requirements": "stack: Electron with contextIsolation on, nodeIntegration off, a narrow preload bridge; IPC: notes:list and notes:save writing JSON into app.getPath('userData'); UI: plain HTML/CSS/JS, no bundler; must pass node --check on every JS file.",
+  "artifact": "task",
+  "answered": [],
+  "assumptions": [],
+  "recipes": [
+    "electron"
+  ],
+  "path": "code"
+}

@@ -1,0 +1,429 @@
+{
+  "report_title": "Revenue Performance — Northstar",
+  "subject_overview": "Executive revenue and margin report with time intelligence and regional RLS.",
+  "theme": {
+    "name": "Keys Professional (dark blue)",
+    "dataColors": [
+      "#1F497D",
+      "#4472C4",
+      "#8FAADC",
+      "#C5D9F1",
+      "#262626"
+    ],
+    "background": "#FFFFFF",
+    "foreground": "#262626",
+    "tableAccent": "#4472C4",
+    "good": "#107C10",
+    "neutral": "#767676",
+    "bad": "#C00000",
+    "visualStyles": {
+      "*": {
+        "title": {
+          "show": true,
+          "text": "",
+          "fontColor": "#262626",
+          "fontSize": 12,
+          "fontFamily": "Segoe UI"
+        },
+        "border": {
+          "show": true,
+          "color": "#D9D9D9",
+          "radius": 4
+        },
+        "background": {
+          "show": false
+        }
+      }
+    }
+  },
+  "pages": [
+    {
+      "name": "Executive Summary",
+      "description": "At-a-glance KPIs and headline trend for Executive revenue and margin report with time intelligence and regional RLS..",
+      "filters": [
+        "Date (Date[Date])"
+      ],
+      "visuals": [
+        {
+          "type": "card",
+          "title": "Headline KPI",
+          "measure": "[Total Value]",
+          "format": "Currency",
+          "category": "KPI"
+        },
+        {
+          "type": "barchart",
+          "title": "Breakdown by Category",
+          "axis": "[Category]",
+          "values": [
+            "[Total Value]"
+          ],
+          "sort_by": "[Total Value]",
+          "category": "Analysis"
+        },
+        {
+          "type": "linechart",
+          "title": "Trend Over Time",
+          "axis": "[Date]",
+          "values": [
+            "[Total Value]"
+          ],
+          "category": "Trend"
+        },
+        {
+          "type": "card",
+          "title": "YTD vs Prior Year",
+          "measure": "[YTD vs PY %]",
+          "format": "0.00%",
+          "category": "KPI"
+        }
+      ],
+      "interactions": {
+        "cross_filtering": true,
+        "highlighting": true
+      }
+    },
+    {
+      "name": "Detail",
+      "description": "Tabulated detail with supporting context for Executive revenue and margin report with time intelligence and regional RLS..",
+      "filters": [
+        "Date (Date[Date])"
+      ],
+      "visuals": [
+        {
+          "type": "matrixtable",
+          "title": "Detail by Segment",
+          "rows": [
+            "[Category]",
+            "[Subcategory]"
+          ],
+          "values": [
+            "[Total Value]",
+            "[Count]"
+          ],
+          "category": "Detail"
+        },
+        {
+          "type": "card",
+          "title": "Selected Segment Total",
+          "measure": "[Total Value]",
+          "format": "Currency",
+          "category": "KPI"
+        },
+        {
+          "type": "slicer",
+          "title": "Category",
+          "field": "[Category]",
+          "category": "Filter"
+        }
+      ],
+      "interactions": {
+        "cross_filtering": true,
+        "highlighting": true
+      }
+    },
+    {
+      "name": "Analysis",
+      "description": "Time-intelligence and variance analysis for Executive revenue and margin report with time intelligence and regional RLS..",
+      "filters": [
+        "Date (Date[Date])"
+      ],
+      "visuals": [
+        {
+          "type": "linechart",
+          "title": "Monthly Trend",
+          "axis": "[Date]",
+          "values": [
+            "[Total Value]",
+            "[Prior Year Value]"
+          ],
+          "category": "Trend"
+        },
+        {
+          "type": "barchart",
+          "title": "Period-over-Period Variance",
+          "axis": "[Category]",
+          "values": [
+            "[Variance]"
+          ],
+          "sort_by": "[Variance]",
+          "category": "Analysis"
+        },
+        {
+          "type": "card",
+          "title": "Total",
+          "measure": "[Total Value]",
+          "format": "Currency",
+          "category": "KPI"
+        },
+        {
+          "type": "card",
+          "title": "Avg",
+          "measure": "[Average]",
+          "format": "Currency",
+          "category": "KPI"
+        }
+      ],
+      "interactions": {
+        "cross_filtering": true,
+        "highlighting": true
+      }
+    }
+  ],
+  "semantic_model": {
+    "tables": [
+      {
+        "name": "Fact",
+        "description": "Transactional/fact records for Executive revenue and margin report with time intelligence and regional RLS..",
+        "columns": [
+          {
+            "name": "Key",
+            "data_type": "Text",
+            "is_key": true,
+            "is_measure": false
+          },
+          {
+            "name": "Date",
+            "data_type": "Date",
+            "is_key": false,
+            "is_measure": false
+          },
+          {
+            "name": "Category",
+            "data_type": "Text",
+            "is_key": false,
+            "is_measure": false
+          },
+          {
+            "name": "Subcategory",
+            "data_type": "Text",
+            "is_key": false,
+            "is_measure": false
+          },
+          {
+            "name": "Value",
+            "data_type": "Decimal Number",
+            "is_key": false,
+            "is_measure": false
+          },
+          {
+            "name": "Quantity",
+            "data_type": "Whole Number",
+            "is_key": false,
+            "is_measure": false
+          },
+          {
+            "name": "Cost",
+            "data_type": "Decimal Number",
+            "is_key": false,
+            "is_measure": false
+          }
+        ],
+        "measures": [
+          {
+            "name": "Total Value",
+            "expression": "SUM(Fact[Value])",
+            "format_string": "Currency"
+          },
+          {
+            "name": "Total Cost",
+            "expression": "SUM(Fact[Cost])",
+            "format_string": "Currency"
+          },
+          {
+            "name": "Count",
+            "expression": "COUNTROWS(Fact)",
+            "format_string": "0"
+          },
+          {
+            "name": "Average",
+            "expression": "AVERAGE(Fact[Value])",
+            "format_string": "Currency"
+          },
+          {
+            "name": "Margin",
+            "expression": "[Total Value] - [Total Cost]",
+            "format_string": "Currency"
+          },
+          {
+            "name": "Margin %",
+            "expression": "DIVIDE([Margin], [Total Value])",
+            "format_string": "0.00%"
+          }
+        ],
+        "key_columns": [
+          "Key"
+        ]
+      },
+      {
+        "name": "Date",
+        "description": "Standard calendar/date table for time intelligence.",
+        "columns": [
+          {
+            "name": "Date",
+            "data_type": "Date",
+            "is_key": true,
+            "is_measure": false
+          },
+          {
+            "name": "Year",
+            "data_type": "Whole Number",
+            "is_key": false,
+            "is_measure": false
+          },
+          {
+            "name": "Quarter",
+            "data_type": "Text",
+            "is_key": false,
+            "is_measure": false
+          },
+          {
+            "name": "Month",
+            "data_type": "Text",
+            "is_key": false,
+            "is_measure": false
+          },
+          {
+            "name": "MonthNo",
+            "data_type": "Whole Number",
+            "is_key": false,
+            "is_measure": false
+          }
+        ],
+        "measures": [
+          {
+            "name": "Days in Period",
+            "expression": "COUNTROWS('Date')",
+            "format_string": "0"
+          }
+        ],
+        "key_columns": [
+          "Date"
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "from_table": "Fact",
+        "from_column": "Date",
+        "to_table": "Date",
+        "to_column": "Date",
+        "cross_filter": "single"
+      }
+    ],
+    "calculation_groups": [
+      {
+        "name": "Time:",
+        "expressions": {
+          "YTD": "CALCULATE(SELECTEDMEASURE(), DATESYTD('Date'[Date]))",
+          "MTD": "CALCULATE(SELECTEDMEASURE(), DATESMTD('Date'[Date]))",
+          "PY": "CALCULATE(SELECTEDMEASURE(), SAMEPERIODLASTYEAR('Date'[Date]))",
+          "YoY %": "VAR PY = CALCULATE(SELECTEDMEASURE(), SAMEPERIODLASTYEAR('Date'[Date])) RETURN DIVIDE(SELECTEDMEASURE() - PY, PY)"
+        }
+      }
+    ],
+    "roles": [
+      {
+        "name": "Regional Reader",
+        "description": "Read-only access scoped to a region.",
+        "filters": [
+          "Fact[Region] = \"North\""
+        ]
+      }
+    ]
+  },
+  "dax_module": {
+    "measures": [
+      {
+        "name": "Total Value",
+        "definition": "SUM(Fact[Value])",
+        "comment": "Headline value KPI across all visuals."
+      },
+      {
+        "name": "Total Cost",
+        "definition": "SUM(Fact[Cost])",
+        "comment": "Cost side of the P&L-style view."
+      },
+      {
+        "name": "Margin",
+        "definition": "[Total Value] - [Total Cost]",
+        "comment": "Absolute margin."
+      },
+      {
+        "name": "Margin %",
+        "definition": "DIVIDE([Margin], [Total Value])",
+        "comment": "Margins as a ratio."
+      },
+      {
+        "name": "Count",
+        "definition": "COUNTROWS(Fact)",
+        "comment": "Transaction/record count."
+      },
+      {
+        "name": "Average",
+        "definition": "AVERAGE(Fact[Value])",
+        "comment": "Simple average per record."
+      },
+      {
+        "name": "YTD vs PY %",
+        "definition": "VAR YTD = CALCULATE([Total Value], DATESYTD('Date'[Date])) VAR PY = CALCULATE([Total Value], SAMEPERIODLASTYEAR('Date'[Date])) RETURN DIVIDE(YTD - PY, PY)",
+        "comment": "Year-to-date growth vs prior year."
+      },
+      {
+        "name": "Variance",
+        "definition": "[Total Value] - CALCULATE([Total Value], SAMEPERIODLASTYEAR('Date'[Date]))",
+        "comment": "Period-over-period value variance."
+      },
+      {
+        "name": "Prior Year Value",
+        "definition": "CALCULATE([Total Value], SAMEPERIODLASTYEAR('Date'[Date]))",
+        "comment": "Prior-year value for the current filter context."
+      }
+    ],
+    "calculation_group_members": [
+      {
+        "name": "YTD",
+        "expression": "CALCULATE(SELECTEDMEASURE(), DATESYTD('Date'[Date]))",
+        "format_string": "Currency"
+      },
+      {
+        "name": "MTD",
+        "expression": "CALCULATE(SELECTEDMEASURE(), DATESMTD('Date'[Date]))",
+        "format_string": "Currency"
+      },
+      {
+        "name": "PY",
+        "expression": "CALCULATE(SELECTEDMEASURE(), SAMEPERIODLASTYEAR('Date'[Date]))",
+        "format_string": "Currency"
+      },
+      {
+        "name": "YoY %",
+        "expression": "VAR PY = CALCULATE(SELECTEDMEASURE(), SAMEPERIODLASTYEAR('Date'[Date])) RETURN DIVIDE(SELECTEDMEASURE() - PY, PY)",
+        "format_string": "0.00%"
+      }
+    ],
+    "time_intelligence_helpers": [
+      {
+        "name": "Last Date",
+        "definition": "MAX('Date'[Date])"
+      },
+      {
+        "name": "Days in Selection",
+        "definition": "DATEDIFF(MIN('Date'[Date]), MAX('Date'[Date]), DAY)"
+      }
+    ]
+  },
+  "qa_checklist": [
+    "Report title and subject overview are concrete and specific to the request.",
+    "Every page has a distinct name and at least one KPI or analytical visual.",
+    "Theme colours are consistent across pages and visuals.",
+    "Each visual has a title, a measure/field, and a sensible format string.",
+    "The semantic model contains at least one fact table and one date table.",
+    "Key columns are declared for each table that needs them.",
+    "Relationships are defined between related tables.",
+    "Measures use working DAX (no dangling or fake measure references).",
+    "A time-intelligence calculation group (YTD/MTD/PY/YoY) is present.",
+    "At least one RLS role is defined with a concrete filter expression.",
+    "QA checklist covers both design and data/model dimensions."
+  ]
+}

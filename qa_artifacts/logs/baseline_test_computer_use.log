@@ -1,0 +1,76 @@
+# test_computer_use.py  exit=0  seconds=1.54  timeout=False
+# ---- stdout ----
+
+# ---- stderr ----
+test_engine_adapter_op_terminal (__main__.AdapterTests.test_engine_adapter_op_terminal) ... ok
+test_engine_adapter_op_unknown_app (__main__.AdapterTests.test_engine_adapter_op_unknown_app) ... ok
+test_engine_adapter_op_unknown_op (__main__.AdapterTests.test_engine_adapter_op_unknown_op) ... ok
+test_explorer_open_path (__main__.AdapterTests.test_explorer_open_path) ... ok
+test_register_app_adapters (__main__.AdapterTests.test_register_app_adapters) ... ok
+test_terminal_detect_shell (__main__.AdapterTests.test_terminal_detect_shell) ... ok
+test_vscode_new_file_writes_disk (__main__.AdapterTests.test_vscode_new_file_writes_disk) ... ok
+test_vscode_open_file_missing (__main__.AdapterTests.test_vscode_open_file_missing) ... ok
+test_context_action (__main__.DispatcherTests.test_context_action) ... ok
+test_elevation_action (__main__.DispatcherTests.test_elevation_action) ... ok
+test_missing_action_returns_helpful_error (__main__.DispatcherTests.test_missing_action_returns_helpful_error) ... ok
+test_set_context_roundtrip (__main__.DispatcherTests.test_set_context_roundtrip) ... ok
+test_telemetry_action (__main__.DispatcherTests.test_telemetry_action) ... ok
+test_unknown_action_returns_helpful_error (__main__.DispatcherTests.test_unknown_action_returns_helpful_error) ... ok
+test_restart_elevated_false_when_uac_denied (__main__.ElevationRestartTests.test_restart_elevated_false_when_uac_denied) ... ok
+test_restart_elevated_success_when_uac_approved (__main__.ElevationRestartTests.test_restart_elevated_success_when_uac_approved) ... ok
+test_elevate_already_running (__main__.ElevationTests.test_elevate_already_running) ... ok
+test_elevation_status_method (__main__.ElevationTests.test_elevation_status_method) ... ok
+test_elevation_status_shape (__main__.ElevationTests.test_elevation_status_shape) ... ok
+test_is_elevated_returns_bool (__main__.ElevationTests.test_is_elevated_returns_bool) ... ok
+test_restart_elevated_already_elevated (__main__.ElevationTests.test_restart_elevated_already_elevated)
+Already elevated => never spawns another UAC prompt. ... ok
+test_secure_desktop_guard_in_engine (__main__.ElevationTests.test_secure_desktop_guard_in_engine)
+Spec 11: automation pauses on the UAC secure desktop. ... ok
+test_active_app (__main__.EngineTests.test_active_app) ... ok
+test_app_info_not_found (__main__.EngineTests.test_app_info_not_found) ... ok
+test_app_info_reports_privilege (__main__.EngineTests.test_app_info_reports_privilege) ... ok
+test_click_by_coordinates (__main__.EngineTests.test_click_by_coordinates) ... ok
+test_click_by_element (__main__.EngineTests.test_click_by_element) ... ok
+test_click_requires_something (__main__.EngineTests.test_click_requires_something) ... ok
+test_discover_lists_applications (__main__.EngineTests.test_discover_lists_applications) ... ok
+test_drag_element_to_element (__main__.EngineTests.test_drag_element_to_element) ... ok
+test_drag_refused_on_stale_target (__main__.EngineTests.test_drag_refused_on_stale_target) ... ok
+test_find_routes_to_controller (__main__.EngineTests.test_find_routes_to_controller) ... ok
+test_move_smooth (__main__.EngineTests.test_move_smooth) ... ok
+test_observe_and_changed (__main__.EngineTests.test_observe_and_changed) ... ok
+test_scroll_to (__main__.EngineTests.test_scroll_to) ... ok
+test_telemetry_dump (__main__.EngineTests.test_telemetry_dump) ... ok
+test_type_by_coordinates (__main__.EngineTests.test_type_by_coordinates) ... ok
+test_type_by_element (__main__.EngineTests.test_type_by_element) ... ok
+test_wait_for_delegates_to_verify (__main__.EngineTests.test_wait_for_delegates_to_verify) ... ok
+test_window_op_bad_op (__main__.EngineTests.test_window_op_bad_op) ... ok
+test_window_op_minimize (__main__.EngineTests.test_window_op_minimize) ... ok
+test_drag_refuses_stale_target (__main__.MotionTests.test_drag_refuses_stale_target)
+Spec 18: re-resolve before release; stale/moved target => refuse. ... ok
+test_duration_scales_with_distance (__main__.MotionTests.test_duration_scales_with_distance) ... ok
+test_easing_monotonic (__main__.MotionTests.test_easing_monotonic) ... ok
+test_move_returns_true_for_same_point (__main__.MotionTests.test_move_returns_true_for_same_point) ... ok
+test_trajectory_is_deterministic_and_ends_on_target (__main__.MotionTests.test_trajectory_is_deterministic_and_ends_on_target) ... ok
+test_trajectory_stays_on_axis (__main__.MotionTests.test_trajectory_stays_on_axis) ... ok
+test_waypoints_bend_the_path (__main__.MotionTests.test_waypoints_bend_the_path) ... ok
+test_engine_context_methods (__main__.StateTests.test_engine_context_methods) ... ok
+test_relevant_changed_gates_vision (__main__.StateTests.test_relevant_changed_gates_vision) ... ok
+test_world_state_context (__main__.StateTests.test_world_state_context) ... ok
+test_dhash_and_hamming (__main__.TemporalTests.test_dhash_and_hamming) ... ok
+test_loading_is_not_stable (__main__.TemporalTests.test_loading_is_not_stable) ... ok
+test_motion_regions_apply_origin (__main__.TemporalTests.test_motion_regions_apply_origin) ... ok
+test_motion_regions_detect_change (__main__.TemporalTests.test_motion_regions_detect_change) ... ok
+test_stability_settled_region (__main__.TemporalTests.test_stability_settled_region) ... ok
+test_temporal_velocity (__main__.TemporalTests.test_temporal_velocity) ... ok
+test_verify_dispatch_open_and_close (__main__.VerifyTests.test_verify_dispatch_open_and_close) ... ok
+test_verify_element_strategies (__main__.VerifyTests.test_verify_element_strategies) ... ok
+test_wait_until_returns_true_when_condition_met (__main__.VerifyTests.test_wait_until_returns_true_when_condition_met) ... ok
+test_wait_until_times_out (__main__.VerifyTests.test_wait_until_times_out) ... ok
+test_window_exists_and_gone (__main__.VerifyTests.test_window_exists_and_gone) ... ok
+test_window_state (__main__.VerifyTests.test_window_state) ... ok
+
+----------------------------------------------------------------------
+Ran 63 tests in 1.249s
+
+OK
+

@@ -1,0 +1,92 @@
+[attempt 1]
+{
+  "brand": "Lena Fischer",
+  "title": "Lena Fischer Photography Portfolio",
+  "eyebrow": "Photography by Lena Fischer",
+  "headline": "Portraits, Landscapes, and Studio Shots",
+  "tagline": "Explore the beauty of the world through my lens.",
+  "accent": "#007bff",
+  "cta_primary": "View More Work",
+  "cta_secondary": "Contact Me",
+  "sections": [
+    {
+      "id": "about",
+      "kind": "about",
+      "heading": "About Lena Fischer",
+      "lead": "A passionate photographer capturing the essence of every moment.",
+      "items": [
+        {"title": "Professional Experience", "text": "Over 10 years in photography, specializing in portraits and landscapes."},
+        {"title": "Portfolio Highlights", "text": "Featured in several prestigious publications and exhibitions."},
+        {"title": "Client Testimonials", "text": "Clients praise Lena's ability to capture the unique spirit of each subject."}
+      ]
+    },
+    {
+      "id": "work",
+      "kind": "gallery",
+      "heading": "Selected Work",
+      "lead": "Explore my portfolio and discover the beauty in every shot.",
+      "items": [
+        {"title": "Portrait Series", "text": "Portraits of individuals from all walks of life."},
+        {"title": "Landscape Photography", "text": "Capturing the majesty of nature in stunning landscapes."},
+        {"title": "Studio Sessions", "text": "Creating intimate portraits and candid moments in studio settings."},
+        {"title": "Travel Portraits", "text": "Portraits taken during my travels around the world."},
+        {"title": "Event Photography", "text": "Capturing memorable events such as weddings and corporate shoots."},
+        {"title": "Fashion Portraits", "text": "Portraits of models in various fashion settings."},
+        {"title": "Nature Photography", "text": "Capturing the beauty of nature's wonders."},
+        {"title": "Wildlife Photography", "text": "Portraits of animals in their natural habitats."},
+        {"title": "Street Photography", "text": "Capturing everyday moments in urban environments."}
+      ]
+    },
+    {
+      "id": "skills",
+      "kind": "skills",
+      "heading": "Skills and Expertise",
+      "lead": "I specialize in capturing the essence of every moment.",
+      "items": [
+        {"title": "Photography", "text": "Expert in portrait, landscape, studio, travel, event, fashion, nature, wildlife, and street photography."},
+        {"title": "Editing", "text": "Proficient in editing images to enhance their visual appeal."},
+        {"title": "Software", "text": "Experience with Adobe Lightroom, Photoshop, and other photo editing software."},
+        {"title": "Equipment", "text": "Comfortable using various cameras and lenses for different shooting styles."},
+        {"title": "Client Management", "text": "Effective in managing client expectations and delivering high-quality work on time."},
+        {"title": "Communication", "text": "Strong communication skills to ensure clear understanding of project requirements."}
+      ]
+    },
+    {
+      "id": "faq",
+      "kind": "faq",
+      "heading": "Frequently Asked Questions",
+      "items": [
+        {"q": "What kind of photography do you specialize in?", "a": "I specialize in portrait, landscape, studio, travel, event, fashion, nature, wildlife, and street photography."},
+        {"q": "How long have you been working as a photographer?", "a": "Over 10 years in photography, specializing in portraits and landscapes."},
+        {"q": "What is your approach to capturing moments?", "a": "I believe that every moment has its own beauty and value, and I strive to capture it authentically."},
+        {"q": "Do you offer editing services?", "a": "Yes, I offer editing services to enhance the visual appeal of my images."},
+        {"q": "What is your preferred equipment for photography?", "a": "I am comfortable using various cameras and lenses for different shooting styles."},
+        {"q": "How do you manage client expectations?", "a": "I ensure clear understanding of project requirements and deliver high-quality work on time."},
+        {"q": "Do you have any clients testimonials?", "a": "Yes, clients praise Lena's ability to capture the unique spirit of each subject."}
+      ]
+    },
+    {
+      "id": "contact",
+      "kind": "contact",
+      "heading": "Contact Me",
+      "lead": "Let's talk about your photography needs.",
+      "items": [
+        {"title": "Email", "text": "lena.fischer@example.com"},
+        {"title": "Phone", "text": "+1 (555) 123-4567"},
+        {"title": "Website", "text": "www.lena-fischer.com"}
+      ]
+    }
+  ],
+  "metrics": [{"value": "6+", "label": "years shipping"}],
+  "faq": [
+    {
+      "q": "What kind of photography do you specialize in?",
+      "a": "I specialize in portrait, landscape, studio, travel, event, fashion, nature, wildlife, and street photography."
+    },
+    {
+      "q": "How long have you been working as a photographer?",
+      "a": "Over 10 years in photography, specializing in portraits and landscapes."
+    }
+  ],
+  "footer": "© Lena Fischer Photography. All rights reserved."
+}

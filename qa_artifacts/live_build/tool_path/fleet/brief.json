@@ -1,0 +1,18 @@
+{
+  "request": "Build a fleet-operations dashboard: vehicles, trips, fuel and maintenance costs. Real JSON API, charts and a table.",
+  "requirements": "data source: SQLite file; metrics: distance per day, fuel cost per vehicle; charts: line and bar; stack: Flask + vanilla JS; scope: local single user, sample data, port 5071.",
+  "artifact": "app",
+  "answered": [
+    "data_source",
+    "metrics",
+    "charts",
+    "stack",
+    "scope"
+  ],
+  "assumptions": [],
+  "recipes": [
+    "dashboard",
+    "mysql"
+  ],
+  "path": "app"
+}

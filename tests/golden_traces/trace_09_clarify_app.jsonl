@@ -1,0 +1,1 @@
+{"scenario": "trace_09_clarify_app", "params": {"action": "clarify", "task": "build a react fastapi web application"}, "response": "No requirements are missing for this request \u2014 there is nothing to ask. Call crown_code with action=build to start it."}

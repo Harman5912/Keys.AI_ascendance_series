@@ -1,0 +1,289 @@
+[
+  {
+    "file": "test_agent_control.py",
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 0.26,
+    "passed": true,
+    "log": "qa_artifacts/logs/baseline_test_agent_control.log",
+    "tail": [],
+    "stderr_tail": [
+      "test_agent_settings_reset (__main__.TestTools.test_agent_settings_reset) ... ok",
+      "test_agent_settings_set (__main__.TestTools.test_agent_settings_set) ... ok",
+      "test_agent_settings_set_invalid (__main__.TestTools.test_agent_settings_set_invalid) ... ok",
+      "----------------------------------------------------------------------",
+      "Ran 39 tests in 0.107s",
+      "OK"
+    ],
+    "timestamp": "2026-10-22T09:55:03+00:00"
+  },
+  {
+    "file": "test_brain.py",
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 0.63,
+    "passed": true,
+    "log": "qa_artifacts/logs/baseline_test_brain.log",
+    "tail": [
+      "[15:25:03] TOOL_SELECTED send_message {'receiver': 'John', 'message_text': 'are you there?', 'platform': 'WhatsApp'}",
+      "[15:25:03] TOOL_EXECUTED send_message \u2192 send_message done: {'receiver': 'John', 'message_text': 'are you there?', 'platform': 'WhatsApp'}",
+      "[15:25:03] EVALUATION send_message = success ()",
+      "[15:25:03] TASK_COMPLETE send a message to John: are you there?",
+      "[Memory] \ud83d\udcbe Saved: ['preferences']",
+      "[Memory] \ud83d\udcbe Saved: ['preferences']",
+      "[Memory] \ud83d\udcbe Saved: ['identity']",
+      "[Memory] \ud83d\udcbe Saved: ['preferences']",
+      "[Memory] \ud83d\udcbe Saved: ['preferences']",
+      "[Memory] \ud83d\udcbe Saved: ['preferences']",
+      "[Brain][Planner] Skipping unknown tool: NOT_A_TOOL",
+      "[Memory] \ud83d\udcbe Saved: ['preferences']"
+    ],
+    "stderr_tail": [
+      "........................................................................",
+      "----------------------------------------------------------------------",
+      "Ran 72 tests in 0.443s",
+      "OK"
+    ],
+    "timestamp": "2026-10-22T09:55:03+00:00"
+  },
+  {
+    "file": "test_computer_use.py",
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 1.54,
+    "passed": true,
+    "log": "qa_artifacts/logs/baseline_test_computer_use.log",
+    "tail": [],
+    "stderr_tail": [
+      "test_wait_until_times_out (__main__.VerifyTests.test_wait_until_times_out) ... ok",
+      "test_window_exists_and_gone (__main__.VerifyTests.test_window_exists_and_gone) ... ok",
+      "test_window_state (__main__.VerifyTests.test_window_state) ... ok",
+      "----------------------------------------------------------------------",
+      "Ran 63 tests in 1.249s",
+      "OK"
+    ],
+    "timestamp": "2026-10-22T09:55:05+00:00"
+  },
+  {
+    "file": "test_crown_ui.py",
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 1.49,
+    "passed": true,
+    "log": "qa_artifacts/logs/baseline_test_crown_ui.log",
+    "tail": [
+      "PASS: stdout/stderr/meta stream into the terminal",
+      "PASS: terminal clear works",
+      "PASS: running-state indicator updates",
+      "PASS: typing a command emits terminalCommandSubmitted",
+      "PASS: Stop button emits stopRequested",
+      "PASS: begin()/reset() lifecycle works",
+      "PASS: phase chip shows phase/percent/ETA ('WRITING \u00b7 42% \u00b7 0s \u00b7 ETA 1m30s')",
+      "PASS: progress updates the phase chip",
+      "PASS: completion marks the chip DONE",
+      "PASS: workspace screenshot written (6882 bytes)",
+      "------------------------------------------------------------",
+      "RESULT: PASS \u2014 embedded terminal UI works"
+    ],
+    "stderr_tail": [
+      "QFontDatabase: Cannot find font directory C:/Users/harma/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0/LocalCache/local-packages/Python312/site-packages/PyQt6/Qt6/lib/fonts.",
+      "Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig.",
+      "This plugin does not support propagateSizeHints()",
+      "This plugin does not support propagateSizeHints()",
+      "This plugin does not support propagateSizeHints()"
+    ],
+    "timestamp": "2026-10-22T09:55:06+00:00"
+  },
+  {
+    "file": "test_editor_control.py",
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 0.49,
+    "passed": true,
+    "log": "qa_artifacts/logs/baseline_test_editor_control.log",
+    "tail": [
+      "[Editor] Opened a.py in vscode",
+      "[Editor] Edited app.py directly (could not open vscode)",
+      "[Editor] Created and opened new.py in vscode",
+      "[Editor] Edited app.py directly (UI drive unavailable)",
+      "[Editor] Visual edit of app.py verified",
+      "[Editor] Appended text to n.txt directly"
+    ],
+    "stderr_tail": [
+      "test_office_content_only_is_rejected (__main__.OfficeRoutingTests.test_office_content_only_is_rejected)",
+      "Raw full-text content cannot be applied to structured office formats - ... ok",
+      "test_office_doc_edit_uses_library_then_opens (__main__.OfficeRoutingTests.test_office_doc_edit_uses_library_then_opens) ... ok",
+      "----------------------------------------------------------------------",
+      "Ran 16 tests in 0.267s",
+      "OK"
+    ],
+    "timestamp": "2026-10-22T09:55:07+00:00"
+  },
+  {
+    "file": "test_firebase_feature.py",
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 2.66,
+    "passed": true,
+    "log": "qa_artifacts/logs/baseline_test_firebase_feature.log",
+    "tail": [],
+    "stderr_tail": [
+      "test_gate_off_no_lookup (__main__.SendMessageGateTests.test_gate_off_no_lookup) ... ok",
+      "test_gate_requires_config (__main__.SendMessageGateTests.test_gate_requires_config) ... ok",
+      "test_gate_requires_sign_in (__main__.SendMessageGateTests.test_gate_requires_sign_in) ... ok",
+      "----------------------------------------------------------------------",
+      "Ran 59 tests in 2.190s",
+      "OK"
+    ],
+    "timestamp": "2026-10-22T09:55:10+00:00"
+  },
+  {
+    "file": "test_gemini_ladder.py",
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 0.1,
+    "passed": true,
+    "log": "qa_artifacts/logs/baseline_test_gemini_ladder.log",
+    "tail": [
+      "  classify(): OK",
+      "  order + cooldown skip: OK",
+      "  steps to next rung + rests failed model: OK",
+      "  success returns: OK",
+      "  key rotation on auth error: OK",
+      "  status() shape: OK",
+      "PASS \u2014 6/6 passed"
+    ],
+    "stderr_tail": [],
+    "timestamp": "2026-10-22T09:55:10+00:00"
+  },
+  {
+    "file": "test_google_accounts.py",
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 0.32,
+    "passed": true,
+    "log": "qa_artifacts/logs/baseline_test_google_accounts.log",
+    "tail": [],
+    "stderr_tail": [
+      "..............",
+      "----------------------------------------------------------------------",
+      "Ran 14 tests in 0.097s",
+      "OK"
+    ],
+    "timestamp": "2026-10-22T09:55:10+00:00"
+  },
+  {
+    "file": "test_hybrid_automation.py",
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 0.47,
+    "passed": true,
+    "log": "qa_artifacts/logs/baseline_test_hybrid_automation.log",
+    "tail": [],
+    "stderr_tail": [
+      "test_click_at_coordinates_uses_input (__main__.VisionRoutingTests.test_click_at_coordinates_uses_input) ... ok",
+      "test_describe_screen_requires_vision (__main__.VisionRoutingTests.test_describe_screen_requires_vision)",
+      "describe_screen returns a clear error when vision is missing. ... ok",
+      "----------------------------------------------------------------------",
+      "Ran 19 tests in 0.256s",
+      "OK"
+    ],
+    "timestamp": "2026-10-22T09:55:11+00:00"
+  },
+  {
+    "file": "test_install.py",
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 0.27,
+    "passed": true,
+    "log": "qa_artifacts/logs/baseline_test_install.log",
+    "tail": [
+      "    created config/entities.json (empty defaults)",
+      "    created config/personality.json (empty defaults)",
+      "    created config/session_state.json (empty defaults)",
+      "    created config/window_state.json (empty defaults)",
+      "    created config/api_keys.json (template \u2014 add your Gemini key)",
+      "    created config/agent_control.json (defaults)",
+      "    created config/call_rules.json (defaults)",
+      "    created config/brain.json (empty defaults)",
+      "    created config/entities.json (empty defaults)",
+      "    created config/personality.json (empty defaults)",
+      "    created config/session_state.json (empty defaults)",
+      "    created config/window_state.json (empty defaults)"
+    ],
+    "stderr_tail": [
+      "No pyvenv.cfg file",
+      "No pyvenv.cfg file",
+      ".......",
+      "----------------------------------------------------------------------",
+      "Ran 7 tests in 0.056s",
+      "OK"
+    ],
+    "timestamp": "2026-10-22T09:55:11+00:00"
+  },
+  {
+    "file": "test_intelligence.py",
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 0.48,
+    "passed": true,
+    "log": "qa_artifacts/logs/baseline_test_intelligence.log",
+    "tail": [
+      "[15:25:11] TOOL_SELECTED open_app {'app_name': 'Chrome'}",
+      "[15:25:11] TOOL_EXECUTED open_app \u2192 open_app done: {'app_name': 'Chrome'}",
+      "[15:25:11] EVALUATION open_app = success ()",
+      "[15:25:11] TASK_COMPLETE open chrome",
+      "[15:25:11] USER_REQUEST send mesage to Dhananjay: hello",
+      "[15:25:11] INTENT_DETECTED CONVERSATION tags=['CONVERSATION', 'COMMAND'] conf=0.71",
+      "[15:25:11] ROUTED single_tool \u2192 send_message {'receiver': 'Dhananjay', 'message_text': 'hello', 'platform': 'WhatsApp'}",
+      "[15:25:11] PLAN_CREATED Single step (1 steps)",
+      "[15:25:11] STEP 1/1 send_message \u2014 send-message pattern",
+      "[15:25:11] TOOL_SELECTED send_message {'receiver': 'Dhananjay', 'message_text': 'hello', 'platform': 'WhatsApp'}",
+      "[15:25:11] WAITING_FOR_USER 'send_message' needs your confirmation: {'receiver': 'Dhananjay', 'message_text': 'hello', 'platform': 'WhatsApp'}",
+      "[15:25:11] WAITING_FOR_USER waiting on: send-message pattern"
+    ],
+    "stderr_tail": [
+      "...............................................................................",
+      "----------------------------------------------------------------------",
+      "Ran 79 tests in 0.340s",
+      "OK"
+    ],
+    "timestamp": "2026-10-22T09:55:11+00:00"
+  },
+  {
+    "file": "test_targeting.py",
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 0.44,
+    "passed": true,
+    "log": "qa_artifacts/logs/baseline_test_targeting.log",
+    "tail": [],
+    "stderr_tail": [
+      "test_on_move_streams_every_cursor_update (__main__.TargeterTests.test_on_move_streams_every_cursor_update)",
+      "A live crosshair callback receives every cursor position while ... ok",
+      "test_reset_clears_the_previous_selection (__main__.TargeterTests.test_reset_clears_the_previous_selection) ... ok",
+      "----------------------------------------------------------------------",
+      "Ran 13 tests in 0.216s",
+      "OK"
+    ],
+    "timestamp": "2026-10-22T09:55:12+00:00"
+  },
+  {
+    "file": "test_window_chrome.py",
+    "exit_code": 0,
+    "timed_out": false,
+    "seconds": 0.35,
+    "passed": true,
+    "log": "qa_artifacts/logs/baseline_test_window_chrome.log",
+    "tail": [],
+    "stderr_tail": [
+      "ok",
+      "test_three_window_buttons_exist (__main__.TitleBarTests.test_three_window_buttons_exist) ... This plugin does not support propagateSizeHints()",
+      "ok",
+      "----------------------------------------------------------------------",
+      "Ran 14 tests in 0.117s",
+      "OK"
+    ],
+    "timestamp": "2026-10-22T09:55:12+00:00"
+  }
+]

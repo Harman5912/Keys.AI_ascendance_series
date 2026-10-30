@@ -1,0 +1,1 @@
+{"scenario": "trace_11_clarify_tool", "params": {"action": "clarify", "task": "build a command line tool with python"}, "response": "No requirements are missing for this request \u2014 there is nothing to ask. Call crown_code with action=build to start it."}

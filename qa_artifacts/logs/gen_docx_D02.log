@@ -1,0 +1,11 @@
+# D02 exit=-9 timeout=True seconds=1660.3
+# ---- stdout ----
+[FileProcessor] CREATE DOCX | D02_ats_resume.docx
+[D02] 1660.1s  exists=True  bytes=38283  result=Created Word document: D02_ats_resume.docx (37.4 KB)
+Saved to: C:\Users\harma\Desktop\PROJECTS\Keys-acendence-
+restored file_processor task model -> {'provider': 'gemini', 'model': 'gemini-2.5-flash', 'url': ''}
+
+DONE 1 docx artifact(s) in C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\generated_documents
+
+# ---- stderr ----
+

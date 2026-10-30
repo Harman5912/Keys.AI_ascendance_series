@@ -1,0 +1,168 @@
+generating DOCX through file_processor …
+generating PPTX through file_processor …
+generating XLSX through file_processor …
+generating PDF through file_processor …
+docx: exists=True bytes=38480 19.7s
+pptx: exists=True bytes=38356 17.3s
+xlsx: exists=True bytes=14365 0.8s
+pdf: exists=False bytes=0 0.0s
+{
+  "validation_docx": {
+    "paragraphs": 17,
+    "tables": 1,
+    "heading_count": 7,
+    "headings": [
+      "Inventory Management System \u2014 Project Report",
+      "Executive Summary",
+      "Objectives",
+      "System Architecture",
+      "Database Schema",
+      "JSON API Endpoints",
+      "Test Results"
+    ],
+    "chars": 1319,
+    "has_title_heading": true,
+    "mentions_total": false,
+    "mentions_five_products": true,
+    "mentions_low_stock": true,
+    "mentions_tests": true,
+    "table_has_five_products": false,
+    "sections_present": {
+      "executive_summary": true,
+      "objectives": true,
+      "architecture": true,
+      "database": true,
+      "api": true,
+      "test": true,
+      "limitations": false,
+      "future": false
+    }
+  },
+  "validation_pptx": {
+    "slide_count": 7,
+    "width_inches": 13.33,
+    "empty_slides": [],
+    "titles": [
+      "Inventory Management System \u2014 Technical Overview",
+      "Title",
+      "Problem statement",
+      "Objectives",
+      "System architecture",
+      "Technology stack",
+      "Database design"
+    ],
+    "charts": 0,
+    "densest_slide_chars": 173,
+    "mentions_total": false,
+    "mentions_tests": false,
+    "mentions_low_stock": false,
+    "topics_covered": [
+      "problem",
+      "objective",
+      "architecture",
+      "technology",
+      "database"
+    ],
+    "slides": [
+      {
+        "index": 1,
+        "title": "Inventory Management System \u2014 Technical Overview",
+        "chars": 173,
+        "empty": false
+      },
+      {
+        "index": 2,
+        "title": "Title",
+        "chars": 85,
+        "empty": false
+      },
+      {
+        "index": 3,
+        "title": "Problem statement",
+        "chars": 162,
+        "empty": false
+      },
+      {
+        "index": 4,
+        "title": "Objectives",
+        "chars": 158,
+        "empty": false
+      },
+      {
+        "index": 5,
+        "title": "System architecture",
+        "chars": 163,
+        "empty": false
+      },
+      {
+        "index": 6,
+        "title": "Technology stack",
+        "chars": 96,
+        "empty": false
+      },
+      {
+        "index": 7,
+        "title": "Database design",
+        "chars": 44,
+        "empty": false
+      }
+    ]
+  },
+  "validation_xlsx": {
+    "sheets": [
+      "Dashboard",
+      "Trend",
+      "Data",
+      "Assumptions"
+    ],
+    "sheet_count": 4,
+    "formulas": 69,
+    "charts": 2,
+    "numeric_cells": 77,
+    "product_rows": [],
+    "value_formulas": 0,
+    "evaluated_total": null,
+    "evaluation_problems": [],
+    "low_stock_formulas": 0,
+    "has_54200_grid_value": false,
+    "formula_values_cached": false
+  },
+  "validation_pdf": {
+    "error": "file missing"
+  }
+}
+cross_format: {
+  "all_four_exist": false,
+  "facts": {
+    "docx_states_total": false,
+    "pptx_states_total": false,
+    "xlsx_evaluates_total": false,
+    "pdf_states_total": false,
+    "docx_states_low_stock": true,
+    "pptx_states_low_stock": false,
+    "xlsx_flags_low_stock": false,
+    "pdf_states_low_stock": false,
+    "docx_states_tests": true,
+    "pptx_states_tests": false,
+    "pdf_states_tests": false,
+    "xlsx_has_all_products": false,
+    "docx_has_required_sections": false,
+    "pptx_no_empty_slides": true,
+    "pdf_no_blank_pages": true
+  },
+  "all_agree": false,
+  "disagreements": [
+    "docx_states_total",
+    "pptx_states_total",
+    "xlsx_evaluates_total",
+    "pdf_states_total",
+    "pptx_states_low_stock",
+    "xlsx_flags_low_stock",
+    "pdf_states_low_stock",
+    "pptx_states_tests",
+    "pdf_states_tests",
+    "xlsx_has_all_products",
+    "docx_has_required_sections"
+  ]
+}
+STAGE 6 FAILED: docx_states_total, pptx_states_total, xlsx_evaluates_total, pdf_states_total, pptx_states_low_stock, xlsx_flags_low_stock, pdf_states_low_stock, pptx_states_tests, pdf_states_tests, xlsx_has_all_products, docx_has_required_sections

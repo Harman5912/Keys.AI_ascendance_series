@@ -1,0 +1,29 @@
+# Keep secrets and build junk out of the container image.
+.venv/
+venv/
+dist/
+build/
+*.spec.bak
+
+# Secrets — NEVER in an image (keys are injected via volume/env at runtime)
+config/api_keys.json
+config/certs/
+config/session_state.json
+
+# Runtime data & logs
+*.db
+*.db-shm
+*.db-wal
+*.log
+desktop.db*
+wa_live*.log
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Misc
+.git/
+.idea/
+.vscode/
+workspace/

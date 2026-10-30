@@ -1,0 +1,60 @@
+# test_install.py  exit=0  seconds=0.27  timeout=False
+# ---- stdout ----
+
+>>> Doctor self-check
+    Python 3.12 (system: C:\Users\harma\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe)
+    virtualenv: C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\.venv\Scripts\python.exe
+    $ C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\.venv\Scripts\python.exe -c import importlib.util;mods='PyQt6 google.genai playwright sounddevice numpy requests bs4 duckduckgo_search psutil mss PIL fastapi cv2 pyautogui'.split();missing=[m for m in mods if importlib.util.find_spec(m) is None];print('MISSING:' + ','.join(missing) if missing else 'ALL_OK')
+[OK] critical packages import cleanly in .venv
+[OK] Playwright Chromium installed (cache: C:\Users\harma\AppData\Local\ms-playwright)
+[!] C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\.venv looks broken (missing pyvenv.cfg) — recreate it with: python -m venv --clear C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\.venv
+    $ C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\.venv\Scripts\python.exe -c import pyaudiowpatch;print('ok')
+[!] pyaudiowpatch not installed — receptionist hearing disabled (pip install pyaudiowpatch)
+    config:
+      [!] config/api_keys.json missing — will be scaffolded on install
+      [!] config/agent_control.json missing — will be scaffolded on install
+    - For WhatsApp messaging: sign in to the WhatsApp desktop app.
+    - For Google-verified contacts: follow FIREBASE_SETUP.md and say 'sign in with Google'.
+
+4 item(s) need attention.
+    created config/api_keys.json (template — add your Gemini key)
+    created config/agent_control.json (defaults)
+    created config/call_rules.json (defaults)
+    created config/brain.json (empty defaults)
+    created config/entities.json (empty defaults)
+    created config/personality.json (empty defaults)
+    created config/session_state.json (empty defaults)
+    created config/window_state.json (empty defaults)
+    created config/agent_control.json (defaults)
+    created config/call_rules.json (defaults)
+    created config/brain.json (empty defaults)
+    created config/entities.json (empty defaults)
+    created config/personality.json (empty defaults)
+    created config/session_state.json (empty defaults)
+    created config/window_state.json (empty defaults)
+    created config/api_keys.json (template — add your Gemini key)
+    created config/agent_control.json (defaults)
+    created config/call_rules.json (defaults)
+    created config/brain.json (empty defaults)
+    created config/entities.json (empty defaults)
+    created config/personality.json (empty defaults)
+    created config/session_state.json (empty defaults)
+    created config/window_state.json (empty defaults)
+    created config/api_keys.json (template — add your Gemini key)
+    created config/agent_control.json (defaults)
+    created config/call_rules.json (defaults)
+    created config/brain.json (empty defaults)
+    created config/entities.json (empty defaults)
+    created config/personality.json (empty defaults)
+    created config/session_state.json (empty defaults)
+    created config/window_state.json (empty defaults)
+
+# ---- stderr ----
+No pyvenv.cfg file
+No pyvenv.cfg file
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.056s
+
+OK
+

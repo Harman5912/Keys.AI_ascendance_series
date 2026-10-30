@@ -1,0 +1,133 @@
+[15:26:37] USER_REQUEST Hey Keys, can you help me create a small project?
+[15:26:37] INTENT_DETECTED QUESTION tags=['QUESTION', 'CONVERSATION'] conf=0.84
+[15:26:37] ROUTED chat →  {}
+[15:26:42] USER_REQUEST Make me a website for my portfolio.
+[15:26:42] INTENT_DETECTED COMMAND tags=['COMMAND'] conf=0.48
+[15:26:42] ROUTED plan →  {}
+[15:26:47] PLAN_CREATED Create a portfolio website using the Crown Code Terminal Agent. (1 steps)
+[15:26:47] STEP 1/1 crown_code — Initiate the Crown Code Terminal Agent to build a portfolio website.
+[15:26:47] TOOL_SELECTED crown_code {'task': 'build a portfolio website'}
+[15:26:47] WAITING_FOR_USER 'crown_code' needs your confirmation: {'task': 'build a portfolio website'}
+[15:26:47] WAITING_FOR_USER waiting on: Initiate the Crown Code Terminal Agent to build a portfolio website.
+[15:26:47] USER_REQUEST Build me a portfolio website using Python and HTML.
+[15:26:47] INTENT_DETECTED CODING tags=['CODING'] conf=0.48
+[15:26:47] ROUTED single_tool → live_code {'action': 'start', 'description': 'Build me a portfolio website using Python and HTML.'}
+[15:26:47] PLAN_CREATED Single step (1 steps)
+[15:26:47] STEP 1/1 live_code — coding intent → live_code
+[15:26:47] TOOL_SELECTED live_code {'action': 'start', 'description': 'Build me a portfolio website using Python and HTML.'}
+[15:26:47] WAITING_FOR_USER 'live_code' needs your confirmation: {'action': 'start', 'description': 'Build me a portfolio website using Python and HTML.'}
+[15:26:47] WAITING_FOR_USER waiting on: coding intent → live_code
+[15:26:47] USER_REQUEST Use SQLite for the database.
+[15:26:47] CONFIRM_SUPERSEDED dropped pending step 0 and handled the new request instead
+[15:26:47] INTENT_DETECTED CONVERSATION tags=[] conf=0.25
+[15:26:47] ROUTED chat →  {}
+Primary key failed (ProviderError: Gemini generate failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message) — trying 1 backup key(s) for gemini
+[15:26:49] FALLBACK Primary key failed (ProviderError: Gemini generate failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message) — trying 1 backup key(s) for gemini
+[15:26:49] FALLBACK Trying backup key 1/1 for gemini
+[15:27:33] FALLBACK Backup key 1/1 succeeded for gemini
+[15:27:33] USER_REQUEST Make the theme dark with gold accents.
+[15:27:33] INTENT_DETECTED COMMAND tags=['COMMAND'] conf=0.48
+[15:27:33] ROUTED plan →  {}
+Primary key failed (ProviderError: Gemini structured output failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429,) — trying 1 backup key(s) for gemini
+[15:27:34] FALLBACK Primary key failed (ProviderError: Gemini structured output failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429,) — trying 1 backup key(s) for gemini
+[15:27:34] FALLBACK Trying backup key 1/1 for gemini
+Backup key 1/1 also failed (ProviderError: Ollama request to http://localhost:11434/api/chat failed: HT)
+[15:37:36] FALLBACK Backup key 1/1 also failed (ProviderError: Ollama request to http://localhost:11434/api/chat failed: HT)
+All 1 backup key(s) exhausted for gemini — using primary
+[15:37:36] FALLBACK All 1 backup key(s) exhausted for gemini — using primary
+Primary key failed (ProviderError: Gemini generate failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message) — trying 1 backup key(s) for gemini
+[Brain][Planner] ⚠️ LLM plan failed, falling back: Gemini structured output failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 21h2m25.425998042s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '75745s'}]}}
+[15:37:37] FALLBACK Primary key failed (ProviderError: Gemini generate failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message) — trying 1 backup key(s) for gemini
+[15:37:37] FALLBACK Trying backup key 1/1 for gemini
+[15:38:41] FALLBACK Backup key 1/1 succeeded for gemini
+[15:38:41] USER_REQUEST Now add a contact form.
+[15:38:41] INTENT_DETECTED CONVERSATION tags=[] conf=0.25
+[15:38:41] ROUTED chat →  {}
+Primary key failed (ProviderError: Gemini generate failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message) — trying 1 backup key(s) for gemini
+[15:38:41] FALLBACK Primary key failed (ProviderError: Gemini generate failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message) — trying 1 backup key(s) for gemini
+[15:38:41] FALLBACK Trying backup key 1/1 for gemini
+Backup key 1/1 also failed (ProviderError: Ollama request to http://localhost:11434/api/chat failed: HT)
+[15:48:43] FALLBACK Backup key 1/1 also failed (ProviderError: Ollama request to http://localhost:11434/api/chat failed: HT)
+All 1 backup key(s) exhausted for gemini — using primary
+[15:48:43] FALLBACK All 1 backup key(s) exhausted for gemini — using primary
+[Brain][Reasoning] ⚠️ Gemini generate failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 20h51m18.449948581s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '75078s'}]}}
+[15:48:43] USER_REQUEST Create a Python Flask website.
+[15:48:43] INTENT_DETECTED CODING tags=['CODING', 'COMMAND'] conf=0.58
+[15:48:43] ROUTED single_tool → live_code {'action': 'start', 'description': 'Create a Python Flask website.'}
+[15:48:43] PLAN_CREATED Single step (1 steps)
+[15:48:43] STEP 1/1 live_code — coding intent → live_code
+[15:48:43] TOOL_SELECTED live_code {'action': 'start', 'description': 'Create a Python Flask website.'}
+[15:48:43] WAITING_FOR_USER 'live_code' needs your confirmation: {'action': 'start', 'description': 'Create a Python Flask website.'}
+[15:48:43] WAITING_FOR_USER waiting on: coding intent → live_code
+[15:48:43] USER_REQUEST Actually, use FastAPI instead.
+[15:48:43] CONFIRM_SUPERSEDED dropped pending step 0 and handled the new request instead
+[15:48:43] INTENT_DETECTED CONVERSATION tags=[] conf=0.25
+[15:48:43] ROUTED chat →  {}
+Primary key failed (ProviderError: Gemini generate failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message) — trying 1 backup key(s) for gemini
+[15:48:45] FALLBACK Primary key failed (ProviderError: Gemini generate failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message) — trying 1 backup key(s) for gemini
+[15:48:45] FALLBACK Trying backup key 1/1 for gemini
+Backup key 1/1 also failed (ProviderError: Ollama request to http://localhost:11434/api/chat failed: HT)
+[15:58:47] FALLBACK Backup key 1/1 also failed (ProviderError: Ollama request to http://localhost:11434/api/chat failed: HT)
+All 1 backup key(s) exhausted for gemini — using primary
+[15:58:47] FALLBACK All 1 backup key(s) exhausted for gemini — using primary
+[Brain][Reasoning] ⚠️ Gemini generate failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 20h41m14.439718439s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '74474s'}]}}
+[15:58:47] USER_REQUEST Did you actually run my application, or did you only write the code?
+[15:58:47] INTENT_DETECTED QUESTION tags=['COMPUTER_ACTION', 'CODING', 'QUESTION'] conf=0.94
+[15:58:47] ROUTED chat →  {}
+Primary key failed (ProviderError: Gemini generate failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message) — trying 1 backup key(s) for gemini
+[15:58:49] FALLBACK Primary key failed (ProviderError: Gemini generate failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message) — trying 1 backup key(s) for gemini
+[15:58:49] FALLBACK Trying backup key 1/1 for gemini
+Backup key 1/1 also failed (ProviderError: Ollama request to http://localhost:11434/api/chat failed: HT)
+[16:30:14] FALLBACK Backup key 1/1 also failed (ProviderError: Ollama request to http://localhost:11434/api/chat failed: HT)
+All 1 backup key(s) exhausted for gemini — using primary
+[16:30:14] FALLBACK All 1 backup key(s) exhausted for gemini — using primary
+[Brain][Reasoning] ⚠️ Gemini generate failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 20h31m10.422283995s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '73870s'}]}}
+[16:30:14] USER_REQUEST What can you do with spreadsheets?
+[16:30:14] INTENT_DETECTED QUESTION tags=['QUESTION', 'CONVERSATION'] conf=0.84
+[16:30:14] ROUTED chat →  {}
+Primary key failed (ProviderError: Gemini generate failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message) — trying 1 backup key(s) for gemini
+[16:30:16] FALLBACK Primary key failed (ProviderError: Gemini generate failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message) — trying 1 backup key(s) for gemini
+[16:30:16] FALLBACK Trying backup key 1/1 for gemini
+Backup key 1/1 also failed (ProviderError: Ollama request to http://localhost:11434/api/chat failed: 50)
+[16:32:08] FALLBACK Backup key 1/1 also failed (ProviderError: Ollama request to http://localhost:11434/api/chat failed: 50)
+All 1 backup key(s) exhausted for gemini — using primary
+[16:32:08] FALLBACK All 1 backup key(s) exhausted for gemini — using primary
+[Brain][Reasoning] ⚠️ Gemini generate failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 19h59m43.091971725s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '71983s'}]}}
+
+=== C01 ===
+  user: Hey Keys, can you help me create a small project?
+  keys: 'Certainly, sir. Could you clarify what kind of "shall project" you\'d like to create? Are you referring to a shell script, a small coding project, or something else?'  [4.7s intent=QUESTION]
+
+=== C02 ===
+  user: Make me a website for my portfolio.
+  keys: 'I need your confirmation before I Initiate the Crown Code Terminal Agent to build a portfolio website.. Say yes to proceed, or no to skip it.'  [4.6s intent=COMMAND]
+
+=== C03 ===
+  user: Build me a portfolio website using Python and HTML.
+  keys: 'I need your confirmation before I coding intent → live_code. Say yes to proceed, or no to skip it.'  [0.0s intent=CODING]
+  user: Use SQLite for the database.
+  keys: 'Understood. SQLite will be used for the database.\n\nI need clarification: Do you want me to create a new Excel file containing SQLite setup instructions or modify an existing one?'  [46.2s intent=CONVERSATION]
+  user: Make the theme dark with gold accents.
+  keys: "Understood. I will create a dark-themed portfolio website with gold accents.\n\nFirst, let's set up the project directory:\n```bash\nmkdir C:/Users/harma/Desktop/keys_Creations/code/Web/portfolio && cd $_\n```\n\nThen, we'll generate:\n1. A responsive HTML file (index.html)\n2. CSS styling for dark theme and gold accents\n3. SQLite database structure\n\nWould you like me to create these files now?"  [667.8s intent=COMMAND]
+  user: Now add a contact form.
+  keys: ''  [602.6s intent=]
+
+=== C04 ===
+  user: Create a Python Flask website.
+  keys: 'I need your confirmation before I coding intent → live_code. Say yes to proceed, or no to skip it.'  [0.0s intent=CODING]
+  user: Actually, use FastAPI instead.
+  keys: ''  [604.1s intent=]
+
+=== C11 ===
+  user: Did you actually run my application, or did you only write the code?
+  keys: ''  [1886.9s intent=]
+
+=== C12 ===
+  user: What can you do with spreadsheets?
+  keys: ''  [113.4s intent=]
+
+=== decision layer (not executed) ===
+  'Deploy this to my production server right now.' -> intent=CONVERSATION conf=0.25 route=chat
+  'Create a PowerPoint about renewable energy.' -> intent=APP_CONTROL conf=0.58 route=chat
+  'Separately, build a Python inventory application.' -> intent=CODING conf=0.48 route=single_tool
+  'Did you actually run my application, or did you on' -> intent=QUESTION conf=0.94 route=chat

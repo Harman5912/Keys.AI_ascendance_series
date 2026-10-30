@@ -1,0 +1,817 @@
+[
+  {
+    "file": "P01_startup_pitch.pptx",
+    "kind": "pptx",
+    "path": "qa_artifacts/generated_presentations/P01_startup_pitch.pptx",
+    "bytes": 46217,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "presentation_part": {
+        "ok": true,
+        "detail": "55 parts"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "8 slides"
+      },
+      "slide_count": {
+        "ok": true,
+        "detail": "8 slides (min 0)"
+      },
+      "titles_on_every_slide": {
+        "ok": true,
+        "detail": "untitled slides=[]"
+      },
+      "distinct_titles": {
+        "ok": true,
+        "detail": "8 unique of 8"
+      },
+      "body_content": {
+        "ok": true,
+        "detail": "1245 body chars"
+      },
+      "no_blank_slides": {
+        "ok": true,
+        "detail": "8 slides checked"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "not_fallback_template": {
+        "ok": true,
+        "detail": "model content"
+      },
+      "widescreen": {
+        "ok": true,
+        "detail": "width=12192000 height=6858000"
+      },
+      "no_overflow": {
+        "ok": true,
+        "detail": "none"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "46217 bytes"
+      }
+    },
+    "titles": [
+      "Seed round",
+      "The problem",
+      "The solution",
+      "Product",
+      "Market",
+      "Traction",
+      "The team",
+      "The ask"
+    ],
+    "slides": 8
+  },
+  {
+    "file": "P02_technical_architecture.pptx",
+    "kind": "pptx",
+    "path": "qa_artifacts/generated_presentations/P02_technical_architecture.pptx",
+    "bytes": 38182,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "presentation_part": {
+        "ok": true,
+        "detail": "50 parts"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "7 slides"
+      },
+      "slide_count": {
+        "ok": true,
+        "detail": "7 slides (min 0)"
+      },
+      "titles_on_every_slide": {
+        "ok": true,
+        "detail": "untitled slides=[]"
+      },
+      "distinct_titles": {
+        "ok": true,
+        "detail": "7 unique of 7"
+      },
+      "body_content": {
+        "ok": true,
+        "detail": "989 body chars"
+      },
+      "no_blank_slides": {
+        "ok": true,
+        "detail": "7 slides checked"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "not_fallback_template": {
+        "ok": true,
+        "detail": "model content"
+      },
+      "widescreen": {
+        "ok": true,
+        "detail": "width=12192000 height=6858000"
+      },
+      "no_overflow": {
+        "ok": true,
+        "detail": "none"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "38182 bytes"
+      }
+    },
+    "titles": [
+      "Platform architecture",
+      "Context",
+      "Components",
+      "Data flow",
+      "Storage",
+      "Security",
+      "Deployment and observability"
+    ],
+    "slides": 7
+  },
+  {
+    "file": "P03_product_demo.pptx",
+    "kind": "pptx",
+    "path": "qa_artifacts/generated_presentations/P03_product_demo.pptx",
+    "bytes": 38152,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "presentation_part": {
+        "ok": true,
+        "detail": "50 parts"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "7 slides"
+      },
+      "slide_count": {
+        "ok": true,
+        "detail": "7 slides (min 0)"
+      },
+      "titles_on_every_slide": {
+        "ok": true,
+        "detail": "untitled slides=[]"
+      },
+      "distinct_titles": {
+        "ok": true,
+        "detail": "7 unique of 7"
+      },
+      "body_content": {
+        "ok": true,
+        "detail": "923 body chars"
+      },
+      "no_blank_slides": {
+        "ok": true,
+        "detail": "7 slides checked"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "not_fallback_template": {
+        "ok": true,
+        "detail": "model content"
+      },
+      "widescreen": {
+        "ok": true,
+        "detail": "width=12192000 height=6858000"
+      },
+      "no_overflow": {
+        "ok": true,
+        "detail": "none"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "38152 bytes"
+      }
+    },
+    "titles": [
+      "Product demonstration",
+      "Overview",
+      "Key workflows",
+      "Live walkthrough",
+      "Integrations",
+      "Security",
+      "Pricing and next steps"
+    ],
+    "slides": 7
+  },
+  {
+    "file": "P04_data_analytics_report.pptx",
+    "kind": "pptx",
+    "path": "qa_artifacts/generated_presentations/P04_data_analytics_report.pptx",
+    "bytes": 46092,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "presentation_part": {
+        "ok": true,
+        "detail": "55 parts"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "8 slides"
+      },
+      "slide_count": {
+        "ok": true,
+        "detail": "8 slides (min 0)"
+      },
+      "titles_on_every_slide": {
+        "ok": true,
+        "detail": "untitled slides=[]"
+      },
+      "distinct_titles": {
+        "ok": true,
+        "detail": "8 unique of 8"
+      },
+      "body_content": {
+        "ok": true,
+        "detail": "1031 body chars"
+      },
+      "no_blank_slides": {
+        "ok": true,
+        "detail": "8 slides checked"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "not_fallback_template": {
+        "ok": true,
+        "detail": "model content"
+      },
+      "widescreen": {
+        "ok": true,
+        "detail": "width=12192000 height=6858000"
+      },
+      "no_overflow": {
+        "ok": true,
+        "detail": "none"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "46092 bytes"
+      }
+    },
+    "titles": [
+      "Q3 analytics review",
+      "Headline metrics",
+      "Acquisition",
+      "Activation",
+      "Retention",
+      "Revenue",
+      "Risks",
+      "Recommendations"
+    ],
+    "slides": 8
+  },
+  {
+    "file": "P05_education_lesson.pptx",
+    "kind": "pptx",
+    "path": "qa_artifacts/generated_presentations/P05_education_lesson.pptx",
+    "bytes": 39804,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "presentation_part": {
+        "ok": true,
+        "detail": "52 parts"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "8 slides"
+      },
+      "slide_count": {
+        "ok": true,
+        "detail": "8 slides (min 0)"
+      },
+      "titles_on_every_slide": {
+        "ok": true,
+        "detail": "untitled slides=[]"
+      },
+      "distinct_titles": {
+        "ok": true,
+        "detail": "8 unique of 8"
+      },
+      "body_content": {
+        "ok": true,
+        "detail": "1258 body chars"
+      },
+      "no_blank_slides": {
+        "ok": true,
+        "detail": "8 slides checked"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "not_fallback_template": {
+        "ok": true,
+        "detail": "model content"
+      },
+      "widescreen": {
+        "ok": true,
+        "detail": "width=12192000 height=6858000"
+      },
+      "no_overflow": {
+        "ok": true,
+        "detail": "none"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "39804 bytes"
+      }
+    },
+    "titles": [
+      "Introduction to data normalisation",
+      "Objectives",
+      "Why it matters",
+      "First normal form",
+      "Second normal form",
+      "Third normal form",
+      "Worked example",
+      "Common mistakes and recap"
+    ],
+    "slides": 8
+  },
+  {
+    "file": "P06_business_strategy.pptx",
+    "kind": "pptx",
+    "path": "qa_artifacts/generated_presentations/P06_business_strategy.pptx",
+    "bytes": 46129,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "presentation_part": {
+        "ok": true,
+        "detail": "55 parts"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "8 slides"
+      },
+      "slide_count": {
+        "ok": true,
+        "detail": "8 slides (min 0)"
+      },
+      "titles_on_every_slide": {
+        "ok": true,
+        "detail": "untitled slides=[]"
+      },
+      "distinct_titles": {
+        "ok": true,
+        "detail": "8 unique of 8"
+      },
+      "body_content": {
+        "ok": true,
+        "detail": "1099 body chars"
+      },
+      "no_blank_slides": {
+        "ok": true,
+        "detail": "8 slides checked"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "not_fallback_template": {
+        "ok": true,
+        "detail": "model content"
+      },
+      "widescreen": {
+        "ok": true,
+        "detail": "width=12192000 height=6858000"
+      },
+      "no_overflow": {
+        "ok": true,
+        "detail": "none"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "46129 bytes"
+      }
+    },
+    "titles": [
+      "Strategy plan",
+      "Situation",
+      "Objectives",
+      "Market trends",
+      "Strategic pillars",
+      "Initiatives",
+      "KPIs and risks",
+      "Roadmap"
+    ],
+    "slides": 8
+  },
+  {
+    "file": "P07_research_conference.pptx",
+    "kind": "pptx",
+    "path": "qa_artifacts/generated_presentations/P07_research_conference.pptx",
+    "bytes": 46236,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "presentation_part": {
+        "ok": true,
+        "detail": "55 parts"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "8 slides"
+      },
+      "slide_count": {
+        "ok": true,
+        "detail": "8 slides (min 0)"
+      },
+      "titles_on_every_slide": {
+        "ok": true,
+        "detail": "untitled slides=[]"
+      },
+      "distinct_titles": {
+        "ok": true,
+        "detail": "8 unique of 8"
+      },
+      "body_content": {
+        "ok": true,
+        "detail": "1282 body chars"
+      },
+      "no_blank_slides": {
+        "ok": true,
+        "detail": "8 slides checked"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "not_fallback_template": {
+        "ok": true,
+        "detail": "model content"
+      },
+      "widescreen": {
+        "ok": true,
+        "detail": "width=12192000 height=6858000"
+      },
+      "no_overflow": {
+        "ok": true,
+        "detail": "none"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "46236 bytes"
+      }
+    },
+    "titles": [
+      "Sparse retrieval at scale",
+      "Motivation",
+      "Related work",
+      "Method",
+      "Experimental setup",
+      "Results",
+      "Limitations",
+      "Conclusion and references"
+    ],
+    "slides": 8
+  },
+  {
+    "file": "P08_security_awareness.pptx",
+    "kind": "pptx",
+    "path": "qa_artifacts/generated_presentations/P08_security_awareness.pptx",
+    "bytes": 38171,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "presentation_part": {
+        "ok": true,
+        "detail": "50 parts"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "7 slides"
+      },
+      "slide_count": {
+        "ok": true,
+        "detail": "7 slides (min 0)"
+      },
+      "titles_on_every_slide": {
+        "ok": true,
+        "detail": "untitled slides=[]"
+      },
+      "distinct_titles": {
+        "ok": true,
+        "detail": "7 unique of 7"
+      },
+      "body_content": {
+        "ok": true,
+        "detail": "981 body chars"
+      },
+      "no_blank_slides": {
+        "ok": true,
+        "detail": "7 slides checked"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "not_fallback_template": {
+        "ok": true,
+        "detail": "model content"
+      },
+      "widescreen": {
+        "ok": true,
+        "detail": "width=12192000 height=6858000"
+      },
+      "no_overflow": {
+        "ok": true,
+        "detail": "none"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "38171 bytes"
+      }
+    },
+    "titles": [
+      "Phishing defence",
+      "Why it matters",
+      "Phishing types",
+      "Red flags",
+      "Reporting process",
+      "Password and MFA hygiene",
+      "Quiz and recap"
+    ],
+    "slides": 7
+  },
+  {
+    "file": "P09_project_status.pptx",
+    "kind": "pptx",
+    "path": "qa_artifacts/generated_presentations/P09_project_status.pptx",
+    "bytes": 38119,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "presentation_part": {
+        "ok": true,
+        "detail": "50 parts"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "7 slides"
+      },
+      "slide_count": {
+        "ok": true,
+        "detail": "7 slides (min 0)"
+      },
+      "titles_on_every_slide": {
+        "ok": true,
+        "detail": "untitled slides=[]"
+      },
+      "distinct_titles": {
+        "ok": true,
+        "detail": "7 unique of 7"
+      },
+      "body_content": {
+        "ok": true,
+        "detail": "868 body chars"
+      },
+      "no_blank_slides": {
+        "ok": true,
+        "detail": "7 slides checked"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "not_fallback_template": {
+        "ok": true,
+        "detail": "model content"
+      },
+      "widescreen": {
+        "ok": true,
+        "detail": "width=12192000 height=6858000"
+      },
+      "no_overflow": {
+        "ok": true,
+        "detail": "none"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "38119 bytes"
+      }
+    },
+    "titles": [
+      "Project status review",
+      "Scope",
+      "Timeline vs actual",
+      "Completed milestones",
+      "In-flight work",
+      "Risks and budget",
+      "Decisions and next period"
+    ],
+    "slides": 7
+  },
+  {
+    "file": "P10_product_launch.pptx",
+    "kind": "pptx",
+    "path": "qa_artifacts/generated_presentations/P10_product_launch.pptx",
+    "bytes": 44611,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "presentation_part": {
+        "ok": true,
+        "detail": "53 parts"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "7 slides"
+      },
+      "slide_count": {
+        "ok": true,
+        "detail": "7 slides (min 0)"
+      },
+      "titles_on_every_slide": {
+        "ok": true,
+        "detail": "untitled slides=[]"
+      },
+      "distinct_titles": {
+        "ok": true,
+        "detail": "7 unique of 7"
+      },
+      "body_content": {
+        "ok": true,
+        "detail": "930 body chars"
+      },
+      "no_blank_slides": {
+        "ok": true,
+        "detail": "7 slides checked"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "not_fallback_template": {
+        "ok": true,
+        "detail": "model content"
+      },
+      "widescreen": {
+        "ok": true,
+        "detail": "width=12192000 height=6858000"
+      },
+      "no_overflow": {
+        "ok": true,
+        "detail": "none"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "44611 bytes"
+      }
+    },
+    "titles": [
+      "Product launch",
+      "Market context",
+      "Product overview",
+      "Features and specifications",
+      "Pricing and availability",
+      "Go-to-market",
+      "Timeline and call to action"
+    ],
+    "slides": 7
+  }
+]

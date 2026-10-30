@@ -1,0 +1,20 @@
+[
+  {
+    "id": "P07",
+    "kind": "pptx",
+    "exit": 0,
+    "timed_out": false,
+    "seconds": 46.5,
+    "log": "qa_artifacts/logs/gen_pptx_P07.log",
+    "timestamp": "2026-10-17T12:10:05+00:00"
+  },
+  {
+    "id": "P08",
+    "kind": "pptx",
+    "exit": 0,
+    "timed_out": false,
+    "seconds": 39.6,
+    "log": "qa_artifacts/logs/gen_pptx_P08.log",
+    "timestamp": "2026-10-17T12:10:45+00:00"
+  }
+]

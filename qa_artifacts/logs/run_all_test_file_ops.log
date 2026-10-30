@@ -1,0 +1,49 @@
+$ C:\Users\harma\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -X utf8 -m unittest qa_artifacts.regression_tests.test_file_ops -v
+exit=0 seconds=4.2
+
+---- stdout ----
+
+---- stderr ----
+test_explicit_absolute_path_is_honoured (qa_artifacts.regression_tests.test_file_ops.TestDocxCreation.test_explicit_absolute_path_is_honoured) ... ok
+test_markdown_bold_becomes_bold_runs_not_asterisks (qa_artifacts.regression_tests.test_file_ops.TestDocxCreation.test_markdown_bold_becomes_bold_runs_not_asterisks) ... ok
+test_not_opened_claim_is_not_made_when_open_was_skipped (qa_artifacts.regression_tests.test_file_ops.TestDocxCreation.test_not_opened_claim_is_not_made_when_open_was_skipped) ... ok
+test_numbered_list_uses_list_number_style (qa_artifacts.regression_tests.test_file_ops.TestDocxCreation.test_numbered_list_uses_list_number_style) ... ok
+test_copy_and_move (qa_artifacts.regression_tests.test_file_ops.TestFileController.test_copy_and_move) ... ok
+test_create_read_write (qa_artifacts.regression_tests.test_file_ops.TestFileController.test_create_read_write) ... ok
+test_delete_removes_from_place (qa_artifacts.regression_tests.test_file_ops.TestFileController.test_delete_removes_from_place) ... ok
+test_missing_directory_is_reported (qa_artifacts.regression_tests.test_file_ops.TestFileController.test_missing_directory_is_reported) ... ok
+test_missing_file_is_reported_not_raised (qa_artifacts.regression_tests.test_file_ops.TestFileController.test_missing_file_is_reported_not_raised) ... ok
+test_protected_directory_delete_is_refused (qa_artifacts.regression_tests.test_file_ops.TestFileController.test_protected_directory_delete_is_refused) ... ok
+test_refuses_paths_outside_home (qa_artifacts.regression_tests.test_file_ops.TestFileController.test_refuses_paths_outside_home) ... ok
+test_rename (qa_artifacts.regression_tests.test_file_ops.TestFileController.test_rename) ... ok
+test_unicode_and_space_filename (qa_artifacts.regression_tests.test_file_ops.TestFileController.test_unicode_and_space_filename) ... ok
+test_write_outside_home_is_denied (qa_artifacts.regression_tests.test_file_ops.TestFileController.test_write_outside_home_is_denied) ... ok
+test_create_rejects_unsupported_extension (qa_artifacts.regression_tests.test_file_ops.TestFileProcessorReads.test_create_rejects_unsupported_extension) ... ok
+test_csv_stats (qa_artifacts.regression_tests.test_file_ops.TestFileProcessorReads.test_csv_stats) ... ok
+test_directory_is_not_a_file (qa_artifacts.regression_tests.test_file_ops.TestFileProcessorReads.test_directory_is_not_a_file) ... ok
+test_json_validate_and_format (qa_artifacts.regression_tests.test_file_ops.TestFileProcessorReads.test_json_validate_and_format) ... ok
+test_missing_file (qa_artifacts.regression_tests.test_file_ops.TestFileProcessorReads.test_missing_file) ... ok
+test_no_path (qa_artifacts.regression_tests.test_file_ops.TestFileProcessorReads.test_no_path) ... ok
+test_pptx_to_pdf_is_declared_but_unimplemented (qa_artifacts.regression_tests.test_file_ops.TestFileProcessorReads.test_pptx_to_pdf_is_declared_but_unimplemented)
+The module docstring advertises 'pptx → to_pdf'; the dispatcher does ... ok
+test_fenced_object_array (qa_artifacts.regression_tests.test_file_ops.TestJsonExtraction.test_fenced_object_array) ... ok
+test_literal_newlines_inside_strings (qa_artifacts.regression_tests.test_file_ops.TestJsonExtraction.test_literal_newlines_inside_strings)
+Local models emit raw control chars inside JSON strings. ... ok
+test_nested_rows (qa_artifacts.regression_tests.test_file_ops.TestJsonExtraction.test_nested_rows) ... ok
+test_no_json_raises (qa_artifacts.regression_tests.test_file_ops.TestJsonExtraction.test_no_json_raises) ... ok
+test_placeholder_lines_are_stripped (qa_artifacts.regression_tests.test_file_ops.TestJsonExtraction.test_placeholder_lines_are_stripped) ... ok
+test_prose_prefix_is_ignored (qa_artifacts.regression_tests.test_file_ops.TestJsonExtraction.test_prose_prefix_is_ignored) ... ok
+test_real_model_output_with_doubled_quotes (qa_artifacts.regression_tests.test_file_ops.TestJsonExtraction.test_real_model_output_with_doubled_quotes)
+Fixture captured from qwen3:8b: fenced array with ""title": keys. ... ok
+test_salvage_recovers_broken_slides (qa_artifacts.regression_tests.test_file_ops.TestJsonExtraction.test_salvage_recovers_broken_slides) ... ok
+test_salvage_returns_empty_for_prose (qa_artifacts.regression_tests.test_file_ops.TestJsonExtraction.test_salvage_returns_empty_for_prose) ... ok
+test_extract_text (qa_artifacts.regression_tests.test_file_ops.TestPdfPipeline.test_extract_text) ... ok
+test_info (qa_artifacts.regression_tests.test_file_ops.TestPdfPipeline.test_info) ... ok
+test_to_word (qa_artifacts.regression_tests.test_file_ops.TestPdfPipeline.test_to_word) ... ok
+test_unknown_pdf_action (qa_artifacts.regression_tests.test_file_ops.TestPdfPipeline.test_unknown_pdf_action) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 3.636s
+
+OK
+

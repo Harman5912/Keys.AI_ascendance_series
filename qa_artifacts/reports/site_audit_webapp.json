@@ -1,0 +1,823 @@
+[
+  {
+    "kind": "webapp",
+    "slug": "01_task_manager",
+    "path": "qa_artifacts/generated_webapps/01_task_manager/index.html",
+    "passed": false,
+    "fails": [
+      "visible_content: 127 chars",
+      "focus_styles: no :focus rule"
+    ],
+    "checks": {
+      "title": {
+        "ok": true,
+        "detail": "Task Manager"
+      },
+      "h1_present": {
+        "ok": true,
+        "detail": "1 h1 element(s)"
+      },
+      "visible_content": {
+        "ok": false,
+        "detail": "127 chars"
+      },
+      "no_js_errors": {
+        "ok": true,
+        "detail": ""
+      },
+      "no_console_errors": {
+        "ok": true,
+        "detail": ""
+      },
+      "no_failed_requests": {
+        "ok": true,
+        "detail": ""
+      },
+      "internal_links": {
+        "ok": true,
+        "detail": "0 links"
+      },
+      "buttons_clickable": {
+        "ok": true,
+        "detail": "1 buttons"
+      },
+      "no_errors_after_clicks": {
+        "ok": true,
+        "detail": ""
+      },
+      "form_inputs_labelled": {
+        "ok": true,
+        "detail": "2/2 inputs have an id/aria/placeholder"
+      },
+      "survives_reload": {
+        "ok": true,
+        "detail": "127 chars after reload"
+      },
+      "no_errors_after_reload": {
+        "ok": true,
+        "detail": ""
+      },
+      "persistence_capable": {
+        "ok": true,
+        "detail": "localStorage keys 0->0"
+      },
+      "keyboard_reachable": {
+        "ok": true,
+        "detail": "4 focusable elements"
+      },
+      "tab_focus_visible": {
+        "ok": true,
+        "detail": "focus -> INPUT#title"
+      },
+      "images_have_alt": {
+        "ok": true,
+        "detail": "0 images"
+      },
+      "landmarks": {
+        "ok": true,
+        "detail": "header=True main=True footer=False"
+      },
+      "html_lang": {
+        "ok": true,
+        "detail": "en"
+      },
+      "focus_styles": {
+        "ok": false,
+        "detail": "no :focus rule"
+      },
+      "no_horizontal_overflow": {
+        "ok": true,
+        "detail": "{\"mobile\": \"375>375\", \"tablet\": \"768>768\", \"desktop\": \"1440>1440\"}"
+      }
+    },
+    "console": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "overflow": {
+      "mobile": {
+        "scroll": 375,
+        "client": 375,
+        "overflows": false
+      },
+      "tablet": {
+        "scroll": 768,
+        "client": 768,
+        "overflows": false
+      },
+      "desktop": {
+        "scroll": 1440,
+        "client": 1440,
+        "overflows": false
+      }
+    }
+  },
+  {
+    "kind": "webapp",
+    "slug": "02_inventory_manager",
+    "path": "qa_artifacts/generated_webapps/02_inventory_manager/index.html",
+    "passed": false,
+    "fails": [
+      "visible_content: 130 chars"
+    ],
+    "checks": {
+      "title": {
+        "ok": true,
+        "detail": "Inventory Manager"
+      },
+      "h1_present": {
+        "ok": true,
+        "detail": "1 h1 element(s)"
+      },
+      "visible_content": {
+        "ok": false,
+        "detail": "130 chars"
+      },
+      "no_js_errors": {
+        "ok": true,
+        "detail": ""
+      },
+      "no_console_errors": {
+        "ok": true,
+        "detail": ""
+      },
+      "no_failed_requests": {
+        "ok": true,
+        "detail": ""
+      },
+      "internal_links": {
+        "ok": true,
+        "detail": "0 links"
+      },
+      "buttons_clickable": {
+        "ok": true,
+        "detail": "1 buttons"
+      },
+      "no_errors_after_clicks": {
+        "ok": true,
+        "detail": ""
+      },
+      "form_inputs_labelled": {
+        "ok": true,
+        "detail": "3/3 inputs have an id/aria/placeholder"
+      },
+      "survives_reload": {
+        "ok": true,
+        "detail": "130 chars after reload"
+      },
+      "no_errors_after_reload": {
+        "ok": true,
+        "detail": ""
+      },
+      "persistence_capable": {
+        "ok": true,
+        "detail": "localStorage keys 0->0"
+      },
+      "keyboard_reachable": {
+        "ok": true,
+        "detail": "5 focusable elements"
+      },
+      "tab_focus_visible": {
+        "ok": true,
+        "detail": "focus -> INPUT#name"
+      },
+      "images_have_alt": {
+        "ok": true,
+        "detail": "0 images"
+      },
+      "landmarks": {
+        "ok": true,
+        "detail": "header=True main=True footer=True"
+      },
+      "html_lang": {
+        "ok": true,
+        "detail": "en"
+      },
+      "focus_styles": {
+        "ok": true,
+        "detail": "CSS :focus rule present"
+      },
+      "no_horizontal_overflow": {
+        "ok": true,
+        "detail": "{\"mobile\": \"375>375\", \"tablet\": \"768>768\", \"desktop\": \"1440>1440\"}"
+      }
+    },
+    "console": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "overflow": {
+      "mobile": {
+        "scroll": 375,
+        "client": 375,
+        "overflows": false
+      },
+      "tablet": {
+        "scroll": 768,
+        "client": 768,
+        "overflows": false
+      },
+      "desktop": {
+        "scroll": 1440,
+        "client": 1440,
+        "overflows": false
+      }
+    }
+  },
+  {
+    "kind": "webapp",
+    "slug": "03_crm",
+    "path": "qa_artifacts/generated_webapps/03_crm/index.html",
+    "passed": false,
+    "fails": [
+      "index.html missing"
+    ],
+    "checks": {}
+  },
+  {
+    "kind": "webapp",
+    "slug": "04_expense_tracker",
+    "path": "qa_artifacts/generated_webapps/04_expense_tracker/index.html",
+    "passed": false,
+    "fails": [
+      "index.html missing"
+    ],
+    "checks": {}
+  },
+  {
+    "kind": "webapp",
+    "slug": "05_analytics_dashboard",
+    "path": "qa_artifacts/generated_webapps/05_analytics_dashboard/index.html",
+    "passed": false,
+    "fails": [
+      "buttons_clickable: 0 buttons"
+    ],
+    "checks": {
+      "title": {
+        "ok": true,
+        "detail": "Analytics Dashboard"
+      },
+      "h1_present": {
+        "ok": true,
+        "detail": "1 h1 element(s)"
+      },
+      "visible_content": {
+        "ok": true,
+        "detail": "237 chars"
+      },
+      "no_js_errors": {
+        "ok": true,
+        "detail": ""
+      },
+      "no_console_errors": {
+        "ok": true,
+        "detail": ""
+      },
+      "no_failed_requests": {
+        "ok": true,
+        "detail": ""
+      },
+      "internal_links": {
+        "ok": true,
+        "detail": "0 links"
+      },
+      "buttons_clickable": {
+        "ok": false,
+        "detail": "0 buttons"
+      },
+      "no_errors_after_clicks": {
+        "ok": true,
+        "detail": ""
+      },
+      "form_inputs_labelled": {
+        "ok": true,
+        "detail": "no forms"
+      },
+      "survives_reload": {
+        "ok": true,
+        "detail": "237 chars after reload"
+      },
+      "no_errors_after_reload": {
+        "ok": true,
+        "detail": ""
+      },
+      "persistence_capable": {
+        "ok": true,
+        "detail": "localStorage keys 0->0"
+      },
+      "keyboard_reachable": {
+        "ok": true,
+        "detail": "3 focusable elements"
+      },
+      "tab_focus_visible": {
+        "ok": true,
+        "detail": "focus -> INPUT"
+      },
+      "images_have_alt": {
+        "ok": true,
+        "detail": "0 images"
+      },
+      "landmarks": {
+        "ok": true,
+        "detail": "header=True main=True footer=True"
+      },
+      "html_lang": {
+        "ok": true,
+        "detail": "en"
+      },
+      "focus_styles": {
+        "ok": true,
+        "detail": "CSS :focus rule present"
+      },
+      "no_horizontal_overflow": {
+        "ok": true,
+        "detail": "{\"mobile\": \"375>375\", \"tablet\": \"768>768\", \"desktop\": \"1440>1440\"}"
+      }
+    },
+    "console": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "overflow": {
+      "mobile": {
+        "scroll": 375,
+        "client": 375,
+        "overflows": false
+      },
+      "tablet": {
+        "scroll": 768,
+        "client": 768,
+        "overflows": false
+      },
+      "desktop": {
+        "scroll": 1440,
+        "client": 1440,
+        "overflows": false
+      }
+    }
+  },
+  {
+    "kind": "webapp",
+    "slug": "06_appointment_booking",
+    "path": "qa_artifacts/generated_webapps/06_appointment_booking/index.html",
+    "passed": false,
+    "fails": [
+      "visible_content: 93 chars",
+      "survives_reload: 93 chars after reload"
+    ],
+    "checks": {
+      "title": {
+        "ok": true,
+        "detail": "Appointment Booking App"
+      },
+      "h1_present": {
+        "ok": true,
+        "detail": "1 h1 element(s)"
+      },
+      "visible_content": {
+        "ok": false,
+        "detail": "93 chars"
+      },
+      "no_js_errors": {
+        "ok": true,
+        "detail": ""
+      },
+      "no_console_errors": {
+        "ok": true,
+        "detail": ""
+      },
+      "no_failed_requests": {
+        "ok": true,
+        "detail": ""
+      },
+      "internal_links": {
+        "ok": true,
+        "detail": "0 links"
+      },
+      "buttons_clickable": {
+        "ok": true,
+        "detail": "2 buttons"
+      },
+      "no_errors_after_clicks": {
+        "ok": true,
+        "detail": ""
+      },
+      "form_inputs_labelled": {
+        "ok": true,
+        "detail": "1/1 inputs have an id/aria/placeholder"
+      },
+      "survives_reload": {
+        "ok": false,
+        "detail": "93 chars after reload"
+      },
+      "no_errors_after_reload": {
+        "ok": true,
+        "detail": ""
+      },
+      "persistence_capable": {
+        "ok": true,
+        "detail": "localStorage keys 0->0"
+      },
+      "keyboard_reachable": {
+        "ok": true,
+        "detail": "4 focusable elements"
+      },
+      "tab_focus_visible": {
+        "ok": true,
+        "detail": "focus -> INPUT#date"
+      },
+      "images_have_alt": {
+        "ok": true,
+        "detail": "0 images"
+      },
+      "landmarks": {
+        "ok": true,
+        "detail": "header=True main=True footer=True"
+      },
+      "html_lang": {
+        "ok": true,
+        "detail": "en"
+      },
+      "focus_styles": {
+        "ok": true,
+        "detail": "CSS :focus rule present"
+      },
+      "no_horizontal_overflow": {
+        "ok": true,
+        "detail": "{\"mobile\": \"375>375\", \"tablet\": \"768>768\", \"desktop\": \"1440>1440\"}"
+      }
+    },
+    "console": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "overflow": {
+      "mobile": {
+        "scroll": 375,
+        "client": 375,
+        "overflows": false
+      },
+      "tablet": {
+        "scroll": 768,
+        "client": 768,
+        "overflows": false
+      },
+      "desktop": {
+        "scroll": 1440,
+        "client": 1440,
+        "overflows": false
+      }
+    }
+  },
+  {
+    "kind": "webapp",
+    "slug": "07_kanban_board",
+    "path": "qa_artifacts/generated_webapps/07_kanban_board/index.html",
+    "passed": false,
+    "fails": [
+      "visible_content: 73 chars",
+      "survives_reload: 73 chars after reload",
+      "no_horizontal_overflow: {\"mobile\": \"1133>375\", \"tablet\": \"1133>768\", \"desktop\": \"1440>1440\"}"
+    ],
+    "checks": {
+      "title": {
+        "ok": true,
+        "detail": "Kanban Board"
+      },
+      "h1_present": {
+        "ok": true,
+        "detail": "1 h1 element(s)"
+      },
+      "visible_content": {
+        "ok": false,
+        "detail": "73 chars"
+      },
+      "no_js_errors": {
+        "ok": true,
+        "detail": ""
+      },
+      "no_console_errors": {
+        "ok": true,
+        "detail": ""
+      },
+      "no_failed_requests": {
+        "ok": true,
+        "detail": ""
+      },
+      "internal_links": {
+        "ok": true,
+        "detail": "0 links"
+      },
+      "buttons_clickable": {
+        "ok": true,
+        "detail": "1 buttons"
+      },
+      "no_errors_after_clicks": {
+        "ok": true,
+        "detail": ""
+      },
+      "form_inputs_labelled": {
+        "ok": true,
+        "detail": "1/1 inputs have an id/aria/placeholder"
+      },
+      "survives_reload": {
+        "ok": false,
+        "detail": "73 chars after reload"
+      },
+      "no_errors_after_reload": {
+        "ok": true,
+        "detail": ""
+      },
+      "persistence_capable": {
+        "ok": true,
+        "detail": "localStorage keys 0->0"
+      },
+      "keyboard_reachable": {
+        "ok": true,
+        "detail": "2 focusable elements"
+      },
+      "tab_focus_visible": {
+        "ok": true,
+        "detail": "focus -> INPUT#title"
+      },
+      "images_have_alt": {
+        "ok": true,
+        "detail": "0 images"
+      },
+      "landmarks": {
+        "ok": true,
+        "detail": "header=True main=True footer=True"
+      },
+      "html_lang": {
+        "ok": true,
+        "detail": "en"
+      },
+      "focus_styles": {
+        "ok": true,
+        "detail": "CSS :focus rule present"
+      },
+      "no_horizontal_overflow": {
+        "ok": false,
+        "detail": "{\"mobile\": \"1133>375\", \"tablet\": \"1133>768\", \"desktop\": \"1440>1440\"}"
+      }
+    },
+    "console": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "overflow": {
+      "mobile": {
+        "scroll": 1133,
+        "client": 375,
+        "overflows": true
+      },
+      "tablet": {
+        "scroll": 1133,
+        "client": 768,
+        "overflows": true
+      },
+      "desktop": {
+        "scroll": 1440,
+        "client": 1440,
+        "overflows": false
+      }
+    }
+  },
+  {
+    "kind": "webapp",
+    "slug": "08_notes_app",
+    "path": "qa_artifacts/generated_webapps/08_notes_app/index.html",
+    "passed": false,
+    "fails": [
+      "visible_content: 23 chars",
+      "no_js_errors: Cannot set properties of null (setting 'onclick')",
+      "buttons_clickable: 0 buttons",
+      "no_errors_after_clicks: Cannot set properties of null (setting 'onclick')",
+      "survives_reload: 23 chars after reload",
+      "no_errors_after_reload: Cannot set properties of null (setting 'onclick'); Cannot set properties of null (setting 'onclick')",
+      "keyboard_reachable: 0 focusable elements",
+      "tab_focus_visible: focus -> BODY",
+      "landmarks: header=False main=False footer=False",
+      "no_horizontal_overflow: {\"mobile\": \"433>375\", \"tablet\": \"768>768\", \"desktop\": \"1440>1440\"}"
+    ],
+    "checks": {
+      "title": {
+        "ok": true,
+        "detail": "Notes App"
+      },
+      "h1_present": {
+        "ok": true,
+        "detail": "1 h1 element(s)"
+      },
+      "visible_content": {
+        "ok": false,
+        "detail": "23 chars"
+      },
+      "no_js_errors": {
+        "ok": false,
+        "detail": "Cannot set properties of null (setting 'onclick')"
+      },
+      "no_console_errors": {
+        "ok": true,
+        "detail": ""
+      },
+      "no_failed_requests": {
+        "ok": true,
+        "detail": ""
+      },
+      "internal_links": {
+        "ok": true,
+        "detail": "0 links"
+      },
+      "buttons_clickable": {
+        "ok": false,
+        "detail": "0 buttons"
+      },
+      "no_errors_after_clicks": {
+        "ok": false,
+        "detail": "Cannot set properties of null (setting 'onclick')"
+      },
+      "form_inputs_labelled": {
+        "ok": true,
+        "detail": "no forms"
+      },
+      "survives_reload": {
+        "ok": false,
+        "detail": "23 chars after reload"
+      },
+      "no_errors_after_reload": {
+        "ok": false,
+        "detail": "Cannot set properties of null (setting 'onclick'); Cannot set properties of null (setting 'onclick')"
+      },
+      "persistence_capable": {
+        "ok": true,
+        "detail": "localStorage keys 0->0"
+      },
+      "keyboard_reachable": {
+        "ok": false,
+        "detail": "0 focusable elements"
+      },
+      "tab_focus_visible": {
+        "ok": false,
+        "detail": "focus -> BODY"
+      },
+      "images_have_alt": {
+        "ok": true,
+        "detail": "0 images"
+      },
+      "landmarks": {
+        "ok": false,
+        "detail": "header=False main=False footer=False"
+      },
+      "html_lang": {
+        "ok": true,
+        "detail": "en"
+      },
+      "focus_styles": {
+        "ok": true,
+        "detail": "CSS :focus rule present"
+      },
+      "no_horizontal_overflow": {
+        "ok": false,
+        "detail": "{\"mobile\": \"433>375\", \"tablet\": \"768>768\", \"desktop\": \"1440>1440\"}"
+      }
+    },
+    "console": [],
+    "page_errors": [
+      "Cannot set properties of null (setting 'onclick')",
+      "Cannot set properties of null (setting 'onclick')"
+    ],
+    "failed_requests": [],
+    "overflow": {
+      "mobile": {
+        "scroll": 433,
+        "client": 375,
+        "overflows": true
+      },
+      "tablet": {
+        "scroll": 768,
+        "client": 768,
+        "overflows": false
+      },
+      "desktop": {
+        "scroll": 1440,
+        "client": 1440,
+        "overflows": false
+      }
+    }
+  },
+  {
+    "kind": "webapp",
+    "slug": "09_quiz_app",
+    "path": "qa_artifacts/generated_webapps/09_quiz_app/index.html",
+    "passed": false,
+    "fails": [
+      "index.html missing"
+    ],
+    "checks": {}
+  },
+  {
+    "kind": "webapp",
+    "slug": "10_document_manager",
+    "path": "qa_artifacts/generated_webapps/10_document_manager/index.html",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "title": {
+        "ok": true,
+        "detail": "Document Manager"
+      },
+      "h1_present": {
+        "ok": true,
+        "detail": "1 h1 element(s)"
+      },
+      "visible_content": {
+        "ok": true,
+        "detail": "222 chars"
+      },
+      "no_js_errors": {
+        "ok": true,
+        "detail": ""
+      },
+      "no_console_errors": {
+        "ok": true,
+        "detail": ""
+      },
+      "no_failed_requests": {
+        "ok": true,
+        "detail": ""
+      },
+      "internal_links": {
+        "ok": true,
+        "detail": "0 links"
+      },
+      "buttons_clickable": {
+        "ok": true,
+        "detail": "2 buttons"
+      },
+      "no_errors_after_clicks": {
+        "ok": true,
+        "detail": ""
+      },
+      "form_inputs_labelled": {
+        "ok": true,
+        "detail": "4/4 inputs have an id/aria/placeholder"
+      },
+      "survives_reload": {
+        "ok": true,
+        "detail": "222 chars after reload"
+      },
+      "no_errors_after_reload": {
+        "ok": true,
+        "detail": ""
+      },
+      "persistence_capable": {
+        "ok": true,
+        "detail": "localStorage keys 0->0"
+      },
+      "keyboard_reachable": {
+        "ok": true,
+        "detail": "7 focusable elements"
+      },
+      "tab_focus_visible": {
+        "ok": true,
+        "detail": "focus -> INPUT#searchInput"
+      },
+      "images_have_alt": {
+        "ok": true,
+        "detail": "0 images"
+      },
+      "landmarks": {
+        "ok": true,
+        "detail": "header=True main=True footer=True"
+      },
+      "html_lang": {
+        "ok": true,
+        "detail": "en"
+      },
+      "focus_styles": {
+        "ok": true,
+        "detail": "CSS :focus rule present"
+      },
+      "no_horizontal_overflow": {
+        "ok": true,
+        "detail": "{\"mobile\": \"375>375\", \"tablet\": \"768>768\", \"desktop\": \"1440>1440\"}"
+      }
+    },
+    "console": [],
+    "page_errors": [],
+    "failed_requests": [],
+    "overflow": {
+      "mobile": {
+        "scroll": 375,
+        "client": 375,
+        "overflows": false
+      },
+      "tablet": {
+        "scroll": 768,
+        "client": 768,
+        "overflows": false
+      },
+      "desktop": {
+        "scroll": 1440,
+        "client": 1440,
+        "overflows": false
+      }
+    }
+  }
+]

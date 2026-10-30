@@ -1,0 +1,21 @@
+$ C:\Users\harma\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -X utf8 -m unittest qa_artifacts.regression_tests.test_security -v
+exit=0 seconds=2.1
+
+---- stdout ----
+
+---- stderr ----
+test_bind_can_be_overridden_deliberately (qa_artifacts.regression_tests.test_security.TestDashboardExposure.test_bind_can_be_overridden_deliberately) ... ok
+test_default_bind_is_loopback (qa_artifacts.regression_tests.test_security.TestDashboardExposure.test_default_bind_is_loopback) ... ok
+test_mask_hides_middle (qa_artifacts.regression_tests.test_security.TestKeyMasking.test_mask_hides_middle) ... ok
+test_status_never_returns_full_key (qa_artifacts.regression_tests.test_security.TestKeyMasking.test_status_never_returns_full_key) ... ok
+test_action_log_scrubs_api_key (qa_artifacts.regression_tests.test_security.TestLogScrubbing.test_action_log_scrubs_api_key) ... ok
+test_action_log_scrubs_bearer_token (qa_artifacts.regression_tests.test_security.TestLogScrubbing.test_action_log_scrubs_bearer_token) ... ok
+test_mission_logs_contain_no_credential_values (qa_artifacts.regression_tests.test_security.TestNoSecretsInQaLogs.test_mission_logs_contain_no_credential_values) ... ok
+test_make_call_refuses_honestly (qa_artifacts.regression_tests.test_security.TestRemovedCalling.test_make_call_refuses_honestly) ... ok
+test_whatsapp_control_rejects_call_actions (qa_artifacts.regression_tests.test_security.TestRemovedCalling.test_whatsapp_control_rejects_call_actions) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.941s
+
+OK
+

@@ -1,0 +1,195 @@
+{
+  "metadata": {
+    "name": "Keys.ai Website Template Library",
+    "version": "1.0.0",
+    "description": "Pre-built website sections inspired by shadcn/ui, Tailwind CSS, and Magic UI patterns",
+    "author": "Keys.ai"
+  },
+  "sections": {
+    "navigation": {
+      "name": "Navigation/Header",
+      "variants": {
+        "minimal": {
+          "description": "Clean minimal navigation with logo and links",
+          "html": "<header class=\"nav-minimal\"><div class=\"container flex items-center justify-between\"><a href=\"/\" class=\"nav-logo\">{{logo}}</a><nav class=\"nav-links\"><a href=\"#features\" class=\"nav-link\">Features</a><a href=\"#about\" class=\"nav-link\">About</a><a href=\"#pricing\" class=\"nav-link\">Pricing</a><a href=\"#contact\" class=\"nav-link\">Contact</a></nav><a href=\"#cta\" class=\"btn btn-primary\">Get Started</a></div></header>",
+          "css": ".nav-minimal { position: sticky; top: 0; z-index: 50; background: var(--background); border-bottom: 1px solid var(--border); backdrop-filter: blur(8px); } .nav-logo { font-size: 1.25rem; font-weight: 700; color: var(--primary); } .nav-links { display: flex; gap: 2rem; } .nav-link { color: var(--muted-foreground); text-decoration: none; transition: color 0.2s; } .nav-link:hover { color: var(--primary); }"
+        },
+        "glassmorphism": {
+          "description": "Modern glass-morphism navigation",
+          "html": "<header class=\"nav-glass\"><div class=\"container flex items-center justify-between\"><a href=\"/\" class=\"nav-logo\">{{logo}}</a><nav class=\"nav-links\"><a href=\"#features\" class=\"nav-link\">Features</a><a href=\"#about\" class=\"nav-link\">About</a><a href=\"#pricing\" class=\"nav-link\">Pricing</a></nav><div class=\"nav-actions\"><a href=\"#login\" class=\"btn btn-ghost\">Login</a><a href=\"#signup\" class=\"btn btn-primary\">Sign Up</a></div></div></header>",
+          "css": ".nav-glass { position: sticky; top: 0; z-index: 50; background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.2); } .dark .nav-glass { background: rgba(15, 23, 42, 0.8); } .nav-actions { display: flex; gap: 0.75rem; align-items: center; }"
+        },
+        "mobile_menu": {
+          "description": "Navigation with hamburger menu for mobile",
+          "html": "<header class=\"nav-mobile\"><div class=\"container flex items-center justify-between\"><a href=\"/\" class=\"nav-logo\">{{logo}}</a><nav class=\"nav-links-desktop\"><a href=\"#features\" class=\"nav-link\">Features</a><a href=\"#about\" class=\"nav-link\">About</a><a href=\"#pricing\" class=\"nav-link\">Pricing</a><a href=\"#contact\" class=\"nav-link\">Contact</a></nav><button class=\"mobile-menu-btn hide-desktop\" onclick=\"toggleMenu()\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M3 12h18M3 6h18M3 18h18\"/></svg></button></div><nav class=\"mobile-nav hide-desktop\" id=\"mobileMenu\"><a href=\"#features\" class=\"mobile-nav-link\">Features</a><a href=\"#about\" class=\"mobile-nav-link\">About</a><a href=\"#pricing\" class=\"mobile-nav-link\">Pricing</a><a href=\"#contact\" class=\"mobile-nav-link\">Contact</a><a href=\"#cta\" class=\"btn btn-primary\" style=\"width:100%\">Get Started</a></nav></header>",
+          "css": ".nav-mobile { position: sticky; top: 0; z-index: 50; background: var(--background); border-bottom: 1px solid var(--border); } .mobile-menu-btn { background: none; border: none; cursor: pointer; padding: 0.5rem; color: var(--foreground); } .mobile-nav { display: none; flex-direction: column; padding: 1rem; gap: 0.5rem; background: var(--background); border-bottom: 1px solid var(--border); } .mobile-nav.active { display: flex; } .mobile-nav-link { padding: 0.75rem; color: var(--foreground); text-decoration: none; border-radius: var(--radius-md); transition: background 0.2s; } .mobile-nav-link:hover { background: var(--accent); } @media (min-width: 768px) { .nav-links-desktop { display: flex !important; gap: 2rem; } }"
+        }
+      }
+    },
+    "hero": {
+      "name": "Hero Section",
+      "variants": {
+        "centered": {
+          "description": "Centered hero with headline, subtitle, and CTA buttons",
+          "html": "<section class=\"hero-centered\"><div class=\"container text-center\"><span class=\"badge badge-primary\" style=\"margin-bottom:1rem\">{{badge}}</span><h1 class=\"heading-xl\" style=\"margin-bottom:1.5rem\">{{headline}}</h1><p class=\"text-body text-muted\" style=\"max-width:600px;margin:0 auto 2rem\">{{subtitle}}</p><div class=\"flex gap-4 justify-center\"><a href=\"#cta\" class=\"btn btn-primary btn-lg\">{{cta_primary}}</a><a href=\"#demo\" class=\"btn btn-outline btn-lg\">{{cta_secondary}}</a></div></div></section>",
+          "css": ".hero-centered { padding: 6rem 0; background: linear-gradient(180deg, var(--background) 0%, var(--muted) 100%); } .heading-xl { font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 800; line-height: 1.1; letter-spacing: -0.025em; } .btn-lg { padding: 0.75rem 1.5rem; font-size: 1.125rem; }"
+        },
+        "split": {
+          "description": "Split hero with text on left, image/illustration on right",
+          "html": "<section class=\"hero-split\"><div class=\"container flex items-center gap-4\"><div class=\"hero-content\"><span class=\"badge badge-primary\" style=\"margin-bottom:1rem\">{{badge}}</span><h1 class=\"heading-xl\" style=\"margin-bottom:1.5rem\">{{headline}}</h1><p class=\"text-body text-muted\" style=\"margin-bottom:2rem\">{{subtitle}}</p><div class=\"flex gap-4\"><a href=\"#cta\" class=\"btn btn-primary btn-lg\">{{cta_primary}}</a><a href=\"#demo\" class=\"btn btn-ghost btn-lg\">{{cta_secondary}}</a></div></div><div class=\"hero-image\"><img src=\"{{image}}\" alt=\"{{image_alt}}\" /></div></div></section>",
+          "css": ".hero-split { padding: 6rem 0; } .hero-content { flex: 1; } .hero-image { flex: 1; } .hero-image img { width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); } @media (max-width: 768px) { .hero-split .container { flex-direction: column; text-align: center; } }"
+        },
+        "gradient": {
+          "description": "Hero with gradient background and floating elements",
+          "html": "<section class=\"hero-gradient\"><div class=\"hero-bg\"><div class=\"blob blob-1\"></div><div class=\"blob blob-2\"></div><div class=\"blob blob-3\"></div></div><div class=\"container text-center\" style=\"position:relative;z-index:1\"><h1 class=\"heading-xl\" style=\"margin-bottom:1.5rem\">{{headline}}</h1><p class=\"text-body\" style=\"max-width:600px;margin:0 auto 2rem;color:rgba(255,255,255,0.8)\">{{subtitle}}</p><a href=\"#cta\" class=\"btn btn-primary btn-lg\">{{cta_primary}}</a></div></section>",
+          "css": ".hero-gradient { position: relative; padding: 8rem 0; background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%); overflow: hidden; color: white; } .hero-bg { position: absolute; inset: 0; } .blob { position: absolute; border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; opacity: 0.3; animation: float 6s ease-in-out infinite; } .blob-1 { width: 400px; height: 400px; background: #818cf8; top: -100px; right: -100px; animation-delay: 0s; } .blob-2 { width: 300px; height: 300px; background: #c084fc; bottom: -50px; left: -50px; animation-delay: 2s; } .blob-3 { width: 200px; height: 200px; background: #22d3ee; top: 50%; left: 50%; animation-delay: 4s; }"
+        },
+        "video_bg": {
+          "description": "Hero with video background overlay",
+          "html": "<section class=\"hero-video\"><video autoplay muted loop playsinline class=\"hero-video-bg\"><source src=\"{{video_url}}\" type=\"video/mp4\"></video><div class=\"hero-overlay\"></div><div class=\"container text-center\" style=\"position:relative;z-index:1\"><h1 class=\"heading-xl\" style=\"margin-bottom:1.5rem;color:white\">{{headline}}</h1><p class=\"text-body\" style=\"max-width:600px;margin:0 auto 2rem;color:rgba(255,255,255,0.8)\">{{subtitle}}</p><a href=\"#cta\" class=\"btn btn-primary btn-lg\">{{cta_primary}}</a></div></section>",
+          "css": ".hero-video { position: relative; padding: 8rem 0; min-height: 80vh; display: flex; align-items: center; justify-content: center; overflow: hidden; } .hero-video-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; } .hero-overlay { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.6); }"
+        }
+      }
+    },
+    "features": {
+      "name": "Features/Services Section",
+      "variants": {
+        "grid_3": {
+          "description": "3-column feature grid with icons",
+          "html": "<section id=\"features\" class=\"section\"><div class=\"container\"><div class=\"text-center\" style=\"margin-bottom:3rem\"><span class=\"badge badge-secondary\">Features</span><h2 class=\"heading-lg\" style=\"margin-top:1rem\">{{headline}}</h2><p class=\"text-body text-muted\" style=\"max-width:600px;margin:0.5rem auto 0\">{{subtitle}}</p></div><div class=\"grid-3\"><div class=\"card feature-card\"><div class=\"feature-icon\">{{icon_1}}</div><h3 class=\"feature-title\">{{feature_1_title}}</h3><p class=\"feature-desc\">{{feature_1_desc}}</p></div><div class=\"card feature-card\"><div class=\"feature-icon\">{{icon_2}}</div><h3 class=\"feature-title\">{{feature_2_title}}</h3><p class=\"feature-desc\">{{feature_2_desc}}</p></div><div class=\"card feature-card\"><div class=\"feature-icon\">{{icon_3}}</div><h3 class=\"feature-title\">{{feature_3_title}}</h3><p class=\"feature-desc\">{{feature_3_desc}}</p></div></div></div></section>",
+          "css": ".section { padding: 5rem 0; } .heading-lg { font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700; } .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; } .feature-card { text-align: center; padding: 2rem; transition: transform 0.3s, box-shadow 0.3s; } .feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); } .feature-icon { width: 48px; height: 48px; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; background: var(--primary); color: var(--primary-foreground); border-radius: var(--radius-md); font-size: 1.5rem; } .feature-title { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; } .feature-desc { color: var(--muted-foreground); line-height: 1.6; }"
+        },
+        "grid_4": {
+          "description": "4-column feature grid",
+          "html": "<section id=\"features\" class=\"section\"><div class=\"container\"><div class=\"text-center\" style=\"margin-bottom:3rem\"><h2 class=\"heading-lg\">{{headline}}</h2><p class=\"text-body text-muted\">{{subtitle}}</p></div><div class=\"grid-4\"><div class=\"feature-item\"><div class=\"feature-icon-circle\">{{icon_1}}</div><h4>{{feature_1_title}}</h4><p class=\"text-muted\">{{feature_1_desc}}</p></div><div class=\"feature-item\"><div class=\"feature-icon-circle\">{{icon_2}}</div><h4>{{feature_2_title}}</h4><p class=\"text-muted\">{{feature_2_desc}}</p></div><div class=\"feature-item\"><div class=\"feature-icon-circle\">{{icon_3}}</div><h4>{{feature_3_title}}</h4><p class=\"text-muted\">{{feature_3_desc}}</p></div><div class=\"feature-item\"><div class=\"feature-icon-circle\">{{icon_4}}</div><h4>{{feature_4_title}}</h4><p class=\"text-muted\">{{feature_4_desc}}</p></div></div></div></section>",
+          "css": ".grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; } .feature-item { text-align: center; padding: 1.5rem; } .feature-icon-circle { width: 64px; height: 64px; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; background: var(--accent); color: var(--accent-foreground); border-radius: 50%; font-size: 1.75rem; }"
+        },
+        "split_image": {
+          "description": "Features with image on one side, list on other",
+          "html": "<section id=\"features\" class=\"section\"><div class=\"container flex items-center gap-4\"><div class=\"features-image\"><img src=\"{{image}}\" alt=\"Features\" /></div><div class=\"features-list\"><span class=\"badge badge-secondary\">Features</span><h2 class=\"heading-lg\" style=\"margin:1rem 0\">{{headline}}</h2><div class=\"feature-row\"><div class=\"feature-check\">✓</div><div><h4>{{feature_1_title}}</h4><p class=\"text-muted\">{{feature_1_desc}}</p></div></div><div class=\"feature-row\"><div class=\"feature-check\">✓</div><div><h4>{{feature_2_title}}</h4><p class=\"text-muted\">{{feature_2_desc}}</p></div></div><div class=\"feature-row\"><div class=\"feature-check\">✓</div><div><h4>{{feature_3_title}}</h4><p class=\"text-muted\">{{feature_3_desc}}</p></div></div></div></div></section>",
+          "css": ".features-image { flex: 1; } .features-image img { width: 100%; border-radius: var(--radius-lg); } .features-list { flex: 1; } .feature-row { display: flex; gap: 1rem; margin-bottom: 1.5rem; } .feature-check { width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; background: var(--primary); color: var(--primary-foreground); border-radius: 50%; font-size: 0.75rem; flex-shrink: 0; margin-top: 0.25rem; }"
+        }
+      }
+    },
+    "about": {
+      "name": "About Section",
+      "variants": {
+        "split": {
+          "description": "About with image and text side by side",
+          "html": "<section id=\"about\" class=\"section\"><div class=\"container flex items-center gap-4\"><div class=\"about-content\"><span class=\"badge badge-secondary\">About Us</span><h2 class=\"heading-lg\" style=\"margin:1rem 0\">{{headline}}</h2><p class=\"text-body text-muted\" style=\"margin-bottom:1.5rem\">{{description}}</p><div class=\"about-stats\"><div class=\"stat\"><span class=\"stat-number\">{{stat_1_number}}</span><span class=\"stat-label\">{{stat_1_label}}</span></div><div class=\"stat\"><span class=\"stat-number\">{{stat_2_number}}</span><span class=\"stat-label\">{{stat_2_label}}</span></div><div class=\"stat\"><span class=\"stat-number\">{{stat_3_number}}</span><span class=\"stat-label\">{{stat_3_label}}</span></div></div></div><div class=\"about-image\"><img src=\"{{image}}\" alt=\"About us\" /></div></div></section>",
+          "css": ".about-stats { display: flex; gap: 3rem; margin-top: 2rem; } .stat { display: flex; flex-direction: column; } .stat-number { font-size: 2rem; font-weight: 700; color: var(--primary); } .stat-label { color: var(--muted-foreground); font-size: 0.875rem; } .about-image img { width: 100%; border-radius: var(--radius-lg); }"
+        },
+        "centered": {
+          "description": "Centered about section with team or mission",
+          "html": "<section id=\"about\" class=\"section\" style=\"background:var(--muted)\"><div class=\"container text-center\"><span class=\"badge badge-secondary\">About Us</span><h2 class=\"heading-lg\" style=\"margin:1rem 0\">{{headline}}</h2><p class=\"text-body text-muted\" style=\"max-width:700px;margin:0 auto 3rem\">{{description}}</p><div class=\"about-mission\"><div class=\"mission-card\"><h3>Our Mission</h3><p>{{mission}}</p></div><div class=\"mission-card\"><h3>Our Vision</h3><p>{{vision}}</p></div><div class=\"mission-card\"><h3>Our Values</h3><p>{{values}}</p></div></div></div></section>",
+          "css": ".about-mission { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; } .mission-card { background: var(--background); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--border); } .mission-card h3 { margin-bottom: 0.75rem; } .mission-card p { color: var(--muted-foreground); }"
+        }
+      }
+    },
+    "portfolio": {
+      "name": "Portfolio/Gallery Section",
+      "variants": {
+        "grid": {
+          "description": "Portfolio grid with hover effects",
+          "html": "<section id=\"portfolio\" class=\"section\"><div class=\"container\"><div class=\"text-center\" style=\"margin-bottom:3rem\"><span class=\"badge badge-secondary\">Portfolio</span><h2 class=\"heading-lg\" style=\"margin-top:1rem\">{{headline}}</h2></div><div class=\"portfolio-grid\"><div class=\"portfolio-item\"><img src=\"{{project_1_image}}\" alt=\"{{project_1_title}}\" /><div class=\"portfolio-overlay\"><h4>{{project_1_title}}</h4><p>{{project_1_desc}}</p><a href=\"{{project_1_link}}\" class=\"btn btn-sm btn-primary\">View Project</a></div></div><div class=\"portfolio-item\"><img src=\"{{project_2_image}}\" alt=\"{{project_2_title}}\" /><div class=\"portfolio-overlay\"><h4>{{project_2_title}}</h4><p>{{project_2_desc}}</p><a href=\"{{project_2_link}}\" class=\"btn btn-sm btn-primary\">View Project</a></div></div><div class=\"portfolio-item\"><img src=\"{{project_3_image}}\" alt=\"{{project_3_title}}\" /><div class=\"portfolio-overlay\"><h4>{{project_3_title}}</h4><p>{{project_3_desc}}</p><a href=\"{{project_3_link}}\" class=\"btn btn-sm btn-primary\">View Project</a></div></div></div></div></section>",
+          "css": ".portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 1.5rem; } .portfolio-item { position: relative; border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 16/10; } .portfolio-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; } .portfolio-item:hover img { transform: scale(1.05); } .portfolio-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.5rem; opacity: 0; transition: opacity 0.3s; color: white; } .portfolio-item:hover .portfolio-overlay { opacity: 1; } .portfolio-overlay h4 { margin-bottom: 0.25rem; } .portfolio-overlay p { font-size: 0.875rem; opacity: 0.8; margin-bottom: 0.75rem; } .btn-sm { padding: 0.375rem 0.75rem; font-size: 0.875rem; }"
+        },
+        "masonry": {
+          "description": "Masonry-style portfolio layout",
+          "html": "<section id=\"portfolio\" class=\"section\"><div class=\"container\"><h2 class=\"heading-lg text-center\" style=\"margin-bottom:3rem\">{{headline}}</h2><div class=\"masonry-grid\"><div class=\"masonry-item tall\"><img src=\"{{image_1}}\" alt=\"Project 1\" /></div><div class=\"masonry-item\"><img src=\"{{image_2}}\" alt=\"Project 2\" /></div><div class=\"masonry-item\"><img src=\"{{image_3}}\" alt=\"Project 3\" /></div><div class=\"masonry-item tall\"><img src=\"{{image_4}}\" alt=\"Project 4\" /></div><div class=\"masonry-item\"><img src=\"{{image_5}}\" alt=\"Project 5\" /></div><div class=\"masonry-item\"><img src=\"{{image_6}}\" alt=\"Project 6\" /></div></div></div></section>",
+          "css": ".masonry-grid { columns: 3; column-gap: 1rem; } @media (max-width: 1024px) { .masonry-grid { columns: 2; } } @media (max-width: 640px) { .masonry-grid { columns: 1; } } .masonry-item { break-inside: avoid; margin-bottom: 1rem; border-radius: var(--radius-lg); overflow: hidden; } .masonry-item img { width: 100%; display: block; transition: transform 0.3s; } .masonry-item:hover img { transform: scale(1.03); }"
+        }
+      }
+    },
+    "testimonials": {
+      "name": "Testimonials Section",
+      "variants": {
+        "cards": {
+          "description": "Testimonial cards grid",
+          "html": "<section id=\"testimonials\" class=\"section\" style=\"background:var(--muted)\"><div class=\"container\"><div class=\"text-center\" style=\"margin-bottom:3rem\"><span class=\"badge badge-secondary\">Testimonials</span><h2 class=\"heading-lg\" style=\"margin-top:1rem\">{{headline}}</h2></div><div class=\"grid-3\"><div class=\"card testimonial-card\"><div class=\"testimonial-stars\">★★★★★</div><p class=\"testimonial-text\">{{testimonial_1}}</p><div class=\"testimonial-author\"><img src=\"{{author_1_avatar}}\" alt=\"{{author_1_name}}\" class=\"avatar\" /><div><strong>{{author_1_name}}</strong><span class=\"text-muted\">{{author_1_role}}</span></div></div></div><div class=\"card testimonial-card\"><div class=\"testimonial-stars\">★★★★★</div><p class=\"testimonial-text\">{{testimonial_2}}</p><div class=\"testimonial-author\"><img src=\"{{author_2_avatar}}\" alt=\"{{author_2_name}}\" class=\"avatar\" /><div><strong>{{author_2_name}}</strong><span class=\"text-muted\">{{author_2_role}}</span></div></div></div><div class=\"card testimonial-card\"><div class=\"testimonial-stars\">★★★★★</div><p class=\"testimonial-text\">{{testimonial_3}}</p><div class=\"testimonial-author\"><img src=\"{{author_3_avatar}}\" alt=\"{{author_3_name}}\" class=\"avatar\" /><div><strong>{{author_3_name}}</strong><span class=\"text-muted\">{{author_3_role}}</span></div></div></div></div></div></section>",
+          "css": ".testimonial-card { padding: 2rem; } .testimonial-stars { color: #fbbf24; font-size: 1.25rem; margin-bottom: 1rem; } .testimonial-text { font-style: italic; color: var(--foreground); line-height: 1.7; margin-bottom: 1.5rem; } .testimonial-author { display: flex; align-items: center; gap: 0.75rem; } .avatar { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; } .testimonial-author strong { display: block; } .testimonial-author span { font-size: 0.875rem; }"
+        },
+        "carousel": {
+          "description": "Single testimonial with auto-rotation",
+          "html": "<section id=\"testimonials\" class=\"section\"><div class=\"container text-center\"><h2 class=\"heading-lg\" style=\"margin-bottom:3rem\">{{headline}}</h2><div class=\"testimonial-carousel\"><div class=\"testimonial-slide active\"><p class=\"testimonial-quote\">\"{{testimonial}}\"</p><div class=\"testimonial-author-center\"><img src=\"{{author_avatar}}\" alt=\"{{author_name}}\" class=\"avatar-lg\" /><strong>{{author_name}}</strong><span class=\"text-muted\">{{author_role}}</span></div></div></div><div class=\"carousel-dots\"><button class=\"dot active\"></button><button class=\"dot\"></button><button class=\"dot\"></button></div></div></section>",
+          "css": ".testimonial-carousel { max-width: 700px; margin: 0 auto; } .testimonial-quote { font-size: 1.25rem; font-style: italic; line-height: 1.8; margin-bottom: 2rem; } .testimonial-author-center { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; } .avatar-lg { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; margin-bottom: 0.5rem; } .carousel-dots { display: flex; justify-content: center; gap: 0.5rem; margin-top: 2rem; } .dot { width: 10px; height: 10px; border-radius: 50%; border: none; background: var(--border); cursor: pointer; transition: background 0.2s; } .dot.active { background: var(--primary); }"
+        }
+      }
+    },
+    "pricing": {
+      "name": "Pricing Section",
+      "variants": {
+        "cards": {
+          "description": "Pricing cards with highlighted plan",
+          "html": "<section id=\"pricing\" class=\"section\"><div class=\"container\"><div class=\"text-center\" style=\"margin-bottom:3rem\"><span class=\"badge badge-secondary\">Pricing</span><h2 class=\"heading-lg\" style=\"margin-top:1rem\">{{headline}}</h2><p class=\"text-body text-muted\">{{subtitle}}</p></div><div class=\"pricing-grid\"><div class=\"card pricing-card\"><h3>{{plan_1_name}}</h3><div class=\"price\"><span class=\"price-amount\">{{plan_1_price}}</span><span class=\"price-period\">{{plan_1_period}}</span></div><ul class=\"pricing-features\"><li>{{plan_1_feature_1}}</li><li>{{plan_1_feature_2}}</li><li>{{plan_1_feature_3}}</li></ul><a href=\"#\" class=\"btn btn-outline\" style=\"width:100%\">{{plan_1_cta}}</a></div><div class=\"card pricing-card pricing-popular\"><div class=\"popular-badge\">Most Popular</div><h3>{{plan_2_name}}</h3><div class=\"price\"><span class=\"price-amount\">{{plan_2_price}}</span><span class=\"price-period\">{{plan_2_period}}</span></div><ul class=\"pricing-features\"><li>{{plan_2_feature_1}}</li><li>{{plan_2_feature_2}}</li><li>{{plan_2_feature_3}}</li><li>{{plan_2_feature_4}}</li></ul><a href=\"#\" class=\"btn btn-primary\" style=\"width:100%\">{{plan_2_cta}}</a></div><div class=\"card pricing-card\"><h3>{{plan_3_name}}</h3><div class=\"price\"><span class=\"price-amount\">{{plan_3_price}}</span><span class=\"price-period\">{{plan_3_period}}</span></div><ul class=\"pricing-features\"><li>{{plan_3_feature_1}}</li><li>{{plan_3_feature_2}}</li><li>{{plan_3_feature_3}}</li></ul><a href=\"#\" class=\"btn btn-outline\" style=\"width:100%\">{{plan_3_cta}}</a></div></div></div></section>",
+          "css": ".pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; align-items: center; } .pricing-card { text-align: center; padding: 2.5rem 2rem; position: relative; } .pricing-popular { border: 2px solid var(--primary); transform: scale(1.05); box-shadow: var(--shadow-xl); } .popular-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--primary); color: var(--primary-foreground); padding: 0.25rem 1rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; } .price { margin: 1.5rem 0; } .price-amount { font-size: 3rem; font-weight: 800; } .price-period { color: var(--muted-foreground); } .pricing-features { list-style: none; padding: 0; margin: 1.5rem 0; text-align: left; } .pricing-features li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); } .pricing-features li::before { content: '✓ '; color: var(--primary); font-weight: bold; }"
+        }
+      }
+    },
+    "cta": {
+      "name": "Call to Action Section",
+      "variants": {
+        "gradient": {
+          "description": "Gradient CTA with action buttons",
+          "html": "<section id=\"cta\" class=\"cta-gradient\"><div class=\"container text-center\"><h2 class=\"heading-lg\" style=\"color:white;margin-bottom:1rem\">{{headline}}</h2><p class=\"text-body\" style=\"color:rgba(255,255,255,0.8);max-width:600px;margin:0 auto 2rem\">{{subtitle}}</p><div class=\"flex gap-4 justify-center\"><a href=\"#\" class=\"btn btn-white\">{{cta_primary}}</a><a href=\"#\" class=\"btn btn-outline-white\">{{cta_secondary}}</a></div></div></section>",
+          "css": ".cta-gradient { padding: 5rem 0; background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%); color: white; } .btn-white { background: white; color: #6366f1; padding: 0.75rem 1.5rem; border-radius: var(--radius-md); font-weight: 600; text-decoration: none; transition: all 0.2s; } .btn-white:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); } .btn-outline-white { border: 2px solid white; color: white; padding: 0.75rem 1.5rem; border-radius: var(--radius-md); font-weight: 600; text-decoration: none; transition: all 0.2s; } .btn-outline-white:hover { background: white; color: #6366f1; }"
+        },
+        "dark": {
+          "description": "Dark CTA section",
+          "html": "<section id=\"cta\" class=\"cta-dark\"><div class=\"container flex items-center justify-between\"><div><h2 class=\"heading-lg\" style=\"color:white\">{{headline}}</h2><p style=\"color:rgba(255,255,255,0.7)\">{{subtitle}}</p></div><a href=\"#\" class=\"btn btn-primary btn-lg\">{{cta}}</a></div></section>",
+          "css": ".cta-dark { padding: 4rem 0; background: var(--foreground); color: white; } .cta-dark .heading-lg { color: white; }"
+        }
+      }
+    },
+    "contact": {
+      "name": "Contact Section",
+      "variants": {
+        "split": {
+          "description": "Contact form with info on side",
+          "html": "<section id=\"contact\" class=\"section\"><div class=\"container flex gap-4\"><div class=\"contact-info\"><span class=\"badge badge-secondary\">Contact</span><h2 class=\"heading-lg\" style=\"margin:1rem 0\">{{headline}}</h2><p class=\"text-muted\" style=\"margin-bottom:2rem\">{{subtitle}}</p><div class=\"contact-item\"><span class=\"contact-icon\">📍</span><span>{{address}}</span></div><div class=\"contact-item\"><span class=\"contact-icon\">📧</span><span>{{email}}</span></div><div class=\"contact-item\"><span class=\"contact-icon\">📞</span><span>{{phone}}</span></div></div><div class=\"card\" style=\"flex:1;padding:2rem\"><form class=\"contact-form\"><div class=\"form-group\"><label for=\"name\">Name</label><input type=\"text\" id=\"name\" class=\"input\" placeholder=\"Your name\" /></div><div class=\"form-group\"><label for=\"email\">Email</label><input type=\"email\" id=\"email\" class=\"input\" placeholder=\"your@email.com\" /></div><div class=\"form-group\"><label for=\"message\">Message</label><textarea id=\"message\" class=\"input\" rows=\"4\" placeholder=\"Your message\"></textarea></div><button type=\"submit\" class=\"btn btn-primary\" style=\"width:100%\">Send Message</button></form></div></div></section>",
+          "css": ".contact-info { flex: 1; } .contact-item { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; } .contact-icon { font-size: 1.25rem; } .contact-form { display: flex; flex-direction: column; gap: 1rem; } .form-group { display: flex; flex-direction: column; gap: 0.375rem; } .form-group label { font-weight: 500; font-size: 0.875rem; } .input { resize: vertical; min-height: 100px; }"
+        },
+        "centered": {
+          "description": "Centered contact form",
+          "html": "<section id=\"contact\" class=\"section\" style=\"background:var(--muted)\"><div class=\"container text-center\" style=\"max-width:600px\"><h2 class=\"heading-lg\">{{headline}}</h2><p class=\"text-muted\" style=\"margin-bottom:2rem\">{{subtitle}}</p><form class=\"contact-form\"><div class=\"form-row\"><input type=\"text\" class=\"input\" placeholder=\"Your name\" /><input type=\"email\" class=\"input\" placeholder=\"your@email.com\" /></div><textarea class=\"input\" rows=\"4\" placeholder=\"Your message\"></textarea><button type=\"submit\" class=\"btn btn-primary\" style=\"width:100%\">Send Message</button></form></div></section>",
+          "css": ".form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; } @media (max-width: 640px) { .form-row { grid-template-columns: 1fr; } } .contact-form { display: flex; flex-direction: column; gap: 1rem; }"
+        }
+      }
+    },
+    "footer": {
+      "name": "Footer Section",
+      "variants": {
+        "grid": {
+          "description": "Footer with multiple columns",
+          "html": "<footer class=\"footer\"><div class=\"container\"><div class=\"footer-grid\"><div class=\"footer-brand\"><a href=\"/\" class=\"footer-logo\">{{logo}}</a><p class=\"text-muted\">{{tagline}}</p><div class=\"social-links\"><a href=\"#\" class=\"social-link\">Twitter</a><a href=\"#\" class=\"social-link\">GitHub</a><a href=\"#\" class=\"social-link\">LinkedIn</a></div></div><div class=\"footer-links\"><h4>Product</h4><a href=\"#\">Features</a><a href=\"#\">Pricing</a><a href=\"#\">Documentation</a></div><div class=\"footer-links\"><h4>Company</h4><a href=\"#\">About</a><a href=\"#\">Blog</a><a href=\"#\">Careers</a></div><div class=\"footer-links\"><h4>Support</h4><a href=\"#\">Help Center</a><a href=\"#\">Contact</a><a href=\"#\">Status</a></div></div><div class=\"footer-bottom\"><p>&copy; {{year}} {{company}}. All rights reserved.</p></div></div></footer>",
+          "css": ".footer { background: var(--foreground); color: var(--background); padding: 4rem 0 2rem; } .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; } @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr; } } @media (max-width: 480px) { .footer-grid { grid-template-columns: 1fr; } } .footer-logo { font-size: 1.25rem; font-weight: 700; color: white; text-decoration: none; } .footer-brand p { margin: 1rem 0; } .social-links { display: flex; gap: 1rem; } .social-link { color: rgba(255,255,255,0.7); text-decoration: none; transition: color 0.2s; } .social-link:hover { color: white; } .footer-links { display: flex; flex-direction: column; gap: 0.75rem; } .footer-links h4 { margin-bottom: 0.5rem; color: white; } .footer-links a { color: rgba(255,255,255,0.7); text-decoration: none; transition: color 0.2s; } .footer-links a:hover { color: white; } .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; text-align: center; color: rgba(255,255,255,0.5); font-size: 0.875rem; }"
+        },
+        "simple": {
+          "description": "Simple centered footer",
+          "html": "<footer class=\"footer-simple\"><div class=\"container text-center\"><a href=\"/\" class=\"footer-logo\">{{logo}}</a><p class=\"text-muted\" style=\"margin:1rem 0\">{{tagline}}</p><div class=\"footer-links-center\"><a href=\"#\">Privacy</a><a href=\"#\">Terms</a><a href=\"#\">Contact</a></div><p class=\"footer-copyright\">&copy; {{year}} {{company}}. All rights reserved.</p></div></footer>",
+          "css": ".footer-simple { background: var(--foreground); color: var(--background); padding: 3rem 0; } .footer-links-center { display: flex; justify-content: center; gap: 2rem; margin: 1.5rem 0; } .footer-links-center a { color: rgba(255,255,255,0.7); text-decoration: none; transition: color 0.2s; } .footer-links-center a:hover { color: white; } .footer-copyright { color: rgba(255,255,255,0.5); font-size: 0.875rem; }"
+        }
+      }
+    },
+    "stats": {
+      "name": "Stats Section",
+      "variants": {
+        "grid": {
+          "description": "Stats counters in a row",
+          "html": "<section class=\"section stats-section\"><div class=\"container\"><div class=\"stats-grid\"><div class=\"stat-item\"><span class=\"stat-number\">{{stat_1_number}}</span><span class=\"stat-label\">{{stat_1_label}}</span></div><div class=\"stat-item\"><span class=\"stat-number\">{{stat_2_number}}</span><span class=\"stat-label\">{{stat_2_label}}</span></div><div class=\"stat-item\"><span class=\"stat-number\">{{stat_3_number}}</span><span class=\"stat-label\">{{stat_3_label}}</span></div><div class=\"stat-item\"><span class=\"stat-number\">{{stat_4_number}}</span><span class=\"stat-label\">{{stat_4_label}}</span></div></div></div></section>",
+          "css": ".stats-section { background: var(--muted); } .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center; } .stat-item { display: flex; flex-direction: column; } .stat-number { font-size: 3rem; font-weight: 800; color: var(--primary); line-height: 1; } .stat-label { color: var(--muted-foreground); margin-top: 0.5rem; }"
+        }
+      }
+    },
+    "team": {
+      "name": "Team Section",
+      "variants": {
+        "grid": {
+          "description": "Team member cards",
+          "html": "<section id=\"team\" class=\"section\"><div class=\"container\"><div class=\"text-center\" style=\"margin-bottom:3rem\"><h2 class=\"heading-lg\">Meet Our Team</h2><p class=\"text-muted\">The people behind the product</p></div><div class=\"team-grid\"><div class=\"team-card\"><img src=\"{{member_1_avatar}}\" alt=\"{{member_1_name}}\" class=\"team-avatar\" /><h4>{{member_1_name}}</h4><span class=\"text-muted\">{{member_1_role}}</span></div><div class=\"team-card\"><img src=\"{{member_2_avatar}}\" alt=\"{{member_2_name}}\" class=\"team-avatar\" /><h4>{{member_2_name}}</h4><span class=\"text-muted\">{{member_2_role}}</span></div><div class=\"team-card\"><img src=\"{{member_3_avatar}}\" alt=\"{{member_3_name}}\" class=\"team-avatar\" /><h4>{{member_3_name}}</h4><span class=\"text-muted\">{{member_3_role}}</span></div></div></div></section>",
+          "css": ".team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; } .team-card { text-align: center; padding: 2rem; } .team-avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; border: 4px solid var(--border); }"
+        }
+      }
+    }
+  }
+}

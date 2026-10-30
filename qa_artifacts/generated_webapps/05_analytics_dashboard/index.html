@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header, footer { background-color: #333; color: white; padding: 1em; text-align: center; }
+        main { padding: 20px; }
+        .kpi { display: flex; justify-content: space-between; margin-bottom: 10px; }
+        .chart svg { width: 100%; max-width: 600px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #f2f2f2; }
+        .period-selector { margin-top: 20px; text-align: center; }
+        input[type="radio"] { margin-right: 5px; }
+        button:focus-visible, input:focus-visible { outline: 2px solid blue; outline-offset: 2px; }
+    </style>
+</head>
+<body>
+    <header><h1>Analytics Dashboard</h1></header>
+    <main id="dashboard">
+        <div class="kpi" id="kpi1"><span>Sales ($)</span><span id="salesValue">$30,000</span></div>
+        <div class="kpi" id="kpi2"><span>Users</span><span id="usersValue">500</span></div>
+        <div class="kpi" id="kpi3"><span>Average Revenue</span><span id="averageRevenueValue">$60</span></div>
+        <div class="kpi" id="kpi4"><span>Churn Rate (%)</span><span id="churnRateValue">5%</span></div>
+        <div class="chart">
+            <svg id="barChart"></svg>
+        </div>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Sales ($)</th>
+                    <th>Users</th>
+                    <th>Average Revenue</th>
+                    <th>Churn Rate (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated here -->
+            </tbody>
+        </table>
+        <div class="period-selector">
+            <label><input type="radio" name="period" value="3" checked> 3 Months</label>
+            <label><input type="radio" name="period" value="6"> 6 Months</label>
+            <label><input type="radio" name="period" value="12"> 1 Year</label>
+        </div>
+    </main>
+    <footer>&copy; 2023 Analytics Dashboard</footer>
+    <script>
+        const data = [
+            { month: 'Jan', sales: 3000, users: 50, averageRevenue: 60, churnRate: 5 },
+            { month: 'Feb', sales: 2800, users: 45, averageRevenue: 58, churnRate: 4.5 },
+            // Add more data as needed
+        ];
+        const tableBody = document.querySelector('#dataTable tbody');
+        function renderData(data) {
+            tableBody.innerHTML = '';
+            data.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `<td>${item.month}</td><td>$${item.sales}</td><td>${item.users}</td><td>$${item.averageRevenue}</td><td>${item.churnRate}%</td>`;
+                tableBody.appendChild(row);
+            });
+        }
+        function renderKPIs(data) {
+            document.querySelector('#salesValue').textContent = `$${data.reduce((acc, item) => acc + item.sales, 0)}`;
+            document.querySelector('#usersValue').textContent = data.reduce((acc, item) => acc + item.users, 0);
+            document.querySelector('#averageRevenueValue').textContent = `$${(data.reduce((acc, item) => acc + item.averageRevenue * item.users, 0) / data.reduce((acc, item) => acc + item.users, 0)).toFixed(2)}`;
+            document.querySelector('#churnRateValue').textContent = `${(data.reduce((acc, item) => acc + item.churnRate * item.users, 0) / data.reduce((acc, item) => acc + item.users, 0)).toFixed(1)}%`;
+        }
+        function renderChart(data) {
+            const svg = document.querySelector('#barChart');
+            const width = svg.clientWidth;
+            const height = svg.clientHeight;
+            const barWidth = (width / data.length) * 0.8;
+            const padding = 10;
+            const maxSales = Math.max(...data.map(item => item.sales));
+            data.forEach((item, index) => {
+                const x = index * ((width / data.length)) + padding;
+                const y = height - (item.sales / maxSales) * height;
+                const barHeight = (item.sales / maxSales) * height;
+                svg.innerHTML += `<rect x="${x}" y="${y}" width="${barWidth}" height="${barHeight}" fill="#4CAF50"></rect>`;
+            });
+        }
+        function updateDashboard(period) {
+            const selectedData = data.slice(0, period);
+            renderData(selectedData);
+            renderKPIs(selectedData);
+            renderChart(selectedData);
+        }
+        document.querySelectorAll('input[name="period"]').forEach(input => {
+            input.addEventListener('change', () => {
+                updateDashboard(parseInt(input.value));
+            });
+        });
+        updateDashboard(3);
+    </script>
+</body>
+</html>

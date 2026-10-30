@@ -1,0 +1,11 @@
+# P09 exit=0 timeout=False seconds=40.6
+# ---- stdout ----
+[FileProcessor] CREATE PPTX | P09_project_status.pptx
+[P09] 40.4s  exists=True  bytes=36015  result=Created PowerPoint presentation: P09_project_status.pptx (35.2 KB)
+Saved to: C:\Users\harma\Desktop\PROJECTS\K
+restored file_processor task model -> {'provider': 'ollama', 'model': 'qwen3:8b', 'url': ''}
+
+DONE 1 pptx artifact(s) in C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\generated_presentations
+
+# ---- stderr ----
+

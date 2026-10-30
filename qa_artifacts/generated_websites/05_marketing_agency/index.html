@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Northline Digital</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial, sans-serif; max-width: 100%; }
+        header, main, footer { padding: 20px; }
+        .service-card, .case-study-card, .team-member { margin: 10px; }
+        .contact-form button { margin-top: 10px; }
+        a:focus-visible, button:focus-visible { outline: none; border: 2px solid #007bff; padding: 4px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Northline Digital</h1>
+        <nav>
+            <ul>
+                <li><a href='#hero'>Home</a></li>
+                <li><a href='#services'>Services</a></li>
+                <li><a href='#case-studies'>Case Studies</a></li>
+                <li><a href='#team'>Team</a></li>
+                <li><a href='#contact'>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id='hero'>
+        <h2>Welcome to Northline Digital</h2>
+        <p>We help businesses grow online.</p>
+    </main>
+    <section id='services'>
+        <h2>Our Services</h2>
+        <div class='service-card'>
+            <h3>Web Development</h3>
+            <p>Build custom websites that convert visitors to customers.</p>
+            <button onclick='alert("Web development services!")'>Learn More</button>
+        </div>
+        <div class='service-card'>
+            <h3>SEO Optimization</h3>
+            <p>Increase your website's visibility on search engines.</p>
+            <button onclick='alert("SEO services!")'>Learn More</button>
+        </div>
+        <div class='service-card'>
+            <h3>Digital Marketing</h3>
+            <p>Drive traffic to your site with targeted campaigns.</p>
+            <button onclick='alert("Digital marketing services!")'>Learn More</button>
+        </div>
+        <div class='service-card'>
+            <h3>Social Media Management</h3>
+            <p>Engage with your audience on social platforms.</p>
+            <button onclick='alert("Social media management services!")'>Learn More</button>
+        </div>
+    </section>
+    <section id='case-studies'>
+        <h2>Case Studies</h2>
+        <div class='case-study-card'>
+            <h3>Project A</h3>
+            <p>Increased website traffic by 50% in 3 months.</p>
+        </div>
+        <div class='case-study-card'>
+            <h3>Project B</h3>
+            <p>Boosted online sales by $100K within a year.</p>
+        </div>
+        <div class='case-study-card'>
+            <h3>Project C</h3>
+            <p>Improved brand awareness by 40% in 6 months.</p>
+        </div>
+    </section>
+    <section id='team'>
+        <h2>Our Team</h2>
+        <div class='team-member'>
+            <h3>John Doe</h3>
+            <p>CEO & Founder</p>
+        </div>
+        <div class='team-member'>
+            <h3>Jane Smith</h3>
+            <p>CTO</p>
+        </div>
+        <div class='team-member'>
+            <h3>Mike Johnson</h3>
+            <p>Marketing Manager</p>
+        </div>
+    </section>
+    <section id='contact'>
+        <h2>Contact Us</h2>
+        <form class='contact-form' onsubmit='return false;'>
+            <label for='name'>Name:</label>
+            <input type='text' id='name' required>
+            <label for='email'>Email:</label>
+            <input type='email' id='email' required>
+            <label for='message'>Message:</label>
+            <textarea id='message' required></textarea>
+            <button type='submit'>Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Northline Digital. All rights reserved.</p>
+    </footer>
+</body>
+</html>

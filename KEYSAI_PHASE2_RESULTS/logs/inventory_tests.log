@@ -1,0 +1,69 @@
+test_INV_CALC_001_total_inventory_value (test_api.TestDashboardCalculations.test_INV_CALC_001_total_inventory_value)
+INV-CALC-001: total value is exactly 54,200.00 (independent arithmetic). ... ok
+test_INV_CALC_002_low_stock_detection (test_api.TestDashboardCalculations.test_INV_CALC_002_low_stock_detection)
+INV-CALC-002: exactly Mouse and Laptop Stand are low stock. ... ok
+test_INV_CALC_003_category_breakdown (test_api.TestDashboardCalculations.test_INV_CALC_003_category_breakdown)
+INV-CALC-003: per-category values add up to the total. ... ok
+test_INV_CALC_004_dashboard_follows_writes (test_api.TestDashboardCalculations.test_INV_CALC_004_dashboard_follows_writes)
+INV-CALC-004: the figures are SQL over live rows, not constants. ... ok
+test_INV_API_001_create_product_returns_201 (test_api.TestDatabaseAndCRUD.test_INV_API_001_create_product_returns_201)
+INV-API-001: POST creates a row and returns it with 201. ... ok
+test_INV_API_002_list_products (test_api.TestDatabaseAndCRUD.test_INV_API_002_list_products)
+INV-API-002: the five seeded products are listed. ... ok
+test_INV_API_003_read_one_product (test_api.TestDatabaseAndCRUD.test_INV_API_003_read_one_product)
+INV-API-003: GET by id returns that product. ... ok
+test_INV_API_004_update_product (test_api.TestDatabaseAndCRUD.test_INV_API_004_update_product)
+INV-API-004: PUT changes fields and updates updated_at. ... ok
+test_INV_API_005_delete_product (test_api.TestDatabaseAndCRUD.test_INV_API_005_delete_product)
+INV-API-005: DELETE removes it; a second DELETE is 404. ... ok
+test_INV_API_006_search_by_name_and_category (test_api.TestDatabaseAndCRUD.test_INV_API_006_search_by_name_and_category)
+INV-API-006: search matches name and category, case-insensitively. ... ok
+test_INV_API_007_filter_by_category (test_api.TestDatabaseAndCRUD.test_INV_API_007_filter_by_category)
+INV-API-007: category filter is exact and excludes other categories. ... ok
+test_INV_API_008_missing_and_invalid_ids (test_api.TestDatabaseAndCRUD.test_INV_API_008_missing_and_invalid_ids)
+INV-API-008: unknown id is 404, non-integer id does not 500. ... ok
+test_INV_DB_001_schema_created (test_api.TestDatabaseAndCRUD.test_INV_DB_001_schema_created)
+INV-DB-001: initialisation creates both tables and the FK. ... ok
+test_INV_PER_001_data_survives_restart (test_api.TestPersistence.test_INV_PER_001_data_survives_restart)
+INV-PER-001: a new app instance on the same file sees the same data. ... ok
+test_INV_SEC_001_sql_injection_in_search (test_api.TestSecurityAndIntegrity.test_INV_SEC_001_sql_injection_in_search)
+INV-SEC-001: injection in search is matched literally, not executed. ... ok
+test_INV_SEC_002_sql_injection_in_name_is_stored_verbatim (test_api.TestSecurityAndIntegrity.test_INV_SEC_002_sql_injection_in_name_is_stored_verbatim)
+INV-SEC-002: a hostile name is stored as text, and the schema survives. ... ok
+test_INV_SEC_003_injection_cannot_expose_other_tables (test_api.TestSecurityAndIntegrity.test_INV_SEC_003_injection_cannot_expose_other_tables)
+INV-SEC-003: a UNION-style payload does not read stock_movements. ... ok
+test_INV_SEC_004_database_unavailable_reports_503 (test_api.TestSecurityAndIntegrity.test_INV_SEC_004_database_unavailable_reports_503)
+INV-SEC-004: a database failure is a JSON 503, not a stack trace. ... ok
+test_INV_MOV_001_record_in_movement (test_api.TestStockMovements.test_INV_MOV_001_record_in_movement)
+INV-MOV-001: an 'in' movement raises stock and is recorded. ... ok
+test_INV_MOV_002_out_movement_cannot_go_negative (test_api.TestStockMovements.test_INV_MOV_002_out_movement_cannot_go_negative)
+INV-MOV-002: an over-large 'out' is refused with 409 and no change. ... ok
+test_INV_MOV_003_out_movement_decrements (test_api.TestStockMovements.test_INV_MOV_003_out_movement_decrements)
+INV-MOV-003: a valid 'out' decrements and appears in history. ... ok
+test_INV_MOV_004_opening_balance_recorded_on_create (test_api.TestStockMovements.test_INV_MOV_004_opening_balance_recorded_on_create)
+INV-MOV-004: creating with stock writes an opening-balance movement. ... ok
+test_INV_MOV_005_zero_change_rejected (test_api.TestStockMovements.test_INV_MOV_005_zero_change_rejected)
+INV-MOV-005: a zero movement is a 400. ... ok
+test_INV_MOV_006_movement_for_missing_product (test_api.TestStockMovements.test_INV_MOV_006_movement_for_missing_product)
+INV-MOV-006: a movement against an unknown product is 404. ... ok
+test_INV_MOV_007_delete_cascades_movements (test_api.TestStockMovements.test_INV_MOV_007_delete_cascades_movements)
+INV-MOV-007: deleting a product removes its movements (FK cascade). ... ok
+test_INV_VAL_001_missing_name_rejected (test_api.TestValidation.test_INV_VAL_001_missing_name_rejected)
+INV-VAL-001: missing name is 400 with a field message. ... ok
+test_INV_VAL_002_negative_quantity_rejected (test_api.TestValidation.test_INV_VAL_002_negative_quantity_rejected)
+INV-VAL-002: negative quantity is refused at the API. ... ok
+test_INV_VAL_003_negative_price_rejected (test_api.TestValidation.test_INV_VAL_003_negative_price_rejected)
+INV-VAL-003: negative price is refused at the API. ... ok
+test_INV_VAL_004_non_numeric_input_rejected (test_api.TestValidation.test_INV_VAL_004_non_numeric_input_rejected)
+INV-VAL-004: text where a number belongs is a 400, not a 500. ... ok
+test_INV_VAL_005_non_json_body_rejected (test_api.TestValidation.test_INV_VAL_005_non_json_body_rejected)
+INV-VAL-005: a non-JSON body is a 400 with a JSON error. ... ok
+test_INV_VAL_006_database_check_blocks_negative_stock (test_api.TestValidation.test_INV_VAL_006_database_check_blocks_negative_stock)
+INV-VAL-006: even direct SQL cannot store a negative quantity. ... ok
+test_INV_VAL_007_unknown_endpoint_is_json_404 (test_api.TestValidation.test_INV_VAL_007_unknown_endpoint_is_json_404)
+INV-VAL-007: a wrong path is JSON, not an HTML error page. ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 1.213s
+
+OK

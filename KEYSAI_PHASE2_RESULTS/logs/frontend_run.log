@@ -1,0 +1,26 @@
+PASS seed.py exits 0
+PASS server answers /api/health
+PASS KPI total value is 54,200.00 — 54,200.00
+PASS KPI product count is 5 — 5
+PASS KPI low-stock count is 2 — 2
+PASS table shows 5 products — 5
+PASS 2 rows flagged low stock — 2
+PASS Mouse and Laptop Stand are the low-stock rows
+PASS search narrows to one row
+PASS category filter shows only Monitor
+PASS invalid form shows a field error — validation failed — name: must be a non-empty string
+PASS add product appears in the table
+PASS KPI total updated to 55,550.00 — 55,550.00
+PASS edit changes the quantity and the low-stock count — 3
+PASS movement is recorded and listed — Recorded 5 (now 6 in stock)
+PASS movement updated the product quantity — Keyboard (10)
+Mouse (2)
+Monitor (4)
+Laptop Stand (0)
+USB Hub (8)
+Webcam (6)
+PASS delete removes the row
+PASS no unexpected console errors
+PASS the intentional bad request produced a handled error — Failed to load resource: the server responded with a status of 400 (BAD REQUEST)
+
+19/19 frontend checks passed

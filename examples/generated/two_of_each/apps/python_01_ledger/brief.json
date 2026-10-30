@@ -1,0 +1,14 @@
+{
+  "request": "Python desktop app: a small ledger with entries, search and totals.",
+  "requirements": "stack: PyQt6 with a QMainWindow, table, add form and status bar; storage: SQLite file in the project folder (no server needed); include a --selftest flag that builds the window offscreen and prints OK; python desktop app, must run with `python main.py`; scope: local single user, no login, no multi-user.",
+  "artifact": "app",
+  "answered": [
+    "stack",
+    "scope"
+  ],
+  "assumptions": [],
+  "recipes": [
+    "python-desktop"
+  ],
+  "path": "code"
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "doc_Stock_Cover_and_Low-Stock_Report",
+  "artifact": "xlsx",
+  "title": "Stock Cover and Low-Stock Report \u2014 Goods Co",
+  "model": "qwen3:8b",
+  "seconds": 0.5,
+  "ok": true,
+  "finished": true,
+  "message": "Created Excel workbook: doc_Stock_Cover_and_Low-Stock_Report.xlsx\n  Subject : Goods Co\n  Detail  : 4 worksheets \u00b7 live formulas \u00b7 2 charts\n  Size    : 14,368 bytes\n  Saved   : C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\xlsx\\doc_Stock_Cover_and_Low-Stock_Report.xlsx\nNot opened (permission not requested).\n",
+  "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\xlsx\\doc_Stock_Cover_and_Low-Stock_Report.xlsx",
+  "bytes": 14368
+}

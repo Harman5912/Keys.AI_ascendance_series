@@ -1,0 +1,32 @@
+# test_hybrid_automation.py  exit=0  seconds=0.47  timeout=False
+# ---- stdout ----
+
+# ---- stderr ----
+test_click_falls_through_to_input (__main__.PriorityOrderTests.test_click_falls_through_to_input)
+If the locating backend can't click, the next backend tries. ... ok
+test_find_skips_unavailable (__main__.PriorityOrderTests.test_find_skips_unavailable) ... ok
+test_find_uses_priority_order (__main__.PriorityOrderTests.test_find_uses_priority_order)
+Highest-priority available backend that can find wins. ... ok
+test_status_reports_backends (__main__.PriorityOrderTests.test_status_reports_backends) ... ok
+test_elements_dispatch (__main__.ScreenAccessTests.test_elements_dispatch) ... ok
+test_list_elements_empty_window (__main__.ScreenAccessTests.test_list_elements_empty_window) ... ok
+test_list_elements_routing (__main__.ScreenAccessTests.test_list_elements_routing) ... ok
+test_read_dispatch (__main__.ScreenAccessTests.test_read_dispatch) ... ok
+test_read_falls_back_to_value_pattern (__main__.ScreenAccessTests.test_read_falls_back_to_value_pattern) ... ok
+test_read_routing (__main__.ScreenAccessTests.test_read_routing) ... ok
+test_unknown_action_message_lists_new_actions (__main__.ScreenAccessTests.test_unknown_action_message_lists_new_actions) ... ok
+test_view_dispatch (__main__.ScreenAccessTests.test_view_dispatch) ... ok
+test_click_dispatch_passes_coords (__main__.ToolDispatchTests.test_click_dispatch_passes_coords) ... ok
+test_missing_action (__main__.ToolDispatchTests.test_missing_action) ... ok
+test_ocr_dispatch (__main__.ToolDispatchTests.test_ocr_dispatch) ... ok
+test_status_dispatch (__main__.ToolDispatchTests.test_status_dispatch) ... ok
+test_unknown_action (__main__.ToolDispatchTests.test_unknown_action) ... ok
+test_click_at_coordinates_uses_input (__main__.VisionRoutingTests.test_click_at_coordinates_uses_input) ... ok
+test_describe_screen_requires_vision (__main__.VisionRoutingTests.test_describe_screen_requires_vision)
+describe_screen returns a clear error when vision is missing. ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.256s
+
+OK
+

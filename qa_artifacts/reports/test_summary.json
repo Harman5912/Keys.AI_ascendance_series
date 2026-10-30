@@ -1,0 +1,13 @@
+{
+  "generated": "2026-10-22T09:52:26+00:00",
+  "suites": 32,
+  "pass": 28,
+  "fail": 4,
+  "total_seconds": 1083.2,
+  "failing": [
+    "repo:test_firebase_feature.py",
+    "repo:baseline-total",
+    "artifacts:website-audit",
+    "artifacts:webapp-audit"
+  ]
+}

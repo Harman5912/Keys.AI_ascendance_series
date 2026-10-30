@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Manager</title>
+<style>
+  body { font-family: Arial, sans-serif; }
+  .header { background-color: #333; color: white; padding: 10px; text-align: center; }
+  .main { padding: 20px; }
+  .task { margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; }
+  .task input[type='text'] { width: calc(100% - 250px); padding: 5px; border: 1px solid #ccc; border-radius: 4px; margin-right: 10px; }
+  .task select, .task button { padding: 5px; border: 1px solid #ccc; border-radius: 4px; }
+  .footer { background-color: #f4f4f4; padding: 10px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="header">
+<h1>Task Manager</h1>
+</div>
+<div class="main" id="task-manager">
+<header>
+<form id="add-task-form">
+<label for="title">Title:</label>
+<input type="text" id="title" required>
+<label for="priority">Priority:</label>
+<select id="priority" required>
+<option value="high">High</option>
+<option value="medium">Medium</option>
+<option value="low">Low</option>
+</select>
+<button type="submit">Add Task</button>
+</form>
+<div class="filter">
+<label for="status-filter">Filter by:</label>
+<select id="status-filter" onchange="filterTasks(this.value)">
+<option value="all">All</option>
+<option value="active">Active</option>
+<option value="done">Done</option>
+</select>
+</div>
+</header>
+<main id="task-list">
+<!-- Tasks will be added here dynamically --></main>
+</div>
+<div class="footer">
+&copy; 2023 Task Manager. All rights reserved.
+</div>
+<script>
+const taskList = document.getElementById('task-list');
+const addTaskForm = document.getElementById('add-task-form');
+const statusFilter = document.getElementById('status-filter');
+
+function loadTasks() {
+  const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+  renderTasks(tasks);
+}
+
+function saveTasks(tasks) {
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+}
+
+function renderTasks(tasks) {
+  taskList.innerHTML = '';
+  tasks.forEach(task => {
+    const taskElement = document.createElement('div');
+    taskElement.className = `task ${task.done ? 'done' : ''}`;
+    taskElement.innerHTML = `
+      <form id="task-form-${task.id}">
+        <input type="text" value="${task.title}" readonly>
+        <select onchange="updateTaskPriority(${task.id}, this.value)">${['high', 'medium', 'low'].map(p => `<option ${p === task.priority ? 'selected' : ''} value="${p}">${p}</option>`).join('')}</select>
+      </form>
+      <button type="button" onclick="toggleTaskDone(${task.id})">${task.done ? 'Undo' : 'Done'}</button>
+      <button type="button" onclick="deleteTask(${task.id})">Delete</button>
+    `;
+    taskList.appendChild(taskElement);
+  });
+}
+
+function addTask(title, priority) {
+  const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+  const newTask = { id: Date.now(), title, priority, done: false };
+  tasks.push(newTask);
+  saveTasks(tasks);
+  renderTasks(tasks);
+}
+
+function updateTaskPriority(id, priority) {
+  const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+  const taskIndex = tasks.findIndex(t => t.id === id);
+  if (taskIndex !== -1) {
+    tasks[taskIndex].priority = priority;
+    saveTasks(tasks);
+    renderTasks(tasks);
+  }
+}
+
+function toggleTaskDone(id) {
+  const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+  const taskIndex = tasks.findIndex(t => t.id === id);
+  if (taskIndex !== -1) {
+    tasks[taskIndex].done = !tasks[taskIndex].done;
+    saveTasks(tasks);
+    renderTasks(tasks);
+  }
+}
+
+function deleteTask(id) {
+  const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+  const taskIndex = tasks.findIndex(t => t.id === id);
+  if (taskIndex !== -1) {
+    tasks.splice(taskIndex, 1);
+    saveTasks(tasks);
+    renderTasks(tasks);
+  }
+}
+
+function filterTasks(status) {
+  const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+  const filteredTasks = status === 'all' ? tasks : tasks.filter(t => t.done === (status === 'done'));
+  renderTasks(filteredTasks);
+}
+
+addTaskForm.addEventListener('submit', e => {
+  e.preventDefault();
+  const title = document.getElementById('title').value.trim();
+  if (title) {
+    addTask(title, document.getElementById('priority').value);
+    document.getElementById('title').value = '';
+  } else {
+    alert('Title is required.');
+  }
+});
+
+loadTasks();
+</script>
+</body>
+</html>

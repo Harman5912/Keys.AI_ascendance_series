@@ -1,0 +1,44 @@
+```json
+[
+  {
+    "title": "Lumen Fields",
+    "content": "Agritech startup leveraging AI and IoT to optimize crop yields and reduce waste\nSeed Round Pitch Deck\nPresented by Lumen Fields"
+  },
+  {
+    "title": "The Problem",
+    "content": "Farmers lose 30% of crops to pests and diseases annually\nManual monitoring is time-consuming and inefficient\nLack of real-time data leads to suboptimal decision-making"
+  },
+  {
+    "title": "Our Solution",
+    "content": "AI-powered smart sensors and drones for real-time crop monitoring\nAutomated pest and disease detection with 95% accuracy\nData-driven insights for optimized irrigation and fertilization"
+  },
+  {
+    ""title": "Our Product",
+    "content": "LumenNet: IoT sensor network for soil, weather, and plant health\nLumenDrone: AI-enabled drone for aerial crop analysis\nLumenHub: Cloud platform for data visualization and alerts"
+  },
+  {
+    "title": "Market Size",
+    "content": "Global agritech market to reach $120B by 2027\n$30B opportunity in precision agriculture and crop monitoring\nTargeting 100,000+ farms in North America and Europe"
+  },
+  {
+    "title": "Business Model",
+    "content": "Subscription-based SaaS model for farm monitoring\nPer-acre pricing with tiered plans for small to large farms\nAdditional revenue from data analytics and advisory services"
+  },
+  {
+    "title": "Traction",
+    "content": "Pilot with 50+ farms in California and Iowa\n90% customer satisfaction rate\n30% reduction in crop loss in pilot farms"
+  },
+  {
+    "title": "Competition",
+    "content": "Traditional agritech solutions are expensive and outdated\nCompetitors offer limited AI integration and poor data accuracy\nLumen Fields provides a more scalable, accurate, and affordable solution"
+  },
+  {
+    "title": "Our Team",
+    "content": "CEO: Maria Chen – ex-Google AI engineer with 15+ years in agri-tech\nCTO: Raj Patel – IoT and drone expert with 10+ patents\nCOO: Emily Zhang – former AgriTech VC with 15+ startup exits"
+  },
+  {
+    "title": "Ask and Use of Funds",
+    "content": "Seeking $2M in seed funding to scale operations\nFunds will be used for R&D, manufacturing, and market expansion\nTargeting $10M ARR within 3 years"
+  }
+]
+```

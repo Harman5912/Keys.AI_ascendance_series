@@ -1,0 +1,18 @@
+# Keys.ai — Windows container build (Docker Desktop in "Windows containers" mode)
+#
+#   docker-compose -f docker-compose.windows.yml build
+#   docker-compose -f docker-compose.windows.yml up        (one-off build + copy)
+#
+# The built executable lands in ./dist and the (scaffolded) config in ./config,
+# both shared with the host so the exe can be run on a real Windows desktop.
+services:
+  keysai-build:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: build
+    image: keysai/windows-build:latest
+    volumes:
+      - ./dist:/app/dist
+      - ./config:/app/config
+    command: ["cmd", "/c", "dir /b dist && echo BUILD COMPLETE — run dist\\KeysAI.exe on a Windows host with a desktop session."]

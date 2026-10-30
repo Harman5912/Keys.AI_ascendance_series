@@ -1,0 +1,182 @@
+generating DOCX through file_processor …
+generating PPTX through file_processor …
+generating XLSX through file_processor …
+generating PDF through file_processor …
+docx: exists=True bytes=38401 183.5s
+pptx: exists=True bytes=38868 24.3s
+xlsx: exists=True bytes=14382 0.6s
+pdf: exists=True bytes=3361 32.1s
+{
+  "validation_docx": {
+    "paragraphs": 17,
+    "tables": 1,
+    "heading_count": 7,
+    "headings": [
+      "Inventory Management System \u2014 Project Report",
+      "Executive summary",
+      "Objectives",
+      "System architecture",
+      "Database schema",
+      "Json api endpoints",
+      "Test results"
+    ],
+    "chars": 1191,
+    "has_title_heading": true,
+    "mentions_total": false,
+    "mentions_five_products": true,
+    "mentions_low_stock": true,
+    "mentions_tests": true,
+    "table_has_five_products": true,
+    "sections_present": {
+      "executive_summary": true,
+      "objectives": true,
+      "architecture": true,
+      "database": true,
+      "api": true,
+      "test": true,
+      "limitations": false,
+      "future": false
+    }
+  },
+  "validation_pptx": {
+    "slide_count": 7,
+    "width_inches": 13.33,
+    "empty_slides": [],
+    "titles": [
+      "Inventory Management System \u2014 Technical Overview",
+      "Problem statement",
+      "Objectives",
+      "System architecture",
+      "Technology stack",
+      "Database design",
+      "Api design"
+    ],
+    "charts": 0,
+    "densest_slide_chars": 286,
+    "mentions_total": false,
+    "mentions_tests": false,
+    "mentions_low_stock": false,
+    "topics_covered": [
+      "problem",
+      "objective",
+      "architecture",
+      "technology",
+      "database",
+      "api"
+    ],
+    "slides": [
+      {
+        "index": 1,
+        "title": "Inventory Management System \u2014 Technical Overview",
+        "chars": 173,
+        "empty": false
+      },
+      {
+        "index": 2,
+        "title": "Problem statement",
+        "chars": 284,
+        "empty": false
+      },
+      {
+        "index": 3,
+        "title": "Objectives",
+        "chars": 243,
+        "empty": false
+      },
+      {
+        "index": 4,
+        "title": "System architecture",
+        "chars": 285,
+        "empty": false
+      },
+      {
+        "index": 5,
+        "title": "Technology stack",
+        "chars": 286,
+        "empty": false
+      },
+      {
+        "index": 6,
+        "title": "Database design",
+        "chars": 142,
+        "empty": false
+      },
+      {
+        "index": 7,
+        "title": "Api design",
+        "chars": 197,
+        "empty": false
+      }
+    ]
+  },
+  "validation_xlsx": {
+    "sheets": [
+      "Dashboard",
+      "Trend",
+      "Data",
+      "Assumptions"
+    ],
+    "sheet_count": 4,
+    "formulas": 69,
+    "charts": 2,
+    "sku_count": 12,
+    "sku_rows": [
+      "FF-BIRD-14",
+      "FF-CACTUS-9",
+      "FF-FERN-14",
+      "FF-HART-17",
+      "FF-HEART-12",
+      "FF-MOSS-6",
+      "FF-OLIVE-24",
+      "FF-PILEA-12",
+      "FF-POT-14",
+      "FF-POTH-17",
+      "FF-RUBBER-21",
+      "FF-ZZ-14"
+    ],
+    "verified_kpis": {
+      "SKUs": 12.0,
+      "Units on hand": 556.0,
+      "Reorder alerts": 3.0,
+      "310": 1663.0,
+      "95": 556.0,
+      "=ROUND(D23*2,0)": 0.0
+    },
+    "unverifiable_kpis": [
+      "Months cover",
+      "Cover (months)",
+      "Reorder point",
+ 
+cross_format: {
+  "all_four_exist": true,
+  "facts": {
+    "docx_states_total": false,
+    "pptx_states_total": false,
+    "pdf_states_total": false,
+    "docx_states_low_stock": true,
+    "pptx_states_low_stock": false,
+    "pdf_states_low_stock": true,
+    "docx_states_tests": true,
+    "pptx_states_tests": false,
+    "pdf_states_tests": true,
+    "xlsx_sku_data_real": true,
+    "xlsx_units_kpi_verified": false,
+    "xlsx_reorder_kpi_verified": false,
+    "xlsx_charts_present": true,
+    "docx_has_required_sections": false,
+    "pptx_no_empty_slides": true,
+    "pdf_no_blank_pages": true
+  },
+  "all_agree": false,
+  "disagreements": [
+    "docx_states_total",
+    "pptx_states_total",
+    "pdf_states_total",
+    "pptx_states_low_stock",
+    "pptx_states_tests",
+    "xlsx_units_kpi_verified",
+    "xlsx_reorder_kpi_verified",
+    "docx_has_required_sections"
+  ]
+}
+STAGE 6 FAILED: docx_states_total, pptx_states_total, pdf_states_total, pptx_states_low_stock, pptx_states_tests, xlsx_units_kpi_verified, xlsx_reorder_kpi_verified, docx_has_required_sections

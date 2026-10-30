@@ -1,0 +1,17 @@
+{
+  "tool_sync": {
+    "TD_count": 38,
+    "TR_count": 38,
+    "plugin_decl_count": 0,
+    "plugin_fallback_set": false,
+    "declared_but_not_in_TR": [],
+    "TR_without_declaration": [],
+    "sync_ok": true
+  },
+  "exit_paths_verified": {
+    "shutdown_keysai_in_TD": true,
+    "shutdown_keysai_in_TR": true,
+    "main_shutdown_branch_present": true,
+    "os._exit_used_for_shutdown": true
+  }
+}

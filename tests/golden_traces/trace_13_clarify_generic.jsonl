@@ -1,0 +1,1 @@
+{"scenario": "trace_13_clarify_generic", "params": {"action": "clarify", "task": "build a simple utility"}, "response": "No requirements are missing for this request \u2014 there is nothing to ask. Call crown_code with action=build to start it."}

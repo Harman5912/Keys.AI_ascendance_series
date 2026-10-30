@@ -1,0 +1,1232 @@
+{
+  "generated_at": "2026-10-29T08:36:40",
+  "counts": {
+    "TESTED": 6,
+    "VERIFIED": 2,
+    "PLANNED": 127
+  },
+  "totals": {
+    "registered": 8,
+    "available": 8,
+    "disabled": 0,
+    "planned": 127,
+    "target_catalog": 137
+  },
+  "duplicates": [],
+  "load_errors": [],
+  "skills": {
+    "coding": {
+      "status": "TESTED",
+      "enabled": true,
+      "available": true,
+      "group": "software",
+      "version": "1.0.0",
+      "purpose": "Build, change, debug and verify software in a real project folder, with real commands and real output.",
+      "permission": "MODERATE",
+      "tools": [
+        "crown_code"
+      ],
+      "inputs": {
+        "action": {
+          "type": "string",
+          "required": false,
+          "description": "build | clarify | status | cancel | list"
+        },
+        "description": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        "requirements": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        "workspace": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        "project_name": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        "confirmed": {
+          "type": "boolean",
+          "required": false,
+          "description": ""
+        }
+      },
+      "implemented": true,
+      "module": "skills.builtin.coding",
+      "source": "builtin",
+      "reasons": [
+        "tested 2026-10-29T08:36:40"
+      ],
+      "evidence": {
+        "TESTED": {
+          "at": "2026-10-29T08:36:40",
+          "note": "handler is registered"
+        }
+      }
+    },
+    "design-system": {
+      "status": "VERIFIED",
+      "enabled": true,
+      "available": true,
+      "group": "interface",
+      "version": "1.0.0",
+      "purpose": "Produce a contrast-checked palette, type scale and layout guidance for an interface, or verify one.",
+      "permission": "SAFE",
+      "tools": [],
+      "inputs": {
+        "action": {
+          "type": "string",
+          "required": false,
+          "description": "tokens | check | brief (default: tokens)"
+        },
+        "seed": {
+          "type": "string",
+          "required": false,
+          "description": "Colour seed or mood word"
+        },
+        "kind": {
+          "type": "string",
+          "required": false,
+          "description": "web | dashboard | desktop"
+        },
+        "mood": {
+          "type": "string",
+          "required": false,
+          "description": "dark | light"
+        }
+      },
+      "implemented": true,
+      "module": "skills.builtin.design",
+      "source": "builtin",
+      "reasons": [
+        "verified 2026-10-29T08:36:40"
+      ],
+      "evidence": {
+        "TESTED": {
+          "at": "2026-10-29T08:36:39",
+          "note": "test_skill_system: token sheet generated"
+        },
+        "VERIFIED": {
+          "at": "2026-10-29T08:36:40",
+          "note": "self-test ok=True over 84 token sets"
+        }
+      }
+    },
+    "documents": {
+      "status": "TESTED",
+      "enabled": true,
+      "available": true,
+      "group": "documents",
+      "version": "1.0.0",
+      "purpose": "Create and work with Word, Excel, PowerPoint, PDF, CSV and image files on disk.",
+      "permission": "MODERATE",
+      "tools": [
+        "file_processor"
+      ],
+      "inputs": {
+        "file_path": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        "action": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        "instruction": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        "format": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        "find": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        "replace": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        "cell": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        "value": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        "sheet": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        }
+      },
+      "implemented": true,
+      "module": "skills.builtin.documents",
+      "source": "builtin",
+      "reasons": [
+        "tested 2026-10-29T08:36:40"
+      ],
+      "evidence": {
+        "TESTED": {
+          "at": "2026-10-29T08:36:40",
+          "note": "handler is registered"
+        }
+      }
+    },
+    "files": {
+      "status": "TESTED",
+      "enabled": true,
+      "available": true,
+      "group": "documents",
+      "version": "1.0.0",
+      "purpose": "List, read, write, move, copy, rename and delete files and folders on this computer.",
+      "permission": "SAFE",
+      "tools": [
+        "file_controller"
+      ],
+      "inputs": {
+        "action": {
+          "type": "string",
+          "required": true,
+          "description": "list | read | write | create_file | create_folder | move | copy | rename | delete | find | disk_usage | info"
+        },
+        "path": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        "destination": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        "new_name": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        "content": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        "extension": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        "count": {
+          "type": "integer",
+          "required": false,
+          "description": ""
+        }
+      },
+      "implemented": true,
+      "module": "skills.builtin.files",
+      "source": "builtin",
+      "reasons": [
+        "tested 2026-10-29T08:36:40"
+      ],
+      "evidence": {
+        "TESTED": {
+          "at": "2026-10-29T08:36:40",
+          "note": "handler is registered"
+        }
+      }
+    },
+    "globe": {
+      "status": "VERIFIED",
+      "enabled": true,
+      "available": true,
+      "group": "research",
+      "version": "1.0.0",
+      "purpose": "Open God's Eye View and fly the 3D Earth to places, zoom, and switch data layers.",
+      "permission": "SAFE",
+      "tools": [
+        "globe"
+      ],
+      "inputs": {
+        "action": {
+          "type": "string",
+          "required": true,
+          "description": "open | close | navigate | search | zoom | reset | layer | status"
+        },
+        "location": {
+          "type": "string",
+          "required": false,
+          "description": "Place name for navigate"
+        },
+        "latitude": {
+          "type": "number",
+          "required": false,
+          "description": ""
+        },
+        "longitude": {
+          "type": "number",
+          "required": false,
+          "description": ""
+        },
+        "query": {
+          "type": "string",
+          "required": false,
+          "description": "Search text"
+        },
+        "direction": {
+          "type": "string",
+          "required": false,
+          "description": "in | out"
+        },
+        "amount": {
+          "type": "string",
+          "required": false,
+          "description": "little | medium | lot"
+        },
+        "layer": {
+          "type": "string",
+          "required": false,
+          "description": "Layer id, e.g. satellites"
+        },
+        "enabled": {
+          "type": "boolean",
+          "required": false,
+          "description": ""
+        }
+      },
+      "implemented": true,
+      "module": "skills.builtin.globe",
+      "source": "builtin",
+      "reasons": [
+        "verified 2026-10-29T08:36:40"
+      ],
+      "evidence": {
+        "TESTED": {
+          "at": "2026-10-29T08:36:39",
+          "note": "test_skill_system: delegates through TOOL_HANDLERS"
+        },
+        "VERIFIED": {
+          "at": "2026-10-29T08:36:40",
+          "note": "routing works (parsed as OPEN_GLOBE)"
+        }
+      }
+    },
+    "repo-inspect": {
+      "status": "TESTED",
+      "enabled": true,
+      "available": true,
+      "group": "software",
+      "version": "1.0.0",
+      "purpose": "Understand a codebase before touching it: file inventory, symbols, imports and targeted search.",
+      "permission": "SAFE",
+      "tools": [
+        "repo_inspect"
+      ],
+      "inputs": {
+        "action": {
+          "type": "string",
+          "required": false,
+          "description": "summary | search | symbol | file | imports | tests"
+        },
+        "path": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        "query": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        "symbol": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        }
+      },
+      "implemented": true,
+      "module": "skills.builtin.repo_inspect",
+      "source": "builtin",
+      "reasons": [
+        "tested 2026-10-29T08:36:40"
+      ],
+      "evidence": {
+        "TESTED": {
+          "at": "2026-10-29T08:36:40",
+          "note": "handler and module both load"
+        }
+      }
+    },
+    "research-browser": {
+      "status": "TESTED",
+      "enabled": true,
+      "available": true,
+      "group": "research",
+      "version": "1.0.0",
+      "purpose": "Browse real pages inside Keys.AI: open a URL, read its text, take a screenshot, collect sources for research.",
+      "permission": "SAFE",
+      "tools": [
+        "research_browser"
+      ],
+      "inputs": {
+        "action": {
+          "type": "string",
+          "required": true,
+          "description": "open_tab | navigate_to_url | get_current_page | screenshot | list_tabs | close_tab"
+        },
+        "url": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        },
+        "query": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        }
+      },
+      "implemented": true,
+      "module": "skills.builtin.research_browser",
+      "source": "builtin",
+      "reasons": [
+        "tested 2026-10-29T08:36:40"
+      ],
+      "evidence": {
+        "TESTED": {
+          "at": "2026-10-29T08:36:40",
+          "note": "handler is registered"
+        }
+      }
+    },
+    "web-search": {
+      "status": "TESTED",
+      "enabled": true,
+      "available": true,
+      "group": "research",
+      "version": "1.0.0",
+      "purpose": "Answer from the live web: search, news, prices and side-by-side comparisons.",
+      "permission": "SAFE",
+      "tools": [
+        "web_search"
+      ],
+      "inputs": {
+        "query": {
+          "type": "string",
+          "required": true,
+          "description": ""
+        },
+        "mode": {
+          "type": "string",
+          "required": false,
+          "description": "search | news | research | price | compare"
+        },
+        "items": {
+          "type": "array",
+          "required": false,
+          "description": ""
+        },
+        "aspect": {
+          "type": "string",
+          "required": false,
+          "description": ""
+        }
+      },
+      "implemented": true,
+      "module": "skills.builtin.web_search",
+      "source": "builtin",
+      "reasons": [
+        "tested 2026-10-29T08:36:40"
+      ],
+      "evidence": {
+        "TESTED": {
+          "at": "2026-10-29T08:36:40",
+          "note": "handler is registered"
+        }
+      }
+    }
+  },
+  "planned": [
+    {
+      "name": "plan",
+      "group": "planning",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "deep-plan",
+      "group": "planning",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "analyze",
+      "group": "planning",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "ask-user",
+      "group": "planning",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "task-graph",
+      "group": "planning",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "task-status",
+      "group": "planning",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "task-resume",
+      "group": "planning",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "self-review",
+      "group": "planning",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "decision-log",
+      "group": "planning",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "memory-search",
+      "group": "planning",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "skill-search",
+      "group": "planning",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "skill-create",
+      "group": "planning",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "skill-update",
+      "group": "planning",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "deep-research",
+      "group": "research",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "browser-open",
+      "group": "research",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "browser-control",
+      "group": "research",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "screenshot",
+      "group": "research",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "extract-web",
+      "group": "research",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "source-verify",
+      "group": "research",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "cross-check",
+      "group": "research",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "citation",
+      "group": "research",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "image-search",
+      "group": "research",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "image-download",
+      "group": "research",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "document-research",
+      "group": "research",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "repo-search",
+      "group": "research",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "repo-analyze",
+      "group": "research",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "research-report",
+      "group": "research",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "architect",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "project-scan",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "codebase-map",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "understand-code",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "implement",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "modify-code",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "refactor",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "debug",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "fix-error",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "dependency-check",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "api-design",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "api-integrate",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "database-design",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "migration",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "frontend",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "backend",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "fullstack",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "python",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "javascript",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "typescript",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "desktop-app",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "mobile-app",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "cli-tool",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "git",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "code-review",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "optimize-code",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "documentation",
+      "group": "software",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "ui-design",
+      "group": "interface",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "ux-audit",
+      "group": "interface",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "component-build",
+      "group": "interface",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "responsive",
+      "group": "interface",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "animation",
+      "group": "interface",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "visual-test",
+      "group": "interface",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "ui-debug",
+      "group": "interface",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "asset-search",
+      "group": "interface",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "asset-integrate",
+      "group": "interface",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "design-to-code",
+      "group": "interface",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "test-plan",
+      "group": "testing",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "unit-test",
+      "group": "testing",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "integration-test",
+      "group": "testing",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "e2e-test",
+      "group": "testing",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "smoke-test",
+      "group": "testing",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "regression-test",
+      "group": "testing",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "api-test",
+      "group": "testing",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "browser-test",
+      "group": "testing",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "test-coverage",
+      "group": "testing",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "performance-test",
+      "group": "testing",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "security-test",
+      "group": "testing",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "test-report",
+      "group": "testing",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "acceptance-check",
+      "group": "testing",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "model-select",
+      "group": "models",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "model-test",
+      "group": "models",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "model-benchmark",
+      "group": "models",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "provider-check",
+      "group": "models",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "provider-switch",
+      "group": "models",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "ollama-detect",
+      "group": "models",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "ollama-run",
+      "group": "models",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "api-key-check",
+      "group": "models",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "agent-create",
+      "group": "models",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "agent-run",
+      "group": "models",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "agent-handoff",
+      "group": "models",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "multi-agent",
+      "group": "models",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "parallel-tasks",
+      "group": "models",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "tool-select",
+      "group": "models",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "tool-execute",
+      "group": "models",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "context-manage",
+      "group": "models",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "agent-evaluate",
+      "group": "models",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "workflow",
+      "group": "models",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "workflow-save",
+      "group": "models",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "agent-log",
+      "group": "models",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "file-read",
+      "group": "documents",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "file-write",
+      "group": "documents",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "file-search",
+      "group": "documents",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "file-organize",
+      "group": "documents",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "file-diff",
+      "group": "documents",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "pdf-read",
+      "group": "documents",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "docx-read",
+      "group": "documents",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "xlsx-analyze",
+      "group": "documents",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "csv-analyze",
+      "group": "documents",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "data-clean",
+      "group": "documents",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "data-analyze",
+      "group": "documents",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "visualize-data",
+      "group": "documents",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "report-create",
+      "group": "documents",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "export-pdf",
+      "group": "documents",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "export-docx",
+      "group": "documents",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "export-xlsx",
+      "group": "documents",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "export-pptx",
+      "group": "documents",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "artifact-verify",
+      "group": "documents",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "permission-check",
+      "group": "security",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "action-confirm",
+      "group": "security",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "secret-scan",
+      "group": "security",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "secure-code",
+      "group": "security",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "dependency-audit",
+      "group": "security",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "sandbox-run",
+      "group": "security",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "command-explain",
+      "group": "security",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "file-backup",
+      "group": "security",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "rollback",
+      "group": "security",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "access-audit",
+      "group": "security",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "privacy-check",
+      "group": "security",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    },
+    {
+      "name": "audit-log",
+      "group": "security",
+      "status": "PLANNED",
+      "reason": "no skill claims this capability yet"
+    }
+  ]
+}

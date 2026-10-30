@@ -1,0 +1,24 @@
+PASS F02 syntax error is detected — failed: compiles (6 files) — File "models.py", line 153
+    def dashboard() -> dict
+                           ^
+SyntaxError: expected ':'
+PASS F02 the failing file is named in the error — failed: compiles (6 files) — File "models.py", line 153
+    def dashboard() -> dict
+                           ^
+SyntaxError: expected ':'
+PASS F02 repair is confirmed by re-running the check — 1 checks passed (1 compiles)
+PASS F03 schema mismatch surfaces as a handled error — status=503 body={"error":{"message":"database unavailable: no such column: bogus_column"}}
+
+PASS F03 no traceback is leaked to the caller — {"error":{"message":"database unavailable: no such column: bogus_column"}}
+
+PASS F03 query repaired
+PASS F05 corrupt DOCX fails to parse as expected — PackageNotFoundError
+PASS F05 regenerated document parses â€” 20 paragraphs
+PASS SEC-01 path traversal is refused â€” refusing to write outside the workspace: '../escaped.txt'
+PASS SEC-01 normal writes still work
+PASS SEC-02 no credential-shaped strings in the shipped front end
+PASS ISO-01 both parallel builds succeeded â€” 8 checks passed (1 compiles, 1 executes, 6 serves) | 2 checks passed (1 compiles, 1 executes)
+PASS ISO-01 each workspace contains only its own artifact â€” A=['.env.example', 'README.md', 'app.py', 'dashboard.db', 'dashboard.js'] B=['README.md', '__init__.py', 'db.py', 'main.py', 'requirements.txt']
+PASS ISO-01 no zip/cross-write corruption
+
+14/14 stage-7 checks passed

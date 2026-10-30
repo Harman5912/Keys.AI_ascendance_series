@@ -1,0 +1,29 @@
+============================================================
+Crown Code ⇄ Keys.AI integration test
+============================================================
+[build] headless build present: C:\Users\harma\Desktop\PROJECTS\Crown CODE\dist-headless\headless.js
+[ollama] models: qwen3:8b, qwen2.5-coder:3b, deepseek-r1:8b, tinyllama:latest, qwen2.5-coder:7b, qwen3.5:4b, qwen3:30b, qwen3-coder:30b, llava:latest, llama3.2-vision:latest
+[model] using qwen3:8b (configured: 'qwen3:8b')
+PASS B: qwen3:8b responded '' in 10s
+[workspace] C:\Users\harma\AppData\Local\Temp\crown_keysai_dxlrhweo
+  tool_start  write_file  {'path': 'verify.txt', 'content': 'WS_OK'}
+  tool_end    OK  Created verify.txt
+  tool_start  terminal  {'command': 'Get-Content verify.txt', 'cwd': 'C:\\Users\\harma\\AppData\\Local\\Temp\\crow
+  term[stderr] 'Get-Content' is not recognized as an internal or external command,
+operable program or batch file.
+  terminal_exit = 1
+  tool_end    ERR  'Get-Content' is not recognized as an internal or external command,
+operable program or b
+  tool_start  terminal  {'command': 'type verify.txt', 'cwd': 'C:\\Users\\harma\\AppData\\Local\\Temp\\crown_keysa
+  term[stdout] WS_OK
+  terminal_exit = 0
+  tool_end    OK  WS_OK
+  result ok=True state=done
+[checks] file_ok=True wrote_file=True ran_terminal=True exit0=True
+PASS D: Crown Code wrote the file inside the authorized workspace
+PASS C: terminal executed a command, streamed output, exit code 0
+PASS E: bridge returned a successful result
+PASS E: child process cleaned up
+------------------------------------------------------------
+RESULT: PASS — Crown Code bridge works end to end
+EXIT=0

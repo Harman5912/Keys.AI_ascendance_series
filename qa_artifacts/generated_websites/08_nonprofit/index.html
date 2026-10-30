@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Clean Currents Alliance</title>
+<style>
+* { box-sizing: border-box; max-width: 100%; }
+a:focus-visible, button:focus-visible { outline: 2px solid #4CAF50; outline-offset: 2px; }
+h1 { text-align: center; color: #333; }
+p { font-size: 16px; line-height: 1.6; color: #666; }
+.main-section { padding: 20px; margin-top: 20px; background-color: #f9f9f9; }
+.section-title { text-align: center; margin-bottom: 20px; }
+.section-content { max-width: 800px; margin: 0 auto; }
+.programme-card { border: 1px solid #ddd; padding: 20px; margin-bottom: 10px; text-align: center; }
+.stats-container { display: flex; justify-content: space-around; align-items: center; gap: 20px; padding: 20px; background-color: #f9f9f9; }
+.stat-number { font-size: 36px; color: #4CAF50; animation: fadeIn 1s ease-in-out forwards; }
+@keyframes fadeIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+.donation-section { padding: 20px; margin-top: 20px; background-color: #f9f9f9; display: flex; justify-content: center; align-items: center; gap: 20px; }
+div.donation-option input[type='radio'] { display: none; }
+div.donation-option label { padding: 10px 20px; background-color: #4CAF50; color: white; border-radius: 5px; cursor: pointer; transition: all 0.3s ease-in-out; }
+div.donation-option input[type='radio']:checked + label { background-color: #45a049; }
+.volunteer-form { padding: 20px; margin-top: 20px; background-color: #f9f9f9; }
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 5px; color: #333; }
+.form-group input, .form-group select { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+.form-group button[type='submit'] { background-color: #4CAF50; color: white; border: none; padding: 12px 20px; border-radius: 4px; cursor: pointer; transition: all 0.3s ease-in-out; }
+.form-group button[type='submit']:hover { background-color: #45a049; }
+footer { text-align: center; padding: 20px; margin-top: 20px; background-color: #333; color: white; }
+</style>
+</head>
+<body>
+<header>
+<h1>Clean Currents Alliance</h1>
+<nav>
+<ul>
+<li><a href='#mission'>Mission</a></li>
+<li><a href='#programmes'>Programmes</a></li>
+<li><a href='#impact'>Impact</a></li>
+<li><a href='#donate'>Donate</a></li>
+<li><a href='#volunteer'>Volunteer</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section id='mission' class='main-section section-content'>
+<div class='section-title'>Mission</div>
+<p>We are dedicated to cleaning and protecting our waterways, promoting environmental stewardship, and raising awareness about the importance of clean waters for all.</p>
+</section>
+<section id='programmes' class='main-section section-content'>
+<div class='section-title'>Programmes</div>
+<div class='programme-card'>
+<h2>Water Conservation</h2>
+<p>We work with local communities to conserve and restore water resources, promoting sustainable practices.</p>
+</div>
+<div class='programme-card'>
+<h2>Pollution Removal</h2>
+<p>Our programmes focus on removing pollutants from waterways, using natural and eco-friendly methods.</p>
+</div>
+<div class='programme-card'>
+<h2>Education and Awareness</h2>
+<p>We educate children and adults about the importance of clean waters and how to protect them.</p>
+</div>
+</section>
+<section id='impact' class='main-section section-content stats-container'>
+<div class='section-title'>Impact Statistics</div>
+<div><span class='stat-number' data-value='50'>0</span> rivers restored</div>
+<div><span class='stat-number' data-value='2000'>0</span> water samples tested</div>
+<div><span class='stat-number' data-value='1500'>0</span> environmental volunteers</div>
+</section>
+<section id='donate' class='main-section section-content donation-section'>
+<div class='section-title'>Donate</div>
+<p>Your contribution helps fund our efforts to clean and protect waterways. Choose an amount:</p>
+<div class='donation-option'>
+<input type='radio' name='amount' id='10' value='10'><label for='10'>$10</label>
+</div>
+<div class='donation-option'>
+<input type='radio' name='amount' id='50' value='50'><label for='50'>$50</label>
+</div>
+<div class='donation-option'>
+<input type='radio' name='amount' id='100' value='100'><label for='100'>$100</label>
+</div>
+<button id='donate-btn'>Donate Now</button>
+</section>
+<section id='volunteer' class='main-section section-content volunteer-form'>
+<div class='section-title'>Volunteer</div>
+<form id='volunteer-form'>
+<div class='form-group'>
+<label for='name'>Name:</label>
+<input type='text' id='name' name='name' required>
+</div>
+<div class='form-group'>
+<label for='email'>Email:</label>
+<input type='email' id='email' name='email' required>
+</div>
+<div class='form-group'>
+<label for='phone'>Phone:</label>
+<input type='tel' id='phone' name='phone' required>
+</div>
+<div class='form-group'>
+<button type='submit'>Sign Up</button>
+</div>
+</form>
+</section>
+</main>
+<footer>
+<p>&copy; 2023 Clean Currents Alliance. All rights reserved.</p>
+</footer>
+<script>
+document.querySelectorAll('.stat-number').forEach(stat => {
+const value = parseInt(stat.getAttribute('data-value'));
+let current = 0;
+const interval = setInterval(() => {
+current += Math.ceil(value / 100);
+if (current >= value) {
+clearInterval(interval);
+stat.textContent = value;
+} else {
+stat.textContent = current;
+}
+}, 15);
+});
+document.getElementById('donate-btn').addEventListener('click', e => {
+e.preventDefault();
+alert('Thank you for your donation!');
+});
+document.getElementById('volunteer-form').addEventListener('submit', e => {
+e.preventDefault();
+alert('Thank you for signing up to volunteer!');
+});
+</script>
+</body>
+</html>

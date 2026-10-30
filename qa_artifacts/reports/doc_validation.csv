@@ -1,0 +1,11 @@
+file,kind,passed,bytes,words_or_slides,fails
+P01_startup_pitch.pptx,pptx,True,46217,8,
+P02_technical_architecture.pptx,pptx,True,38182,7,
+P03_product_demo.pptx,pptx,True,38152,7,
+P04_data_analytics_report.pptx,pptx,True,46092,8,
+P05_education_lesson.pptx,pptx,True,39804,8,
+P06_business_strategy.pptx,pptx,True,46129,8,
+P07_research_conference.pptx,pptx,True,46236,8,
+P08_security_awareness.pptx,pptx,True,38171,7,
+P09_project_status.pptx,pptx,True,38119,7,
+P10_product_launch.pptx,pptx,True,44611,7,

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Signal Room — marketing performance report</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="appbar">
+    <p class="brand">SIGNAL<span>ROOM</span></p>
+    <p class="crumb">Marketing / Performance / <b>Q4 weekly</b></p>
+    <p class="asof" id="asof">—</p>
+  </header>
+
+  <div class="canvas">
+    <aside class="filters" aria-label="Report filters">
+      <h2>Filters</h2>
+      <label for="days">Date range</label>
+      <select id="days">
+        <option value="7">Last 7 days</option>
+        <option value="14">Last 14 days</option>
+        <option value="28" selected>Last 28 days</option>
+      </select>
+      <label for="channel">Channel</label>
+      <select id="channel"><option value="">All channels</option></select>
+      <p class="note">Every visual on this canvas is a query against <code>/api/overview</code>.</p>
+      <p class="err" id="err" hidden></p>
+    </aside>
+
+    <main>
+      <section class="visual kpi-row" aria-label="Key metrics">
+        <article class="kpi"><p>Spend</p><strong data-kpi="spend">–</strong></article>
+        <article class="kpi"><p>Revenue</p><strong data-kpi="revenue">–</strong></article>
+        <article class="kpi"><p>ROAS</p><strong data-kpi="roas">–</strong></article>
+        <article class="kpi"><p>Cost / lead</p><strong data-kpi="cpl">–</strong></article>
+        <article class="kpi"><p>CTR</p><strong data-kpi="ctr">–</strong></article>
+      </section>
+
+      <section class="visual">
+        <div class="visual-head"><h2>Channel performance</h2><p>revenue · spend · leads</p></div>
+        <div class="table-scroll">
+          <table class="matrix">
+            <thead><tr><th>Channel</th><th>Spend</th><th>Revenue</th><th>ROAS</th><th>Leads</th><th>Customers</th><th>Share</th></tr></thead>
+            <tbody id="channel-rows"><tr><td colspan="7">Loading…</td></tr></tbody>
+          </table>
+        </div>
+      </section>
+
+      <div class="pair">
+        <section class="visual">
+          <div class="visual-head"><h2>Funnel</h2><p>impressions → customers</p></div>
+          <ul class="funnel" id="funnel"></ul>
+        </section>
+        <section class="visual">
+          <div class="visual-head"><h2>Revenue by week</h2><p>rolled up in SQL</p></div>
+          <div id="weeks" class="bars"></div>
+        </section>
+      </div>
+
+      <section class="visual">
+        <div class="visual-head">
+          <h2>Marketing tasks</h2>
+          <p id="task-summary">—</p>
+        </div>
+        <div class="table-scroll">
+          <table class="tasks">
+            <thead><tr><th>Task</th><th>Workstream</th><th>Owner</th><th>Status</th><th>Progress</th><th>Due</th></tr></thead>
+            <tbody id="task-rows"><tr><td colspan="6">Loading…</td></tr></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

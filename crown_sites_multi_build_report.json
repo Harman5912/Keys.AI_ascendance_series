@@ -1,0 +1,48 @@
+﻿{
+    "all_sites_built":  false,
+    "sites":  {
+                  "04_invvestment_portfolio":  {
+                                                   "exists":  false,
+                                                   "reason":  "folder missing"
+                                               },
+                  "02_saas_analytics":  {
+                                            "exists":  true,
+                                            "files":  {
+                                                          "index.html":  false,
+                                                          "charts.js":  false,
+                                                          "styles.css":  false,
+                                                          "table.js":  false,
+                                                          "data.js":  false,
+                                                          "live.js":  false
+                                                      }
+                                        },
+                  "07_retail_inventory":  {
+                                              "exists":  false,
+                                              "reason":  "folder missing"
+                                          },
+                  "06_education_school":  {
+                                              "exists":  false,
+                                              "reason":  "folder missing"
+                                          },
+                  "03_logistics_fleet":  {
+                                             "exists":  false,
+                                             "reason":  "folder missing"
+                                         },
+                  "05_health_care_hospital":  {
+                                                  "exists":  false,
+                                                  "reason":  "folder missing"
+                                              },
+                  "10_hr_workforce":  {
+                                          "exists":  false,
+                                          "reason":  "folder missing"
+                                      },
+                  "08_cybersecurity_secops":  {
+                                                  "exists":  false,
+                                                  "reason":  "folder missing"
+                                              },
+                  "09_energy_grid":  {
+                                         "exists":  false,
+                                         "reason":  "folder missing"
+                                     }
+              }
+}

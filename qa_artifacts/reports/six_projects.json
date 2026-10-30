@@ -1,0 +1,194 @@
+{
+  "projects": [
+    {
+      "key": "A",
+      "slug": "a_utility",
+      "kind": "custom",
+      "build": {
+        "ok": false,
+        "seconds": 614.4,
+        "model": "qwen3:8b",
+        "message": "Coding a_utility: failed after 10m00s \u2014 Crown Code stopped without changing anything"
+      },
+      "files_count": 1,
+      "files": [
+        "brief.json"
+      ],
+      "missing_recipe_files": [],
+      "compile": {
+        "compiled": 0,
+        "compile_failures": []
+      },
+      "verify": {
+        "entry_exists": false
+      },
+      "ok": false
+    },
+    {
+      "key": "B",
+      "slug": "b_sql",
+      "kind": "mysql",
+      "build": {
+        "ok": false,
+        "seconds": 0.0,
+        "model": "qwen3:8b",
+        "message": "NEED REQUIREMENTS \u2014 nothing was built and nothing was started.\nThis request describes an application, but it does not state: metrics; charts; scope.\n\nAsk the user these questions, one at a time, and do not answer them yourself or pick a default:\n1. Which numbers should each view show? (e.g. price + volume, revenue vs. spend, signups by week) \u2014 a chart with the wrong series is not the same chart.\n2. Which chart types should the views use? (e.g. line for trend, candlestick for OHLC, bar for comparison, KPI cards on top) \u2014 chart type is a requirement, not a styling choice.\n3. Is it a single-user tool on this machine, or does it need login / multiple users? (e.g. local single user with sample data, or local front end plus a small backend with a login) \u2014 auth, storage and deployment all follow from this.\n\nThen call crown_code again with the same description and requirements=\"<the user's answers, in their words>\". Only pass confirmed=true if the user explicitly tells you to go ahead without answering."
+      },
+      "files_count": 0,
+      "files": [],
+      "missing_recipe_files": [
+        "schema.sql",
+        "seed.sql",
+        "queries.sql",
+        "db.py",
+        ".env.example"
+      ],
+      "compile": {
+        "compiled": 0,
+        "compile_failures": [
+          "workspace missing"
+        ]
+      },
+      "verify": {
+        "schema_exists": false,
+        "seed_exists": false,
+        "queries_exists": false
+      },
+      "ok": false
+    },
+    {
+      "key": "C",
+      "slug": "c_site",
+      "kind": "site",
+      "build": {
+        "ok": true,
+        "seconds": 24.9,
+        "browser": {
+          "checks": {
+            "problems": []
+          }
+        },
+        "detail": {
+          "bytes": 23565
+        }
+      },
+      "files_count": 4,
+      "files": [
+        "index.html",
+        "index.rendered.html",
+        "plan.json",
+        "plan.raw.txt"
+      ],
+      "missing_recipe_files": [],
+      "compile": {
+        "compiled": 0,
+        "compile_failures": []
+      },
+      "verify": {},
+      "ok": true
+    },
+    {
+      "key": "D",
+      "slug": "d_rest_api",
+      "kind": "api-backend",
+      "build": {
+        "ok": false,
+        "seconds": 0.0,
+        "model": "qwen3:8b",
+        "message": "NEED REQUIREMENTS \u2014 nothing was built and nothing was started.\nThis request describes an application, but it does not state: scope.\n\nAsk the user these questions, one at a time, and do not answer them yourself or pick a default:\n1. Is it a single-user tool on this machine, or does it need login / multiple users? (e.g. local single user with sample data, or local front end plus a small backend with a login) \u2014 auth, storage and deployment all follow from this.\n\nThen call crown_code again with the same description and requirements=\"<the user's answers, in their words>\". Only pass confirmed=true if the user explicitly tells you to go ahead without answering."
+      },
+      "files_count": 0,
+      "files": [],
+      "missing_recipe_files": [
+        "app.py (or server.js)",
+        "routes/",
+        "models/",
+        "tests/",
+        "requirements.txt"
+      ],
+      "compile": {
+        "compiled": 0,
+        "compile_failures": [
+          "workspace missing"
+        ]
+      },
+      "verify": {
+        "http_smoke": {
+          "exit": "error",
+          "stdout": "",
+          "stderr": "NotADirectoryError: [WinError 267] The directory name is invalid",
+          "seconds": 0.0
+        }
+      },
+      "ok": false
+    },
+    {
+      "key": "E",
+      "slug": "e_analysis",
+      "kind": "custom",
+      "build": {
+        "ok": false,
+        "seconds": 0.0,
+        "model": "qwen3:8b",
+        "message": "NEED REQUIREMENTS \u2014 nothing was built and nothing was started.\nThis request describes an application, but it does not state: metrics; charts; stack.\n\nAsk the user these questions, one at a time, and do not answer them yourself or pick a default:\n1. Which numbers should each view show? (e.g. price + volume, revenue vs. spend, signups by week) \u2014 a chart with the wrong series is not the same chart.\n2. Which chart types should the views use? (e.g. line for trend, candlestick for OHLC, bar for comparison, KPI cards on top) \u2014 chart type is a requirement, not a styling choice.\n3. Which stack should it be built in? (e.g. React + Vite, plain HTML/JS, Streamlit, FastAPI + a static front end) \u2014 it decides the files, the run command and the dependencies.\n\nThen call crown_code again with the same description and requirements=\"<the user's answers, in their words>\". Only pass confirmed=true if the user explicitly tells you to go ahead without answering."
+      },
+      "files_count": 0,
+      "files": [],
+      "missing_recipe_files": [],
+      "compile": {
+        "compiled": 0,
+        "compile_failures": [
+          "workspace missing"
+        ]
+      },
+      "verify": {
+        "run": {
+          "exit": "error",
+          "stdout": "",
+          "stderr": "NotADirectoryError: [WinError 267] The directory name is invalid",
+          "seconds": 0.0
+        },
+        "outputs": []
+      },
+      "ok": false
+    },
+    {
+      "key": "F",
+      "slug": "f_desktop",
+      "kind": "python-desktop",
+      "build": {
+        "ok": false,
+        "seconds": 615.2,
+        "model": "qwen3:8b",
+        "message": "Coding f_desktop: failed after 10m00s \u2014 Crown Code stopped without changing anything\nFiles: main.py, app/window.py\nRecent:\n  18:10:10 auto-approved write_file\n  18:10:10 Created main.py\n  18:18:57 auto-approved write_file\n  18:18:57 Created app/window.py\n  18:19:35 aborted"
+      },
+      "files_count": 3,
+      "files": [
+        "app\\window.py",
+        "brief.json",
+        "main.py"
+      ],
+      "missing_recipe_files": [
+        "app/__init__.py",
+        "app/db.py",
+        "app/theme.py",
+        "requirements.txt",
+        "README.md"
+      ],
+      "compile": {
+        "compiled": 2,
+        "compile_failures": []
+      },
+      "verify": {
+        "main_exists": true,
+        "import_check": {
+          "exit": 1,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\six_projects\\f_desktop\\main.py\", line 3, in <module>\n    from app.window import NoteCanvasWindow\n  File \"C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\six_projects\\f_desktop\\app\\window.py\", line 2, in <module>\n    from app.theme import apply_dark_theme\nModuleNotFoundError: No module named 'app.theme'\n",
+          "seconds": 0.5
+        }
+      },
+      "ok": false
+    }
+  ]
+}

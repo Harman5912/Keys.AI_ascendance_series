@@ -1,0 +1,9 @@
+# Runtime data created by the demos
+*.sqlite3
+*.db
+
+# Secrets and local configuration
+.env
+
+# Installed dependencies
+node_modules/

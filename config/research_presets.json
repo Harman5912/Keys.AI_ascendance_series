@@ -1,0 +1,88 @@
+{
+  "_comment": "Research presets for the Project Agent. Edit freely: every field is data, no code. Queries use {topic}. source_domains only re-orders sources (matching pages are inspected first), it never hides anything. collect describes what the report keeps for that preset.",
+  "version": 1,
+  "presets": [
+    {
+      "id": "github",
+      "label": "GitHub research",
+      "description": "Find repositories and libraries for the subject; read README, licence, releases and API surface.",
+      "queries": [
+        "{topic} github repository",
+        "site:github.com {topic}",
+        "{topic} open source library license"
+      ],
+      "source_domains": [
+        "github.com",
+        "raw.githubusercontent.com",
+        "pypi.org",
+        "npmjs.com"
+      ],
+      "collect": [
+        "repositories",
+        "code samples",
+        "licences"
+      ]
+    },
+    {
+      "id": "docs",
+      "label": "Docs / API",
+      "description": "Read the official documentation and API reference for the library or service in question.",
+      "queries": [
+        "{topic} official documentation",
+        "{topic} API reference",
+        "{topic} getting started guide"
+      ],
+      "source_domains": [
+        "docs.",
+        "readthedocs.io",
+        "developer.mozilla.org",
+        "pypi.org",
+        "developer.android.com"
+      ],
+      "collect": [
+        "documented sections",
+        "code samples"
+      ]
+    },
+    {
+      "id": "ui_design",
+      "label": "UI / design references",
+      "description": "Collect design-system, component and template references as screenshots, palettes and layout notes. References only — the UI we build is generated in that style, no template code is copied in.",
+      "queries": [
+        "{topic} design system components",
+        "{topic} dashboard UI design inspiration",
+        "{topic} color palette and typography"
+      ],
+      "source_domains": [
+        "tailwindcss.com",
+        "mui.com",
+        "chakra-ui.com",
+        "ant.design",
+        "dribbble.com",
+        "behance.net",
+        "figma.com"
+      ],
+      "collect": [
+        "screenshots",
+        "palette",
+        "layout notes"
+      ]
+    },
+    {
+      "id": "national_search",
+      "label": "National search",
+      "description": "Nationwide web and records search: candidate businesses, listings and public records, deduplicated by name with the region and source kept for each.",
+      "queries": [
+        "{topic} nationwide directory",
+        "{topic} locations United States",
+        "{topic} public records list"
+      ],
+      "source_domains": [],
+      "collect": [
+        "candidate records",
+        "regions",
+        "source urls"
+      ]
+    }
+  ]
+}

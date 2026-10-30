@@ -1,0 +1,170 @@
+generating DOCX through file_processor …
+generating PPTX through file_processor …
+generating XLSX through file_processor …
+generating PDF through file_processor …
+docx: exists=True bytes=38511 157.7s
+pptx: exists=True bytes=56593 100.8s
+xlsx: exists=True bytes=14415 0.9s
+pdf: exists=True bytes=3577 200.8s
+{
+  "validation_docx": {
+    "paragraphs": 22,
+    "tables": 2,
+    "heading_count": 9,
+    "headings": [
+      "Inventory Management System \u2014 Project Report",
+      "Executive Summary",
+      "Objectives",
+      "System Architecture",
+      "Database Schema",
+      "JSON API Endpoints",
+      "Test Results",
+      "Limitations",
+      "Future Improvements"
+    ],
+    "chars": 1220,
+    "has_title_heading": true,
+    "mentions_total": true,
+    "mentions_five_products": true,
+    "mentions_low_stock": true,
+    "mentions_tests": true,
+    "table_has_five_products": true,
+    "sections_present": {
+      "executive_summary": true,
+      "objectives": true,
+      "architecture": true,
+      "database": true,
+      "api": true,
+      "test": true,
+      "limitations": true,
+      "future": true
+    }
+  },
+  "validation_pptx": {
+    "slide_count": 14,
+    "width_inches": 13.33,
+    "empty_slides": [],
+    "titles": [
+      "Inventory Management System \u2014 Technical Overview",
+      "Problem Statement",
+      "Objectives",
+      "System Architecture",
+      "Technology Stack",
+      "Database Design",
+      "API Design",
+      "User Interface",
+      "Security Measures",
+      "Testing Strategy",
+      "Actual Test Results",
+      "Limitations",
+      "Future Improvements",
+      "Conclusion"
+    ],
+    "charts": 1,
+    "densest_slide_chars": 292,
+    "mentions_total": true,
+    "mentions_tests": true,
+    "mentions_low_stock": true,
+    "topics_covered": [
+      "problem",
+      "objective",
+      "architecture",
+      "technology",
+      "database",
+      "api",
+      "interface",
+      "security",
+      "testing",
+      "test results",
+      "limitation",
+      "future",
+      "conclusion"
+    ],
+    "slides": [
+      {
+        "index": 1,
+        "title": "Inventory Management System \u2014 Technical Overview",
+        "chars": 173,
+        "empty": false
+      },
+      {
+        "index": 2,
+        "title": "Problem Statement",
+        "chars": 148,
+        "empty": false
+      },
+      {
+        "index": 3,
+        "title": "Objectives",
+        "chars": 182,
+        "empty": false
+      },
+      {
+        "index": 4,
+        "title": "System Architecture",
+        "chars": 167,
+        "empty": false
+      },
+      {
+        "index": 5,
+        "title": "Technology Stack",
+        "chars": 223,
+        "empty": false
+      },
+      {
+        "index": 6,
+        "title": "Database Design",
+        "chars": 120,
+        "empty": false
+      },
+      {
+        "index": 7,
+        "title": "API Design",
+        "chars": 192,
+        "empty": false
+      },
+      {
+        "index": 8,
+        "title": "User Interface",
+        "chars": 221,
+        "empty": false
+      },
+      {
+        "index": 9,
+        "title": "Security Measures",
+        "chars": 292,
+        "empty": false
+      },
+      {
+        "index": 10,
+        "title": "Testing Strategy",
+        "chars": 196,
+        "empty": false
+      },
+      {
+        "index": 11,
+      
+cross_format: {
+  "all_four_exist": true,
+  "facts": {
+    "docx_states_total": true,
+    "pptx_states_total": true,
+    "pdf_states_total": true,
+    "docx_states_low_stock": true,
+    "pptx_states_low_stock": true,
+    "pdf_states_low_stock": true,
+    "docx_states_tests": true,
+    "pptx_states_tests": true,
+    "pdf_states_tests": true,
+    "xlsx_sku_data_real": true,
+    "xlsx_units_kpi_verified": true,
+    "xlsx_reorder_kpi_verified": true,
+    "xlsx_charts_present": true,
+    "docx_has_required_sections": true,
+    "pptx_no_empty_slides": true,
+    "pdf_no_blank_pages": true
+  },
+  "all_agree": true,
+  "disagreements": []
+}
+STAGE 6 PASSED: all four formats generated, parsed and consistent

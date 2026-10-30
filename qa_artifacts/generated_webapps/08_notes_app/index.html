@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .header { background-color: #f4f4f4; padding: 1rem; text-align: center; }
+        .main { display: flex; margin: 20px; }
+        .notes-list { width: 30%; min-width: 300px; max-width: 500px; padding: 1rem; border: 1px solid #ccc; background-color: #fff; }
+        .note-item { margin-bottom: 1rem; padding: 0.5rem; border-bottom: 1px solid #eee; cursor: pointer; }
+        .note-details { width: 70%; padding: 1rem; }
+        .empty-state { text-align: center; color: #888; }
+        input, textarea { margin-bottom: 1rem; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 0.5rem 1rem; border: none; background-color: #28a745; color: white; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #218838; }
+        .focus-visible:focus { outline: 2px solid #007bff; outline-offset: 2px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Notes App</h1>
+    </div>
+    <div class="main">
+        <div class="notes-list" id="notesList"></div>
+        <div class="note-details" id="noteDetails">
+            <div class="empty-state">No notes yet.</div>
+        </div>
+    </div>
+
+    <script>
+        const notesList = document.getElementById('notesList');
+        const noteDetails = document.getElementById('noteDetails');
+
+        function loadNotes() {
+            const savedNotes = localStorage.getItem('notes') || '[]';
+            return JSON.parse(savedNotes);
+        }
+
+        function saveNotes(notes) {
+            localStorage.setItem('notes', JSON.stringify(notes));
+        }
+
+        function renderNotes(notes) {
+            notesList.innerHTML = '';
+            if (notes.length === 0) {
+                noteDetails.innerHTML = '<div class="empty-state">No notes yet.</div>';
+            } else {
+                notes.forEach(note => {
+                    const noteItem = document.createElement('div');
+                    noteItem.className = 'note-item';
+                    noteItem.textContent = note.title;
+                    noteItem.addEventListener('click', () => showNoteDetails(note));
+                    notesList.appendChild(noteItem);
+                });
+            }
+        }
+
+        function showNoteDetails(note) {
+            const detailsHTML = `\n    <h2>${note.title}</h2>\n    <p>${note.body}</p>\n    <button onclick="editNote(${note.id})">Edit</button>\n    <button onclick="deleteNote(${note.id})">Delete</button>`;
+            noteDetails.innerHTML = detailsHTML;
+        }
+
+        function addNote() {
+            const titleInput = document.getElementById('titleInput');
+            const bodyInput = document.getElementById('bodyInput');
+
+            if (!titleInput.value || !bodyInput.value) {
+                alert('Please enter both a title and body.');
+                return;
+            }
+
+            const notes = loadNotes();
+            const newNote = { id: Date.now(), title: titleInput.value, body: bodyInput.value };
+            notes.push(newNote);
+            saveNotes(notes);
+            renderNotes(notes);
+
+            titleInput.value = '';
+            bodyInput.value = '';
+        }
+
+        function editNote(id) {
+            const notes = loadNotes();
+            const noteToEdit = notes.find(note => note.id === id);
+            if (!noteToEdit) return;
+
+            const titleInput = document.getElementById('titleInput');
+            const bodyInput = document.getElementById('bodyInput');
+
+            titleInput.value = noteToEdit.title;
+            bodyInput.value = noteToEdit.body;
+
+            const saveButton = document.querySelector('#saveButton');
+            saveButton.textContent = 'Update';
+            saveButton.onclick = () => {
+                noteToEdit.title = titleInput.value;
+                noteToEdit.body = bodyInput.value;
+                saveNotes(notes);
+                renderNotes(notes);
+
+                titleInput.value = '';
+                bodyInput.value = '';
+                saveButton.textContent = 'Add Note';
+                saveButton.onclick = addNote;
+            };
+        }
+
+        function deleteNote(id) {
+            const notes = loadNotes();
+            const updatedNotes = notes.filter(note => note.id !== id);
+            saveNotes(updatedNotes);
+            renderNotes(updatedNotes);
+        }
+
+        document.getElementById('addButton').onclick = addNote;
+    </script>
+</body>
+</html>

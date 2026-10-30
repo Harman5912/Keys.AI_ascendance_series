@@ -1,0 +1,21 @@
+generated 10000 bids
+phase A (plan): 10000 bids in 0.4s  presets-first=8572  failures=0
+  ... 500 bids run
+  ... 1000 bids run
+  ... 1500 bids run
+  ... 2000 bids run
+  ... 2500 bids run
+  ... 3000 bids run
+  ... 3500 bids run
+  ... 4000 bids run
+  ... 4500 bids run
+  ... 5000 bids run
+  ... 5500 bids run
+  ... 6000 bids run
+  ... 6500 bids run
+  ... 7000 bids run
+  ... 7500 bids run
+phase B (build): 7500 bids in 2777.0s total, mean 0.37s, slowest 0.60s
+  completed=7500 failed=0 builds=7500 research-in-brief=7500 missing-research=0 unbuilt=0
+report: qa_artifacts/load_test_10000.json
+OK — every bid planned, every sampled build carried its research

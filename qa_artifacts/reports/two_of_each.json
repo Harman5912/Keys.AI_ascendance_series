@@ -1,0 +1,257 @@
+{
+  "results": [
+    {
+      "slug": "dashboard_01_fleet",
+      "artifact": "dashboard",
+      "brief": "Build a fleet-operations dashboard: vehicles, trips, fuel and maintenance costs. Real JSON API, charts and a table.",
+      "model": "qwen3:8b",
+      "seconds": 622.5,
+      "finished": false,
+      "agent_said_done": false,
+      "missing_files": [
+        "seed.py",
+        "static/dashboard.js",
+        "static/style.css"
+      ],
+      "message": "Coding dashboard_01_fleet: failed after 10m00s \u2014 Crown Code stopped without changing anything\nFiles: C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\apps\\dashboard_01_fleet\\app.py\nRecent:\n  18:41:29 -- Create fleet_ops database\nCREATE DATABASE IF NOT EXISTS fleet_ops;\n\n-- Use fleet_ops database\nUSE fleet_ops;\n\n-- Vehicles table\nCREATE TABLE IF NOT EXISTS vehicles (\n    id INT \n  18:42:14 -- Insert sample data into vehicles table\nINSERT INTO vehicles (vehicle_id, make, model, year, registration_date) VALUES\n('V1234', 'Toyota', 'Corolla', 2018, '2020-01-15'),\n('V5678\n  18:42:55 flask\npymysql\npython-dotenv\npy_compile\n  18:43:38 FLASK_ENV=development\nFLASK_APP=app.py\nDB_HOST=localhost\nDB_PORT=3306\nDB_USER=root\nDB_PASSWORD=your_password\nDB_NAME=fleet_ops\n  18:47:23 auto-approved write_file\n  18:47:23 Updated C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\apps\\dashboard_01_fleet\\app.py",
+      "files": [
+        ".env",
+        ".env.example",
+        "app.py",
+        "brief.json",
+        "db.py",
+        "queries.sql",
+        "requirements.txt",
+        "schema.sql",
+        "seed.sql",
+        "templates\\index.html"
+      ]
+    },
+    {
+      "slug": "dashboard_02_newsroom",
+      "artifact": "dashboard",
+      "files": [
+        "brief.json"
+      ],
+      "file_count": 1,
+      "missing_files": [
+        "app.py",
+        "db.py",
+        "schema.sql",
+        "seed.py",
+        "templates/index.html",
+        "static/dashboard.js",
+        "static/style.css",
+        "requirements.txt",
+        ".env.example"
+      ],
+      "checks": [],
+      "ok": false,
+      "finished": false,
+      "adopted": true,
+      "message": "verified from disk: missing app.py, db.py, schema.sql, seed.py, templates/index.html, static/dashboard.js, static/style.css, requirements.txt, .env.example"
+    },
+    {
+      "slug": "doc_Quarterly_Business_Review",
+      "artifact": "docx",
+      "title": "Quarterly Business Review \u2014 Northwind Logistics",
+      "model": "qwen3:8b",
+      "seconds": 10.6,
+      "ok": true,
+      "finished": true,
+      "message": "Created Word document: doc_Quarterly_Business_Review.docx\n  Subject : Q3 review for Northwind Logistics: revenue up 14% year on year, two lost contrac\n  Detail  : 4 sections \u00b7 126 words\n  Size    : 38,266 bytes\n  Saved   : C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\docx\\doc_Quarterly_Business_Review.docx\nNot opened (permission not requested).\n",
+      "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\docx\\doc_Quarterly_Business_Review.docx",
+      "bytes": 38266
+    },
+    {
+      "slug": "doc_Revenue_and_Coverage_Snapshot",
+      "artifact": "docx",
+      "title": "Revenue and Coverage Snapshot \u2014 Meridian Newsroom",
+      "model": "qwen3:8b",
+      "seconds": 11.6,
+      "ok": true,
+      "finished": true,
+      "message": "Created Word document: doc_Revenue_and_Coverage_Snapshot.docx\n  Subject : A revenue and coverage snapshot for Meridian Newsroom: four sections (driven rev\n  Detail  : 4 sections \u00b7 133 words\n  Size    : 38,446 bytes\n  Saved   : C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\docx\\doc_Revenue_and_Coverage_Snapshot.docx\nNot opened (permission not requested).\n",
+      "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\docx\\doc_Revenue_and_Coverage_Snapshot.docx",
+      "bytes": 38446
+    },
+    {
+      "slug": "doc_Staffing_Plan",
+      "artifact": "pptx",
+      "title": "Staffing Plan \u2014 Pulse Clinic Q4",
+      "model": "qwen3:8b",
+      "seconds": 8.1,
+      "ok": true,
+      "finished": true,
+      "message": "Created PowerPoint presentation: doc_Staffing_Plan.pptx\n  Subject : Pulse Clinic Q4\n  Detail  : 5 widescreen slides \u00b7 0 native charts\n  Size    : 35,157 bytes\n  Saved   : C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\pptx\\doc_Staffing_Plan.pptx\nNot opened (permission not requested).\n",
+      "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\pptx\\doc_Staffing_Plan.pptx",
+      "bytes": 35157
+    },
+    {
+      "slug": "doc_Stock_Cover_and_Low-Stock_Report",
+      "artifact": "xlsx",
+      "title": "Stock Cover and Low-Stock Report \u2014 Goods Co",
+      "model": "qwen3:8b",
+      "seconds": 0.5,
+      "ok": true,
+      "finished": true,
+      "message": "Created Excel workbook: doc_Stock_Cover_and_Low-Stock_Report.xlsx\n  Subject : Goods Co\n  Detail  : 4 worksheets \u00b7 live formulas \u00b7 2 charts\n  Size    : 14,368 bytes\n  Saved   : C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\xlsx\\doc_Stock_Cover_and_Low-Stock_Report.xlsx\nNot opened (permission not requested).\n",
+      "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\xlsx\\doc_Stock_Cover_and_Low-Stock_Report.xlsx",
+      "bytes": 14368
+    },
+    {
+      "slug": "doc_Supplier_Risk_Memo",
+      "artifact": "docx",
+      "title": "Supplier Risk Memo \u2014 Atlas Parts",
+      "model": "qwen3:8b",
+      "seconds": 10.3,
+      "ok": true,
+      "finished": true,
+      "message": "Created Word document: doc_Supplier_Risk_Memo.docx\n  Subject : Risk memo for Atlas Parts' Southeast Asia supplier base: one supplier disrupted \n  Detail  : 4 sections \u00b7 98 words\n  Size    : 38,196 bytes\n  Saved   : C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\docx\\doc_Supplier_Risk_Memo.docx\nNot opened (permission not requested).\n",
+      "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\docx\\doc_Supplier_Risk_Memo.docx",
+      "bytes": 38196
+    },
+    {
+      "slug": "doc_Three-Year_Plan",
+      "artifact": "pptx",
+      "title": "Three-Year Plan \u2014 Fern Flint Organics",
+      "model": "qwen3:8b",
+      "seconds": 21.6,
+      "ok": true,
+      "finished": true,
+      "message": "Created PowerPoint presentation: doc_Three-Year_Plan.pptx\n  Subject : Fern Flint Organics\n  Detail  : 5 widescreen slides \u00b7 1 native chart\n  Size    : 42,107 bytes\n  Saved   : C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\pptx\\doc_Three-Year_Plan.pptx\nNot opened (permission not requested).\n",
+      "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\pptx\\doc_Three-Year_Plan.pptx",
+      "bytes": 42107
+    },
+    {
+      "slug": "electron_01_notes",
+      "artifact": "electron",
+      "files": [
+        "brief.json",
+        "main.js",
+        "package-lock.json",
+        "package.json",
+        "preload.js",
+        "renderer/app.js",
+        "renderer/index.html",
+        "renderer/style.css"
+      ],
+      "file_count": 8,
+      "missing_files": [],
+      "checks": [
+        {
+          "check": "node --check main.js",
+          "ok": true,
+          "output": ""
+        },
+        {
+          "check": "node --check preload.js",
+          "ok": true,
+          "output": ""
+        },
+        {
+          "check": "node --check app.js",
+          "ok": true,
+          "output": ""
+        }
+      ],
+      "ok": true,
+      "finished": true,
+      "adopted": true,
+      "message": "verified from disk: recipe files present"
+    },
+    {
+      "slug": "marketing_01_sable_coffee",
+      "artifact": "page",
+      "kind": "website",
+      "studio_requested": "organic",
+      "studio": "Organic",
+      "studio_used": "Crown Code Studio \u2014 Organic",
+      "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\pages\\marketing_01_sable_coffee\\index.html",
+      "bytes": 26107,
+      "ok": true,
+      "finished": true,
+      "problems": [],
+      "browser": "ok",
+      "browser_problems": [],
+      "checklist_score": "",
+      "adopted": true,
+      "message": "verified from disk with check_html + browser_audit"
+    },
+    {
+      "slug": "marketing_02_halo_notes",
+      "artifact": "page",
+      "kind": "website",
+      "studio_requested": "newsroom",
+      "studio": "Newsroom",
+      "studio_used": "Crown Code Studio \u2014 Newsroom",
+      "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\pages\\marketing_02_halo_notes\\index.html",
+      "bytes": 27995,
+      "ok": true,
+      "finished": true,
+      "problems": [],
+      "browser": "ok",
+      "browser_problems": [],
+      "checklist_score": "",
+      "adopted": true,
+      "message": "verified from disk with check_html + browser_audit"
+    },
+    {
+      "slug": "portfolio_01_arjun_mehta",
+      "artifact": "page",
+      "kind": "portfolio",
+      "studio_requested": "brutalist",
+      "studio": "Brutalist",
+      "studio_used": "Crown Code Studio \u2014 Brutalist",
+      "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\pages\\portfolio_01_arjun_mehta\\index.html",
+      "bytes": 23545,
+      "ok": true,
+      "finished": true,
+      "problems": [],
+      "browser": "ok",
+      "browser_problems": [],
+      "checklist_score": "",
+      "adopted": true,
+      "message": "verified from disk with check_html + browser_audit"
+    },
+    {
+      "slug": "portfolio_02_hollis_park",
+      "artifact": "page",
+      "kind": "portfolio",
+      "studio_requested": "editorial",
+      "studio": "Editorial",
+      "studio_used": "Crown Code Studio \u2014 Editorial",
+      "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\pages\\portfolio_02_hollis_park\\index.html",
+      "bytes": 24624,
+      "ok": true,
+      "finished": true,
+      "problems": [],
+      "browser": "ok",
+      "browser_problems": [],
+      "checklist_score": "",
+      "adopted": true,
+      "message": "verified from disk with check_html + browser_audit"
+    },
+    {
+      "slug": "python_01_ledger",
+      "artifact": "python-desktop",
+      "brief": "Python desktop app: a small ledger with entries, search and totals.",
+      "model": "qwen3:8b",
+      "seconds": 159.7,
+      "finished": false,
+      "agent_said_done": false,
+      "missing_files": [],
+      "message": "Coding python_01_ledger: failed after 1m21s \u2014 Crown Code stopped without writing any file: it searched the empty workspace and answered instead of building. No code was produced. Retry with a model that calls write_file (qwen3:8b), or build this artifact through its recipe path.\nRecent:\n  18:49:35 app/\napp/db.py\napp/theme.py\napp/window.py\napp/__init__.py\nbrief.json\nmain.py\nREADME.md\nrequirements.txt\n  18:49:56 import sys\nfrom PyQt6 import QtWidgets\nfrom app.window import Window\n\nif __name__ == '__main__':\n    app = QtWidgets.QApplication(sys.argv)\n    window = Window()\n    window.show()\n\n  18:50:04 from PyQt6 import QtWidgets, QtCore\nfrom app.db import connect_db\nfrom app.theme import set_theme\n\nclass Window(QtWidgets.QMainWindow):\n    def __init__(self):\n        super().__in\n  18:50:13 import sqlite3\nfrom dotenv import load_dotenv\nimport os\n\nload_dotenv()\n\ndef connect_db():\n    conn = sqlite3.connect(\"ledger.db\")\n    return conn\n  18:50:22 def set_theme(window):\n    window.setStyleSheet(\"QMainWindow { background-color: #f0f0f0; }\")\n  18:50:30 PyQt6\nsqlite3\npython-dotenv",
+      "files": [
+        "README.md",
+        "app\\__init__.py",
+        "app\\db.py",
+        "app\\theme.py",
+        "app\\window.py",
+        "brief.json",
+        "main.py",
+        "requirements.txt"
+      ]
+    }
+  ]
+}

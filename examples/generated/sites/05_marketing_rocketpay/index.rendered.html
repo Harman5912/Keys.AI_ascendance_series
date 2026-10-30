@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Rocketpay is a developer-first fintech payments product that simplifies and secures your transactions. Our sleek design, neon colors, and flat pricing make it easy for developers t">
+<meta name="generator" content="Crown Code Studio — Aurora">
+<title>Rocketpay - Your Gateway to Secure Payments</title>
+<style>
+/* functional foundation — identical in every studio, aesthetics are not */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;max-width:100%;overflow-x:hidden}
+img,svg,video,canvas{max-width:100%;height:auto;display:block}
+a{color:inherit}
+button,input,select,textarea{font:inherit}
+:focus-visible{outline:3px solid var(--crown-focus,#ffd166);outline-offset:3px}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--crown-focus,#ffd166);outline-offset:3px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:1rem;top:1rem;z-index:99;padding:.6rem 1rem;border-radius:6px;background:#111;color:#fff}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.is-in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .reveal{opacity:1;transform:none}
+}
+
+
+:root{--bg:#070b16;--surface:rgba(255,255,255,.055);--ink:#f4f7ff;--muted:#9aa6c4;
+--accent:#7c5cff;--accent2:#22d3ee;--line:rgba(255,255,255,.12);--crown-focus:#7c5cff;
+--font:"Inter","Segoe UI",system-ui,sans-serif;--mono:ui-monospace,"Cascadia Code",Consolas,monospace}
+body{background:
+ radial-gradient(1200px 700px at 12% -8%,rgba(124,92,255,.28),transparent 60%),
+ radial-gradient(900px 600px at 88% 4%,rgba(34,211,238,.18),transparent 55%),
+ var(--bg);color:var(--ink);font:400 17px/1.65 var(--font);letter-spacing:-.01em}
+.wrap{width:min(1180px,100% - 3rem);margin-inline:auto}
+.site-header{position:sticky;top:1rem;z-index:30;width:min(1180px,100% - 3rem);margin:1rem auto 0;
+ background:rgba(10,14,26,.62);border:1px solid var(--line);border-radius:999px;
+ backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.bar{display:flex;align-items:center;gap:1rem;padding:.7rem .9rem .7rem 1.2rem}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:800;letter-spacing:-.03em;
+ font-size:1.05rem;text-decoration:none}
+.brand i{display:grid;place-items:center;width:26px;height:26px;border-radius:9px;
+ background:linear-gradient(135deg,var(--accent),var(--accent2));color:#06101c;
+ font-style:normal;font-size:.85rem;font-weight:900;box-shadow:0 0 24px rgba(124,92,255,.55)}
+nav{margin-inline-start:auto}
+nav ul{display:flex;gap:.25rem;list-style:none;margin:0;padding:0}
+nav a{padding:.5rem .8rem;border-radius:999px;text-decoration:none;color:var(--muted);
+ font-size:.9rem;transition:color .2s,background .2s}
+nav a:hover{color:var(--ink);background:rgba(255,255,255,.08)}
+.nav-toggle{display:none;margin-inline-start:auto;background:rgba(255,255,255,.08);color:var(--ink);
+ border:1px solid var(--line);border-radius:999px;padding:.45rem .85rem;font-size:.85rem;cursor:pointer}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border-radius:999px;
+ padding:.85rem 1.4rem;font-weight:650;font-size:.95rem;text-decoration:none;cursor:pointer;
+ border:1px solid transparent;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:linear-gradient(135deg,var(--accent),#9a7bff);color:#fff;
+ box-shadow:0 10px 30px rgba(124,92,255,.38)}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:rgba(255,255,255,.04)}
+.hero{position:relative;padding:clamp(4rem,10vw,8rem) 0 3rem;isolation:isolate;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(60px);pointer-events:none;z-index:-1;opacity:.65}
+.orb-a{width:420px;height:420px;left:-120px;top:-40px;background:#5b3cff;animation:drift 18s ease-in-out infinite alternate}
+.orb-b{width:360px;height:360px;right:-80px;top:120px;background:#0e7490;animation:drift 24s ease-in-out infinite alternate-reverse}
+.orb-c{width:260px;height:260px;left:42%;bottom:-160px;background:#c026d3;opacity:.28;animation:drift 21s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(60px,40px,0) scale(1.12)}}
+.hero .kicker{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--line);
+ border-radius:999px;padding:.3rem .8rem;color:var(--muted);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+.hero .kicker b{width:6px;height:6px;border-radius:50%;background:var(--accent2);box-shadow:0 0 10px var(--accent2)}
+h1{font-size:clamp(2.6rem,7vw,5.4rem);line-height:1.02;letter-spacing:-.045em;margin:1rem 0 1.2rem;max-width:15ch}
+h1 em{font-style:normal;background:linear-gradient(100deg,var(--accent2),var(--accent) 60%,#f0a6ff);
+ -webkit-background-clip:text;background-clip:text;color:transparent}
+.tagline{color:var(--muted);font-size:clamp(1rem,2vw,1.2rem);max-width:56ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+.hero-note{margin-top:1rem;color:#7380a0;font-size:.82rem}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;
+ margin-top:4rem;background:var(--line);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.metric{background:rgba(10,15,28,.7);padding:1.3rem 1.4rem}
+.metric strong{display:block;font-size:1.9rem;letter-spacing:-.04em;
+ background:linear-gradient(120deg,#fff,#a8b6ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.metric span{color:var(--muted);font-size:.8rem;letter-spacing:.04em;text-transform:uppercase}
+.section{padding:clamp(4rem,9vw,7rem) 0}
+.sec-head{max-width:62ch;margin-bottom:2.4rem}
+.eyebrow{text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;color:var(--accent2);margin:0 0 .7rem;font-weight:700}
+h2{font-size:clamp(1.8rem,4.2vw,3rem);line-height:1.08;letter-spacing:-.035em;margin:0 0 .7rem}
+h3{margin:0 0 .4rem;font-size:1.08rem;letter-spacing:-.01em}
+.lead{color:var(--muted);max-width:60ch}
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:1rem}
+.bento .card{grid-column:span 2}
+.bento .card:nth-child(1){grid-column:span 4}
+.bento .card:nth-child(2){grid-column:span 2}
+.bento .card:nth-child(3){grid-column:span 2}
+.bento .card:nth-child(4){grid-column:span 4}
+.card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:20px;
+ padding:1.6rem;overflow:hidden;transition:transform .25s,border-color .25s}
+.card::after{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;
+ background:linear-gradient(140deg,rgba(255,255,255,.18),transparent 40%);
+ -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+ -webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.card:hover{transform:translateY(-4px);border-color:rgba(124,92,255,.45)}
+.card .num{font-family:var(--mono);font-size:.75rem;color:var(--accent2);letter-spacing:.12em}
+.card p{color:var(--muted);margin:.5rem 0 0;font-size:.95rem}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;padding:0;margin:1rem 0 0}
+.tags li{font-size:.72rem;border:1px solid var(--line);border-radius:999px;padding:.15rem .6rem;color:var(--muted)}
+.filters{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1.5rem}
+.filter{background:rgba(255,255,255,.04);color:var(--muted);border:1px solid var(--line);
+ border-radius:999px;padding:.42rem .9rem;font-size:.85rem;cursor:pointer}
+.filter.is-active{background:var(--accent);border-color:var(--accent);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.meta{font-size:.74rem;color:var(--accent2);text-transform:uppercase;letter-spacing:.14em;margin:0}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--line);
+ border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.steps .card{border:0;border-radius:0;background:#0a0f1d}
+.steps .card strong{display:block;font-size:2rem;color:rgba(124,92,255,.5);line-height:1;margin-bottom:.7rem}
+.quote-band{border-block:1px solid var(--line);padding:3rem 0}
+.pullquote{font-size:clamp(1.3rem,3vw,2rem);line-height:1.35;letter-spacing:-.02em;max-width:34ch;margin:0}
+.pullquote cite{display:block;margin-top:1rem;font-style:normal;color:var(--muted);font-size:.9rem}
+.split{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;align-items:start}
+.split h3{color:var(--accent2)}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;padding:0;margin:1rem 0 0}
+.chip{border:1px solid var(--line);border-radius:999px;padding:.45rem 1rem;font-size:.9rem;background:rgba(255,255,255,.04)}
+.faq details{border-bottom:1px solid var(--line);padding:1.15rem 0}
+.faq summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--accent2);font-weight:400}
+.faq details[open] summary::after{content:"−"}
+.faq p{color:var(--muted);max-width:70ch;margin:.8rem 0 0}
+.contact-form{display:grid;gap:1rem;max-width:600px;background:var(--surface);
+ border:1px solid var(--line);border-radius:20px;padding:1.6rem}
+.contact-form label{display:grid;gap:.4rem;font-size:.82rem;color:var(--muted)}
+.contact-form input,.contact-form textarea,.contact-form select{background:rgba(6,9,18,.7);color:var(--ink);
+ border:1px solid var(--line);border-radius:12px;padding:.75rem .9rem;width:100%}
+.contact-form textarea{min-height:7rem;resize:vertical}
+.form-status{min-height:1.4rem;color:var(--accent2);font-size:.9rem}
+.site-footer{border-top:1px solid var(--line);padding:2.5rem 0;color:var(--muted);font-size:.85rem;
+ display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center}
+.site-footer a{color:var(--ink);text-decoration:none}
+@media (max-width:820px){
+ nav{position:absolute;inset:calc(100% + .6rem) 0 auto;background:rgba(9,13,24,.97);border:1px solid var(--line);
+  border-radius:18px;display:none;padding:.6rem}
+ nav.is-open{display:block}
+ nav ul{flex-direction:column}
+ nav a{display:block}
+ .nav-toggle{display:inline-flex}
+ .bento{grid-template-columns:1fr}
+ .bento .card,.bento .card:nth-child(n){grid-column:span 1}
+ h1{max-width:none}
+}
+</style>
+<style>/* crown-base: page-level correctness rules */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;max-width:100%;overflow-x:hidden}
+img,svg,video,canvas{max-width:100%;height:auto}
+:focus-visible{outline:3px solid var(--crown-focus,#ffd166);outline-offset:3px;border-radius:2px}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--crown-focus,#ffd166);outline-offset:3px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style></head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="bar">
+  <a class="brand" href="#main"><i>H</i>Rocketpay</a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <nav id="site-nav" aria-label="Main"><ul><li><a href="#about">About Rocketpay</a></li><li><a href="#work">Selected Work</a></li><li><a href="#skills">Our Skills</a></li><li><a href="#contact">Contact Us</a></li></ul></nav>
+</div></header>
+<main id="main">
+  <section class="hero" data-parallax><div class="orb orb-a" data-depth="26"></div>
+    <div class="orb orb-b" data-depth="18"></div><div class="orb orb-c" data-depth="10"></div>
+    <div class="wrap">
+      <p class="kicker"><b></b>Simplify your payments, securely.</p>
+      <h1>Experience the Future of Payments <em>with Rocketpay</em></h1>
+      <p class="tagline">Rocketpay is a developer-first fintech payments product that simplifies and secures your transactions. Our sleek design, neon colors, and flat pricing make it easy for developers to integrate into their applications.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#about">Get Started Now</a>
+        <a class="btn btn-ghost" href="#contact">Learn More</a>
+      </div>
+      <p class="hero-note">No credit card · GDPR-ready · works with your gateway</p>
+      <div class="metrics" id="stats"><div class="metric"><strong data-count="6+">6+</strong><span>years shipping</span></div></div>
+    </div>
+  </section>
+  <section class="section" id="about"><div class="wrap"><div class="sec-head"><p class="eyebrow">text</p><h2>About Rocketpay</h2><p class="lead">Rocketpay is a developer-first fintech payments product that simplifies and secures your transactions.</p></div><p>Rocketpay&#x27;s flat pricing, dark design, and neon colors make it easy for developers to integrate into their applications.</p><p>Our secure payment system ensures that your transactions are protected from fraud and unauthorized access.</p><p>Rocketpay processes payments quickly and efficiently, allowing you to focus on what matters most to your business.</p></div></section><section class="section" id="work"><div class="wrap"><div class="sec-head"><p class="eyebrow">gallery</p><h2>Selected Work</h2><p class="lead">See how Rocketpay is simplifying payments for businesses of all sizes.</p></div><div class="grid"><article class="card"><h3>E-commerce Platform</h3><p>Rocketpay integrated into our e-commerce platform to simplify payment processing and increase conversion rates.</p></article><article class="card"><h3>Financial Services Company</h3><p>Rocketpay helped a financial services company streamline their payment processes and reduce fraud.</p></article><article class="card"><h3>Healthcare Provider</h3><p>Rocketpay integrated into our healthcare provider&#x27;s system to simplify payment processing for patients and providers.</p></article><article class="card"><h3>Real Estate Brokerage</h3><p>Rocketpay integrated into our real estate brokerage&#x27;s system to simplify payment processing and increase sales.</p></article></div></div></section><section class="section" id="skills"><div class="wrap"><div class="sec-head"><p class="eyebrow">cards</p><h2>Our Skills</h2><p class="lead">We are experts in payments, security, and developer integration.</p></div><div class="bento"><article class="card"><span class="num">—</span><h3>Payment Processing</h3><p>Rocketpay processes payments quickly and efficiently.</p></article><article class="card"><span class="num">—</span><h3>Security</h3><p>Our secure payment system ensures that your transactions are protected from fraud and unauthorized access.</p></article><article class="card"><span class="num">—</span><h3>Developer Integration</h3><p>Rocketpay&#x27;s flat pricing, dark design, and neon colors make it easy for developers to integrate into their applications.</p></article></div></div></section><section class="section" id="faq"><div class="wrap"><div class="sec-head"><p class="eyebrow">faq</p><h2>FAQ</h2></div><div class="faq "><details><summary>What is Rocketpay?</summary><p>Rocketpay is a developer-first fintech payments product that simplifies and secures your transactions.</p></details><details><summary>How does Rocketpay work?</summary><p>Rocketpay processes payments quickly and efficiently, ensuring that your transactions are protected from fraud and unauthorized access.</p></details><details><summary>Is Rocketpay secure?</summary><p>Yes, Rocketpay&#x27;s secure payment system ensures that your transactions are protected from fraud and unauthorized access.</p></details><details><summary>Can I integrate Rocketpay into my application?</summary><p>Yes, Rocketpay&#x27;s flat pricing, dark design, and neon colors make it easy for developers to integrate into their applications.</p></details></div></div></section><section class="section" id="contact"><div class="wrap"><div class="sec-head"><p class="eyebrow">text</p><h2>Contact Us</h2><p class="lead">Ready to get started with Rocketpay? Contact us today!</p></div><p>info@rocketpay.com</p><p>+1 (555) 555-5555</p><p>123 Main St, Anytown, USA</p></div></section><section class="section" id="contact"><div class="wrap"><div class="sec-head"><p class="eyebrow">contact</p><h2>Get in touch</h2><p class="lead">Send a message with what you need and the deadline you are working towards.</p></div><div class="split"><div><h3>Get in touch</h3><p class="lead">Send a message with what you need and the deadline you are working towards.</p></div><form class="contact-form " data-contact novalidate><label for="f-name">Name<input id="f-name" name="name" type="text" required placeholder="Your name"></label><label for="f-email">Email<input id="f-email" name="email" type="email" required placeholder="you@example.com"></label><label for="f-message">Message<textarea id="f-message" name="message" required placeholder="What are you building?"></textarea></label><button type="submit" class="btn btn-primary">Send message</button><p class="form-status" data-form-status role="status" aria-live="polite"></p><p class="hero-note">We reply within two working days.</p></form></div></div></section>
+</main>
+<footer class="site-footer wrap"><p>Rocketpay - Your Gateway to Secure Payments</p>
+  <p><a href="#main">Back to top ↑</a></p></footer>
+
+<script>
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var nav = document.getElementById('site-nav');
+  document.querySelectorAll('.nav-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      if (!nav) return;
+      var open = nav.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+  if (nav) nav.addEventListener('click', function (e) {
+    if (e.target.closest('a')) {
+      nav.classList.remove('is-open');
+      var t = document.querySelector('.nav-toggle');
+      if (t) t.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // counters
+  document.querySelectorAll('[data-count]').forEach(function (el) {
+    var raw = el.getAttribute('data-count') || el.textContent || '';
+    var m = raw.match(/-?[\d.,]+/);
+    if (!m) return;
+    var target = parseFloat(m[0].replace(/,/g, ''));
+    if (!isFinite(target)) return;
+    var prefix = raw.slice(0, m.index), suffix = raw.slice(m.index + m[0].length);
+    var decimals = (m[0].split('.')[1] || '').length;
+    if (reduce) return;
+    var t0 = performance.now(), dur = 1100;
+    function frame(t) {
+      var p = Math.min(1, (t - t0) / dur);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var val = (target * eased).toFixed(decimals);
+      el.textContent = prefix + Number(val).toLocaleString(undefined,
+        {minimumFractionDigits: decimals, maximumFractionDigits: decimals}) + suffix;
+      if (p < 1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  });
+
+  // reveal
+  var reveals = document.querySelectorAll('[data-reveal], .section > *, .card, .product, .still, .story');
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) { entry.target.classList.add('is-in'); io.unobserve(entry.target); }
+      });
+    }, { rootMargin: '0px 0px -6% 0px' });
+    reveals.forEach(function (el, i) {
+      el.classList.add('reveal');
+      el.style.transitionDelay = Math.min(i % 6, 5) * 45 + 'ms';
+      io.observe(el);
+    });
+  } else {
+    reveals.forEach(function (el) { el.classList.add('is-in'); });
+  }
+
+  // filters
+  document.querySelectorAll('.filters').forEach(function (group) {
+    group.querySelectorAll('.filter').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        group.querySelectorAll('.filter').forEach(function (b) {
+          b.classList.toggle('is-active', b === btn);
+        });
+        var want = btn.getAttribute('data-filter');
+        document.querySelectorAll('[data-tags]').forEach(function (card) {
+          var tags = (card.getAttribute('data-tags') || '').split(/\s+/);
+          card.hidden = want !== 'all' && tags.indexOf(want) === -1;
+        });
+      });
+    });
+  });
+
+  // contact forms
+  document.querySelectorAll('form[data-contact]').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var status = form.querySelector('[data-form-status]');
+      var bad = null;
+      form.querySelectorAll('input, textarea, select').forEach(function (field) {
+        if (field.hasAttribute('required') && !String(field.value).trim()) bad = field;
+        if (!bad && field.type === 'email' &&
+            !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(String(field.value).trim())) bad = field;
+      });
+      if (bad) {
+        if (status) status.textContent = 'Please complete the highlighted field' +
+          (bad.type === 'email' ? ' with a valid email address.' : '.');
+        bad.focus();
+        return;
+      }
+      var nameField = form.querySelector('input[name="name"]');
+      var who = nameField ? String(nameField.value).trim().split(/\s+/)[0] : '';
+      if (status) status.textContent = (who ? 'Thanks ' + who + ' — ' : 'Thanks — ') +
+        'your message is queued. A person will reply, not an autoresponder.';
+      form.reset();
+    });
+  });
+
+  // drag a filmstrip
+  document.querySelectorAll('[data-drag]').forEach(function (strip) {
+    var down = false, startX = 0, startLeft = 0;
+    strip.addEventListener('pointerdown', function (e) {
+      down = true; startX = e.clientX; startLeft = strip.scrollLeft;
+      strip.setPointerCapture && strip.setPointerCapture(e.pointerId);
+      strip.style.cursor = 'grabbing';
+    });
+    strip.addEventListener('pointermove', function (e) {
+      if (!down) return;
+      strip.scrollLeft = startLeft - (e.clientX - startX);
+    });
+    function up() { down = false; strip.style.cursor = 'grab'; }
+    strip.addEventListener('pointerup', up);
+    strip.addEventListener('pointercancel', up);
+    strip.addEventListener('pointerleave', up);
+  });
+
+  // add-to-cart counters
+  document.querySelectorAll('[data-add]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var counter = document.querySelector('[data-cart]');
+      if (!counter) return;
+      var n = parseInt(counter.textContent, 10) || 0;
+      counter.textContent = String(n + 1);
+      counter.classList.add('bump');
+      setTimeout(function () { counter.classList.remove('bump'); }, 320);
+      var old = btn.textContent;
+      btn.textContent = 'Added ✓';
+      setTimeout(function () { btn.textContent = old; }, 1200);
+    });
+  });
+
+  // sticker spin
+  document.querySelectorAll('[data-spin]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      el.classList.remove('spin');
+      void el.offsetWidth;
+      el.classList.add('spin');
+    });
+  });
+
+  // editorial reading rule
+  var bar = document.querySelector('[data-readbar]');
+  if (bar) {
+    var fill = bar.firstElementChild;
+    function progress() {
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      var pct = max > 0 ? Math.min(1, window.scrollY / max) : 0;
+      fill.style.width = (pct * 100).toFixed(2) + '%';
+    }
+    window.addEventListener('scroll', progress, { passive: true });
+    progress();
+  }
+
+  // copy a command
+  document.querySelectorAll('[data-copy]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var box = btn.closest('.code-card');
+      var text = box ? (box.querySelector('code') || {}).textContent || '' : '';
+      if (!text) return;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).catch(function () {});
+      }
+      var old = btn.textContent;
+      btn.textContent = 'copied';
+      setTimeout(function () { btn.textContent = old; }, 1200);
+    });
+  });
+
+  // hero pointer parallax (aurora / cinematic)
+  document.querySelectorAll('[data-parallax]').forEach(function (root) {
+    if (reduce) return;
+    var layers = root.querySelectorAll('[data-depth]');
+    root.addEventListener('pointermove', function (e) {
+      var r = root.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - 0.5;
+      var y = (e.clientY - r.top) / r.height - 0.5;
+      layers.forEach(function (layer) {
+        var d = parseFloat(layer.getAttribute('data-depth')) || 10;
+        layer.style.transform = 'translate3d(' + (-x * d) + 'px,' + (-y * d) + 'px,0)';
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>

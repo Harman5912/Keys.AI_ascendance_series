@@ -1,0 +1,24 @@
+{
+  "key": "A",
+  "slug": "a_utility",
+  "kind": "custom",
+  "build": {
+    "ok": false,
+    "seconds": 614.4,
+    "model": "qwen3:8b",
+    "message": "Coding a_utility: failed after 10m00s \u2014 Crown Code stopped without changing anything"
+  },
+  "files_count": 1,
+  "files": [
+    "brief.json"
+  ],
+  "missing_recipe_files": [],
+  "compile": {
+    "compiled": 0,
+    "compile_failures": []
+  },
+  "verify": {
+    "entry_exists": false
+  },
+  "ok": false
+}

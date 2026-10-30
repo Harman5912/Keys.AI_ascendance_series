@@ -1,0 +1,22 @@
+
+=== app dashboard_01_fleet (dashboard) ===
+  → 10 files · 615.9s · did not finish
+
+=== app python_01_ledger (python-desktop) ===
+  → 8 files · 178.4s · finished
+
+summary
+  dashboard_01_fleet                 dashboard       incomplete Build a fleet-operations dashboard: vehi
+  dashboard_02_newsroom              dashboard       incomplete 
+  doc_Quarterly_Business_Review      docx            ok         Quarterly Business Review — Northwind Logistics
+  doc_Revenue_and_Coverage_Snapshot  docx            ok         Revenue and Coverage Snapshot — Meridian Newsroom
+  doc_Staffing_Plan                  pptx            ok         Staffing Plan — Pulse Clinic Q4
+  doc_Stock_Cover_and_Low-Stock_Report xlsx            ok         Stock Cover and Low-Stock Report — Goods Co
+  doc_Supplier_Risk_Memo             docx            ok         Supplier Risk Memo — Atlas Parts
+  doc_Three-Year_Plan                pptx            ok         Three-Year Plan — Fern Flint Organics
+  electron_01_notes                  electron        ok         
+  marketing_01_sable_coffee          page            ok         
+  marketing_02_halo_notes            page            ok         
+  portfolio_01_arjun_mehta           page            ok         
+  portfolio_02_hollis_park           page            ok         
+  python_01_ledger                   python-desktop  ok         Python desktop app: a small ledger with 

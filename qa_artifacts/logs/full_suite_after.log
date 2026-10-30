@@ -1,0 +1,61 @@
+.................................................................................................................................
+----------------------------------------------------------------------
+Ran 129 tests in 6.232s
+
+OK
+[FileProcessor] CREATE DOCX | report.docx
+[FileProcessor] CREATE DOCX | md.docx
+[FileProcessor] CREATE DOCX | noperm.docx
+[FileProcessor] CREATE DOCX | nums.docx
+[FileProcessor] CSV | data.csv | action=stats
+[FileProcessor] JSON | ok.json | action=validate
+[FileProcessor] JSON | bad.json | action=validate
+[FileProcessor] PPTX | deck.pptx | action=to_pdf
+[FileProcessor] PDF | sample.pdf | action=extract_text
+[FileProcessor] PDF | sample.pdf | action=info
+[FileProcessor] PDF | sample.pdf | action=to_word
+[FileProcessor] PDF | sample.pdf | action=rotate_pages
+[SendMessage] 📨 whatsapp → A: b
+[SendMessage] ❌ Could not send message: WhatsApp window not found
+[SendMessage] 📨 whatsapp → A: b
+[SendMessage] ❌ Message sent to A via WhatsApp, but could NOT be confirmed on screen.
+[SendMessage] ⛔ Blocked (unverified contact): X
+[SendMessage] 📨 whatsapp → Test Contact: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx…
+[SendMessage] ✅ Message confirmed sent to Test Contact (verified on screen).
+[SendMessage] 📨 whatsapp → Asha: hi
+[SendMessage] ✅ Message confirmed sent to Test Contact (verified on screen).
+[SendMessage] 📨 whatsapp → Test Contact: नमस्ते — café ☕ ✅ 🎉
+[SendMessage] ✅ Message confirmed sent to Test Contact (verified on screen).
+[SendMessage] 📨 slack → A: b
+[SendMessage] ✅ Message confirmed sent.
+[FileProcessor] PDF | P01_quarterly_report.pdf | action=info
+[FileProcessor] PDF | P01_quarterly_report.pdf | action=extract_text
+[FileProcessor] PDF | P01_quarterly_report.pdf | action=to_word
+[FileProcessor] PDF | P02_policy.pdf | action=info
+[FileProcessor] PDF | P02_policy.pdf | action=extract_text
+[FileProcessor] PDF | P02_policy.pdf | action=to_word
+[FileProcessor] PDF | P03_invoice.pdf | action=info
+[FileProcessor] PDF | P03_invoice.pdf | action=extract_text
+[FileProcessor] PDF | P03_invoice.pdf | action=to_word
+[FileProcessor] PDF | P04_contract.pdf | action=info
+[FileProcessor] PDF | P04_contract.pdf | action=extract_text
+[FileProcessor] PDF | P04_contract.pdf | action=to_word
+[FileProcessor] PDF | P05_research.pdf | action=info
+[FileProcessor] PDF | P05_research.pdf | action=extract_text
+[FileProcessor] PDF | P05_research.pdf | action=to_word
+[FileProcessor] PDF | P06_manual.pdf | action=info
+[FileProcessor] PDF | P06_manual.pdf | action=extract_text
+[FileProcessor] PDF | P06_manual.pdf | action=to_word
+[FileProcessor] PDF | P07_minutes.pdf | action=info
+[FileProcessor] PDF | P07_minutes.pdf | action=extract_text
+[FileProcessor] PDF | P07_minutes.pdf | action=to_word
+[FileProcessor] PDF | P08_syllabus.pdf | action=info
+[FileProcessor] PDF | P08_syllabus.pdf | action=extract_text
+[FileProcessor] PDF | P08_syllabus.pdf | action=to_word
+[FileProcessor] PDF | P09_unicode.pdf | action=info
+[FileProcessor] PDF | P09_unicode.pdf | action=extract_text
+[FileProcessor] PDF | P09_unicode.pdf | action=to_word
+[FileProcessor] PDF | P10_scanned_no_text.pdf | action=extract_text
+[FileProcessor] PPTX | deck.pptx | action=to_pdf
+[FileProcessor] PDF | P09_unicode.pdf | action=to_word
+[FileProcessor] PDF | P01_quarterly_report.pdf | action=merge

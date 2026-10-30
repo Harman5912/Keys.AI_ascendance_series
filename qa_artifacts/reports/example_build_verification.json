@@ -1,0 +1,121 @@
+{
+  "pages": [
+    {
+      "slug": "01_portfolio_riya_dev",
+      "exists": true,
+      "ok": true,
+      "problems": [],
+      "browser": "ok",
+      "browser_problems": [],
+      "studio": "Crown Code Studio \u2014 Brutalist",
+      "bytes": 23773,
+      "sha256": "63f9c7651826ce1c",
+      "has_charts_or_api": false
+    },
+    {
+      "slug": "02_portfolio_atelier_nord",
+      "exists": true,
+      "ok": true,
+      "problems": [],
+      "browser": "ok",
+      "browser_problems": [],
+      "studio": "Crown Code Studio \u2014 Swiss",
+      "bytes": 23979,
+      "sha256": "38f3ae71ced7f47a",
+      "has_charts_or_api": false
+    },
+    {
+      "slug": "03_portfolio_maya_photo",
+      "exists": true,
+      "ok": true,
+      "problems": [],
+      "browser": "ok",
+      "browser_problems": [],
+      "studio": "Crown Code Studio \u2014 Cinematic",
+      "bytes": 23846,
+      "sha256": "911019fc0fb27f4b",
+      "has_charts_or_api": false
+    },
+    {
+      "slug": "04_marketing_verdant",
+      "exists": true,
+      "ok": true,
+      "problems": [],
+      "browser": "ok",
+      "browser_problems": [],
+      "studio": "Crown Code Studio \u2014 Organic",
+      "bytes": 25816,
+      "sha256": "2b422c6e40f7a583",
+      "has_charts_or_api": true
+    },
+    {
+      "slug": "05_marketing_rocketpay",
+      "exists": true,
+      "ok": true,
+      "problems": [],
+      "browser": "ok",
+      "browser_problems": [],
+      "studio": "Crown Code Studio \u2014 Aurora",
+      "bytes": 25760,
+      "sha256": "e0f6f9a302a86d9d",
+      "has_charts_or_api": false
+    }
+  ],
+  "examples": [
+    {
+      "name": "dashboard_flask",
+      "ok": true,
+      "output": "api ok sqlite"
+    },
+    {
+      "name": "dashboard_marketing_flask",
+      "ok": true,
+      "output": "api ok sqlite"
+    },
+    {
+      "name": "dashboard_node",
+      "ok": true,
+      "output": ""
+    },
+    {
+      "name": "dashboard_node_bi",
+      "ok": true,
+      "output": ""
+    },
+    {
+      "name": "electron",
+      "ok": true,
+      "output": ""
+    },
+    {
+      "name": "python_desktop",
+      "ok": true,
+      "output": "Note that Qt no longer ships fonts. Deploy some (from https://dejavu-fonts.github.io/ for example) or switch to fontconfig."
+    },
+    {
+      "name": "mysql_helper",
+      "ok": true,
+      "output": ""
+    }
+  ],
+  "android": {
+    "files_present": true,
+    "compiled": false,
+    "note": "No Android SDK / gradlew on this machine \u2014 structure verified only."
+  },
+  "summary": {
+    "pages_built": 5,
+    "pages_passing": 5,
+    "all_pages_distinct": true,
+    "studios": [
+      "Crown Code Studio \u2014 Brutalist",
+      "Crown Code Studio \u2014 Swiss",
+      "Crown Code Studio \u2014 Cinematic",
+      "Crown Code Studio \u2014 Organic",
+      "Crown Code Studio \u2014 Aurora"
+    ],
+    "examples_passing": 7,
+    "examples_total": 7
+  },
+  "env_note": ""
+}

@@ -1,0 +1,30 @@
+$ C:\Users\harma\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -X utf8 qa_artifacts/audit_sites.py --kind website
+exit=1 seconds=19.3
+
+---- stdout ----
+FAIL  01_saas_landing
+      - no_horizontal_overflow: {"mobile": "400>375", "tablet": "768>768", "desktop": "1440>1440"}
+PASS  02_ecommerce_storefront
+PASS  03_restaurant_menu
+PASS  04_education_institution
+PASS  05_marketing_agency
+FAIL  06_event_conference
+      - landmarks: header=True main=False footer=True
+FAIL  07_news_editorial
+      - buttons_clickable: 0 buttons
+      - keyboard_reachable: 0 focusable elements
+      - tab_focus_visible: focus -> BODY
+      - focus_styles: no :focus rule
+FAIL  08_nonprofit
+      - no_horizontal_overflow: {"mobile": "429>375", "tablet": "768>768", "desktop": "1440>1440"}
+FAIL  09_analytics_dashboard
+      - no_js_errors: Cannot set properties of null (setting 'textContent')
+      - no_errors_after_clicks: Cannot set properties of null (setting 'textContent'); Cannot set properties of null (setting 'textContent')
+      - no_errors_after_reload: Cannot set properties of null (setting 'textContent'); Cannot set properties of null (setting 'textContent')
+FAIL  10_business_services
+      - no_horizontal_overflow: {"mobile": "410>375", "tablet": "768>768", "desktop": "1440>1440"}
+
+website: 4/10 passed the browser audit
+
+---- stderr ----
+

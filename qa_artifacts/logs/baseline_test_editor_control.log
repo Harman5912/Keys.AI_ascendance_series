@@ -1,0 +1,33 @@
+# test_editor_control.py  exit=0  seconds=0.49  timeout=False
+# ---- stdout ----
+[Editor] Opened a.py in vscode
+[Editor] Edited app.py directly (could not open vscode)
+[Editor] Created and opened new.py in vscode
+[Editor] Edited app.py directly (UI drive unavailable)
+[Editor] Visual edit of app.py verified
+[Editor] Appended text to n.txt directly
+
+# ---- stderr ----
+test_code_file_picks_vscode (__main__.AppPickTests.test_code_file_picks_vscode) ... ok
+test_docs_pick_office (__main__.AppPickTests.test_docs_pick_office) ... ok
+test_edit_requires_content (__main__.DispatchTests.test_edit_requires_content) ... ok
+test_missing_file_path (__main__.DispatchTests.test_missing_file_path) ... ok
+test_open_reports_failure (__main__.DispatchTests.test_open_reports_failure) ... ok
+test_open_reports_success (__main__.DispatchTests.test_open_reports_success) ... ok
+test_unknown_action (__main__.DispatchTests.test_unknown_action) ... ok
+test_edit_when_app_cannot_launch (__main__.EditFlowTests.test_edit_when_app_cannot_launch) ... ok
+test_new_file_created_and_opened (__main__.EditFlowTests.test_new_file_created_and_opened) ... ok
+test_visual_edit_falls_back_to_direct_write (__main__.EditFlowTests.test_visual_edit_falls_back_to_direct_write) ... ok
+test_visual_edit_verified (__main__.EditFlowTests.test_visual_edit_verified) ... ok
+test_insert_appends_directly_when_launch_fails (__main__.InsertVerifyTests.test_insert_appends_directly_when_launch_fails) ... ok
+test_verify_matches (__main__.InsertVerifyTests.test_verify_matches) ... ok
+test_verify_mismatch (__main__.InsertVerifyTests.test_verify_mismatch) ... ok
+test_office_content_only_is_rejected (__main__.OfficeRoutingTests.test_office_content_only_is_rejected)
+Raw full-text content cannot be applied to structured office formats - ... ok
+test_office_doc_edit_uses_library_then_opens (__main__.OfficeRoutingTests.test_office_doc_edit_uses_library_then_opens) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.267s
+
+OK
+

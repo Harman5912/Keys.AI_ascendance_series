@@ -1,0 +1,10 @@
+{
+  "enabled": false,
+  "auto_answer": false,
+  "answer_after_ring_s": 0,
+  "watch_web": false,
+  "watch_desktop_app": false,
+  "greeting": "",
+  "unknown_reply": "",
+  "rules": []
+}

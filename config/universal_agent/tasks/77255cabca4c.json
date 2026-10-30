@@ -1,0 +1,562 @@
+{
+  "id": "77255cabca4c",
+  "request": "Build a volunteer rota for a regional clinic group with a printable summary (bid #190)",
+  "created_at": "2026-10-27 13:48:16",
+  "updated_at": "2026-10-27 13:48:16",
+  "status": "COMPLETED",
+  "intent": "software",
+  "workspace": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c",
+  "questions": [],
+  "answers": {
+    "depth": "quick"
+  },
+  "assumptions": [],
+  "brief": {
+    "goal": "Build a volunteer rota for a regional clinic group with a printable summary (bid #190)",
+    "intent": "software",
+    "answers": {
+      "depth": "quick"
+    },
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "assumptions": [],
+    "constraints": [
+      "Work only inside the task workspace",
+      "Do not delete or overwrite user files without approval",
+      "Never claim success for an unverified step"
+    ]
+  },
+  "plan": {
+    "steps": [
+      {
+        "id": "s1",
+        "worker": "research",
+        "title": "Research the subject before building",
+        "params": {
+          "depth": "quick",
+          "feed_build": true,
+          "presets": []
+        },
+        "status": "done",
+        "detail": "Researched 'Build a volunteer rota for a regional clinic group with a pr' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research, Docs / API, UI / design references, National search.",
+        "requires_approval": false,
+        "started_at": "2026-10-27 13:48:16",
+        "ended_at": "2026-10-27 13:48:16",
+        "error": "",
+        "attempts": 1,
+        "artifacts": [
+          {
+            "id": "6b6e83feb5",
+            "task_id": "77255cabca4c",
+            "name": "research-report.md",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c\\research-report.md",
+            "kind": "markdown",
+            "size": 5107,
+            "sha256": "4f8a77e86064ab33f070c35aecd6944f9db5aa45e9d4bdf16a5c3697fb1a7425",
+            "created_at": "2026-10-27 13:48:16",
+            "detail": "Cited research report",
+            "validated": true,
+            "validation_detail": "4969 chars"
+          },
+          {
+            "id": "50b5425a14",
+            "task_id": "77255cabca4c",
+            "name": "ref_0ea737a3.png",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c\\references\\ref_0ea737a3.png",
+            "kind": "png",
+            "size": 362,
+            "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+            "created_at": "2026-10-27 13:48:16",
+            "detail": "Design reference: Reference: Build a volunteer rota for a regional clinic grou",
+            "validated": true,
+            "validation_detail": "PNG 160×120"
+          },
+          {
+            "id": "f59d1967c3",
+            "task_id": "77255cabca4c",
+            "name": "ref_1535524d.png",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c\\references\\ref_1535524d.png",
+            "kind": "png",
+            "size": 362,
+            "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+            "created_at": "2026-10-27 13:48:16",
+            "detail": "Design reference: Reference: Build a volunteer rota for a regional clinic grou",
+            "validated": true,
+            "validation_detail": "PNG 160×120"
+          },
+          {
+            "id": "7b3301df2f",
+            "task_id": "77255cabca4c",
+            "name": "ref_75f1a897.png",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c\\references\\ref_75f1a897.png",
+            "kind": "png",
+            "size": 362,
+            "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+            "created_at": "2026-10-27 13:48:16",
+            "detail": "Design reference: Reference: site:github.com Build a volunteer rota for a regi",
+            "validated": true,
+            "validation_detail": "PNG 160×120"
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "worker": "software",
+        "title": "Build and verify the project",
+        "params": {
+          "mode": "build",
+          "reuse_research": true
+        },
+        "status": "done",
+        "detail": "built in the test environment",
+        "requires_approval": false,
+        "started_at": "2026-10-27 13:48:16",
+        "ended_at": "2026-10-27 13:48:16",
+        "error": "",
+        "attempts": 1,
+        "artifacts": [
+          {
+            "id": "f02e7aa6f5",
+            "task_id": "77255cabca4c",
+            "name": "index.html",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c\\volunteer-rota-for-a-regional-clinic-gro\\index.html",
+            "kind": "html",
+            "size": 171,
+            "sha256": "21e418ee1f82abb8d7681c032c1ef1d2043ee2aae57e23d7396e0c163bb85e43",
+            "created_at": "2026-10-27 13:48:16",
+            "detail": "171 bytes",
+            "validated": true,
+            "validation_detail": "171 chars"
+          }
+        ]
+      }
+    ],
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "source": "deterministic",
+    "note": "",
+    "created_at": "2026-10-27 13:48:16"
+  },
+  "current_step": 1,
+  "artifacts": [
+    {
+      "id": "6b6e83feb5",
+      "task_id": "77255cabca4c",
+      "name": "research-report.md",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c\\research-report.md",
+      "kind": "markdown",
+      "size": 5107,
+      "sha256": "4f8a77e86064ab33f070c35aecd6944f9db5aa45e9d4bdf16a5c3697fb1a7425",
+      "created_at": "2026-10-27 13:48:16",
+      "detail": "Cited research report",
+      "validated": true,
+      "validation_detail": "4969 chars"
+    },
+    {
+      "id": "50b5425a14",
+      "task_id": "77255cabca4c",
+      "name": "ref_0ea737a3.png",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c\\references\\ref_0ea737a3.png",
+      "kind": "png",
+      "size": 362,
+      "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+      "created_at": "2026-10-27 13:48:16",
+      "detail": "Design reference: Reference: Build a volunteer rota for a regional clinic grou",
+      "validated": true,
+      "validation_detail": "PNG 160×120"
+    },
+    {
+      "id": "f59d1967c3",
+      "task_id": "77255cabca4c",
+      "name": "ref_1535524d.png",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c\\references\\ref_1535524d.png",
+      "kind": "png",
+      "size": 362,
+      "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+      "created_at": "2026-10-27 13:48:16",
+      "detail": "Design reference: Reference: Build a volunteer rota for a regional clinic grou",
+      "validated": true,
+      "validation_detail": "PNG 160×120"
+    },
+    {
+      "id": "7b3301df2f",
+      "task_id": "77255cabca4c",
+      "name": "ref_75f1a897.png",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c\\references\\ref_75f1a897.png",
+      "kind": "png",
+      "size": 362,
+      "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+      "created_at": "2026-10-27 13:48:16",
+      "detail": "Design reference: Reference: site:github.com Build a volunteer rota for a regi",
+      "validated": true,
+      "validation_detail": "PNG 160×120"
+    },
+    {
+      "id": "f02e7aa6f5",
+      "task_id": "77255cabca4c",
+      "name": "index.html",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c\\volunteer-rota-for-a-regional-clinic-gro\\index.html",
+      "kind": "html",
+      "size": 171,
+      "sha256": "21e418ee1f82abb8d7681c032c1ef1d2043ee2aae57e23d7396e0c163bb85e43",
+      "created_at": "2026-10-27 13:48:16",
+      "detail": "171 bytes",
+      "validated": true,
+      "validation_detail": "171 chars"
+    }
+  ],
+  "evidence": [
+    {
+      "claim": "Volunteer Rota Regional Clinic Group — reference notes.",
+      "quote": "Volunteer Rota Regional Clinic Group — reference notes.",
+      "source_url": "https://docs.example.com/67138bebab",
+      "title": "Reference: Build a volunteer rota for a regional clinic group with a pr",
+      "retrieved_at": "2026-10-27 13:48:16",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The volunteer rota regional clinic group workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The volunteer rota regional clinic group workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/67138bebab",
+      "title": "Reference: Build a volunteer rota for a regional clinic group with a pr",
+      "retrieved_at": "2026-10-27 13:48:16",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "Volunteer Rota Regional Clinic Group — reference notes.",
+      "quote": "Volunteer Rota Regional Clinic Group — reference notes.",
+      "source_url": "https://docs.example.com/df8bff2eb4",
+      "title": "Reference: Build a volunteer rota for a regional clinic group with a pr",
+      "retrieved_at": "2026-10-27 13:48:16",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The volunteer rota regional clinic group workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The volunteer rota regional clinic group workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/df8bff2eb4",
+      "title": "Reference: Build a volunteer rota for a regional clinic group with a pr",
+      "retrieved_at": "2026-10-27 13:48:16",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "Site Github Volunteer Rota Regional — reference notes.",
+      "quote": "Site Github Volunteer Rota Regional — reference notes.",
+      "source_url": "https://docs.example.com/f1dab24403",
+      "title": "Reference: site:github.com Build a volunteer rota for a regional clinic",
+      "retrieved_at": "2026-10-27 13:48:16",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The site github volunteer rota regional workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The site github volunteer rota regional workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/f1dab24403",
+      "title": "Reference: site:github.com Build a volunteer rota for a regional clinic",
+      "retrieved_at": "2026-10-27 13:48:16",
+      "verified": true,
+      "method": "page fetched"
+    }
+  ],
+  "events": [
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "task_created",
+      "text": "software task created in 20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c"
+    },
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "status",
+      "text": "INTAKE → READY"
+    },
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "status",
+      "text": "READY → PLANNING (building the plan)"
+    },
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "plan_created",
+      "text": "2 step(s), source: deterministic"
+    },
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "status",
+      "text": "PLANNING → READY (plan ready)"
+    },
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "status",
+      "text": "READY → RUNNING"
+    },
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "step_started",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "worker_log",
+      "text": "Research: Build a volunteer rota for a regional clinic group with a printable summary (bid #190) (depth quick, 12 queries, presets: GitHub research, Docs / API, UI / design references, National search)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "worker_log",
+      "text": "Design reference captured: Reference: Build a volunteer rota for a regional clinic grou",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "worker_log",
+      "text": "Design reference captured: Reference: Build a volunteer rota for a regional clinic grou",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "worker_log",
+      "text": "Design reference captured: Reference: site:github.com Build a volunteer rota for a regi",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "worker_log",
+      "text": "National search: 2 candidate record(s)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "worker_log",
+      "text": "Research summary discarded: no citation to the evidence.",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "worker_log",
+      "text": "Research report written: research-report.md (6 evidence items)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "step_done",
+      "text": "Done: Researched 'Build a volunteer rota for a regional clinic group with a pr' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research, Docs / API, UI / design references, National search.",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "step_started",
+      "text": "Starting: Build and verify the project",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "worker_log",
+      "text": "Software: delegating to Crown Code in volunteer-rota-for-a-regional-clinic-gro",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "worker_log",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "step_done",
+      "text": "Done: built in the test environment",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "status",
+      "text": "RUNNING → VALIDATING (verifying artifacts)"
+    },
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "task_completed",
+      "text": "2 step(s) complete; 5 artifact(s) verified."
+    },
+    {
+      "ts": "2026-10-27 13:48:16",
+      "type": "status",
+      "text": "VALIDATING → COMPLETED"
+    }
+  ],
+  "approval": null,
+  "error": "",
+  "warnings": [],
+  "attempts": {},
+  "result": {
+    "summary": "2 step(s) complete; 5 artifact(s) verified.",
+    "artifacts": [
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c\\research-report.md",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c\\references\\ref_0ea737a3.png",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c\\references\\ref_1535524d.png",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c\\references\\ref_75f1a897.png",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c\\volunteer-rota-for-a-regional-clinic-gro\\index.html"
+    ],
+    "validation": "5 artifact(s) verified",
+    "warnings": []
+  },
+  "logs": [
+    {
+      "ts": "13:48:16",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:16",
+      "text": "Research: Build a volunteer rota for a regional clinic group with a printable summary (bid #190) (depth quick, 12 queries, presets: GitHub research, Docs / API, UI / design references, National search)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:16",
+      "text": "Design reference captured: Reference: Build a volunteer rota for a regional clinic grou",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:16",
+      "text": "Design reference captured: Reference: Build a volunteer rota for a regional clinic grou",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:16",
+      "text": "Design reference captured: Reference: site:github.com Build a volunteer rota for a regi",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:16",
+      "text": "National search: 2 candidate record(s)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:16",
+      "text": "Research summary discarded: no citation to the evidence.",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:16",
+      "text": "Research report written: research-report.md (6 evidence items)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:16",
+      "text": "Verified artifact: research-report.md (4969 chars)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:16",
+      "text": "Verified artifact: ref_0ea737a3.png (PNG 160×120)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:16",
+      "text": "Verified artifact: ref_1535524d.png (PNG 160×120)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:16",
+      "text": "Verified artifact: ref_75f1a897.png (PNG 160×120)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:16",
+      "text": "Done: Researched 'Build a volunteer rota for a regional clinic group with a pr' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research, Docs / API, UI / design references, National search.",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:16",
+      "text": "Starting: Build and verify the project",
+      "step": "s2"
+    },
+    {
+      "ts": "13:48:16",
+      "text": "Software: delegating to Crown Code in volunteer-rota-for-a-regional-clinic-gro",
+      "step": "s2"
+    },
+    {
+      "ts": "13:48:16",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "13:48:16",
+      "text": "Verified artifact: index.html (171 chars)",
+      "step": "s2"
+    },
+    {
+      "ts": "13:48:16",
+      "text": "Done: built in the test environment",
+      "step": "s2"
+    },
+    {
+      "ts": "13:48:16",
+      "text": "Validation: 5 artifact(s) verified",
+      "step": ""
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "results": [
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c\\research-report.md",
+        "kind": "md",
+        "detail": "4969 chars",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c\\references\\ref_0ea737a3.png",
+        "kind": "png",
+        "detail": "PNG 160×120",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c\\references\\ref_1535524d.png",
+        "kind": "png",
+        "detail": "PNG 160×120",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c\\references\\ref_75f1a897.png",
+        "kind": "png",
+        "detail": "PNG 160×120",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-volunteer-rota-for-a-regional--77255cabca4c\\volunteer-rota-for-a-regional-clinic-gro\\index.html",
+        "kind": "html",
+        "detail": "171 chars",
+        "warning": ""
+      }
+    ],
+    "failures": [],
+    "detail": "5 artifact(s) verified"
+  }
+}

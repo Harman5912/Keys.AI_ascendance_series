@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        input[type="text"], input[type="number"] {
+            width: calc(100% - 22px);
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .empty-state {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        input:focus-visible,
+        button:focus-visible {
+            outline: 2px solid #007BFF;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Document Manager</h1>
+    </header>
+
+    <main>
+        <section id="search">
+            <form id="searchForm">
+                <label for="searchInput">Search by Name:</label>
+                <input type="text" id="searchInput" name="searchInput" required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section id="filter">
+            <label for="filterType">Filter by Type:</label>
+            <select id="filterType" name="filterType">
+                <option value="all">All</option>
+                <option value="pdf">PDF</option>
+                <option value="doc">DOC</option>
+                <option value="txt">TXT</option>
+            </select>
+        </section>
+
+        <table id="documentTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Size (KB)</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="documentRows"></tbody>
+        </table>
+
+        <section id="upload">
+            <form id="uploadForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="type">Type:</label>
+                <input type="text" id="type" name="type" required>
+                <br>
+                <label for="size">Size (KB):</label>
+                <input type="number" id="size" name="size" required>
+                <br>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+
+        <section id="preview" class="empty-state">
+            <p>Select a document to preview its content.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Document Manager</p>
+    </footer>
+
+    <script>
+        let documents = JSON.parse(localStorage.getItem('documents')) || [];
+
+        function renderDocuments() {
+            const tableBody = document.getElementById('documentRows');
+            tableBody.innerHTML = '';
+            if (documents.length === 0) {
+                tableBody.innerHTML = '<tr><td colspan="4" class="empty-state">No documents found.</td></tr>';
+                return;
+            }
+
+            documents.forEach(doc => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${doc.name}</td>
+                    <td>${doc.type}</td>
+                    <td>${doc.size}</td>
+                    <td>
+                        <button onclick="previewDocument('${JSON.stringify(doc)}')">Preview</button>
+                        <button onclick="deleteDocument('${doc.id}')">Delete</button>
+                    </td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        function previewDocument(doc) {
+            const previewSection = document.getElementById('preview');
+            previewSection.innerHTML = `<pre>${JSON.stringify(doc, null, 2)}</pre>`;
+        }
+
+        function deleteDocument(id) {
+            documents = documents.filter(doc => doc.id !== id);
+            localStorage.setItem('documents', JSON.stringify(documents));
+            renderDocuments();
+        }
+
+        document.getElementById('searchForm').addEventListener('submit', (e) => {
+            e.preventDefault;
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            documents = documents.filter(doc => doc.name.toLowerCase().includes(searchInput));
+            renderDocuments();
+        });
+
+        document.getElementById('filterType').addEventListener('change', () => {
+            const filterType = document.getElementById('filterType').value;
+            if (filterType === 'all') {
+                documents = JSON.parse(localStorage.getItem('documents')) || [];
+            } else {
+                documents = documents.filter(doc => doc.type === filterType);
+            }
+            renderDocuments();
+        });
+
+        document.getElementById('uploadForm').addEventListener('submit', (e) => {
+            e.preventDefault;
+            const name = document.getElementById('name').value.trim();
+            const type = document.getElementById('type').value.trim();
+            const size = parseInt(document.getElementById('size').value);
+
+            if (!name || !type || isNaN(size)) {
+                alert('Invalid input. Please fill out all fields correctly.');
+                return;
+            }
+
+            const newDoc = {
+                id: Date.now(),
+                name,
+                type,
+                size
+            };
+
+            documents.push(newDoc);
+            localStorage.setItem('documents', JSON.stringify(documents));
+            document.getElementById('uploadForm').reset();
+            renderDocuments();
+        });
+
+        window.addEventListener('load', renderDocuments);
+    </script>
+</body>
+</html>

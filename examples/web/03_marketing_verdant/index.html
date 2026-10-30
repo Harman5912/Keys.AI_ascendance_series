@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verdant — skincare grown, not manufactured</title>
+  <meta name="description" content="Small-batch botanical skincare made in Somerset. Six products, no filler.">
+  <style>
+    :root {
+      --paper: #f5f1e6;
+      --ink: #26301f;
+      --sage: #93a37c;
+      --clay: #c06b46;
+      --line: #d8d2c1;
+      --serif: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+      --sans: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 400 16px/1.65 var(--sans); }
+    h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: -.015em; margin: 0; }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    :focus-visible { outline: 2px solid var(--clay); outline-offset: 3px; }
+
+    .wrap { width: min(1140px, 100% - 2.5rem); margin-inline: auto; }
+    .top { position: sticky; top: 0; z-index: 9; background: color-mix(in srgb, var(--paper) 92%, transparent); border-bottom: 1px solid var(--line); backdrop-filter: blur(8px); }
+    .bar { display: flex; align-items: center; gap: 1.4rem; padding: .9rem 0; }
+    .logo { font-family: var(--serif); font-size: 1.3rem; letter-spacing: .16em; text-transform: uppercase; text-decoration: none; }
+    .nav { margin-left: auto; display: flex; gap: 1.5rem; font-size: .9rem; }
+    .nav a { text-decoration: none; color: #4c5645; }
+    .nav a:hover { color: var(--ink); }
+    .bag { border: 1px solid var(--ink); background: transparent; padding: .45rem .85rem; border-radius: 999px; font: inherit; font-size: .85rem; cursor: pointer; }
+    .bag[data-count]:not([data-count="0"]) { background: var(--ink); color: var(--paper); }
+    .toggle { display: none; background: none; border: 1px solid var(--line); border-radius: 8px; padding: .35rem .6rem; }
+
+    .hero { display: grid; grid-template-columns: 1.05fr .95fr; gap: 2.5rem; align-items: center; padding: clamp(2.5rem, 7vw, 5.5rem) 0; }
+    .kicker { text-transform: uppercase; letter-spacing: .24em; font-size: .68rem; color: var(--sage); margin: 0 0 1rem; }
+    .hero h1 { font-size: clamp(2.4rem, 5.6vw, 4.4rem); line-height: 1.02; }
+    .hero h1 em { font-style: italic; color: var(--clay); }
+    .hero p.lede { max-width: 42ch; color: #4c5645; margin: 1.2rem 0 1.8rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: .8rem; }
+    .btn { display: inline-block; text-decoration: none; padding: .85rem 1.5rem; border-radius: 2px; font-size: .9rem; letter-spacing: .04em; }
+    .btn-solid { background: var(--ink); color: var(--paper); }
+    .btn-quiet { border: 1px solid var(--ink); }
+    .bottle-scene { position: relative; aspect-ratio: 4 / 5; background: #e9e3d3; border: 1px solid var(--line); }
+    .bottle-scene::after { content: ""; position: absolute; inset: 14% 10% 0; background: radial-gradient(circle at 50% 20%, #fbf8f0, #e2dbc9 70%); }
+    .bottle { position: absolute; left: 50%; bottom: 8%; translate: -50% 0; width: 132px; height: 300px; background: linear-gradient(160deg, #b8c4a2, #7e8d68); border-radius: 12px 12px 8px 8px; box-shadow: 0 24px 40px -20px rgba(38, 48, 31, .55); z-index: 1; }
+    .bottle::before { content: ""; position: absolute; left: 50%; top: -46px; translate: -50% 0; width: 62px; height: 50px; background: #37412d; border-radius: 6px 6px 0 0; }
+    .bottle-label { position: absolute; inset: 38% 18% auto; background: #f5f1e6; padding: .6rem .4rem; text-align: center; font-family: var(--serif); font-size: .82rem; letter-spacing: .18em; text-transform: uppercase; z-index: 2; }
+    .note { position: absolute; bottom: 6%; left: 6%; z-index: 3; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: #4c5645; }
+
+    .strip { border-block: 1px solid var(--line); padding: .9rem 0; overflow: hidden; }
+    .strip ul { display: flex; gap: 2.4rem; list-style: none; margin: 0; padding: 0; font-family: var(--serif); font-style: italic; color: #4c5645; white-space: nowrap; animation: glide 26s linear infinite; }
+    @keyframes glide { to { transform: translateX(-50%); } }
+
+    section.block { padding: clamp(2.8rem, 6vw, 4.6rem) 0; }
+    .head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 1rem; border-bottom: 1px solid var(--line); padding-bottom: .9rem; margin-bottom: 2rem; }
+    .head h2 { font-size: clamp(1.7rem, 3.4vw, 2.4rem); }
+    .head p { margin: 0; color: #6d7665; font-size: .88rem; }
+
+    .shelf { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.6rem; }
+    .product { display: flex; flex-direction: column; }
+    .product .art { aspect-ratio: 1; border: 1px solid var(--line); background: #ece6d6; position: relative; overflow: hidden; }
+    .product .art span { position: absolute; left: 50%; bottom: 12%; translate: -50% 0; width: 72px; height: 150px; border-radius: 8px; background: var(--tone, #a9b592); box-shadow: inset -10px 0 18px -10px rgba(0,0,0,.4), 0 14px 26px -18px #000; transition: transform .3s ease; }
+    .product:hover .art span { transform: translateY(-6px); }
+    .product h3 { font-size: 1.2rem; margin: 1rem 0 .1rem; }
+    .product .use { color: #6d7665; font-size: .84rem; margin: 0 0 .5rem; }
+    .product .row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: auto; }
+    .price { font-variant-numeric: tabular-nums; }
+    .add { border: 1px solid var(--ink); background: transparent; padding: .42rem .8rem; border-radius: 999px; font: inherit; font-size: .8rem; cursor: pointer; }
+    .add:hover { background: var(--ink); color: var(--paper); }
+
+    .story { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+    .story p { color: #4c5645; }
+    .story .stat { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: 2rem; border-top: 1px solid var(--line); padding-top: 1.4rem; }
+    .stat strong { display: block; font-family: var(--serif); font-size: 1.9rem; }
+    .stat span { font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; color: #6d7665; }
+    .quote { border-left: 2px solid var(--clay); padding-left: 1.4rem; font-family: var(--serif); font-size: 1.35rem; line-height: 1.45; }
+    .quote cite { display: block; margin-top: 1rem; font-family: var(--sans); font-style: normal; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: #6d7665; }
+
+    .signup { background: var(--ink); color: var(--paper); padding: clamp(2.4rem, 5vw, 3.6rem); display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+    .signup h2 { font-size: clamp(1.8rem, 3.4vw, 2.5rem); }
+    .signup p { color: #c8cfbd; margin: .6rem 0 0; }
+    .signup form { display: flex; gap: .6rem; flex-wrap: wrap; }
+    .signup input { flex: 1 1 220px; padding: .9rem 1rem; border: 1px solid #5c6650; background: #1c2418; color: var(--paper); font: inherit; }
+    .signup button { border: 0; background: var(--clay); color: #fff; padding: .9rem 1.4rem; font: inherit; letter-spacing: .04em; cursor: pointer; }
+    .signup .msg { flex-basis: 100%; font-size: .82rem; color: #d7e0c9; min-height: 1.2rem; margin: 0; }
+
+    footer { border-top: 1px solid var(--line); padding: 2rem 0 2.4rem; color: #6d7665; font-size: .82rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; }
+
+    @media (max-width: 860px) {
+      .hero, .story, .signup { grid-template-columns: 1fr; }
+      .nav { position: absolute; inset: 100% 0 auto; background: var(--paper); border-bottom: 1px solid var(--line); display: none; flex-direction: column; padding: 1rem 1.25rem; }
+      .nav.open { display: flex; }
+      .toggle { display: inline-block; margin-left: auto; }
+      .bag { margin-left: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .strip ul { animation: none; }
+      * { transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap bar">
+      <a class="logo" href="#top">Verdant</a>
+      <button class="toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#shop">Shop</a>
+        <a href="#story">Our fields</a>
+        <a href="#letter">Letter</a>
+      </nav>
+      <button class="bag" id="bag" type="button">Bag · <span id="bag-count">0</span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="wrap hero">
+      <div>
+        <p class="kicker">Somerset · small batch</p>
+        <h1>Skincare <em>grown</em> in a field, not a factory.</h1>
+        <p class="lede">Six products. Cold-pressed oils, herbs we actually plant, and nothing added to make a shelf look busy. Made in runs of 400 jars.</p>
+        <div class="actions">
+          <a class="btn btn-solid" href="#shop">Shop the six</a>
+          <a class="btn btn-quiet" href="#story">How it is made</a>
+        </div>
+      </div>
+      <div class="bottle-scene" role="img" aria-label="A green glass bottle of Verdant facial oil on a linen backdrop">
+        <div class="bottle"><div class="bottle-label">Facial Oil<br>30ml</div></div>
+        <p class="note">Batch 047 · pressed 12 Sept</p>
+      </div>
+    </section>
+
+    <div class="strip" aria-hidden="true">
+      <ul>
+        <li>Chamomile</li><li>Calendula</li><li>Nettle</li><li>Rosehip</li><li>Oat</li>
+        <li>Chamomile</li><li>Calendula</li><li>Nettle</li><li>Rosehip</li><li>Oat</li>
+      </ul>
+    </div>
+
+    <section class="wrap block" id="shop">
+      <div class="head">
+        <h2>The shelf</h2>
+        <p>Free UK delivery over £40 · refill pouches for every bottle</p>
+      </div>
+      <div class="shelf">
+        <article class="product">
+          <div class="art"><span style="--tone:#b0bd94"></span></div>
+          <h3>Field Facial Oil</h3>
+          <p class="use">Rosehip, chamomile, 30ml · evenings</p>
+          <div class="row"><p class="price">£32</p><button class="add" type="button" data-name="Field Facial Oil">Add to bag</button></div>
+        </article>
+        <article class="product">
+          <div class="art"><span style="--tone:#d3b294; height:120px"></span></div>
+          <h3>Oat Cleansing Balm</h3>
+          <p class="use">Oat, honey, 60ml · mornings</p>
+          <div class="row"><p class="price">£26</p><button class="add" type="button" data-name="Oat Cleansing Balm">Add to bag</button></div>
+        </article>
+        <article class="product">
+          <div class="art"><span style="--tone:#c0c8a8; height:100px"></span></div>
+          <h3>Nettle Hand Cream</h3>
+          <p class="use">Nettle, shea, 50ml · all day</p>
+          <div class="row"><p class="price">£18</p><button class="add" type="button" data-name="Nettle Hand Cream">Add to bag</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap block" id="story">
+      <div class="story">
+        <div>
+          <h2>Two hectares, one drying shed</h2>
+          <p>The herbs are grown on a two-hectare strip above the Levels. Everything is cut by hand between June and September and dried in the shed behind the barn — the same building the oils are blended in.</p>
+          <p>If a harvest is short, we sell out. We do not buy the missing ingredient from a wholesaler and pretend the batch is the same.</p>
+          <div class="stat">
+            <div><strong>6</strong><span>products, no more</span></div>
+            <div><strong>400</strong><span>jars per batch</span></div>
+            <div><strong>0</strong><span>synthetic fragrance</span></div>
+          </div>
+        </div>
+        <blockquote class="quote">
+          “My skin stopped reacting for the first time in years — and I can name every plant in the bottle.”
+          <cite>Ada R., Bristol · verified buyer</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="wrap" id="letter">
+      <div class="signup">
+        <div>
+          <h2>The harvest letter</h2>
+          <p>Four emails a year, one per harvest. Restocks and the occasional note about weather.</p>
+        </div>
+        <form id="signup" novalidate>
+          <label for="email" class="visually-hidden" style="position:absolute;left:-9999px">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          <button type="submit">Join</button>
+          <p class="msg" id="signup-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p>© 2026 Verdant Botanicals, Somerset.</p>
+    <p>Ingredients · Emissions · Returns</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.toggle');
+    const nav = document.getElementById('nav');
+    toggle?.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+
+    let bagCount = 0;
+    const bag = document.getElementById('bag');
+    document.querySelectorAll('.add').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        bagCount += 1;
+        document.getElementById('bag-count').textContent = bagCount;
+        bag.dataset.count = bagCount;
+        btn.textContent = 'Added';
+        setTimeout(() => { btn.textContent = 'Add to bag'; }, 1400);
+      });
+    });
+
+    const form = document.getElementById('signup');
+    const msg = document.getElementById('signup-msg');
+    form?.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const email = form.email.value.trim();
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+        msg.textContent = 'That address does not look right — check it and try again.';
+        return;
+      }
+      msg.textContent = 'You are on the list. The next letter goes out after the September harvest.';
+      form.reset();
+    });
+  </script>
+</body>
+</html>

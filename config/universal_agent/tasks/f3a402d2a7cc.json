@@ -1,0 +1,146 @@
+{
+  "id": "f3a402d2a7cc",
+  "request": "Build a ticket triage board for a small electrical contractor that works offline (bid #15)",
+  "created_at": "2026-10-27 10:56:44",
+  "updated_at": "2026-10-27 10:56:44",
+  "status": "RUNNING",
+  "intent": "software",
+  "workspace": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_0xy0ol56\\20261027-build-a-ticket-triage-board-for-a-smal-f3a402d2a7cc",
+  "questions": [],
+  "answers": {
+    "presets": "ui_design",
+    "depth": "quick"
+  },
+  "assumptions": [],
+  "brief": {
+    "goal": "Build a ticket triage board for a small electrical contractor that works offline (bid #15)",
+    "intent": "software",
+    "answers": {
+      "presets": "ui_design",
+      "depth": "quick"
+    },
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "assumptions": [],
+    "constraints": [
+      "Work only inside the task workspace",
+      "Do not delete or overwrite user files without approval",
+      "Never claim success for an unverified step"
+    ]
+  },
+  "plan": {
+    "steps": [
+      {
+        "id": "s1",
+        "worker": "research",
+        "title": "Research the subject before building",
+        "params": {
+          "depth": "quick",
+          "feed_build": true,
+          "presets": [
+            "ui_design"
+          ]
+        },
+        "status": "running",
+        "detail": "",
+        "requires_approval": false,
+        "started_at": "2026-10-27 10:56:44",
+        "ended_at": "",
+        "error": "",
+        "attempts": 0
+      },
+      {
+        "id": "s2",
+        "worker": "software",
+        "title": "Build and verify the project",
+        "params": {
+          "mode": "build",
+          "reuse_research": true
+        },
+        "status": "pending",
+        "detail": "",
+        "requires_approval": false,
+        "started_at": "",
+        "ended_at": "",
+        "error": "",
+        "attempts": 0
+      }
+    ],
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "source": "deterministic",
+    "note": "",
+    "created_at": "2026-10-27 10:56:44"
+  },
+  "current_step": 0,
+  "artifacts": [],
+  "evidence": [],
+  "events": [
+    {
+      "ts": "2026-10-27 10:56:44",
+      "type": "task_created",
+      "text": "software task created in 20261027-build-a-ticket-triage-board-for-a-smal-f3a402d2a7cc"
+    },
+    {
+      "ts": "2026-10-27 10:56:44",
+      "type": "status",
+      "text": "INTAKE → READY"
+    },
+    {
+      "ts": "2026-10-27 10:56:44",
+      "type": "status",
+      "text": "READY → PLANNING (building the plan)"
+    },
+    {
+      "ts": "2026-10-27 10:56:44",
+      "type": "plan_created",
+      "text": "2 step(s), source: deterministic"
+    },
+    {
+      "ts": "2026-10-27 10:56:44",
+      "type": "status",
+      "text": "PLANNING → READY (plan ready)"
+    },
+    {
+      "ts": "2026-10-27 10:56:44",
+      "type": "status",
+      "text": "READY → RUNNING"
+    },
+    {
+      "ts": "2026-10-27 10:56:44",
+      "type": "step_started",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    }
+  ],
+  "approval": null,
+  "error": "",
+  "warnings": [],
+  "attempts": {},
+  "result": {},
+  "logs": [
+    {
+      "ts": "10:56:44",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    }
+  ]
+}

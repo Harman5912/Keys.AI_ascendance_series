@@ -1,0 +1,38 @@
+$ C:\Users\harma\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -X utf8 -m unittest qa_artifacts.regression_tests.test_messaging -v
+exit=0 seconds=0.4
+
+---- stdout ----
+[SendMessage] 📨 whatsapp → A: b
+[SendMessage] ❌ Could not send message: WhatsApp window not found
+[SendMessage] 📨 whatsapp → A: b
+[SendMessage] ❌ Message sent to A via WhatsApp, but could NOT be confirmed on screen.
+[SendMessage] ⛔ Blocked (unverified contact): X
+[SendMessage] 📨 whatsapp → Test Contact: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx…
+[SendMessage] ✅ Message confirmed sent to Test Contact (verified on screen).
+[SendMessage] 📨 whatsapp → Asha: hi
+[SendMessage] ✅ Message confirmed sent to Test Contact (verified on screen).
+[SendMessage] 📨 whatsapp → Test Contact: नमस्ते — café ☕ ✅ 🎉
+[SendMessage] ✅ Message confirmed sent to Test Contact (verified on screen).
+[SendMessage] 📨 slack → A: b
+[SendMessage] ✅ Message confirmed sent.
+
+---- stderr ----
+test_handler_exception_is_reported_as_failure (qa_artifacts.regression_tests.test_messaging.TestFailureHonesty.test_handler_exception_is_reported_as_failure) ... ok
+test_unconfirmed_screen_result_is_not_reported_as_sent (qa_artifacts.regression_tests.test_messaging.TestFailureHonesty.test_unconfirmed_screen_result_is_not_reported_as_sent) ... ok
+test_verified_contact_gate_blocks_before_any_handler (qa_artifacts.regression_tests.test_messaging.TestFailureHonesty.test_verified_contact_gate_blocks_before_any_handler) ... ok
+test_pyautogui_is_not_invoked_by_validation_paths (qa_artifacts.regression_tests.test_messaging.TestNoRealEffects.test_pyautogui_is_not_invoked_by_validation_paths) ... ok
+test_long_message_is_not_truncated_to_preview_length (qa_artifacts.regression_tests.test_messaging.TestRouting.test_long_message_is_not_truncated_to_preview_length) ... ok
+test_platform_aliases_resolve_to_whatsapp (qa_artifacts.regression_tests.test_messaging.TestRouting.test_platform_aliases_resolve_to_whatsapp) ... ok
+test_recipient_is_trimmed (qa_artifacts.regression_tests.test_messaging.TestRouting.test_recipient_is_trimmed) ... ok
+test_unicode_and_emoji_pass_through_intact (qa_artifacts.regression_tests.test_messaging.TestRouting.test_unicode_and_emoji_pass_through_intact) ... ok
+test_unknown_platform_routes_to_desktop_app_named_after_it (qa_artifacts.regression_tests.test_messaging.TestRouting.test_unknown_platform_routes_to_desktop_app_named_after_it) ... ok
+test_empty_message_rejected (qa_artifacts.regression_tests.test_messaging.TestValidation.test_empty_message_rejected) ... ok
+test_empty_receiver_rejected (qa_artifacts.regression_tests.test_messaging.TestValidation.test_empty_receiver_rejected) ... ok
+test_missing_desktop_dependency_reported (qa_artifacts.regression_tests.test_messaging.TestValidation.test_missing_desktop_dependency_reported) ... ok
+test_whitespace_message_rejected (qa_artifacts.regression_tests.test_messaging.TestValidation.test_whitespace_message_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.005s
+
+OK
+

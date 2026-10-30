@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copper Spoon</title>
+    <style>
+        * { box-sizing: border-box; max-width: 100%; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header, footer { background-color: #333; color: #fff; text-align: center; padding: 20px; }
+        main { padding: 20px; }
+        section { margin-bottom: 40px; }
+        h1, h2 { margin-top: 0; }
+        .menu-category { background-color: #f4f4f4; padding: 20px; margin-bottom: 10px; }
+        .menu-item { border-bottom: 1px solid #ddd; padding: 10px 0; }
+        .menu-item:last-child { border-bottom: none; }
+        input, select { width: calc(100% - 22px); padding: 10px; margin-top: 5px; }
+        button { padding: 10px 20px; background-color: #333; color: #fff; border: none; cursor: pointer; }
+        .button:focus-visible, a:focus-visible { outline: 2px solid #333; outline-offset: 2px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Copper Spoon</h1>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Welcome to Copper Spoon</h2>
+            <p>Enjoy delicious meals in a cozy atmosphere.</p>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Copper Spoon is a family-owned restaurant located in the heart of the city. We serve fresh, homemade food using only the finest ingredients.</p>
+        </section>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="menu-category">
+                <h3>Appetizers</h3>
+                <div class="menu-item">
+                    <h4>Cheese Plate</h4>
+                    <p>$5.00</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Fried Calamari</h4>
+                    <p>$12.00</p>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h3>Main Courses</h3>
+                <div class="menu-item">
+                    <h4>Grilled Salmon</h4>
+                    <p>$15.00</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Beef Tenders</h4>
+                    <p>$20.00</p>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h3>Desserts</h3>
+                <div class="menu-item">
+                    <h4>Chocolate Lava Cake</h4>
+                    <p>$7.00</p>
+                </div>
+                <div class="menu-item">
+                    <h4>Pavlova</h4>
+                    <p>$6.00</p>
+                </div>
+            </div>
+        </section>
+        <section id="opening-hours">
+            <h2>Opening Hours</h2>
+            <p><strong>Monday to Friday:</strong> 11:30 AM - 9:30 PM</p>
+            <p><strong>Saturday and Sunday:</strong> 12:00 PM - 8:00 PM</p>
+        </section>
+        <section id="reservation">
+            <h2>Make a Reservation</h2>
+            <form id="reservation-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="party-size">Party Size:</label>
+                <select id="party-size" name="party-size">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5+</option>
+                </select>
+                <button type="submit">Reserve Table</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Copper Spoon. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('reservation-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Reservation submitted successfully! We will contact you shortly.');
+        });
+    </script>
+</body>
+</html>

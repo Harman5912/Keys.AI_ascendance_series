@@ -1,0 +1,84 @@
+[attempt 1]
+{
+  "brand": "Sable Coffee Roasters",
+  "title": "Discover Sable Coffee Roasters - Warm, Tactile Subscription Offer",
+  "eyebrow": "Warm and Substantial",
+  "headline": "Experience the Perfect Blend of Quality and Comfort",
+  "tagline": "Subscribe to our subscription service for a warm, tactile coffee experience every month.",
+  "accent": "#3498db",
+  "cta_primary": "Join Our Subscription",
+  "cta_secondary": "Learn More About Us",
+  "sections": [
+    {
+      "id": "about",
+      "kind": "text",
+      "heading": "About Sable Coffee Roasters",
+      "lead": "A two-person roastery in Leeds, known for its warm and tactile coffee experience.",
+      "items": [
+        {"title": "Our Story", "text": "Founded in 2015 by Sarah and Jack, we've been crafting the perfect blend of quality and comfort since then."},
+        {"title": "Our Mission", "text": "To provide our customers with a warm, tactile coffee experience that is both delicious and comforting."},
+        {"title": "Our Values", "text": "We believe in sustainability, ethical practices, and creating a positive impact on the environment."}
+      ]
+    },
+    {
+      "id": "work",
+      "kind": "gallery",
+      "heading": "Selected Work",
+      "lead": "Explore our latest projects and see how we've crafted the perfect blend of quality and comfort.",
+      "items": [
+        {"title": "Caramel Latte", "text": "Our signature caramel latte, made with a warm and comforting blend of coffee, milk, and sugar."},
+        {"title": "Espresso Shot", "text": "A quick and delicious espresso shot that's perfect for any occasion."},
+        {"title": "Cold Brew Coffee", "text": "Our cold brew coffee is made using fresh beans and a slow brewing process to create a smooth and comforting cup of coffee."},
+        {"title": "Decaf Coffee", "text": "Our decaf coffee is made with the same quality as our regular coffee, but without any caffeine."},
+        {"title": "Latte Art", "text": "Our latte art is crafted using fresh milk and a warm and comforting blend of coffee to create beautiful designs on your cup."},
+        {"title": "Mocha", "text": "Our mocha is made with a warm and comforting blend of coffee, chocolate syrup, and steamed milk."},
+        {"title": "Americano", "text": "A quick and delicious Americano that's perfect for any occasion."},
+        {"title": "Cappuccino", "text": "Our cappuccino is made with a warm and comforting blend of coffee, steamed milk, and frothy milk."},
+        {"title": "Turkish Coffee", "text": "A traditional Turkish coffee that's made with fresh beans and a slow brewing process to create a smooth and comforting cup of coffee."}
+      ]
+    },
+    {
+      "id": "skills",
+      "kind": "cards",
+      "heading": "Our Skills",
+      "lead": "We're proud of our expertise in crafting the perfect blend of quality and comfort.",
+      "items": [
+        {"title": "Coffee Roasting", "text": "We roast coffee beans to perfection, ensuring that every cup is a warm and comforting experience."},
+        {"title": "Cupping", "text": "We carefully taste and evaluate our coffee to ensure that it meets the highest standards of quality."},
+        {"title": "Customer Service", "text": "We prioritize customer satisfaction and provide exceptional service to all of our customers."}
+      ]
+    },
+    {
+      "id": "faq",
+      "kind": "faq",
+      "heading": "Frequently Asked Questions",
+      "items": [
+        {"q": "What is Sable Coffee Roasters?", "a": "Sable Coffee Roasters is a two-person roastery in Leeds, known for its warm and tactile coffee experience."},
+        {"q": "How do I subscribe to your subscription service?", "a": "You can sign up on our website or by calling us at +44 123 456 7890."},
+        {"q": "What is the price of your subscription service?", "a": "Our subscription service costs £10 per month, and you can choose to upgrade to a premium plan for an additional £5 per month."},
+        {"q": "What are the benefits of subscribing to your subscription service?", "a": "Subscribing to our subscription service gives you access to warm, tactile coffee every month, as well as exclusive promotions and discounts."},
+        {"q": "How do I cancel my subscription?", "a": "You can cancel your subscription at any time by logging into your account on our website or by calling us at +44 123 456 7890."}
+      ]
+    },
+    {
+      "id": "contact",
+      "kind": "text",
+      "heading": "Contact Us",
+      "lead": "We'd love to hear from you!",
+      "items": [
+        {"title": "Email", "text": "info@sablecoffeeroasters.com"},
+        {"title": "Phone", "text": "+44 123 456 7890"},
+        {"title": "Address", "text": "Sable Coffee Roasters, 123 Main Street, Leeds, LS1 1AA"}
+      ]
+    }
+  ],
+  "metrics": [{"value": "6+", "label": "years shipping"}],
+  "faq": [
+    {"q": "What is Sable Coffee Roasters?", "a": "Sable Coffee Roasters is a two-person roastery in Leeds, known for its warm and tactile coffee experience."},
+    {"q": "How do I subscribe to your subscription service?", "a": "You can sign up on our website or by calling us at +44 123 456 7890."},
+    {"q": "What is the price of your subscription service?", "a": "Our subscription service costs £10 per month, and you can choose to upgrade to a premium plan for an additional £5 per month."},
+    {"q": "What are the benefits of subscribing to your subscription service?", "a": "Subscribing to our subscription service gives you access to warm, tactile coffee every month, as well as exclusive promotions and discounts."},
+    {"q": "How do I cancel my subscription?", "a": "You can cancel your subscription at any time by logging into your account on our website or by calling us at +44 123 456 7890."}
+  ],
+  "footer": "Warm and Substantial"
+}

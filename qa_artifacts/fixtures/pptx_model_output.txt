@@ -1,0 +1,44 @@
+```json
+[
+  {
+    "title": "Lumen Fields - Seed Round Pitch Deck",
+    "content": "Lumen Fields: Revolutionizing Agriculture with AI and Sustainability\n\nAgriTech Startup\n\nSeed Round: $2M\n\nBuilding the Future of Farming"
+  },
+  {
+    "title": "The Problem",
+    "content": "Farmers face inconsistent crop yields due to unpredictable weather and soil conditions.\n\nManual monitoring is time-consuming and inefficient, leading to missed opportunities for intervention.\n\nWater and fertilizer waste cost farmers an average of $150 per acre annually."
+  },
+  {
+    ""title": "The Solution",
+    "content": "Lumen Fields deploys AI-powered sensors and drones to monitor crop health in real-time.\n\nPredictive analytics provide actionable insights to optimize irrigation and fertilization.\n\nReduces water and fertilizer use by up to 40%, improving yield by 25%."
+  },
+  {
+    "title": "Our Product",
+    "content": "Lumen Fields' AI Agri-Platform:\n\n- Smart sensors for soil and crop health monitoring\n- Drone-based aerial imaging and data collection\n- Cloud-based analytics dashboard with AI predictions\n- Integration with existing farm management systems"
+  },
+  {
+    "title": "Market Opportunity",
+    "content": "Global agritech market to reach $120B by 2030.\n\nTarget: 10,000+ farms in the U.S. and EU with >50 acres.\n\nAddressable market: $1.2B in annualized savings from water and fertilizer optimization."
+  },
+  {
+    ""title": "Business Model",
+    "content": "Subscription-based SaaS model with tiered pricing:\n\n- Basic: $200/month (small farms)\n- Pro: $800/month (medium farms)\n- Enterprise: $2,500/month (large farms)\n\nAdditional revenue from data analytics and farm advisory services."
+  },
+  {
+    "title": "Traction",
+    "content": "Pilot with 50 farms in California and Iowa, achieving 28% yield increase.\n\nCustomer retention rate: 92% after 6 months.\n\nPositive ROI: 3.5x in 12 months for early adopters."
+  },
+  {
+    "title": "Competition",
+    "content": "Competitors include John Deere, The Climate Corporation, and AgNext.\n\nLumen Fields differentiates through:\n\n- Lower cost and faster deployment\n- Higher accuracy in predictive analytics\n- Stronger integration with existing farm systems"
+  },
+  {
+    "title": "Our Team",
+    "content": "Co-founded by:\n\n- Dr. Elena Torres (PhD in Agricultural Engineering, 15+ patents)\n- Raj Patel (Ex-Google AI Engineer, 10+ agri-tech startups)\n- Maria Lopez (Former Agribusiness CEO, 20+ years experience)\n\nAdvisors: Former USDA officials and leading agritech investors."
+  },
+  {
+    "title": "Ask and Use of Funds",
+    "content": "Seeking $2M in seed funding to scale operations.\n\nUse of funds:\n- 50%: R&D and product development\n- 30%: Sales and marketing\n- 15%: Talent acquisition\n- 5%: Operational expenses\n\nTarget: 100+ farms in 12 months."
+  }
+]
+```

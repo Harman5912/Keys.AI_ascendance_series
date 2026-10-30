@@ -1,0 +1,556 @@
+{
+  "id": "1539197fea75",
+  "request": "Build a parts catalogue for a non-profit food bank with a printable summary (bid #222)",
+  "created_at": "2026-10-27 13:48:17",
+  "updated_at": "2026-10-27 13:48:17",
+  "status": "COMPLETED",
+  "intent": "software",
+  "workspace": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75",
+  "questions": [],
+  "answers": {
+    "presets": "github, ui_design",
+    "depth": "quick"
+  },
+  "assumptions": [],
+  "brief": {
+    "goal": "Build a parts catalogue for a non-profit food bank with a printable summary (bid #222)",
+    "intent": "software",
+    "answers": {
+      "presets": "github, ui_design",
+      "depth": "quick"
+    },
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "assumptions": [],
+    "constraints": [
+      "Work only inside the task workspace",
+      "Do not delete or overwrite user files without approval",
+      "Never claim success for an unverified step"
+    ]
+  },
+  "plan": {
+    "steps": [
+      {
+        "id": "s1",
+        "worker": "research",
+        "title": "Research the subject before building",
+        "params": {
+          "depth": "quick",
+          "feed_build": true,
+          "presets": [
+            "github",
+            "ui_design"
+          ]
+        },
+        "status": "done",
+        "detail": "Researched 'Build a parts catalogue for a non-profit food bank with a pr' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research, UI / design references.",
+        "requires_approval": false,
+        "started_at": "2026-10-27 13:48:17",
+        "ended_at": "2026-10-27 13:48:17",
+        "error": "",
+        "attempts": 1,
+        "artifacts": [
+          {
+            "id": "c2f0d606e2",
+            "task_id": "1539197fea75",
+            "name": "research-report.md",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75\\research-report.md",
+            "kind": "markdown",
+            "size": 4282,
+            "sha256": "ded7a9c1cc812adc2d071db80de320911a528f338ea664beb5d2cc761f4af616",
+            "created_at": "2026-10-27 13:48:17",
+            "detail": "Cited research report",
+            "validated": true,
+            "validation_detail": "4159 chars"
+          },
+          {
+            "id": "0ce45ae739",
+            "task_id": "1539197fea75",
+            "name": "ref_902d0e21.png",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75\\references\\ref_902d0e21.png",
+            "kind": "png",
+            "size": 362,
+            "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+            "created_at": "2026-10-27 13:48:17",
+            "detail": "Design reference: Reference: Build a parts catalogue for a non-profit food ban",
+            "validated": true,
+            "validation_detail": "PNG 160×120"
+          },
+          {
+            "id": "f1b0c606de",
+            "task_id": "1539197fea75",
+            "name": "ref_debb120c.png",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75\\references\\ref_debb120c.png",
+            "kind": "png",
+            "size": 362,
+            "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+            "created_at": "2026-10-27 13:48:17",
+            "detail": "Design reference: Reference: Build a parts catalogue for a non-profit food ban",
+            "validated": true,
+            "validation_detail": "PNG 160×120"
+          },
+          {
+            "id": "46aefb4aea",
+            "task_id": "1539197fea75",
+            "name": "ref_a9bbf3d1.png",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75\\references\\ref_a9bbf3d1.png",
+            "kind": "png",
+            "size": 362,
+            "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+            "created_at": "2026-10-27 13:48:17",
+            "detail": "Design reference: Reference: site:github.com Build a parts catalogue for a non",
+            "validated": true,
+            "validation_detail": "PNG 160×120"
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "worker": "software",
+        "title": "Build and verify the project",
+        "params": {
+          "mode": "build",
+          "reuse_research": true
+        },
+        "status": "done",
+        "detail": "built in the test environment",
+        "requires_approval": false,
+        "started_at": "2026-10-27 13:48:17",
+        "ended_at": "2026-10-27 13:48:17",
+        "error": "",
+        "attempts": 1,
+        "artifacts": [
+          {
+            "id": "0a866553e7",
+            "task_id": "1539197fea75",
+            "name": "index.html",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75\\parts-catalogue-for-a-non-profit-food-ba\\index.html",
+            "kind": "html",
+            "size": 171,
+            "sha256": "21e418ee1f82abb8d7681c032c1ef1d2043ee2aae57e23d7396e0c163bb85e43",
+            "created_at": "2026-10-27 13:48:17",
+            "detail": "171 bytes",
+            "validated": true,
+            "validation_detail": "171 chars"
+          }
+        ]
+      }
+    ],
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "source": "deterministic",
+    "note": "",
+    "created_at": "2026-10-27 13:48:17"
+  },
+  "current_step": 1,
+  "artifacts": [
+    {
+      "id": "c2f0d606e2",
+      "task_id": "1539197fea75",
+      "name": "research-report.md",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75\\research-report.md",
+      "kind": "markdown",
+      "size": 4282,
+      "sha256": "ded7a9c1cc812adc2d071db80de320911a528f338ea664beb5d2cc761f4af616",
+      "created_at": "2026-10-27 13:48:17",
+      "detail": "Cited research report",
+      "validated": true,
+      "validation_detail": "4159 chars"
+    },
+    {
+      "id": "0ce45ae739",
+      "task_id": "1539197fea75",
+      "name": "ref_902d0e21.png",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75\\references\\ref_902d0e21.png",
+      "kind": "png",
+      "size": 362,
+      "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+      "created_at": "2026-10-27 13:48:17",
+      "detail": "Design reference: Reference: Build a parts catalogue for a non-profit food ban",
+      "validated": true,
+      "validation_detail": "PNG 160×120"
+    },
+    {
+      "id": "f1b0c606de",
+      "task_id": "1539197fea75",
+      "name": "ref_debb120c.png",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75\\references\\ref_debb120c.png",
+      "kind": "png",
+      "size": 362,
+      "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+      "created_at": "2026-10-27 13:48:17",
+      "detail": "Design reference: Reference: Build a parts catalogue for a non-profit food ban",
+      "validated": true,
+      "validation_detail": "PNG 160×120"
+    },
+    {
+      "id": "46aefb4aea",
+      "task_id": "1539197fea75",
+      "name": "ref_a9bbf3d1.png",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75\\references\\ref_a9bbf3d1.png",
+      "kind": "png",
+      "size": 362,
+      "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+      "created_at": "2026-10-27 13:48:17",
+      "detail": "Design reference: Reference: site:github.com Build a parts catalogue for a non",
+      "validated": true,
+      "validation_detail": "PNG 160×120"
+    },
+    {
+      "id": "0a866553e7",
+      "task_id": "1539197fea75",
+      "name": "index.html",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75\\parts-catalogue-for-a-non-profit-food-ba\\index.html",
+      "kind": "html",
+      "size": 171,
+      "sha256": "21e418ee1f82abb8d7681c032c1ef1d2043ee2aae57e23d7396e0c163bb85e43",
+      "created_at": "2026-10-27 13:48:17",
+      "detail": "171 bytes",
+      "validated": true,
+      "validation_detail": "171 chars"
+    }
+  ],
+  "evidence": [
+    {
+      "claim": "Parts Catalogue Non-Profit Food Bank — reference notes.",
+      "quote": "Parts Catalogue Non-Profit Food Bank — reference notes.",
+      "source_url": "https://docs.example.com/0e57235be5",
+      "title": "Reference: Build a parts catalogue for a non-profit food bank with a pr",
+      "retrieved_at": "2026-10-27 13:48:17",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The parts catalogue non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The parts catalogue non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/0e57235be5",
+      "title": "Reference: Build a parts catalogue for a non-profit food bank with a pr",
+      "retrieved_at": "2026-10-27 13:48:17",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "Parts Catalogue Non-Profit Food Bank — reference notes.",
+      "quote": "Parts Catalogue Non-Profit Food Bank — reference notes.",
+      "source_url": "https://docs.example.com/c3d3f6a989",
+      "title": "Reference: Build a parts catalogue for a non-profit food bank with a pr",
+      "retrieved_at": "2026-10-27 13:48:17",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The parts catalogue non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The parts catalogue non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/c3d3f6a989",
+      "title": "Reference: Build a parts catalogue for a non-profit food bank with a pr",
+      "retrieved_at": "2026-10-27 13:48:17",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "Site Github Parts Catalogue Non-Profit — reference notes.",
+      "quote": "Site Github Parts Catalogue Non-Profit — reference notes.",
+      "source_url": "https://docs.example.com/9682be35dd",
+      "title": "Reference: site:github.com Build a parts catalogue for a non-profit foo",
+      "retrieved_at": "2026-10-27 13:48:17",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The site github parts catalogue non-profit workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The site github parts catalogue non-profit workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/9682be35dd",
+      "title": "Reference: site:github.com Build a parts catalogue for a non-profit foo",
+      "retrieved_at": "2026-10-27 13:48:17",
+      "verified": true,
+      "method": "page fetched"
+    }
+  ],
+  "events": [
+    {
+      "ts": "2026-10-27 13:48:17",
+      "type": "task_created",
+      "text": "software task created in 20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75"
+    },
+    {
+      "ts": "2026-10-27 13:48:17",
+      "type": "status",
+      "text": "INTAKE → READY"
+    },
+    {
+      "ts": "2026-10-27 13:48:17",
+      "type": "status",
+      "text": "READY → PLANNING (building the plan)"
+    },
+    {
+      "ts": "2026-10-27 13:48:17",
+      "type": "plan_created",
+      "text": "2 step(s), source: deterministic"
+    },
+    {
+      "ts": "2026-10-27 13:48:17",
+      "type": "status",
+      "text": "PLANNING → READY (plan ready)"
+    },
+    {
+      "ts": "2026-10-27 13:48:17",
+      "type": "status",
+      "text": "READY → RUNNING"
+    },
+    {
+      "ts": "2026-10-27 13:48:17",
+      "type": "step_started",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:48:17",
+      "type": "worker_log",
+      "text": "Research: Build a parts catalogue for a non-profit food bank with a printable summary (bid #222) (depth quick, 7 queries, presets: GitHub research, UI / design references)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:48:17",
+      "type": "worker_log",
+      "text": "Design reference captured: Reference: Build a parts catalogue for a non-profit food ban",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:48:17",
+      "type": "worker_log",
+      "text": "Design reference captured: Reference: Build a parts catalogue for a non-profit food ban",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:48:17",
+      "type": "worker_log",
+      "text": "Design reference captured: Reference: site:github.com Build a parts catalogue for a non",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:48:17",
+      "type": "worker_log",
+      "text": "Research summary discarded: no citation to the evidence.",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:48:17",
+      "type": "worker_log",
+      "text": "Research report written: research-report.md (6 evidence items)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:48:17",
+      "type": "step_done",
+      "text": "Done: Researched 'Build a parts catalogue for a non-profit food bank with a pr' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research, UI / design references.",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:48:17",
+      "type": "step_started",
+      "text": "Starting: Build and verify the project",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 13:48:17",
+      "type": "worker_log",
+      "text": "Software: delegating to Crown Code in parts-catalogue-for-a-non-profit-food-ba",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 13:48:17",
+      "type": "worker_log",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 13:48:17",
+      "type": "step_done",
+      "text": "Done: built in the test environment",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 13:48:17",
+      "type": "status",
+      "text": "RUNNING → VALIDATING (verifying artifacts)"
+    },
+    {
+      "ts": "2026-10-27 13:48:17",
+      "type": "task_completed",
+      "text": "2 step(s) complete; 5 artifact(s) verified."
+    },
+    {
+      "ts": "2026-10-27 13:48:17",
+      "type": "status",
+      "text": "VALIDATING → COMPLETED"
+    }
+  ],
+  "approval": null,
+  "error": "",
+  "warnings": [],
+  "attempts": {},
+  "result": {
+    "summary": "2 step(s) complete; 5 artifact(s) verified.",
+    "artifacts": [
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75\\research-report.md",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75\\references\\ref_902d0e21.png",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75\\references\\ref_debb120c.png",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75\\references\\ref_a9bbf3d1.png",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75\\parts-catalogue-for-a-non-profit-food-ba\\index.html"
+    ],
+    "validation": "5 artifact(s) verified",
+    "warnings": []
+  },
+  "logs": [
+    {
+      "ts": "13:48:17",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:17",
+      "text": "Research: Build a parts catalogue for a non-profit food bank with a printable summary (bid #222) (depth quick, 7 queries, presets: GitHub research, UI / design references)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:17",
+      "text": "Design reference captured: Reference: Build a parts catalogue for a non-profit food ban",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:17",
+      "text": "Design reference captured: Reference: Build a parts catalogue for a non-profit food ban",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:17",
+      "text": "Design reference captured: Reference: site:github.com Build a parts catalogue for a non",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:17",
+      "text": "Research summary discarded: no citation to the evidence.",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:17",
+      "text": "Research report written: research-report.md (6 evidence items)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:17",
+      "text": "Verified artifact: research-report.md (4159 chars)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:17",
+      "text": "Verified artifact: ref_902d0e21.png (PNG 160×120)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:17",
+      "text": "Verified artifact: ref_debb120c.png (PNG 160×120)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:17",
+      "text": "Verified artifact: ref_a9bbf3d1.png (PNG 160×120)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:17",
+      "text": "Done: Researched 'Build a parts catalogue for a non-profit food bank with a pr' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research, UI / design references.",
+      "step": "s1"
+    },
+    {
+      "ts": "13:48:17",
+      "text": "Starting: Build and verify the project",
+      "step": "s2"
+    },
+    {
+      "ts": "13:48:17",
+      "text": "Software: delegating to Crown Code in parts-catalogue-for-a-non-profit-food-ba",
+      "step": "s2"
+    },
+    {
+      "ts": "13:48:17",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "13:48:17",
+      "text": "Verified artifact: index.html (171 chars)",
+      "step": "s2"
+    },
+    {
+      "ts": "13:48:17",
+      "text": "Done: built in the test environment",
+      "step": "s2"
+    },
+    {
+      "ts": "13:48:17",
+      "text": "Validation: 5 artifact(s) verified",
+      "step": ""
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "results": [
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75\\research-report.md",
+        "kind": "md",
+        "detail": "4159 chars",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75\\references\\ref_902d0e21.png",
+        "kind": "png",
+        "detail": "PNG 160×120",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75\\references\\ref_debb120c.png",
+        "kind": "png",
+        "detail": "PNG 160×120",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75\\references\\ref_a9bbf3d1.png",
+        "kind": "png",
+        "detail": "PNG 160×120",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-parts-catalogue-for-a-non-prof-1539197fea75\\parts-catalogue-for-a-non-profit-food-ba\\index.html",
+        "kind": "html",
+        "detail": "171 chars",
+        "warning": ""
+      }
+    ],
+    "failures": [],
+    "detail": "5 artifact(s) verified"
+  }
+}

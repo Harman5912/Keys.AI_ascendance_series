@@ -1,0 +1,202 @@
+[
+  {
+    "file": "D01_business_proposal.docx",
+    "kind": "docx",
+    "ok": true,
+    "pages": 2,
+    "words": 545,
+    "error": "",
+    "pdf": "D01_business_proposal_p1.pdf"
+  },
+  {
+    "file": "D02_ats_resume.docx",
+    "kind": "docx",
+    "ok": true,
+    "pages": 2,
+    "words": 406,
+    "error": "",
+    "pdf": "D02_ats_resume_p1.pdf"
+  },
+  {
+    "file": "D03_technical_project_report.docx",
+    "kind": "docx",
+    "ok": true,
+    "pages": 3,
+    "words": 541,
+    "error": "",
+    "pdf": "D03_technical_project_report_p1.pdf"
+  },
+  {
+    "file": "D04_standard_operating_procedure.docx",
+    "kind": "docx",
+    "ok": true,
+    "pages": 2,
+    "words": 511,
+    "error": "",
+    "pdf": "D04_standard_operating_procedure_p1.pdf"
+  },
+  {
+    "file": "D05_meeting_minutes.docx",
+    "kind": "docx",
+    "ok": true,
+    "pages": 2,
+    "words": 353,
+    "error": "",
+    "pdf": "D05_meeting_minutes_p1.pdf"
+  },
+  {
+    "file": "D06_software_requirements_spec.docx",
+    "kind": "docx",
+    "ok": true,
+    "pages": 3,
+    "words": 690,
+    "error": "",
+    "pdf": "D06_software_requirements_spec_p1.pdf"
+  },
+  {
+    "file": "D07_release_notes.docx",
+    "kind": "docx",
+    "ok": true,
+    "pages": 2,
+    "words": 352,
+    "error": "",
+    "pdf": "D07_release_notes_p1.pdf"
+  },
+  {
+    "file": "D08_research_summary.docx",
+    "kind": "docx",
+    "ok": true,
+    "pages": 2,
+    "words": 570,
+    "error": "",
+    "pdf": "D08_research_summary_p1.pdf"
+  },
+  {
+    "file": "D09_invoice.docx",
+    "kind": "docx",
+    "ok": true,
+    "pages": 2,
+    "words": 166,
+    "error": "",
+    "pdf": "D09_invoice_p1.pdf"
+  },
+  {
+    "file": "D10_user_manual.docx",
+    "kind": "docx",
+    "ok": true,
+    "pages": 3,
+    "words": 692,
+    "error": "",
+    "pdf": "D10_user_manual_p1.pdf"
+  },
+  {
+    "file": "P01_startup_pitch.pptx",
+    "kind": "pptx",
+    "ok": true,
+    "slides": 10,
+    "error": "",
+    "images": [
+      "P01_startup_pitch_s1.png",
+      "P01_startup_pitch_s2.png"
+    ]
+  },
+  {
+    "file": "P02_technical_architecture.pptx",
+    "kind": "pptx",
+    "ok": true,
+    "slides": 9,
+    "error": "",
+    "images": [
+      "P02_technical_architecture_s1.png",
+      "P02_technical_architecture_s2.png"
+    ]
+  },
+  {
+    "file": "P03_product_demo.pptx",
+    "kind": "pptx",
+    "ok": true,
+    "slides": 8,
+    "error": "",
+    "images": [
+      "P03_product_demo_s1.png",
+      "P03_product_demo_s2.png"
+    ]
+  },
+  {
+    "file": "P04_data_analytics_report.pptx",
+    "kind": "pptx",
+    "ok": true,
+    "slides": 8,
+    "error": "",
+    "images": [
+      "P04_data_analytics_report_s1.png",
+      "P04_data_analytics_report_s2.png"
+    ]
+  },
+  {
+    "file": "P05_education_lesson.pptx",
+    "kind": "pptx",
+    "ok": true,
+    "slides": 8,
+    "error": "",
+    "images": [
+      "P05_education_lesson_s1.png",
+      "P05_education_lesson_s2.png"
+    ]
+  },
+  {
+    "file": "P06_business_strategy.pptx",
+    "kind": "pptx",
+    "ok": true,
+    "slides": 8,
+    "error": "",
+    "images": [
+      "P06_business_strategy_s1.png",
+      "P06_business_strategy_s2.png"
+    ]
+  },
+  {
+    "file": "P07_research_conference.pptx",
+    "kind": "pptx",
+    "ok": true,
+    "slides": 8,
+    "error": "",
+    "images": [
+      "P07_research_conference_s1.png",
+      "P07_research_conference_s2.png"
+    ]
+  },
+  {
+    "file": "P08_security_awareness.pptx",
+    "kind": "pptx",
+    "ok": true,
+    "slides": 8,
+    "error": "",
+    "images": [
+      "P08_security_awareness_s1.png",
+      "P08_security_awareness_s2.png"
+    ]
+  },
+  {
+    "file": "P09_project_status.pptx",
+    "kind": "pptx",
+    "ok": true,
+    "slides": 9,
+    "error": "",
+    "images": [
+      "P09_project_status_s1.png",
+      "P09_project_status_s2.png"
+    ]
+  },
+  {
+    "file": "P10_product_launch.pptx",
+    "kind": "pptx",
+    "ok": true,
+    "slides": 9,
+    "error": "",
+    "images": [
+      "P10_product_launch_s1.png",
+      "P10_product_launch_s2.png"
+    ]
+  }
+]

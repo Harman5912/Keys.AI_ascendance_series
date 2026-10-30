@@ -1,0 +1,186 @@
+{
+  "brand": "Rocketpay",
+  "title": "Rocketpay - Your Gateway to Secure Payments",
+  "eyebrow": "Simplify your payments, securely.",
+  "headline": "Experience the Future of Payments with Rocketpay",
+  "tagline": "Rocketpay is a developer-first fintech payments product that simplifies and secures your transactions. Our sleek design, neon colors, and flat pricing make it easy for developers to integrate into their applications.",
+  "accent": "#ff5733",
+  "cta_primary": "Get Started Now",
+  "cta_secondary": "Learn More",
+  "sections": [
+    {
+      "id": "about",
+      "kind": "text",
+      "heading": "About Rocketpay",
+      "lead": "Rocketpay is a developer-first fintech payments product that simplifies and secures your transactions.",
+      "items": [
+        {
+          "title": "Developer-Friendly",
+          "text": "Rocketpay's flat pricing, dark design, and neon colors make it easy for developers to integrate into their applications.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Secure Payments",
+          "text": "Our secure payment system ensures that your transactions are protected from fraud and unauthorized access.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Fast Processing",
+          "text": "Rocketpay processes payments quickly and efficiently, allowing you to focus on what matters most to your business.",
+          "meta": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "work",
+      "kind": "gallery",
+      "heading": "Selected Work",
+      "lead": "See how Rocketpay is simplifying payments for businesses of all sizes.",
+      "items": [
+        {
+          "title": "E-commerce Platform",
+          "text": "Rocketpay integrated into our e-commerce platform to simplify payment processing and increase conversion rates.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Financial Services Company",
+          "text": "Rocketpay helped a financial services company streamline their payment processes and reduce fraud.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Healthcare Provider",
+          "text": "Rocketpay integrated into our healthcare provider's system to simplify payment processing for patients and providers.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Real Estate Brokerage",
+          "text": "Rocketpay integrated into our real estate brokerage's system to simplify payment processing and increase sales.",
+          "meta": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "kind": "cards",
+      "heading": "Our Skills",
+      "lead": "We are experts in payments, security, and developer integration.",
+      "items": [
+        {
+          "title": "Payment Processing",
+          "text": "Rocketpay processes payments quickly and efficiently.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Security",
+          "text": "Our secure payment system ensures that your transactions are protected from fraud and unauthorized access.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Developer Integration",
+          "text": "Rocketpay's flat pricing, dark design, and neon colors make it easy for developers to integrate into their applications.",
+          "meta": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "kind": "faq",
+      "heading": "FAQ",
+      "lead": "",
+      "items": [
+        {
+          "title": "",
+          "text": "",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "",
+          "text": "",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "",
+          "text": "",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "",
+          "text": "",
+          "meta": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "kind": "text",
+      "heading": "Contact Us",
+      "lead": "Ready to get started with Rocketpay? Contact us today!",
+      "items": [
+        {
+          "title": "Email",
+          "text": "info@rocketpay.com",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Phone",
+          "text": "+1 (555) 555-5555",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Address",
+          "text": "123 Main St, Anytown, USA",
+          "meta": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "kind": "contact",
+      "heading": "Get in touch",
+      "lead": "Send a message with what you need and the deadline you are working towards.",
+      "items": []
+    }
+  ],
+  "metrics": [
+    {
+      "value": "6+",
+      "label": "years shipping"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is Rocketpay?",
+      "a": "Rocketpay is a developer-first fintech payments product that simplifies and secures your transactions."
+    },
+    {
+      "q": "How does Rocketpay work?",
+      "a": "Rocketpay processes payments quickly and efficiently, ensuring that your transactions are protected from fraud and unauthorized access."
+    },
+    {
+      "q": "Is Rocketpay secure?",
+      "a": "Yes, Rocketpay's secure payment system ensures that your transactions are protected from fraud and unauthorized access."
+    },
+    {
+      "q": "Can I integrate Rocketpay into my application?",
+      "a": "Yes, Rocketpay's flat pricing, dark design, and neon colors make it easy for developers to integrate into their applications."
+    }
+  ],
+  "footer": "Rocketpay - Your Gateway to Secure Payments"
+}

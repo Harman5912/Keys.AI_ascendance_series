@@ -1,0 +1,324 @@
+[
+  {
+    "kind": "website",
+    "id": "01_saas_landing",
+    "name": "SaaS product landing page",
+    "slug": "01_saas_landing",
+    "dir": "qa_artifacts/generated_websites/01_saas_landing",
+    "passed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "seconds": 79.3,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "Index.html created successfully. Open it in a browser to view the page. Let me know if you need any further adjustments!",
+        "tool_errors": [],
+        "problems": [],
+        "passed": true,
+        "bytes": 4384
+      }
+    ],
+    "bytes": 4384,
+    "model": "qwen2.5-coder:7b",
+    "timestamp": "2026-10-17T12:32:31+00:00"
+  },
+  {
+    "kind": "website",
+    "id": "02_ecommerce_storefront",
+    "name": "E-commerce storefront",
+    "slug": "02_ecommerce_storefront",
+    "dir": "qa_artifacts/generated_websites/02_ecommerce_storefront",
+    "passed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "seconds": 88.6,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "index.html has been created. You can open it using the file:// protocol in your browser to see the result. If you encounter any issues or need further assistance, feel free to ask!",
+        "tool_errors": [],
+        "problems": [],
+        "passed": true,
+        "bytes": 5069
+      }
+    ],
+    "bytes": 5069,
+    "model": "qwen2.5-coder:7b",
+    "timestamp": "2026-10-17T12:33:59+00:00"
+  },
+  {
+    "kind": "website",
+    "id": "03_restaurant_menu",
+    "name": "Restaurant and menu website",
+    "slug": "03_restaurant_menu",
+    "dir": "qa_artifacts/generated_websites/03_restaurant_menu",
+    "passed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "seconds": 192.0,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "Great, `index.html` has been created. If there are any specific issues or additional features you need, feel free to let me know!",
+        "tool_errors": [],
+        "problems": [],
+        "passed": true,
+        "bytes": 4159
+      }
+    ],
+    "bytes": 4159,
+    "model": "qwen2.5-coder:7b",
+    "timestamp": "2026-10-17T12:37:12+00:00"
+  },
+  {
+    "kind": "website",
+    "id": "06_event_conference",
+    "name": "Event and conference website",
+    "slug": "06_event_conference",
+    "dir": "qa_artifacts/generated_websites/06_event_conference",
+    "passed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "seconds": 98.8,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "Great! The `index.html` file has been created with the specified sections, styles, and interactive elements. Make sure to open `index.html` in your web browser using a file path like `file:///C:/Users/harma/Desktop/PROJECTS/Keys-acendence-series/acendence-VIII_GEN-I/qa_artifacts/generated_websites/0",
+        "tool_errors": [],
+        "problems": [],
+        "passed": true,
+        "bytes": 5004
+      }
+    ],
+    "bytes": 5004,
+    "model": "qwen2.5-coder:7b",
+    "timestamp": "2026-10-17T12:44:03+00:00"
+  },
+  {
+    "kind": "website",
+    "id": "08_nonprofit",
+    "name": "Nonprofit organisation website",
+    "slug": "08_nonprofit",
+    "dir": "qa_artifacts/generated_websites/08_nonprofit",
+    "passed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "seconds": 72.2,
+        "tools": [],
+        "bridge_ok": false,
+        "summary": "The model wrote a tool call as plain text instead of invoking a tool, so nothing was executed. Choose a model that emits native tool calls (see /model). Model output: ```json\n{\"name\": \"write_file\", \"arguments\": {\"path\": \"index.html\", \"content\": \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n<meta cha",
+        "tool_errors": [],
+        "problems": [
+          "the model called no tool (it only produced text)",
+          "index.html was not created"
+        ],
+        "passed": false,
+        "bytes": 0
+      },
+      {
+        "attempt": 2,
+        "seconds": 121.7,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "File created. Please open `index.html` in your browser to view the generated website. If you encounter any issues, let me know!",
+        "tool_errors": [],
+        "problems": [],
+        "passed": true,
+        "bytes": 5766
+      }
+    ],
+    "bytes": 5766,
+    "model": "qwen2.5-coder:7b",
+    "timestamp": "2026-10-17T12:49:19+00:00"
+  },
+  {
+    "kind": "website",
+    "id": "10_business_services",
+    "name": "Professional business services website",
+    "slug": "10_business_services",
+    "dir": "qa_artifacts/generated_websites/10_business_services",
+    "passed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "seconds": 66.8,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "index.html has been created successfully with the specified content. This file includes a basic structure for a webpage that aligns with your requirements, including semantic HTML elements and inline CSS/JavaScript. \n\nTo verify if everything is working as expected, you can open `index.html` in a web",
+        "tool_errors": [],
+        "problems": [
+          "index.html is only 2861 bytes (a finished page needs >= 4000)"
+        ],
+        "passed": false,
+        "bytes": 2861
+      },
+      {
+        "attempt": 2,
+        "seconds": 84.7,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "Great, `index.html` has been updated with the complete content you specified. The page includes a hero section, services section with interactive buttons, an engagement process, testimonials, pricing information, a contact form with validation, and a footer. \n\nIf you need further adjustments or addi",
+        "tool_errors": [],
+        "problems": [],
+        "passed": true,
+        "bytes": 4007
+      }
+    ],
+    "bytes": 4007,
+    "model": "qwen2.5-coder:7b",
+    "timestamp": "2026-10-17T12:54:55+00:00"
+  },
+  {
+    "kind": "website",
+    "id": "04_education_institution",
+    "name": "Educational institution website",
+    "slug": "04_education_institution",
+    "dir": "qa_artifacts/generated_websites/04_education_institution",
+    "passed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "seconds": 93.9,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "The `index.html` file has been created. The page includes the hero section, programmes section with four program options, admissions steps, a FAQ accordion with four questions, and a footer with contact details. All CSS and JavaScript are inline, and the page is designed to work from `file://`. Ther",
+        "tool_errors": [],
+        "problems": [
+          "no <button> element"
+        ],
+        "passed": false,
+        "bytes": 5010
+      },
+      {
+        "attempt": 2,
+        "seconds": 96.1,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "Great! The `index.html` file has been updated with the content you requested. This includes a hero section, programme sections, an admissions steps section with interactive forms, an FAQ accordion, and a footer with contact details. \n\nIf you need any further adjustments or additional functionality, ",
+        "tool_errors": [],
+        "problems": [],
+        "passed": true,
+        "bytes": 4824
+      }
+    ],
+    "bytes": 4824,
+    "model": "qwen2.5-coder:7b",
+    "timestamp": "2026-10-17T12:58:27+00:00"
+  },
+  {
+    "kind": "website",
+    "id": "05_marketing_agency",
+    "name": "Digital marketing agency website",
+    "slug": "05_marketing_agency",
+    "dir": "qa_artifacts/generated_websites/05_marketing_agency",
+    "passed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "seconds": 76.6,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "The `index.html` file has been created in the current working directory. This file contains a basic structure for your website, including sections for the hero, services, case studies, team, and contact form. The CSS is inline, and all JavaScript functionality is handled by simple alert messages whe",
+        "tool_errors": [],
+        "problems": [],
+        "passed": true,
+        "bytes": 3727
+      }
+    ],
+    "bytes": 3727,
+    "model": "qwen2.5-coder:7b",
+    "timestamp": "2026-10-17T12:59:44+00:00"
+  },
+  {
+    "kind": "website",
+    "id": "07_news_editorial",
+    "name": "News and editorial website",
+    "slug": "07_news_editorial",
+    "dir": "qa_artifacts/generated_websites/07_news_editorial",
+    "passed": false,
+    "attempts": [
+      {
+        "attempt": 1,
+        "seconds": 66.3,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "Great! I've created the `index.html` file for you. You can open this file in your browser using the `file://` protocol to see the webpage.\n\nIf you need any further changes or assistance, feel free to let me know!",
+        "tool_errors": [],
+        "problems": [
+          "no <button> element"
+        ],
+        "passed": false,
+        "bytes": 3707
+      },
+      {
+        "attempt": 2,
+        "seconds": 48.1,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "The `index.html` file has been updated with the provided content. This includes a basic structure for the publication 'The Ledger Line', including a header, main section with stories, and a footer. The CSS ensures that the layout is responsive and adheres to the specified design guidelines.\n\nIf you ",
+        "tool_errors": [],
+        "problems": [
+          "index.html is only 2157 bytes (a finished page needs >= 3500)",
+          "no <button> element"
+        ],
+        "passed": false,
+        "bytes": 2157
+      }
+    ],
+    "bytes": 2157,
+    "model": "qwen2.5-coder:7b",
+    "timestamp": "2026-10-17T13:01:38+00:00"
+  },
+  {
+    "kind": "website",
+    "id": "09_analytics_dashboard",
+    "name": "Analytics dashboard website",
+    "slug": "09_analytics_dashboard",
+    "dir": "qa_artifacts/generated_websites/09_analytics_dashboard",
+    "passed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "seconds": 102.5,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "Great! `index.html` has been created in the current working directory. Open it with a web browser to see the Pulseboard dashboard. Let me know if you need any further assistance!",
+        "tool_errors": [],
+        "problems": [],
+        "passed": true,
+        "bytes": 4683
+      }
+    ],
+    "bytes": 4683,
+    "model": "qwen2.5-coder:7b",
+    "timestamp": "2026-10-17T13:03:21+00:00"
+  }
+]

@@ -1,0 +1,556 @@
+{
+  "id": "5c78ed061196",
+  "request": "Build a customer churn report for a non-profit food bank with a printable summary (bid #9730)",
+  "created_at": "2026-10-27 13:51:57",
+  "updated_at": "2026-10-27 13:51:57",
+  "status": "COMPLETED",
+  "intent": "software",
+  "workspace": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-customer-churn-report-for-a-no-5c78ed061196",
+  "questions": [],
+  "answers": {
+    "presets": "github, ui_design",
+    "depth": "quick"
+  },
+  "assumptions": [],
+  "brief": {
+    "goal": "Build a customer churn report for a non-profit food bank with a printable summary (bid #9730)",
+    "intent": "software",
+    "answers": {
+      "presets": "github, ui_design",
+      "depth": "quick"
+    },
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "assumptions": [],
+    "constraints": [
+      "Work only inside the task workspace",
+      "Do not delete or overwrite user files without approval",
+      "Never claim success for an unverified step"
+    ]
+  },
+  "plan": {
+    "steps": [
+      {
+        "id": "s1",
+        "worker": "research",
+        "title": "Research the subject before building",
+        "params": {
+          "depth": "quick",
+          "feed_build": true,
+          "presets": [
+            "github",
+            "ui_design"
+          ]
+        },
+        "status": "done",
+        "detail": "Researched 'Build a customer churn report for a non-profit food bank wit' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research, UI / design references.",
+        "requires_approval": false,
+        "started_at": "2026-10-27 13:51:57",
+        "ended_at": "2026-10-27 13:51:57",
+        "error": "",
+        "attempts": 1,
+        "artifacts": [
+          {
+            "id": "e8d1754b4f",
+            "task_id": "5c78ed061196",
+            "name": "research-report.md",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-customer-churn-report-for-a-no-5c78ed061196\\research-report.md",
+            "kind": "markdown",
+            "size": 4284,
+            "sha256": "742c1352ef95ff42809b575a4c202822708c3fbb234a012ed496604dbd8fac87",
+            "created_at": "2026-10-27 13:51:57",
+            "detail": "Cited research report",
+            "validated": true,
+            "validation_detail": "4161 chars"
+          },
+          {
+            "id": "232d7d6a70",
+            "task_id": "5c78ed061196",
+            "name": "ref_32fd55c8.png",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-customer-churn-report-for-a-no-5c78ed061196\\references\\ref_32fd55c8.png",
+            "kind": "png",
+            "size": 362,
+            "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+            "created_at": "2026-10-27 13:51:57",
+            "detail": "Design reference: Reference: Build a customer churn report for a non-profit fo",
+            "validated": true,
+            "validation_detail": "PNG 160×120"
+          },
+          {
+            "id": "d33e11ce1c",
+            "task_id": "5c78ed061196",
+            "name": "ref_3eaac82c.png",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-customer-churn-report-for-a-no-5c78ed061196\\references\\ref_3eaac82c.png",
+            "kind": "png",
+            "size": 362,
+            "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+            "created_at": "2026-10-27 13:51:57",
+            "detail": "Design reference: Reference: Build a customer churn report for a non-profit fo",
+            "validated": true,
+            "validation_detail": "PNG 160×120"
+          },
+          {
+            "id": "068f82af71",
+            "task_id": "5c78ed061196",
+            "name": "ref_e9a6ad8b.png",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-customer-churn-report-for-a-no-5c78ed061196\\references\\ref_e9a6ad8b.png",
+            "kind": "png",
+            "size": 362,
+            "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+            "created_at": "2026-10-27 13:51:57",
+            "detail": "Design reference: Reference: site:github.com Build a customer churn report for",
+            "validated": true,
+            "validation_detail": "PNG 160×120"
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "worker": "software",
+        "title": "Build and verify the project",
+        "params": {
+          "mode": "build",
+          "reuse_research": true
+        },
+        "status": "done",
+        "detail": "built in the test environment",
+        "requires_approval": false,
+        "started_at": "2026-10-27 13:51:57",
+        "ended_at": "2026-10-27 13:51:57",
+        "error": "",
+        "attempts": 1,
+        "artifacts": [
+          {
+            "id": "48c716bf8c",
+            "task_id": "5c78ed061196",
+            "name": "index.html",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-customer-churn-report-for-a-no-5c78ed061196\\customer-churn-report-for-a-non-profit-f\\index.html",
+            "kind": "html",
+            "size": 171,
+            "sha256": "21e418ee1f82abb8d7681c032c1ef1d2043ee2aae57e23d7396e0c163bb85e43",
+            "created_at": "2026-10-27 13:51:57",
+            "detail": "171 bytes",
+            "validated": true,
+            "validation_detail": "171 chars"
+          }
+        ]
+      }
+    ],
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "source": "deterministic",
+    "note": "",
+    "created_at": "2026-10-27 13:51:57"
+  },
+  "current_step": 1,
+  "artifacts": [
+    {
+      "id": "e8d1754b4f",
+      "task_id": "5c78ed061196",
+      "name": "research-report.md",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-customer-churn-report-for-a-no-5c78ed061196\\research-report.md",
+      "kind": "markdown",
+      "size": 4284,
+      "sha256": "742c1352ef95ff42809b575a4c202822708c3fbb234a012ed496604dbd8fac87",
+      "created_at": "2026-10-27 13:51:57",
+      "detail": "Cited research report",
+      "validated": true,
+      "validation_detail": "4161 chars"
+    },
+    {
+      "id": "232d7d6a70",
+      "task_id": "5c78ed061196",
+      "name": "ref_32fd55c8.png",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-customer-churn-report-for-a-no-5c78ed061196\\references\\ref_32fd55c8.png",
+      "kind": "png",
+      "size": 362,
+      "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+      "created_at": "2026-10-27 13:51:57",
+      "detail": "Design reference: Reference: Build a customer churn report for a non-profit fo",
+      "validated": true,
+      "validation_detail": "PNG 160×120"
+    },
+    {
+      "id": "d33e11ce1c",
+      "task_id": "5c78ed061196",
+      "name": "ref_3eaac82c.png",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-customer-churn-report-for-a-no-5c78ed061196\\references\\ref_3eaac82c.png",
+      "kind": "png",
+      "size": 362,
+      "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+      "created_at": "2026-10-27 13:51:57",
+      "detail": "Design reference: Reference: Build a customer churn report for a non-profit fo",
+      "validated": true,
+      "validation_detail": "PNG 160×120"
+    },
+    {
+      "id": "068f82af71",
+      "task_id": "5c78ed061196",
+      "name": "ref_e9a6ad8b.png",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-customer-churn-report-for-a-no-5c78ed061196\\references\\ref_e9a6ad8b.png",
+      "kind": "png",
+      "size": 362,
+      "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+      "created_at": "2026-10-27 13:51:57",
+      "detail": "Design reference: Reference: site:github.com Build a customer churn report for",
+      "validated": true,
+      "validation_detail": "PNG 160×120"
+    },
+    {
+      "id": "48c716bf8c",
+      "task_id": "5c78ed061196",
+      "name": "index.html",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-customer-churn-report-for-a-no-5c78ed061196\\customer-churn-report-for-a-non-profit-f\\index.html",
+      "kind": "html",
+      "size": 171,
+      "sha256": "21e418ee1f82abb8d7681c032c1ef1d2043ee2aae57e23d7396e0c163bb85e43",
+      "created_at": "2026-10-27 13:51:57",
+      "detail": "171 bytes",
+      "validated": true,
+      "validation_detail": "171 chars"
+    }
+  ],
+  "evidence": [
+    {
+      "claim": "Customer Churn Report Non-Profit Food — reference notes.",
+      "quote": "Customer Churn Report Non-Profit Food — reference notes.",
+      "source_url": "https://docs.example.com/0684fcd420",
+      "title": "Reference: Build a customer churn report for a non-profit food bank wit",
+      "retrieved_at": "2026-10-27 13:51:57",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The customer churn report non-profit food workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The customer churn report non-profit food workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/0684fcd420",
+      "title": "Reference: Build a customer churn report for a non-profit food bank wit",
+      "retrieved_at": "2026-10-27 13:51:57",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "Customer Churn Report Non-Profit Food — reference notes.",
+      "quote": "Customer Churn Report Non-Profit Food — reference notes.",
+      "source_url": "https://docs.example.com/acfe1cb0fb",
+      "title": "Reference: Build a customer churn report for a non-profit food bank wit",
+      "retrieved_at": "2026-10-27 13:51:57",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The customer churn report non-profit food workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The customer churn report non-profit food workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/acfe1cb0fb",
+      "title": "Reference: Build a customer churn report for a non-profit food bank wit",
+      "retrieved_at": "2026-10-27 13:51:57",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "Site Github Customer Churn Report — reference notes.",
+      "quote": "Site Github Customer Churn Report — reference notes.",
+      "source_url": "https://docs.example.com/49b6590440",
+      "title": "Reference: site:github.com Build a customer churn report for a non-prof",
+      "retrieved_at": "2026-10-27 13:51:57",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The site github customer churn report workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The site github customer churn report workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/49b6590440",
+      "title": "Reference: site:github.com Build a customer churn report for a non-prof",
+      "retrieved_at": "2026-10-27 13:51:57",
+      "verified": true,
+      "method": "page fetched"
+    }
+  ],
+  "events": [
+    {
+      "ts": "2026-10-27 13:51:57",
+      "type": "task_created",
+      "text": "software task created in 20261027-build-a-customer-churn-report-for-a-no-5c78ed061196"
+    },
+    {
+      "ts": "2026-10-27 13:51:57",
+      "type": "status",
+      "text": "INTAKE → READY"
+    },
+    {
+      "ts": "2026-10-27 13:51:57",
+      "type": "status",
+      "text": "READY → PLANNING (building the plan)"
+    },
+    {
+      "ts": "2026-10-27 13:51:57",
+      "type": "plan_created",
+      "text": "2 step(s), source: deterministic"
+    },
+    {
+      "ts": "2026-10-27 13:51:57",
+      "type": "status",
+      "text": "PLANNING → READY (plan ready)"
+    },
+    {
+      "ts": "2026-10-27 13:51:57",
+      "type": "status",
+      "text": "READY → RUNNING"
+    },
+    {
+      "ts": "2026-10-27 13:51:57",
+      "type": "step_started",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:51:57",
+      "type": "worker_log",
+      "text": "Research: Build a customer churn report for a non-profit food bank with a printable summary (bid #9730) (depth quick, 7 queries, presets: GitHub research, UI / design references)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:51:57",
+      "type": "worker_log",
+      "text": "Design reference captured: Reference: Build a customer churn report for a non-profit fo",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:51:57",
+      "type": "worker_log",
+      "text": "Design reference captured: Reference: Build a customer churn report for a non-profit fo",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:51:57",
+      "type": "worker_log",
+      "text": "Design reference captured: Reference: site:github.com Build a customer churn report for",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:51:57",
+      "type": "worker_log",
+      "text": "Research summary discarded: no citation to the evidence.",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:51:57",
+      "type": "worker_log",
+      "text": "Research report written: research-report.md (6 evidence items)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:51:57",
+      "type": "step_done",
+      "text": "Done: Researched 'Build a customer churn report for a non-profit food bank wit' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research, UI / design references.",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:51:57",
+      "type": "step_started",
+      "text": "Starting: Build and verify the project",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 13:51:57",
+      "type": "worker_log",
+      "text": "Software: delegating to Crown Code in customer-churn-report-for-a-non-profit-f",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 13:51:57",
+      "type": "worker_log",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 13:51:57",
+      "type": "step_done",
+      "text": "Done: built in the test environment",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 13:51:57",
+      "type": "status",
+      "text": "RUNNING → VALIDATING (verifying artifacts)"
+    },
+    {
+      "ts": "2026-10-27 13:51:57",
+      "type": "task_completed",
+      "text": "2 step(s) complete; 5 artifact(s) verified."
+    },
+    {
+      "ts": "2026-10-27 13:51:57",
+      "type": "status",
+      "text": "VALIDATING → COMPLETED"
+    }
+  ],
+  "approval": null,
+  "error": "",
+  "warnings": [],
+  "attempts": {},
+  "result": {
+    "summary": "2 step(s) complete; 5 artifact(s) verified.",
+    "artifacts": [
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-customer-churn-report-for-a-no-5c78ed061196\\research-report.md",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-customer-churn-report-for-a-no-5c78ed061196\\references\\ref_32fd55c8.png",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-customer-churn-report-for-a-no-5c78ed061196\\references\\ref_3eaac82c.png",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-customer-churn-report-for-a-no-5c78ed061196\\references\\ref_e9a6ad8b.png",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-customer-churn-report-for-a-no-5c78ed061196\\customer-churn-report-for-a-non-profit-f\\index.html"
+    ],
+    "validation": "5 artifact(s) verified",
+    "warnings": []
+  },
+  "logs": [
+    {
+      "ts": "13:51:57",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    },
+    {
+      "ts": "13:51:57",
+      "text": "Research: Build a customer churn report for a non-profit food bank with a printable summary (bid #9730) (depth quick, 7 queries, presets: GitHub research, UI / design references)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:51:57",
+      "text": "Design reference captured: Reference: Build a customer churn report for a non-profit fo",
+      "step": "s1"
+    },
+    {
+      "ts": "13:51:57",
+      "text": "Design reference captured: Reference: Build a customer churn report for a non-profit fo",
+      "step": "s1"
+    },
+    {
+      "ts": "13:51:57",
+      "text": "Design reference captured: Reference: site:github.com Build a customer churn report for",
+      "step": "s1"
+    },
+    {
+      "ts": "13:51:57",
+      "text": "Research summary discarded: no citation to the evidence.",
+      "step": "s1"
+    },
+    {
+      "ts": "13:51:57",
+      "text": "Research report written: research-report.md (6 evidence items)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:51:57",
+      "text": "Verified artifact: research-report.md (4161 chars)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:51:57",
+      "text": "Verified artifact: ref_32fd55c8.png (PNG 160×120)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:51:57",
+      "text": "Verified artifact: ref_3eaac82c.png (PNG 160×120)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:51:57",
+      "text": "Verified artifact: ref_e9a6ad8b.png (PNG 160×120)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:51:57",
+      "text": "Done: Researched 'Build a customer churn report for a non-profit food bank wit' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research, UI / design references.",
+      "step": "s1"
+    },
+    {
+      "ts": "13:51:57",
+      "text": "Starting: Build and verify the project",
+      "step": "s2"
+    },
+    {
+      "ts": "13:51:57",
+      "text": "Software: delegating to Crown Code in customer-churn-report-for-a-non-profit-f",
+      "step": "s2"
+    },
+    {
+      "ts": "13:51:57",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "13:51:57",
+      "text": "Verified artifact: index.html (171 chars)",
+      "step": "s2"
+    },
+    {
+      "ts": "13:51:57",
+      "text": "Done: built in the test environment",
+      "step": "s2"
+    },
+    {
+      "ts": "13:51:57",
+      "text": "Validation: 5 artifact(s) verified",
+      "step": ""
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "results": [
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-customer-churn-report-for-a-no-5c78ed061196\\research-report.md",
+        "kind": "md",
+        "detail": "4161 chars",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-customer-churn-report-for-a-no-5c78ed061196\\references\\ref_32fd55c8.png",
+        "kind": "png",
+        "detail": "PNG 160×120",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-customer-churn-report-for-a-no-5c78ed061196\\references\\ref_3eaac82c.png",
+        "kind": "png",
+        "detail": "PNG 160×120",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-customer-churn-report-for-a-no-5c78ed061196\\references\\ref_e9a6ad8b.png",
+        "kind": "png",
+        "detail": "PNG 160×120",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-customer-churn-report-for-a-no-5c78ed061196\\customer-churn-report-for-a-non-profit-f\\index.html",
+        "kind": "html",
+        "detail": "171 chars",
+        "warning": ""
+      }
+    ],
+    "failures": [],
+    "detail": "5 artifact(s) verified"
+  }
+}

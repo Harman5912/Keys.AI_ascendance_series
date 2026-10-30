@@ -1,0 +1,18 @@
+{
+  "slug": "portfolio_02_hollis_park",
+  "artifact": "page",
+  "kind": "portfolio",
+  "studio_requested": "editorial",
+  "studio": "Editorial",
+  "studio_used": "Crown Code Studio \u2014 Editorial",
+  "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\pages\\portfolio_02_hollis_park\\index.html",
+  "bytes": 24624,
+  "ok": true,
+  "finished": true,
+  "problems": [],
+  "browser": "ok",
+  "browser_problems": [],
+  "checklist_score": "",
+  "adopted": true,
+  "message": "verified from disk with check_html + browser_audit"
+}

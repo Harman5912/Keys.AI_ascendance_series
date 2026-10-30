@@ -1,0 +1,74 @@
+[attempt 1]
+{
+  "brand": "Atelier Nord",
+  "title": "Atelier Nord Portfolio",
+  "eyebrow": "Architecture Studio in Oslo",
+  "headline": "Discover Our Projects and Work",
+  "tagline": "Small architecture studio with a focus on innovative design solutions.",
+  "accent": "#3498db",
+  "cta_primary": "Explore More",
+  "cta_secondary": "Contact Us",
+  "sections": [
+    {
+      "id": "about",
+      "kind": "text",
+      "heading": "About Atelier Nord",
+      "lead": "Atelier Nord is a small architecture studio based in Oslo, Norway. We specialize in creating unique and sustainable designs for both residential and commercial projects.",
+      "items": [
+        {"title": "Our Mission", "text": "To create spaces that are not only functional but also aesthetically pleasing and environmentally friendly."},
+        {"title": "Our Team", "text": "Our team consists of experienced architects, designers, and engineers who work together to bring your vision to life."},
+        {"title": "Our Values", "text": "Atelier Nord is committed to sustainability, innovation, and excellence in all our projects."}
+      ]
+    },
+    {
+      "id": "work",
+      "kind": "gallery",
+      "heading": "Selected Projects",
+      "lead": "Explore some of the projects we have completed for our clients.",
+      "items": [
+        {"title": "The Green House", "text": "A sustainable residential building that features energy-efficient design and natural materials.", "meta": "2023 · Client: XYZ Company", "tags": ["Sustainable Design", "Energy Efficiency", "Green Building"]},
+        {"title": "The Skyline Tower", "text": "A commercial skyscraper that offers panoramic views of the city skyline.", "meta": "2021 · Client: ABC Corporation", "tags": ["Commercial Architecture", "Skyscrapers", "Urban Design"]},
+        {"title": "The Cultural Center", "text": "A cultural center that provides a space for art, music, and community events.", "meta": "2020 · Client: DEF Foundation", "tags": ["Cultural Space", "Artistic Spaces", "Community Engagement"]}
+      ]
+    },
+    {
+      "id": "skills",
+      "kind": "text",
+      "heading": "Our Skills",
+      "lead": "Atelier Nord has a strong team of architects, designers, and engineers who are dedicated to delivering high-quality projects.",
+      "items": [
+        {"title": "Architectural Design", "text": "We have experience in designing buildings that meet the needs of our clients while also being aesthetically pleasing."},
+        {"title": "Interior Design", "text": "Our team is skilled at creating functional and comfortable interior spaces for residential and commercial projects."},
+        {"title": "Project Management", "text": "We use project management tools to ensure that all aspects of a project are completed on time and within budget."}
+      ]
+    },
+    {
+      "id": "faq",
+      "kind": "faq",
+      "heading": "Frequently Asked Questions",
+      "items": [
+        {"q": "What is your process for designing a building?", "a": "We start by understanding the client's needs and goals, then we create a detailed design that meets their requirements."},
+        {"q": "How do you ensure sustainability in your projects?", "a": "We use sustainable materials and design practices to minimize our impact on the environment."},
+        {"q": "What is your approach to project management?", "a": "We use agile methodologies to keep all aspects of a project on track and within budget."}
+      ]
+    },
+    {
+      "id": "contact",
+      "kind": "text",
+      "heading": "Contact Us",
+      "lead": "If you have any questions or would like to discuss your next project, please contact us.",
+      "items": [
+        {"title": "Email", "text": "info@atelier-nord.com"},
+        {"title": "Phone", "text": "+47 21 00 00 00"},
+        {"title": "Address", "text": "Atelier Nord, Oslo, Norway"}
+      ]
+    }
+  ],
+  "metrics": [{"value": "6+", "label": "years shipping"}],
+  "faq": [
+    {"q": "What is your process for designing a building?", "a": "We start by understanding the client's needs and goals, then we create a detailed design that meets their requirements."},
+    {"q": "How do you ensure sustainability in your projects?", "a": "We use sustainable materials and design practices to minimize our impact on the environment."},
+    {"q": "What is your approach to project management?", "a": "We use agile methodologies to keep all aspects of a project on track and within budget."}
+  ],
+  "footer": "Atelier Nord | Contact Us"
+}

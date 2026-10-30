@@ -1,0 +1,305 @@
+{
+  "facts": {
+    "products": 5,
+    "total_value": "54,200.00",
+    "low_stock": [
+      "Mouse",
+      "Laptop Stand"
+    ],
+    "unit_tests": 32,
+    "browser_checks": 19
+  },
+  "artifacts": {
+    "docx": {
+      "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\KEYSAI_PHASE2_RESULTS\\documents\\inventory_project_report.docx",
+      "seconds": 157.7,
+      "message": "Created Word document: inventory_project_report.docx\n  Subject : A professional project report for a small inventory management system built with\n  Detail  : 8 sections \u00b7 145 words\n  Size    : 38,511 bytes\n  Saved   : C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\KEYSAI_PHASE2_RESULTS\\documents\\inventory_project_report.docx\nNot opened (permission not requested).\n",
+      "exists": true,
+      "bytes": 38511
+    },
+    "pptx": {
+      "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\KEYSAI_PHASE2_RESULTS\\documents\\inventory_presentation.pptx",
+      "seconds": 100.8,
+      "message": "Created PowerPoint presentation: inventory_presentation.pptx\n  Subject : Technical Overview\n  Detail  : 14 widescreen slides \u00b7 1 native chart\n  Size    : 56,593 bytes\n  Saved   : C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\KEYSAI_PHASE2_RESULTS\\documents\\inventory_presentation.pptx\nNot opened (permission not requested).\n",
+      "exists": true,
+      "bytes": 56593
+    },
+    "xlsx": {
+      "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\KEYSAI_PHASE2_RESULTS\\documents\\inventory_test_report.xlsx",
+      "seconds": 0.9,
+      "message": "Created Excel workbook: inventory_test_report.xlsx\n  Subject : warehouse: SKU-level on hand, monthly demand, cover in months, reorder\n  Detail  : 4 worksheets \u00b7 live formulas \u00b7 2 charts\n  Size    : 14,415 bytes\n  Saved   : C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\KEYSAI_PHASE2_RESULTS\\documents\\inventory_test_report.xlsx\nNot opened (permission not requested).\n",
+      "exists": true,
+      "bytes": 14415
+    },
+    "pdf": {
+      "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\KEYSAI_PHASE2_RESULTS\\documents\\inventory_project_report.pdf",
+      "seconds": 200.8,
+      "message": "Created PDF document: inventory_project_report.pdf\n  Subject : A professional project report for a small inventory management system built with\n  Detail  : 1 pages \u00b7 242 words \u00b7 parsed OK\n  Size    : 3,577 bytes\n  Saved   : C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\KEYSAI_PHASE2_RESULTS\\documents\\inventory_project_report.pdf\nNot opened (permission not requested).\n",
+      "exists": true,
+      "bytes": 3577
+    }
+  },
+  "validation_docx": {
+    "paragraphs": 22,
+    "tables": 2,
+    "heading_count": 9,
+    "headings": [
+      "Inventory Management System \u2014 Project Report",
+      "Executive Summary",
+      "Objectives",
+      "System Architecture",
+      "Database Schema",
+      "JSON API Endpoints",
+      "Test Results",
+      "Limitations",
+      "Future Improvements"
+    ],
+    "chars": 1220,
+    "has_title_heading": true,
+    "mentions_total": true,
+    "mentions_five_products": true,
+    "mentions_low_stock": true,
+    "mentions_tests": true,
+    "table_has_five_products": true,
+    "sections_present": {
+      "executive_summary": true,
+      "objectives": true,
+      "architecture": true,
+      "database": true,
+      "api": true,
+      "test": true,
+      "limitations": true,
+      "future": true
+    }
+  },
+  "validation_pptx": {
+    "slide_count": 14,
+    "width_inches": 13.33,
+    "empty_slides": [],
+    "titles": [
+      "Inventory Management System \u2014 Technical Overview",
+      "Problem Statement",
+      "Objectives",
+      "System Architecture",
+      "Technology Stack",
+      "Database Design",
+      "API Design",
+      "User Interface",
+      "Security Measures",
+      "Testing Strategy",
+      "Actual Test Results",
+      "Limitations",
+      "Future Improvements",
+      "Conclusion"
+    ],
+    "charts": 1,
+    "densest_slide_chars": 292,
+    "mentions_total": true,
+    "mentions_tests": true,
+    "mentions_low_stock": true,
+    "topics_covered": [
+      "problem",
+      "objective",
+      "architecture",
+      "technology",
+      "database",
+      "api",
+      "interface",
+      "security",
+      "testing",
+      "test results",
+      "limitation",
+      "future",
+      "conclusion"
+    ],
+    "slides": [
+      {
+        "index": 1,
+        "title": "Inventory Management System \u2014 Technical Overview",
+        "chars": 173,
+        "empty": false
+      },
+      {
+        "index": 2,
+        "title": "Problem Statement",
+        "chars": 148,
+        "empty": false
+      },
+      {
+        "index": 3,
+        "title": "Objectives",
+        "chars": 182,
+        "empty": false
+      },
+      {
+        "index": 4,
+        "title": "System Architecture",
+        "chars": 167,
+        "empty": false
+      },
+      {
+        "index": 5,
+        "title": "Technology Stack",
+        "chars": 223,
+        "empty": false
+      },
+      {
+        "index": 6,
+        "title": "Database Design",
+        "chars": 120,
+        "empty": false
+      },
+      {
+        "index": 7,
+        "title": "API Design",
+        "chars": 192,
+        "empty": false
+      },
+      {
+        "index": 8,
+        "title": "User Interface",
+        "chars": 221,
+        "empty": false
+      },
+      {
+        "index": 9,
+        "title": "Security Measures",
+        "chars": 292,
+        "empty": false
+      },
+      {
+        "index": 10,
+        "title": "Testing Strategy",
+        "chars": 196,
+        "empty": false
+      },
+      {
+        "index": 11,
+        "title": "Actual Test Results",
+        "chars": 141,
+        "empty": false
+      },
+      {
+        "index": 12,
+        "title": "Limitations",
+        "chars": 231,
+        "empty": false
+      },
+      {
+        "index": 13,
+        "title": "Future Improvements",
+        "chars": 256,
+        "empty": false
+      },
+      {
+        "index": 14,
+        "title": "Conclusion",
+        "chars": 288,
+        "empty": false
+      }
+    ]
+  },
+  "validation_xlsx": {
+    "sheets": [
+      "Dashboard",
+      "Trend",
+      "Data",
+      "Assumptions"
+    ],
+    "sheet_count": 4,
+    "formulas": 69,
+    "charts": 2,
+    "sku_count": 12,
+    "sku_rows": [
+      "FF-BIRD-14",
+      "FF-CACTUS-9",
+      "FF-FERN-14",
+      "FF-HART-17",
+      "FF-HEART-12",
+      "FF-MOSS-6",
+      "FF-OLIVE-24",
+      "FF-PILEA-12",
+      "FF-POT-14",
+      "FF-POTH-17",
+      "FF-RUBBER-21",
+      "FF-ZZ-14"
+    ],
+    "verified_kpis": {
+      "SKUs": 12.0,
+      "Units on hand": 1663.0,
+      "Months cover": 2.991,
+      "Reorder alerts": 0.0,
+      "Cover (months)": 3.2174,
+      "Reorder point": 92.0,
+      "=IFERROR(C12/D12,0)": 2.5263,
+      "=ROUND(D12*2,0)": 76.0,
+      "=IFERROR(C13/D13,0)": 3.0476,
+      "=ROUND(D13*2,0)": 42.0,
+      "=IFERROR(C14/D14,0)": 2.8378,
+      "=ROUND(D14*2,0)": 148.0,
+      "=IFERROR(C15/D15,0)": 3.3846,
+      "=ROUND(D15*2,0)": 52.0,
+      "=IFERROR(C16/D16,0)": 2.3333,
+      "=ROUND(D16*2,0)": 36.0,
+      "=IFERROR(C17/D17,0)": 2.5385,
+      "=ROUND(D17*2,0)": 104.0,
+      "=IFERROR(C18/D18,0)": 3.0833,
+      "=ROUND(D18*2,0)": 24.0,
+      "=IFERROR(C19/D19,0)": 2.8852,
+      "=ROUND(D19*2,0)": 122.0,
+      "=IFERROR(C20/D20,0)": 3.6364,
+      "=ROUND(D20*2,0)": 66.0,
+      "=IFERROR(C21/D21,0)": 3.0,
+      "=ROUND(D21*2,0)": 160.0,
+      "=IFERROR(C22/D22,0)": 3.2632,
+      "=ROUND(D22*2,0)": 190.0,
+      "C24": 1663.0,
+      "D24": 556.0,
+      "=ROUND(D23*2,0)": 0.0
+    },
+    "unverifiable_kpis": [
+      "=IFERROR(C23/D23,0)",
+      "G24"
+    ],
+    "self_computed_on_hand": 1663.0,
+    "self_computed_reorder_alerts": 0,
+    "units_kpi_matches_data": true,
+    "reorder_kpi_matches_data": true,
+    "formula_values_cached": false
+  },
+  "validation_pdf": {
+    "pages": 1,
+    "chars": 1618,
+    "blank_pages": [],
+    "mentions_total": true,
+    "mentions_tests": true,
+    "mentions_low_stock": true,
+    "has_executive_summary": true,
+    "has_limitations": true,
+    "has_future": true,
+    "title_metadata": "Inventory Management System \u2014 Project Report"
+  },
+  "cross_format": {
+    "all_four_exist": true,
+    "facts": {
+      "docx_states_total": true,
+      "pptx_states_total": true,
+      "pdf_states_total": true,
+      "docx_states_low_stock": true,
+      "pptx_states_low_stock": true,
+      "pdf_states_low_stock": true,
+      "docx_states_tests": true,
+      "pptx_states_tests": true,
+      "pdf_states_tests": true,
+      "xlsx_sku_data_real": true,
+      "xlsx_units_kpi_verified": true,
+      "xlsx_reorder_kpi_verified": true,
+      "xlsx_charts_present": true,
+      "docx_has_required_sections": true,
+      "pptx_no_empty_slides": true,
+      "pdf_no_blank_pages": true
+    },
+    "all_agree": true,
+    "disagreements": []
+  }
+}

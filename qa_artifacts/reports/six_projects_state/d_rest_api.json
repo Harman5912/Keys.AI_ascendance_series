@@ -1,0 +1,35 @@
+{
+  "key": "D",
+  "slug": "d_rest_api",
+  "kind": "api-backend",
+  "build": {
+    "ok": false,
+    "seconds": 0.0,
+    "model": "qwen3:8b",
+    "message": "NEED REQUIREMENTS \u2014 nothing was built and nothing was started.\nThis request describes an application, but it does not state: scope.\n\nAsk the user these questions, one at a time, and do not answer them yourself or pick a default:\n1. Is it a single-user tool on this machine, or does it need login / multiple users? (e.g. local single user with sample data, or local front end plus a small backend with a login) \u2014 auth, storage and deployment all follow from this.\n\nThen call crown_code again with the same description and requirements=\"<the user's answers, in their words>\". Only pass confirmed=true if the user explicitly tells you to go ahead without answering."
+  },
+  "files_count": 0,
+  "files": [],
+  "missing_recipe_files": [
+    "app.py (or server.js)",
+    "routes/",
+    "models/",
+    "tests/",
+    "requirements.txt"
+  ],
+  "compile": {
+    "compiled": 0,
+    "compile_failures": [
+      "workspace missing"
+    ]
+  },
+  "verify": {
+    "http_smoke": {
+      "exit": "error",
+      "stdout": "",
+      "stderr": "NotADirectoryError: [WinError 267] The directory name is invalid",
+      "seconds": 0.0
+    }
+  },
+  "ok": false
+}

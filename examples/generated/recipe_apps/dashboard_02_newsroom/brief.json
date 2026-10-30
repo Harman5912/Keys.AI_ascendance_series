@@ -1,0 +1,18 @@
+{
+  "request": "Build a newsroom analytics dashboard: articles, reads and subscriptions, with a table of recent stories.",
+  "requirements": "data source: SQLite file in the project folder\nmetrics: reads per day, reads per section, open items\ncharts: line for reads per day, bars per section\nstack: Flask API + vanilla HTML/CSS/JS, inline SVG\nscope: local single user, no login, sample data",
+  "artifact": "app",
+  "answered": [
+    "data_source",
+    "metrics",
+    "charts",
+    "stack",
+    "scope"
+  ],
+  "assumptions": [],
+  "recipes": [
+    "dashboard",
+    "mysql"
+  ],
+  "path": "app"
+}

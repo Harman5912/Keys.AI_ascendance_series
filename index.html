@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NovaCart Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="topbar">
+        <h1>NovaCart Dashboard</h1>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="kpi-cards">
+            <div class="kpi-card" data-kpi="0">KPI 0</div>
+            <div class="kpi-card" data-kpi="1">KPI 1</div>
+            <div class="kpi-card" data-kpi="2">KPI 2</div>
+            <div class="kpi-card" data-kpi="3">KPI 3</div>
+            <div class="kpi-card" data-kpi="4">KPI 4</div>
+            <div class="kpi-card" data-kpi="5">KPI 5</div>
+            <div class="kpi-card" data-kpi="6">KPI 6</div>
+            <div class="kpi-card" data-kpi="7">KPI 7</div>
+        </div>
+        <div class="charts">
+            <canvas id="c1"></canvas>
+            <canvas id="c2"></canvas>
+            <canvas id="c3"></canvas>
+            <canvas id="c4"></canvas>
+            <canvas id="c5"></canvas>
+            <canvas id="c6"></canvas>
+        </div>
+        <div class="table-container">
+            <table id="tbl-search">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!-- Data will be loaded here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 NovaCart. All rights reserved.</p>
+    </footer>
+    <script src="chart.umd.min.js"></script>
+    <script src="data.js"></script>
+    <script src="table.js"></script>
+    <script src="charts.js"></script>
+    <script src="live.js"></script>
+</body>
+</html>

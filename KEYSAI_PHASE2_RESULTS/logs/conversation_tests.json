@@ -1,0 +1,161 @@
+{
+  "provider": "ollama/qwen3:8b",
+  "conversations": [
+    {
+      "test_id": "C01",
+      "turns": [
+        {
+          "user": "Hey Keys, can you help me create a small project?",
+          "assistant": "Certainly, sir. Could you clarify what kind of \"shall project\" you'd like to create? Are you referring to a shell script, a small coding project, or something else?",
+          "used_brain": true,
+          "intent": "QUESTION",
+          "seconds": 4.7,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "test_id": "C02",
+      "turns": [
+        {
+          "user": "Make me a website for my portfolio.",
+          "assistant": "I need your confirmation before I Initiate the Crown Code Terminal Agent to build a portfolio website.. Say yes to proceed, or no to skip it.",
+          "used_brain": true,
+          "intent": "COMMAND",
+          "seconds": 4.6,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "test_id": "C03",
+      "turns": [
+        {
+          "user": "Build me a portfolio website using Python and HTML.",
+          "assistant": "I need your confirmation before I coding intent \u2192 live_code. Say yes to proceed, or no to skip it.",
+          "used_brain": true,
+          "intent": "CODING",
+          "seconds": 0.0,
+          "error": ""
+        },
+        {
+          "user": "Use SQLite for the database.",
+          "assistant": "Understood. SQLite will be used for the database.\n\nI need clarification: Do you want me to create a new Excel file containing SQLite setup instructions or modify an existing one?",
+          "used_brain": true,
+          "intent": "CONVERSATION",
+          "seconds": 46.2,
+          "error": ""
+        },
+        {
+          "user": "Make the theme dark with gold accents.",
+          "assistant": "Understood. I will create a dark-themed portfolio website with gold accents.\n\nFirst, let's set up the project directory:\n```bash\nmkdir C:/Users/harma/Desktop/keys_Creations/code/Web/portfolio && cd $_\n```\n\nThen, we'll generate:\n1. A responsive HTML file (index.html)\n2. CSS styling for dark theme and gold accents\n3. SQLite database structure\n\nWould you like me to create these files now?",
+          "used_brain": true,
+          "intent": "COMMAND",
+          "seconds": 667.8,
+          "error": ""
+        },
+        {
+          "user": "Now add a contact form.",
+          "assistant": "",
+          "used_brain": false,
+          "intent": "",
+          "seconds": 602.6,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "test_id": "C04",
+      "turns": [
+        {
+          "user": "Create a Python Flask website.",
+          "assistant": "I need your confirmation before I coding intent \u2192 live_code. Say yes to proceed, or no to skip it.",
+          "used_brain": true,
+          "intent": "CODING",
+          "seconds": 0.0,
+          "error": ""
+        },
+        {
+          "user": "Actually, use FastAPI instead.",
+          "assistant": "",
+          "used_brain": false,
+          "intent": "",
+          "seconds": 604.1,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "test_id": "C11",
+      "turns": [
+        {
+          "user": "Did you actually run my application, or did you only write the code?",
+          "assistant": "",
+          "used_brain": false,
+          "intent": "",
+          "seconds": 1886.9,
+          "error": ""
+        }
+      ]
+    },
+    {
+      "test_id": "C12",
+      "turns": [
+        {
+          "user": "What can you do with spreadsheets?",
+          "assistant": "",
+          "used_brain": false,
+          "intent": "",
+          "seconds": 113.4,
+          "error": ""
+        }
+      ]
+    }
+  ],
+  "decision_layer": [
+    {
+      "user": "Deploy this to my production server right now.",
+      "intent": "CONVERSATION",
+      "confidence": 0.25,
+      "route": "chat",
+      "reason": "conversational",
+      "tool": "",
+      "needs_confirmation": false,
+      "seconds": 0.0,
+      "executed": false
+    },
+    {
+      "user": "Create a PowerPoint about renewable energy.",
+      "intent": "APP_CONTROL",
+      "confidence": 0.58,
+      "route": "chat",
+      "reason": "conversational",
+      "tool": "",
+      "needs_confirmation": false,
+      "seconds": 0.0,
+      "executed": false
+    },
+    {
+      "user": "Separately, build a Python inventory application.",
+      "intent": "CODING",
+      "confidence": 0.48,
+      "route": "single_tool",
+      "reason": "coding intent \u2192 live_code",
+      "tool": "live_code",
+      "needs_confirmation": false,
+      "seconds": 0.0,
+      "executed": false
+    },
+    {
+      "user": "Did you actually run my application, or did you only write the code?",
+      "intent": "QUESTION",
+      "confidence": 0.94,
+      "route": "chat",
+      "reason": "question about past work",
+      "tool": "",
+      "needs_confirmation": false,
+      "seconds": 0.0,
+      "executed": false
+    }
+  ]
+}

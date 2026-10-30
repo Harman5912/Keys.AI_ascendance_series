@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keys.ai — two of each, built by the local models</title>
+<style>
+  :root { --bg:#0c0f14; --panel:#141a22; --ink:#eaf0f7; --muted:#94a3b8; --line:#23303f; --accent:#5eead4; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:400 15px/1.6 "Segoe UI",system-ui,sans-serif; }
+  header { padding:2.4rem clamp(1rem,4vw,3rem) 1.2rem; border-bottom:1px solid var(--line); }
+  h1 { margin:0 0 .4rem; font-size:clamp(1.6rem,3.4vw,2.3rem); letter-spacing:-.02em; }
+  .sub { margin:0; color:var(--muted); max-width:70ch; }
+  main { padding:1.6rem clamp(1rem,4vw,3rem) 3rem; }
+  h2 { font-size:.8rem; letter-spacing:.16em; text-transform:uppercase; color:var(--muted);
+        margin:2rem 0 1rem; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1.1rem; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:14px; overflow:hidden; }
+  .shot { display:block; aspect-ratio:4/3; overflow:hidden; background:#0a0d12; }
+  .shot img { width:100%; height:100%; object-fit:cover; object-position:top center; display:block;
+               transition:transform .3s ease; }
+  .card:hover .shot img { transform:translateY(-4px); }
+  .body { padding:.9rem 1rem 1.1rem; }
+  h3 { margin:0 0 .2rem; font-size:1rem; }
+  .meta { margin:0; color:var(--muted); font-size:.78rem; }
+  .actions { margin:.6rem 0 0; display:flex; gap:1rem; font-size:.82rem; }
+  a { color:var(--accent); }
+  .apps { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:.8rem; }
+  .app { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:.9rem 1rem; }
+  .app .files { margin:.5rem 0 0; color:var(--muted); font-size:.74rem; font-family:ui-monospace,monospace; }
+  footer { color:var(--muted); font-size:.78rem; padding:0 clamp(1rem,4vw,3rem) 2rem; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Two of each — built by Keys.ai's own models</h1>
+    <p class="sub">Pages planned by qwen2.5-coder:3b through the Crown Code site pipeline.
+      Applications built by the Crown Code agent (qwen3:8b). Every page was verified with the
+      deterministic checks and a headless Chromium audit before it shipped.</p>
+  </header>
+  <main>
+    <h2>Pages · 0 built</h2>
+    <div class="grid"></div>
+    <h2>Applications · 6</h2>
+    <div class="apps">      <article class="app">
+        <h3>doc Quarterly Business Review</h3>
+        <p class="meta">docx · 9.0s · finished</p>
+        <p class="files">no files yet</p>
+      </article>      <article class="app">
+        <h3>doc Supplier Risk Memo</h3>
+        <p class="meta">docx · 7.2s · finished</p>
+        <p class="files">no files yet</p>
+      </article>      <article class="app">
+        <h3>doc Staffing Plan</h3>
+        <p class="meta">pptx · 7.6s · finished</p>
+        <p class="files">no files yet</p>
+      </article>      <article class="app">
+        <h3>doc Three-Year Plan</h3>
+        <p class="meta">pptx · 9.0s · finished</p>
+        <p class="files">no files yet</p>
+      </article>      <article class="app">
+        <h3>doc Revenue and Coverage Snapshot</h3>
+        <p class="meta">docx · 10.7s · finished</p>
+        <p class="files">no files yet</p>
+      </article>      <article class="app">
+        <h3>doc Stock Cover and Low-Stock Report</h3>
+        <p class="meta">xlsx · 0.3s · finished</p>
+        <p class="files">no files yet</p>
+      </article></div>
+    <h2>Documents · 6</h2>
+    <div class="grid">      <article class="doc">
+        <h3>Quarterly Business Review — Northwind Logistics</h3>
+        <p class="meta">docx · 37 KB · qwen3:8b</p>
+        <p><a class="doc-link" href="documents/docx/doc_Quarterly_Business_Review.docx" download>
+          <span class="ext">.docx</span> Download</a></p>
+      </article>      <article class="doc">
+        <h3>Supplier Risk Memo — Atlas Parts</h3>
+        <p class="meta">docx · 36 KB · qwen3:8b</p>
+        <p><a class="doc-link" href="documents/docx/doc_Supplier_Risk_Memo.docx" download>
+          <span class="ext">.docx</span> Download</a></p>
+      </article>      <article class="doc">
+        <h3>Staffing Plan — Pulse Clinic Q4</h3>
+        <p class="meta">pptx · 29 KB · qwen3:8b</p>
+        <p><a class="doc-link" href="documents/pptx/doc_Staffing_Plan.pptx" download>
+          <span class="ext">.pptx</span> Download</a></p>
+      </article>      <article class="doc">
+        <h3>Three-Year Plan — Fern Flint Organics</h3>
+        <p class="meta">pptx · 40 KB · qwen3:8b</p>
+        <p><a class="doc-link" href="documents/pptx/doc_Three-Year_Plan.pptx" download>
+          <span class="ext">.pptx</span> Download</a></p>
+      </article>      <article class="doc">
+        <h3>Revenue and Coverage Snapshot — Meridian Newsroom</h3>
+        <p class="meta">docx · 37 KB · qwen3:8b</p>
+        <p><a class="doc-link" href="documents/docx/doc_Revenue_and_Coverage_Snapshot.docx" download>
+          <span class="ext">.docx</span> Download</a></p>
+      </article>      <article class="doc">
+        <h3>Stock Cover and Low-Stock Report — Goods Co</h3>
+        <p class="meta">xlsx · 14 KB · qwen3:8b</p>
+        <p><a class="doc-link" href="documents/xlsx/doc_Stock_Cover_and_Low-Stock_Report.xlsx" download>
+          <span class="ext">.xlsx</span> Download</a></p>
+      </article></div>
+  </main>
+  <footer>Generated by qa_artifacts/make_gallery.py · screenshot at 1280×860 · local models only.</footer>
+</body>
+</html>

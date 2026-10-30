@@ -1,0 +1,59 @@
+==============================================================================
+LIVE SITE BUILD — Crown Code background job + progress + Chromium audit
+==============================================================================
+[1] request returned in 15.35s with job=adb921c644
+    Started: portfolio_lena  (job adb921c644)
+    I'll plan the page, render it, and check it in a real browser (about a minute). It is running in the background — you can keep talking to me, and ask "how's it going?" at any time for progress.
+    Output: C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\live_build\portfolio_lena
+[2] a working index.html exists after 15.5s
+[2] status: Building portfolio_lena: 8% · rendering · Rendering a first page from the built-in plan · 0s elapsed
+[2] action=status while running:
+    Building portfolio_lena: 8% · rendering · Rendering a first page from the built-in plan · 0s elapsed
+    Recent:
+      20:01:57 Auto-repaired: added page-level base CSS (box-sizing, focus, reduced motion)
+[2] status: Building portfolio_lena: 12% · planning · Planning with qwen2.5-coder:3b · 3s elapsed
+[2] brain progress answer: Building portfolio_lena: 12% · planning · Planning with qwen2.5-coder:3b · 3s elapsed
+[2] status: Building portfolio_lena: 12% · planning · Planning with qwen2.5-coder:3b · 6s elapsed
+[2] status: Building portfolio_lena: 12% · planning · Planning with qwen2.5-coder:3b · 9s elapsed
+[2] status: Building portfolio_lena: 12% · planning · Planning with qwen2.5-coder:3b · 12s elapsed
+[2] status: Building portfolio_lena: 12% · planning · Planning the copy — 2% of the plan · 15s elapsed
+[2] status: Building portfolio_lena: 13% · planning · Planning the copy — 6% of the plan · 18s elapsed
+[2] status: Building portfolio_lena: 13% · planning · Planning the copy — 10% of the plan · 21s elapsed
+[2] status: Building portfolio_lena: 14% · planning · Planning the copy — 16% of the plan · 24s elapsed
+[2] status: Building portfolio_lena: 14% · planning · Planning the copy — 22% of the plan · 27s elapsed
+[2] status: Building portfolio_lena: 15% · planning · Planning the copy — 28% of the plan · 30s elapsed
+[2] status: Building portfolio_lena: 15% · planning · Planning the copy — 33% of the plan · 33s elapsed
+[2] status: Building portfolio_lena: 16% · planning · Planning the copy — 39% of the plan · 36s elapsed
+[2] status: Building portfolio_lena: 17% · planning · Planning the copy — 45% of the plan · 39s elapsed
+[2] status: Building portfolio_lena: 17% · planning · Planning the copy — 51% of the plan · 42s elapsed
+[2] status: Building portfolio_lena: 18% · planning · Planning the copy — 57% of the plan · 45s elapsed · ~3m29s left
+[2] status: Building portfolio_lena: 18% · planning · Planning the copy — 62% of the plan · 48s elapsed · ~3m35s left
+[2] status: Building portfolio_lena: 19% · planning · Planning the copy — 67% of the plan · 51s elapsed · ~3m41s left
+[2] status: Building portfolio_lena: 19% · planning · Planning the copy — 73% of the plan · 54s elapsed · ~3m46s left
+[2] status: Building portfolio_lena: 20% · planning · Planning the copy — 78% of the plan · 57s elapsed · ~3m50s left
+[2] status: Building portfolio_lena: 21% · planning · Planning the copy — 85% of the plan · 1m00s elapsed · ~3m52s left
+[2] status: Building portfolio_lena: 21% · planning · Planning the copy — 91% of the plan · 1m03s elapsed · ~3m55s left
+[2] status: Building portfolio_lena: 22% · planning · Planning the copy — 97% of the plan · 1m06s elapsed · ~3m58s left
+[2] status: Building portfolio_lena: 22% · planning · Planning the copy — 98% of the plan · 1m09s elapsed · ~4m08s left
+[2] status: Building portfolio_lena: 22% · planning · Planning the copy — 98% of the plan · 1m12s elapsed · ~4m18s left
+[2] status: Building portfolio_lena: 22% · planning · Planning the copy — 98% of the plan · 1m15s elapsed · ~4m29s left
+[2] status: Building portfolio_lena: 22% · planning · Planning the copy — 98% of the plan · 1m18s elapsed · ~4m40s left
+[2] status: Building portfolio_lena: 22% · planning · Planning the copy — 98% of the plan · 1m21s elapsed · ~4m51s left
+[2] status: Building portfolio_lena: 22% · planning · Planning the copy — 98% of the plan · 1m24s elapsed · ~5m02s left
+[2] status: Building portfolio_lena: 22% · planning · Planning the copy — 98% of the plan · 1m27s elapsed · ~5m12s left
+[2] status: Building portfolio_lena: 22% · planning · Planning the copy — 98% of the plan · 1m30s elapsed · ~5m23s left
+[2] status: Building portfolio_lena: 22% · planning · Planning the copy — 98% of the plan · 1m33s elapsed · ~5m34s left
+[2] status: Building portfolio_lena: 22% · planning · Planning the copy — 98% of the plan · 1m36s elapsed · ~5m45s left
+[2] status: Building portfolio_lena: 22% · planning · Planning the copy — 98% of the plan · 1m39s elapsed · ~5m55s left
+[2] status: Building portfolio_lena: 22% · planning · Planning the copy — 98% of the plan · 1m42s elapsed · ~6m06s left
+
+[3] job status: done  bytes=15837
+    checks: PASS
+    browser: ok []
+    phases seen: ['done', 'planning', 're-rendering', 'rendering']
+    model used: 
+
+first page after: 15.5s (target < 90s)
+build seconds: 105.0 (fast-path target: < 300s)
+mode: render
+RESULT: PASS (report: qa_artifacts/reports/live_site_build.json)

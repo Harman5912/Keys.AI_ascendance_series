@@ -1,0 +1,57 @@
+-- Power BI DAX module
+-- Report: Revenue Performance — Northstar
+
+-- Measures
+
+// Headline value KPI across all visuals.
+[Total Value] := SUM(Fact[Value])
+
+// Cost side of the P&L-style view.
+[Total Cost] := SUM(Fact[Cost])
+
+// Absolute margin.
+[Margin] := [Total Value] - [Total Cost]
+
+// Margins as a ratio.
+[Margin %] := DIVIDE([Margin], [Total Value])
+
+// Transaction/record count.
+[Count] := COUNTROWS(Fact)
+
+// Simple average per record.
+[Average] := AVERAGE(Fact[Value])
+
+// Year-to-date growth vs prior year.
+[YTD vs PY %] := VAR YTD = CALCULATE([Total Value], DATESYTD('Date'[Date])) VAR PY = CALCULATE([Total Value], SAMEPERIODLASTYEAR('Date'[Date])) RETURN DIVIDE(YTD - PY, PY)
+
+// Period-over-period value variance.
+[Variance] := [Total Value] - CALCULATE([Total Value], SAMEPERIODLASTYEAR('Date'[Date]))
+
+// Prior-year value for the current filter context.
+[Prior Year Value] := CALCULATE([Total Value], SAMEPERIODLASTYEAR('Date'[Date]))
+
+-- Calculation group members
+
+// YTD
+// Format: Currency
+[YTD] := CALCULATE(SELECTEDMEASURE(), DATESYTD('Date'[Date]))
+
+// MTD
+// Format: Currency
+[MTD] := CALCULATE(SELECTEDMEASURE(), DATESMTD('Date'[Date]))
+
+// PY
+// Format: Currency
+[PY] := CALCULATE(SELECTEDMEASURE(), SAMEPERIODLASTYEAR('Date'[Date]))
+
+// YoY %
+// Format: 0.00%
+[YoY %] := VAR PY = CALCULATE(SELECTEDMEASURE(), SAMEPERIODLASTYEAR('Date'[Date])) RETURN DIVIDE(SELECTEDMEASURE() - PY, PY)
+
+-- Time intelligence helpers
+
+// Last Date
+[Last Date] := MAX('Date'[Date])
+
+// Days in Selection
+[Days in Selection] := DATEDIFF(MIN('Date'[Date]), MAX('Date'[Date]), DAY)

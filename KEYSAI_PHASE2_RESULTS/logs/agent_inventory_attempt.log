@@ -1,0 +1,14 @@
+13:54:35 workspace: C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\KEYSAI_PHASE2_RESULTS\projects\inventory_system_AGENT_ATTEMPT
+13:54:35 calling crown_code(action=build, wait=True, timeout=420)
+
+REPLY:
+Building inventory_system_AGENT_ATTEMPT: done in 0.9s (28543 bytes)
+Files: seed.py, static\dashboard.js, static\style.css, templates\index.html
+Recent:
+  13:54:36 PASS serves GET /api/kpis?range=30d
+  13:54:36 PASS serves GET /api/series?range=30d
+  13:54:36 PASS serves GET /api/breakdown?range=30d
+  13:54:36 PASS serves GET /api/status?range=30d
+  13:54:36 PASS serves GET /api/rows?limit=50
+  13:54:36 Built dashboard: 11 files, 28543 bytes in 0.9s · verified — 8 checks passed (1 compiles, 1 executes, 6 serves) · run it with: python seed.py && python app.py  (5071)
+Output: C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\KEYSAI_PHASE2_RESULTS\projects\inventory_system_AGENT_ATTEMPT

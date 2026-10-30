@@ -1,0 +1,176 @@
+{
+  "brand": "Arjun Mehta",
+  "title": "Arjun Mehta - Backend Engineer Portfolio",
+  "eyebrow": "Backend Engineer in Pune",
+  "headline": "Building robust backend solutions",
+  "tagline": "Crafting efficient and scalable systems for web applications.",
+  "accent": "#3498db",
+  "cta_primary": "View Projects",
+  "cta_secondary": "Contact Me",
+  "sections": [
+    {
+      "id": "about",
+      "kind": "text",
+      "heading": "About Arjun Mehta",
+      "lead": "A seasoned backend engineer with over 6 years of experience.",
+      "items": [
+        {
+          "title": "Experience",
+          "text": "6+ years in backend development, specializing in Node.js and React.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Skills",
+          "text": "Proficient in JavaScript, TypeScript, and RESTful APIs.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Projects",
+          "text": "Developed a real-time chat application using Socket.io and MongoDB.",
+          "meta": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "work",
+      "kind": "gallery",
+      "heading": "Selected Projects",
+      "lead": "A selection of my recent projects that showcase my expertise.",
+      "items": [
+        {
+          "title": "Real-time Chat Application",
+          "text": "Developed a real-time chat application using Socket.io and MongoDB.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "E-commerce Website",
+          "text": "Built an e-commerce website with React, Node.js, and MongoDB.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "API Gateway",
+          "text": "Designed and implemented an API gateway using AWS Lambda and API Gateway.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Data Analysis Tool",
+          "text": "Created a data analysis tool using Python and Flask.",
+          "meta": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "kind": "cards",
+      "heading": "Skills",
+      "lead": "Key skills that I bring to the table.",
+      "items": [
+        {
+          "title": "Backend Development",
+          "text": "Proficient in Node.js, Express, and TypeScript.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Frontend Development",
+          "text": "Skilled in React, Angular, and Vue.js.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Database Management",
+          "text": "Experience with MongoDB, PostgreSQL, and MySQL.",
+          "meta": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "kind": "faq",
+      "heading": "Frequently Asked Questions",
+      "lead": "",
+      "items": [
+        {
+          "title": "",
+          "text": "",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "",
+          "text": "",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "",
+          "text": "",
+          "meta": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "kind": "text",
+      "heading": "Contact Me",
+      "lead": "Ready to collaborate on a project? Let's connect!",
+      "items": [
+        {
+          "title": "Email",
+          "text": "arjun@example.com",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Phone",
+          "text": "+91 9876543210",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "LinkedIn",
+          "text": "https://www.linkedin.com/in/arjun-mehta/",
+          "meta": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "kind": "contact",
+      "heading": "Get in touch",
+      "lead": "Send a message with what you need and the deadline you are working towards.",
+      "items": []
+    }
+  ],
+  "metrics": [
+    {
+      "value": "6+",
+      "label": "years shipping"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is your area of expertise?",
+      "a": "I specialize in backend development with Node.js and React."
+    },
+    {
+      "q": "How long have you been working as a backend engineer?",
+      "a": "Over 6 years."
+    },
+    {
+      "q": "Can you provide examples of your previous projects?",
+      "a": "Yes, I can share details about my recent projects on my portfolio page."
+    }
+  ],
+  "footer": "\u00a9 2023 Arjun Mehta. All rights reserved."
+}

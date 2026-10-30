@@ -1,0 +1,25 @@
+# test_targeting.py  exit=0  seconds=0.44  timeout=False
+# ---- stdout ----
+
+# ---- stderr ----
+test_center (__main__.MissileWaypointsTests.test_center) ... ok
+test_waypoints_bend_and_taper_to_the_target (__main__.MissileWaypointsTests.test_waypoints_bend_and_taper_to_the_target) ... ok
+test_waypoints_empty_when_points_coincide (__main__.MissileWaypointsTests.test_waypoints_empty_when_points_coincide) ... ok
+test_multi_key_falls_back_per_key_when_json_parse_fails (__main__.ScreenFindBoxesTests.test_multi_key_falls_back_per_key_when_json_parse_fails)
+A model reply that yields no usable JSON must still locate every ... ok
+test_multi_key_tops_up_missing_keys (__main__.ScreenFindBoxesTests.test_multi_key_tops_up_missing_keys) ... ok
+test_multi_key_uses_one_screenshot_one_vision_pass (__main__.ScreenFindBoxesTests.test_multi_key_uses_one_screenshot_one_vision_pass) ... ok
+test_single_key_delegates_to_screen_find_box (__main__.ScreenFindBoxesTests.test_single_key_delegates_to_screen_find_box) ... ok
+test_consecutive_engages_glide_from_the_last_selection (__main__.TargeterTests.test_consecutive_engages_glide_from_the_last_selection) ... ok
+test_drawing_callback_errors_are_swallowed (__main__.TargeterTests.test_drawing_callback_errors_are_swallowed) ... ok
+test_engage_degrades_without_motion_methods (__main__.TargeterTests.test_engage_degrades_without_motion_methods) ... ok
+test_first_engage_launches_from_cursor_box (__main__.TargeterTests.test_first_engage_launches_from_cursor_box) ... ok
+test_on_move_streams_every_cursor_update (__main__.TargeterTests.test_on_move_streams_every_cursor_update)
+A live crosshair callback receives every cursor position while ... ok
+test_reset_clears_the_previous_selection (__main__.TargeterTests.test_reset_clears_the_previous_selection) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.216s
+
+OK
+

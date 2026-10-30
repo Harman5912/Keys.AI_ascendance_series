@@ -1,0 +1,72 @@
+[
+  {
+    "file": "P01_quarterly_report.pdf",
+    "title": "Quarterly Business Review \u2014 Q3",
+    "paragraphs": 3,
+    "bytes": 1722,
+    "text_layer": true
+  },
+  {
+    "file": "P02_policy.pdf",
+    "title": "Remote Work Policy",
+    "paragraphs": 3,
+    "bytes": 1684,
+    "text_layer": true
+  },
+  {
+    "file": "P03_invoice.pdf",
+    "title": "Invoice INV-2041",
+    "paragraphs": 3,
+    "bytes": 1677,
+    "text_layer": true
+  },
+  {
+    "file": "P04_contract.pdf",
+    "title": "Master Services Agreement (Excerpt)",
+    "paragraphs": 3,
+    "bytes": 1704,
+    "text_layer": true
+  },
+  {
+    "file": "P05_research.pdf",
+    "title": "Sensor Fusion for Cold-Chain Logistics",
+    "paragraphs": 3,
+    "bytes": 1704,
+    "text_layer": true
+  },
+  {
+    "file": "P06_manual.pdf",
+    "title": "Gateway G2 Installation Manual",
+    "paragraphs": 3,
+    "bytes": 1667,
+    "text_layer": true
+  },
+  {
+    "file": "P07_minutes.pdf",
+    "title": "Board Minutes \u2014 September",
+    "paragraphs": 3,
+    "bytes": 1668,
+    "text_layer": true
+  },
+  {
+    "file": "P08_syllabus.pdf",
+    "title": "Introduction to Data Engineering",
+    "paragraphs": 3,
+    "bytes": 1670,
+    "text_layer": true
+  },
+  {
+    "file": "P09_unicode.pdf",
+    "title": "Caf\u00e9 Menus \u2014 Z\u00fcrich",
+    "paragraphs": 3,
+    "bytes": 1682,
+    "text_layer": true
+  },
+  {
+    "file": "P10_scanned_no_text.pdf",
+    "title": "Scanned Receipt (image only)",
+    "paragraphs": 0,
+    "bytes": 1415,
+    "text_layer": false
+  }
+]

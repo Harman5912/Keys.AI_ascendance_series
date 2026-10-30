@@ -1,0 +1,41 @@
+$ C:\Users\harma\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -X utf8 -m unittest qa_artifacts.regression_tests.test_crown_bridge -v
+exit=0 seconds=2.4
+
+---- stdout ----
+
+---- stderr ----
+test_bridge_defaults_come_from_config (qa_artifacts.regression_tests.test_crown_bridge.TestBridgeLifecycle.test_bridge_defaults_come_from_config) ... ok
+test_erroring_event_handler_does_not_break_dispatch (qa_artifacts.regression_tests.test_crown_bridge.TestBridgeLifecycle.test_erroring_event_handler_does_not_break_dispatch) ... ok
+test_permission_default_denies_delete_allows_write (qa_artifacts.regression_tests.test_crown_bridge.TestBridgeLifecycle.test_permission_default_denies_delete_allows_write) ... ok
+test_reader_thread_reports_failure_when_process_dies_without_result (qa_artifacts.regression_tests.test_crown_bridge.TestBridgeLifecycle.test_reader_thread_reports_failure_when_process_dies_without_result) ... ok
+test_start_fails_cleanly_without_headless_build (qa_artifacts.regression_tests.test_crown_bridge.TestBridgeLifecycle.test_start_fails_cleanly_without_headless_build) ... ok
+test_workspace_is_resolved_to_absolute (qa_artifacts.regression_tests.test_crown_bridge.TestBridgeLifecycle.test_workspace_is_resolved_to_absolute) ... ok
+test_corrupt_config_never_raises (qa_artifacts.regression_tests.test_crown_bridge.TestConfig.test_corrupt_config_never_raises) ... ok
+test_defaults_when_file_absent (qa_artifacts.regression_tests.test_crown_bridge.TestConfig.test_defaults_when_file_absent) ... ok
+test_non_dict_config_never_raises (qa_artifacts.regression_tests.test_crown_bridge.TestConfig.test_non_dict_config_never_raises) ... ok
+test_roundtrip (qa_artifacts.regression_tests.test_crown_bridge.TestConfig.test_roundtrip) ... ok
+test_no_silent_remote_fallback_when_ollama_unreachable (qa_artifacts.regression_tests.test_crown_bridge.TestLocalModelReadiness.test_no_silent_remote_fallback_when_ollama_unreachable)
+Local setup failure must return a local-setup error, never a remote ... ok
+test_auto_pick_never_selects_model_larger_than_ram (qa_artifacts.regression_tests.test_crown_bridge.TestModelSelection.test_auto_pick_never_selects_model_larger_than_ram) ... ok
+test_auto_pick_prefers_verified_tool_calling_model (qa_artifacts.regression_tests.test_crown_bridge.TestModelSelection.test_auto_pick_prefers_verified_tool_calling_model)
+Auto-pick must prefer the model the project verified emits native tool ... ok
+test_auto_pick_warns_when_only_huge_models_available (qa_artifacts.regression_tests.test_crown_bridge.TestModelSelection.test_auto_pick_warns_when_only_huge_models_available) ... ok
+test_model_size_ordering (qa_artifacts.regression_tests.test_crown_bridge.TestModelSelection.test_model_size_ordering) ... ok
+test_no_models_returns_empty_and_note (qa_artifacts.regression_tests.test_crown_bridge.TestModelSelection.test_no_models_returns_empty_and_note) ... ok
+test_pick_model_empty_list (qa_artifacts.regression_tests.test_crown_bridge.TestModelSelection.test_pick_model_empty_list) ... ok
+test_pick_model_honours_installed_preference (qa_artifacts.regression_tests.test_crown_bridge.TestModelSelection.test_pick_model_honours_installed_preference) ... ok
+test_pick_model_ignores_missing_preference (qa_artifacts.regression_tests.test_crown_bridge.TestModelSelection.test_pick_model_ignores_missing_preference) ... ok
+test_pick_model_preference_matches_without_tag (qa_artifacts.regression_tests.test_crown_bridge.TestModelSelection.test_pick_model_preference_matches_without_tag) ... ok
+test_preferred_missing_is_reported_not_substituted (qa_artifacts.regression_tests.test_crown_bridge.TestModelSelection.test_preferred_missing_is_reported_not_substituted) ... ok
+test_tool_allowlist_is_forwarded_in_start_message (qa_artifacts.regression_tests.test_crown_bridge.TestToolAllowlist.test_tool_allowlist_is_forwarded_in_start_message) ... ok
+test_empty_answer_still_fails (qa_artifacts.regression_tests.test_crown_bridge.TestVerifyModel.test_empty_answer_still_fails) ... ok
+test_hidden_reasoning_is_reported_as_such (qa_artifacts.regression_tests.test_crown_bridge.TestVerifyModel.test_hidden_reasoning_is_reported_as_such) ... ok
+test_probe_disables_thinking_for_qwen3 (qa_artifacts.regression_tests.test_crown_bridge.TestVerifyModel.test_probe_disables_thinking_for_qwen3) ... ok
+test_probe_leaves_other_models_alone (qa_artifacts.regression_tests.test_crown_bridge.TestVerifyModel.test_probe_leaves_other_models_alone) ... ok
+test_real_answer_verifies (qa_artifacts.regression_tests.test_crown_bridge.TestVerifyModel.test_real_answer_verifies) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 2.175s
+
+OK
+

@@ -1,0 +1,24 @@
+{
+  "slug": "dashboard_02_newsroom",
+  "artifact": "dashboard",
+  "files": [
+    "brief.json"
+  ],
+  "file_count": 1,
+  "missing_files": [
+    "app.py",
+    "db.py",
+    "schema.sql",
+    "seed.py",
+    "templates/index.html",
+    "static/dashboard.js",
+    "static/style.css",
+    "requirements.txt",
+    ".env.example"
+  ],
+  "checks": [],
+  "ok": false,
+  "finished": false,
+  "adopted": true,
+  "message": "verified from disk: missing app.py, db.py, schema.sql, seed.py, templates/index.html, static/dashboard.js, static/style.css, requirements.txt, .env.example"
+}

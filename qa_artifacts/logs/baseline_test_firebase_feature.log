@@ -1,0 +1,88 @@
+# test_firebase_feature.py  exit=0  seconds=2.66  timeout=False
+# ---- stdout ----
+
+# ---- stderr ----
+test_add_list_verify_confirm_remove (__main__.FirebaseClientTests.test_add_list_verify_confirm_remove) ... ok
+test_doc_id_and_encoding (__main__.FirebaseClientTests.test_doc_id_and_encoding) ... ok
+test_list_contacts_404_is_empty (__main__.FirebaseClientTests.test_list_contacts_404_is_empty) ... ok
+test_list_contacts_server_error_raises (__main__.FirebaseClientTests.test_list_contacts_server_error_raises) ... ok
+test_not_signed_in_gate_messages (__main__.FirebaseClientTests.test_not_signed_in_gate_messages) ... ok
+test_sign_in_denied_returns_promptly (__main__.FirebaseClientTests.test_sign_in_denied_returns_promptly)
+?error= (user denied) must return immediately, not wait the timeout. ... ok
+test_sign_in_full_flow (__main__.FirebaseClientTests.test_sign_in_full_flow)
+Browser 'approves' via a simulated redirect; tokens minted. ... ok
+test_sign_in_not_configured (__main__.FirebaseClientTests.test_sign_in_not_configured) ... ok
+test_status_not_configured (__main__.FirebaseClientTests.test_status_not_configured) ... ok
+test_status_signed_in (__main__.FirebaseClientTests.test_status_signed_in) ... ok
+test_token_refresh_when_expired (__main__.FirebaseClientTests.test_token_refresh_when_expired) ... ok
+test_api_error_firebase_style (__main__.GmailTests.test_api_error_firebase_style) ... ok
+test_api_error_google_token_style (__main__.GmailTests.test_api_error_google_token_style) ... ok
+test_api_error_non_json (__main__.GmailTests.test_api_error_non_json) ... ok
+test_batch_get_uses_repeated_params (__main__.GmailTests.test_batch_get_uses_repeated_params)
+Gmail batchGet ids/metadataHeaders must be repeated query params ... ok
+test_firebase_sign_in_surfaces_real_error (__main__.GmailTests.test_firebase_sign_in_surfaces_real_error)
+signInWithIdp 400 must include the actual Firebase error message ... ok
+test_gmail_api_disabled_hint_empty_for_other_errors (__main__.GmailTests.test_gmail_api_disabled_hint_empty_for_other_errors) ... ok
+test_gmail_api_disabled_hint_text (__main__.GmailTests.test_gmail_api_disabled_hint_text)
+A 403 accessNotConfigured body must produce the exact enable link. ... ok
+test_gmail_api_hint_unwraps_response_text (__main__.GmailTests.test_gmail_api_hint_unwraps_response_text) ... ok
+test_list_emails_display_requires_signin (__main__.GmailTests.test_list_emails_display_requires_signin) ... ok
+test_list_emails_display_surfaces_enable_link (__main__.GmailTests.test_list_emails_display_surfaces_enable_link)
+When Gmail API is disabled, the display path must name the fix, ... ok
+test_list_emails_parses_batch_metadata (__main__.GmailTests.test_list_emails_parses_batch_metadata) ... ok
+test_read_email_display_surfaces_enable_link (__main__.GmailTests.test_read_email_display_surfaces_enable_link) ... ok
+test_read_email_extracts_body (__main__.GmailTests.test_read_email_extracts_body) ... ok
+test_scope_includes_gmail (__main__.GmailTests.test_scope_includes_gmail) ... ok
+test_send_email_reports_gmail_disabled (__main__.GmailTests.test_send_email_reports_gmail_disabled)
+send_email must return the enable link when the API is disabled ... ok
+test_send_email_scope_missing_still_hints_resign (__main__.GmailTests.test_send_email_scope_missing_still_hints_resign)
+403 with a scope message keeps the re-sign-in hint (not the API ... ok
+test_sign_in_hint_empty_for_unknown (__main__.GmailTests.test_sign_in_hint_empty_for_unknown) ... ok
+test_sign_in_hint_for_google_not_enabled (__main__.GmailTests.test_sign_in_hint_for_google_not_enabled) ... ok
+test_sign_in_hint_for_invalid_api_key (__main__.GmailTests.test_sign_in_hint_for_invalid_api_key) ... ok
+test_add_contact_string_false_is_false (__main__.GoogleAccountDispatchTests.test_add_contact_string_false_is_false)
+bool('false') == True footgun regression test. ... ok
+test_find_contact_dispatch (__main__.GoogleAccountDispatchTests.test_find_contact_dispatch) ... ok
+test_list_emails_dispatch (__main__.GoogleAccountDispatchTests.test_list_emails_dispatch) ... ok
+test_read_email_dispatch_out_of_range (__main__.GoogleAccountDispatchTests.test_read_email_dispatch_out_of_range) ... ok
+test_read_email_dispatch_with_hash_number (__main__.GoogleAccountDispatchTests.test_read_email_dispatch_with_hash_number)
+'read email #2' resolves the short form to the real Gmail id. ... ok
+test_sign_in_dispatch (__main__.GoogleAccountDispatchTests.test_sign_in_dispatch) ... ok
+test_status_dispatch (__main__.GoogleAccountDispatchTests.test_status_dispatch) ... ok
+test_unknown_action (__main__.GoogleAccountDispatchTests.test_unknown_action) ... ok
+test_verified_true_variants (__main__.GoogleAccountDispatchTests.test_verified_true_variants) ... ok
+test_find_contact_display (__main__.PeopleContactLookupTests.test_find_contact_display) ... ok
+test_find_contact_falls_back_to_google (__main__.PeopleContactLookupTests.test_find_contact_falls_back_to_google)
+Not in verified contacts → the real Google/mobile contact is used. ... ok
+test_find_contact_local_only_when_signed_out (__main__.PeopleContactLookupTests.test_find_contact_local_only_when_signed_out)
+No sign-in → only local Windows Contacts vCards are searched. ... ok
+test_find_contact_merges_phone_from_google (__main__.PeopleContactLookupTests.test_find_contact_merges_phone_from_google)
+Verified record without a phone picks up the real number from Google ... ok
+test_find_contact_never_merges_wrong_person (__main__.PeopleContactLookupTests.test_find_contact_never_merges_wrong_person)
+Partial-token match ('Papa' vs 'Papadopoulos') must NOT pull in ... ok
+test_find_contact_prefers_verified (__main__.PeopleContactLookupTests.test_find_contact_prefers_verified)
+Verified Firestore contact beats a Google contact match. ... ok
+test_find_contact_raises_honestly_on_network_error (__main__.PeopleContactLookupTests.test_find_contact_raises_honestly_on_network_error)
+No match AND a network error → raise, never claim 'not in contacts'. ... ok
+test_google_token_refresh_when_expired (__main__.PeopleContactLookupTests.test_google_token_refresh_when_expired) ... ok
+test_local_vcard_fallback (__main__.PeopleContactLookupTests.test_local_vcard_fallback) ... ok
+test_resolve_receiver_keeps_explicit_email_for_instagram (__main__.PeopleContactLookupTests.test_resolve_receiver_keeps_explicit_email_for_instagram)
+An explicit email/@handle the user gave is kept for Instagram. ... ok
+test_resolve_receiver_uses_name_for_instagram (__main__.PeopleContactLookupTests.test_resolve_receiver_uses_name_for_instagram)
+Instagram/Messenger search by NAME or @username — never phone/email. ... ok
+test_resolve_receiver_uses_phone_for_whatsapp (__main__.PeopleContactLookupTests.test_resolve_receiver_uses_phone_for_whatsapp)
+send_message resolves a spoken name to the real phone number. ... ok
+test_search_google_contacts (__main__.PeopleContactLookupTests.test_search_google_contacts) ... ok
+test_gate_allows_verified_contact (__main__.SendMessageGateTests.test_gate_allows_verified_contact) ... ok
+test_gate_blocks_unknown_contact (__main__.SendMessageGateTests.test_gate_blocks_unknown_contact) ... ok
+test_gate_blocks_unverified_contact (__main__.SendMessageGateTests.test_gate_blocks_unverified_contact) ... ok
+test_gate_honest_network_error (__main__.SendMessageGateTests.test_gate_honest_network_error) ... ok
+test_gate_off_no_lookup (__main__.SendMessageGateTests.test_gate_off_no_lookup) ... ok
+test_gate_requires_config (__main__.SendMessageGateTests.test_gate_requires_config) ... ok
+test_gate_requires_sign_in (__main__.SendMessageGateTests.test_gate_requires_sign_in) ... ok
+
+----------------------------------------------------------------------
+Ran 59 tests in 2.190s
+
+OK
+

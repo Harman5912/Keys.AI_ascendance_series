@@ -1,0 +1,17 @@
+$ C:\Users\harma\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -X utf8 -m unittest qa_artifacts.regression_tests.test_office_builder -v
+exit=0 seconds=2.5
+
+---- stdout ----
+
+---- stderr ----
+test_docx_has_sections_lists_and_no_markdown (qa_artifacts.regression_tests.test_office_builder.OfficeBuilderTest.test_docx_has_sections_lists_and_no_markdown) ... ok
+test_markdown_docx_renders_bold_and_numbered_lists (qa_artifacts.regression_tests.test_office_builder.OfficeBuilderTest.test_markdown_docx_renders_bold_and_numbered_lists) ... ok
+test_pptx_honours_requested_slide_count_and_topic_outline (qa_artifacts.regression_tests.test_office_builder.OfficeBuilderTest.test_pptx_honours_requested_slide_count_and_topic_outline) ... ok
+test_pptx_is_widescreen_with_distinct_titled_slides (qa_artifacts.regression_tests.test_office_builder.OfficeBuilderTest.test_pptx_is_widescreen_with_distinct_titled_slides) ... ok
+test_xlsx_adapts_columns_to_the_request (qa_artifacts.regression_tests.test_office_builder.OfficeBuilderTest.test_xlsx_adapts_columns_to_the_request) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 2.295s
+
+OK
+

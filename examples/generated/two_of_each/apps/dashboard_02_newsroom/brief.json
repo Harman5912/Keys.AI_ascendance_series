@@ -1,0 +1,17 @@
+{
+  "request": "Build a newsroom analytics dashboard: articles, reads, subscriptions and the editorial task board.",
+  "requirements": "data source: MySQL database `newsroom_ops`, seeded sample rows, pymysql, .env credentials; metrics: reads, read-through rate, subscriptions, open editorial tasks; charts: line for reads per day, horizontal bars per section, funnel from read to subscribe, and a task list with owner, status and due date; stack: Flask API + vanilla HTML/CSS/JS, inline SVG, no CDN; scope: single user, local only; port 5072.",
+  "artifact": "app",
+  "answered": [
+    "data_source",
+    "metrics",
+    "charts",
+    "stack",
+    "scope"
+  ],
+  "assumptions": [],
+  "recipes": [
+    "dashboard"
+  ],
+  "path": "code"
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "python_01_ledger",
+  "artifact": "python-desktop",
+  "brief": "Python desktop app: a small ledger with entries, search and totals.",
+  "model": "qwen3:8b",
+  "seconds": 159.7,
+  "finished": false,
+  "agent_said_done": false,
+  "missing_files": [],
+  "message": "Coding python_01_ledger: failed after 1m21s \u2014 Crown Code stopped without writing any file: it searched the empty workspace and answered instead of building. No code was produced. Retry with a model that calls write_file (qwen3:8b), or build this artifact through its recipe path.\nRecent:\n  18:49:35 app/\napp/db.py\napp/theme.py\napp/window.py\napp/__init__.py\nbrief.json\nmain.py\nREADME.md\nrequirements.txt\n  18:49:56 import sys\nfrom PyQt6 import QtWidgets\nfrom app.window import Window\n\nif __name__ == '__main__':\n    app = QtWidgets.QApplication(sys.argv)\n    window = Window()\n    window.show()\n\n  18:50:04 from PyQt6 import QtWidgets, QtCore\nfrom app.db import connect_db\nfrom app.theme import set_theme\n\nclass Window(QtWidgets.QMainWindow):\n    def __init__(self):\n        super().__in\n  18:50:13 import sqlite3\nfrom dotenv import load_dotenv\nimport os\n\nload_dotenv()\n\ndef connect_db():\n    conn = sqlite3.connect(\"ledger.db\")\n    return conn\n  18:50:22 def set_theme(window):\n    window.setStyleSheet(\"QMainWindow { background-color: #f0f0f0; }\")\n  18:50:30 PyQt6\nsqlite3\npython-dotenv",
+  "files": [
+    "README.md",
+    "app\\__init__.py",
+    "app\\db.py",
+    "app\\theme.py",
+    "app\\window.py",
+    "brief.json",
+    "main.py",
+    "requirements.txt"
+  ]
+}

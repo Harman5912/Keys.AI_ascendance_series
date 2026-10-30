@@ -1,0 +1,40 @@
+[e2e] workspace: C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\e2e\workspace
+[e2e] crown_code returned in 8.0s:
+Started: workspace  (job 477f4e8e8f)
+I'll run the Crown Code agent loop — it writes real files, runs them and fixes what fails. It is running in the background — you can keep talking to me, and ask "how's it going?" at any time for progress.
+Output: C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\e2e\workspace
+[e2e] running 1% starting 
+[e2e] running 8% working ollama/qwen3:8b
+[e2e] running 26% running $ python wordcount.py sample.txt
+[e2e] running 51% running $ python wordcount.py sample.txt
+[e2e] done 100% done finished
+
+[e2e] status: done elapsed: 324.0 s
+[e2e] files touched: ['sample.txt', 'test_wordcount.py', 'README.md']
+[e2e] error: (none)
+[e2e] result:
+{
+  "ok": true,
+  "tools": 3,
+  "commands": 2,
+  "writes": 3,
+  "bytes": 0
+}
+
+[e2e] describe:
+Coding workspace: done in 5m23s
+Files: sample.txt, test_wordcount.py, README.md
+Recent:
+  13:59:06 auto-approved write_file
+  13:59:06 auto-approved write_file
+  13:59:06 auto-approved write_file
+  13:59:06 auto-approved terminal
+  13:59:07 auto-approved terminal
+  13:59:08 Created sample.txt
+  13:59:08 Created test_wordcount.py
+  13:59:08 Created README.md
+  13:59:08 Traceback (most recent call last):
+  File "C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\e2e\workspace\test_wordcount.py", line 4, in <mo
+  13:59:08 python: can't open file 'C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\qa_artifacts\\e2e\\workspace\\wordcount.py': [Errno 2] No such file or di
+
+[e2e] on disk: ['README.md', 'brief.json', 'sample.txt', 'test_wordcount.py']

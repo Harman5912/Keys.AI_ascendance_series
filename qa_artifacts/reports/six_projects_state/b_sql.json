@@ -1,0 +1,32 @@
+{
+  "key": "B",
+  "slug": "b_sql",
+  "kind": "mysql",
+  "build": {
+    "ok": false,
+    "seconds": 0.0,
+    "model": "qwen3:8b",
+    "message": "NEED REQUIREMENTS \u2014 nothing was built and nothing was started.\nThis request describes an application, but it does not state: metrics; charts; scope.\n\nAsk the user these questions, one at a time, and do not answer them yourself or pick a default:\n1. Which numbers should each view show? (e.g. price + volume, revenue vs. spend, signups by week) \u2014 a chart with the wrong series is not the same chart.\n2. Which chart types should the views use? (e.g. line for trend, candlestick for OHLC, bar for comparison, KPI cards on top) \u2014 chart type is a requirement, not a styling choice.\n3. Is it a single-user tool on this machine, or does it need login / multiple users? (e.g. local single user with sample data, or local front end plus a small backend with a login) \u2014 auth, storage and deployment all follow from this.\n\nThen call crown_code again with the same description and requirements=\"<the user's answers, in their words>\". Only pass confirmed=true if the user explicitly tells you to go ahead without answering."
+  },
+  "files_count": 0,
+  "files": [],
+  "missing_recipe_files": [
+    "schema.sql",
+    "seed.sql",
+    "queries.sql",
+    "db.py",
+    ".env.example"
+  ],
+  "compile": {
+    "compiled": 0,
+    "compile_failures": [
+      "workspace missing"
+    ]
+  },
+  "verify": {
+    "schema_exists": false,
+    "seed_exists": false,
+    "queries_exists": false
+  },
+  "ok": false
+}

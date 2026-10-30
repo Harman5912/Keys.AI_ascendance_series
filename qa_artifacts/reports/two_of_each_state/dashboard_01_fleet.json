@@ -1,0 +1,27 @@
+{
+  "slug": "dashboard_01_fleet",
+  "artifact": "dashboard",
+  "brief": "Build a fleet-operations dashboard: vehicles, trips, fuel and maintenance costs. Real JSON API, charts and a table.",
+  "model": "qwen3:8b",
+  "seconds": 622.5,
+  "finished": false,
+  "agent_said_done": false,
+  "missing_files": [
+    "seed.py",
+    "static/dashboard.js",
+    "static/style.css"
+  ],
+  "message": "Coding dashboard_01_fleet: failed after 10m00s \u2014 Crown Code stopped without changing anything\nFiles: C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\apps\\dashboard_01_fleet\\app.py\nRecent:\n  18:41:29 -- Create fleet_ops database\nCREATE DATABASE IF NOT EXISTS fleet_ops;\n\n-- Use fleet_ops database\nUSE fleet_ops;\n\n-- Vehicles table\nCREATE TABLE IF NOT EXISTS vehicles (\n    id INT \n  18:42:14 -- Insert sample data into vehicles table\nINSERT INTO vehicles (vehicle_id, make, model, year, registration_date) VALUES\n('V1234', 'Toyota', 'Corolla', 2018, '2020-01-15'),\n('V5678\n  18:42:55 flask\npymysql\npython-dotenv\npy_compile\n  18:43:38 FLASK_ENV=development\nFLASK_APP=app.py\nDB_HOST=localhost\nDB_PORT=3306\nDB_USER=root\nDB_PASSWORD=your_password\nDB_NAME=fleet_ops\n  18:47:23 auto-approved write_file\n  18:47:23 Updated C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\apps\\dashboard_01_fleet\\app.py",
+  "files": [
+    ".env",
+    ".env.example",
+    "app.py",
+    "brief.json",
+    "db.py",
+    "queries.sql",
+    "requirements.txt",
+    "schema.sql",
+    "seed.sql",
+    "templates\\index.html"
+  ]
+}

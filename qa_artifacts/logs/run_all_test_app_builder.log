@@ -1,0 +1,34 @@
+$ C:\Users\harma\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -X utf8 -m unittest qa_artifacts.regression_tests.test_app_builder -v
+exit=0 seconds=7.5
+
+---- stdout ----
+
+---- stderr ----
+test_dashboard_is_built_and_serves_real_data (qa_artifacts.regression_tests.test_app_builder.DashboardTests.test_dashboard_is_built_and_serves_real_data) ... ok
+test_missing_builder_kind_reports_no_files (qa_artifacts.regression_tests.test_app_builder.DashboardTests.test_missing_builder_kind_reports_no_files) ... ok
+test_serving_empty_database_fails_verification (qa_artifacts.regression_tests.test_app_builder.DashboardTests.test_serving_empty_database_fails_verification)
+A 200 with empty arrays is not a working dashboard. ... ok
+test_database_files_are_not_left_locked (qa_artifacts.regression_tests.test_app_builder.DesktopTests.test_database_files_are_not_left_locked)
+Regression: `with sqlite3.connect(...)` leaves the file open, which ... ok
+test_desktop_app_builds_and_passes_selftest (qa_artifacts.regression_tests.test_app_builder.DesktopTests.test_desktop_app_builds_and_passes_selftest) ... ok
+test_a_crud_app_is_not_downgraded_to_a_dashboard (qa_artifacts.regression_tests.test_app_builder.RoutingTests.test_a_crud_app_is_not_downgraded_to_a_dashboard)
+Regression: an inventory *management system* became a dashboard. ... ok
+test_agent_owned_kinds_are_not_hijacked (qa_artifacts.regression_tests.test_app_builder.RoutingTests.test_agent_owned_kinds_are_not_hijacked) ... ok
+test_build_app_rejects_unknown_kind (qa_artifacts.regression_tests.test_app_builder.RoutingTests.test_build_app_rejects_unknown_kind) ... ok
+test_negated_requirements_do_not_disqualify_the_recipe (qa_artifacts.regression_tests.test_app_builder.RoutingTests.test_negated_requirements_do_not_disqualify_the_recipe)
+"no login" is not a request for login. ... ok
+test_only_mechanically_checkable_kinds_are_routed (qa_artifacts.regression_tests.test_app_builder.RoutingTests.test_only_mechanically_checkable_kinds_are_routed) ... ok
+test_dashboard_falls_back_to_generic (qa_artifacts.regression_tests.test_app_builder.SpecTests.test_dashboard_falls_back_to_generic) ... ok
+test_dashboard_spec_is_chosen_from_the_brief (qa_artifacts.regression_tests.test_app_builder.SpecTests.test_dashboard_spec_is_chosen_from_the_brief) ... ok
+test_desktop_spec_is_chosen_from_the_brief (qa_artifacts.regression_tests.test_app_builder.SpecTests.test_desktop_spec_is_chosen_from_the_brief) ... ok
+test_low_stock_only_for_inventory (qa_artifacts.regression_tests.test_app_builder.SpecTests.test_low_stock_only_for_inventory) ... ok
+test_a_script_that_exits_is_not_a_server (qa_artifacts.regression_tests.test_app_builder.VerificationTests.test_a_script_that_exits_is_not_a_server) ... ok
+test_checks_carry_the_command_that_ran (qa_artifacts.regression_tests.test_app_builder.VerificationTests.test_checks_carry_the_command_that_ran) ... ok
+test_missing_entry_point_fails_instead_of_being_skipped (qa_artifacts.regression_tests.test_app_builder.VerificationTests.test_missing_entry_point_fails_instead_of_being_skipped) ... ok
+test_syntax_error_fails_the_compile_level (qa_artifacts.regression_tests.test_app_builder.VerificationTests.test_syntax_error_fails_the_compile_level) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 7.241s
+
+OK
+

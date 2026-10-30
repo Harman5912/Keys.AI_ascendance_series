@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ledger Line</title>
+    <style>
+        * { box-sizing: border-box; }
+        max-width: 100%;
+        :focus-visible { outline: 2px solid blue; outline-offset: 2px; }
+        body { font-family: Arial, sans-serif; }
+        header { background-color: #333; color: white; padding: 1em; text-align: center; }
+        main { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1em; padding: 1em; }
+        .story { border: 1px solid #ccc; padding: 1em; }
+        .category { margin-bottom: 1em; }
+        footer { background-color: #333; color: white; text-align: center; padding: 1em; position: fixed; bottom: 0; width: 100%; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Ledger Line</h1>
+    </header>
+    <main>
+        <section class="story category">
+            <h2>Headline 1</h2>
+            <p>Standfirst 1. This is a fictional standfirst for the publication 'The Ledger Line'.</p>
+        </section>
+        <section class="story category">
+            <h2>Headline 2</h2>
+            <p>Standfirst 2. This is another fictional standfirst for the publication 'The Ledger Line'.</p>
+        </section>
+        <section class="story category">
+            <h2>Headline 3</h2>
+            <p>Standfirst 3. Yet another fictional standfirst for the publication 'The Ledger Line'.</p>
+        </section>
+        <section class="story category">
+            <h2>Headline 4</h2>
+            <p>Standfirst 4. This is a final fictional standfirst for the publication 'The Ledger Line'.</p>
+        </section>
+        <section class="story category">
+            <h2>Headline 5</h2>
+            <p>Standfirst 5. More fictional content to fill the page.</p>
+        </section>
+        <section class="story category">
+            <h2>Headline 6</h2>
+            <p>Standfirst 6. And one more fictional standfirst for good measure.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 The Ledger Line. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,405 @@
+{
+  "id": "5772aa66e823",
+  "request": "Build a shift planner for a regional clinic group that imports last year's data (bid #5935)",
+  "created_at": "2026-10-27 11:07:05",
+  "updated_at": "2026-10-27 11:07:07",
+  "status": "COMPLETED",
+  "intent": "software",
+  "workspace": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-shift-planner-for-a-regional-c-5772aa66e823",
+  "questions": [],
+  "answers": {
+    "presets": "github",
+    "depth": "quick"
+  },
+  "assumptions": [],
+  "brief": {
+    "goal": "Build a shift planner for a regional clinic group that imports last year's data (bid #5935)",
+    "intent": "software",
+    "answers": {
+      "presets": "github",
+      "depth": "quick"
+    },
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "assumptions": [],
+    "constraints": [
+      "Work only inside the task workspace",
+      "Do not delete or overwrite user files without approval",
+      "Never claim success for an unverified step"
+    ]
+  },
+  "plan": {
+    "steps": [
+      {
+        "id": "s1",
+        "worker": "research",
+        "title": "Research the subject before building",
+        "params": {
+          "depth": "quick",
+          "feed_build": true,
+          "presets": [
+            "github"
+          ]
+        },
+        "status": "done",
+        "detail": "Researched 'Build a shift planner for a regional clinic group that impor' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research.",
+        "requires_approval": false,
+        "started_at": "2026-10-27 11:07:06",
+        "ended_at": "2026-10-27 11:07:06",
+        "error": "",
+        "attempts": 1,
+        "artifacts": [
+          {
+            "id": "8dc6dd1993",
+            "task_id": "5772aa66e823",
+            "name": "research-report.md",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-shift-planner-for-a-regional-c-5772aa66e823\\research-report.md",
+            "kind": "markdown",
+            "size": 2847,
+            "sha256": "2bc1f300432c2169e8bbb9b165d4ea47b5705dab1a0d18ddc55ba199b18b2562",
+            "created_at": "2026-10-27 11:07:06",
+            "detail": "Cited research report",
+            "validated": true,
+            "validation_detail": "2752 chars"
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "worker": "software",
+        "title": "Build and verify the project",
+        "params": {
+          "mode": "build",
+          "reuse_research": true
+        },
+        "status": "done",
+        "detail": "built in the test environment",
+        "requires_approval": false,
+        "started_at": "2026-10-27 11:07:06",
+        "ended_at": "2026-10-27 11:07:06",
+        "error": "",
+        "attempts": 1,
+        "artifacts": [
+          {
+            "id": "142042ae9b",
+            "task_id": "5772aa66e823",
+            "name": "index.html",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-shift-planner-for-a-regional-c-5772aa66e823\\shift-planner-for-a-regional-clinic-grou\\index.html",
+            "kind": "html",
+            "size": 171,
+            "sha256": "21e418ee1f82abb8d7681c032c1ef1d2043ee2aae57e23d7396e0c163bb85e43",
+            "created_at": "2026-10-27 11:07:06",
+            "detail": "171 bytes",
+            "validated": true,
+            "validation_detail": "171 chars"
+          }
+        ]
+      }
+    ],
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "source": "deterministic",
+    "note": "",
+    "created_at": "2026-10-27 11:07:06"
+  },
+  "current_step": 1,
+  "artifacts": [
+    {
+      "id": "8dc6dd1993",
+      "task_id": "5772aa66e823",
+      "name": "research-report.md",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-shift-planner-for-a-regional-c-5772aa66e823\\research-report.md",
+      "kind": "markdown",
+      "size": 2847,
+      "sha256": "2bc1f300432c2169e8bbb9b165d4ea47b5705dab1a0d18ddc55ba199b18b2562",
+      "created_at": "2026-10-27 11:07:06",
+      "detail": "Cited research report",
+      "validated": true,
+      "validation_detail": "2752 chars"
+    },
+    {
+      "id": "142042ae9b",
+      "task_id": "5772aa66e823",
+      "name": "index.html",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-shift-planner-for-a-regional-c-5772aa66e823\\shift-planner-for-a-regional-clinic-grou\\index.html",
+      "kind": "html",
+      "size": 171,
+      "sha256": "21e418ee1f82abb8d7681c032c1ef1d2043ee2aae57e23d7396e0c163bb85e43",
+      "created_at": "2026-10-27 11:07:06",
+      "detail": "171 bytes",
+      "validated": true,
+      "validation_detail": "171 chars"
+    }
+  ],
+  "evidence": [
+    {
+      "claim": "Shift Planner Regional Clinic Group — reference notes.",
+      "quote": "Shift Planner Regional Clinic Group — reference notes.",
+      "source_url": "https://docs.example.com/9209b5a35b",
+      "title": "Reference: Build a shift planner for a regional clinic group that impor",
+      "retrieved_at": "2026-10-27 11:07:06",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The shift planner regional clinic group workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The shift planner regional clinic group workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/9209b5a35b",
+      "title": "Reference: Build a shift planner for a regional clinic group that impor",
+      "retrieved_at": "2026-10-27 11:07:06",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "Shift Planner Regional Clinic Group — reference notes.",
+      "quote": "Shift Planner Regional Clinic Group — reference notes.",
+      "source_url": "https://docs.example.com/4113e7d40d",
+      "title": "Reference: Build a shift planner for a regional clinic group that impor",
+      "retrieved_at": "2026-10-27 11:07:06",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The shift planner regional clinic group workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The shift planner regional clinic group workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/4113e7d40d",
+      "title": "Reference: Build a shift planner for a regional clinic group that impor",
+      "retrieved_at": "2026-10-27 11:07:06",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "Site Github Shift Planner Regional — reference notes.",
+      "quote": "Site Github Shift Planner Regional — reference notes.",
+      "source_url": "https://docs.example.com/e1ed1f636f",
+      "title": "Reference: site:github.com Build a shift planner for a regional clinic ",
+      "retrieved_at": "2026-10-27 11:07:06",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The site github shift planner regional workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The site github shift planner regional workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/e1ed1f636f",
+      "title": "Reference: site:github.com Build a shift planner for a regional clinic ",
+      "retrieved_at": "2026-10-27 11:07:06",
+      "verified": true,
+      "method": "page fetched"
+    }
+  ],
+  "events": [
+    {
+      "ts": "2026-10-27 11:07:05",
+      "type": "task_created",
+      "text": "software task created in 20261027-build-a-shift-planner-for-a-regional-c-5772aa66e823"
+    },
+    {
+      "ts": "2026-10-27 11:07:06",
+      "type": "status",
+      "text": "INTAKE → READY"
+    },
+    {
+      "ts": "2026-10-27 11:07:06",
+      "type": "status",
+      "text": "READY → PLANNING (building the plan)"
+    },
+    {
+      "ts": "2026-10-27 11:07:06",
+      "type": "plan_created",
+      "text": "2 step(s), source: deterministic"
+    },
+    {
+      "ts": "2026-10-27 11:07:06",
+      "type": "status",
+      "text": "PLANNING → READY (plan ready)"
+    },
+    {
+      "ts": "2026-10-27 11:07:06",
+      "type": "status",
+      "text": "READY → RUNNING"
+    },
+    {
+      "ts": "2026-10-27 11:07:06",
+      "type": "step_started",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:07:06",
+      "type": "worker_log",
+      "text": "Research: Build a shift planner for a regional clinic group that imports last year's data (bid #5935) (depth quick, 4 queries, presets: GitHub research)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:07:06",
+      "type": "worker_log",
+      "text": "Research summary discarded: no citation to the evidence.",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:07:06",
+      "type": "worker_log",
+      "text": "Research report written: research-report.md (6 evidence items)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:07:06",
+      "type": "step_done",
+      "text": "Done: Researched 'Build a shift planner for a regional clinic group that impor' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research.",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:07:06",
+      "type": "step_started",
+      "text": "Starting: Build and verify the project",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 11:07:06",
+      "type": "worker_log",
+      "text": "Software: delegating to Crown Code in shift-planner-for-a-regional-clinic-grou",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 11:07:06",
+      "type": "worker_log",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 11:07:06",
+      "type": "step_done",
+      "text": "Done: built in the test environment",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 11:07:07",
+      "type": "status",
+      "text": "RUNNING → VALIDATING (verifying artifacts)"
+    },
+    {
+      "ts": "2026-10-27 11:07:07",
+      "type": "task_completed",
+      "text": "2 step(s) complete; 2 artifact(s) verified."
+    },
+    {
+      "ts": "2026-10-27 11:07:07",
+      "type": "status",
+      "text": "VALIDATING → COMPLETED"
+    }
+  ],
+  "approval": null,
+  "error": "",
+  "warnings": [],
+  "attempts": {},
+  "result": {
+    "summary": "2 step(s) complete; 2 artifact(s) verified.",
+    "artifacts": [
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-shift-planner-for-a-regional-c-5772aa66e823\\research-report.md",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-shift-planner-for-a-regional-c-5772aa66e823\\shift-planner-for-a-regional-clinic-grou\\index.html"
+    ],
+    "validation": "2 artifact(s) verified",
+    "warnings": []
+  },
+  "logs": [
+    {
+      "ts": "11:07:06",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    },
+    {
+      "ts": "11:07:06",
+      "text": "Research: Build a shift planner for a regional clinic group that imports last year's data (bid #5935) (depth quick, 4 queries, presets: GitHub research)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:07:06",
+      "text": "Research summary discarded: no citation to the evidence.",
+      "step": "s1"
+    },
+    {
+      "ts": "11:07:06",
+      "text": "Research report written: research-report.md (6 evidence items)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:07:06",
+      "text": "Verified artifact: research-report.md (2752 chars)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:07:06",
+      "text": "Done: Researched 'Build a shift planner for a regional clinic group that impor' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research.",
+      "step": "s1"
+    },
+    {
+      "ts": "11:07:06",
+      "text": "Starting: Build and verify the project",
+      "step": "s2"
+    },
+    {
+      "ts": "11:07:06",
+      "text": "Software: delegating to Crown Code in shift-planner-for-a-regional-clinic-grou",
+      "step": "s2"
+    },
+    {
+      "ts": "11:07:06",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "11:07:06",
+      "text": "Verified artifact: index.html (171 chars)",
+      "step": "s2"
+    },
+    {
+      "ts": "11:07:06",
+      "text": "Done: built in the test environment",
+      "step": "s2"
+    },
+    {
+      "ts": "11:07:07",
+      "text": "Validation: 2 artifact(s) verified",
+      "step": ""
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "results": [
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-shift-planner-for-a-regional-c-5772aa66e823\\research-report.md",
+        "kind": "md",
+        "detail": "2752 chars",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-shift-planner-for-a-regional-c-5772aa66e823\\shift-planner-for-a-regional-clinic-grou\\index.html",
+        "kind": "html",
+        "detail": "171 chars",
+        "warning": ""
+      }
+    ],
+    "failures": [],
+    "detail": "2 artifact(s) verified"
+  }
+}

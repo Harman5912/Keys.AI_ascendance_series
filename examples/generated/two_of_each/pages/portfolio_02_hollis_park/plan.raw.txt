@@ -1,0 +1,70 @@
+[attempt 1]
+{
+  "brand": "Hollis Park",
+  "title": "Hollis Park Landscape Architecture Studio",
+  "eyebrow": "Calm, Light, Three Built Projects",
+  "headline": "Transforming Landscapes with Hollis Park",
+  "tagline": "Experience the beauty of nature through our innovative designs.",
+  "accent": "#3498db",
+  "cta_primary": "Explore Our Work",
+  "cta_secondary": "Contact Us",
+  "sections": [
+    {
+      "id": "about",
+      "kind": "text",
+      "heading": "About Hollis Park",
+      "lead": "A Melbourne-based landscape architecture studio known for its sustainable and artistic designs.",
+      "items": [
+        {"title": "Our Mission", "text": "To create beautiful, functional landscapes that enhance the environment and inspire people."},
+        {"title": "Our Team", "text": "Our team of experienced designers and engineers brings a unique perspective to every project."},
+        {"title": "Our Values", "text": "We believe in sustainability, creativity, and collaboration. Our work is always informed by these values."}
+      ]
+    },
+    {
+      "id": "work",
+      "kind": "gallery",
+      "heading": "Selected Work",
+      "lead": "Explore our latest projects that showcase Hollis Park's innovative designs.",
+      "items": [
+        {"title": "Hillside Retreat", "text": "A sustainable retreat designed to blend seamlessly with its natural surroundings.", "meta": "2023 · Client: Green Haven Estate", "tags": ["Sustainable Design", "Nature Integration"]},
+        {"title": "Urban Oasis", "text": "An urban oasis designed to provide a peaceful retreat for city dwellers.", "meta": "2024 · Client: Urban Renewal Initiative", "tags": ["Green Space", "Urban Planning"]},
+        {"title": "Waterfront Park", "text": "A waterfront park designed to create a vibrant community space.", "meta": "2025 · Client: City Council", "tags": ["Community Engagement", "Waterfront Design"]}
+      ]
+    },
+    {
+      "id": "skills",
+      "kind": "cards",
+      "heading": "Our Skills",
+      "lead": "Explore the skills and expertise that make Hollis Park a leader in landscape architecture.",
+      "items": [
+        {"title": "Sustainable Design", "text": "We prioritize sustainability in all our projects, using eco-friendly materials and practices."},
+        {"title": "Artistic Design", "text": "Our designs are not just functional but also aesthetically pleasing, enhancing the environment and inspiring people."},
+        {"title": "Collaboration", "text": "We work closely with clients to understand their needs and goals, creating solutions that meet their expectations."}
+      ]
+    },
+    {
+      "id": "faq",
+      "kind": "faq",
+      "heading": "Frequently Asked Questions",
+      "items": [
+        {"q": "What sets Hollis Park apart?", "a": "Our team of experienced designers and engineers bring a unique perspective to every project, creating beautiful, functional landscapes that enhance the environment and inspire people."},
+        {"q": "How do you ensure sustainability in your projects?", "a": "We prioritize sustainability in all our projects, using eco-friendly materials and practices."},
+        {"q": "What kind of clients do you work with?", "a": "We work with a variety of clients, including private individuals, businesses, and government agencies."}
+      ]
+    },
+    {
+      "id": "contact",
+      "kind": "text",
+      "heading": "Contact Us",
+      "lead": "Ready to transform your landscape? Contact us today to schedule a consultation.",
+      "items": [
+        {"title": "Email", "text": "info@hollispark.com"},
+        {"title": "Phone", "text": "+61 3 8542 9000"},
+        {"title": "Address", "text": "123 Main St, Melbourne VIC 3000"}
+      ]
+    }
+  ],
+  "metrics": [{"value": "10+", "label": "projects completed"}],
+  "faq": [{"q": "What sets Hollis Park apart?", "a": "Our team of experienced designers and engineers bring a unique perspective to every project, creating beautiful, functional landscapes that enhance the environment and inspire people."}],
+  "footer": "Experience the beauty of nature through our innovative designs."
+}

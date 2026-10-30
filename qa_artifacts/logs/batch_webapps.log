@@ -1,0 +1,50 @@
+
+== [webapp 01_task_manager] Task management app
+    attempt 1: FAIL 71.1s tools=[] problems=['the model called no tool (it only produced text)', 'index.html was not created']
+    attempt 2: FAIL 83.2s tools=['write_file'] problems=['no :focus / :focus-visible styles']
+   -> FAIL (4424 bytes)
+
+== [webapp 02_inventory_manager] Inventory management app
+    attempt 1: PASS 85.0s tools=['write_file'] problems=[]
+   -> PASS (5268 bytes)
+
+== [webapp 03_crm] CRM with customer records
+    attempt 1: FAIL 83.3s tools=[] problems=['the model called no tool (it only produced text)', 'index.html was not created']
+    attempt 2: FAIL 97.2s tools=[] problems=['the model called no tool (it only produced text)', 'index.html was not created']
+   -> FAIL (0 bytes)
+
+== [webapp 04_expense_tracker] Expense tracker
+    attempt 1: FAIL 63.3s tools=[] problems=['the model called no tool (it only produced text)', 'index.html was not created']
+    attempt 2: FAIL 65.1s tools=[] problems=['the model called no tool (it only produced text)', 'index.html was not created']
+   -> FAIL (0 bytes)
+
+== [webapp 05_analytics_dashboard] Analytics dashboard app
+    attempt 1: FAIL 78.8s tools=[] problems=['the model called no tool (it only produced text)', 'index.html was not created']
+    attempt 2: PASS 90.6s tools=['write_file'] problems=[]
+   -> PASS (4967 bytes)
+
+== [webapp 06_appointment_booking] Appointment booking app
+    attempt 1: PASS 97.1s tools=['write_file'] problems=[]
+   -> PASS (5713 bytes)
+
+== [webapp 07_kanban_board] Kanban project board
+    attempt 1: PASS 72.1s tools=['write_file'] problems=[]
+   -> PASS (3568 bytes)
+
+== [webapp 08_notes_app] Notes app
+    attempt 1: FAIL 67.8s tools=['write_file'] problems=['index.html is only 3186 bytes (a finished page needs >= 3500)']
+    attempt 2: FAIL 88.0s tools=['write_file'] problems=['no <input> controls']
+   -> FAIL (4652 bytes)
+
+== [webapp 09_quiz_app] Quiz and learning app
+    attempt 1: FAIL 71.8s tools=[] problems=['the model called no tool (it only produced text)', 'index.html was not created']
+    attempt 2: FAIL 91.9s tools=[] problems=['the model called no tool (it only produced text)', 'index.html was not created']
+   -> FAIL (0 bytes)
+
+== [webapp 10_document_manager] Document management app
+    attempt 1: FAIL 81.2s tools=['write_file'] problems=['no :focus / :focus-visible styles']
+    attempt 2: PASS 113.5s tools=['write_file'] problems=[]
+   -> PASS (6600 bytes)
+
+webapp: 5/10 artifacts built and structurally valid
+EXIT=1

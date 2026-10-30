@@ -1,0 +1,11 @@
+# P07 exit=0 timeout=False seconds=46.5
+# ---- stdout ----
+[FileProcessor] CREATE PPTX | P07_research_conference.pptx
+[P07] 46.3s  exists=True  bytes=35467  result=Created PowerPoint presentation: P07_research_conference.pptx (34.6 KB)
+Saved to: C:\Users\harma\Desktop\PROJE
+restored file_processor task model -> {'provider': 'gemini', 'model': 'gemini-2.5-flash', 'url': ''}
+
+DONE 1 pptx artifact(s) in C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\generated_presentations
+
+# ---- stderr ----
+

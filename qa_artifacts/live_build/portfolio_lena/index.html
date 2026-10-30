@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Explore the beauty of the world through my lens.">
+<title>Lena Fischer Photography Portfolio</title>
+<style>
+  :root {
+    --bg: #0e1014; --panel: #151922; --text: #eef1f6; --muted: #a4adba;
+    --accent: #007bff; --line: rgba(255,255,255,.12); --radius: 14px;
+    --step: clamp(1rem, 2.5vw, 1.25rem);
+    --crown-focus: #007bff;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 400 17px/1.65 "Inter", "Segoe UI", system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+  img, svg { max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+  .skip { position: absolute; left: -9999px; }
+  .skip:focus { left: 1rem; top: 1rem; background: var(--accent); color: #111;
+    padding: .6rem 1rem; border-radius: 8px; z-index: 20; }
+  .wrap { width: min(1120px, 100% - 2.5rem); margin-inline: auto; }
+  .site-header {
+    position: sticky; top: 0; z-index: 10; backdrop-filter: blur(12px);
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    border-bottom: 1px solid var(--line);
+  }
+  .bar { display: flex; align-items: center; gap: 1rem; padding: .9rem 0; }
+  .brand { font-weight: 700; letter-spacing: .02em; text-decoration: none; font-size: 1.05rem; }
+  .brand span { color: var(--accent); }
+  nav { margin-inline-start: auto; }
+  nav ul { display: flex; gap: 1.4rem; list-style: none; margin: 0; padding: 0; }
+  nav a { text-decoration: none; color: var(--muted); font-size: .95rem; }
+  nav a:hover { color: var(--text); }
+  .nav-toggle { display: none; margin-inline-start: auto; background: transparent;
+    color: var(--text); border: 1px solid var(--line); border-radius: 10px;
+    padding: .45rem .7rem; cursor: pointer; }
+  .btn { display: inline-flex; align-items: center; gap: .5rem; border-radius: 999px;
+    padding: .8rem 1.35rem; font-weight: 600; font-size: .95rem; text-decoration: none;
+    cursor: pointer; border: 1px solid transparent; transition: transform .15s ease, background .15s ease; }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: var(--accent); color: #14161b; }
+  .btn-ghost { border-color: var(--line); color: var(--text); background: transparent; }
+  .hero { padding: clamp(3rem, 8vw, 6.5rem) 0 2.5rem; }
+  .eyebrow { text-transform: uppercase; letter-spacing: .18em; font-size: .72rem;
+    color: var(--accent); margin: 0 0 .6rem; }
+  h1 { font-size: clamp(2.1rem, 6vw, 4rem); line-height: 1.05; margin: 0 0 1rem;
+    letter-spacing: -.02em; }
+  h1 em { font-style: normal; color: var(--accent); }
+  .hero .tagline { color: var(--muted); font-size: var(--step); max-width: 48ch; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin: 1.8rem 0 0; }
+  .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem; margin: 2.5rem 0 0; padding: 1.25rem; background: var(--panel);
+    border: 1px solid var(--line); border-radius: var(--radius); }
+  .metric strong { display: block; font-size: 1.7rem; letter-spacing: -.02em; }
+  .metric span { color: var(--muted); font-size: .85rem; }
+  .section { padding: clamp(2.5rem, 6vw, 4.5rem) 0; border-top: 1px solid var(--line); }
+  .sec-head { max-width: 62ch; margin-bottom: 2rem; }
+  h2 { font-size: clamp(1.5rem, 3.6vw, 2.3rem); margin: 0 0 .5rem; letter-spacing: -.01em; }
+  h3 { margin: 0 0 .4rem; font-size: 1.12rem; }
+  .lead, .card p, .two-col p { color: var(--muted); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.1rem; }
+  .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+  .tile { margin: 0; background: var(--panel); border: 1px solid var(--line);
+    border-radius: var(--radius); overflow: hidden; }
+  .tile-art { aspect-ratio: 4 / 3; background: linear-gradient(135deg, var(--g1), var(--g2));
+    transition: transform .25s ease; }
+  .tile:hover .tile-art { transform: scale(1.03); }
+  .tile figcaption { padding: .8rem 1rem 1rem; display: grid; gap: .15rem; }
+  .tile small { color: var(--muted); font-size: .8rem; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 1.4rem; display: flex; flex-direction: column; gap: .35rem; }
+  .card:hover { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); }
+  .meta { font-size: .78rem; color: var(--accent); text-transform: uppercase;
+    letter-spacing: .12em; margin: 0; }
+  .tags { display: flex; flex-wrap: wrap; gap: .4rem; list-style: none; padding: 0; margin: .6rem 0 0; }
+  .tags li { font-size: .75rem; border: 1px solid var(--line); border-radius: 999px; padding: .15rem .55rem; }
+  .filters { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 1.4rem; }
+  .filter { background: transparent; color: var(--muted); border: 1px solid var(--line);
+    border-radius: 999px; padding: .4rem .85rem; cursor: pointer; font-size: .85rem; }
+  .filter.is-active { background: var(--accent); color: #14161b; border-color: var(--accent); }
+  .two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+  .chips { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: 0; }
+  .chip { border: 1px solid var(--line); border-radius: 999px; padding: .4rem .9rem; font-size: .9rem; }
+  .faq details { border-top: 1px solid var(--line); padding: 1rem 0; }
+  .faq summary { cursor: pointer; font-weight: 600; }
+  .faq p { color: var(--muted); max-width: 70ch; }
+  .contact-form { display: grid; gap: .9rem; max-width: 560px; }
+  .contact-form label { display: grid; gap: .35rem; font-size: .85rem; color: var(--muted); }
+  .contact-form input, .contact-form textarea {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+    color: var(--text); padding: .7rem .8rem; font: inherit; width: 100%;
+  }
+  .contact-form textarea { min-height: 7rem; resize: vertical; }
+  .form-status { min-height: 1.4rem; color: var(--accent); font-size: .9rem; }
+  .site-footer { border-top: 1px solid var(--line); padding: 2rem 0; color: var(--muted);
+    font-size: .85rem; display: flex; flex-wrap: wrap; gap: .5rem; justify-content: space-between; }
+  .reveal { opacity: 0; transform: translateY(14px); transition: opacity .5s ease, transform .5s ease; }
+  .reveal.is-in { opacity: 1; transform: none; }
+  @media (max-width: 760px) {
+    nav { position: absolute; inset: 100% 0 auto; background: var(--panel);
+      border-bottom: 1px solid var(--line); display: none; }
+    nav.is-open { display: block; }
+    nav ul { flex-direction: column; padding: 1rem 1.25rem; gap: .9rem; }
+    .nav-toggle { display: inline-flex; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    .reveal { opacity: 1; transform: none; }
+  }
+</style>
+<style>/* crown-base: page-level correctness rules */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;max-width:100%;overflow-x:hidden}
+img,svg,video,canvas{max-width:100%;height:auto}
+:focus-visible{outline:3px solid var(--crown-focus,#ffd166);outline-offset:3px;border-radius:2px}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--crown-focus,#ffd166);outline-offset:3px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style></head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="#main">Lena Fischer<span>.</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Main"><ul><li><a href="#about">About Lena Fischer</a></li><li><a href="#work">Selected Work</a></li><li><a href="#skills">Skills and Expertise</a></li><li><a href="#faq">Frequently Asked Questions</a></li></ul></nav>
+  </div>
+</header>
+<main id="main">
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <p class="eyebrow">Photography by Lena Fischer</p>
+    <h1 id="hero-title">Portraits, Landscapes, and Studio Shots</h1>
+    <p class="tagline">Explore the beauty of the world through my lens.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#about">View More Work</a>
+      <a class="btn btn-ghost" href="#contact">Contact Me</a>
+    </div>
+    <div class="metrics"><div class="metric"><strong>6+</strong><span>years shipping</span></div></div>
+  </section>
+  <section id="about" class="section"><div class="sec-head"><p class="eyebrow">about</p><h2>About Lena Fischer</h2><p class="lead">A passionate photographer capturing the essence of every moment.</p></div><div class="two-col"><div><h3>Professional Experience</h3><p>Over 10 years in photography, specializing in portraits and landscapes.</p></div><div><h3>Portfolio Highlights</h3><p>Featured in several prestigious publications and exhibitions.</p></div><div><h3>Client Testimonials</h3><p>Clients praise Lena&#x27;s ability to capture the unique spirit of each subject.</p></div></div></section><section id="work" class="section"><div class="sec-head"><p class="eyebrow">work</p><h2>Selected Work</h2><p class="lead">Explore my portfolio and discover the beauty in every shot.</p></div><div class="gallery-grid"><figure class="tile" data-tags=""><div class="tile-art" style="--g1:#f2c1a0;--g2:#8c4a3c" role="img" aria-label="Portrait Series"></div><figcaption><strong>Portrait Series</strong><small>Portraits of individuals from all walks of life.</small></figcaption></figure><figure class="tile" data-tags=""><div class="tile-art" style="--g1:#a9c8e8;--g2:#2f4b7c" role="img" aria-label="Landscape Photography"></div><figcaption><strong>Landscape Photography</strong><small>Capturing the majesty of nature in stunning landscapes.</small></figcaption></figure><figure class="tile" data-tags=""><div class="tile-art" style="--g1:#cfd8a8;--g2:#4a5d33" role="img" aria-label="Studio Sessions"></div><figcaption><strong>Studio Sessions</strong><small>Creating intimate portraits and candid moments in studio settings.</small></figcaption></figure><figure class="tile" data-tags=""><div class="tile-art" style="--g1:#e8c1d8;--g2:#6b3a5c" role="img" aria-label="Travel Portraits"></div><figcaption><strong>Travel Portraits</strong><small>Portraits taken during my travels around the world.</small></figcaption></figure><figure class="tile" data-tags=""><div class="tile-art" style="--g1:#f4d58d;--g2:#9c6b1f" role="img" aria-label="Event Photography"></div><figcaption><strong>Event Photography</strong><small>Capturing memorable events such as weddings and corporate shoots.</small></figcaption></figure><figure class="tile" data-tags=""><div class="tile-art" style="--g1:#bcd9d3;--g2:#2f5d58" role="img" aria-label="Fashion Portraits"></div><figcaption><strong>Fashion Portraits</strong><small>Portraits of models in various fashion settings.</small></figcaption></figure></div></section><section id="skills" class="section"><div class="sec-head"><p class="eyebrow">skills</p><h2>Skills and Expertise</h2><p class="lead">I specialize in capturing the essence of every moment.</p></div><ul class="chips"><li class="chip">Photography</li><li class="chip">Editing</li><li class="chip">Software</li><li class="chip">Equipment</li><li class="chip">Client Management</li><li class="chip">Communication</li></ul></section><section id="faq" class="section"><div class="sec-head"><p class="eyebrow">faq</p><h2>Frequently Asked Questions</h2></div><div class="faq"><details><summary>What kind of photography do you specialize in?</summary><p>I specialize in portrait, landscape, studio, travel, event, fashion, nature, wildlife, and street photography.</p></details><details><summary>How long have you been working as a photographer?</summary><p>Over 10 years in photography, specializing in portraits and landscapes.</p></details></div></section><section id="contact" class="section" aria-labelledby="h-contact"><div class="sec-head"><p class="eyebrow">contact</p><h2 id="h-contact">Contact Me</h2><p class="lead">Let&#x27;s talk about your photography needs.</p></div><form class="contact-form" novalidate><label for="f-0">Name<input id="f-0" name="name" type="text" required placeholder="Ada Lovelace" aria-describedby="form-status"></label><label for="f-1">Email<input id="f-1" name="email" type="email" required placeholder="you@studio.com" aria-describedby="form-status"></label><label for="f-2">Message<input id="f-2" name="message" type="textarea" required placeholder="What are you building?" aria-describedby="form-status"></label><button type="submit" class="btn btn-primary">Send message</button><p id="form-status" class="form-status" role="status" aria-live="polite"></p></form></section>
+</main>
+<footer class="site-footer wrap">
+  <p>© Lena Fischer Photography. All rights reserved.</p>
+  <p><a href="#main">Back to top</a></p>
+</footer>
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.getElementById('site-nav');
+  navToggle?.addEventListener('click', () => {
+    const open = nav.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', String(open));
+  });
+  nav?.addEventListener('click', (e) => {
+    if (e.target.closest('a')) {
+      nav.classList.remove('is-open');
+      navToggle?.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  const filters = document.querySelectorAll('.filter');
+  filters.forEach((btn) => btn.addEventListener('click', () => {
+    filters.forEach((b) => b.classList.toggle('is-active', b === btn));
+    const want = btn.dataset.filter;
+    document.querySelectorAll('.card[data-tags], .tile[data-tags]').forEach((card) => {
+      const tags = (card.dataset.tags || '').split(' ');
+      card.hidden = want !== 'all' && !tags.includes(want);
+    });
+  }));
+
+  const form = document.querySelector('.contact-form');
+  const status = document.getElementById('form-status');
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const name = String(data.get('name') || '').trim();
+    const email = String(data.get('email') || '').trim();
+    const message = String(data.get('message') || '').trim();
+    if (!name || !message || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+      status.textContent = 'Please add your name, a valid email and a short message.';
+      return;
+    }
+    status.textContent = `Thanks ${name.split(' ')[0]} — your message is queued. I reply within two working days.`;
+    form.reset();
+  });
+
+  const reveals = document.querySelectorAll('.section, .card');
+  if ('IntersectionObserver' in window &&
+      !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.add('is-in'); io.unobserve(entry.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    reveals.forEach((el) => { el.classList.add('reveal'); io.observe(el); });
+  }
+</script>
+</body>
+</html>

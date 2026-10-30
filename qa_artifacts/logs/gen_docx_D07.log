@@ -1,0 +1,11 @@
+# D07 exit=0 timeout=False seconds=94.0
+# ---- stdout ----
+[FileProcessor] CREATE DOCX | D07_release_notes.docx
+[D07] 93.8s  exists=True  bytes=38137  result=Created Word document: D07_release_notes.docx (37.2 KB)
+Saved to: C:\Users\harma\Desktop\PROJECTS\Keys-acenden
+restored file_processor task model -> {'provider': 'gemini', 'model': 'gemini-2.5-flash', 'url': ''}
+
+DONE 1 docx artifact(s) in C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\generated_documents
+
+# ---- stderr ----
+

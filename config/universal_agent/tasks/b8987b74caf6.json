@@ -1,0 +1,253 @@
+{
+  "id": "b8987b74caf6",
+  "request": "Build a customer churn report for a regional clinic group that works offline (bid #34)",
+  "created_at": "2026-10-27 11:04:01",
+  "updated_at": "2026-10-27 11:04:06",
+  "status": "COMPLETED",
+  "intent": "documents",
+  "workspace": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-customer-churn-report-for-a-re-b8987b74caf6",
+  "questions": [
+    {
+      "slot": "format",
+      "question": "Which document format do you need?",
+      "hint": "",
+      "default": "word",
+      "options": [
+        "word",
+        "pdf",
+        "powerpoint",
+        "excel"
+      ],
+      "required": false,
+      "why": ""
+    }
+  ],
+  "answers": {
+    "format": "word",
+    "presets": "national_search",
+    "depth": "quick"
+  },
+  "assumptions": [
+    "format not specified — using 'word'"
+  ],
+  "brief": {
+    "goal": "Build a customer churn report for a regional clinic group that works offline (bid #34)",
+    "intent": "documents",
+    "answers": {
+      "format": "word",
+      "presets": "national_search",
+      "depth": "quick"
+    },
+    "deliverables": [
+      "The requested document file"
+    ],
+    "acceptance_criteria": [
+      "The document exists and opens with its matching parser",
+      "It contains the requested subject and sections",
+      "Its slide/page/sheet count is reported and non-zero"
+    ],
+    "assumptions": [
+      "format not specified — using 'word'"
+    ],
+    "constraints": [
+      "Work only inside the task workspace",
+      "Do not delete or overwrite user files without approval",
+      "Never claim success for an unverified step"
+    ]
+  },
+  "plan": {
+    "steps": [
+      {
+        "id": "s1",
+        "worker": "documents",
+        "title": "Create the DOCX deliverable",
+        "params": {
+          "format": "docx"
+        },
+        "status": "done",
+        "detail": "Created the Word document 'customer churn report for a regional clinic group that works.docx'.",
+        "requires_approval": false,
+        "started_at": "2026-10-27 11:04:01",
+        "ended_at": "2026-10-27 11:04:06",
+        "error": "",
+        "attempts": 1,
+        "artifacts": [
+          {
+            "id": "32eea647ba",
+            "task_id": "b8987b74caf6",
+            "name": "customer churn report for a regional clinic group that works.docx",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-customer-churn-report-for-a-re-b8987b74caf6\\customer churn report for a regional clinic group that works.docx",
+            "kind": "docx",
+            "size": 39332,
+            "sha256": "f6c6b8259c86f1fb0f84b4b4a48e79b732a13db5e100198e8b9eb8b4f521c726",
+            "created_at": "2026-10-27 11:04:06",
+            "detail": "Word document deliverable",
+            "validated": true,
+            "validation_detail": "31 paragraph(s), 7 heading(s), 2 table(s)"
+          }
+        ]
+      }
+    ],
+    "deliverables": [
+      "The requested document file"
+    ],
+    "acceptance_criteria": [
+      "The document exists and opens with its matching parser",
+      "It contains the requested subject and sections",
+      "Its slide/page/sheet count is reported and non-zero"
+    ],
+    "source": "deterministic",
+    "note": "",
+    "created_at": "2026-10-27 11:04:01"
+  },
+  "current_step": 0,
+  "artifacts": [
+    {
+      "id": "32eea647ba",
+      "task_id": "b8987b74caf6",
+      "name": "customer churn report for a regional clinic group that works.docx",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-customer-churn-report-for-a-re-b8987b74caf6\\customer churn report for a regional clinic group that works.docx",
+      "kind": "docx",
+      "size": 39332,
+      "sha256": "f6c6b8259c86f1fb0f84b4b4a48e79b732a13db5e100198e8b9eb8b4f521c726",
+      "created_at": "2026-10-27 11:04:06",
+      "detail": "Word document deliverable",
+      "validated": true,
+      "validation_detail": "31 paragraph(s), 7 heading(s), 2 table(s)"
+    }
+  ],
+  "evidence": [],
+  "events": [
+    {
+      "ts": "2026-10-27 11:04:01",
+      "type": "task_created",
+      "text": "documents task created in 20261027-build-a-customer-churn-report-for-a-re-b8987b74caf6"
+    },
+    {
+      "ts": "2026-10-27 11:04:01",
+      "type": "status",
+      "text": "INTAKE → READY"
+    },
+    {
+      "ts": "2026-10-27 11:04:01",
+      "type": "status",
+      "text": "READY → PLANNING (building the plan)"
+    },
+    {
+      "ts": "2026-10-27 11:04:01",
+      "type": "plan_created",
+      "text": "1 step(s), source: deterministic"
+    },
+    {
+      "ts": "2026-10-27 11:04:01",
+      "type": "status",
+      "text": "PLANNING → READY (plan ready)"
+    },
+    {
+      "ts": "2026-10-27 11:04:01",
+      "type": "status",
+      "text": "READY → RUNNING"
+    },
+    {
+      "ts": "2026-10-27 11:04:01",
+      "type": "step_started",
+      "text": "Starting: Create the DOCX deliverable",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:04:01",
+      "type": "worker_log",
+      "text": "Documents: building Word document — customer churn report for a regional clinic group that works offline (bid #34)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:04:06",
+      "type": "worker_log",
+      "text": "Documents: wrote customer churn report for a regional clinic group that works.docx (38 KB)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:04:06",
+      "type": "step_done",
+      "text": "Done: Created the Word document 'customer churn report for a regional clinic group that works.docx'.",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:04:06",
+      "type": "status",
+      "text": "RUNNING → VALIDATING (verifying artifacts)"
+    },
+    {
+      "ts": "2026-10-27 11:04:06",
+      "type": "task_completed",
+      "text": "1 step(s) complete; 1 artifact(s) verified."
+    },
+    {
+      "ts": "2026-10-27 11:04:06",
+      "type": "status",
+      "text": "VALIDATING → COMPLETED"
+    }
+  ],
+  "approval": null,
+  "error": "",
+  "warnings": [
+    "format not specified — using 'word'"
+  ],
+  "attempts": {},
+  "result": {
+    "summary": "1 step(s) complete; 1 artifact(s) verified.",
+    "artifacts": [
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-customer-churn-report-for-a-re-b8987b74caf6\\customer churn report for a regional clinic group that works.docx"
+    ],
+    "validation": "1 artifact(s) verified",
+    "warnings": [
+      "format not specified — using 'word'"
+    ]
+  },
+  "logs": [
+    {
+      "ts": "11:04:01",
+      "text": "Starting: Create the DOCX deliverable",
+      "step": "s1"
+    },
+    {
+      "ts": "11:04:01",
+      "text": "Documents: building Word document — customer churn report for a regional clinic group that works offline (bid #34)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:04:06",
+      "text": "Documents: wrote customer churn report for a regional clinic group that works.docx (38 KB)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:04:06",
+      "text": "Verified artifact: customer churn report for a regional clinic group that works.docx (31 paragraph(s), 7 heading(s), 2 table(s))",
+      "step": "s1"
+    },
+    {
+      "ts": "11:04:06",
+      "text": "Done: Created the Word document 'customer churn report for a regional clinic group that works.docx'.",
+      "step": "s1"
+    },
+    {
+      "ts": "11:04:06",
+      "text": "Validation: 1 artifact(s) verified",
+      "step": ""
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "results": [
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-customer-churn-report-for-a-re-b8987b74caf6\\customer churn report for a regional clinic group that works.docx",
+        "kind": "docx",
+        "detail": "31 paragraph(s), 7 heading(s), 2 table(s)",
+        "warning": ""
+      }
+    ],
+    "failures": [],
+    "detail": "1 artifact(s) verified"
+  }
+}

@@ -1,0 +1,19 @@
+$ C:\Users\harma\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -X utf8 qa_artifacts/validate_docs.py --kind pptx
+exit=0 seconds=0.5
+
+---- stdout ----
+PASS  P01_startup_pitch.pptx  (46217 B)
+PASS  P02_technical_architecture.pptx  (38182 B)
+PASS  P03_product_demo.pptx  (38152 B)
+PASS  P04_data_analytics_report.pptx  (46092 B)
+PASS  P05_education_lesson.pptx  (39804 B)
+PASS  P06_business_strategy.pptx  (46129 B)
+PASS  P07_research_conference.pptx  (46236 B)
+PASS  P08_security_awareness.pptx  (38171 B)
+PASS  P09_project_status.pptx  (38119 B)
+PASS  P10_product_launch.pptx  (44611 B)
+
+VALIDATION: 10/10 artifacts pass all structural checks
+
+---- stderr ----
+

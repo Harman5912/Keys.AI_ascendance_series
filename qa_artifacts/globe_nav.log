@@ -1,0 +1,29 @@
+QPixmap::setMask() mask size differs from pixmap size
+[HUD] Face loaded via Qt: icon.png (1219x1219)
+Windows fatal exception: code 0x8001010d
+
+Thread 0x00004da4 (most recent call first):
+  File "C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\ui.py", line 237 in _loop
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1012 in run
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1032 in _bootstrap
+
+Current thread 0x00000668 (most recent call first):
+  File "C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\regression_tests\globe_autonomous_navigation.py", line 166 in main
+  File "C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\regression_tests\globe_autonomous_navigation.py", line 181 in <module>
+js: [Init] Google 3D Tiles unavailable, using the keyless globe: Error: Google 3D tokens are not offered
+==========================================================================
+globe autonomous navigation
+==========================================================================
+PASS  open                   10.1s — The globe is open at http://127.0.0.1:4173/.
+PASS  camera readable        {'lat': 30.267199999999992, 'lon': -97.74309999999998, 'height': 24999.99999999683}
+PASS  Tokyo                  'The globe flew to Tokyo.' → camera 35.71,139.74 (want 35.68,139.69)
+PASS  Eiffel Tower           'The globe flew to Eiffel Tower.' → camera 48.85,2.30 (want 48.86,2.29)
+PASS  Kanpur                 'The globe flew to Kanpur, Uttar Pradesh, India.' → camera 26.46,80.32 (want 26.45,80.33)
+PASS  Sydney Opera House     'The globe flew to Sydney Opera House, Sydney, New South Wales, Austral' → camera -33.86,151.21 (want -33.86,151.21)
+PASS  Reykjavik              'The globe flew to Reykjavík, Ísland.' → camera 64.18,-21.69 (want 64.15,-21.94)
+PASS  Cape Town              'The globe flew to Cape Town, Western Cape, South Africa.' → camera -33.93,18.42 (want -33.92,18.42)
+PASS  Null Island            'The globe flew to 0.0000, 0.0000.' → camera -0.00,-0.00 (want 0.00,0.00)
+PASS  Antarctica             'The globe flew to Antarctica.' → camera -79.41,0.31
+==========================================================================
+10/10 passed

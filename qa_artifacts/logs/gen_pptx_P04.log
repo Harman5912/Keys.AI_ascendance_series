@@ -1,0 +1,11 @@
+# P04 exit=0 timeout=False seconds=40.4
+# ---- stdout ----
+[FileProcessor] CREATE PPTX | P04_data_analytics_report.pptx
+[P04] 40.3s  exists=True  bytes=34956  result=Created PowerPoint presentation: P04_data_analytics_report.pptx (34.1 KB)
+Saved to: C:\Users\harma\Desktop\PRO
+restored file_processor task model -> {'provider': 'ollama', 'model': 'qwen3:8b', 'url': ''}
+
+DONE 1 pptx artifact(s) in C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\generated_presentations
+
+# ---- stderr ----
+

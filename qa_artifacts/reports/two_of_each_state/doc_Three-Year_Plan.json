@@ -1,0 +1,12 @@
+{
+  "slug": "doc_Three-Year_Plan",
+  "artifact": "pptx",
+  "title": "Three-Year Plan \u2014 Fern Flint Organics",
+  "model": "qwen3:8b",
+  "seconds": 21.6,
+  "ok": true,
+  "finished": true,
+  "message": "Created PowerPoint presentation: doc_Three-Year_Plan.pptx\n  Subject : Fern Flint Organics\n  Detail  : 5 widescreen slides \u00b7 1 native chart\n  Size    : 42,107 bytes\n  Saved   : C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\pptx\\doc_Three-Year_Plan.pptx\nNot opened (permission not requested).\n",
+  "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\pptx\\doc_Three-Year_Plan.pptx",
+  "bytes": 42107
+}

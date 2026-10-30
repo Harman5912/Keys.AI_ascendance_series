@@ -1,0 +1,405 @@
+{
+  "id": "29f965f57095",
+  "request": "Build a volunteer rota for a non-profit food bank that imports last year's data (bid #4270)",
+  "created_at": "2026-10-27 11:06:00",
+  "updated_at": "2026-10-27 11:06:00",
+  "status": "COMPLETED",
+  "intent": "software",
+  "workspace": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-volunteer-rota-for-a-non-profi-29f965f57095",
+  "questions": [],
+  "answers": {
+    "presets": "github",
+    "depth": "quick"
+  },
+  "assumptions": [],
+  "brief": {
+    "goal": "Build a volunteer rota for a non-profit food bank that imports last year's data (bid #4270)",
+    "intent": "software",
+    "answers": {
+      "presets": "github",
+      "depth": "quick"
+    },
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "assumptions": [],
+    "constraints": [
+      "Work only inside the task workspace",
+      "Do not delete or overwrite user files without approval",
+      "Never claim success for an unverified step"
+    ]
+  },
+  "plan": {
+    "steps": [
+      {
+        "id": "s1",
+        "worker": "research",
+        "title": "Research the subject before building",
+        "params": {
+          "depth": "quick",
+          "feed_build": true,
+          "presets": [
+            "github"
+          ]
+        },
+        "status": "done",
+        "detail": "Researched 'Build a volunteer rota for a non-profit food bank that impor' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research.",
+        "requires_approval": false,
+        "started_at": "2026-10-27 11:06:00",
+        "ended_at": "2026-10-27 11:06:00",
+        "error": "",
+        "attempts": 1,
+        "artifacts": [
+          {
+            "id": "765cfcbb4d",
+            "task_id": "29f965f57095",
+            "name": "research-report.md",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-volunteer-rota-for-a-non-profi-29f965f57095\\research-report.md",
+            "kind": "markdown",
+            "size": 2859,
+            "sha256": "ccbab9445ed50b892be1eb9c9e740b8096249bc0385d1d66b2405a14e6e19962",
+            "created_at": "2026-10-27 11:06:00",
+            "detail": "Cited research report",
+            "validated": true,
+            "validation_detail": "2764 chars"
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "worker": "software",
+        "title": "Build and verify the project",
+        "params": {
+          "mode": "build",
+          "reuse_research": true
+        },
+        "status": "done",
+        "detail": "built in the test environment",
+        "requires_approval": false,
+        "started_at": "2026-10-27 11:06:00",
+        "ended_at": "2026-10-27 11:06:00",
+        "error": "",
+        "attempts": 1,
+        "artifacts": [
+          {
+            "id": "2c36e93427",
+            "task_id": "29f965f57095",
+            "name": "index.html",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-volunteer-rota-for-a-non-profi-29f965f57095\\volunteer-rota-for-a-non-profit-food-ban\\index.html",
+            "kind": "html",
+            "size": 171,
+            "sha256": "21e418ee1f82abb8d7681c032c1ef1d2043ee2aae57e23d7396e0c163bb85e43",
+            "created_at": "2026-10-27 11:06:00",
+            "detail": "171 bytes",
+            "validated": true,
+            "validation_detail": "171 chars"
+          }
+        ]
+      }
+    ],
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "source": "deterministic",
+    "note": "",
+    "created_at": "2026-10-27 11:06:00"
+  },
+  "current_step": 1,
+  "artifacts": [
+    {
+      "id": "765cfcbb4d",
+      "task_id": "29f965f57095",
+      "name": "research-report.md",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-volunteer-rota-for-a-non-profi-29f965f57095\\research-report.md",
+      "kind": "markdown",
+      "size": 2859,
+      "sha256": "ccbab9445ed50b892be1eb9c9e740b8096249bc0385d1d66b2405a14e6e19962",
+      "created_at": "2026-10-27 11:06:00",
+      "detail": "Cited research report",
+      "validated": true,
+      "validation_detail": "2764 chars"
+    },
+    {
+      "id": "2c36e93427",
+      "task_id": "29f965f57095",
+      "name": "index.html",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-volunteer-rota-for-a-non-profi-29f965f57095\\volunteer-rota-for-a-non-profit-food-ban\\index.html",
+      "kind": "html",
+      "size": 171,
+      "sha256": "21e418ee1f82abb8d7681c032c1ef1d2043ee2aae57e23d7396e0c163bb85e43",
+      "created_at": "2026-10-27 11:06:00",
+      "detail": "171 bytes",
+      "validated": true,
+      "validation_detail": "171 chars"
+    }
+  ],
+  "evidence": [
+    {
+      "claim": "Volunteer Rota Non-Profit Food Bank — reference notes.",
+      "quote": "Volunteer Rota Non-Profit Food Bank — reference notes.",
+      "source_url": "https://docs.example.com/59a3dc530c",
+      "title": "Reference: Build a volunteer rota for a non-profit food bank that impor",
+      "retrieved_at": "2026-10-27 11:06:00",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The volunteer rota non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The volunteer rota non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/59a3dc530c",
+      "title": "Reference: Build a volunteer rota for a non-profit food bank that impor",
+      "retrieved_at": "2026-10-27 11:06:00",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "Volunteer Rota Non-Profit Food Bank — reference notes.",
+      "quote": "Volunteer Rota Non-Profit Food Bank — reference notes.",
+      "source_url": "https://docs.example.com/9356a1b6e3",
+      "title": "Reference: Build a volunteer rota for a non-profit food bank that impor",
+      "retrieved_at": "2026-10-27 11:06:00",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The volunteer rota non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The volunteer rota non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/9356a1b6e3",
+      "title": "Reference: Build a volunteer rota for a non-profit food bank that impor",
+      "retrieved_at": "2026-10-27 11:06:00",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "Site Github Volunteer Rota Non-Profit — reference notes.",
+      "quote": "Site Github Volunteer Rota Non-Profit — reference notes.",
+      "source_url": "https://docs.example.com/ad7be69e53",
+      "title": "Reference: site:github.com Build a volunteer rota for a non-profit food",
+      "retrieved_at": "2026-10-27 11:06:00",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The site github volunteer rota non-profit workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The site github volunteer rota non-profit workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/ad7be69e53",
+      "title": "Reference: site:github.com Build a volunteer rota for a non-profit food",
+      "retrieved_at": "2026-10-27 11:06:00",
+      "verified": true,
+      "method": "page fetched"
+    }
+  ],
+  "events": [
+    {
+      "ts": "2026-10-27 11:06:00",
+      "type": "task_created",
+      "text": "software task created in 20261027-build-a-volunteer-rota-for-a-non-profi-29f965f57095"
+    },
+    {
+      "ts": "2026-10-27 11:06:00",
+      "type": "status",
+      "text": "INTAKE → READY"
+    },
+    {
+      "ts": "2026-10-27 11:06:00",
+      "type": "status",
+      "text": "READY → PLANNING (building the plan)"
+    },
+    {
+      "ts": "2026-10-27 11:06:00",
+      "type": "plan_created",
+      "text": "2 step(s), source: deterministic"
+    },
+    {
+      "ts": "2026-10-27 11:06:00",
+      "type": "status",
+      "text": "PLANNING → READY (plan ready)"
+    },
+    {
+      "ts": "2026-10-27 11:06:00",
+      "type": "status",
+      "text": "READY → RUNNING"
+    },
+    {
+      "ts": "2026-10-27 11:06:00",
+      "type": "step_started",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:06:00",
+      "type": "worker_log",
+      "text": "Research: Build a volunteer rota for a non-profit food bank that imports last year's data (bid #4270) (depth quick, 4 queries, presets: GitHub research)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:06:00",
+      "type": "worker_log",
+      "text": "Research summary discarded: no citation to the evidence.",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:06:00",
+      "type": "worker_log",
+      "text": "Research report written: research-report.md (6 evidence items)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:06:00",
+      "type": "step_done",
+      "text": "Done: Researched 'Build a volunteer rota for a non-profit food bank that impor' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research.",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:06:00",
+      "type": "step_started",
+      "text": "Starting: Build and verify the project",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 11:06:00",
+      "type": "worker_log",
+      "text": "Software: delegating to Crown Code in volunteer-rota-for-a-non-profit-food-ban",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 11:06:00",
+      "type": "worker_log",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 11:06:00",
+      "type": "step_done",
+      "text": "Done: built in the test environment",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 11:06:00",
+      "type": "status",
+      "text": "RUNNING → VALIDATING (verifying artifacts)"
+    },
+    {
+      "ts": "2026-10-27 11:06:00",
+      "type": "task_completed",
+      "text": "2 step(s) complete; 2 artifact(s) verified."
+    },
+    {
+      "ts": "2026-10-27 11:06:00",
+      "type": "status",
+      "text": "VALIDATING → COMPLETED"
+    }
+  ],
+  "approval": null,
+  "error": "",
+  "warnings": [],
+  "attempts": {},
+  "result": {
+    "summary": "2 step(s) complete; 2 artifact(s) verified.",
+    "artifacts": [
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-volunteer-rota-for-a-non-profi-29f965f57095\\research-report.md",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-volunteer-rota-for-a-non-profi-29f965f57095\\volunteer-rota-for-a-non-profit-food-ban\\index.html"
+    ],
+    "validation": "2 artifact(s) verified",
+    "warnings": []
+  },
+  "logs": [
+    {
+      "ts": "11:06:00",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    },
+    {
+      "ts": "11:06:00",
+      "text": "Research: Build a volunteer rota for a non-profit food bank that imports last year's data (bid #4270) (depth quick, 4 queries, presets: GitHub research)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:06:00",
+      "text": "Research summary discarded: no citation to the evidence.",
+      "step": "s1"
+    },
+    {
+      "ts": "11:06:00",
+      "text": "Research report written: research-report.md (6 evidence items)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:06:00",
+      "text": "Verified artifact: research-report.md (2764 chars)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:06:00",
+      "text": "Done: Researched 'Build a volunteer rota for a non-profit food bank that impor' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research.",
+      "step": "s1"
+    },
+    {
+      "ts": "11:06:00",
+      "text": "Starting: Build and verify the project",
+      "step": "s2"
+    },
+    {
+      "ts": "11:06:00",
+      "text": "Software: delegating to Crown Code in volunteer-rota-for-a-non-profit-food-ban",
+      "step": "s2"
+    },
+    {
+      "ts": "11:06:00",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "11:06:00",
+      "text": "Verified artifact: index.html (171 chars)",
+      "step": "s2"
+    },
+    {
+      "ts": "11:06:00",
+      "text": "Done: built in the test environment",
+      "step": "s2"
+    },
+    {
+      "ts": "11:06:00",
+      "text": "Validation: 2 artifact(s) verified",
+      "step": ""
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "results": [
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-volunteer-rota-for-a-non-profi-29f965f57095\\research-report.md",
+        "kind": "md",
+        "detail": "2764 chars",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-volunteer-rota-for-a-non-profi-29f965f57095\\volunteer-rota-for-a-non-profit-food-ban\\index.html",
+        "kind": "html",
+        "detail": "171 chars",
+        "warning": ""
+      }
+    ],
+    "failures": [],
+    "detail": "2 artifact(s) verified"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "doc_Quarterly_Business_Review",
+  "artifact": "docx",
+  "title": "Quarterly Business Review \u2014 Northwind Logistics",
+  "model": "qwen3:8b",
+  "seconds": 10.6,
+  "ok": true,
+  "finished": true,
+  "message": "Created Word document: doc_Quarterly_Business_Review.docx\n  Subject : Q3 review for Northwind Logistics: revenue up 14% year on year, two lost contrac\n  Detail  : 4 sections \u00b7 126 words\n  Size    : 38,266 bytes\n  Saved   : C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\docx\\doc_Quarterly_Business_Review.docx\nNot opened (permission not requested).\n",
+  "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\docx\\doc_Quarterly_Business_Review.docx",
+  "bytes": 38266
+}

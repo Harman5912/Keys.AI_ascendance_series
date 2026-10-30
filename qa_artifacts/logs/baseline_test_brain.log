@@ -1,0 +1,169 @@
+# test_brain.py  exit=0  seconds=0.63  timeout=False
+# ---- stdout ----
+[15:25:03] USER_REQUEST what is the capital of Turkey?
+[15:25:03] INTENT_DETECTED QUESTION tags=['QUESTION'] conf=0.74
+[15:25:03] ROUTED chat →  {}
+[15:25:03] USER_REQUEST send a message to John: hello
+[15:25:03] INTENT_DETECTED CONVERSATION tags=['CONVERSATION', 'COMMAND'] conf=0.71
+[15:25:03] ROUTED single_tool → send_message {'receiver': 'John', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:03] PLAN_CREATED Single step (1 steps)
+[15:25:03] STEP 1/1 send_message — send-message pattern
+[15:25:03] TOOL_SELECTED send_message {'receiver': 'John', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:03] WAITING_FOR_USER 'send_message' needs your confirmation: {'receiver': 'John', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:03] WAITING_FOR_USER waiting on: send-message pattern
+[15:25:03] USER_REQUEST not now
+[15:25:03] CONFIRM_SUPERSEDED dropped pending step 0 and handled the new request instead
+[15:25:03] INTENT_DETECTED CONVERSATION tags=[] conf=0.25
+[15:25:03] ROUTED chat →  {}
+[15:25:03] USER_REQUEST send a message to John: hello
+[15:25:03] INTENT_DETECTED CONVERSATION tags=['CONVERSATION', 'COMMAND'] conf=0.71
+[15:25:03] ROUTED single_tool → send_message {'receiver': 'John', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:03] PLAN_CREATED Single step (1 steps)
+[15:25:03] STEP 1/1 send_message — send-message pattern
+[15:25:03] TOOL_SELECTED send_message {'receiver': 'John', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:03] WAITING_FOR_USER 'send_message' needs your confirmation: {'receiver': 'John', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:03] WAITING_FOR_USER waiting on: send-message pattern
+[15:25:03] USER_REQUEST no
+[15:25:03] USER_REQUEST send a message to John: hello
+[15:25:03] INTENT_DETECTED CONVERSATION tags=['CONVERSATION', 'COMMAND'] conf=0.71
+[15:25:03] ROUTED single_tool → send_message {'receiver': 'John', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:03] PLAN_CREATED Single step (1 steps)
+[15:25:03] STEP 1/1 send_message — send-message pattern
+[15:25:03] TOOL_SELECTED send_message {'receiver': 'John', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:03] WAITING_FOR_USER 'send_message' needs your confirmation: {'receiver': 'John', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:03] WAITING_FOR_USER waiting on: send-message pattern
+[15:25:03] USER_REQUEST yes
+[15:25:03] STEP 1/1 send_message — send-message pattern
+[15:25:03] TOOL_SELECTED send_message {'receiver': 'John', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:03] TOOL_EXECUTED send_message → send_message done: {'receiver': 'John', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:03] EVALUATION send_message = success ()
+[15:25:03] TASK_COMPLETE send a message to John: hello
+[15:25:03] USER_REQUEST hello there
+[15:25:03] INTENT_DETECTED CONVERSATION tags=['CONVERSATION'] conf=0.61
+[15:25:03] ROUTED chat →  {}
+[Brain][Reasoning] ⚠️ fake provider boom
+[Memory] 💾 Saved: ['preferences']
+[Memory] 💾 Saved: ['projects']
+[15:25:03] USER_REQUEST open chrome and check my cpu usage and tell me
+[15:25:03] INTENT_DETECTED SYSTEM_TASK tags=['SYSTEM_TASK', 'COMPUTER_ACTION', 'APP_CONTROL', 'MULTI_STEP_TASK', 'COMMAND'] conf=1.0
+[15:25:03] ROUTED plan →  {}
+[15:25:03] PLAN_CREATED two steps (2 steps)
+[15:25:03] STEP 1/2 open_app — open chrome
+[15:25:03] TOOL_SELECTED open_app {'app_name': 'Chrome'}
+[15:25:03] TOOL_EXECUTED open_app → open_app done: {'app_name': 'Chrome'}
+[15:25:03] EVALUATION open_app = success ()
+[15:25:03] STEP 2/2 system_status — check cpu
+[15:25:03] TOOL_SELECTED system_status {}
+[15:25:03] TOOL_EXECUTED system_status → system_status done: {}
+[15:25:03] EVALUATION system_status = success ()
+[15:25:03] TASK_COMPLETE open chrome and check my cpu usage and tell me
+[Memory] 💾 Saved: ['preferences']
+[15:25:03] USER_REQUEST what do you remember about me?
+[15:25:03] INTENT_DETECTED MEMORY tags=['MEMORY', 'QUESTION'] conf=0.97
+[Memory] 💾 Saved: ['notes']
+[15:25:03] MEMORY_SAVED saved=['notes/about_me'] forgotten=[]
+[15:25:03] USER_REQUEST stop
+[15:25:03] STOPPED stopped by user
+[15:25:03] USER_REQUEST open chrome
+[15:25:03] INTENT_DETECTED APP_CONTROL tags=['COMPUTER_ACTION', 'APP_CONTROL', 'COMMAND'] conf=0.68
+[15:25:03] ROUTED single_tool → open_app {'app_name': 'Chrome'}
+[15:25:03] PLAN_CREATED Single step (1 steps)
+[15:25:03] STEP 1/1 open_app — open-app pattern
+[15:25:03] TOOL_SELECTED open_app {'app_name': 'Chrome'}
+[15:25:03] TOOL_EXECUTED open_app → open_app done: {'app_name': 'Chrome'}
+[15:25:03] EVALUATION open_app = success ()
+[15:25:03] TASK_COMPLETE open chrome
+[15:25:03] USER_REQUEST open ReviewBot
+[15:25:03] INTENT_DETECTED COMPUTER_ACTION tags=['COMPUTER_ACTION', 'COMMAND'] conf=0.58
+[15:25:03] ROUTED single_tool → open_app {'app_name': 'ReviewBot'}
+[15:25:03] PLAN_CREATED Single step (1 steps)
+[15:25:03] STEP 1/1 open_app — open-app pattern
+[15:25:03] TOOL_SELECTED open_app {'app_name': 'ReviewBot'}
+[15:25:03] TOOL_EXECUTED open_app → open_app done: {'app_name': 'ReviewBot'}
+[15:25:03] EVALUATION open_app = success ()
+[15:25:03] TASK_COMPLETE open ReviewBot
+[15:25:03] USER_REQUEST remember that I prefer Python
+[15:25:03] INTENT_DETECTED MEMORY tags=['MEMORY', 'CODING'] conf=0.97
+[Memory] 💾 Saved: ['preferences']
+[15:25:03] MEMORY_SAVED saved=['preferences/python'] forgotten=[]
+[15:25:03] USER_REQUEST open chrome
+[15:25:03] INTENT_DETECTED APP_CONTROL tags=['COMPUTER_ACTION', 'APP_CONTROL', 'COMMAND'] conf=0.68
+[15:25:03] ROUTED single_tool → open_app {'app_name': 'Chrome'}
+[15:25:03] PLAN_CREATED Single step (1 steps)
+[15:25:03] STEP 1/1 open_app — open-app pattern
+[15:25:03] TOOL_SELECTED open_app {'app_name': 'Chrome'}
+[15:25:03] TOOL_EXECUTED open_app → open_app done: {'app_name': 'Chrome'}
+[15:25:03] EVALUATION open_app = success ()
+[15:25:03] TASK_COMPLETE open chrome
+[15:25:03] USER_REQUEST stop
+[15:25:03] STOPPED stopped by user
+[15:25:03] USER_REQUEST send a message to John: hello
+[15:25:03] INTENT_DETECTED CONVERSATION tags=['CONVERSATION', 'COMMAND'] conf=0.71
+[15:25:03] ROUTED single_tool → send_message {'receiver': 'John', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:03] PLAN_CREATED Single step (1 steps)
+[15:25:03] STEP 1/1 send_message — send-message pattern
+[15:25:03] TOOL_SELECTED send_message {'receiver': 'John', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:03] WAITING_FOR_USER 'send_message' needs your confirmation: {'receiver': 'John', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:03] WAITING_FOR_USER waiting on: send-message pattern
+[15:25:03] USER_REQUEST stop
+[15:25:03] STOPPED stopped by user
+[15:25:03] USER_REQUEST send a message to John: hello
+[15:25:03] INTENT_DETECTED CONVERSATION tags=['CONVERSATION', 'COMMAND'] conf=0.71
+[15:25:03] ROUTED single_tool → send_message {'receiver': 'John', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:03] PLAN_CREATED Single step (1 steps)
+[15:25:03] STEP 1/1 send_message — send-message pattern
+[15:25:03] TOOL_SELECTED send_message {'receiver': 'John', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:03] WAITING_FOR_USER 'send_message' needs your confirmation: {'receiver': 'John', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:03] WAITING_FOR_USER waiting on: send-message pattern
+[15:25:03] USER_REQUEST use sqlite for the database instead
+[15:25:03] CONFIRM_SUPERSEDED dropped pending step 0 and handled the new request instead
+[15:25:03] INTENT_DETECTED CONVERSATION tags=[] conf=0.25
+[15:25:03] ROUTED chat →  {}
+[15:25:03] USER_REQUEST send a message to John: hello
+[15:25:03] INTENT_DETECTED CONVERSATION tags=['CONVERSATION', 'COMMAND'] conf=0.71
+[15:25:03] ROUTED single_tool → send_message {'receiver': 'John', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:03] PLAN_CREATED Single step (1 steps)
+[15:25:03] STEP 1/1 send_message — send-message pattern
+[15:25:03] TOOL_SELECTED send_message {'receiver': 'John', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:03] WAITING_FOR_USER 'send_message' needs your confirmation: {'receiver': 'John', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:03] WAITING_FOR_USER waiting on: send-message pattern
+[15:25:03] USER_REQUEST open chrome
+[15:25:03] CONFIRM_SUPERSEDED dropped pending step 0 and handled the new request instead
+[15:25:03] INTENT_DETECTED APP_CONTROL tags=['COMPUTER_ACTION', 'APP_CONTROL', 'COMMAND'] conf=0.68
+[15:25:03] ROUTED single_tool → open_app {'app_name': 'Chrome'}
+[15:25:03] PLAN_CREATED Single step (1 steps)
+[15:25:03] STEP 1/1 open_app — open-app pattern
+[15:25:03] TOOL_SELECTED open_app {'app_name': 'Chrome'}
+[15:25:03] TOOL_EXECUTED open_app → open_app done: {'app_name': 'Chrome'}
+[15:25:03] EVALUATION open_app = success ()
+[15:25:03] TASK_COMPLETE open chrome
+[15:25:03] USER_REQUEST send a message to John: are you there?
+[15:25:03] INTENT_DETECTED QUESTION tags=['QUESTION', 'COMMAND'] conf=0.84
+[15:25:03] ROUTED single_tool → send_message {'receiver': 'John', 'message_text': 'are you there?', 'platform': 'WhatsApp'}
+[15:25:03] PLAN_CREATED Single step (1 steps)
+[15:25:03] STEP 1/1 send_message — send-message pattern
+[15:25:03] TOOL_SELECTED send_message {'receiver': 'John', 'message_text': 'are you there?', 'platform': 'WhatsApp'}
+[15:25:03] WAITING_FOR_USER 'send_message' needs your confirmation: {'receiver': 'John', 'message_text': 'are you there?', 'platform': 'WhatsApp'}
+[15:25:03] WAITING_FOR_USER waiting on: send-message pattern
+[15:25:03] USER_REQUEST yes
+[15:25:03] STEP 1/1 send_message — send-message pattern
+[15:25:03] TOOL_SELECTED send_message {'receiver': 'John', 'message_text': 'are you there?', 'platform': 'WhatsApp'}
+[15:25:03] TOOL_EXECUTED send_message → send_message done: {'receiver': 'John', 'message_text': 'are you there?', 'platform': 'WhatsApp'}
+[15:25:03] EVALUATION send_message = success ()
+[15:25:03] TASK_COMPLETE send a message to John: are you there?
+[Memory] 💾 Saved: ['preferences']
+[Memory] 💾 Saved: ['preferences']
+[Memory] 💾 Saved: ['identity']
+[Memory] 💾 Saved: ['preferences']
+[Memory] 💾 Saved: ['preferences']
+[Memory] 💾 Saved: ['preferences']
+[Brain][Planner] Skipping unknown tool: NOT_A_TOOL
+[Memory] 💾 Saved: ['preferences']
+
+# ---- stderr ----
+........................................................................
+----------------------------------------------------------------------
+Ran 72 tests in 0.443s
+
+OK
+

@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rocketpay — payments that settle in seconds</title>
+  <meta name="description" content="Card, bank and wallet payments with one integration. 1.2% flat, next-day settlement.">
+  <style>
+    :root {
+      --void: #06060a;
+      --panel: #0d0d16;
+      --ink: #f2f0ff;
+      --muted: #918fb0;
+      --violet: #7c5cff;
+      --lime: #d9ff3d;
+      --line: #1e1e2e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--void); color: var(--ink);
+      font: 400 16px/1.6 "Inter", "Segoe UI", system-ui, sans-serif;
+      background-image: radial-gradient(900px 500px at 80% -10%, rgba(124,92,255,.28), transparent 60%),
+                        radial-gradient(700px 400px at 0% 10%, rgba(217,255,61,.10), transparent 55%);
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 2px solid var(--lime); outline-offset: 3px; }
+    .wrap { width: min(1120px, 100% - 2.5rem); margin-inline: auto; }
+
+    header { position: sticky; top: 0; z-index: 9; backdrop-filter: blur(12px); background: rgba(6,6,10,.7); border-bottom: 1px solid var(--line); }
+    .bar { display: flex; align-items: center; gap: 1.2rem; padding: .85rem 0; }
+    .logo { display: flex; align-items: center; gap: .5rem; font-weight: 800; letter-spacing: -.02em; font-size: 1.1rem; text-decoration: none; }
+    .logo b { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 8px; background: linear-gradient(135deg, var(--violet), #b9a6ff); color: #0a0a12; font-size: .9rem; }
+    nav { margin-left: auto; display: flex; gap: 1.6rem; font-size: .9rem; }
+    nav a { text-decoration: none; color: var(--muted); }
+    nav a:hover { color: var(--ink); }
+    .btn { display: inline-flex; align-items: center; gap: .45rem; text-decoration: none; border-radius: 10px; padding: .7rem 1.1rem; font-size: .9rem; font-weight: 600; border: 1px solid transparent; cursor: pointer; }
+    .btn-primary { background: var(--lime); color: #05050a; }
+    .btn-primary:hover { filter: brightness(1.08); }
+    .btn-ghost { border-color: var(--line); color: var(--ink); }
+    .menu { display: none; background: none; color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: .3rem .55rem; }
+
+    .hero { padding: clamp(3rem, 8vw, 6rem) 0 2rem; display: grid; grid-template-columns: 1.1fr .9fr; gap: 3rem; align-items: center; }
+    .pill { display: inline-flex; gap: .5rem; align-items: center; border: 1px solid var(--line); border-radius: 999px; padding: .3rem .75rem; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+    .pill i { width: 6px; height: 6px; border-radius: 50%; background: var(--lime); }
+    h1 { font-size: clamp(2.5rem, 6.2vw, 4.6rem); line-height: .98; letter-spacing: -.04em; margin: 1.2rem 0 1rem; }
+    h1 span { background: linear-gradient(100deg, var(--lime), #a7ff7a); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .lede { color: var(--muted); max-width: 46ch; font-size: 1.05rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: .7rem; margin: 1.8rem 0 1rem; }
+    .fineprint { color: #6f6d8c; font-size: .78rem; }
+
+    .mock { border: 1px solid var(--line); border-radius: 18px; background: linear-gradient(180deg, #101020, #0a0a14); padding: 1rem; box-shadow: 0 40px 80px -50px rgba(124,92,255,.9); }
+    .mock-head { display: flex; align-items: center; justify-content: space-between; font-size: .72rem; color: var(--muted); margin-bottom: .8rem; letter-spacing: .08em; text-transform: uppercase; }
+    .mock-total { font-size: 1.9rem; font-weight: 700; letter-spacing: -.02em; }
+    .mock-total small { font-size: .78rem; color: var(--lime); font-weight: 500; margin-left: .5rem; }
+    .spark { display: flex; align-items: flex-end; gap: 4px; height: 96px; margin: 1rem 0; }
+    .spark span { flex: 1; background: linear-gradient(180deg, var(--violet), rgba(124,92,255,.15)); border-radius: 3px 3px 0 0; }
+    .mock-row { display: flex; justify-content: space-between; font-size: .8rem; padding: .55rem 0; border-top: 1px solid var(--line); color: var(--muted); }
+    .mock-row b { color: var(--ink); font-weight: 600; }
+
+    .logos { border-block: 1px solid var(--line); padding: 1.2rem 0; margin-top: 2rem; }
+    .logos ul { display: flex; flex-wrap: wrap; gap: 2.2rem; list-style: none; margin: 0; padding: 0; color: #6f6d8c; font-weight: 600; letter-spacing: .02em; font-size: .95rem; }
+
+    section.block { padding: clamp(2.8rem, 6vw, 4.5rem) 0; }
+    .head { max-width: 60ch; margin-bottom: 2.2rem; }
+    .head h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); letter-spacing: -.03em; margin: 0 0 .6rem; }
+    .head p { color: var(--muted); margin: 0; }
+
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+    .feature { border: 1px solid var(--line); border-radius: 16px; padding: 1.4rem; background: linear-gradient(180deg, rgba(124,92,255,.07), transparent 60%); }
+    .feature h3 { margin: 0 0 .5rem; font-size: 1.05rem; }
+    .feature p { color: var(--muted); font-size: .88rem; margin: 0; }
+    .feature code { color: var(--lime); font-size: .82rem; }
+    .num { font: 700 .72rem/1 ui-monospace, monospace; color: var(--violet); letter-spacing: .16em; }
+
+    .pricing { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; align-items: start; }
+    .plan { border: 1px solid var(--line); border-radius: 18px; padding: 1.6rem; background: var(--panel); }
+    .plan.hot { border-color: var(--violet); box-shadow: 0 0 0 1px rgba(124,92,255,.4), 0 30px 60px -50px var(--violet); }
+    .plan p.tag { margin: 0; color: var(--muted); font-size: .74rem; letter-spacing: .16em; text-transform: uppercase; }
+    .plan .amount { font-size: 2.1rem; font-weight: 700; letter-spacing: -.03em; margin: .6rem 0 .1rem; }
+    .plan .amount span { font-size: .85rem; color: var(--muted); font-weight: 400; }
+    .plan ul { list-style: none; margin: 1.1rem 0 1.4rem; padding: 0; display: grid; gap: .55rem; font-size: .88rem; color: #c9c6e4; }
+    .plan li::before { content: "→ "; color: var(--lime); }
+    .plan .btn { width: 100%; justify-content: center; }
+
+    details { border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1.2rem; margin-bottom: .7rem; background: rgba(255,255,255,.015); }
+    summary { cursor: pointer; font-weight: 600; }
+    details p { color: var(--muted); margin: .7rem 0 0; }
+
+    .cta { border: 1px solid var(--line); border-radius: 22px; padding: clamp(2rem, 5vw, 3.4rem); background: radial-gradient(600px 240px at 20% 0%, rgba(124,92,255,.35), transparent 70%), var(--panel); display: grid; grid-template-columns: 1.2fr .8fr; gap: 2rem; align-items: center; }
+    .cta h2 { margin: 0 0 .6rem; font-size: clamp(1.7rem, 3.6vw, 2.6rem); letter-spacing: -.03em; }
+    .cta p { color: var(--muted); margin: 0; }
+    .cta form { display: flex; gap: .6rem; flex-wrap: wrap; }
+    .cta input { flex: 1 1 200px; padding: .8rem 1rem; border-radius: 10px; border: 1px solid var(--line); background: #08080f; color: var(--ink); font: inherit; }
+    .cta .msg { flex-basis: 100%; margin: 0; min-height: 1.2rem; font-size: .82rem; color: var(--lime); }
+
+    footer { border-top: 1px solid var(--line); padding: 1.8rem 0 2.4rem; color: #6f6d8c; font-size: .82rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; }
+
+    @media (max-width: 880px) {
+      .hero, .cta { grid-template-columns: 1fr; }
+      nav { display: none; position: absolute; inset: 100% 0 auto; background: #08080f; border-bottom: 1px solid var(--line); flex-direction: column; padding: 1rem 1.25rem; }
+      nav.open { display: flex; }
+      .menu { display: inline-block; margin-left: auto; }
+    }
+    @media (prefers-reduced-motion: reduce) { * { transition-duration: .01ms !important; animation-duration: .01ms !important; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <a class="logo" href="#top"><b>R</b> Rocketpay</a>
+      <button class="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" aria-label="Main">
+        <a href="#product">Product</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-ghost" href="#start">Sign in</a>
+      <a class="btn btn-primary" href="#start">Start free</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="wrap hero">
+      <div>
+        <p class="pill"><i></i> Live · 99.99% uptime this quarter</p>
+        <h1>Take a payment.<br><span>Settle before the kettle boils.</span></h1>
+        <p class="lede">Cards, bank transfers and wallets behind one integration. 1.2% flat, next-day settlement, and a dashboard that tells you exactly where the money is.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#start">Open an account</a>
+          <a class="btn btn-ghost" href="#product">Read the docs</a>
+        </div>
+        <p class="fineprint">No monthly fee · No setup fee · Refunds are free</p>
+      </div>
+      <div class="mock" aria-label="Example dashboard totals">
+        <div class="mock-head"><span>Today</span><span>UTC</span></div>
+        <p class="mock-total">£48,210.75 <small>+18.4%</small></p>
+        <div class="spark" aria-hidden="true">
+          <span style="height:38%"></span><span style="height:52%"></span><span style="height:44%"></span>
+          <span style="height:61%"></span><span style="height:57%"></span><span style="height:72%"></span>
+          <span style="height:66%"></span><span style="height:84%"></span><span style="height:78%"></span>
+          <span style="height:96%"></span>
+        </div>
+        <div class="mock-row"><span>Card payments</span><b>£31,904.10</b></div>
+        <div class="mock-row"><span>Bank transfers</span><b>£12,608.40</b></div>
+        <div class="mock-row"><span>Wallets</span><b>£3,698.25</b></div>
+        <div class="mock-row"><span>Settlement</span><b>Tomorrow, 09:00</b></div>
+      </div>
+    </section>
+
+    <div class="logos">
+      <div class="wrap">
+        <ul aria-label="Customers">
+          <li>NORTHWIND</li><li>Fieldnote</li><li>ARCADE</li><li>Loom &amp; Co</li><li>PARLOUR</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="wrap block" id="product">
+      <div class="head">
+        <h2>Everything you need, nothing you have to assemble.</h2>
+        <p>Built for teams who would rather ship than maintain a payments stack.</p>
+      </div>
+      <div class="features">
+        <article class="feature">
+          <p class="num">01</p>
+          <h3>One API</h3>
+          <p>Create, capture and refund with a single call. <code>POST /payments</code> is the whole integration.</p>
+        </article>
+        <article class="feature">
+          <p class="num">02</p>
+          <h3>Next-day settlement</h3>
+          <p>Money lands the next working day. See the exact fee on every transaction before you charge it.</p>
+        </article>
+        <article class="feature">
+          <p class="num">03</p>
+          <h3>Disputes handled</h3>
+          <p>Evidence templates, deadlines and a human on the case within four hours — included, not an add-on.</p>
+        </article>
+        <article class="feature">
+          <p class="num">04</p>
+          <h3>Reconciliation</h3>
+          <p>Every payout maps to the orders that produced it. Export to CSV or sync it into your ledger.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap block" id="pricing">
+      <div class="head">
+        <h2>Flat pricing. No surprise percentages.</h2>
+        <p>Change plan any month. Fees are per successful payment, never per attempt.</p>
+      </div>
+      <div class="pricing">
+        <article class="plan">
+          <p class="tag">Starter</p>
+          <p class="amount">1.4% <span>/ payment</span></p>
+          <ul><li>Card + wallet payments</li><li>Next-day settlement</li><li>Email support</li></ul>
+          <a class="btn btn-ghost" href="#start">Start free</a>
+        </article>
+        <article class="plan hot">
+          <p class="tag">Growth</p>
+          <p class="amount">1.2% <span>/ payment</span></p>
+          <ul><li>Everything in Starter</li><li>Bank transfers + refunds free</li><li>Dispute handling included</li><li>4-hour support SLA</li></ul>
+          <a class="btn btn-primary" href="#start">Start free</a>
+        </article>
+        <article class="plan">
+          <p class="tag">Scale</p>
+          <p class="amount">0.9% <span>/ payment</span></p>
+          <ul><li>Volume pricing</li><li>Dedicated engineer</li><li>Custom settlement schedule</li></ul>
+          <a class="btn btn-ghost" href="#start">Talk to us</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap block" id="faq">
+      <div class="head"><h2>Reasonable questions</h2></div>
+      <details open>
+        <summary>Is there a monthly fee?</summary>
+        <p>No. You pay a percentage of successful payments only. Failed attempts, refunds and voids cost nothing.</p>
+      </details>
+      <details>
+        <summary>How long does onboarding take?</summary>
+        <p>A UK limited company can be live in about ten minutes. Sole traders usually clear verification the same day.</p>
+      </details>
+      <details>
+        <summary>What about chargebacks?</summary>
+        <p>We handle the evidence pack and the deadline. If a dispute is lost on a transaction we processed correctly, the fee is capped at £15.</p>
+      </details>
+    </section>
+
+    <section class="wrap block" id="start">
+      <div class="cta">
+        <div>
+          <h2>Your first £10k is fee-free.</h2>
+          <p>Open an account today and keep every penny of the first ten thousand in payments.</p>
+        </div>
+        <form id="start-form" novalidate>
+          <label for="work-email" style="position:absolute;left:-9999px">Work email</label>
+          <input id="work-email" type="email" name="email" placeholder="you@company.com" required>
+          <button class="btn btn-primary" type="submit">Start free</button>
+          <p class="msg" id="start-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p>© 2026 Rocketpay Ltd · London</p>
+    <p>Terms · Privacy · Status</p>
+  </footer>
+
+  <script>
+    const menu = document.querySelector('.menu');
+    const nav = document.getElementById('nav');
+    menu?.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      menu.setAttribute('aria-expanded', String(open));
+    });
+
+    const form = document.getElementById('start-form');
+    const msg = document.getElementById('start-msg');
+    form?.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const email = form.email.value.trim();
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+        msg.textContent = 'Please use a valid email so we can send your account link.';
+        return;
+      }
+      msg.textContent = 'Check your inbox — the account link is on its way.';
+      form.reset();
+    });
+  </script>
+</body>
+</html>

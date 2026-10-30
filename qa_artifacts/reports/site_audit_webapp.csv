@@ -1,0 +1,11 @@
+slug,passed,failed_checks,console_errors,page_errors
+01_task_manager,False,visible_content: 127 chars | focus_styles: no :focus rule,0,0
+02_inventory_manager,False,visible_content: 130 chars,0,0
+03_crm,False,index.html missing,0,0
+04_expense_tracker,False,index.html missing,0,0
+05_analytics_dashboard,False,buttons_clickable: 0 buttons,0,0
+06_appointment_booking,False,visible_content: 93 chars | survives_reload: 93 chars after reload,0,0
+07_kanban_board,False,"visible_content: 73 chars | survives_reload: 73 chars after reload | no_horizontal_overflow: {""mobile"": ""1133>375"", ""tablet"": ""1133>768"", ""desktop"": ""1440>1440""}",0,0
+08_notes_app,False,"visible_content: 23 chars | no_js_errors: Cannot set properties of null (setting 'onclick') | buttons_clickable: 0 buttons | no_errors_after_clicks: Cannot set properties of null (setting 'onclick') | survives_reload: 23 chars after reload | no_errors_after_reload: Cannot set properties of null (setting 'onclick'); Cannot set properties of null (setting 'onclick') | keyboard_reachable: 0 focusable elements | tab_focus_visible: focus -> BODY | landmarks: header=False main=False footer=False | no_horizontal_overflow: {""mobile"": ""433>375"", ""tablet"": ""768>768"", ""desktop"": ""1440>1440""}",0,2
+09_quiz_app,False,index.html missing,0,0
+10_document_manager,True,,0,0

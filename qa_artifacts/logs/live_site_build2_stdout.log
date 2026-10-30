@@ -1,0 +1,111 @@
+==============================================================================
+LIVE SITE BUILD — Crown Code background job + progress + Chromium audit
+==============================================================================
+[1] request returned in 7.21s with job=c72646dce9
+    Started: portfolio_lena  (job c72646dce9)
+    I'll plan the page, write it, check it in a real browser and fix what fails. It is running in the background — you can keep talking to me, and ask "how's it going?" at any time for progress.
+    Output: C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\live_build\portfolio_lena
+[2] status: Building portfolio_lena: 6% · planning · Planning the page · 0s elapsed
+[2] status: Building portfolio_lena: 6% · planning · Planning the page · 8s elapsed
+[2] status: Building portfolio_lena: 6% · planning · Planning the page · 16s elapsed
+[2] status: Building portfolio_lena: 6% · planning · Planning the page · 24s elapsed
+[2] status: Building portfolio_lena: 6% · planning · Planning the page · 32s elapsed
+[2] status: Building portfolio_lena: 6% · planning · Planning the page · 40s elapsed
+[2] status: Building portfolio_lena: 6% · planning · Planning the page · 48s elapsed
+[2] status: Building portfolio_lena: 6% · planning · Planning the page · 56s elapsed
+[2] status: Building portfolio_lena: 6% · planning · Planning the page · 1m04s elapsed
+[2] status: Building portfolio_lena: 6% · planning · Planning the page · 1m12s elapsed
+[2] status: Building portfolio_lena: 20% · writing · Writing index.html (attempt 1) · 1m20s elapsed · ~5m20s left
+[2] action=status while running:
+    Building portfolio_lena: 20% · writing · Writing index.html (attempt 1) · 1m20s elapsed · ~5m20s left
+    Recent:
+      17:25:38 Planning structure, copy and acceptance list
+      17:26:57 Lena Fischer · 4 sections (cards, text, faq, contact) · accent #ff99cc
+[2] status: Building portfolio_lena: 20% · writing · Writing index.html — 0% of the file · 1m28s elapsed · ~5m46s left
+[2] status: Building portfolio_lena: 21% · writing · Writing index.html — 1% of the file · 1m36s elapsed · ~6m11s left
+[2] status: Building portfolio_lena: 21% · writing · Writing index.html — 2% of the file · 1m44s elapsed · ~6m35s left
+[2] status: Building portfolio_lena: 21% · writing · Writing index.html — 3% of the file · 1m52s elapsed · ~6m56s left
+[2] status: Building portfolio_lena: 22% · writing · Writing index.html — 4% of the file · 2m00s elapsed · ~7m15s left
+[2] status: Building portfolio_lena: 22% · writing · Writing index.html — 5% of the file · 2m08s elapsed · ~7m33s left
+[2] status: Building portfolio_lena: 22% · writing · Writing index.html — 6% of the file · 2m16s elapsed · ~7m50s left
+[2] status: Building portfolio_lena: 23% · writing · Writing index.html — 8% of the file · 2m24s elapsed · ~8m07s left
+[2] status: Building portfolio_lena: 23% · writing · Writing index.html — 9% of the file · 2m32s elapsed · ~8m22s left
+[2] status: Building portfolio_lena: 24% · writing · Writing index.html — 10% of the file · 2m40s elapsed · ~8m38s left
+[2] status: Building portfolio_lena: 24% · writing · Writing index.html — 11% of the file · 2m48s elapsed · ~8m54s left
+[2] status: Building portfolio_lena: 24% · writing · Writing index.html — 12% of the file · 2m56s elapsed · ~9m10s left
+[2] status: Building portfolio_lena: 25% · writing · Writing index.html — 12% of the file · 3m04s elapsed · ~9m26s left
+[2] status: Building portfolio_lena: 25% · writing · Writing index.html — 13% of the file · 3m12s elapsed · ~9m39s left
+[2] status: Building portfolio_lena: 25% · writing · Writing index.html — 14% of the file · 3m20s elapsed · ~9m52s left
+[2] brain progress answer: Building portfolio_lena: 25% · writing · Writing index.html — 14% of the file · 3m20s elapsed · ~9m52s left
+[2] status: Building portfolio_lena: 26% · writing · Writing index.html — 15% of the file · 3m28s elapsed · ~10m05s left
+[2] status: Building portfolio_lena: 26% · writing · Writing index.html — 16% of the file · 3m36s elapsed · ~10m18s left
+[2] status: Building portfolio_lena: 26% · writing · Writing index.html — 17% of the file · 3m44s elapsed · ~10m31s left
+[2] status: Building portfolio_lena: 27% · writing · Writing index.html — 18% of the file · 3m52s elapsed · ~10m43s left
+[2] status: Building portfolio_lena: 27% · writing · Writing index.html — 19% of the file · 4m00s elapsed · ~10m53s left
+[2] status: Building portfolio_lena: 27% · writing · Writing index.html — 20% of the file · 4m08s elapsed · ~11m02s left
+[2] status: Building portfolio_lena: 28% · writing · Writing index.html — 21% of the file · 4m16s elapsed · ~11m13s left
+[2] status: Building portfolio_lena: 28% · writing · Writing index.html — 22% of the file · 4m24s elapsed · ~11m23s left
+[2] status: Building portfolio_lena: 28% · writing · Writing index.html — 23% of the file · 4m32s elapsed · ~11m34s left
+[2] status: Building portfolio_lena: 28% · writing · Writing index.html — 24% of the file · 4m40s elapsed · ~11m43s left
+[2] status: Building portfolio_lena: 29% · writing · Writing index.html — 25% of the file · 4m48s elapsed · ~11m53s left
+[2] status: Building portfolio_lena: 29% · writing · Writing index.html — 26% of the file · 4m56s elapsed · ~12m01s left
+[2] status: Building portfolio_lena: 29% · writing · Writing index.html — 26% of the file · 5m04s elapsed · ~12m10s left
+[2] status: Building portfolio_lena: 30% · writing · Writing index.html — 27% of the file · 5m12s elapsed · ~12m19s left
+[2] status: Building portfolio_lena: 30% · writing · Writing index.html — 28% of the file · 5m20s elapsed · ~12m28s left
+[2] status: Building portfolio_lena: 30% · writing · Writing index.html — 29% of the file · 5m28s elapsed · ~12m35s left
+[2] status: Building portfolio_lena: 31% · writing · Writing index.html — 30% of the file · 5m36s elapsed · ~12m40s left
+[2] status: Building portfolio_lena: 31% · writing · Writing index.html — 31% of the file · 5m44s elapsed · ~12m49s left
+[2] status: Building portfolio_lena: 31% · writing · Writing index.html — 31% of the file · 5m52s elapsed · ~12m59s left
+[2] status: Building portfolio_lena: 31% · writing · Writing index.html — 32% of the file · 6m00s elapsed · ~13m06s left
+[2] status: Building portfolio_lena: 32% · writing · Writing index.html — 33% of the file · 6m08s elapsed · ~13m10s left
+[2] status: Building portfolio_lena: 32% · writing · Writing index.html — 34% of the file · 6m16s elapsed · ~13m15s left
+[2] status: Building portfolio_lena: 32% · writing · Writing index.html — 35% of the file · 6m24s elapsed · ~13m19s left
+[2] status: Building portfolio_lena: 33% · writing · Writing index.html — 36% of the file · 6m32s elapsed · ~13m23s left
+[2] status: Building portfolio_lena: 33% · writing · Writing index.html — 37% of the file · 6m40s elapsed · ~13m26s left
+[2] status: Building portfolio_lena: 33% · writing · Writing index.html — 38% of the file · 6m48s elapsed · ~13m30s left
+[2] status: Building portfolio_lena: 34% · writing · Writing index.html — 39% of the file · 6m56s elapsed · ~13m35s left
+[2] status: Building portfolio_lena: 34% · writing · Writing index.html — 40% of the file · 7m04s elapsed · ~13m36s left
+[2] status: Building portfolio_lena: 34% · writing · Writing index.html — 41% of the file · 7m12s elapsed · ~13m42s left
+[2] status: Building portfolio_lena: 35% · writing · Writing index.html — 42% of the file · 7m20s elapsed · ~13m47s left
+[2] status: Building portfolio_lena: 35% · writing · Writing index.html — 42% of the file · 7m28s elapsed · ~13m51s left
+[2] status: Building portfolio_lena: 35% · writing · Writing index.html — 44% of the file · 7m36s elapsed · ~13m52s left
+[2] status: Building portfolio_lena: 36% · writing · Writing index.html — 44% of the file · 7m44s elapsed · ~13m55s left
+[2] status: Building portfolio_lena: 36% · writing · Writing index.html — 45% of the file · 7m52s elapsed · ~13m57s left
+[2] status: Building portfolio_lena: 36% · writing · Writing index.html — 46% of the file · 8m00s elapsed · ~14m00s left
+[2] status: Building portfolio_lena: 37% · writing · Writing index.html — 47% of the file · 8m08s elapsed · ~14m02s left
+[2] status: Building portfolio_lena: 37% · writing · Writing index.html — 48% of the file · 8m16s elapsed · ~14m05s left
+[2] status: Building portfolio_lena: 37% · writing · Writing index.html — 49% of the file · 8m24s elapsed · ~14m06s left
+[2] status: Building portfolio_lena: 38% · writing · Writing index.html — 50% of the file · 8m32s elapsed · ~14m09s left
+[2] status: Building portfolio_lena: 38% · writing · Writing index.html — 51% of the file · 8m40s elapsed · ~14m11s left
+[2] status: Building portfolio_lena: 38% · writing · Writing index.html — 52% of the file · 8m48s elapsed · ~14m13s left
+[2] status: Building portfolio_lena: 39% · writing · Writing index.html — 52% of the file · 8m56s elapsed · ~14m15s left
+[2] status: Building portfolio_lena: 39% · writing · Writing index.html — 53% of the file · 9m04s elapsed · ~14m17s left
+[2] status: Building portfolio_lena: 39% · writing · Writing index.html — 54% of the file · 9m12s elapsed · ~14m19s left
+[2] status: Building portfolio_lena: 39% · writing · Writing index.html — 55% of the file · 9m20s elapsed · ~14m21s left
+[2] status: Building portfolio_lena: 40% · writing · Writing index.html — 56% of the file · 9m28s elapsed · ~14m22s left
+[2] status: Building portfolio_lena: 40% · writing · Writing index.html — 57% of the file · 9m36s elapsed · ~14m19s left
+[2] status: Building portfolio_lena: 41% · writing · Writing index.html — 58% of the file · 9m44s elapsed · ~14m16s left
+[2] status: Building portfolio_lena: 41% · writing · Writing index.html — 59% of the file · 9m52s elapsed · ~14m15s left
+[2] status: Building portfolio_lena: 41% · writing · Writing index.html — 60% of the file · 10m00s elapsed · ~14m13s left
+[2] status: Building portfolio_lena: 42% · writing · Writing index.html — 61% of the file · 10m08s elapsed · ~14m13s left
+[2] status: Building portfolio_lena: 42% · writing · Writing index.html — 62% of the file · 10m16s elapsed · ~14m14s left
+[2] status: Building portfolio_lena: 42% · writing · Writing index.html — 63% of the file · 10m24s elapsed · ~14m14s left
+[2] status: Building portfolio_lena: 43% · writing · Writing index.html — 64% of the file · 10m32s elapsed · ~14m14s left
+[2] status: Building portfolio_lena: 43% · writing · Writing index.html — 65% of the file · 10m40s elapsed · ~14m14s left
+[2] status: Building portfolio_lena: 43% · writing · Writing index.html — 66% of the file · 10m48s elapsed · ~14m14s left
+[2] status: Building portfolio_lena: 43% · writing · Writing index.html — 66% of the file · 10m56s elapsed · ~14m14s left
+[2] status: Building portfolio_lena: 44% · writing · Writing index.html — 67% of the file · 11m04s elapsed · ~14m13s left
+[2] status: Building portfolio_lena: 44% · writing · Writing index.html — 68% of the file · 11m12s elapsed · ~14m13s left
+[2] status: Building portfolio_lena: 44% · writing · Writing index.html — 69% of the file · 11m20s elapsed · ~14m13s left
+[2] status: Building portfolio_lena: 45% · writing · Writing index.html — 70% of the file · 11m28s elapsed · ~14m10s left
+[2] status: Building portfolio_lena: 45% · writing · Writing index.html — 71% of the file · 11m36s elapsed · ~14m06s left
+[2] status: Building portfolio_lena: 46% · writing · Writing index.html — 72% of the file · 11m44s elapsed · ~14m01s left
+[2] status: Building portfolio_lena: 46% · writing · Writing index.html — 73% of the file · 11m52s elapsed · ~14m01s left
+
+[3] job status: done  bytes=20248
+    checks: PASS
+    browser: ok []
+    phases seen: ['done', 'planning', 'verifying', 'writing']
+    model used: qwen3:8b
+
+RESULT: PASS (report: qa_artifacts/reports/live_site_build.json)

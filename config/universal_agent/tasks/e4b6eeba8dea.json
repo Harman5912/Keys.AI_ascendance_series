@@ -1,0 +1,171 @@
+{
+  "id": "e4b6eeba8dea",
+  "request": "Build a customer churn report for a small electrical contractor with CSV export (bid #5482)",
+  "created_at": "2026-10-27 11:10:00",
+  "updated_at": "2026-10-27 11:10:00",
+  "status": "FAILED",
+  "intent": "data",
+  "workspace": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-customer-churn-report-for-a-sm-e4b6eeba8dea",
+  "questions": [
+    {
+      "slot": "input_file",
+      "question": "Which CSV or Excel file should I analyse?",
+      "hint": "full path to the file",
+      "default": "",
+      "options": [],
+      "required": true,
+      "why": ""
+    },
+    {
+      "slot": "focus",
+      "question": "What should the analysis answer?",
+      "hint": "",
+      "default": "Summarise the dataset and report its key numbers",
+      "options": [],
+      "required": false,
+      "why": ""
+    }
+  ],
+  "answers": {
+    "focus": "Summarise the dataset and report its key numbers",
+    "depth": "quick",
+    "input_file": "full path to the file"
+  },
+  "assumptions": [],
+  "brief": {
+    "goal": "Build a customer churn report for a small electrical contractor with CSV export (bid #5482)",
+    "intent": "data",
+    "answers": {
+      "focus": "Summarise the dataset and report its key numbers",
+      "depth": "quick",
+      "input_file": "full path to the file"
+    },
+    "deliverables": [
+      "An analysis summary",
+      "A workbook or chart when requested"
+    ],
+    "acceptance_criteria": [
+      "The dataset was read and its shape reported",
+      "Key aggregates are computed from the rows, not invented",
+      "Any output workbook reopens successfully",
+      "Data limitations (missing values, small sample) are stated"
+    ],
+    "assumptions": [],
+    "constraints": [
+      "Work only inside the task workspace",
+      "Do not delete or overwrite user files without approval",
+      "Never claim success for an unverified step"
+    ]
+  },
+  "plan": {
+    "steps": [
+      {
+        "id": "s1",
+        "worker": "data",
+        "title": "Read, analyse and summarise the dataset",
+        "params": {
+          "input_file": "full path to the file",
+          "focus": "Summarise the dataset and report its key numbers"
+        },
+        "status": "running",
+        "detail": "",
+        "requires_approval": false,
+        "started_at": "2026-10-27 11:10:00",
+        "ended_at": "",
+        "error": "",
+        "attempts": 1
+      }
+    ],
+    "deliverables": [
+      "An analysis summary",
+      "A workbook or chart when requested"
+    ],
+    "acceptance_criteria": [
+      "The dataset was read and its shape reported",
+      "Key aggregates are computed from the rows, not invented",
+      "Any output workbook reopens successfully",
+      "Data limitations (missing values, small sample) are stated"
+    ],
+    "source": "deterministic",
+    "note": "",
+    "created_at": "2026-10-27 11:10:00"
+  },
+  "current_step": 0,
+  "artifacts": [],
+  "evidence": [],
+  "events": [
+    {
+      "ts": "2026-10-27 11:10:00",
+      "type": "task_created",
+      "text": "data task created in 20261027-build-a-customer-churn-report-for-a-sm-e4b6eeba8dea"
+    },
+    {
+      "ts": "2026-10-27 11:10:00",
+      "type": "status",
+      "text": "INTAKE → WAITING_FOR_USER (missing requirements)"
+    },
+    {
+      "ts": "2026-10-27 11:10:00",
+      "type": "requirements_needed",
+      "text": "1 question(s) awaiting an answer"
+    },
+    {
+      "ts": "2026-10-27 11:10:00",
+      "type": "answers_received",
+      "text": "1 answer(s) recorded"
+    },
+    {
+      "ts": "2026-10-27 11:10:00",
+      "type": "status",
+      "text": "WAITING_FOR_USER → READY (requirements complete)"
+    },
+    {
+      "ts": "2026-10-27 11:10:00",
+      "type": "status",
+      "text": "READY → PLANNING (building the plan)"
+    },
+    {
+      "ts": "2026-10-27 11:10:00",
+      "type": "plan_created",
+      "text": "1 step(s), source: deterministic"
+    },
+    {
+      "ts": "2026-10-27 11:10:00",
+      "type": "status",
+      "text": "PLANNING → READY (plan ready)"
+    },
+    {
+      "ts": "2026-10-27 11:10:00",
+      "type": "status",
+      "text": "READY → RUNNING"
+    },
+    {
+      "ts": "2026-10-27 11:10:00",
+      "type": "step_started",
+      "text": "Starting: Read, analyse and summarise the dataset",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:10:00",
+      "type": "status",
+      "text": "RUNNING → FAILED (error)"
+    },
+    {
+      "ts": "2026-10-27 11:10:00",
+      "type": "task_failed",
+      "text": "File not found: full path to the file"
+    }
+  ],
+  "approval": null,
+  "error": "File not found: full path to the file",
+  "warnings": [],
+  "attempts": {},
+  "result": {},
+  "logs": [
+    {
+      "ts": "11:10:00",
+      "text": "Starting: Read, analyse and summarise the dataset",
+      "step": "s1"
+    }
+  ]
+}

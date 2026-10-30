@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Newsroom Analytics</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <p class="eyebrow">Dashboard</p>
+      <h1>Newsroom Analytics</h1>
+    </div>
+    <div class="controls">
+      <label for="range">Range</label>
+      <select id="range">
+        <option value="7d">Last 7 days</option>
+        <option value="30d" selected>Last 30 days</option>
+        <option value="90d">Last 90 days</option>
+        <option value="all">All time</option>
+      </select>
+      <button id="refresh" type="button">Refresh</button>
+    </div>
+  </header>
+
+  <p id="banner" class="banner" role="status" aria-live="polite" hidden></p>
+
+  <main>
+    <section id="kpis" class="kpis" aria-label="Key figures"></section>
+
+    <section class="panels">
+      <article class="panel">
+        <header class="panel-head">
+          <h2>Reads per day</h2>
+          <span class="unit">Reads</span>
+        </header>
+        <div id="line" class="chart"></div>
+      </article>
+      <article class="panel">
+        <header class="panel-head">
+          <h2>By category</h2>
+          <span class="unit">Reads</span>
+        </header>
+        <div id="bars" class="bars"></div>
+      </article>
+    </section>
+
+    <section class="panel">
+      <header class="panel-head"><h2>Status</h2></header>
+      <div id="status" class="status"></div>
+    </section>
+
+    <section class="panel">
+      <header class="panel-head">
+        <h2>Latest rows</h2>
+        <span class="unit">50 most recent</span>
+      </header>
+      <div class="table-wrap">
+        <table id="rows">
+          <thead>
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Label</th>
+              <th scope="col">Category</th>
+              <th scope="col" class="num">Reads</th>
+              <th scope="col" class="num">Reads</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p id="empty" class="empty" hidden>No rows yet. Run <code>python seed.py</code> to add the sample data.</p>
+    </section>
+  </main>
+
+  <footer class="foot">Sample data seeded by seed.py — illustrative, not a live system.</footer>
+
+  <script>window.APP = {{ config | tojson }};</script>
+  <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+</body>
+</html>

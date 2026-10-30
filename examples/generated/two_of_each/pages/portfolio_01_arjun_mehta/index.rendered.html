@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Crafting efficient and scalable systems for web applications.">
+<meta name="generator" content="Crown Code Studio — Brutalist">
+<title>Arjun Mehta - Backend Engineer Portfolio</title>
+<style>
+/* functional foundation — identical in every studio, aesthetics are not */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;max-width:100%;overflow-x:hidden}
+img,svg,video,canvas{max-width:100%;height:auto;display:block}
+a{color:inherit}
+button,input,select,textarea{font:inherit}
+:focus-visible{outline:3px solid var(--crown-focus,#ffd166);outline-offset:3px}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--crown-focus,#ffd166);outline-offset:3px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:1rem;top:1rem;z-index:99;padding:.6rem 1rem;border-radius:6px;background:#111;color:#fff}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.is-in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .reveal{opacity:1;transform:none}
+}
+
+
+:root{--acid:#e8ff00;--ink:#0a0a0a;--paper:#f5f5f0;--hot:#ff3b00;--line:#0a0a0a;
+--muted:#3d3d3a;--crown-focus:#ff3b00;
+--display:"Arial Black","Helvetica Neue",Impact,sans-serif;--body:Arial,Helvetica,sans-serif;
+--mono:"Courier New",Courier,monospace}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.5 var(--body)}
+.wrap{width:min(1200px,100% - 2.5rem);margin-inline:auto}
+.topbar{background:var(--acid);border-bottom:3px solid var(--line);position:sticky;top:0;z-index:30}
+.bar{display:flex;align-items:center;gap:1rem;padding:.8rem 0}
+.brand{font-family:var(--display);font-size:1.2rem;letter-spacing:-.03em;text-decoration:none;
+ text-transform:uppercase;display:flex;align-items:center;gap:.5rem}
+.brand b{display:inline-block;background:var(--ink);color:var(--acid);padding:.15rem .4rem;
+ transform:rotate(-3deg)}
+nav{margin-inline-start:auto}
+nav ul{display:flex;gap:1.2rem;list-style:none;margin:0;padding:0}
+nav a{font:700 .78rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;
+ padding:.3rem 0;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--hot);color:var(--hot)}
+.nav-toggle{display:none;background:var(--ink);color:var(--acid);border:0;padding:.5rem .8rem;
+ font:700 .8rem var(--mono);cursor:pointer}
+.marquee{background:var(--ink);color:var(--acid);overflow:hidden;border-bottom:3px solid var(--line)}
+.marquee div{display:flex;gap:2rem;white-space:nowrap;padding:.5rem 0;
+ font:700 .74rem var(--mono);letter-spacing:.14em;text-transform:uppercase;
+ animation:slide 22s linear infinite;width:max-content}
+.marquee span::before{content:"✳";margin-right:2rem;color:var(--hot)}
+@keyframes slide{to{transform:translateX(-50%)}}
+.hero{padding:3.5rem 0 3rem;position:relative}
+.kicker{display:inline-block;border:2px solid var(--line);padding:.3rem .6rem;font:700 .7rem var(--mono);
+ letter-spacing:.12em;text-transform:uppercase;background:#fff;transform:rotate(-1deg)}
+h1{font-family:var(--display);font-size:clamp(2.7rem,9vw,7.2rem);line-height:.9;letter-spacing:-.045em;
+ text-transform:uppercase;margin:1.2rem 0 1.4rem;max-width:16ch}
+h1 mark{background:var(--hot);color:#fff;padding:0 .15em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.tagline{font-size:1.1rem;max-width:52ch;border-left:5px solid var(--ink);padding-left:1rem;margin:0 0 2rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{display:inline-block;font:700 .82rem var(--mono);letter-spacing:.08em;text-transform:uppercase;
+ padding:.9rem 1.2rem;border:3px solid var(--line);background:#fff;color:var(--ink);text-decoration:none;
+ box-shadow:6px 6px 0 var(--ink);transition:transform .12s,box-shadow .12s;cursor:pointer}
+.btn:hover{transform:translate(3px,3px);box-shadow:3px 3px 0 var(--ink)}
+.btn-primary{background:var(--acid)}
+.btn-ghost{background:var(--paper)}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:0;margin-top:3rem;
+ border:3px solid var(--line);background:#fff}
+.metric{padding:1.2rem;border-right:3px solid var(--line)}
+.metric:last-child{border-right:0}
+.metric strong{display:block;font-family:var(--display);font-size:2.2rem;line-height:1}
+.metric span{font:700 .68rem var(--mono);letter-spacing:.1em;text-transform:uppercase;background:var(--acid);
+ display:inline-block;margin-top:.4rem;padding:.1rem .3rem}
+.section{padding:3.5rem 0;border-top:3px solid var(--line)}
+.sec-head{display:grid;grid-template-columns:1fr auto;align-items:end;gap:1rem;margin-bottom:1.5rem}
+.eyebrow{font:700 .7rem var(--mono);letter-spacing:.14em;text-transform:uppercase;background:var(--ink);
+ color:var(--acid);display:inline-block;padding:.25rem .5rem;margin:0 0 .7rem}
+h2{font-family:var(--display);font-size:clamp(1.8rem,5vw,3.6rem);line-height:.95;letter-spacing:-.03em;
+ text-transform:uppercase;margin:0}
+h3{font-family:var(--display);font-size:1.05rem;text-transform:uppercase;letter-spacing:-.01em;margin:0 0 .4rem}
+.lead{font-size:1rem;max-width:55ch;margin:1rem 0 0}
+.index-list{border-top:3px solid var(--line)}
+.index-row{display:grid;grid-template-columns:3.5rem 1.3fr 1fr auto;gap:1.2rem;align-items:baseline;
+ border-bottom:3px solid var(--line);padding:1.2rem .4rem;text-decoration:none;transition:background .15s}
+.index-row:hover{background:var(--acid)}
+.index-row .num{font:700 .8rem var(--mono);color:var(--hot)}
+.index-row strong{font-family:var(--display);font-size:1.25rem;text-transform:uppercase;line-height:1.1}
+.index-row p{margin:0;font-size:.9rem;color:var(--muted)}
+.index-row .arrow{font-size:1.4rem;font-weight:700}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.2rem}
+.card{border:3px solid var(--line);background:#fff;padding:1.3rem;box-shadow:6px 6px 0 var(--ink)}
+.card:hover{background:#fffef2}
+.card p{font-size:.92rem;margin:.4rem 0 0;color:var(--muted)}
+.meta{font:700 .68rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--hot);margin:0}
+.tags{display:flex;gap:.35rem;flex-wrap:wrap;list-style:none;padding:0;margin:.8rem 0 0}
+.tags li{font:700 .64rem var(--mono);text-transform:uppercase;border:2px solid var(--line);padding:.1rem .35rem}
+.rows{display:grid;gap:0;border-top:3px solid var(--line)}
+.row{display:grid;grid-template-columns:3rem 1fr 1.2fr;gap:1rem;padding:1.1rem .2rem;border-bottom:3px solid var(--line)}
+.row b{font:700 .8rem var(--mono);color:var(--hot)}
+.row strong{font-family:var(--display);text-transform:uppercase;font-size:1.05rem}
+.row p{margin:0;color:var(--muted);font-size:.9rem}
+.quote-band{background:var(--ink);color:var(--acid);padding:3.5rem 0;border-block:3px solid var(--line)}
+.pullquote{font-family:var(--display);font-size:clamp(1.7rem,4.6vw,3.6rem);line-height:1;text-transform:uppercase;
+ letter-spacing:-.03em;margin:0;max-width:20ch}
+.pullquote cite{display:block;font:700 .72rem var(--mono);letter-spacing:.12em;margin-top:1.3rem;color:#fff}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.split h3{font-size:1.2rem}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;padding:0;margin:1rem 0 0}
+.chip{border:2px solid var(--line);background:#fff;padding:.35rem .7rem;font:700 .72rem var(--mono);
+ text-transform:uppercase}
+.faq details{border-bottom:3px solid var(--line);padding:1.1rem 0}
+.faq summary{cursor:pointer;font-family:var(--display);text-transform:uppercase;font-size:1.05rem;
+ list-style:none;display:flex;justify-content:space-between;gap:1rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--hot)}
+.faq details[open] summary::after{content:"−"}
+.faq p{max-width:70ch;margin:.7rem 0 0}
+.contact-form{display:grid;gap:1rem;max-width:620px;border:3px solid var(--line);background:#fff;
+ padding:1.4rem;box-shadow:8px 8px 0 var(--ink)}
+.contact-form label{display:grid;gap:.3rem;font:700 .7rem var(--mono);letter-spacing:.1em;text-transform:uppercase}
+.contact-form input,.contact-form textarea,.contact-form select{border:3px solid var(--line);
+ padding:.65rem .7rem;background:var(--paper);width:100%}
+.contact-form textarea{min-height:7rem;resize:vertical}
+.form-status{min-height:1.4rem;font:700 .78rem var(--mono);text-transform:uppercase}
+.site-footer{border-top:3px solid var(--line);padding:1.5rem 0;display:flex;flex-wrap:wrap;gap:1rem;
+ justify-content:space-between;font:700 .7rem var(--mono);text-transform:uppercase;letter-spacing:.06em}
+@media (max-width:820px){
+ nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--acid);
+ border-bottom:3px solid var(--line);padding:1rem}
+ nav.is-open{display:block}
+ nav ul{flex-direction:column;gap:.8rem}
+ .nav-toggle{display:block}
+ .index-row{grid-template-columns:2.6rem 1fr}
+ .index-row p{grid-column:2}
+ .index-row .arrow{display:none}
+ .row{grid-template-columns:2.4rem 1fr}
+ .row p{grid-column:2}
+ .split{grid-template-columns:1fr}
+ .metrics{grid-template-columns:1fr 1fr}
+ .metric{border-bottom:3px solid var(--line)}
+}
+</style>
+<style>/* crown-base: page-level correctness rules */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;max-width:100%;overflow-x:hidden}
+img,svg,video,canvas{max-width:100%;height:auto}
+:focus-visible{outline:3px solid var(--crown-focus,#ffd166);outline-offset:3px;border-radius:2px}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--crown-focus,#ffd166);outline-offset:3px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style></head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <div class="wrap bar">
+    <a class="brand" href="#main"><b>SL</b>Arjun Mehta</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Main"><ul><li><a href="#about">About Arjun Mehta</a></li><li><a href="#work">Selected Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact Me</a></li></ul></nav>
+  </div>
+  <div class="marquee" aria-hidden="true"><div>
+    <span>About Arjun Mehta · Selected Projects · Skills · Contact Me</span><span>About Arjun Mehta · Selected Projects · Skills · Contact Me</span><span>About Arjun Mehta · Selected Projects · Skills · Contact Me</span><span>About Arjun Mehta · Selected Projects · Skills · Contact Me</span>
+  </div></div>
+</header>
+<main id="main">
+  <section class="hero"><div class="wrap">
+    <span class="kicker">Backend Engineer in Pune</span>
+    <h1>Building robust backend solutions</h1>
+    <p class="tagline">Crafting efficient and scalable systems for web applications.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#about">View Projects</a>
+      <a class="btn btn-ghost" href="#contact">Contact Me</a>
+    </div>
+    <div class="metrics" id="stats"><div class="metric"><strong data-count="6+">6+</strong><span>years shipping</span></div></div>
+  </div></section>
+  <section class="section" id="about"><div class="wrap"><div class="sec-head"><p class="eyebrow">text</p><h2>About Arjun Mehta</h2><p class="lead">A seasoned backend engineer with over 6 years of experience.</p></div><p>6+ years in backend development, specializing in Node.js and React.</p><p>Proficient in JavaScript, TypeScript, and RESTful APIs.</p><p>Developed a real-time chat application using Socket.io and MongoDB.</p></div></section><section class="section" id="work"><div class="wrap"><div class="sec-head"><p class="eyebrow">gallery</p><h2>Selected Projects</h2><p class="lead">A selection of my recent projects that showcase my expertise.</p></div><div class="cards"><article class="card"><p class="meta"></p><h3>Real-time Chat Application</h3><p>Developed a real-time chat application using Socket.io and MongoDB.</p></article><article class="card"><p class="meta"></p><h3>E-commerce Website</h3><p>Built an e-commerce website with React, Node.js, and MongoDB.</p></article><article class="card"><p class="meta"></p><h3>API Gateway</h3><p>Designed and implemented an API gateway using AWS Lambda and API Gateway.</p></article><article class="card"><p class="meta"></p><h3>Data Analysis Tool</h3><p>Created a data analysis tool using Python and Flask.</p></article></div></div></section><section class="section" id="skills"><div class="wrap"><div class="sec-head"><p class="eyebrow">cards</p><h2>Skills</h2><p class="lead">Key skills that I bring to the table.</p></div><div class="cards"><article class="card"><p class="meta"></p><h3>Backend Development</h3><p>Proficient in Node.js, Express, and TypeScript.</p></article><article class="card"><p class="meta"></p><h3>Frontend Development</h3><p>Skilled in React, Angular, and Vue.js.</p></article><article class="card"><p class="meta"></p><h3>Database Management</h3><p>Experience with MongoDB, PostgreSQL, and MySQL.</p></article></div></div></section><section class="section" id="faq"><div class="wrap"><div class="sec-head"><p class="eyebrow">faq</p><h2>Frequently Asked Questions</h2></div><div class="faq "><details><summary>What is your area of expertise?</summary><p>I specialize in backend development with Node.js and React.</p></details><details><summary>How long have you been working as a backend engineer?</summary><p>Over 6 years.</p></details><details><summary>Can you provide examples of your previous projects?</summary><p>Yes, I can share details about my recent projects on my portfolio page.</p></details></div></div></section><section class="section" id="contact"><div class="wrap"><div class="sec-head"><p class="eyebrow">text</p><h2>Contact Me</h2><p class="lead">Ready to collaborate on a project? Let&#x27;s connect!</p></div><p>arjun@example.com</p><p>+91 9876543210</p><p>https://www.linkedin.com/in/arjun-mehta/</p></div></section><section class="section" id="contact"><div class="wrap"><div class="sec-head"><p class="eyebrow">contact</p><h2>Get in touch</h2><p class="lead">Send a message with what you need and the deadline you are working towards.</p></div><div class="split"><div><h3>Get in touch</h3><p>Send a message with what you need and the deadline you are working towards.</p></div><form class="contact-form " data-contact novalidate><label for="f-name">Name<input id="f-name" name="name" type="text" required placeholder="Your name"></label><label for="f-email">Email<input id="f-email" name="email" type="email" required placeholder="you@example.com"></label><label for="f-message">Message<textarea id="f-message" name="message" required placeholder="What are you building?"></textarea></label><button type="submit" class="btn btn-primary">Send message</button><p class="form-status" data-form-status role="status" aria-live="polite"></p><p class="hero-note">We reply within two working days.</p></form></div></div></section>
+</main>
+<footer class="site-footer wrap"><p>© 2023 Arjun Mehta. All rights reserved.</p><p><a href="#main">BACK TO TOP ↑</a></p></footer>
+
+<script>
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var nav = document.getElementById('site-nav');
+  document.querySelectorAll('.nav-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      if (!nav) return;
+      var open = nav.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+  if (nav) nav.addEventListener('click', function (e) {
+    if (e.target.closest('a')) {
+      nav.classList.remove('is-open');
+      var t = document.querySelector('.nav-toggle');
+      if (t) t.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // counters
+  document.querySelectorAll('[data-count]').forEach(function (el) {
+    var raw = el.getAttribute('data-count') || el.textContent || '';
+    var m = raw.match(/-?[\d.,]+/);
+    if (!m) return;
+    var target = parseFloat(m[0].replace(/,/g, ''));
+    if (!isFinite(target)) return;
+    var prefix = raw.slice(0, m.index), suffix = raw.slice(m.index + m[0].length);
+    var decimals = (m[0].split('.')[1] || '').length;
+    if (reduce) return;
+    var t0 = performance.now(), dur = 1100;
+    function frame(t) {
+      var p = Math.min(1, (t - t0) / dur);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var val = (target * eased).toFixed(decimals);
+      el.textContent = prefix + Number(val).toLocaleString(undefined,
+        {minimumFractionDigits: decimals, maximumFractionDigits: decimals}) + suffix;
+      if (p < 1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  });
+
+  // reveal
+  var reveals = document.querySelectorAll('[data-reveal], .section > *, .card, .product, .still, .story');
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) { entry.target.classList.add('is-in'); io.unobserve(entry.target); }
+      });
+    }, { rootMargin: '0px 0px -6% 0px' });
+    reveals.forEach(function (el, i) {
+      el.classList.add('reveal');
+      el.style.transitionDelay = Math.min(i % 6, 5) * 45 + 'ms';
+      io.observe(el);
+    });
+  } else {
+    reveals.forEach(function (el) { el.classList.add('is-in'); });
+  }
+
+  // filters
+  document.querySelectorAll('.filters').forEach(function (group) {
+    group.querySelectorAll('.filter').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        group.querySelectorAll('.filter').forEach(function (b) {
+          b.classList.toggle('is-active', b === btn);
+        });
+        var want = btn.getAttribute('data-filter');
+        document.querySelectorAll('[data-tags]').forEach(function (card) {
+          var tags = (card.getAttribute('data-tags') || '').split(/\s+/);
+          card.hidden = want !== 'all' && tags.indexOf(want) === -1;
+        });
+      });
+    });
+  });
+
+  // contact forms
+  document.querySelectorAll('form[data-contact]').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var status = form.querySelector('[data-form-status]');
+      var bad = null;
+      form.querySelectorAll('input, textarea, select').forEach(function (field) {
+        if (field.hasAttribute('required') && !String(field.value).trim()) bad = field;
+        if (!bad && field.type === 'email' &&
+            !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(String(field.value).trim())) bad = field;
+      });
+      if (bad) {
+        if (status) status.textContent = 'Please complete the highlighted field' +
+          (bad.type === 'email' ? ' with a valid email address.' : '.');
+        bad.focus();
+        return;
+      }
+      var nameField = form.querySelector('input[name="name"]');
+      var who = nameField ? String(nameField.value).trim().split(/\s+/)[0] : '';
+      if (status) status.textContent = (who ? 'Thanks ' + who + ' — ' : 'Thanks — ') +
+        'your message is queued. A person will reply, not an autoresponder.';
+      form.reset();
+    });
+  });
+
+  // drag a filmstrip
+  document.querySelectorAll('[data-drag]').forEach(function (strip) {
+    var down = false, startX = 0, startLeft = 0;
+    strip.addEventListener('pointerdown', function (e) {
+      down = true; startX = e.clientX; startLeft = strip.scrollLeft;
+      strip.setPointerCapture && strip.setPointerCapture(e.pointerId);
+      strip.style.cursor = 'grabbing';
+    });
+    strip.addEventListener('pointermove', function (e) {
+      if (!down) return;
+      strip.scrollLeft = startLeft - (e.clientX - startX);
+    });
+    function up() { down = false; strip.style.cursor = 'grab'; }
+    strip.addEventListener('pointerup', up);
+    strip.addEventListener('pointercancel', up);
+    strip.addEventListener('pointerleave', up);
+  });
+
+  // add-to-cart counters
+  document.querySelectorAll('[data-add]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var counter = document.querySelector('[data-cart]');
+      if (!counter) return;
+      var n = parseInt(counter.textContent, 10) || 0;
+      counter.textContent = String(n + 1);
+      counter.classList.add('bump');
+      setTimeout(function () { counter.classList.remove('bump'); }, 320);
+      var old = btn.textContent;
+      btn.textContent = 'Added ✓';
+      setTimeout(function () { btn.textContent = old; }, 1200);
+    });
+  });
+
+  // sticker spin
+  document.querySelectorAll('[data-spin]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      el.classList.remove('spin');
+      void el.offsetWidth;
+      el.classList.add('spin');
+    });
+  });
+
+  // editorial reading rule
+  var bar = document.querySelector('[data-readbar]');
+  if (bar) {
+    var fill = bar.firstElementChild;
+    function progress() {
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      var pct = max > 0 ? Math.min(1, window.scrollY / max) : 0;
+      fill.style.width = (pct * 100).toFixed(2) + '%';
+    }
+    window.addEventListener('scroll', progress, { passive: true });
+    progress();
+  }
+
+  // copy a command
+  document.querySelectorAll('[data-copy]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var box = btn.closest('.code-card');
+      var text = box ? (box.querySelector('code') || {}).textContent || '' : '';
+      if (!text) return;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).catch(function () {});
+      }
+      var old = btn.textContent;
+      btn.textContent = 'copied';
+      setTimeout(function () { btn.textContent = old; }, 1200);
+    });
+  });
+
+  // hero pointer parallax (aurora / cinematic)
+  document.querySelectorAll('[data-parallax]').forEach(function (root) {
+    if (reduce) return;
+    var layers = root.querySelectorAll('[data-depth]');
+    root.addEventListener('pointermove', function (e) {
+      var r = root.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - 0.5;
+      var y = (e.clientY - r.top) / r.height - 0.5;
+      layers.forEach(function (layer) {
+        var d = parseFloat(layer.getAttribute('data-depth')) || 10;
+        layer.style.transform = 'translate3d(' + (-x * d) + 'px,' + (-y * d) + 'px,0)';
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signal Summit 2027</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; max-width: 100%; margin: 0 auto; padding: 0; }
+        .container { width: 90%; margin: 2rem auto; }
+        header { text-align: center; background-color: #3498db; color: white; padding: 1rem 0; }
+        h1, h2 { margin-top: 0; }
+        .hero { display: flex; justify-content: space-between; align-items: center; padding: 1rem; background-color: #ecf0f1; }
+        .hero button { padding: 0.5rem 1rem; border: none; background-color: #2ecc71; color: white; cursor: pointer; outline: none; }
+        .hero button:focus-visible, a:focus-visible { outline-offset: -4px; outline: 2px solid blue; }
+        nav { display: flex; justify-content: center; padding: 0.5rem 0; background-color: #f39c12; }
+        nav button { margin: 0 0.5rem; padding: 0.5rem 1rem; border: none; background-color: transparent; color: white; cursor: pointer; outline: none; }
+        nav button:hover, a:hover { text-decoration: underline; }
+        section { margin-bottom: 2rem; }
+        footer { text-align: center; padding: 1rem; background-color: #34495e; color: white; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Signal Summit 2027</h1>
+    </header>
+    <div class="container">
+        <section class="hero">
+            <div><h2>Date: March 15-16, 2027</h2></div>
+            <div><h2>Location: San Francisco Convention Center</h2></div>
+            <button onclick="alert('Day Switcher clicked!');">Switch to Day 2</button>
+        </section>
+        <nav>
+            <button id="day1" onclick="showSection(this)">Day 1 Agenda</button>
+            <button id="day2" onclick="showSection(this)">Day 2 Agenda</button>
+        </nav>
+        <div id="agenda">
+            <section id="day1-agenda" class="hidden">
+                <h2>Day 1 Agenda</h2>
+                <ul>
+                    <li><strong>Session 1: Opening Keynote</strong></li>
+                    <li><strong>Session 2: Emerging Tech Trends</strong></li>
+                    <li><strong>Session 3: Industry Insights</strong></li>
+                    <li><strong>Session 4: Case Studies</strong></li>
+                    <li><strong>Session 5: Panel Discussion</strong></li>
+                    <li><strong>Session 6: Closing Remarks</strong></li>
+                </ul>
+            </section>
+            <section id="day2-agenda" class="hidden">
+                <h2>Day 2 Agenda</h2>
+                <ul>
+                    <li><strong>Session 1: Advanced Tech Applications</strong></li>
+                    <li><strong>Session 2: Future of Work</strong></li>
+                    <li><strong>Session 3: Network Security</strong></li>
+                    <li><strong>Session 4: Innovation Showcase</strong></li>
+                    <li><strong>Session 5: Developer Roundtable</strong></li>
+                    <li><strong>Session 6: Closing Reception</strong></li>
+                </ul>
+            </section>
+        </div>
+        <section id="speakers">
+            <h2>Speakers</h2>
+            <ul>
+                <li><strong>John Doe - Chief Tech Officer, Example Corp</strong></li>
+                <li><strong>Jane Smith - Innovation Leader, Future Inc</strong></li>
+                <li><strong>Alice Johnson - Network Security Expert, Secure Systems</strong></li>
+                <li><strong>Bob Brown - Developer Advocate, DevOutliers</strong></li>
+            </ul>
+        </section>
+        <section id="tickets">
+            <h2>Ticket Tiers</h2>
+            <div>
+                <h3>Early Bird</h3>
+                <p><strong>$299</strong> - 50% off with early registration.</p>
+                <button onclick="alert('Early Bird ticket purchased!');">Buy Early Bird Ticket</button>
+            </div>
+            <div>
+                <h3>Standard</h3>
+                <p><strong>$499</strong> - Perfect for general attendees.</p>
+                <button onclick="alert('Standard ticket purchased!');">Buy Standard Ticket</button>
+            </div>
+            <div>
+                <h3>VIP</h3>
+                <p><strong>$799</strong> - Includes exclusive access and swag.</p>
+                <button onclick="alert('VIP ticket purchased!');">Buy VIP Ticket</button>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2027 Signal Summit. All rights reserved.</p>
+    </footer>
+    <script>
+        function showSection(button) {
+            const sections = document.querySelectorAll('#agenda section');
+            sections.forEach(section => {
+                if (button.id === section.id + '-agenda') {
+                    section.classList.remove('hidden');
+                } else {
+                    section.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

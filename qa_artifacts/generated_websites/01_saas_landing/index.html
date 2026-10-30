@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relaydesk - Support Inbox SaaS for Small Teams</title>
+    <style>
+        * { box-sizing: border-box; }
+        max-width: 100%;
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #3498db; color: white; text-align: center; padding: 20px; }
+        main { padding: 20px; }
+        footer { background-color: #f1f1f1; text-align: center; padding: 10px; }
+        .hero { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
+        .hero button { padding: 15px 30px; font-size: 16px; border: none; background-color: #e74c3c; color: white; cursor: pointer; transition: background-color 0.3s; }
+        .hero button:hover, .hero button:focus-visible { background-color: #c0392b; outline: none; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+        .features { display: flex; justify-content: space-around; margin-bottom: 40px; }
+        .feature-card { width: 28%; text-align: center; padding: 20px; background-color: #ecf0f1; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+        .pricing-table { display: flex; justify-content: center; margin-bottom: 40px; }
+        .price-tier { width: 30%; text-align: center; padding: 20px; background-color: #ecf0f1; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); margin: 0 20px; }
+        .price-tier h3 { margin-top: 0; }
+        .faq { display: none; margin-bottom: 40px; }
+        .faq.open { display: block; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Relaydesk</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Your Support Inbox, Redefined</h2>
+            <button onclick="scrollToPricing()">View Pricing</button>
+            <button onclick="toggleFAQ()">View FAQ</button>
+        </section>
+        <section class="features">
+            <div class="feature-card">
+                <h3>24/7 Support</h3>
+                <p>Get assistance whenever you need it.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Real-Time Analytics</h3>
+                <p>Track your support performance in real-time.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Integrated CRM</h3>
+                <p>Easily manage your customers and cases.</p>
+            </div>
+        </section>
+        <section class="pricing-table">
+            <div class="price-tier">
+                <h3>Starter</h3>
+                <p>$10/month</p>
+                <ul>
+                    <li>2 Users</li>
+                    <li>Basic Analytics</li>
+                    <li>Email Support</li>
+                </ul>
+            </div>
+            <div class="price-tier">
+                <h3>Business</h3>
+                <p>$50/month</p>
+                <ul>
+                    <li>10 Users</li>
+                    <li>Advanced Analytics</li>
+                    <li>Email & Chat Support</li>
+                </ul>
+            </div>
+            <div class="price-tier">
+                <h3>Enterprise</h3>
+                <p>$100/month</p>
+                <ul>
+                    <li>Unlimited Users</li>
+                    <li>Premium Analytics</li>
+                    <li>Email, Chat & Phone Support</li>
+                </ul>
+            </div>
+        </section>
+        <section class="faq" id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <p>How does Relaydesk work?</p>
+            <p>To sign up, simply visit our website and follow the on-screen instructions.</p>
+            <p>Can I try Relaydesk for free?</p>
+            <p>We offer a 14-day trial period. Contact us to learn more.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Relaydesk. All rights reserved.</p>
+    </footer>
+    <script>
+        function scrollToPricing() {
+            document.querySelector('.pricing-table').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function toggleFAQ() {
+            var faq = document.getElementById('faq');
+            if (faq.classList.contains('open')) {
+                faq.classList.remove('open');
+            } else {
+                faq.classList.add('open');
+            }
+        }
+    </script>
+</body>
+</html>

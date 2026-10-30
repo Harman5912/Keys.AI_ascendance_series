@@ -1,0 +1,398 @@
+{
+  "id": "a99310cd7fc5",
+  "request": "Build an invoice tracker for a small contractor",
+  "created_at": "2026-10-27 10:51:11",
+  "updated_at": "2026-10-27 10:51:28",
+  "status": "FAILED",
+  "intent": "software",
+  "workspace": "C:\\Users\\harma\\AppData\\Local\\Temp\\one_58z5lw_v\\20261027-build-an-invoice-tracker-for-a-small-c-a99310cd7fc5",
+  "questions": [
+    {
+      "slot": "stack",
+      "question": "Which stack should it be built in?",
+      "hint": "e.g. React + Vite, plain HTML/JS, Streamlit, FastAPI + a static front end",
+      "default": "",
+      "options": [],
+      "required": true,
+      "why": "it decides the files, the run command and the dependencies"
+    },
+    {
+      "slot": "scope",
+      "question": "Is it a single-user tool on this machine, or does it need login / multiple users?",
+      "hint": "e.g. local single user with sample data, or local front end plus a small backend with a login",
+      "default": "",
+      "options": [],
+      "required": true,
+      "why": "auth, storage and deployment all follow from this"
+    }
+  ],
+  "answers": {
+    "presets": "github",
+    "depth": "quick",
+    "stack": "a standard desktop app",
+    "scope": "a standard desktop app"
+  },
+  "assumptions": [],
+  "brief": {
+    "goal": "Build an invoice tracker for a small contractor",
+    "intent": "software",
+    "answers": {
+      "presets": "github",
+      "depth": "quick",
+      "stack": "a standard desktop app",
+      "scope": "a standard desktop app"
+    },
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "assumptions": [],
+    "constraints": [
+      "Work only inside the task workspace",
+      "Do not delete or overwrite user files without approval",
+      "Never claim success for an unverified step"
+    ]
+  },
+  "plan": {
+    "steps": [
+      {
+        "id": "s1",
+        "worker": "research",
+        "title": "Research the subject before building",
+        "params": {
+          "depth": "quick",
+          "feed_build": true,
+          "presets": [
+            "github"
+          ]
+        },
+        "status": "done",
+        "detail": "Researched 'Build an invoice tracker for a small contractor' across 1 inspected source(s); 1 cited evidence items; presets: GitHub research.",
+        "requires_approval": false,
+        "started_at": "2026-10-27 10:51:11",
+        "ended_at": "2026-10-27 10:51:28",
+        "error": "",
+        "attempts": 1,
+        "artifacts": [
+          {
+            "id": "a48587988e",
+            "task_id": "a99310cd7fc5",
+            "name": "research-report.md",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\one_58z5lw_v\\20261027-build-an-invoice-tracker-for-a-small-c-a99310cd7fc5\\research-report.md",
+            "kind": "markdown",
+            "size": 1350,
+            "sha256": "a864bb07f01edd7ec35b6e8d799ea33281cb7560331848caac0412dbc40a5c51",
+            "created_at": "2026-10-27 10:51:28",
+            "detail": "Cited research report",
+            "validated": true,
+            "validation_detail": "1302 chars"
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "worker": "software",
+        "title": "Build and verify the project",
+        "params": {
+          "mode": "build",
+          "reuse_research": true
+        },
+        "status": "running",
+        "detail": "",
+        "requires_approval": false,
+        "started_at": "2026-10-27 10:51:28",
+        "ended_at": "",
+        "error": "",
+        "attempts": 2,
+        "artifacts": []
+      }
+    ],
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "source": "deterministic",
+    "note": "",
+    "created_at": "2026-10-27 10:51:11"
+  },
+  "current_step": 1,
+  "artifacts": [
+    {
+      "id": "a48587988e",
+      "task_id": "a99310cd7fc5",
+      "name": "research-report.md",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\one_58z5lw_v\\20261027-build-an-invoice-tracker-for-a-small-c-a99310cd7fc5\\research-report.md",
+      "kind": "markdown",
+      "size": 1350,
+      "sha256": "a864bb07f01edd7ec35b6e8d799ea33281cb7560331848caac0412dbc40a5c51",
+      "created_at": "2026-10-27 10:51:28",
+      "detail": "Cited research report",
+      "validated": true,
+      "validation_detail": "1302 chars"
+    }
+  ],
+  "evidence": [
+    {
+      "claim": "acme/invoice — small invoice library.",
+      "quote": "acme/invoice — small invoice library.",
+      "source_url": "https://github.com/acme/invoice",
+      "title": "acme",
+      "retrieved_at": "2026-10-27 10:51:12",
+      "verified": true,
+      "method": "page fetched"
+    }
+  ],
+  "events": [
+    {
+      "ts": "2026-10-27 10:51:11",
+      "type": "task_created",
+      "text": "software task created in 20261027-build-an-invoice-tracker-for-a-small-c-a99310cd7fc5"
+    },
+    {
+      "ts": "2026-10-27 10:51:11",
+      "type": "status",
+      "text": "INTAKE → WAITING_FOR_USER (missing requirements)"
+    },
+    {
+      "ts": "2026-10-27 10:51:11",
+      "type": "requirements_needed",
+      "text": "2 question(s) awaiting an answer"
+    },
+    {
+      "ts": "2026-10-27 10:51:11",
+      "type": "answers_received",
+      "text": "2 answer(s) recorded"
+    },
+    {
+      "ts": "2026-10-27 10:51:11",
+      "type": "status",
+      "text": "WAITING_FOR_USER → READY (requirements complete)"
+    },
+    {
+      "ts": "2026-10-27 10:51:11",
+      "type": "status",
+      "text": "READY → PLANNING (building the plan)"
+    },
+    {
+      "ts": "2026-10-27 10:51:11",
+      "type": "plan_created",
+      "text": "2 step(s), source: deterministic"
+    },
+    {
+      "ts": "2026-10-27 10:51:11",
+      "type": "status",
+      "text": "PLANNING → READY (plan ready)"
+    },
+    {
+      "ts": "2026-10-27 10:51:11",
+      "type": "status",
+      "text": "READY → RUNNING"
+    },
+    {
+      "ts": "2026-10-27 10:51:11",
+      "type": "step_started",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 10:51:11",
+      "type": "worker_log",
+      "text": "Research: Build an invoice tracker for a small contractor (depth quick, 4 queries, presets: GitHub research)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 10:51:11",
+      "type": "worker_log",
+      "text": "Research: inspecting github acme/invoice",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 10:51:12",
+      "type": "worker_log",
+      "text": "GitHub inspection failed: GitHub answered 404: the repository is missing or private.",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 10:51:28",
+      "type": "worker_log",
+      "text": "Research report written: research-report.md (1 evidence items)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 10:51:28",
+      "type": "step_done",
+      "text": "Done: Researched 'Build an invoice tracker for a small contractor' across 1 inspected source(s); 1 cited evidence items; presets: GitHub research.",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 10:51:28",
+      "type": "step_started",
+      "text": "Starting: Build and verify the project",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 10:51:28",
+      "type": "worker_log",
+      "text": "Software: delegating to Crown Code in n-invoice-tracker-for-a-small-contractor",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 10:51:28",
+      "type": "worker_log",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 10:51:28",
+      "type": "validation_failed",
+      "text": "Validation failed: index.html: HTML has no document structure",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 10:51:28",
+      "type": "validation_failed",
+      "text": "index.html: HTML has no document structure",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 10:51:28",
+      "type": "status",
+      "text": "RUNNING → VALIDATING (artifact validation)"
+    },
+    {
+      "ts": "2026-10-27 10:51:28",
+      "type": "status",
+      "text": "VALIDATING → REPAIRING (repair attempt)"
+    },
+    {
+      "ts": "2026-10-27 10:51:28",
+      "type": "status",
+      "text": "REPAIRING → RUNNING (repair running)"
+    },
+    {
+      "ts": "2026-10-27 10:51:28",
+      "type": "worker_log",
+      "text": "Software: delegating to Crown Code in n-invoice-tracker-for-a-small-contractor",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 10:51:28",
+      "type": "worker_log",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 10:51:28",
+      "type": "validation_failed",
+      "text": "Validation failed: index.html: HTML has no document structure",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 10:51:28",
+      "type": "validation_failed",
+      "text": "index.html: HTML has no document structure",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 10:51:28",
+      "type": "status",
+      "text": "RUNNING → FAILED (error)"
+    },
+    {
+      "ts": "2026-10-27 10:51:28",
+      "type": "task_failed",
+      "text": "The produced artifact could not be verified: index.html: HTML has no document structure"
+    }
+  ],
+  "approval": null,
+  "error": "The produced artifact could not be verified: index.html: HTML has no document structure",
+  "warnings": [],
+  "attempts": {},
+  "result": {},
+  "logs": [
+    {
+      "ts": "10:51:11",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    },
+    {
+      "ts": "10:51:11",
+      "text": "Research: Build an invoice tracker for a small contractor (depth quick, 4 queries, presets: GitHub research)",
+      "step": "s1"
+    },
+    {
+      "ts": "10:51:11",
+      "text": "Research: inspecting github acme/invoice",
+      "step": "s1"
+    },
+    {
+      "ts": "10:51:12",
+      "text": "GitHub inspection failed: GitHub answered 404: the repository is missing or private.",
+      "step": "s1"
+    },
+    {
+      "ts": "10:51:28",
+      "text": "Research report written: research-report.md (1 evidence items)",
+      "step": "s1"
+    },
+    {
+      "ts": "10:51:28",
+      "text": "Verified artifact: research-report.md (1302 chars)",
+      "step": "s1"
+    },
+    {
+      "ts": "10:51:28",
+      "text": "Done: Researched 'Build an invoice tracker for a small contractor' across 1 inspected source(s); 1 cited evidence items; presets: GitHub research.",
+      "step": "s1"
+    },
+    {
+      "ts": "10:51:28",
+      "text": "Starting: Build and verify the project",
+      "step": "s2"
+    },
+    {
+      "ts": "10:51:28",
+      "text": "Software: delegating to Crown Code in n-invoice-tracker-for-a-small-contractor",
+      "step": "s2"
+    },
+    {
+      "ts": "10:51:28",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "10:51:28",
+      "text": "Validation failed: index.html: HTML has no document structure",
+      "step": "s2"
+    },
+    {
+      "ts": "10:51:28",
+      "text": "Software: delegating to Crown Code in n-invoice-tracker-for-a-small-contractor",
+      "step": "s2"
+    },
+    {
+      "ts": "10:51:28",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "10:51:28",
+      "text": "Validation failed: index.html: HTML has no document structure",
+      "step": "s2"
+    }
+  ]
+}

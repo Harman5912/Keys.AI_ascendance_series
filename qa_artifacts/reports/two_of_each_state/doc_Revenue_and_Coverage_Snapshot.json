@@ -1,0 +1,12 @@
+{
+  "slug": "doc_Revenue_and_Coverage_Snapshot",
+  "artifact": "docx",
+  "title": "Revenue and Coverage Snapshot \u2014 Meridian Newsroom",
+  "model": "qwen3:8b",
+  "seconds": 11.6,
+  "ok": true,
+  "finished": true,
+  "message": "Created Word document: doc_Revenue_and_Coverage_Snapshot.docx\n  Subject : A revenue and coverage snapshot for Meridian Newsroom: four sections (driven rev\n  Detail  : 4 sections \u00b7 133 words\n  Size    : 38,446 bytes\n  Saved   : C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\docx\\doc_Revenue_and_Coverage_Snapshot.docx\nNot opened (permission not requested).\n",
+  "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\docx\\doc_Revenue_and_Coverage_Snapshot.docx",
+  "bytes": 38446
+}

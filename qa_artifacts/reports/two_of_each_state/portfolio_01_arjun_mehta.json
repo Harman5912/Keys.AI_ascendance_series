@@ -1,0 +1,18 @@
+{
+  "slug": "portfolio_01_arjun_mehta",
+  "artifact": "page",
+  "kind": "portfolio",
+  "studio_requested": "brutalist",
+  "studio": "Brutalist",
+  "studio_used": "Crown Code Studio \u2014 Brutalist",
+  "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\pages\\portfolio_01_arjun_mehta\\index.html",
+  "bytes": 23545,
+  "ok": true,
+  "finished": true,
+  "problems": [],
+  "browser": "ok",
+  "browser_problems": [],
+  "checklist_score": "",
+  "adopted": true,
+  "message": "verified from disk with check_html + browser_audit"
+}

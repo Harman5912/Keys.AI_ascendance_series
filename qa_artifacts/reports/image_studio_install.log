@@ -1,0 +1,26 @@
+target: C:\Users\harma\AppData\Local\KeysAI\ComfyUI
+Installing ComfyUI into C:\Users\harma\AppData\Local\KeysAI\ComfyUI
+$ git clone --depth 1 https://github.com/comfyanonymous/ComfyUI.git C:\Users\harma\AppData\Local\KeysAI\ComfyUI
+Cloning into 'C:\Users\harma\AppData\Local\KeysAI\ComfyUI'...
+Creating an isolated virtual environment…
+$ C:\Users\harma\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -m venv C:\Users\harma\AppData\Local\KeysAI\ComfyUI\venv
+Actual environment location may have moved due to redirects, links or junctions.
+  Requested location: "C:\Users\harma\AppData\Local\KeysAI\ComfyUI\venv\Scripts\python.exe"
+  Actual location:    "C:\Users\harma\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\Local\KeysAI\ComfyUI\venv\Scripts\python.exe"
+$ C:\Users\harma\AppData\Local\KeysAI\ComfyUI\venv\Scripts\python.exe -m pip install --upgrade pip
+No pyvenv.cfg file
+Traceback (most recent call last):
+  File "C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\image_studio_live_setup.py", line 130, in <module>
+    raise SystemExit(main(sys.argv))
+                     ^^^^^^^^^^^^^^
+  File "C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\image_studio_live_setup.py", line 126, in main
+    return COMMANDS[argv[1]]()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\image_studio_live_setup.py", line 39, in cmd_install
+    result = installer.install_comfy(target, on_log=_log)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\core\image_studio\installer.py", line 225, in install_comfy
+    _run([str(vpy), "-m", "pip", "install", "--upgrade", "pip"],
+  File "C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\core\image_studio\installer.py", line 186, in _run
+    raise InstallError(f"'{Path(cmd[0]).name}' exited with code {code}.")
+core.image_studio.installer.InstallError: 'python.exe' exited with code 106.

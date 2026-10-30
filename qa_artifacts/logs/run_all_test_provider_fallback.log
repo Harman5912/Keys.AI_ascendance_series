@@ -1,0 +1,32 @@
+$ C:\Users\harma\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -X utf8 -m unittest qa_artifacts.regression_tests.test_provider_fallback -v
+exit=0 seconds=0.2
+
+---- stdout ----
+
+---- stderr ----
+test_google_invalid_api_key_payload_rotates (qa_artifacts.regression_tests.test_provider_fallback.RotationTest.test_google_invalid_api_key_payload_rotates)
+Google's REAL auth error (found live in Phase 2) contains no ... Primary key failed (ProviderError: Gemini generate failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message':) — trying 1 backup key(s) for gemini
+ok
+test_local_outage_still_raises_the_original_quota_error (qa_artifacts.regression_tests.test_provider_fallback.RotationTest.test_local_outage_still_raises_the_original_quota_error) ... Primary key failed (ProviderError: 429 RESOURCE_EXHAUSTED: quota exceeded) — trying 1 backup key(s) for gemini
+Backup key 1/1 also failed (ProviderError: ollama not reachable)
+All 1 backup key(s) exhausted for gemini — using primary
+ok
+test_missing_key_message_rotates (qa_artifacts.regression_tests.test_provider_fallback.RotationTest.test_missing_key_message_rotates)
+F08 (missing API key) must degrade to the backup, not crash. ... Primary key failed (ProviderError: Gemini generate failed: 400 INVALID_ARGUMENT. API key missing. Please pass a val) — trying 1 backup key(s) for gemini
+ok
+test_non_retryable_errors_do_not_hit_the_backup (qa_artifacts.regression_tests.test_provider_fallback.RotationTest.test_non_retryable_errors_do_not_hit_the_backup) ... ok
+test_quota_error_rotates_to_the_local_model (qa_artifacts.regression_tests.test_provider_fallback.RotationTest.test_quota_error_rotates_to_the_local_model) ... Primary key failed (ProviderError: 429 RESOURCE_EXHAUSTED: quota exceeded) — trying 1 backup key(s) for gemini
+ok
+test_structured_output_rotates_too (qa_artifacts.regression_tests.test_provider_fallback.RotationTest.test_structured_output_rotates_too)
+The planner asks for JSON — it needs the same protection. ... Primary key failed (ProviderError: 429 RESOURCE_EXHAUSTED: quota exceeded) — trying 1 backup key(s) for gemini
+ok
+test_backup_keys_are_still_tried_before_the_local_model (qa_artifacts.regression_tests.test_provider_fallback.WiringTest.test_backup_keys_are_still_tried_before_the_local_model) ... ok
+test_local_ollama_model_is_appended_for_a_cloud_primary (qa_artifacts.regression_tests.test_provider_fallback.WiringTest.test_local_ollama_model_is_appended_for_a_cloud_primary) ... ok
+test_no_local_model_configured_means_no_extra_backup (qa_artifacts.regression_tests.test_provider_fallback.WiringTest.test_no_local_model_configured_means_no_extra_backup) ... ok
+test_ollama_primary_does_not_get_a_duplicate_backup (qa_artifacts.regression_tests.test_provider_fallback.WiringTest.test_ollama_primary_does_not_get_a_duplicate_backup) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.003s
+
+OK
+

@@ -1,0 +1,162 @@
+# test_intelligence.py  exit=0  seconds=0.48  timeout=False
+# ---- stdout ----
+[15:25:11] USER_REQUEST message Rahul
+[15:25:11] INTENT_DETECTED CONVERSATION tags=[] conf=0.25
+[15:25:11] INTEL clarification: Which Rahul do you mean — Rahul Sharma or Rahul Verma?
+[15:25:11] USER_REQUEST send a message to Rahul: hello
+[15:25:11] INTENT_DETECTED CONVERSATION tags=['CONVERSATION', 'COMMAND'] conf=0.71
+[15:25:11] INTEL clarification: Which Rahul do you mean — Rahul Sharma or Rahul Verma?
+[15:25:11] USER_REQUEST Sharma
+[15:25:11] INTENT_DETECTED CONVERSATION tags=[] conf=0.25
+[15:25:11] ROUTED single_tool → send_message {'receiver': 'Rahul Sharma', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] PLAN_CREATED Single step (1 steps)
+[15:25:11] STEP 1/1 send_message — send-message pattern
+[15:25:11] TOOL_SELECTED send_message {'receiver': 'Rahul Sharma', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] WAITING_FOR_USER 'send_message' needs your confirmation: {'receiver': 'Rahul Sharma', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] WAITING_FOR_USER waiting on: send-message pattern
+[15:25:11] USER_REQUEST yes
+[15:25:11] STEP 1/1 send_message — send-message pattern
+[15:25:11] TOOL_SELECTED send_message {'receiver': 'Rahul Sharma', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] TOOL_EXECUTED send_message → send_message done: {'receiver': 'Rahul Sharma', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] EVALUATION send_message = success ()
+[15:25:11] TASK_COMPLETE send a message to Rahul Sharma: hello
+[15:25:11] USER_REQUEST send a message to Rahul: hello
+[15:25:11] INTENT_DETECTED CONVERSATION tags=['CONVERSATION', 'COMMAND'] conf=0.71
+[15:25:11] INTEL clarification: Which Rahul do you mean — Rahul Sharma or Rahul Verma?
+[15:25:11] USER_REQUEST Rahul Verma
+[15:25:11] INTENT_DETECTED CONVERSATION tags=[] conf=0.25
+[15:25:11] ROUTED single_tool → send_message {'receiver': 'Rahul Verma', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] PLAN_CREATED Single step (1 steps)
+[15:25:11] STEP 1/1 send_message — send-message pattern
+[15:25:11] TOOL_SELECTED send_message {'receiver': 'Rahul Verma', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] WAITING_FOR_USER 'send_message' needs your confirmation: {'receiver': 'Rahul Verma', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] WAITING_FOR_USER waiting on: send-message pattern
+[15:25:11] USER_REQUEST yes
+[15:25:11] STEP 1/1 send_message — send-message pattern
+[15:25:11] TOOL_SELECTED send_message {'receiver': 'Rahul Verma', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] TOOL_EXECUTED send_message → send_message done: {'receiver': 'Rahul Verma', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] EVALUATION send_message = success ()
+[15:25:11] TASK_COMPLETE send a message to Rahul Verma: hello
+[15:25:11] USER_REQUEST send a message to Rahul: hello
+[15:25:11] INTENT_DETECTED CONVERSATION tags=['CONVERSATION', 'COMMAND'] conf=0.71
+[15:25:11] INTEL clarification: Which Rahul do you mean — Rahul Sharma or Rahul Verma?
+[15:25:11] USER_REQUEST open chrome
+[15:25:11] INTENT_DETECTED APP_CONTROL tags=['COMPUTER_ACTION', 'APP_CONTROL', 'COMMAND'] conf=0.68
+[15:25:11] ROUTED single_tool → open_app {'app_name': 'Chrome'}
+[15:25:11] PLAN_CREATED Single step (1 steps)
+[15:25:11] STEP 1/1 open_app — open-app pattern
+[15:25:11] TOOL_SELECTED open_app {'app_name': 'Chrome'}
+[15:25:11] TOOL_EXECUTED open_app → open_app done: {'app_name': 'Chrome'}
+[15:25:11] EVALUATION open_app = success ()
+[15:25:11] TASK_COMPLETE open chrome
+[15:25:11] USER_REQUEST what is the capital of Turkey?
+[15:25:11] INTENT_DETECTED QUESTION tags=['QUESTION'] conf=0.74
+[15:25:11] ROUTED chat →  {}
+[15:25:11] USER_REQUEST contine
+[15:25:11] INTENT_DETECTED RESUME tags=['RESUME'] conf=1.0
+[15:25:11] RESUMED resumed
+[15:25:11] USER_REQUEST stp
+[15:25:11] STOPPED stopped by user
+[15:25:11] USER_REQUEST paus
+[15:25:11] PAUSED paused
+[15:25:11] USER_REQUEST remmeber that I prefere Python
+[15:25:11] INTENT_DETECTED CODING tags=['CODING'] conf=0.48
+[Memory] 💾 Saved: ['preferences']
+[15:25:11] MEMORY_SAVED saved=['preferences/python'] forgotten=[]
+[15:25:11] USER_REQUEST open googl
+[15:25:11] INTENT_DETECTED COMPUTER_ACTION tags=['COMPUTER_ACTION', 'COMMAND'] conf=0.58
+[15:25:11] ROUTED single_tool → open_app {'app_name': 'Google'}
+[15:25:11] PLAN_CREATED Single step (1 steps)
+[15:25:11] STEP 1/1 open_app — open-app pattern
+[15:25:11] TOOL_SELECTED open_app {'app_name': 'Google'}
+[15:25:11] TOOL_EXECUTED open_app → open_app done: {'app_name': 'Google'}
+[15:25:11] EVALUATION open_app = success ()
+[15:25:11] TASK_COMPLETE open Google
+[15:25:11] USER_REQUEST open vs cod
+[15:25:11] INTENT_DETECTED COMPUTER_ACTION tags=['COMPUTER_ACTION', 'COMMAND'] conf=0.58
+[15:25:11] ROUTED single_tool → open_app {'app_name': 'VS Code'}
+[15:25:11] PLAN_CREATED Single step (1 steps)
+[15:25:11] STEP 1/1 open_app — open-app pattern
+[15:25:11] TOOL_SELECTED open_app {'app_name': 'VS Code'}
+[15:25:11] TOOL_EXECUTED open_app → open_app done: {'app_name': 'VS Code'}
+[15:25:11] EVALUATION open_app = success ()
+[15:25:11] TASK_COMPLETE open VS Code
+[15:25:11] USER_REQUEST send a message to Dhanuj: hello
+[15:25:11] INTENT_DETECTED CONVERSATION tags=['CONVERSATION', 'COMMAND'] conf=0.71
+[15:25:11] INTEL clarification: I couldn't match 'Dhanuj'. Did you mean 1) Dhananjay?
+[15:25:11] USER_REQUEST 1
+[15:25:11] INTENT_DETECTED CONVERSATION tags=[] conf=0.25
+[15:25:11] ROUTED single_tool → send_message {'receiver': 'Dhananjay', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] PLAN_CREATED Single step (1 steps)
+[15:25:11] STEP 1/1 send_message — send-message pattern
+[15:25:11] TOOL_SELECTED send_message {'receiver': 'Dhananjay', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] WAITING_FOR_USER 'send_message' needs your confirmation: {'receiver': 'Dhananjay', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] WAITING_FOR_USER waiting on: send-message pattern
+[15:25:11] USER_REQUEST yes
+[15:25:11] STEP 1/1 send_message — send-message pattern
+[15:25:11] TOOL_SELECTED send_message {'receiver': 'Dhananjay', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] TOOL_EXECUTED send_message → send_message done: {'receiver': 'Dhananjay', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] EVALUATION send_message = success ()
+[15:25:11] TASK_COMPLETE send a message to Dhananjay: hello
+[15:25:11] USER_REQUEST send a message to Rishbh: hello
+[15:25:11] INTENT_DETECTED CONVERSATION tags=['CONVERSATION', 'COMMAND'] conf=0.71
+[15:25:11] ROUTED single_tool → send_message {'receiver': 'Rishabh Kumar Gond', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] PLAN_CREATED Single step (1 steps)
+[15:25:11] STEP 1/1 send_message — send-message pattern
+[15:25:11] TOOL_SELECTED send_message {'receiver': 'Rishabh Kumar Gond', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] WAITING_FOR_USER 'send_message' needs your confirmation: {'receiver': 'Rishabh Kumar Gond', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] WAITING_FOR_USER waiting on: send-message pattern
+[15:25:11] USER_REQUEST yes
+[15:25:11] STEP 1/1 send_message — send-message pattern
+[15:25:11] TOOL_SELECTED send_message {'receiver': 'Rishabh Kumar Gond', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] TOOL_EXECUTED send_message → send_message done: {'receiver': 'Rishabh Kumar Gond', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] EVALUATION send_message = success ()
+[15:25:11] TASK_COMPLETE send a message to Rishabh Kumar Gond: hello
+[15:25:11] USER_REQUEST send a message to Harman Sadhwni: hello
+[15:25:11] INTENT_DETECTED CONVERSATION tags=['CONVERSATION', 'COMMAND'] conf=0.71
+[15:25:11] ROUTED single_tool → send_message {'receiver': 'Harman Sadhwani', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] PLAN_CREATED Single step (1 steps)
+[15:25:11] STEP 1/1 send_message — send-message pattern
+[15:25:11] TOOL_SELECTED send_message {'receiver': 'Harman Sadhwani', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] WAITING_FOR_USER 'send_message' needs your confirmation: {'receiver': 'Harman Sadhwani', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] WAITING_FOR_USER waiting on: send-message pattern
+[15:25:11] USER_REQUEST yes
+[15:25:11] STEP 1/1 send_message — send-message pattern
+[15:25:11] TOOL_SELECTED send_message {'receiver': 'Harman Sadhwani', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] TOOL_EXECUTED send_message → send_message done: {'receiver': 'Harman Sadhwani', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] EVALUATION send_message = success ()
+[15:25:11] TASK_COMPLETE send a message to Harman Sadhwani: hello
+[15:25:11] USER_REQUEST open Vinayak
+[15:25:11] INTENT_DETECTED COMPUTER_ACTION tags=['COMPUTER_ACTION', 'COMMAND'] conf=0.58
+[15:25:11] ROUTED single_tool → open_app {'app_name': 'Vinayak'}
+[15:25:11] PLAN_CREATED Single step (1 steps)
+[15:25:11] STEP 1/1 open_app — open-app pattern
+[15:25:11] TOOL_SELECTED open_app {'app_name': 'Vinayak'}
+[15:25:11] TOOL_EXECUTED open_app → open_app done: {'app_name': 'Vinayak'}
+[15:25:11] EVALUATION open_app = success ()
+[15:25:11] TASK_COMPLETE open Vinayak
+[15:25:11] USER_REQUEST can you get chrome open?
+[15:25:11] INTENT_DETECTED QUESTION tags=['COMPUTER_ACTION', 'APP_CONTROL', 'QUESTION'] conf=0.94
+[15:25:11] ROUTED single_tool → open_app {'app_name': 'Chrome'}
+[15:25:11] PLAN_CREATED Single step (1 steps)
+[15:25:11] STEP 1/1 open_app — open-app pattern
+[15:25:11] TOOL_SELECTED open_app {'app_name': 'Chrome'}
+[15:25:11] TOOL_EXECUTED open_app → open_app done: {'app_name': 'Chrome'}
+[15:25:11] EVALUATION open_app = success ()
+[15:25:11] TASK_COMPLETE open chrome
+[15:25:11] USER_REQUEST send mesage to Dhananjay: hello
+[15:25:11] INTENT_DETECTED CONVERSATION tags=['CONVERSATION', 'COMMAND'] conf=0.71
+[15:25:11] ROUTED single_tool → send_message {'receiver': 'Dhananjay', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] PLAN_CREATED Single step (1 steps)
+[15:25:11] STEP 1/1 send_message — send-message pattern
+[15:25:11] TOOL_SELECTED send_message {'receiver': 'Dhananjay', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] WAITING_FOR_USER 'send_message' needs your confirmation: {'receiver': 'Dhananjay', 'message_text': 'hello', 'platform': 'WhatsApp'}
+[15:25:11] WAITING_FOR_USER waiting on: send-message pattern
+
+# ---- stderr ----
+...............................................................................
+----------------------------------------------------------------------
+Ran 79 tests in 0.340s
+
+OK
+

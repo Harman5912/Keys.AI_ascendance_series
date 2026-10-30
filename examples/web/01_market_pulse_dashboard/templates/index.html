@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Market Pulse — live market dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <aside class="rail" aria-label="Sections">
+    <p class="mark">MP</p>
+    <nav>
+      <a href="#overview" class="is-current">Overview</a>
+      <a href="#trend">Trend</a>
+      <a href="#volume">Volume</a>
+      <a href="#rows">Rows</a>
+    </nav>
+    <p class="rail-foot" id="backend">—</p>
+  </aside>
+
+  <main>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">30-day window · sample dataset</p>
+        <h1>Market pulse</h1>
+      </div>
+      <div class="controls">
+        <label for="symbol">Symbol</label>
+        <select id="symbol">
+          <option>BTC</option>
+          <option>ETH</option>
+          <option>SOL</option>
+        </select>
+        <label for="days">Range</label>
+        <select id="days">
+          <option value="7">7 days</option>
+          <option value="14">14 days</option>
+          <option value="30" selected>30 days</option>
+        </select>
+      </div>
+    </header>
+
+    <p class="banner" id="banner" hidden></p>
+
+    <section id="overview" class="kpis" aria-label="Latest prices">
+      <p class="loading">Loading the latest rows…</p>
+    </section>
+
+    <section id="trend" class="panel">
+      <div class="panel-head">
+        <h2>Price trend</h2>
+        <p class="units" id="trend-units">USD</p>
+      </div>
+      <div id="trend-chart" class="chart" role="img" aria-label="Price trend chart"></div>
+      <p class="empty" id="trend-empty" hidden>No rows for this symbol yet — seed the database to see a trend.</p>
+    </section>
+
+    <section id="volume" class="panel">
+      <div class="panel-head">
+        <h2>Volume by day</h2>
+        <p class="units">all symbols · $</p>
+      </div>
+      <div id="volume-chart" class="chart bars" role="img" aria-label="Daily volume chart"></div>
+      <p class="empty" id="volume-empty" hidden>No volume rows yet.</p>
+    </section>
+
+    <section id="rows" class="panel">
+      <div class="panel-head">
+        <h2>Underlying rows</h2>
+        <p class="units">straight from <code>market_ticks</code></p>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Symbol</th><th>Day</th><th>Close</th><th>Volume</th><th>30d change</th></tr>
+        </thead>
+        <tbody id="rows-body"><tr><td colspan="5">Loading…</td></tr></tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p>Data layer: <span id="backend-2">—</span>. Charts are drawn in SVG from the API response.</p>
+    </footer>
+  </main>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

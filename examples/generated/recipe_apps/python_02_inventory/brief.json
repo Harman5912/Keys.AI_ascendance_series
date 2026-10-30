@@ -1,0 +1,14 @@
+{
+  "request": "Python desktop app: a shop inventory tool with stock levels and low-stock warnings.",
+  "requirements": "stack: PyQt6 QMainWindow with table, search and add form\nstorage: SQLite file in the project folder\nhighlight rows at or below the reorder level\ninclude a --selftest flag that prints OK\nscope: local single user, no login",
+  "artifact": "app",
+  "answered": [
+    "stack",
+    "scope"
+  ],
+  "assumptions": [],
+  "recipes": [
+    "python-desktop"
+  ],
+  "path": "app"
+}

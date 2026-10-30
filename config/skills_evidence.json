@@ -1,0 +1,58 @@
+{
+  "design-system": {
+    "TESTED": {
+      "at": "2026-10-29T17:45:56",
+      "note": "test_skill_system: token sheet generated"
+    },
+    "VERIFIED": {
+      "at": "2026-10-29T08:36:40",
+      "note": "self-test ok=True over 84 token sets"
+    }
+  },
+  "files": {
+    "TESTED": {
+      "at": "2026-10-29T17:45:56",
+      "note": "test_skill_system: delegation + delete refused"
+    }
+  },
+  "globe": {
+    "TESTED": {
+      "at": "2026-10-29T17:45:56",
+      "note": "test_skill_system: delegates through TOOL_HANDLERS"
+    },
+    "VERIFIED": {
+      "at": "2026-10-29T08:36:40",
+      "note": "routing works (parsed as OPEN_GLOBE)"
+    }
+  },
+  "coding": {
+    "TESTED": {
+      "at": "2026-10-29T08:36:40",
+      "note": "handler is registered"
+    }
+  },
+  "documents": {
+    "TESTED": {
+      "at": "2026-10-29T08:36:40",
+      "note": "handler is registered"
+    }
+  },
+  "repo-inspect": {
+    "TESTED": {
+      "at": "2026-10-29T08:36:40",
+      "note": "handler and module both load"
+    }
+  },
+  "research-browser": {
+    "TESTED": {
+      "at": "2026-10-29T08:36:40",
+      "note": "handler is registered"
+    }
+  },
+  "web-search": {
+    "TESTED": {
+      "at": "2026-10-29T08:36:40",
+      "note": "handler is registered"
+    }
+  }
+}

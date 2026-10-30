@@ -1,0 +1,249 @@
+{
+  "id": "948f51b4fd3a",
+  "request": "Research x",
+  "created_at": "2026-10-25 23:38:06",
+  "updated_at": "2026-10-25 23:38:06",
+  "status": "COMPLETED",
+  "intent": "research",
+  "workspace": "C:\\Users\\harma\\AppData\\Local\\Temp\\ua_core_iuln31su\\workspaces\\20261025-research-x-948f51b4fd3a",
+  "questions": [
+    {
+      "slot": "depth",
+      "question": "How deep should the research go?",
+      "hint": "",
+      "default": "standard",
+      "options": [
+        "quick",
+        "standard",
+        "deep"
+      ],
+      "required": false,
+      "why": ""
+    },
+    {
+      "slot": "format",
+      "question": "What should the deliverable be?",
+      "hint": "",
+      "default": "markdown",
+      "options": [
+        "markdown",
+        "word",
+        "pdf"
+      ],
+      "required": false,
+      "why": ""
+    }
+  ],
+  "answers": {
+    "depth": "standard",
+    "format": "markdown"
+  },
+  "assumptions": [
+    "depth not specified — using 'standard'",
+    "format not specified — using 'markdown'"
+  ],
+  "brief": {
+    "goal": "Research x",
+    "intent": "research",
+    "answers": {
+      "depth": "standard",
+      "format": "markdown"
+    },
+    "deliverables": [
+      "A written report with sources",
+      "Research depth: standard"
+    ],
+    "acceptance_criteria": [
+      "Every factual claim carries a citation to a retrieved source",
+      "At least three sources were inspected, or the shortfall is stated",
+      "Contradictory evidence is reported, not hidden",
+      "Limitations and unanswered questions are listed"
+    ],
+    "assumptions": [
+      "depth not specified — using 'standard'",
+      "format not specified — using 'markdown'"
+    ],
+    "constraints": [
+      "Work only inside the task workspace",
+      "Do not delete or overwrite user files without approval",
+      "Never claim success for an unverified step"
+    ]
+  },
+  "plan": {
+    "steps": [
+      {
+        "id": "s1",
+        "worker": "research",
+        "title": "Research the question and collect evidence",
+        "params": {
+          "depth": "standard"
+        },
+        "status": "done",
+        "detail": "worker done",
+        "requires_approval": false,
+        "started_at": "2026-10-25 23:38:06",
+        "ended_at": "2026-10-25 23:38:06",
+        "error": "",
+        "attempts": 1
+      }
+    ],
+    "deliverables": [
+      "A written report with sources",
+      "Research depth: standard"
+    ],
+    "acceptance_criteria": [
+      "Every factual claim carries a citation to a retrieved source",
+      "At least three sources were inspected, or the shortfall is stated",
+      "Contradictory evidence is reported, not hidden",
+      "Limitations and unanswered questions are listed"
+    ],
+    "source": "deterministic",
+    "note": "",
+    "created_at": "2026-10-25 23:38:06"
+  },
+  "current_step": 0,
+  "artifacts": [
+    {
+      "id": "d36ebf1546",
+      "task_id": "948f51b4fd3a",
+      "name": "report.md",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\ua_core_iuln31su\\workspaces\\20261025-research-x-948f51b4fd3a\\report.md",
+      "kind": "markdown",
+      "size": 144,
+      "sha256": "2c680698530b5b4a69af5365b8f205d2ed7dd5447acf45fd1758949d781a18cc",
+      "created_at": "2026-10-25 23:38:06",
+      "detail": "report",
+      "validated": true,
+      "validation_detail": "139 chars"
+    }
+  ],
+  "evidence": [],
+  "events": [
+    {
+      "ts": "2026-10-25 23:38:06",
+      "type": "task_created",
+      "text": "research task created in 20261025-research-x-948f51b4fd3a"
+    },
+    {
+      "ts": "2026-10-25 23:38:06",
+      "type": "status",
+      "text": "INTAKE → READY"
+    },
+    {
+      "ts": "2026-10-25 23:38:06",
+      "type": "status",
+      "text": "READY → PLANNING"
+    },
+    {
+      "ts": "2026-10-25 23:38:06",
+      "type": "status",
+      "text": "PLANNING → READY (resume after interruption)"
+    },
+    {
+      "ts": "2026-10-25 23:38:06",
+      "type": "resumed",
+      "text": "task resumed from saved state"
+    },
+    {
+      "ts": "2026-10-25 23:38:06",
+      "type": "status",
+      "text": "READY → PLANNING (building the plan)"
+    },
+    {
+      "ts": "2026-10-25 23:38:06",
+      "type": "plan_created",
+      "text": "1 step(s), source: deterministic"
+    },
+    {
+      "ts": "2026-10-25 23:38:06",
+      "type": "status",
+      "text": "PLANNING → READY (plan ready)"
+    },
+    {
+      "ts": "2026-10-25 23:38:06",
+      "type": "status",
+      "text": "READY → RUNNING"
+    },
+    {
+      "ts": "2026-10-25 23:38:06",
+      "type": "step_started",
+      "text": "Starting: Research the question and collect evidence",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-25 23:38:06",
+      "type": "step_done",
+      "text": "Done: worker done",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-25 23:38:06",
+      "type": "status",
+      "text": "RUNNING → VALIDATING (verifying artifacts)"
+    },
+    {
+      "ts": "2026-10-25 23:38:06",
+      "type": "task_completed",
+      "text": "1 step(s) complete; 1 artifact(s) verified."
+    },
+    {
+      "ts": "2026-10-25 23:38:06",
+      "type": "status",
+      "text": "VALIDATING → COMPLETED"
+    }
+  ],
+  "approval": null,
+  "error": "",
+  "warnings": [
+    "depth not specified — using 'standard'",
+    "format not specified — using 'markdown'"
+  ],
+  "attempts": {},
+  "result": {
+    "summary": "1 step(s) complete; 1 artifact(s) verified.",
+    "artifacts": [
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\ua_core_iuln31su\\workspaces\\20261025-research-x-948f51b4fd3a\\report.md"
+    ],
+    "validation": "1 artifact(s) verified",
+    "warnings": [
+      "depth not specified — using 'standard'",
+      "format not specified — using 'markdown'"
+    ]
+  },
+  "logs": [
+    {
+      "ts": "23:38:06",
+      "text": "Starting: Research the question and collect evidence",
+      "step": "s1"
+    },
+    {
+      "ts": "23:38:06",
+      "text": "Verified artifact: report.md (139 chars)",
+      "step": "s1"
+    },
+    {
+      "ts": "23:38:06",
+      "text": "Done: worker done",
+      "step": "s1"
+    },
+    {
+      "ts": "23:38:06",
+      "text": "Validation: 1 artifact(s) verified",
+      "step": ""
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "results": [
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\ua_core_iuln31su\\workspaces\\20261025-research-x-948f51b4fd3a\\report.md",
+        "kind": "md",
+        "detail": "139 chars",
+        "warning": ""
+      }
+    ],
+    "failures": [],
+    "detail": "1 artifact(s) verified"
+  }
+}

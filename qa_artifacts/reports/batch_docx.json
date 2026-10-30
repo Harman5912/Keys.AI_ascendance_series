@@ -1,0 +1,92 @@
+[
+  {
+    "id": "D01",
+    "kind": "docx",
+    "exit": 0,
+    "timed_out": false,
+    "seconds": 109.5,
+    "log": "qa_artifacts/logs/gen_docx_D01.log",
+    "timestamp": "2026-10-17T10:35:48+00:00"
+  },
+  {
+    "id": "D02",
+    "kind": "docx",
+    "exit": -9,
+    "timed_out": true,
+    "seconds": 1660.3,
+    "log": "qa_artifacts/logs/gen_docx_D02.log",
+    "timestamp": "2026-10-17T11:03:29+00:00"
+  },
+  {
+    "id": "D03",
+    "kind": "docx",
+    "exit": 0,
+    "timed_out": false,
+    "seconds": 166.0,
+    "log": "qa_artifacts/logs/gen_docx_D03.log",
+    "timestamp": "2026-10-17T11:06:15+00:00"
+  },
+  {
+    "id": "D04",
+    "kind": "docx",
+    "exit": 0,
+    "timed_out": false,
+    "seconds": 100.5,
+    "log": "qa_artifacts/logs/gen_docx_D04.log",
+    "timestamp": "2026-10-17T11:07:55+00:00"
+  },
+  {
+    "id": "D05",
+    "kind": "docx",
+    "exit": 0,
+    "timed_out": false,
+    "seconds": 88.1,
+    "log": "qa_artifacts/logs/gen_docx_D05.log",
+    "timestamp": "2026-10-17T11:09:23+00:00"
+  },
+  {
+    "id": "D06",
+    "kind": "docx",
+    "exit": 0,
+    "timed_out": false,
+    "seconds": 105.3,
+    "log": "qa_artifacts/logs/gen_docx_D06.log",
+    "timestamp": "2026-10-17T11:11:09+00:00"
+  },
+  {
+    "id": "D07",
+    "kind": "docx",
+    "exit": 0,
+    "timed_out": false,
+    "seconds": 94.0,
+    "log": "qa_artifacts/logs/gen_docx_D07.log",
+    "timestamp": "2026-10-17T11:12:43+00:00"
+  },
+  {
+    "id": "D08",
+    "kind": "docx",
+    "exit": 0,
+    "timed_out": false,
+    "seconds": 99.2,
+    "log": "qa_artifacts/logs/gen_docx_D08.log",
+    "timestamp": "2026-10-17T11:14:22+00:00"
+  },
+  {
+    "id": "D09",
+    "kind": "docx",
+    "exit": 0,
+    "timed_out": false,
+    "seconds": 86.8,
+    "log": "qa_artifacts/logs/gen_docx_D09.log",
+    "timestamp": "2026-10-17T11:15:49+00:00"
+  },
+  {
+    "id": "D10",
+    "kind": "docx",
+    "exit": 0,
+    "timed_out": false,
+    "seconds": 114.1,
+    "log": "qa_artifacts/logs/gen_docx_D10.log",
+    "timestamp": "2026-10-17T11:17:43+00:00"
+  }
+]

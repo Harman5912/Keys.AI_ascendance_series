@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-10-27 13:52:12",
+  "seed": 7,
+  "bids": 10000,
+  "plan": {
+    "bids": 10000,
+    "plans_with_presets_first": 8572,
+    "failures": [],
+    "failure_count": 0
+  },
+  "build": {
+    "completed": 7500,
+    "failed": 0,
+    "builds": 7500,
+    "research_in_build": 7500,
+    "builds_without_research": 0,
+    "unbuilt": 0,
+    "failures": [],
+    "slowest": 0.6044091999992816,
+    "total_seconds": 2777.038016899919,
+    "status_failure_count": 0,
+    "status_failures": [],
+    "fidelity_by_reason": {},
+    "fidelity_failures": [],
+    "unbuilt_ids": [],
+    "sample": 7500,
+    "mean_seconds": 0.3702717355866559
+  },
+  "seconds": 240.7,
+  "failures": [],
+  "ok": true
+}

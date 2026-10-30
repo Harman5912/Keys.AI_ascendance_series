@@ -1,0 +1,12 @@
+{
+  "name": "signal-room-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Marketing BI report — node:http + node:sqlite, no dependencies",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check public/app.js"
+  },
+  "engines": { "node": ">=22.5" }
+}

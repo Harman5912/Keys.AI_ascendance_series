@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Manager</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header, footer { background-color: #f4f4f4; padding: 1em; text-align: center; }
+        main { padding: 20px; }
+        .item { margin-bottom: 10px; }
+        input[type='number'] { width: 50%; padding: 5px; margin-right: 10px; }
+        button { padding: 5px 10px; }
+        :focus-visible { outline: 2px solid blue; outline-offset: 2px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Inventory Manager</h1>
+    </header>
+    <main id="app">
+        <section id="add-section">
+            <h2>Add Item</h2>
+            <form id="add-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <br><br>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" min="1" required>
+                <span id="quantity-error" style="color: red; display: none;">Quantity must be a positive number.</span>
+                <br><br>
+                <label for="unit_price">Unit Price:</label>
+                <input type="number" id="unit_price" min="0.01" step="0.01" required>
+                <br><br>
+                <button type="submit">Add Item</button>
+            </form>
+        </section>
+        <section id="items-section">
+            <h2>Items</h2>
+            <ul id="items-list"></ul>
+        </section>
+        <section id="search-section">
+            <h2>Search Items</h2>
+            <input type="text" id="search-input" placeholder="Search by name...">
+        </section>
+        <footer>
+            <p>Total Stock Value: $<span id="total-value">0.00</span></p>
+        </footer>
+    </main>
+    <script>
+        let items = JSON.parse(localStorage.getItem('items')) || [];
+
+        function renderItems() {
+            const list = document.getElementById('items-list');
+            list.innerHTML = '';
+            if (items.length === 0) {
+                list.innerHTML = '<li>No items found.</li>';
+            } else {
+                items.forEach(item => {
+                    const li = document.createElement('li');
+                    li.classList.add('item');
+                    li.textContent = `${item.name} - ${item.quantity} x $${item.unit_price.toFixed(2)} = $${(item.quantity * item.unit_price).toFixed(2)}`;
+                    li.innerHTML += ` <button onclick="editItem(${items.indexOf(item)})">Edit</button> <button onclick="deleteItem(${items.indexOf(item)})">Delete</button>`;
+                    list.appendChild(li);
+                });
+            }
+        }
+
+        function calculateTotalValue() {
+            const total = items.reduce((acc, item) => acc + (item.quantity * item.unit_price), 0);
+            document.getElementById('total-value').textContent = total.toFixed(2);
+        }
+
+        function addItem(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const quantity = parseFloat(document.getElementById('quantity').value);
+            const unit_price = parseFloat(document.getElementById('unit_price').value);
+            if (isNaN(quantity) || quantity <= 0) {
+                document.getElementById('quantity-error').style.display = 'block';
+                return;
+            }
+            document.getElementById('quantity-error').style.display = 'none';
+            items.push({ name, quantity, unit_price });
+            localStorage.setItem('items', JSON.stringify(items));
+            renderItems();
+        }
+
+        function editItem(index) {
+            const item = items[index];
+            document.getElementById('name').value = item.name;
+            document.getElementById('quantity').value = item.quantity;
+            document.getElementById('unit_price').value = item.unit_price;
+            document.getElementById('add-form').addEventListener('submit', e => {
+                e.preventDefault();
+                items[index].name = document.getElementById('name').value;
+                items[index].quantity = parseFloat(document.getElementById('quantity').value);
+                items[index].unit_price = parseFloat(document.getElementById('unit_price').value);
+                localStorage.setItem('items', JSON.stringify(items));
+                renderItems();
+            });
+        }
+
+        function deleteItem(index) {
+            items.splice(index, 1);
+            localStorage.setItem('items', JSON.stringify(items));
+            renderItems();
+        }
+
+        document.getElementById('add-form').addEventListener('submit', addItem);
+        document.getElementById('search-input').addEventListener('input', e => {
+            const searchQuery = e.target.value.toLowerCase();
+            items.forEach(item => {
+                const nameMatch = item.name.toLowerCase().includes(searchQuery);
+                document.querySelector(`li:nth-child(${items.indexOf(item) + 1})`).style.display = nameMatch ? '' : 'none';
+            });
+        });
+
+        renderItems();
+        calculateTotalValue();
+    </script>
+</body>
+</html>

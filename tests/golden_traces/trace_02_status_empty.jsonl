@@ -1,0 +1,1 @@
+{"scenario": "trace_02_status_empty", "params": {"action": "status", "job_id": "job_nonexistent"}, "response": "Nothing is building right now."}

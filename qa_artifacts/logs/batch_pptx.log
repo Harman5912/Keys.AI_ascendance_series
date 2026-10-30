@@ -1,0 +1,12 @@
+[P02] OK in 51.1s -> qa_artifacts/logs/gen_pptx_P02.log
+[P03] OK in 36.9s -> qa_artifacts/logs/gen_pptx_P03.log
+[P04] OK in 40.4s -> qa_artifacts/logs/gen_pptx_P04.log
+[P05] OK in 38.6s -> qa_artifacts/logs/gen_pptx_P05.log
+[P06] OK in 45.3s -> qa_artifacts/logs/gen_pptx_P06.log
+[P07] OK in 43.6s -> qa_artifacts/logs/gen_pptx_P07.log
+[P08] OK in 36.8s -> qa_artifacts/logs/gen_pptx_P08.log
+[P09] OK in 40.6s -> qa_artifacts/logs/gen_pptx_P09.log
+[P10] OK in 43.7s -> qa_artifacts/logs/gen_pptx_P10.log
+
+pptx: 9/9 runs completed
+EXIT=0

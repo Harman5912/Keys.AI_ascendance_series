@@ -1,0 +1,11 @@
+file,kind,ok,pages_or_slides,words,error
+P01_startup_pitch.pptx,pptx,True,10,,
+P02_technical_architecture.pptx,pptx,True,9,,
+P03_product_demo.pptx,pptx,True,8,,
+P04_data_analytics_report.pptx,pptx,True,8,,
+P05_education_lesson.pptx,pptx,True,8,,
+P06_business_strategy.pptx,pptx,True,8,,
+P07_research_conference.pptx,pptx,True,8,,
+P08_security_awareness.pptx,pptx,True,8,,
+P09_project_status.pptx,pptx,True,9,,
+P10_product_launch.pptx,pptx,True,9,,

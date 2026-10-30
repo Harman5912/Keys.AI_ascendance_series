@@ -1,0 +1,11 @@
+[FileProcessor] CREATE PPTX | P01_startup_pitch.pptx
+[P01] 56.6s  exists=True  bytes=32823  result=Created PowerPoint presentation: P01_startup_pitch.pptx (32.1 KB)
+Saved to: C:\Users\harma\Desktop\PROJECTS\Ke
+restored file_processor task model -> {'provider': 'ollama', 'model': 'qwen3:8b', 'url': ''}
+
+DONE 1 pptx artifact(s) in C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\generated_presentations
+
+real	0m56.975s
+user	0m0.015s
+sys	0m0.015s
+EXIT=0

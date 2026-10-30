@@ -1,0 +1,99 @@
+{
+  "people": [
+    {
+      "name": "Harman Sadhwani",
+      "aliases": [
+        "harman",
+        "harman sadhwani"
+      ],
+      "note": "Keys.ai creator"
+    },
+    {
+      "name": "Rishabh Kumar Gond",
+      "aliases": [
+        "rishab",
+        "rishabh",
+        "rishab kumar",
+        "rishabh kumar",
+        "rishabh kumar gond",
+        "rishab gond"
+      ],
+      "note": "known contact"
+    },
+    {
+      "name": "Dhananjay",
+      "aliases": [
+        "dhananjey",
+        "dhananjay"
+      ],
+      "note": "known contact"
+    },
+    {
+      "name": "Rahul Sharma",
+      "aliases": [
+        "rahul",
+        "rahul sharma"
+      ],
+      "note": "known contact (ambiguous first name)"
+    },
+    {
+      "name": "Rahul Verma",
+      "aliases": [
+        "rahul",
+        "rahul verma"
+      ],
+      "note": "known contact (ambiguous first name)"
+    },
+    {
+      "name": "fatihmakes",
+      "aliases": [
+        "fatihmakes",
+        "fatih makes",
+        "fatih"
+      ],
+      "note": "WhatsApp contact — communicate via WhatsApp MESSAGING only (the previous method); calling is disabled for now"
+    },
+    {
+      "name": "Ambreen",
+      "aliases": [
+        "ambreen"
+      ],
+      "note": "WhatsApp contact — the calling feature was removed; communicate via WhatsApp MESSAGING only for now"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Keys.ai",
+      "aliases": [
+        "keys ai",
+        "keysai"
+      ],
+      "note": "this assistant"
+    },
+    {
+      "name": "ReviewBot",
+      "aliases": [
+        "reviewbot"
+      ],
+      "note": "AI-powered GitHub code review assistant"
+    },
+    {
+      "name": "Drop of Hope",
+      "aliases": [
+        "drop of hope",
+        "dropofhope"
+      ],
+      "note": "blood donation platform"
+    },
+    {
+      "name": "BharatHealth",
+      "aliases": [
+        "bharathealth"
+      ],
+      "note": "AI-assisted healthcare platform"
+    }
+  ],
+  "companies": [],
+  "websites": [],
+  "files": []
+}

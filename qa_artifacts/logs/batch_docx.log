@@ -1,0 +1,13 @@
+[D01] OK in 109.5s -> qa_artifacts/logs/gen_docx_D01.log
+[D02] TIMEOUT in 1660.3s -> qa_artifacts/logs/gen_docx_D02.log
+[D03] OK in 166.0s -> qa_artifacts/logs/gen_docx_D03.log
+[D04] OK in 100.5s -> qa_artifacts/logs/gen_docx_D04.log
+[D05] OK in 88.1s -> qa_artifacts/logs/gen_docx_D05.log
+[D06] OK in 105.3s -> qa_artifacts/logs/gen_docx_D06.log
+[D07] OK in 94.0s -> qa_artifacts/logs/gen_docx_D07.log
+[D08] OK in 99.2s -> qa_artifacts/logs/gen_docx_D08.log
+[D09] OK in 86.8s -> qa_artifacts/logs/gen_docx_D09.log
+[D10] OK in 114.1s -> qa_artifacts/logs/gen_docx_D10.log
+
+docx: 9/10 runs completed; problems: ['D02']
+EXIT=1

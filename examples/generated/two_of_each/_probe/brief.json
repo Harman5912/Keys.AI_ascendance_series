@@ -1,0 +1,11 @@
+{
+  "request": "Build a tiny python desktop app: a counter with a window.",
+  "requirements": "stack: PyQt6 with one window and a --selftest flag; storage: none;",
+  "artifact": "task",
+  "answered": [],
+  "assumptions": [],
+  "recipes": [
+    "python-desktop"
+  ],
+  "path": "code"
+}

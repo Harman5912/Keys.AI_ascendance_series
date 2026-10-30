@@ -1,0 +1,88 @@
+{
+  "results": [
+    {
+      "slug": "dashboard_01_fleet",
+      "kind": "dashboard",
+      "brief": "Build a fleet-operations dashboard: vehicles, trips, fuel and maintenance costs. Real JSON API, charts and a table.",
+      "ok": true,
+      "seconds": 0.9,
+      "files": [
+        ".env.example",
+        "README.md",
+        "app.py",
+        "brief.json",
+        "dashboard.db",
+        "db.py",
+        "requirements.txt",
+        "schema.sql",
+        "seed.py",
+        "static\\dashboard.js",
+        "static\\style.css",
+        "templates\\index.html"
+      ],
+      "file_count": 12,
+      "reply": "Building dashboard_01_fleet: done in 0.9s (28142 bytes)\nFiles: seed.py, static\\dashboard.js, static\\style.css, templates\\index.html\nRecent:\n  13:25:28 PASS serves GET /api/kpis?range=30d\n  13:25:28 PASS serves GET /api/series?range=30d\n  13:25:28 PASS serves GET /api/breakdown?range=30d\n  13:25:28 PASS serves GET /api/status?range=30d\n  13:25:28 PASS serves GET /api/rows?limit=50\n  13:25:28 Built dashboard: 11 files, 28142 bytes in 0.9s \u00b7 verified \u2014 8 checks passed (1 compiles, 1 executes, 6 serves) \u00b7 run it with: python seed.py && python app.py  (5071)\nOutput: C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\recipe_apps\\dashboard_01_fleet"
+    },
+    {
+      "slug": "dashboard_02_newsroom",
+      "kind": "dashboard",
+      "brief": "Build a newsroom analytics dashboard: articles, reads and subscriptions, with a table of recent stories.",
+      "ok": true,
+      "seconds": 0.9,
+      "files": [
+        ".env.example",
+        "README.md",
+        "app.py",
+        "brief.json",
+        "dashboard.db",
+        "db.py",
+        "requirements.txt",
+        "schema.sql",
+        "seed.py",
+        "static\\dashboard.js",
+        "static\\style.css",
+        "templates\\index.html"
+      ],
+      "file_count": 12,
+      "reply": "Building dashboard_02_newsroom: done in 0.9s (28142 bytes)\nFiles: seed.py, static\\dashboard.js, static\\style.css, templates\\index.html\nRecent:\n  13:25:29 PASS serves GET /api/kpis?range=30d\n  13:25:29 PASS serves GET /api/series?range=30d\n  13:25:29 PASS serves GET /api/breakdown?range=30d\n  13:25:29 PASS serves GET /api/status?range=30d\n  13:25:29 PASS serves GET /api/rows?limit=50\n  13:25:29 Built dashboard: 11 files, 28142 bytes in 0.9s \u00b7 verified \u2014 8 checks passed (1 compiles, 1 executes, 6 serves) \u00b7 run it with: python seed.py && python app.py  (5071)\nOutput: C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\recipe_apps\\dashboard_02_newsroom"
+    },
+    {
+      "slug": "python_01_ledger",
+      "kind": "python-desktop",
+      "brief": "Python desktop app: a small ledger with entries, search and totals.",
+      "ok": true,
+      "seconds": 0.4,
+      "files": [
+        "README.md",
+        "app\\__init__.py",
+        "app\\db.py",
+        "app\\theme.py",
+        "app\\window.py",
+        "brief.json",
+        "main.py",
+        "requirements.txt"
+      ],
+      "file_count": 8,
+      "reply": "Building python_01_ledger: done in 0.4s (15596 bytes)\nFiles: app\\window.py, brief.json, main.py, requirements.txt\nRecent:\n  13:25:29 Plan: Ledger \u2014 table, live search, add form, running total\n  13:25:29 Wrote 8 files\n  13:25:30 PASS compiles (5 files)\n  13:25:30 PASS executes (python main.py --selftest)\n  13:25:30 Built python-desktop: 8 files, 15596 bytes in 0.4s \u00b7 verified \u2014 2 checks passed (1 compiles, 1 executes) \u00b7 run it with: python main.py\nOutput: C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\recipe_apps\\python_01_ledger"
+    },
+    {
+      "slug": "python_02_inventory",
+      "kind": "python-desktop",
+      "brief": "Python desktop app: a shop inventory tool with stock levels and low-stock warnings.",
+      "ok": true,
+      "seconds": 0.5,
+      "files": [
+        "README.md",
+        "app\\__init__.py",
+        "app\\db.py",
+        "app\\theme.py",
+        "app\\window.py",
+        "brief.json",
+        "main.py",
+        "requirements.txt"
+      ],
+      "file_count": 8,
+      "reply": "Building python_02_inventory: done in 0.5s (15647 bytes)\nFiles: app\\window.py, brief.json, main.py, requirements.txt\nRecent:\n  13:25:30 Plan: Stock Control \u2014 table, live search, add form, running total\n  13:25:30 Wrote 8 files\n  13:25:30 PASS compiles (5 files)\n  13:25:30 PASS executes (python main.py --selftest)\n  13:25:30 Built python-desktop: 8 files, 15647 bytes in 0.5s \u00b7 verified \u2014 2 checks passed (1 compiles, 1 executes) \u00b7 run it with: python main.py\nOutput: C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\recipe_apps\\python_02_inventory"
+    }
+  ]
+}

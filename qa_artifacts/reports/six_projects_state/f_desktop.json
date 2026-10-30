@@ -1,0 +1,38 @@
+{
+  "key": "F",
+  "slug": "f_desktop",
+  "kind": "python-desktop",
+  "build": {
+    "ok": false,
+    "seconds": 615.2,
+    "model": "qwen3:8b",
+    "message": "Coding f_desktop: failed after 10m00s \u2014 Crown Code stopped without changing anything\nFiles: main.py, app/window.py\nRecent:\n  18:10:10 auto-approved write_file\n  18:10:10 Created main.py\n  18:18:57 auto-approved write_file\n  18:18:57 Created app/window.py\n  18:19:35 aborted"
+  },
+  "files_count": 3,
+  "files": [
+    "app\\window.py",
+    "brief.json",
+    "main.py"
+  ],
+  "missing_recipe_files": [
+    "app/__init__.py",
+    "app/db.py",
+    "app/theme.py",
+    "requirements.txt",
+    "README.md"
+  ],
+  "compile": {
+    "compiled": 2,
+    "compile_failures": []
+  },
+  "verify": {
+    "main_exists": true,
+    "import_check": {
+      "exit": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\six_projects\\f_desktop\\main.py\", line 3, in <module>\n    from app.window import NoteCanvasWindow\n  File \"C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\six_projects\\f_desktop\\app\\window.py\", line 2, in <module>\n    from app.theme import apply_dark_theme\nModuleNotFoundError: No module named 'app.theme'\n",
+      "seconds": 0.5
+    }
+  },
+  "ok": false
+}

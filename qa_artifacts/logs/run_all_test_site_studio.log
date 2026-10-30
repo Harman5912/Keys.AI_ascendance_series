@@ -1,0 +1,24 @@
+$ C:\Users\harma\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -X utf8 -m unittest qa_artifacts.regression_tests.test_site_studio -v
+exit=0 seconds=0.8
+
+---- stdout ----
+
+---- stderr ----
+test_a_studio_can_be_forced_for_page_sets (qa_artifacts.regression_tests.test_site_studio.StudioShowcaseTest.test_a_studio_can_be_forced_for_page_sets)
+Two pages in one set must be able to avoid the same layout. ... ok
+test_choose_studio_is_deterministic_and_varied (qa_artifacts.regression_tests.test_site_studio.StudioShowcaseTest.test_choose_studio_is_deterministic_and_varied) ... ok
+test_each_site_is_a_different_document (qa_artifacts.regression_tests.test_site_studio.StudioShowcaseTest.test_each_site_is_a_different_document) ... ok
+test_each_studio_ships_a_motion_system (qa_artifacts.regression_tests.test_site_studio.StudioShowcaseTest.test_each_studio_ships_a_motion_system) ... ok
+test_every_site_passes_the_live_pipeline_checks (qa_artifacts.regression_tests.test_site_studio.StudioShowcaseTest.test_every_site_passes_the_live_pipeline_checks) ... ok
+test_gallery_lists_every_built_site (qa_artifacts.regression_tests.test_site_studio.StudioShowcaseTest.test_gallery_lists_every_built_site) ... ok
+test_no_external_assets_are_loaded (qa_artifacts.regression_tests.test_site_studio.StudioShowcaseTest.test_no_external_assets_are_loaded) ... ok
+test_no_page_ships_a_dead_anchor (qa_artifacts.regression_tests.test_site_studio.StudioShowcaseTest.test_no_page_ships_a_dead_anchor)
+A studio that hardcodes a destination must not break when the plan ... ok
+test_plan_adapter_works_in_every_studio (qa_artifacts.regression_tests.test_site_studio.StudioShowcaseTest.test_plan_adapter_works_in_every_studio) ... ok
+test_ten_sites_ten_distinct_studios (qa_artifacts.regression_tests.test_site_studio.StudioShowcaseTest.test_ten_sites_ten_distinct_studios) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.678s
+
+OK
+

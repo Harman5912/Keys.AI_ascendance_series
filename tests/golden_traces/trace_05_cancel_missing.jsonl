@@ -1,0 +1,1 @@
+{"scenario": "trace_05_cancel_missing", "params": {"action": "cancel", "job_id": "job_fake"}, "response": "Nothing is building right now."}

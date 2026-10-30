@@ -1,0 +1,49 @@
+
+== [website 01_saas_landing] SaaS product landing page
+    attempt 1: PASS 79.3s tools=['write_file'] problems=[]
+   -> PASS (4384 bytes)
+
+== [website 02_ecommerce_storefront] E-commerce storefront
+    attempt 1: PASS 88.6s tools=['write_file'] problems=[]
+   -> PASS (5069 bytes)
+
+== [website 03_restaurant_menu] Restaurant and menu website
+    attempt 1: PASS 192.0s tools=['write_file'] problems=[]
+   -> PASS (4159 bytes)
+
+== [website 04_education_institution] Educational institution website
+    attempt 1: FAIL 80.2s tools=['write_file'] problems=['no <button> element']
+    attempt 2: FAIL 79.8s tools=['write_file'] problems=['index.html is only 3852 bytes (a finished page needs >= 4000)']
+   -> FAIL (3852 bytes)
+
+== [website 05_marketing_agency] Digital marketing agency website
+    attempt 1: FAIL 79.6s tools=['write_file'] problems=['index.html is only 3916 bytes (a finished page needs >= 4000)']
+    attempt 2: FAIL 73.5s tools=[] problems=['the model called no tool (it only produced text)', 'index.html is only 3916 bytes (a finished page needs >= 4000)']
+   -> FAIL (3916 bytes)
+
+== [website 06_event_conference] Event and conference website
+    attempt 1: PASS 98.8s tools=['write_file'] problems=[]
+   -> PASS (5004 bytes)
+
+== [website 07_news_editorial] News and editorial website
+    attempt 1: FAIL 58.3s tools=['write_file'] problems=['index.html is only 2970 bytes (a finished page needs >= 4000)']
+    attempt 2: FAIL 63.6s tools=[] problems=['the model called no tool (it only produced text)', 'index.html is only 2970 bytes (a finished page needs >= 4000)']
+   -> FAIL (2970 bytes)
+
+== [website 08_nonprofit] Nonprofit organisation website
+    attempt 1: FAIL 72.2s tools=[] problems=['the model called no tool (it only produced text)', 'index.html was not created']
+    attempt 2: PASS 121.7s tools=['write_file'] problems=[]
+   -> PASS (5766 bytes)
+
+== [website 09_analytics_dashboard] Analytics dashboard website
+    attempt 1: FAIL 84.0s tools=['write_file'] problems=['index.html is only 3148 bytes (a finished page needs >= 4000)', 'no <button> element']
+    attempt 2: FAIL 100.0s tools=['write_file'] problems=['index.html is only 3226 bytes (a finished page needs >= 4000)', 'no <footer> element']
+   -> FAIL (3226 bytes)
+
+== [website 10_business_services] Professional business services website
+    attempt 1: FAIL 66.8s tools=['write_file'] problems=['index.html is only 2861 bytes (a finished page needs >= 4000)']
+    attempt 2: PASS 84.7s tools=['write_file'] problems=[]
+   -> PASS (4007 bytes)
+
+website: 6/10 artifacts built and structurally valid
+EXIT=1

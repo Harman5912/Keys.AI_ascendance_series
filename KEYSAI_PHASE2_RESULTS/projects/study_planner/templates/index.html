@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ app_name }}</title>
+  <meta name="description" content="Study planner: subjects, tasks, deadlines and study sessions.">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body data-user-id="{{ user.id if user else '' }}">
+  <header class="topbar">
+    <h1>{{ app_name }}</h1>
+    <p class="sub" id="profile">Profile: {{ user.name if user else 'none — run python seed.py' }}</p>
+  </header>
+
+  <div id="flash" class="flash" role="status" aria-live="polite" hidden></div>
+
+  {% if db_error %}
+  <section class="panel error-panel">
+    <h2>No database profile</h2>
+    <p>The database has no user profile yet, so no data can be shown.
+       Run <code>python seed.py</code> in the project folder, then reload.</p>
+  </section>
+  {% endif %}
+
+  <main>
+    <!-- dashboard -->
+    <section class="cards" id="kpis" aria-label="Dashboard statistics">
+      <div class="card"><span class="num" id="kpi-total">–</span><span class="lbl">Tasks</span></div>
+      <div class="card"><span class="num" id="kpi-todo">–</span><span class="lbl">To do</span></div>
+      <div class="card"><span class="num" id="kpi-progress">–</span><span class="lbl">In progress</span></div>
+      <div class="card"><span class="num" id="kpi-done">–</span><span class="lbl">Done</span></div>
+      <div class="card warn"><span class="num" id="kpi-overdue">–</span><span class="lbl">Overdue</span></div>
+      <div class="card"><span class="num" id="kpi-minutes">–</span><span class="lbl">Minutes studied</span></div>
+    </section>
+
+    <!-- study time by subject -->
+    <section class="panel" aria-labelledby="minutes-h">
+      <h2 id="minutes-h">Study time by subject</h2>
+      <div id="minutes-chart" class="bars"></div>
+    </section>
+
+    <!-- filters -->
+    <section class="panel" aria-labelledby="tasks-h">
+      <h2 id="tasks-h">Tasks</h2>
+      <form id="filters" class="filters" role="search" aria-label="Filter tasks">
+        <label for="f-search">Search
+          <input type="search" id="f-search" name="q" placeholder="title or notes" autocomplete="off">
+        </label>
+        <label for="f-status">Status
+          <select id="f-status" name="status">
+            <option value="">All</option>
+            <option value="todo">To do</option>
+            <option value="in_progress">In progress</option>
+            <option value="done">Done</option>
+          </select>
+        </label>
+        <label for="f-subject">Subject
+          <select id="f-subject" name="subject_id"><option value="">All</option></select>
+        </label>
+        <label for="f-priority">Priority
+          <select id="f-priority" name="priority">
+            <option value="">All</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </label>
+        <button type="reset" class="ghost" id="clear-filters">Clear</button>
+      </form>
+
+      <p id="task-count" class="count">Loading…</p>
+      <table class="tasks" aria-describedby="task-count">
+        <thead>
+          <tr><th scope="col">Task</th><th scope="col">Subject</th>
+              <th scope="col">Due</th><th scope="col">Priority</th>
+              <th scope="col">Status</th><th scope="col"><span class="sr">Actions</span></th></tr>
+        </thead>
+        <tbody id="task-rows"><tr><td colspan="6" class="empty">Loading…</td></tr></tbody>
+      </table>
+    </section>
+
+    <div class="two-col">
+      <!-- add task -->
+      <section class="panel" aria-labelledby="new-task-h">
+        <h2 id="new-task-h">Add task</h2>
+        <form id="task-form" novalidate>
+          <label for="t-title">Title <span class="req">*</span>
+            <input id="t-title" name="title" required maxlength="200" autocomplete="off">
+          </label>
+          <label for="t-subject">Subject <span class="req">*</span>
+            <select id="t-subject" name="subject_id" required></select>
+          </label>
+          <div class="row">
+            <label for="t-due">Due date
+              <input type="date" id="t-due" name="due_date">
+            </label>
+            <label for="t-priority">Priority
+              <select id="t-priority" name="priority">
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+                <option value="low">Low</option>
+              </select>
+            </label>
+          </div>
+          <label for="t-notes">Notes
+            <textarea id="t-notes" name="notes" rows="2" maxlength="2000"></textarea>
+          </label>
+          <p class="field-error" id="task-form-error" role="alert" hidden></p>
+          <button type="submit" class="primary">Add task</button>
+        </form>
+      </section>
+
+      <!-- new subject + session -->
+      <section class="panel" aria-labelledby="new-subject-h">
+        <h2 id="new-subject-h">Add subject</h2>
+        <form id="subject-form" novalidate>
+          <label for="s-name">Name <span class="req">*</span>
+            <input id="s-name" name="name" required maxlength="80" autocomplete="off">
+          </label>
+          <p class="field-error" id="subject-form-error" role="alert" hidden></p>
+          <button type="submit" class="primary">Add subject</button>
+        </form>
+
+        <h2 class="mt">Log a study session</h2>
+        <form id="session-form" novalidate>
+          <div class="row">
+            <label for="sess-subject">Subject <span class="req">*</span>
+              <select id="sess-subject" name="subject_id" required></select>
+            </label>
+            <label for="sess-minutes">Minutes <span class="req">*</span>
+              <input type="number" id="sess-minutes" name="minutes" min="1" max="600" value="30" required>
+            </label>
+          </div>
+          <label for="sess-notes">Notes
+            <input id="sess-notes" name="notes" autocomplete="off">
+          </label>
+          <p class="field-error" id="session-form-error" role="alert" hidden></p>
+          <button type="submit" class="primary">Log session</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <p>API: <code>GET/POST /api/tasks</code>, <code>/api/subjects</code>,
+       <code>/api/sessions</code>, <code>GET /api/dashboard</code> — see API.md</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

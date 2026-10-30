@@ -1,0 +1,290 @@
+
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90mC:/Users/harma/Desktop/PROJECTS/Crown CODE[39m
+
+ [32m✓[39m tests/unit/config.test.ts[2m > [22mConfig[2m > [22mshould return a valid default config
+ [32m✓[39m tests/unit/config.test.ts[2m > [22mConfig[2m > [22mshould have sensible defaults
+ [32m✓[39m tests/unit/terminal.test.ts[2m > [22mtruncate[2m > [22mshould not truncate short strings
+ [32m✓[39m tests/unit/terminal.test.ts[2m > [22mtruncate[2m > [22mshould truncate long strings with ellipsis
+ [32m✓[39m tests/unit/terminal.test.ts[2m > [22mtruncate[2m > [22mshould handle exact length
+ [32m✓[39m tests/unit/terminal.test.ts[2m > [22mpad[2m > [22mshould pad short strings
+ [32m✓[39m tests/unit/terminal.test.ts[2m > [22mpad[2m > [22mshould not pad already-long strings
+ [32m✓[39m tests/unit/terminal.test.ts[2m > [22mpadLeft[2m > [22mshould pad left
+ [32m✓[39m tests/unit/terminal.test.ts[2m > [22mpadLeft[2m > [22mshould not pad already-long strings
+ [32m✓[39m tests/unit/terminal.test.ts[2m > [22mcenter[2m > [22mshould center a string
+ [32m✓[39m tests/unit/terminal.test.ts[2m > [22mcenter[2m > [22mshould handle odd padding
+ [32m✓[39m tests/unit/terminal.test.ts[2m > [22mgetLayoutMode[2m > [22mshould return compact for narrow terminals
+ [32m✓[39m tests/unit/terminal.test.ts[2m > [22mgetLayoutMode[2m > [22mshould return normal for medium terminals
+ [32m✓[39m tests/unit/terminal.test.ts[2m > [22mgetLayoutMode[2m > [22mshould return wide for wide terminals
+ [32m✓[39m tests/unit/format.test.ts[2m > [22mformatDuration[2m > [22mshould format milliseconds
+ [32m✓[39m tests/unit/format.test.ts[2m > [22mformatDuration[2m > [22mshould format seconds
+ [32m✓[39m tests/unit/format.test.ts[2m > [22mformatDuration[2m > [22mshould format minutes
+ [32m✓[39m tests/unit/format.test.ts[2m > [22mformatTokens[2m > [22mshould format small numbers
+ [32m✓[39m tests/unit/format.test.ts[2m > [22mformatTokens[2m > [22mshould format thousands
+ [32m✓[39m tests/unit/format.test.ts[2m > [22mformatTokens[2m > [22mshould format millions
+ [32m✓[39m tests/unit/format.test.ts[2m > [22mformatBytes[2m > [22mshould format bytes
+ [32m✓[39m tests/unit/format.test.ts[2m > [22mformatBytes[2m > [22mshould format kilobytes
+ [32m✓[39m tests/unit/format.test.ts[2m > [22mformatBytes[2m > [22mshould format megabytes
+ [32m✓[39m tests/unit/format.test.ts[2m > [22mgenerateId[2m > [22mshould generate a unique id
+ [32m✓[39m tests/unit/tool-registry.test.ts[2m > [22mToolRegistry allowlist[2m > [22mshows every registered tool by default
+ [32m✓[39m tests/unit/tool-registry.test.ts[2m > [22mToolRegistry allowlist[2m > [22mhides everything outside the allowlist from the model
+ [32m✓[39m tests/unit/tool-registry.test.ts[2m > [22mToolRegistry allowlist[2m > [22mrefuses to execute a tool outside the allowlist
+ [32m✓[39m tests/unit/tool-registry.test.ts[2m > [22mToolRegistry allowlist[2m > [22mstill executes allowed tools
+ [32m✓[39m tests/unit/tool-registry.test.ts[2m > [22mToolRegistry allowlist[2m > [22mlifts the restriction when given an empty list
+ [32m✓[39m tests/unit/tool-registry.test.ts[2m > [22mToolRegistry allowlist[2m > [22mignores blank names so a stray comma cannot lock the model out
+ [32m✓[39m tests/unit/classifier.test.ts[2m > [22mTask Classifier[2m > [22mshould classify simple questions
+ [32m✓[39m tests/unit/classifier.test.ts[2m > [22mTask Classifier[2m > [22mshould classify small code edits
+ [32m✓[39m tests/unit/classifier.test.ts[2m > [22mTask Classifier[2m > [22mshould classify large refactors
+ [32m✓[39m tests/unit/classifier.test.ts[2m > [22mTask Classifier[2m > [22mshould classify architecture decisions
+ [32m✓[39m tests/unit/classifier.test.ts[2m > [22mTask Classifier[2m > [22mshould classify repo analysis
+ [32m✓[39m tests/unit/classifier.test.ts[2m > [22mTask Classifier[2m > [22mshould classify tool-heavy tasks
+ [32m✓[39m tests/unit/classifier.test.ts[2m > [22mTask Classifier[2m > [22mshould classify summarization
+ [32m✓[39m tests/unit/classifier.test.ts[2m > [22mTask Classifier[2m > [22mshould detect high complexity
+ [32m✓[39m tests/unit/classifier.test.ts[2m > [22mTask Classifier[2m > [22mshould detect low complexity
+ [32m✓[39m tests/unit/classifier.test.ts[2m > [22mTask Classifier[2m > [22mshould return unknown for unrecognizable input
+ [32m✓[39m tests/unit/theme.test.ts[2m > [22mTheme System[2m > [22mshould have all background colors defined
+ [32m✓[39m tests/unit/theme.test.ts[2m > [22mTheme System[2m > [22mshould have all text colors defined
+ [32m✓[39m tests/unit/theme.test.ts[2m > [22mTheme System[2m > [22mshould have all accent colors defined
+ [32m✓[39m tests/unit/theme.test.ts[2m > [22mTheme System[2m > [22mshould have all status colors defined
+ [32m✓[39m tests/unit/theme.test.ts[2m > [22mTheme System[2m > [22mshould have valid hex colors
+ [32m✓[39m tests/unit/theme.test.ts[2m > [22mTheme System[2m > [22mshould have border colors
+ [32m✓[39m tests/unit/theme.test.ts[2m > [22mTheme System[2m > [22mshould have diff colors
+ [32m✓[39m tests/unit/theme.test.ts[2m > [22mColor Functions[2m > [22mshould wrap text with ANSI codes
+ [32m✓[39m tests/unit/theme.test.ts[2m > [22mColor Functions[2m > [22mshould support bold
+ [32m✓[39m tests/unit/theme.test.ts[2m > [22mColor Functions[2m > [22mshould support dim
+ [32m✓[39m tests/unit/theme.test.ts[2m > [22mColor Functions[2m > [22mshould have a reset code
+ [32m✓[39m tests/unit/theme.test.ts[2m > [22mdetectColorSupport[2m > [22mshould return a valid color support level
+ [32m✓[39m tests/unit/registry.test.ts[2m > [22mProviderRegistry[2m > [22mshould register and list providers
+ [32m✓[39m tests/unit/registry.test.ts[2m > [22mProviderRegistry[2m > [22mshould enable/disable providers
+ [32m✓[39m tests/unit/registry.test.ts[2m > [22mProviderRegistry[2m > [22mshould remove providers
+ [32m✓[39m tests/unit/registry.test.ts[2m > [22mProviderRegistry[2m > [22mshould add and list models
+ [32m✓[39m tests/unit/registry.test.ts[2m > [22mProviderRegistry[2m > [22mshould merge duplicate models
+ [32m✓[39m tests/unit/registry.test.ts[2m > [22mProviderRegistry[2m > [22mshould add and manage accounts
+ [32m✓[39m tests/unit/registry.test.ts[2m > [22mProviderRegistry[2m > [22mshould filter healthy accounts
+ [32m✓[39m tests/unit/registry.test.ts[2m > [22mProviderRegistry[2m > [22mshould filter models by capability
+ [32m✓[39m tests/unit/registry.test.ts[2m > [22mProviderRegistry[2m > [22mshould compute stats
+ [32m✓[39m tests/unit/registry.test.ts[2m > [22mProviderRegistry[2m > [22mshould find model across providers
+ [32m✓[39m tests/unit/router.test.ts[2m > [22mCrown Router[2m > [22mshould route to the best model based on scoring
+ [32m✓[39m tests/unit/router.test.ts[2m > [22mCrown Router[2m > [22mshould respect explicit model selection
+ [32m✓[39m tests/unit/router.test.ts[2m > [22mCrown Router[2m > [22mshould clear explicit model selection
+ [32m✓[39m tests/unit/router.test.ts[2m > [22mCrown Router[2m > [22mshould include fallback models
+ [32m✓[39m tests/unit/router.test.ts[2m > [22mCrown Router[2m > [22mshould exclude models without required capabilities
+ [32m✓[39m tests/unit/router.test.ts[2m > [22mCrown Router[2m > [22mshould update config
+ [32m✓[39m tests/unit/router.test.ts[2m > [22mCrown Router[2m > [22mshould prefer local models in local mode
+ [32m✓[39m tests/unit/router.test.ts[2m > [22mCrown Router[2m > [22mshould build routing reasons
+ [32m✓[39m tests/unit/router.test.ts[2m > [22mCrown Router[2m > [22mshould handle privacy mode local_only
+ [32m✓[39m tests/unit/router.test.ts[2m > [22mCrown Router[2m > [22mshould track routing history
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mTask classification matrix (12 scenarios × phrasing families)[2m > [22mclassifies "What does this function do?" → simple_question (question phrasing)
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mTask classification matrix (12 scenarios × phrasing families)[2m > [22mclassifies "Explain how the authentication module works" → simple_question (explain request)
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mTask classification matrix (12 scenarios × phrasing families)[2m > [22mclassifies "Fix the bug in login.ts" → small_code_edit (single file fix)
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mTask classification matrix (12 scenarios × phrasing families)[2m > [22mclassifies "Update the version in package.json" → small_code_edit (tiny edit)
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mTask classification matrix (12 scenarios × phrasing families)[2m > [22mclassifies "Add a console.log to utils.ts" → small_code_edit (one-liner)
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mTask classification matrix (12 scenarios × phrasing families)[2m > [22mclassifies "Refactor the authentication module to use JWT" → large_refactor (module refactor)
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mTask classification matrix (12 scenarios × phrasing families)[2m > [22mclassifies "Rewrite all the API endpoints to use async/await" → large_refactor (sweeping rewrite)
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mTask classification matrix (12 scenarios × phrasing families)[2m > [22mclassifies "What architecture should we use for the new microservice?" → architecture_decision (architecture question)
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mTask classification matrix (12 scenarios × phrasing families)[2m > [22mclassifies "Should we use SQL or NoSQL for this dataset?" → architecture_decision (tech choice)
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mTask classification matrix (12 scenarios × phrasing families)[2m > [22mclassifies "Analyze this repository and tell me the main components" → repo_analysis (repo scan)
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mTask classification matrix (12 scenarios × phrasing families)[2m > [22mclassifies "Summarize the changes in the last commit" → summarization (summary)
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mTask classification matrix (12 scenarios × phrasing families)[2m > [22mclassifies "Rename every function in the codebase and update all imports" → large_refactor (rename sweep)
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mTask classification matrix (12 scenarios × phrasing families)[2m > [22mevery classification carries valid required capabilities
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=auto budget=low privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=auto budget=low privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=auto budget=low privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=auto budget=balanced privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=auto budget=balanced privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=auto budget=balanced privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=auto budget=quality privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=auto budget=quality privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=auto budget=quality privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=auto budget=unlimited privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=auto budget=unlimited privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=auto budget=unlimited privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=economy budget=low privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=economy budget=low privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=economy budget=low privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=economy budget=balanced privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=economy budget=balanced privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=economy budget=balanced privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=economy budget=quality privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=economy budget=quality privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=economy budget=quality privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=economy budget=unlimited privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=economy budget=unlimited privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=economy budget=unlimited privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=balanced budget=low privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=balanced budget=low privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=balanced budget=low privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=balanced budget=balanced privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=balanced budget=balanced privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=balanced budget=balanced privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=balanced budget=quality privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=balanced budget=quality privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=balanced budget=quality privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=balanced budget=unlimited privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=balanced budget=unlimited privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=balanced budget=unlimited privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=quality budget=low privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=quality budget=low privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=quality budget=low privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=quality budget=balanced privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=quality budget=balanced privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=quality budget=balanced privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=quality budget=quality privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=quality budget=quality privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=quality budget=quality privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=quality budget=unlimited privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=quality budget=unlimited privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=quality budget=unlimited privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=local budget=low privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=local budget=low privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=local budget=low privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=local budget=balanced privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=local budget=balanced privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=local budget=balanced privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=local budget=quality privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=local budget=quality privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=local budget=quality privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=local budget=unlimited privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=local budget=unlimited privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=local budget=unlimited privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=multi budget=low privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=multi budget=low privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=multi budget=low privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=multi budget=balanced privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=multi budget=balanced privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=multi budget=balanced privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=multi budget=quality privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=multi budget=quality privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=multi budget=quality privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=multi budget=unlimited privacy=local_only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=multi budget=unlimited privacy=configured
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting decision matrix (6 modes × 4 budgets × 3 privacy modes = 72 cells)[2m > [22mroutes mode=multi budget=unlimited privacy=any
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting edge situations (each with a unique expected option)[2m > [22mno keys anywhere → only local models eligible
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting edge situations (each with a unique expected option)[2m > [22mdeepseek has models but no account → excluded from cloud pick
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting edge situations (each with a unique expected option)[2m > [22mexplicit model beats every mode/budget/privacy combination
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting edge situations (each with a unique expected option)[2m > [22munavailable provider health → skipped, next best chosen
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting edge situations (each with a unique expected option)[2m > [22mvision-required task filters to vision-capable models only
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting edge situations (each with a unique expected option)[2m > [22msmall-context task still routes; huge context preference demotes small models
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting edge situations (each with a unique expected option)[2m > [22mfallbacks list never contains the primary
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mRouting edge situations (each with a unique expected option)[2m > [22mrate-limited account scores low quota but stays routable if only option
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mTool schema sanitization matrix (every built-in tool shape)[2m > [22mstrips boolean required from properties but lifts it to top-level required array
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mTool schema sanitization matrix (every built-in tool shape)[2m > [22mpreserves type and description for every parameter
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mXML tool-call parsing matrix (7 format variants)[2m > [22mextracts correct name/input for every variant
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mXML tool-call parsing matrix (7 format variants)[2m > [22mmulti-block content yields one entry per block
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mXML tool-call parsing matrix (7 format variants)[2m > [22mplain prose yields zero calls
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mOllama message conversion matrix (history topologies)[2m > [22mconverts topology: simple user → assistant
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mOllama message conversion matrix (history topologies)[2m > [22mconverts topology: one tool roundtrip
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mOllama message conversion matrix (history topologies)[2m > [22mconverts topology: parallel tool calls (2 in one message)
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mOllama message conversion matrix (history topologies)[2m > [22mconverts topology: error tool result passes through flagged content
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mOllama message conversion matrix (history topologies)[2m > [22mconverts topology: system prompt prepended once
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mOllama message conversion matrix (history topologies)[2m > [22mconverts topology: multi-turn deep history (3 tool rounds)
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mError handling matrix (retriable classification per situation)[2m > [22mRETRIES on rate limited: "Ollama error 429: rate limit exceeded"
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mError handling matrix (retriable classification per situation)[2m > [22mRETRIES on server overload: "Ollama error 503: overloaded"
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mError handling matrix (retriable classification per situation)[2m > [22mRETRIES on timeout: "fetch failed: ETIMEDOUT"
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mError handling matrix (retriable classification per situation)[2m > [22mRETRIES on server down mid-session: "connect ECONNREFUSED 127.0.0.1:11434"
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mError handling matrix (retriable classification per situation)[2m > [22mRETRIES on connection reset: "socket hang up ECONNRESET"
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mError handling matrix (retriable classification per situation)[2m > [22mFAILS FAST on bad API key: "Ollama error 401: unauthorized"
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mError handling matrix (retriable classification per situation)[2m > [22mFAILS FAST on no permission: "Ollama error 403: forbidden"
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mError handling matrix (retriable classification per situation)[2m > [22mFAILS FAST on bad model name: "Ollama error 404: model "x" not found"
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mError handling matrix (retriable classification per situation)[2m > [22mFAILS FAST on missing model: "model "llama99" not found, try pulling it first"
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mError handling matrix (retriable classification per situation)[2m > [22mFAILS FAST on empty stream: "No response body"
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mError handling matrix (retriable classification per situation)[2m > [22mFAILS FAST on user interrupt: "Request aborted by user"
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mError handling matrix (retriable classification per situation)[2m > [22mRETRIES on unknown default: "Some weird unexpected failure"
+ [32m✓[39m tests/unit/decision-matrix.test.ts[2m > [22mStream event handling matrix[2m > [22mbuilds queued tool calls from interleaved tool_use + message_stop
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mparseXmlToolCalls[2m > [22mparses function/parameter XML style
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mparseXmlToolCalls[2m > [22mparses <tool_call> function_name style with JSON parameters
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mparseXmlToolCalls[2m > [22mparses <tool_call> without explicit closing tag
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mparseXmlToolCalls[2m > [22mparses PUA-wrapped <tool_call> (Qwen template chars)
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mparseXmlToolCalls[2m > [22mdecodes JSON escape sequences in parameter bodies
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mparseXmlToolCalls[2m > [22mreturns empty for no tool XML
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mparseJsonToolCalls[2m > [22mparses a bare JSON tool call emitted as plain content
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mparseJsonToolCalls[2m > [22mparses tool/input shape and nested function shape
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mparseJsonToolCalls[2m > [22mfinds the call inside prose / markdown fences
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mparseJsonToolCalls[2m > [22mrejects names not in the offered tool list
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mparseJsonToolCalls[2m > [22mrejects plain prose containing JSON without a call shape
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mparseJsonToolCalls[2m > [22mparses arguments that arrive as a JSON string
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mOllamaProvider.toOllamaMessages[2m > [22mconverts Anthropic-style tool_use/tool_result blocks to Ollama format
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mOllamaProvider.toOllamaMessages[2m > [22mpasses system prompt through
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mOllamaProvider.toOllamaMessages[2m > [22mkeeps plain string messages intact
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mOllamaProvider.stream[2m > [22memits error then message_stop when server unreachable
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mOllamaProvider.stream[2m > [22memits each native tool_call as a separate tool_use event with unique ids
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mOllamaProvider.stream[2m > [22mfalls back to XML tool-call parsing when no native tool_calls
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mOllamaProvider.stream[2m > [22mfalls back to JSON tool-call parsing when the model writes the call as content
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mOllamaProvider.stream[2m > [22mdoes NOT execute JSON found in content when its name is not an offered tool
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mOllamaProvider.stream[2m > [22mkeeps thinking field out of displayed content
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mOllamaProvider.stream[2m > [22mrequests a usable context window instead of Ollama's 4096 default
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mOllamaProvider.stream[2m > [22msurfaces in-stream error objects as error events
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mOllamaProvider.stream[2m > [22mturns thinking OFF for thinking-capable models (it is pure latency in an agent loop)
+ [32m✓[39m tests/unit/ollama.test.ts[2m > [22mOllamaProvider.stream[2m > [22mnever sends a think flag to a model without a thinking template
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [rm recursive/force]: "rm -r dir" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [rm recursive/force]: "rm -rf /tmp/x" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [rm recursive/force]: "rm -fr dir" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [rm recursive/force]: "rm -Rf dir" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [rm recursive/force]: "rm -f file" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [sudo]: "sudo apt install c" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [sudo]: "sudo rm file" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [sudo]: "echo hi && sudo ls" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [git push]: "git push" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [git push]: "git push origin main" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [git push]: "git push --force" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [git reset hard]: "git reset --hard" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [git reset hard]: "git reset --hard HEAD~1" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [git clean]: "git clean" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [git clean]: "git clean -fd" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [sql drop database]: "drop database prod" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [sql drop database]: "DROP DATABASE important_db;" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [sql drop table]: "drop table users" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [sql drop table]: "DROP TABLE orders CASCADE" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [fork bomb]: ":(){ :|:& };:" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [windows format]: "format C:" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mDANGEROUS [windows format]: "FORMAT D:" must require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [listings]: "ls" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [listings]: "ls -la" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [listings]: "pwd" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [listings]: "tree" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [git read ops]: "git status" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [git read ops]: "git log" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [git read ops]: "git diff" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [git read ops]: "git branch" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [git read ops]: "git remote -v" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [build/test]: "npm run build" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [build/test]: "npm test" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [build/test]: "npx tsc --noEmit" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [build/test]: "vitest run" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [build/test]: "make" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [file read]: "cat README.md" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [file read]: "head -5 file.txt" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [file read]: "grep -n todo src" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [file read]: "type package.json" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [non-destructive rm]: "rmdir emptydir" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [non-destructive rm]: "rm single.txt" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [non-destructive rm]: "git rm --cached f.txt" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [package ops]: "npm install" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [package ops]: "npm install -D typescript" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [package ops]: "pip install requests" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [misc]: "echo hello" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [misc]: "node index.js" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [misc]: "mkdir newdir" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [misc]: "touch x.txt" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mSAFE [misc]: "curl -s localhost:11434/api/version" must NOT require confirmation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: dangerous-command verdicts (real regexes, exhaustive)[2m > [22mall exported dangerous patterns are valid non-empty RegExps
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: permission dialog matrix (every tool × option semantics)[2m > [22mterminal({"command":"rm -rf build"}) → 3 unique options, verb "execute"
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: permission dialog matrix (every tool × option semantics)[2m > [22mterminal({"command":"git push --force"}) → 3 unique options, verb "execute"
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: permission dialog matrix (every tool × option semantics)[2m > [22mterminal({"command":"sudo npm i -g x"}) → 3 unique options, verb "execute"
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: permission dialog matrix (every tool × option semantics)[2m > [22mwrite_file({"path":"a.ts","content":"x"}) → 3 unique options, verb "create/overwrite"
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: permission dialog matrix (every tool × option semantics)[2m > [22medit_file({"path":"a.ts"}) → 3 unique options, verb "modify"
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: permission dialog matrix (every tool × option semantics)[2m > [22mdelete_file({"path":"a.ts"}) → 3 unique options, verb "delete"
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: permission dialog matrix (every tool × option semantics)[2m > [22mselection index is clamped within [0, 2] for navigation
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: seeded routing exploration (1440 situations + contract checks)[2m > [22mevery generated situation satisfies its unique option contract
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: classifier fuzz (12×8×6 = 576 phrase combinations)[2m > [22mevery combination yields a task type in the legal enum with sane confidence + capabilities
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: classifier fuzz (12×8×6 = 576 phrase combinations)[2m > [22msame classifier input always produces the same classification (pure function)
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: XML tool-call fuzz (noise × formats = 42 situations)[2m > [22mparses function= style through arbitrary prose noise
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: XML tool-call fuzz (noise × formats = 42 situations)[2m > [22mparses tool_call+JSON style through arbitrary prose noise
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: XML tool-call fuzz (noise × formats = 42 situations)[2m > [22mgarbage input never crashes and always returns an array
+ [32m✓[39m tests/unit/virtual-agent-env.test.ts[2m > [22mVirtual env: schema sanitizer fuzz (seeded tool shapes × 100)[2m > [22mevery generated schema is JSON-valid with array required and no bool required in properties
+
+[2m Test Files [22m [1m[32m11 passed[39m[22m[90m (11)[39m
+[2m      Tests [22m [1m[32m280 passed[39m[22m[90m (280)[39m
+[2m   Start at [22m 15:49:48
+[2m   Duration [22m 1.77s[2m (transform 1.38s, setup 0ms, collect 2.54s, tests 504ms, environment 2ms, prepare 8.47s)[22m
+
+EXIT=0

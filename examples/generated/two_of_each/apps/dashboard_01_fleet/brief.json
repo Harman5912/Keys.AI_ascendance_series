@@ -1,0 +1,18 @@
+{
+  "request": "Build a fleet-operations dashboard: vehicles, trips, fuel and maintenance costs. Real JSON API, charts and a table.",
+  "requirements": "data source: MySQL database `fleet_ops`, tables seeded with labelled sample rows; connect with pymysql from .env (DB_HOST/DB_PORT/DB_USER/DB_PASSWORD/DB_NAME); metrics: distance per day, fuel cost per vehicle, maintenance cost, overdue services; charts: line for distance per day, bar for cost per vehicle, KPI cards, table of vehicles; stack: Flask API + vanilla HTML/CSS/JS with inline SVG charts, no CDN; scope: local single user, no login, sample data, port 5071.",
+  "artifact": "app",
+  "answered": [
+    "data_source",
+    "metrics",
+    "charts",
+    "stack",
+    "scope"
+  ],
+  "assumptions": [],
+  "recipes": [
+    "dashboard",
+    "mysql"
+  ],
+  "path": "code"
+}

@@ -1,0 +1,11 @@
+# D04 exit=0 timeout=False seconds=100.5
+# ---- stdout ----
+[FileProcessor] CREATE DOCX | D04_standard_operating_procedure.docx
+[D04] 100.3s  exists=True  bytes=38466  result=Created Word document: D04_standard_operating_procedure.docx (37.6 KB)
+Saved to: C:\Users\harma\Desktop\PROJEC
+restored file_processor task model -> {'provider': 'gemini', 'model': 'gemini-2.5-flash', 'url': ''}
+
+DONE 1 docx artifact(s) in C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\generated_documents
+
+# ---- stderr ----
+

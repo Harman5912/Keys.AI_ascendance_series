@@ -1,0 +1,24 @@
+$ C:\Users\harma\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -X utf8 -m unittest qa_artifacts.regression_tests.test_openai_compat -v
+exit=0 seconds=0.3
+
+---- stdout ----
+
+---- stderr ----
+test_empty_hosted_does_not_retry (qa_artifacts.regression_tests.test_openai_compat.TestEmptyCompletion.test_empty_hosted_does_not_retry) ... ok
+test_empty_is_retried_once_then_raises (qa_artifacts.regression_tests.test_openai_compat.TestEmptyCompletion.test_empty_is_retried_once_then_raises) ... ok
+test_hosted_endpoint_never_probes_native (qa_artifacts.regression_tests.test_openai_compat.TestNativeOllamaPath.test_hosted_endpoint_never_probes_native) ... ok
+test_local_uses_native_chat_without_thinking (qa_artifacts.regression_tests.test_openai_compat.TestNativeOllamaPath.test_local_uses_native_chat_without_thinking) ... ok
+test_native_path_used_for_every_call (qa_artifacts.regression_tests.test_openai_compat.TestNativeOllamaPath.test_native_path_used_for_every_call) ... ok
+test_runtime_without_native_endpoint_falls_back (qa_artifacts.regression_tests.test_openai_compat.TestNativeOllamaPath.test_runtime_without_native_endpoint_falls_back)
+LM Studio / vLLM return 404 for /api/chat -> OpenAI endpoint. ... ok
+test_v1_suffix_still_resolves_native_url (qa_artifacts.regression_tests.test_openai_compat.TestNativeOllamaPath.test_v1_suffix_still_resolves_native_url) ... ok
+test_hosted_endpoint_untouched (qa_artifacts.regression_tests.test_openai_compat.TestQwenSoftSwitch.test_hosted_endpoint_untouched) ... ok
+test_no_think_added_once (qa_artifacts.regression_tests.test_openai_compat.TestQwenSoftSwitch.test_no_think_added_once) ... ok
+test_other_models_untouched (qa_artifacts.regression_tests.test_openai_compat.TestQwenSoftSwitch.test_other_models_untouched) ... ok
+test_qwen3_local_gets_no_think (qa_artifacts.regression_tests.test_openai_compat.TestQwenSoftSwitch.test_qwen3_local_gets_no_think) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.095s
+
+OK
+

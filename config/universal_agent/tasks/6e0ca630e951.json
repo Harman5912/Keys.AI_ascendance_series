@@ -1,0 +1,555 @@
+{
+  "id": "6e0ca630e951",
+  "request": "Build a lab sample register for a non-profit food bank that imports last year's data (bid #8591)",
+  "created_at": "2026-10-27 11:09:04",
+  "updated_at": "2026-10-27 11:09:04",
+  "status": "COMPLETED",
+  "intent": "software",
+  "workspace": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951",
+  "questions": [],
+  "answers": {
+    "presets": "ui_design",
+    "depth": "quick"
+  },
+  "assumptions": [],
+  "brief": {
+    "goal": "Build a lab sample register for a non-profit food bank that imports last year's data (bid #8591)",
+    "intent": "software",
+    "answers": {
+      "presets": "ui_design",
+      "depth": "quick"
+    },
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "assumptions": [],
+    "constraints": [
+      "Work only inside the task workspace",
+      "Do not delete or overwrite user files without approval",
+      "Never claim success for an unverified step"
+    ]
+  },
+  "plan": {
+    "steps": [
+      {
+        "id": "s1",
+        "worker": "research",
+        "title": "Research the subject before building",
+        "params": {
+          "depth": "quick",
+          "feed_build": true,
+          "presets": [
+            "ui_design"
+          ]
+        },
+        "status": "done",
+        "detail": "Researched 'Build a lab sample register for a non-profit food bank that ' across 3 inspected source(s); 6 cited evidence items; presets: UI / design references.",
+        "requires_approval": false,
+        "started_at": "2026-10-27 11:09:04",
+        "ended_at": "2026-10-27 11:09:04",
+        "error": "",
+        "attempts": 1,
+        "artifacts": [
+          {
+            "id": "e5afd3cc06",
+            "task_id": "6e0ca630e951",
+            "name": "research-report.md",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951\\research-report.md",
+            "kind": "markdown",
+            "size": 4078,
+            "sha256": "ac7de6e27f430e5d15d195957fed06b0ae9912a91468ef74d8b51902fea430ee",
+            "created_at": "2026-10-27 11:09:04",
+            "detail": "Cited research report",
+            "validated": true,
+            "validation_detail": "3959 chars"
+          },
+          {
+            "id": "2f19ce8874",
+            "task_id": "6e0ca630e951",
+            "name": "ref_5547710e.png",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951\\references\\ref_5547710e.png",
+            "kind": "png",
+            "size": 362,
+            "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+            "created_at": "2026-10-27 11:09:04",
+            "detail": "Design reference: Reference: Build a lab sample register for a non-profit food",
+            "validated": true,
+            "validation_detail": "PNG 160×120"
+          },
+          {
+            "id": "e7952dbf90",
+            "task_id": "6e0ca630e951",
+            "name": "ref_22fd3603.png",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951\\references\\ref_22fd3603.png",
+            "kind": "png",
+            "size": 362,
+            "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+            "created_at": "2026-10-27 11:09:04",
+            "detail": "Design reference: Reference: Build a lab sample register for a non-profit food",
+            "validated": true,
+            "validation_detail": "PNG 160×120"
+          },
+          {
+            "id": "379f895a8b",
+            "task_id": "6e0ca630e951",
+            "name": "ref_582be348.png",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951\\references\\ref_582be348.png",
+            "kind": "png",
+            "size": 362,
+            "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+            "created_at": "2026-10-27 11:09:04",
+            "detail": "Design reference: Reference: Build a lab sample register for a non-profit food",
+            "validated": true,
+            "validation_detail": "PNG 160×120"
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "worker": "software",
+        "title": "Build and verify the project",
+        "params": {
+          "mode": "build",
+          "reuse_research": true
+        },
+        "status": "done",
+        "detail": "built in the test environment",
+        "requires_approval": false,
+        "started_at": "2026-10-27 11:09:04",
+        "ended_at": "2026-10-27 11:09:04",
+        "error": "",
+        "attempts": 1,
+        "artifacts": [
+          {
+            "id": "cfa3a9d96d",
+            "task_id": "6e0ca630e951",
+            "name": "index.html",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951\\lab-sample-register-for-a-non-profit-foo\\index.html",
+            "kind": "html",
+            "size": 171,
+            "sha256": "21e418ee1f82abb8d7681c032c1ef1d2043ee2aae57e23d7396e0c163bb85e43",
+            "created_at": "2026-10-27 11:09:04",
+            "detail": "171 bytes",
+            "validated": true,
+            "validation_detail": "171 chars"
+          }
+        ]
+      }
+    ],
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "source": "deterministic",
+    "note": "",
+    "created_at": "2026-10-27 11:09:04"
+  },
+  "current_step": 1,
+  "artifacts": [
+    {
+      "id": "e5afd3cc06",
+      "task_id": "6e0ca630e951",
+      "name": "research-report.md",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951\\research-report.md",
+      "kind": "markdown",
+      "size": 4078,
+      "sha256": "ac7de6e27f430e5d15d195957fed06b0ae9912a91468ef74d8b51902fea430ee",
+      "created_at": "2026-10-27 11:09:04",
+      "detail": "Cited research report",
+      "validated": true,
+      "validation_detail": "3959 chars"
+    },
+    {
+      "id": "2f19ce8874",
+      "task_id": "6e0ca630e951",
+      "name": "ref_5547710e.png",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951\\references\\ref_5547710e.png",
+      "kind": "png",
+      "size": 362,
+      "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+      "created_at": "2026-10-27 11:09:04",
+      "detail": "Design reference: Reference: Build a lab sample register for a non-profit food",
+      "validated": true,
+      "validation_detail": "PNG 160×120"
+    },
+    {
+      "id": "e7952dbf90",
+      "task_id": "6e0ca630e951",
+      "name": "ref_22fd3603.png",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951\\references\\ref_22fd3603.png",
+      "kind": "png",
+      "size": 362,
+      "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+      "created_at": "2026-10-27 11:09:04",
+      "detail": "Design reference: Reference: Build a lab sample register for a non-profit food",
+      "validated": true,
+      "validation_detail": "PNG 160×120"
+    },
+    {
+      "id": "379f895a8b",
+      "task_id": "6e0ca630e951",
+      "name": "ref_582be348.png",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951\\references\\ref_582be348.png",
+      "kind": "png",
+      "size": 362,
+      "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+      "created_at": "2026-10-27 11:09:04",
+      "detail": "Design reference: Reference: Build a lab sample register for a non-profit food",
+      "validated": true,
+      "validation_detail": "PNG 160×120"
+    },
+    {
+      "id": "cfa3a9d96d",
+      "task_id": "6e0ca630e951",
+      "name": "index.html",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951\\lab-sample-register-for-a-non-profit-foo\\index.html",
+      "kind": "html",
+      "size": 171,
+      "sha256": "21e418ee1f82abb8d7681c032c1ef1d2043ee2aae57e23d7396e0c163bb85e43",
+      "created_at": "2026-10-27 11:09:04",
+      "detail": "171 bytes",
+      "validated": true,
+      "validation_detail": "171 chars"
+    }
+  ],
+  "evidence": [
+    {
+      "claim": "Sample Register Non-Profit Food Bank — reference notes.",
+      "quote": "Sample Register Non-Profit Food Bank — reference notes.",
+      "source_url": "https://docs.example.com/04baec4dc5",
+      "title": "Reference: Build a lab sample register for a non-profit food bank that ",
+      "retrieved_at": "2026-10-27 11:09:04",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The sample register non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The sample register non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/04baec4dc5",
+      "title": "Reference: Build a lab sample register for a non-profit food bank that ",
+      "retrieved_at": "2026-10-27 11:09:04",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "Sample Register Non-Profit Food Bank — reference notes.",
+      "quote": "Sample Register Non-Profit Food Bank — reference notes.",
+      "source_url": "https://docs.example.com/1fb4631e10",
+      "title": "Reference: Build a lab sample register for a non-profit food bank that ",
+      "retrieved_at": "2026-10-27 11:09:04",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The sample register non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The sample register non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/1fb4631e10",
+      "title": "Reference: Build a lab sample register for a non-profit food bank that ",
+      "retrieved_at": "2026-10-27 11:09:04",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "Sample Register Non-Profit Food Bank — reference notes.",
+      "quote": "Sample Register Non-Profit Food Bank — reference notes.",
+      "source_url": "https://docs.example.com/8587a2ed03",
+      "title": "Reference: Build a lab sample register for a non-profit food bank that ",
+      "retrieved_at": "2026-10-27 11:09:04",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The sample register non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The sample register non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/8587a2ed03",
+      "title": "Reference: Build a lab sample register for a non-profit food bank that ",
+      "retrieved_at": "2026-10-27 11:09:04",
+      "verified": true,
+      "method": "page fetched"
+    }
+  ],
+  "events": [
+    {
+      "ts": "2026-10-27 11:09:04",
+      "type": "task_created",
+      "text": "software task created in 20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951"
+    },
+    {
+      "ts": "2026-10-27 11:09:04",
+      "type": "status",
+      "text": "INTAKE → READY"
+    },
+    {
+      "ts": "2026-10-27 11:09:04",
+      "type": "status",
+      "text": "READY → PLANNING (building the plan)"
+    },
+    {
+      "ts": "2026-10-27 11:09:04",
+      "type": "plan_created",
+      "text": "2 step(s), source: deterministic"
+    },
+    {
+      "ts": "2026-10-27 11:09:04",
+      "type": "status",
+      "text": "PLANNING → READY (plan ready)"
+    },
+    {
+      "ts": "2026-10-27 11:09:04",
+      "type": "status",
+      "text": "READY → RUNNING"
+    },
+    {
+      "ts": "2026-10-27 11:09:04",
+      "type": "step_started",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:09:04",
+      "type": "worker_log",
+      "text": "Research: Build a lab sample register for a non-profit food bank that imports last year's data (bid #8591) (depth quick, 4 queries, presets: UI / design references)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:09:04",
+      "type": "worker_log",
+      "text": "Design reference captured: Reference: Build a lab sample register for a non-profit food",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:09:04",
+      "type": "worker_log",
+      "text": "Design reference captured: Reference: Build a lab sample register for a non-profit food",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:09:04",
+      "type": "worker_log",
+      "text": "Design reference captured: Reference: Build a lab sample register for a non-profit food",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:09:04",
+      "type": "worker_log",
+      "text": "Research summary discarded: no citation to the evidence.",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:09:04",
+      "type": "worker_log",
+      "text": "Research report written: research-report.md (6 evidence items)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:09:04",
+      "type": "step_done",
+      "text": "Done: Researched 'Build a lab sample register for a non-profit food bank that ' across 3 inspected source(s); 6 cited evidence items; presets: UI / design references.",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:09:04",
+      "type": "step_started",
+      "text": "Starting: Build and verify the project",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 11:09:04",
+      "type": "worker_log",
+      "text": "Software: delegating to Crown Code in lab-sample-register-for-a-non-profit-foo",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 11:09:04",
+      "type": "worker_log",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 11:09:04",
+      "type": "step_done",
+      "text": "Done: built in the test environment",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 11:09:04",
+      "type": "status",
+      "text": "RUNNING → VALIDATING (verifying artifacts)"
+    },
+    {
+      "ts": "2026-10-27 11:09:04",
+      "type": "task_completed",
+      "text": "2 step(s) complete; 5 artifact(s) verified."
+    },
+    {
+      "ts": "2026-10-27 11:09:04",
+      "type": "status",
+      "text": "VALIDATING → COMPLETED"
+    }
+  ],
+  "approval": null,
+  "error": "",
+  "warnings": [],
+  "attempts": {},
+  "result": {
+    "summary": "2 step(s) complete; 5 artifact(s) verified.",
+    "artifacts": [
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951\\research-report.md",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951\\references\\ref_5547710e.png",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951\\references\\ref_22fd3603.png",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951\\references\\ref_582be348.png",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951\\lab-sample-register-for-a-non-profit-foo\\index.html"
+    ],
+    "validation": "5 artifact(s) verified",
+    "warnings": []
+  },
+  "logs": [
+    {
+      "ts": "11:09:04",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    },
+    {
+      "ts": "11:09:04",
+      "text": "Research: Build a lab sample register for a non-profit food bank that imports last year's data (bid #8591) (depth quick, 4 queries, presets: UI / design references)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:09:04",
+      "text": "Design reference captured: Reference: Build a lab sample register for a non-profit food",
+      "step": "s1"
+    },
+    {
+      "ts": "11:09:04",
+      "text": "Design reference captured: Reference: Build a lab sample register for a non-profit food",
+      "step": "s1"
+    },
+    {
+      "ts": "11:09:04",
+      "text": "Design reference captured: Reference: Build a lab sample register for a non-profit food",
+      "step": "s1"
+    },
+    {
+      "ts": "11:09:04",
+      "text": "Research summary discarded: no citation to the evidence.",
+      "step": "s1"
+    },
+    {
+      "ts": "11:09:04",
+      "text": "Research report written: research-report.md (6 evidence items)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:09:04",
+      "text": "Verified artifact: research-report.md (3959 chars)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:09:04",
+      "text": "Verified artifact: ref_5547710e.png (PNG 160×120)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:09:04",
+      "text": "Verified artifact: ref_22fd3603.png (PNG 160×120)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:09:04",
+      "text": "Verified artifact: ref_582be348.png (PNG 160×120)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:09:04",
+      "text": "Done: Researched 'Build a lab sample register for a non-profit food bank that ' across 3 inspected source(s); 6 cited evidence items; presets: UI / design references.",
+      "step": "s1"
+    },
+    {
+      "ts": "11:09:04",
+      "text": "Starting: Build and verify the project",
+      "step": "s2"
+    },
+    {
+      "ts": "11:09:04",
+      "text": "Software: delegating to Crown Code in lab-sample-register-for-a-non-profit-foo",
+      "step": "s2"
+    },
+    {
+      "ts": "11:09:04",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "11:09:04",
+      "text": "Verified artifact: index.html (171 chars)",
+      "step": "s2"
+    },
+    {
+      "ts": "11:09:04",
+      "text": "Done: built in the test environment",
+      "step": "s2"
+    },
+    {
+      "ts": "11:09:04",
+      "text": "Validation: 5 artifact(s) verified",
+      "step": ""
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "results": [
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951\\research-report.md",
+        "kind": "md",
+        "detail": "3959 chars",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951\\references\\ref_5547710e.png",
+        "kind": "png",
+        "detail": "PNG 160×120",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951\\references\\ref_22fd3603.png",
+        "kind": "png",
+        "detail": "PNG 160×120",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951\\references\\ref_582be348.png",
+        "kind": "png",
+        "detail": "PNG 160×120",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-lab-sample-register-for-a-non--6e0ca630e951\\lab-sample-register-for-a-non-profit-foo\\index.html",
+        "kind": "html",
+        "detail": "171 chars",
+        "warning": ""
+      }
+    ],
+    "failures": [],
+    "detail": "5 artifact(s) verified"
+  }
+}

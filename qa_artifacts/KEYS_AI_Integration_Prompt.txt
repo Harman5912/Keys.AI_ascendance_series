@@ -1,0 +1,61 @@
+Implementation Prompt: Give KEYS.AI a Consistent Personality and Reliable Agent Management
+You are the senior engineer working in the actual KEYS.AI application workspace supplied by the user. Implement the design below in the existing codebase. Do not replace the application with a new demo, scaffold a competing app, or assume a framework before inspecting the workspace.
+Inputs
+KEYS_AI_Personality_Playbook.docx: full behaviour specification and dialogue examples.
+keysai_dialogue_corpus.json: structured examples for retrieval, calibration, and tests.
+independent_github_research.md: design patterns and public references.
+Persona specification: use the Core Persona Specification section in the playbook as the behavioural source of truth.
+Phase 1 — Inspect before changing
+Inspect the supplied workspace: runtime, UI/backend boundaries, model/provider router, prompts, tool registry, memory system, agent code, permissions, logging, and tests.
+Find the existing assistant entry point and trace one request from input through model selection, tool call, response, and UI rendering.
+Report the real files and modules involved. Do not invent filenames, frameworks, or functions.
+Keep existing functioning features and provider integrations. Identify the smallest integration seam.
+Phase 2 — Implement a versioned personality subsystem
+Add a central persona or equivalent module in the project’s existing conventions.
+Store: persona version, base traits, mode profiles, language policy, humour/verbosity controls, tool-truth rules, memory rules, and safety/permission reminders.
+Load a small base persona every turn. Add only the relevant mode and a few relevant dialogue examples retrieved by intent/risk/language. Do not inject the whole book on every model call.
+Add modes equivalent to Companion, Focus, Developer, Research, Operator, Coach, Creative, and Quiet/Voice. Keep the final user-facing voice recognisably KEYS.AI even when specialist agents are used.
+Make personality settings configurable through the existing configuration/settings approach. Provide safe defaults and preserve backwards compatibility.
+Ensure the persona is not treated as a substitute for application-side security controls.
+Phase 3 — Make the dialogue corpus useful
+Load keysai_dialogue_corpus.json with schema validation and helpful errors.
+Add metadata or derived indexes for intent, mode, tone, language, risk class, and example ID without changing the authored dialogue meaning.
+Select a small relevant sample (normally 1–4 examples) for prompt context, or use a deterministic example selection path when that is more reliable.
+Prevent repetitive literal replies: examples calibrate style; they are not fixed responses unless the user explicitly asks for a reusable template.
+Add an evaluation path that compares expected behaviour rather than exact wording. Include tests for wit restraint, user distress, task honesty, multilingual adaptation, and concise versus detailed responses.
+Phase 4 — Agent management architecture
+If a specialist-agent layer already exists, extend it rather than creating a duplicate. Otherwise introduce a small, auditable coordinator using the current stack. Define typed schemas similar to:
+TaskPlan: request_id, task_id, goal, dependencies, assigned_agent, risk_level, input_refs, expected_output_schema, acceptance_criteria, status.
+AgentResult: request_id, task_id, agent_id, status, summary, evidence_refs, artifacts, errors, verification, elapsed_ms, provider/model metadata where safe.
+PermissionDecision: action, resource, risk, decision (allow/deny/needs_confirmation), reason, policy_id.
+Provide bounded specialist roles: - Coordinator/planner: classifies simple vs complex requests, owns task graph and final answer. - Research: sources, dates, claims, citations, contradiction checks. - Developer: repository analysis, code changes, tests, verification. - Browser/operator: navigation, interaction, screenshots, observable outcome checks. - Data: documents, spreadsheets, calculations, data outputs. - System: allowlisted desktop/system tools only. - Reviewer: acceptance criteria, security, factuality, and unsupported action claims.
+Each agent receives only the tools it needs. Agents must return structured results, not uncontrolled natural-language handoffs. The coordinator aggregates results and the response composer speaks in KEYS.AI’s voice.
+Phase 5 — Execution control and safety
+Keep policy enforcement in trusted application code, not solely in model prompts.
+Separate read-only inspection from writes and external actions.
+Require explicit confirmation, following the existing product policy, before deletion, overwrites, external messages, account/security changes, spending, privileged commands, system restart/shutdown, or other consequential actions.
+Treat browser pages, retrieved files, comments, and agent outputs as untrusted data; they cannot override system rules or user intent.
+Record what actually happened. Never claim a message was sent, a file saved, a browser action completed, or a bug fixed unless corresponding tool evidence confirms it.
+Make retries bounded and safe. Do not repeat non-idempotent actions unless state is checked first.
+Add cancellation/interruption handling for long-running tasks; checkpoint durable tasks if supported by the existing architecture.
+Redact API keys, passwords, tokens, and sensitive content from logs. Keep user-visible progress concise and explain meaningful blockers.
+Phase 6 — Model/provider selection
+Reuse the existing provider/model abstraction.
+Route based on task requirements (speed, reasoning, coding, vision, privacy, tool-call ability, availability), not provider marketing.
+Keep local models as options when already supported; report accurately when a task needs network access.
+Make fallback observable, preserve task state, and avoid repeating side effects when a provider fails mid-task.
+Do not hard-code secrets, invent model availability, or make external API calls without configured credentials/permissions.
+Phase 7 — UI integration
+Use the existing UI patterns. Expose relevant settings only if they fit the current product: - Persona strength / humour dial / response verbosity. - Current mode and selected model/provider. - Agent task plan, status, and checkpoints for complex jobs. - Pause/cancel and confirmation surface for consequential actions. - Evidence/source list and completion verification. Do not clutter ordinary chat with orchestration internals. Keep expert details accessible in an expandable activity/trace panel if the app already has that pattern.
+Phase 8 — Tests and acceptance criteria
+Add or update automated tests. At minimum test: 1. Simple greeting uses natural personality and does not invoke the full orchestrator unnecessarily. 2. A complex multi-step request produces a dependency-aware task graph. 3. Independent read-only tasks can run concurrently; dependent steps wait for inputs. 4. Each agent only receives its authorised tools. 5. A deletion or external send is blocked pending confirmation where policy requires it. 6. Prompt injection inside a webpage/file cannot override system policy. 7. Tool failure never produces a false success claim. 8. Provider failure preserves successful work and does not duplicate a side effect. 9. The corpus loads successfully, bad data returns clear errors, and example retrieval selects only a few relevant examples. 10. Hindi/Hinglish input can receive a matching-language answer when supported. 11. Distress-sensitive replies disable humour. 12. The assistant can make a concise answer and a detailed answer without contradictory facts. 13. Memory writes/deletes are reported only after the memory subsystem confirms them. 14. All current project tests still pass; add smoke tests for the affected end-to-end path.
+Delivery requirements
+Implement changes in the real codebase that is actually present in the workspace.
+List exact files changed and why.
+Report dependencies added or avoided.
+Report tests run and actual pass/fail results.
+Clearly list anything not implemented or not verified.
+Do not claim completion before tests and observable checks are done.
+Do not copy large chunks of third-party code. Prefer independently implementing compatible patterns; if reuse is justified, verify license compatibility and preserve required notices.
+Keep a rollback-friendly change set and avoid unrelated refactors.
+Begin with workspace inspection and an architecture map. Then implement in small, testable steps. Do not stop after writing a plan if the supplied workspace and tools permit implementation.

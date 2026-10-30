@@ -1,0 +1,16 @@
+    webengine: loaded
+[09:40:14] 1 construct GlobeWorkspace (QWebEngineView) …
+[09:40:14] 1 construct GlobeWorkspace (QWebEngineView) -> 0.0s
+    available=True
+[09:40:14] 2 attach + show the stack page …
+[09:40:14] 2 attach + show the stack page -> 0.0s
+[09:40:14] 3 setUrl …
+[09:40:15] 3 setUrl -> 0.1s
+[09:40:15] 4 wait_for_load(120) …
+[09:40:17] 4 wait_for_load(120) -> 2.9s
+    load finished: True
+[09:40:17] 5 first runJavaScript …
+[09:40:17] 5 first runJavaScript -> 0.0s
+
+============================================================
+GUI-silence samples written to C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\globe_open_stacks.txt

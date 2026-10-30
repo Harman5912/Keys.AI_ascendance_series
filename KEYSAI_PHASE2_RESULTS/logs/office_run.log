@@ -1,0 +1,119 @@
+generating DOCX through file_processor �
+generating PPTX through file_processor …
+generating XLSX through file_processor …
+docx: exists=True bytes=38634 38.3s
+pptx: exists=True bytes=52865 28.4s
+xlsx: exists=True bytes=14395 2.3s
+{
+  "validation_docx": {
+    "paragraphs": 27,
+    "tables": 2,
+    "heading_count": 7,
+    "headings": [
+      "Inventory Management System \u2014 Project Report",
+      "Executive Summary",
+      "Objectives",
+      "System Architecture",
+      "Database Schema",
+      "JSON API Endpoints",
+      "Test Results"
+    ],
+    "chars": 1465,
+    "has_title_heading": true,
+    "mentions_total": true,
+    "mentions_five_products": true,
+    "mentions_low_stock": true,
+    "mentions_tests": true,
+    "sections_present": {
+      "executive_summary": true,
+      "objectives": true,
+      "architecture": true,
+      "database": true,
+      "api": true,
+      "test": true,
+      "limitations": false,
+      "future": false
+    }
+  },
+  "validation_pptx": {
+    "slide_count": 12,
+    "width_inches": 13.33,
+    "empty_slides": [],
+    "titles": [
+      "Inventory Management System \u2014 Technical Overview",
+      "Title Slide",
+      "Problem Statement",
+      "Objectives",
+      "System Architecture",
+      "Technology Stack",
+      "Database Design",
+      "Market context",
+      "What success looks like",
+      "Risks and mitigations",
+      "Decisions needed",
+      "Next 30 days"
+    ],
+    "charts": 1,
+    "densest_slide_chars": 186,
+    "mentions_total": false,
+    "slides": [
+      {
+        "index": 1,
+        "title": "Inventory Management System \u2014 Technical Overview",
+        "chars": 173,
+        "empty": false
+      },
+      {
+        "index": 2,
+        "title": "Title Slide",
+        "chars": 145,
+        "empty": false
+      },
+      {
+        "index": 3,
+        "title": "Problem Statement",
+        "chars": 186,
+        "empty": false
+      },
+      {
+        "index": 4,
+        "title": "Objectives",
+        "chars": 164,
+        "empty": false
+      },
+      {
+        "index": 5,
+        "title": "System Architecture",
+        "chars": 180,
+        "empty": false
+      },
+      {
+        "index": 6,
+        "title": "Technology Stack",
+        "chars": 100,
+        "empty": false
+      },
+      {
+        "index": 7,
+        "title": "Database Design",
+        "chars": 88,
+        "empty": false
+      },
+      {
+        "index": 8,
+        "title": "Market context",
+        "chars": 164,
+        "empty": false
+      },
+      {
+        "index": 9,
+        "title": "What success looks like",
+        "chars": 162,
+        "empty": false
+      },
+      {
+        "index": 10,
+        "title": "Risks and mitigations",
+        "chars": 165,
+        "e
+cross_format: {'all_three_exist': True, 'docx_and_pptx_agree_on_total': False}

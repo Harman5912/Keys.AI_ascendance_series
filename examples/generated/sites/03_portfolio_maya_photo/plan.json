@@ -1,0 +1,207 @@
+{
+  "brand": "Maya Osei",
+  "title": "Maya Osei Photography Portfolio",
+  "eyebrow": "Portrait & Documentary Photographer in Accra",
+  "headline": "Capturing Moments, Captivating Hearts",
+  "tagline": "Explore the world through my lens, one photo at a time.",
+  "accent": "#3498db",
+  "cta_primary": "View Portfolio",
+  "cta_secondary": "Contact Me",
+  "sections": [
+    {
+      "id": "about",
+      "kind": "about",
+      "heading": "About Maya Osei",
+      "lead": "A passionate portrait and documentary photographer based in Accra, Ghana.",
+      "items": [
+        {
+          "title": "Experience",
+          "text": "Over 10 years of experience in the industry.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Specialization",
+          "text": "Portraits, landscapes, and studio photography.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Clients",
+          "text": "Work with renowned clients across Africa and beyond.",
+          "meta": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "work",
+      "kind": "gallery",
+      "heading": "Selected Work",
+      "lead": "Explore my portfolio of stunning images that capture the essence of people and places.",
+      "items": [
+        {
+          "title": "Portrait Series",
+          "text": "Portraits of individuals from diverse backgrounds.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Landscape Photography",
+          "text": "Capturing the beauty of Ghana's landscapes.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Studio Portraits",
+          "text": "Creating timeless portraits in a controlled environment.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Travel Photos",
+          "text": "Documenting my travels across Africa and beyond.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Event Photography",
+          "text": "Photographing special occasions and events.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Commercial Work",
+          "text": "Working with businesses to create impactful visuals.",
+          "meta": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "kind": "skills",
+      "heading": "Skills & Expertise",
+      "lead": "A blend of technical skills and creative vision.",
+      "items": [
+        {
+          "title": "Software",
+          "text": "Adobe Lightroom, Photoshop, Canva.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Equipment",
+          "text": "Canon EOS 5D Mark IV, Sigma 12-30mm f/2.8 lens.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Techniques",
+          "text": "Portrait lighting, composition, and storytelling.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Languages",
+          "text": "English, French (fluent), and some German.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Experience",
+          "text": "Over 10 years of experience in the industry.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Certifications",
+          "text": "Photography certification from the International Society of Professional Photographers (ISOP).",
+          "meta": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "kind": "faq",
+      "heading": "Frequently Asked Questions",
+      "lead": "",
+      "items": [
+        {
+          "title": "",
+          "text": "",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "",
+          "text": "",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "",
+          "text": "",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "",
+          "text": "",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "",
+          "text": "",
+          "meta": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "kind": "contact",
+      "heading": "Contact Me",
+      "lead": "Let's connect.",
+      "items": [
+        {
+          "title": "Email",
+          "text": "mayaosei@gmail.com",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Phone",
+          "text": "+233 546789012",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Website",
+          "text": "www.mayaosei.com",
+          "meta": "",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "value": "6+",
+      "label": "years shipping"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is your photography style?",
+      "a": "My style is a blend of documentary and portrait, capturing the essence of people and places."
+    },
+    {
+      "q": "How do you approach client projects?",
+      "a": "I work closely with clients to understand their vision and create high-quality images that meet their needs."
+    }
+  ],
+  "footer": "Explore my portfolio and let's connect."
+}

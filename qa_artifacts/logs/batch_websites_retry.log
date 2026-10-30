@@ -1,0 +1,21 @@
+
+== [website 04_education_institution] Educational institution website
+    attempt 1: FAIL 93.9s tools=['write_file'] problems=['no <button> element']
+    attempt 2: PASS 96.1s tools=['write_file'] problems=[]
+   -> PASS (4824 bytes)
+
+== [website 05_marketing_agency] Digital marketing agency website
+    attempt 1: PASS 76.6s tools=['write_file'] problems=[]
+   -> PASS (3727 bytes)
+
+== [website 07_news_editorial] News and editorial website
+    attempt 1: FAIL 66.3s tools=['write_file'] problems=['no <button> element']
+    attempt 2: FAIL 48.1s tools=['write_file'] problems=['index.html is only 2157 bytes (a finished page needs >= 3500)', 'no <button> element']
+   -> FAIL (2157 bytes)
+
+== [website 09_analytics_dashboard] Analytics dashboard website
+    attempt 1: PASS 102.5s tools=['write_file'] problems=[]
+   -> PASS (4683 bytes)
+
+website: 9/10 artifacts built and structurally valid
+EXIT=1

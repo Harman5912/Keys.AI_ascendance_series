@@ -1,0 +1,12 @@
+{
+  "slug": "doc_Staffing_Plan",
+  "artifact": "pptx",
+  "title": "Staffing Plan \u2014 Pulse Clinic Q4",
+  "model": "qwen3:8b",
+  "seconds": 8.1,
+  "ok": true,
+  "finished": true,
+  "message": "Created PowerPoint presentation: doc_Staffing_Plan.pptx\n  Subject : Pulse Clinic Q4\n  Detail  : 5 widescreen slides \u00b7 0 native charts\n  Size    : 35,157 bytes\n  Saved   : C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\pptx\\doc_Staffing_Plan.pptx\nNot opened (permission not requested).\n",
+  "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\documents\\pptx\\doc_Staffing_Plan.pptx",
+  "bytes": 35157
+}

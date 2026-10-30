@@ -1,0 +1,50 @@
+$ C:\Users\harma\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -X utf8 -m unittest qa_artifacts.regression_tests.test_brief_spec -v
+exit=0 seconds=1.2
+
+---- stdout ----
+
+---- stderr ----
+test_a_named_portfolio_is_not_interrogated (qa_artifacts.regression_tests.test_brief_spec.AnalysisTest.test_a_named_portfolio_is_not_interrogated) ... ok
+test_a_page_without_a_subject_asks_for_one (qa_artifacts.regression_tests.test_brief_spec.AnalysisTest.test_a_page_without_a_subject_asks_for_one) ... ok
+test_a_plain_script_is_not_an_application_or_a_page (qa_artifacts.regression_tests.test_brief_spec.AnalysisTest.test_a_plain_script_is_not_an_application_or_a_page) ... ok
+test_answers_clear_the_questions (qa_artifacts.regression_tests.test_brief_spec.AnalysisTest.test_answers_clear_the_questions) ... ok
+test_confirmed_requirements_are_quoted_into_the_brief (qa_artifacts.regression_tests.test_brief_spec.AnalysisTest.test_confirmed_requirements_are_quoted_into_the_brief) ... ok
+test_dashboard_is_an_application_and_asks_its_requirements (qa_artifacts.regression_tests.test_brief_spec.AnalysisTest.test_dashboard_is_an_application_and_asks_its_requirements) ... ok
+test_dashboard_still_asks_chart_slots (qa_artifacts.regression_tests.test_brief_spec.AnalysisTest.test_dashboard_still_asks_chart_slots)
+A brief that talks charts keeps the five data requirements. ... ok
+test_dict_answers_are_accepted (qa_artifacts.regression_tests.test_brief_spec.AnalysisTest.test_dict_answers_are_accepted) ... ok
+test_partial_answers_ask_only_what_is_still_missing (qa_artifacts.regression_tests.test_brief_spec.AnalysisTest.test_partial_answers_ask_only_what_is_still_missing) ... ok
+test_refusal_says_nothing_was_built (qa_artifacts.regression_tests.test_brief_spec.AnalysisTest.test_refusal_says_nothing_was_built) ... ok
+test_new_workspace_brief_says_write_first (qa_artifacts.regression_tests.test_brief_spec.EmptyWorkspaceInstructionTest.test_new_workspace_brief_says_write_first) ... ok
+test_a_dashboard_asking_for_mysql_keeps_the_agent_path (qa_artifacts.regression_tests.test_brief_spec.GateTest.test_a_dashboard_asking_for_mysql_keeps_the_agent_path)
+The recipe is SQLite-only; swapping MySQL out would break the spec. ... ok
+test_answered_dashboard_builds_through_the_agent_with_the_spec (qa_artifacts.regression_tests.test_brief_spec.GateTest.test_answered_dashboard_builds_through_the_agent_with_the_spec) ... ok
+test_clarify_action_returns_the_questions (qa_artifacts.regression_tests.test_brief_spec.GateTest.test_clarify_action_returns_the_questions) ... ok
+test_confirmed_build_records_the_skipped_choices (qa_artifacts.regression_tests.test_brief_spec.GateTest.test_confirmed_build_records_the_skipped_choices)
+confirmed=true still discloses which requirements were not answered. ... ok
+test_plain_dashboard_is_built_from_the_recipe_and_verified (qa_artifacts.regression_tests.test_brief_spec.GateTest.test_plain_dashboard_is_built_from_the_recipe_and_verified)
+A dashboard with no out-of-scope requirement needs no model at all. ... ok
+test_unanswered_dashboard_starts_nothing_and_creates_nothing (qa_artifacts.regression_tests.test_brief_spec.GateTest.test_unanswered_dashboard_starts_nothing_and_creates_nothing) ... ok
+test_a_run_that_writes_a_file_passes (qa_artifacts.regression_tests.test_brief_spec.NoWriteRunTest.test_a_run_that_writes_a_file_passes) ... ok
+test_search_only_run_is_a_failure (qa_artifacts.regression_tests.test_brief_spec.NoWriteRunTest.test_search_only_run_is_a_failure) ... ok
+test_android_task_list_is_not_asked_about_charts (qa_artifacts.regression_tests.test_brief_spec.NonDashboardAppTest.test_android_task_list_is_not_asked_about_charts) ... ok
+test_kotlin_and_electron_count_as_a_stated_stack (qa_artifacts.regression_tests.test_brief_spec.NonDashboardAppTest.test_kotlin_and_electron_count_as_a_stated_stack)
+"stack: Kotlin, Gradle" used to read as an unanswered stack. ... ok
+test_mysql_schema_is_not_asked_about_charts (qa_artifacts.regression_tests.test_brief_spec.NonDashboardAppTest.test_mysql_schema_is_not_asked_about_charts) ... ok
+test_pyqt_ledger_is_not_asked_about_charts (qa_artifacts.regression_tests.test_brief_spec.NonDashboardAppTest.test_pyqt_ledger_is_not_asked_about_charts) ... ok
+test_scope_still_asks_when_nowhere_stated (qa_artifacts.regression_tests.test_brief_spec.NonDashboardAppTest.test_scope_still_asks_when_nowhere_stated)
+The two remaining questions must still be asked when missing. ... ok
+test_dashboard_request_gets_the_dashboard_and_mysql_recipes (qa_artifacts.regression_tests.test_brief_spec.RecipeTest.test_dashboard_request_gets_the_dashboard_and_mysql_recipes) ... ok
+test_no_recipe_means_no_noise (qa_artifacts.regression_tests.test_brief_spec.RecipeTest.test_no_recipe_means_no_noise) ... ok
+test_other_artifacts_detected (qa_artifacts.regression_tests.test_brief_spec.RecipeTest.test_other_artifacts_detected) ... ok
+test_recipe_block_states_files_verify_and_no_hardcoded_credentials (qa_artifacts.regression_tests.test_brief_spec.RecipeTest.test_recipe_block_states_files_verify_and_no_hardcoded_credentials) ... ok
+test_a_fix_to_an_existing_page_is_a_code_task (qa_artifacts.regression_tests.test_brief_spec.RoutingTest.test_a_fix_to_an_existing_page_is_a_code_task) ... ok
+test_dashboard_called_a_website_is_still_an_application (qa_artifacts.regression_tests.test_brief_spec.RoutingTest.test_dashboard_called_a_website_is_still_an_application) ... ok
+test_dashboard_goes_to_the_coding_agent (qa_artifacts.regression_tests.test_brief_spec.RoutingTest.test_dashboard_goes_to_the_coding_agent) ... ok
+test_pages_still_use_the_page_path (qa_artifacts.regression_tests.test_brief_spec.RoutingTest.test_pages_still_use_the_page_path) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.973s
+
+OK
+

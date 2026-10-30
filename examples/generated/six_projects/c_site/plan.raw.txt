@@ -1,0 +1,69 @@
+[attempt 1]
+{
+  "brand": "Kiln & Current",
+  "title": "Portfolio | Kiln & Current",
+  "eyebrow": "Ceramics Studio in Bristol",
+  "headline": "Crafting Unique Tableware and Workshops",
+  "tagline": "Discover our handcrafted tableware and experience the joy of pottery with us.",
+  "accent": "#3498db",
+  "cta_primary": "Explore Our Work",
+  "cta_secondary": "Contact Us",
+  "sections": [
+    {
+      "id": "about",
+      "kind": "about",
+      "heading": "About Kiln & Current",
+      "lead": "A two-person ceramics studio in Bristol, creating unique tableware and running quarterly workshops.",
+      "items": [
+        {"title": "Ceramics Studio", "text": "Our studio is located in the heart of Bristol, where we create handcrafted tableware with love."},
+        {"title": "Quarterly Workshops", "text": "Join us for our quarterly workshops, where you can learn new pottery techniques and styles."},
+        {"title": "Real Materials", "text": "We use only high-quality materials to ensure the durability of our products."}
+      ]
+    },
+    {
+      "id": "work",
+      "kind": "gallery",
+      "heading": "Selected Work",
+      "lead": "Explore our handcrafted tableware and experience the joy of pottery with us.",
+      "items": [
+        {"title": "Tabletop Table", "text": "A stunning piece of tableware that will add a touch of elegance to your home."},
+        {"title": "Eco-Table", "text": "Our eco-friendly tableware is made from sustainable materials and is perfect for reducing waste."},
+        {"title": "Vintage Table", "text": "A vintage-inspired piece of tableware that adds character to any room."},
+        {"title": "Modern Table", "text": "Our modern tableware is sleek and stylish, making it a great addition to any contemporary decor."}
+      ]
+    },
+    {
+      "id": "skills",
+      "kind": "skills",
+      "heading": "Skills & Expertise",
+      "lead": "We are skilled in creating unique tableware and running quarterly workshops.",
+      "items": [
+        {"title": "Handcrafted Tableware", "text": "Our handcrafted tableware is made with love and attention to detail."},
+        {"title": "Quarterly Workshops", "text": "Join us for our quarterly workshops, where you can learn new pottery techniques and styles."},
+        {"title": "Sustainable Materials", "text": "We use only high-quality materials to ensure the durability of our products."}
+      ]
+    },
+    {
+      "id": "faq",
+      "kind": "faq",
+      "heading": "Frequently Asked Questions",
+      "items": [
+        {"q": "What is Kiln & Current?", "a": "Kiln & Current is a two-person ceramics studio in Bristol, creating unique tableware and running quarterly workshops."},
+        {"q": "How do I contact Kiln & Current?", "a": "You can contact us via email or phone at [insert contact information]."}
+      ]
+    },
+    {
+      "id": "contact",
+      "kind": "contact",
+      "heading": "Contact Us",
+      "lead": "We are here to help you find the perfect tableware and workshops.",
+      "items": [
+        {"title": "Email", "text": "[insert email address]"},
+        {"title": "Phone", "text": "[insert phone number]"}
+      ]
+    }
+  ],
+  "metrics": [{"value": "6+", "label": "years shipping"}],
+  "faq": [{"q": "What is Kiln & Current?", "a": "Kiln & Current is a two-person ceramics studio in Bristol, creating unique tableware and running quarterly workshops."}],
+  "footer": "Crafting unique tableware and workshops since 2015."
+}

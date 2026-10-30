@@ -1,0 +1,9 @@
+{
+  "request": "Create wordcount.py in this folder: a Python 3 command-line script that takes one argument (a text file path), prints 'words: <count>' where count is the number of whitespace-separated words in the file, and exits with code 2 and a usage line if the argument is missing. Also create sample.txt with three short lines of text, test_wordcount.py with unittest tests that cover a normal file and the missing-argument case, and README.md with the run command. Then run the tests and the script once and report the actual output.",
+  "requirements": "",
+  "artifact": "task",
+  "answered": [],
+  "assumptions": [],
+  "recipes": [],
+  "path": "code"
+}

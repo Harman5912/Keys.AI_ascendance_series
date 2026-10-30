@@ -1,0 +1,31 @@
+{
+  "key": "C",
+  "slug": "c_site",
+  "kind": "site",
+  "build": {
+    "ok": true,
+    "seconds": 24.9,
+    "browser": {
+      "checks": {
+        "problems": []
+      }
+    },
+    "detail": {
+      "bytes": 23565
+    }
+  },
+  "files_count": 4,
+  "files": [
+    "index.html",
+    "index.rendered.html",
+    "plan.json",
+    "plan.raw.txt"
+  ],
+  "missing_recipe_files": [],
+  "compile": {
+    "compiled": 0,
+    "compile_failures": []
+  },
+  "verify": {},
+  "ok": true
+}

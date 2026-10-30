@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OPS/HIVE — support desk metrics</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="strip">
+    <p class="logo">OPS<span>/</span>HIVE</p>
+    <p class="stamp">SUPPORT DESK · LAST 220 TICKETS</p>
+    <p class="live"><span class="dot"></span> API LIVE</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Every ticket,<br>one honest screen.</h1>
+      <p class="lede">Counts, response times and the raw rows behind them — served from SQLite through <code>/api/stats</code>. Nothing on this page is typed in by hand.</p>
+      <p class="err" id="err" hidden></p>
+    </section>
+
+    <section class="figures" aria-label="Headline numbers">
+      <article class="fig"><p class="tag">TOTAL</p><p class="num" data-kpi="total">–</p><p class="sub">tickets logged</p></article>
+      <article class="fig"><p class="tag">OPEN</p><p class="num" data-kpi="open">–</p><p class="sub">unresolved right now</p></article>
+      <article class="fig"><p class="tag">AVG FIRST REPLY</p><p class="num" data-kpi="avg_response">–</p><p class="sub">minutes</p></article>
+      <article class="fig bad"><p class="tag">P1 SLA BREACH</p><p class="num" data-kpi="sla_breaches">–</p><p class="sub">over 15 minutes</p></article>
+    </section>
+
+    <section class="grid">
+      <article class="block">
+        <h2>Tickets opened by hour</h2>
+        <div class="chart" id="hourly" role="img" aria-label="Tickets per hour"></div>
+      </article>
+      <article class="block">
+        <h2>First response by channel</h2>
+        <ul class="channels" id="channels"></ul>
+      </article>
+    </section>
+
+    <section class="block">
+      <h2>Latest rows</h2>
+      <p class="hint">Fetched from <code>/api/tickets</code> — the same rows SQL just counted.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>Channel</th><th>Priority</th><th>Opened</th><th>First reply</th><th>State</th></tr></thead>
+          <tbody id="rows"><tr><td colspan="6">Loading…</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="strip foot">
+    <p>node:http · node:sqlite · zero dependencies</p>
+    <p>PORT 5056</p>
+  </footer>
+  <script src="/app.js"></script>
+</body>
+</html>

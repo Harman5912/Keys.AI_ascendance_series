@@ -1,0 +1,425 @@
+{
+  "id": "fe00fe58513c",
+  "request": "Build a clinic booking system for a municipal parks department with a printable summary (bid #8883)",
+  "created_at": "2026-10-27 11:09:28",
+  "updated_at": "2026-10-27 11:09:29",
+  "status": "COMPLETED",
+  "intent": "software",
+  "workspace": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-clinic-booking-system-for-a-mu-fe00fe58513c",
+  "questions": [],
+  "answers": {
+    "presets": "github, docs",
+    "depth": "quick",
+    "stack": "e.g. React + Vite, plain HTML/JS, Streamlit, FastAPI + a static front end",
+    "scope": "e.g. local single user with sample data, or local front end plus a small backend with a login"
+  },
+  "assumptions": [],
+  "brief": {
+    "goal": "Build a clinic booking system for a municipal parks department with a printable summary (bid #8883)",
+    "intent": "software",
+    "answers": {
+      "presets": "github, docs",
+      "depth": "quick",
+      "stack": "e.g. React + Vite, plain HTML/JS, Streamlit, FastAPI + a static front end",
+      "scope": "e.g. local single user with sample data, or local front end plus a small backend with a login"
+    },
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "assumptions": [],
+    "constraints": [
+      "Work only inside the task workspace",
+      "Do not delete or overwrite user files without approval",
+      "Never claim success for an unverified step"
+    ]
+  },
+  "plan": {
+    "steps": [
+      {
+        "id": "s1",
+        "worker": "research",
+        "title": "Research the subject before building",
+        "params": {
+          "depth": "quick",
+          "feed_build": true,
+          "presets": [
+            "github",
+            "docs"
+          ]
+        },
+        "status": "done",
+        "detail": "Researched 'Build a clinic booking system for a municipal parks departme' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research, Docs / API.",
+        "requires_approval": false,
+        "started_at": "2026-10-27 11:09:28",
+        "ended_at": "2026-10-27 11:09:28",
+        "error": "",
+        "attempts": 1,
+        "artifacts": [
+          {
+            "id": "35860305e2",
+            "task_id": "fe00fe58513c",
+            "name": "research-report.md",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-clinic-booking-system-for-a-mu-fe00fe58513c\\research-report.md",
+            "kind": "markdown",
+            "size": 3074,
+            "sha256": "888f1f9787642ae5c3c6b862915611992267edf410954b2af91b5e63424333ca",
+            "created_at": "2026-10-27 11:09:28",
+            "detail": "Cited research report",
+            "validated": true,
+            "validation_detail": "2975 chars"
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "worker": "software",
+        "title": "Build and verify the project",
+        "params": {
+          "mode": "build",
+          "reuse_research": true
+        },
+        "status": "done",
+        "detail": "built in the test environment",
+        "requires_approval": false,
+        "started_at": "2026-10-27 11:09:28",
+        "ended_at": "2026-10-27 11:09:29",
+        "error": "",
+        "attempts": 1,
+        "artifacts": [
+          {
+            "id": "171f310a3d",
+            "task_id": "fe00fe58513c",
+            "name": "index.html",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-clinic-booking-system-for-a-mu-fe00fe58513c\\clinic-booking-system-for-a-municipal-pa\\index.html",
+            "kind": "html",
+            "size": 171,
+            "sha256": "21e418ee1f82abb8d7681c032c1ef1d2043ee2aae57e23d7396e0c163bb85e43",
+            "created_at": "2026-10-27 11:09:29",
+            "detail": "171 bytes",
+            "validated": true,
+            "validation_detail": "171 chars"
+          }
+        ]
+      }
+    ],
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "source": "deterministic",
+    "note": "",
+    "created_at": "2026-10-27 11:09:28"
+  },
+  "current_step": 1,
+  "artifacts": [
+    {
+      "id": "35860305e2",
+      "task_id": "fe00fe58513c",
+      "name": "research-report.md",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-clinic-booking-system-for-a-mu-fe00fe58513c\\research-report.md",
+      "kind": "markdown",
+      "size": 3074,
+      "sha256": "888f1f9787642ae5c3c6b862915611992267edf410954b2af91b5e63424333ca",
+      "created_at": "2026-10-27 11:09:28",
+      "detail": "Cited research report",
+      "validated": true,
+      "validation_detail": "2975 chars"
+    },
+    {
+      "id": "171f310a3d",
+      "task_id": "fe00fe58513c",
+      "name": "index.html",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-clinic-booking-system-for-a-mu-fe00fe58513c\\clinic-booking-system-for-a-municipal-pa\\index.html",
+      "kind": "html",
+      "size": 171,
+      "sha256": "21e418ee1f82abb8d7681c032c1ef1d2043ee2aae57e23d7396e0c163bb85e43",
+      "created_at": "2026-10-27 11:09:29",
+      "detail": "171 bytes",
+      "validated": true,
+      "validation_detail": "171 chars"
+    }
+  ],
+  "evidence": [
+    {
+      "claim": "Clinic Booking System Municipal Parks — reference notes.",
+      "quote": "Clinic Booking System Municipal Parks — reference notes.",
+      "source_url": "https://docs.example.com/d5ba986ce5",
+      "title": "Reference: Build a clinic booking system for a municipal parks departme",
+      "retrieved_at": "2026-10-27 11:09:28",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The clinic booking system municipal parks workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The clinic booking system municipal parks workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/d5ba986ce5",
+      "title": "Reference: Build a clinic booking system for a municipal parks departme",
+      "retrieved_at": "2026-10-27 11:09:28",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "Clinic Booking System Municipal Parks — reference notes.",
+      "quote": "Clinic Booking System Municipal Parks — reference notes.",
+      "source_url": "https://docs.example.com/8125777cad",
+      "title": "Reference: Build a clinic booking system for a municipal parks departme",
+      "retrieved_at": "2026-10-27 11:09:28",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The clinic booking system municipal parks workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The clinic booking system municipal parks workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/8125777cad",
+      "title": "Reference: Build a clinic booking system for a municipal parks departme",
+      "retrieved_at": "2026-10-27 11:09:28",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "Site Github Clinic Booking System — reference notes.",
+      "quote": "Site Github Clinic Booking System — reference notes.",
+      "source_url": "https://docs.example.com/9e0502f96d",
+      "title": "Reference: site:github.com Build a clinic booking system for a municipa",
+      "retrieved_at": "2026-10-27 11:09:28",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The site github clinic booking system workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The site github clinic booking system workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/9e0502f96d",
+      "title": "Reference: site:github.com Build a clinic booking system for a municipa",
+      "retrieved_at": "2026-10-27 11:09:28",
+      "verified": true,
+      "method": "page fetched"
+    }
+  ],
+  "events": [
+    {
+      "ts": "2026-10-27 11:09:28",
+      "type": "task_created",
+      "text": "software task created in 20261027-build-a-clinic-booking-system-for-a-mu-fe00fe58513c"
+    },
+    {
+      "ts": "2026-10-27 11:09:28",
+      "type": "status",
+      "text": "INTAKE → WAITING_FOR_USER (missing requirements)"
+    },
+    {
+      "ts": "2026-10-27 11:09:28",
+      "type": "requirements_needed",
+      "text": "2 question(s) awaiting an answer"
+    },
+    {
+      "ts": "2026-10-27 11:09:28",
+      "type": "answers_received",
+      "text": "2 answer(s) recorded"
+    },
+    {
+      "ts": "2026-10-27 11:09:28",
+      "type": "status",
+      "text": "WAITING_FOR_USER → READY (requirements complete)"
+    },
+    {
+      "ts": "2026-10-27 11:09:28",
+      "type": "status",
+      "text": "READY → PLANNING (building the plan)"
+    },
+    {
+      "ts": "2026-10-27 11:09:28",
+      "type": "plan_created",
+      "text": "2 step(s), source: deterministic"
+    },
+    {
+      "ts": "2026-10-27 11:09:28",
+      "type": "status",
+      "text": "PLANNING → READY (plan ready)"
+    },
+    {
+      "ts": "2026-10-27 11:09:28",
+      "type": "status",
+      "text": "READY → RUNNING"
+    },
+    {
+      "ts": "2026-10-27 11:09:28",
+      "type": "step_started",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:09:28",
+      "type": "worker_log",
+      "text": "Research: Build a clinic booking system for a municipal parks department with a printable summary (bid #8883) (depth quick, 7 queries, presets: GitHub research, Docs / API)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:09:28",
+      "type": "worker_log",
+      "text": "Research summary discarded: no citation to the evidence.",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:09:28",
+      "type": "worker_log",
+      "text": "Research report written: research-report.md (6 evidence items)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:09:28",
+      "type": "step_done",
+      "text": "Done: Researched 'Build a clinic booking system for a municipal parks departme' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research, Docs / API.",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:09:28",
+      "type": "step_started",
+      "text": "Starting: Build and verify the project",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 11:09:28",
+      "type": "worker_log",
+      "text": "Software: delegating to Crown Code in clinic-booking-system-for-a-municipal-pa",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 11:09:28",
+      "type": "worker_log",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 11:09:29",
+      "type": "step_done",
+      "text": "Done: built in the test environment",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 11:09:29",
+      "type": "status",
+      "text": "RUNNING → VALIDATING (verifying artifacts)"
+    },
+    {
+      "ts": "2026-10-27 11:09:29",
+      "type": "task_completed",
+      "text": "2 step(s) complete; 2 artifact(s) verified."
+    },
+    {
+      "ts": "2026-10-27 11:09:29",
+      "type": "status",
+      "text": "VALIDATING → COMPLETED"
+    }
+  ],
+  "approval": null,
+  "error": "",
+  "warnings": [],
+  "attempts": {},
+  "result": {
+    "summary": "2 step(s) complete; 2 artifact(s) verified.",
+    "artifacts": [
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-clinic-booking-system-for-a-mu-fe00fe58513c\\research-report.md",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-clinic-booking-system-for-a-mu-fe00fe58513c\\clinic-booking-system-for-a-municipal-pa\\index.html"
+    ],
+    "validation": "2 artifact(s) verified",
+    "warnings": []
+  },
+  "logs": [
+    {
+      "ts": "11:09:28",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    },
+    {
+      "ts": "11:09:28",
+      "text": "Research: Build a clinic booking system for a municipal parks department with a printable summary (bid #8883) (depth quick, 7 queries, presets: GitHub research, Docs / API)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:09:28",
+      "text": "Research summary discarded: no citation to the evidence.",
+      "step": "s1"
+    },
+    {
+      "ts": "11:09:28",
+      "text": "Research report written: research-report.md (6 evidence items)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:09:28",
+      "text": "Verified artifact: research-report.md (2975 chars)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:09:28",
+      "text": "Done: Researched 'Build a clinic booking system for a municipal parks departme' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research, Docs / API.",
+      "step": "s1"
+    },
+    {
+      "ts": "11:09:28",
+      "text": "Starting: Build and verify the project",
+      "step": "s2"
+    },
+    {
+      "ts": "11:09:28",
+      "text": "Software: delegating to Crown Code in clinic-booking-system-for-a-municipal-pa",
+      "step": "s2"
+    },
+    {
+      "ts": "11:09:28",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "11:09:29",
+      "text": "Verified artifact: index.html (171 chars)",
+      "step": "s2"
+    },
+    {
+      "ts": "11:09:29",
+      "text": "Done: built in the test environment",
+      "step": "s2"
+    },
+    {
+      "ts": "11:09:29",
+      "text": "Validation: 2 artifact(s) verified",
+      "step": ""
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "results": [
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-clinic-booking-system-for-a-mu-fe00fe58513c\\research-report.md",
+        "kind": "md",
+        "detail": "2975 chars",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-clinic-booking-system-for-a-mu-fe00fe58513c\\clinic-booking-system-for-a-municipal-pa\\index.html",
+        "kind": "html",
+        "detail": "171 chars",
+        "warning": ""
+      }
+    ],
+    "failures": [],
+    "detail": "2 artifact(s) verified"
+  }
+}

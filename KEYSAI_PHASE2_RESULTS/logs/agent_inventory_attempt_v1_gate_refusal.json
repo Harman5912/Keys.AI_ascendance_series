@@ -1,0 +1,19 @@
+{
+  "test_id": "STAGE3-AGENT-001",
+  "what": "Keys.ai builds the inventory system through its own agent path",
+  "model": "qwen3:8b (ollama)",
+  "seconds": 0.0,
+  "reply": "NEED REQUIREMENTS \u2014 nothing was built and nothing was started.\nThis request describes an application, but it does not state: charts.\n\nAsk the user these questions, one at a time, and do not answer them yourself or pick a default:\n1. Which chart types should the views use? (e.g. line for trend, candlestick for OHLC, bar for comparison, KPI cards on top) \u2014 chart type is a requirement, not a styling choice.\n\nThen call crown_code again with the same description and requirements=\"<the user's answers, in their words>\". Only pass confirmed=true if the user explicitly tells you to go ahead without answering.",
+  "file_count": 0,
+  "files": [],
+  "missing_expected_files": [
+    "app.py",
+    "db.py",
+    "schema.sql",
+    "templates/index.html",
+    "static/style.css",
+    "requirements.txt",
+    "README.md"
+  ],
+  "agent_claimed_success": false
+}

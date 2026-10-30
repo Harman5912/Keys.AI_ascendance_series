@@ -1,0 +1,34 @@
+$ C:\Users\harma\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -X utf8 qa_artifacts/audit_sites.py --kind webapp
+exit=1 seconds=10.3
+
+---- stdout ----
+FAIL  01_task_manager
+      - visible_content: 127 chars
+      - focus_styles: no :focus rule
+FAIL  02_inventory_manager
+      - visible_content: 130 chars
+FAIL  03_crm: index.html missing
+FAIL  04_expense_tracker: index.html missing
+FAIL  05_analytics_dashboard
+      - buttons_clickable: 0 buttons
+FAIL  06_appointment_booking
+      - visible_content: 93 chars
+      - survives_reload: 93 chars after reload
+FAIL  07_kanban_board
+      - visible_content: 73 chars
+      - survives_reload: 73 chars after reload
+      - no_horizontal_overflow: {"mobile": "1133>375", "tablet": "1133>768", "desktop": "1440>1440"}
+FAIL  08_notes_app
+      - visible_content: 23 chars
+      - no_js_errors: Cannot set properties of null (setting 'onclick')
+      - buttons_clickable: 0 buttons
+      - no_errors_after_clicks: Cannot set properties of null (setting 'onclick')
+      - survives_reload: 23 chars after reload
+      - no_errors_after_reload: Cannot set properties of null (setting 'onclick'); Cannot set properties of null (setting 'onclick')
+FAIL  09_quiz_app: index.html missing
+PASS  10_document_manager
+
+webapp: 1/10 passed the browser audit
+
+---- stderr ----
+

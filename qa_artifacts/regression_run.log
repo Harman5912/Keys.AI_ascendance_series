@@ -1,0 +1,183 @@
+.................................................................. [  7%]
+........................................................................ [ 16%]
+.....[11376:9108:1027/140618.573:ERROR:../../../qtwebengine/src/3rdparty/chromium/gpu/command_buffer/service/shared_image/d3d_image_backing.cc:1692] Already being accessed for read
+[11376:9108:1027/140618.573:ERROR:../../../qtwebengine/src/3rdparty/chromium/gpu/command_buffer/service/shared_image/shared_image_representation.cc:385] Unable to initialize SkSurface
+SKIA: Failed to begin write access.
+.[11376:9108:1027/140618.573:ERROR:../../../qtwebengine/src/3rdparty/chromium/gpu/command_buffer/service/raster_decoder.cc:1141]   RasterDecoderImpl: Context lost during MakeCurrent.
+[11376:9108:1027/140618.573:ERROR:../../../qtwebengine/src/3rdparty/chromium/gpu/command_buffer/service/raster_decoder.cc:1141]   RasterDecoderImpl: Context lost during MakeCurrent.
+[11376:9108:1027/140618.573:ERROR:../../../qtwebengine/src/3rdparty/chromium/gpu/ipc/service/shared_image_stub.cc:585] SharedImageStub: context already lost
+[11376:9108:1027/140618.573:ERROR:../../../qtwebengine/src/3rdparty/chromium/gpu/command_buffer/service/shared_context_state.cc:954] Failed to make current since context is marked as lost
+................[11376:9108:1027/140621.072:ERROR:../../../qtwebengine/src/3rdparty/chromium/gpu/command_buffer/service/shared_context_state.cc:954] Failed to make current since context is marked as lost
+[11376:9108:1027/140621.072:ERROR:../../../qtwebengine/src/3rdparty/chromium/components/viz/service/display_embedder/skia_output_surface_impl_on_gpu.cc:2292] Failed to make current.
+[11376:9108:1027/140621.072:ERROR:../../../qtwebengine/src/3rdparty/chromium/gpu/command_buffer/service/shared_context_state.cc:954] Failed to make current since context is marked as lost
+[11376:9108:1027/140621.072:ERROR:../../../qtwebengine/src/3rdparty/chromium/components/viz/service/display_embedder/skia_output_surface_impl_on_gpu.cc:2292] Failed to make current.
+..............................[11376:9108:1027/140626.496:ERROR:../../../qtwebengine/src/3rdparty/chromium/gpu/command_buffer/service/shared_image/shared_image_manager.cc:389] SharedImageManager::ProduceSkia: Trying to Produce a Skia representation from a non-existent mailbox.
+.................... [ 25%]
+........................................................................ [ 33%]
+.............................................sssss.............. [ 41%]
+............................................................. [ 48%]
+........................................................FFF.....F....... [ 57%]
+........................................................................ [ 66%]
+........................................................................ [ 74%]
+..................................................................s..... [ 83%]
+................................................................. [ 91%]
+........................................F............................... [ 99%]
+.                                                                        [100%]
+================================== FAILURES ===================================
+__________ TestShutdownGate.test_shutdown_is_guarded_and_idempotent ___________
+
+self = <test_shutdown_and_tool_failure.TestShutdownGate testMethod=test_shutdown_is_guarded_and_idempotent>
+
+    def test_shutdown_is_guarded_and_idempotent(self):
+        _restart_main()
+        main = sys.modules[_MAIN_NAME]
+>       live = main.KeysAILive(ui=object())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+qa_artifacts\regression_tests\test_shutdown_and_tool_failure.py:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <main.KeysAILive object at 0x000001AF68638440>
+ui = <object object at 0x000001AF43AE9990>
+
+    def __init__(self, ui: KeysAIUI):
+        self.ui             = ui
+        self.session              = None
+        self.audio_in_queue       = None
+        self.out_queue            = None
+        self._loop                = None
+        self._is_speaking         = False
+        self._speaking_lock       = threading.Lock()
+        self._phone_active        = False   # True while phone mic is streaming; pauses PC mic
+        self._pending_vision       = None    # (img_bytes, mime_type, question, angle) to inject after tool response
+        self._vision_cam_active    = False   # True if camera was opened for vision \u2192 auto-close after response
+        self._vision_close_pending = False   # True after vision injected; next turn_complete closes camera
+        self._vision_last_time     = 0.0     # monotonic time of last screen_process call (cooldown guard)
+        self._vision_busy          = False   # True while a vision capture/inject cycle is in flight
+        self._interrupted          = False   # True while draining audio after user interrupt
+>       self.ui.on_text_command   = self._on_text_command
+        ^^^^^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'object' object has no attribute 'on_text_command'
+
+main.py:159: AttributeError
+___________ TestShutdownGate.test_shutdown_tool_declaration_exists ____________
+
+self = <test_shutdown_and_tool_failure.TestShutdownGate testMethod=test_shutdown_tool_declaration_exists>
+
+    def test_shutdown_tool_declaration_exists(self):
+        from core.tool_declarations import TOOL_DECLARATIONS
+    
+        names = {t["name"] for t in TOOL_DECLARATIONS}
+        self.assertIn("shutdown_keysai", names)
+    
+        shutdown = next(t for t in TOOL_DECLARATIONS if t["name"] == "shutdown_keysai")
+        description = shutdown.get("description", "")
+        self.assertIn("deliberate termination", description.lower())
+>       self.assertNotIn("research", description.lower())
+E       AssertionError: 'research' unexpectedly found in "ends the keys.ai assistant session completely. it is a deliberate termination action, not a generic stop word. call it only when the user explicitly wants the assistant to close: for example 'shut down', 'close the assistant', 'exit keys.ai', 'stop keys.ai and close', 'end the session'. for ordinary goodbye or 'stop / pause / be quiet', do not call shutdown_keysai — just stop responding. this tool does not research, navigate, send messages, or run any other task. if you are unsure whether the user wants the app closed, do not call it."
+
+qa_artifacts\regression_tests\test_shutdown_and_tool_failure.py:72: AssertionError
+_____________ TestShutdownGate.test_tool_dispatch_uses_state_flag _____________
+
+self = <test_shutdown_and_tool_failure.TestShutdownGate testMethod=test_tool_dispatch_uses_state_flag>
+
+    def test_tool_dispatch_uses_state_flag(self):
+        _restart_main()
+        main = sys.modules[_MAIN_NAME]
+>       live = main.KeysAILive(ui=object())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+qa_artifacts\regression_tests\test_shutdown_and_tool_failure.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <main.KeysAILive object at 0x000001AF686382F0>
+ui = <object object at 0x000001AF43AE9870>
+
+    def __init__(self, ui: KeysAIUI):
+        self.ui             = ui
+        self.session              = None
+        self.audio_in_queue       = None
+        self.out_queue            = None
+        self._loop                = None
+        self._is_speaking         = False
+        self._speaking_lock       = threading.Lock()
+        self._phone_active        = False   # True while phone mic is streaming; pauses PC mic
+        self._pending_vision       = None    # (img_bytes, mime_type, question, angle) to inject after tool response
+        self._vision_cam_active    = False   # True if camera was opened for vision \u2192 auto-close after response
+        self._vision_close_pending = False   # True after vision injected; next turn_complete closes camera
+        self._vision_last_time     = 0.0     # monotonic time of last screen_process call (cooldown guard)
+        self._vision_busy          = False   # True while a vision capture/inject cycle is in flight
+        self._interrupted          = False   # True while draining audio after user interrupt
+>       self.ui.on_text_command   = self._on_text_command
+        ^^^^^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'object' object has no attribute 'on_text_command'
+
+main.py:159: AttributeError
+_________ TestSystemPromptExitRules.test_exit_rules_are_specific_now __________
+
+self = <test_shutdown_and_tool_failure.TestSystemPromptExitRules testMethod=test_exit_rules_are_specific_now>
+
+    def test_exit_rules_are_specific_now(self):
+>       prompt = Path(CORE.parent / "core" / "prompt.txt").read_text(encoding="utf-8")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+qa_artifacts\regression_tests\test_shutdown_and_tool_failure.py:151: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/harma/Desktop/PROJECTS/Keys-acendence-series/acendence-VIII_GEN-I/qa_artifacts/core/prompt.txt')
+mode = 'r', buffering = -1, encoding = 'utf-8', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\qa_artifacts\\core\\prompt.txt'
+
+C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\pathlib.py:1013: FileNotFoundError
+________________ TestResearch.test_report_cites_every_finding _________________
+
+self = <test_universal_agent_workers.TestResearch testMethod=test_report_cites_every_finding>
+
+    def test_report_cites_every_finding(self):
+        result = self._run(
+            [{"title": "Runtime A", "url": "https://a.example/x", "snippet": "s"}],
+            {"https://a.example/x": "Local runtimes are fast. "
+                                    "Local runtimes support many models. "
+                                    "Local runtimes differ in memory use."})
+        self.assert_valid(result)
+        text = Path(result["artifacts"][0]["path"]).read_text(encoding="utf-8")
+        self.assertIn("[1]", text)
+        findings = text.split("## Findings", 1)[1].split("## Sources", 1)[0]
+        bullets = [ln for ln in findings.splitlines() if ln.startswith("- ")]
+        self.assertTrue(bullets)
+        for line in bullets:
+>           self.assertRegex(line, r"\[\d+\]")
+E           AssertionError: Regex didn't match: '\\[\\d+\\]' not found in '- **GitHub research** (`github`) — 3 queries, 0 source(s) inspected; keeps: repositories, code samples, licences'
+
+qa_artifacts\regression_tests\test_universal_agent_workers.py:94: AssertionError
+============================== warnings summary ===============================
+qa_artifacts/regression_tests/test_agent_permissions.py::TestDashboardGuard::test_authorised_command_is_accepted
+  C:\Users\harma\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED qa_artifacts/regression_tests/test_shutdown_and_tool_failure.py::TestShutdownGate::test_shutdown_is_guarded_and_idempotent
+FAILED qa_artifacts/regression_tests/test_shutdown_and_tool_failure.py::TestShutdownGate::test_shutdown_tool_declaration_exists
+FAILED qa_artifacts/regression_tests/test_shutdown_and_tool_failure.py::TestShutdownGate::test_tool_dispatch_uses_state_flag
+FAILED qa_artifacts/regression_tests/test_shutdown_and_tool_failure.py::TestSystemPromptExitRules::test_exit_rules_are_specific_now
+FAILED qa_artifacts/regression_tests/test_universal_agent_workers.py::TestResearch::test_report_cites_every_finding
+5 failed, 822 passed, 6 skipped, 1 warning, 32 subtests passed in 440.51s (0:07:20)
+Release of profile requested but WebEnginePage still not deleted. Expect troubles !
+Release of profile requested but WebEnginePage still not deleted. Expect troubles !
+Release of profile requested but WebEnginePage still not deleted. Expect troubles !

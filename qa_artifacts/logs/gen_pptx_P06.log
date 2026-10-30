@@ -1,0 +1,11 @@
+# P06 exit=0 timeout=False seconds=45.3
+# ---- stdout ----
+[FileProcessor] CREATE PPTX | P06_business_strategy.pptx
+[P06] 45.1s  exists=True  bytes=35403  result=Created PowerPoint presentation: P06_business_strategy.pptx (34.6 KB)
+Saved to: C:\Users\harma\Desktop\PROJECT
+restored file_processor task model -> {'provider': 'ollama', 'model': 'qwen3:8b', 'url': ''}
+
+DONE 1 pptx artifact(s) in C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\generated_presentations
+
+# ---- stderr ----
+

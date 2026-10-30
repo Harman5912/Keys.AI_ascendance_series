@@ -1,0 +1,13 @@
+==================================================================
+globe stall diagnosis — 242.1s total, heartbeat 50ms
+==================================================================
+open       240.1s  Globe: The globe failed: The UI did not answer in time.
+
+phase           ticks    worst  >1.2s
+startup            31    0.09s      0
+open                1    0.06s      0
+navigate            1  240.06s      1
+
+page frames counted while idle+visible: None
+  (~1 means Cesium parked; ~120+ means it rendered continuously)
+stacks for worst stall: C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\globe_stall_stacks.txt

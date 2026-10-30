@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harbour & Vale</title>
+<style>
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; max-width: 100%; }
+h1, h2, p { margin: 1em 0; }
+.container { width: 90%; max-width: 800px; margin: auto; }
+.hero { background-color: #4CAF50; color: white; padding: 2rem; text-align: center; }
+.services { display: flex; justify-content: space-around; flex-wrap: wrap; }
+.service-card { width: 30%; padding: 1rem; border: 1px solid #ddd; margin-bottom: 1rem; text-align: center; }
+.engagement-process { list-style-type: decimal; padding-left: 2em; }
+.testimonials { display: flex; justify-content: space-around; flex-wrap: wrap; }
+.testimonial-card { width: 45%; padding: 1rem; border: 1px solid #ddd; margin-bottom: 1rem; text-align: center; }
+.pricing { background-color: #f0f0f0; padding: 2rem; text-align: center; }
+.contact-form { display: flex; flex-direction: column; max-width: 400px; margin: auto; }
+input, textarea { margin-bottom: 1rem; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px; }
+button { padding: 0.75rem 1.25rem; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s, box-shadow 0.3s; }
+button:hover { background-color: #45a049; }
+button:focus-visible { outline: 2px solid #4CAF50; outline-offset: 2px; }
+footer { background-color: #f8f9fa; padding: 1rem; text-align: center; }
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const buttons = document.querySelectorAll('button');
+  buttons.forEach(button => {
+    button.addEventListener('click', function() {
+      alert('Button clicked!');
+    });
+  });
+});
+</script>
+</head>
+<body>
+<header>
+<div class="hero">
+<h1>Welcome to Harbour & Vale</h1>
+<p>Your premier consultancy services.</p>
+</div>
+</header>
+<main class="container">
+<section id="services" class="services">
+<div class="service-card">
+<h2>Strategy Development</h2>
+<p>We craft tailored strategies that drive your business forward.</p>
+<button onclick="alert('Development Plan Created!');">Create Strategy</button>
+</div>
+<div class="service-card">
+<h2>Digital Transformation</h2>
+<p>Leverage the latest technologies to transform your operations.</p>
+<button onclick="alert('Transformation Plan Created!');">Transform Now</button>
+</div>
+<div class="service-card">
+<h2>Customer Engagement</h2>
+<p>Create meaningful experiences that engage and retain customers.</p>
+<button onclick="alert('Engagement Strategy Created!');">Create Engagement</button>
+</div>
+</section>
+<section id="engagement-process" class="container">
+<h2>Our Engagement Process</h2>
+<ol>
+<li>Initial Consultation</li>
+<li>Requirements Gathering</li>
+<li>Custom Solution Design</li>
+<li>Launch & Support</li>
+</ol>
+</section>
+<section id="testimonials" class="container testimonials">
+<div class="testimonial-card">
+<blockquote>
+<p>Harbour & Vale transformed our digital landscape. Highly recommended!</p>
+<footer>- John Doe, CEO of ABC Corp</footer>
+</blockquote>
+</div>
+<div class="testimonial-card">
+<blockquote>
+<p>Your team is top-notch. We're seeing great results already.</p>
+<footer>- Jane Smith, Owner of XYZ Inc.</footer>
+</blockquote>
+</div>
+</section>
+<section id="pricing" class="pricing">
+<h2>Our Pricing</h2>
+<table>
+<tr><td>Strategy Development</td><td>$5000 - $10,000</td></tr>
+<tr><td>Digital Transformation</td><td>$8000 - $15,000</td></tr>
+<tr><td>Customer Engagement</td><td>$6000 - $12,000</td></tr>
+</table>
+</section>
+<section id="contact" class="container">
+<h2>Contact Us</h2>
+<form class="contact-form">
+<input type="text" placeholder="Name" required>
+<input type="email" placeholder="Email" required>
+<textarea placeholder="Message"></textarea>
+<button type="submit">Submit</button>
+</form>
+</section>
+</main>
+<footer>
+<p>&copy; 2023 Harbour & Vale. All rights reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,556 @@
+{
+  "id": "9b6cac4681c2",
+  "request": "Build a compliance checklist app for a non-profit food bank with CSV export (bid #2964)",
+  "created_at": "2026-10-27 11:05:23",
+  "updated_at": "2026-10-27 11:05:24",
+  "status": "COMPLETED",
+  "intent": "software",
+  "workspace": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2",
+  "questions": [],
+  "answers": {
+    "presets": "github, ui_design",
+    "depth": "quick"
+  },
+  "assumptions": [],
+  "brief": {
+    "goal": "Build a compliance checklist app for a non-profit food bank with CSV export (bid #2964)",
+    "intent": "software",
+    "answers": {
+      "presets": "github, ui_design",
+      "depth": "quick"
+    },
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "assumptions": [],
+    "constraints": [
+      "Work only inside the task workspace",
+      "Do not delete or overwrite user files without approval",
+      "Never claim success for an unverified step"
+    ]
+  },
+  "plan": {
+    "steps": [
+      {
+        "id": "s1",
+        "worker": "research",
+        "title": "Research the subject before building",
+        "params": {
+          "depth": "quick",
+          "feed_build": true,
+          "presets": [
+            "github",
+            "ui_design"
+          ]
+        },
+        "status": "done",
+        "detail": "Researched 'Build a compliance checklist app for a non-profit food bank ' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research, UI / design references.",
+        "requires_approval": false,
+        "started_at": "2026-10-27 11:05:24",
+        "ended_at": "2026-10-27 11:05:24",
+        "error": "",
+        "attempts": 1,
+        "artifacts": [
+          {
+            "id": "51561b97ee",
+            "task_id": "9b6cac4681c2",
+            "name": "research-report.md",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2\\research-report.md",
+            "kind": "markdown",
+            "size": 4344,
+            "sha256": "ec52b909567b9668f789fb4af59bae231f068335a202b5798a1e9ea52c72c7f7",
+            "created_at": "2026-10-27 11:05:24",
+            "detail": "Cited research report",
+            "validated": true,
+            "validation_detail": "4221 chars"
+          },
+          {
+            "id": "27ee794865",
+            "task_id": "9b6cac4681c2",
+            "name": "ref_d60510af.png",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2\\references\\ref_d60510af.png",
+            "kind": "png",
+            "size": 362,
+            "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+            "created_at": "2026-10-27 11:05:24",
+            "detail": "Design reference: Reference: Build a compliance checklist app for a non-profit",
+            "validated": true,
+            "validation_detail": "PNG 160×120"
+          },
+          {
+            "id": "0d08f85ab2",
+            "task_id": "9b6cac4681c2",
+            "name": "ref_df60f345.png",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2\\references\\ref_df60f345.png",
+            "kind": "png",
+            "size": 362,
+            "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+            "created_at": "2026-10-27 11:05:24",
+            "detail": "Design reference: Reference: Build a compliance checklist app for a non-profit",
+            "validated": true,
+            "validation_detail": "PNG 160×120"
+          },
+          {
+            "id": "e89cf49760",
+            "task_id": "9b6cac4681c2",
+            "name": "ref_a34bd9e8.png",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2\\references\\ref_a34bd9e8.png",
+            "kind": "png",
+            "size": 362,
+            "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+            "created_at": "2026-10-27 11:05:24",
+            "detail": "Design reference: Reference: site:github.com Build a compliance checklist app ",
+            "validated": true,
+            "validation_detail": "PNG 160×120"
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "worker": "software",
+        "title": "Build and verify the project",
+        "params": {
+          "mode": "build",
+          "reuse_research": true
+        },
+        "status": "done",
+        "detail": "built in the test environment",
+        "requires_approval": false,
+        "started_at": "2026-10-27 11:05:24",
+        "ended_at": "2026-10-27 11:05:24",
+        "error": "",
+        "attempts": 1,
+        "artifacts": [
+          {
+            "id": "eea206de70",
+            "task_id": "9b6cac4681c2",
+            "name": "index.html",
+            "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2\\compliance-checklist-app-for-a-non-profi\\index.html",
+            "kind": "html",
+            "size": 171,
+            "sha256": "21e418ee1f82abb8d7681c032c1ef1d2043ee2aae57e23d7396e0c163bb85e43",
+            "created_at": "2026-10-27 11:05:24",
+            "detail": "171 bytes",
+            "validated": true,
+            "validation_detail": "171 chars"
+          }
+        ]
+      }
+    ],
+    "deliverables": [
+      "A working project folder",
+      "Startup instructions",
+      "A verification report"
+    ],
+    "acceptance_criteria": [
+      "Project files exist inside the task workspace",
+      "The build's own verification/tests were run and the result recorded",
+      "A README or startup instructions are included",
+      "Any part that could not be verified is stated as a limitation"
+    ],
+    "source": "deterministic",
+    "note": "",
+    "created_at": "2026-10-27 11:05:24"
+  },
+  "current_step": 1,
+  "artifacts": [
+    {
+      "id": "51561b97ee",
+      "task_id": "9b6cac4681c2",
+      "name": "research-report.md",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2\\research-report.md",
+      "kind": "markdown",
+      "size": 4344,
+      "sha256": "ec52b909567b9668f789fb4af59bae231f068335a202b5798a1e9ea52c72c7f7",
+      "created_at": "2026-10-27 11:05:24",
+      "detail": "Cited research report",
+      "validated": true,
+      "validation_detail": "4221 chars"
+    },
+    {
+      "id": "27ee794865",
+      "task_id": "9b6cac4681c2",
+      "name": "ref_d60510af.png",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2\\references\\ref_d60510af.png",
+      "kind": "png",
+      "size": 362,
+      "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+      "created_at": "2026-10-27 11:05:24",
+      "detail": "Design reference: Reference: Build a compliance checklist app for a non-profit",
+      "validated": true,
+      "validation_detail": "PNG 160×120"
+    },
+    {
+      "id": "0d08f85ab2",
+      "task_id": "9b6cac4681c2",
+      "name": "ref_df60f345.png",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2\\references\\ref_df60f345.png",
+      "kind": "png",
+      "size": 362,
+      "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+      "created_at": "2026-10-27 11:05:24",
+      "detail": "Design reference: Reference: Build a compliance checklist app for a non-profit",
+      "validated": true,
+      "validation_detail": "PNG 160×120"
+    },
+    {
+      "id": "e89cf49760",
+      "task_id": "9b6cac4681c2",
+      "name": "ref_a34bd9e8.png",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2\\references\\ref_a34bd9e8.png",
+      "kind": "png",
+      "size": 362,
+      "sha256": "aedf7109522eff4a7e66d0cc49aa59934cef15caca7f77c6e7b8f9af371541ec",
+      "created_at": "2026-10-27 11:05:24",
+      "detail": "Design reference: Reference: site:github.com Build a compliance checklist app ",
+      "validated": true,
+      "validation_detail": "PNG 160×120"
+    },
+    {
+      "id": "eea206de70",
+      "task_id": "9b6cac4681c2",
+      "name": "index.html",
+      "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2\\compliance-checklist-app-for-a-non-profi\\index.html",
+      "kind": "html",
+      "size": 171,
+      "sha256": "21e418ee1f82abb8d7681c032c1ef1d2043ee2aae57e23d7396e0c163bb85e43",
+      "created_at": "2026-10-27 11:05:24",
+      "detail": "171 bytes",
+      "validated": true,
+      "validation_detail": "171 chars"
+    }
+  ],
+  "evidence": [
+    {
+      "claim": "Compliance Checklist Non-Profit Food Bank — reference notes.",
+      "quote": "Compliance Checklist Non-Profit Food Bank — reference notes.",
+      "source_url": "https://docs.example.com/1a05a786d2",
+      "title": "Reference: Build a compliance checklist app for a non-profit food bank ",
+      "retrieved_at": "2026-10-27 11:05:24",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The compliance checklist non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The compliance checklist non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/1a05a786d2",
+      "title": "Reference: Build a compliance checklist app for a non-profit food bank ",
+      "retrieved_at": "2026-10-27 11:05:24",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "Compliance Checklist Non-Profit Food Bank — reference notes.",
+      "quote": "Compliance Checklist Non-Profit Food Bank — reference notes.",
+      "source_url": "https://docs.example.com/7fe1210862",
+      "title": "Reference: Build a compliance checklist app for a non-profit food bank ",
+      "retrieved_at": "2026-10-27 11:05:24",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The compliance checklist non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The compliance checklist non-profit food bank workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/7fe1210862",
+      "title": "Reference: Build a compliance checklist app for a non-profit food bank ",
+      "retrieved_at": "2026-10-27 11:05:24",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "Site Github Compliance Checklist Non-Profit — reference notes.",
+      "quote": "Site Github Compliance Checklist Non-Profit — reference notes.",
+      "source_url": "https://docs.example.com/a9bb611f8e",
+      "title": "Reference: site:github.com Build a compliance checklist app for a non-p",
+      "retrieved_at": "2026-10-27 11:05:24",
+      "verified": true,
+      "method": "page fetched"
+    },
+    {
+      "claim": "The site github compliance checklist non-profit workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "quote": "The site github compliance checklist non-profit workflow creates one record per entry, keeps a status field and returns an id from a single call.",
+      "source_url": "https://docs.example.com/a9bb611f8e",
+      "title": "Reference: site:github.com Build a compliance checklist app for a non-p",
+      "retrieved_at": "2026-10-27 11:05:24",
+      "verified": true,
+      "method": "page fetched"
+    }
+  ],
+  "events": [
+    {
+      "ts": "2026-10-27 11:05:23",
+      "type": "task_created",
+      "text": "software task created in 20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2"
+    },
+    {
+      "ts": "2026-10-27 11:05:23",
+      "type": "status",
+      "text": "INTAKE → READY"
+    },
+    {
+      "ts": "2026-10-27 11:05:23",
+      "type": "status",
+      "text": "READY → PLANNING (building the plan)"
+    },
+    {
+      "ts": "2026-10-27 11:05:24",
+      "type": "plan_created",
+      "text": "2 step(s), source: deterministic"
+    },
+    {
+      "ts": "2026-10-27 11:05:24",
+      "type": "status",
+      "text": "PLANNING → READY (plan ready)"
+    },
+    {
+      "ts": "2026-10-27 11:05:24",
+      "type": "status",
+      "text": "READY → RUNNING"
+    },
+    {
+      "ts": "2026-10-27 11:05:24",
+      "type": "step_started",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:05:24",
+      "type": "worker_log",
+      "text": "Research: Build a compliance checklist app for a non-profit food bank with CSV export (bid #2964) (depth quick, 7 queries, presets: GitHub research, UI / design references)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:05:24",
+      "type": "worker_log",
+      "text": "Design reference captured: Reference: Build a compliance checklist app for a non-profit",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:05:24",
+      "type": "worker_log",
+      "text": "Design reference captured: Reference: Build a compliance checklist app for a non-profit",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:05:24",
+      "type": "worker_log",
+      "text": "Design reference captured: Reference: site:github.com Build a compliance checklist app ",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:05:24",
+      "type": "worker_log",
+      "text": "Research summary discarded: no citation to the evidence.",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:05:24",
+      "type": "worker_log",
+      "text": "Research report written: research-report.md (6 evidence items)",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:05:24",
+      "type": "step_done",
+      "text": "Done: Researched 'Build a compliance checklist app for a non-profit food bank ' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research, UI / design references.",
+      "step": "s1"
+    },
+    {
+      "ts": "2026-10-27 11:05:24",
+      "type": "step_started",
+      "text": "Starting: Build and verify the project",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 11:05:24",
+      "type": "worker_log",
+      "text": "Software: delegating to Crown Code in compliance-checklist-app-for-a-non-profi",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 11:05:24",
+      "type": "worker_log",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 11:05:24",
+      "type": "step_done",
+      "text": "Done: built in the test environment",
+      "step": "s2"
+    },
+    {
+      "ts": "2026-10-27 11:05:24",
+      "type": "status",
+      "text": "RUNNING → VALIDATING (verifying artifacts)"
+    },
+    {
+      "ts": "2026-10-27 11:05:24",
+      "type": "task_completed",
+      "text": "2 step(s) complete; 5 artifact(s) verified."
+    },
+    {
+      "ts": "2026-10-27 11:05:24",
+      "type": "status",
+      "text": "VALIDATING → COMPLETED"
+    }
+  ],
+  "approval": null,
+  "error": "",
+  "warnings": [],
+  "attempts": {},
+  "result": {
+    "summary": "2 step(s) complete; 5 artifact(s) verified.",
+    "artifacts": [
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2\\research-report.md",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2\\references\\ref_d60510af.png",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2\\references\\ref_df60f345.png",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2\\references\\ref_a34bd9e8.png",
+      "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2\\compliance-checklist-app-for-a-non-profi\\index.html"
+    ],
+    "validation": "5 artifact(s) verified",
+    "warnings": []
+  },
+  "logs": [
+    {
+      "ts": "11:05:24",
+      "text": "Starting: Research the subject before building",
+      "step": "s1"
+    },
+    {
+      "ts": "11:05:24",
+      "text": "Research: Build a compliance checklist app for a non-profit food bank with CSV export (bid #2964) (depth quick, 7 queries, presets: GitHub research, UI / design references)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:05:24",
+      "text": "Design reference captured: Reference: Build a compliance checklist app for a non-profit",
+      "step": "s1"
+    },
+    {
+      "ts": "11:05:24",
+      "text": "Design reference captured: Reference: Build a compliance checklist app for a non-profit",
+      "step": "s1"
+    },
+    {
+      "ts": "11:05:24",
+      "text": "Design reference captured: Reference: site:github.com Build a compliance checklist app ",
+      "step": "s1"
+    },
+    {
+      "ts": "11:05:24",
+      "text": "Research summary discarded: no citation to the evidence.",
+      "step": "s1"
+    },
+    {
+      "ts": "11:05:24",
+      "text": "Research report written: research-report.md (6 evidence items)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:05:24",
+      "text": "Verified artifact: research-report.md (4221 chars)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:05:24",
+      "text": "Verified artifact: ref_d60510af.png (PNG 160×120)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:05:24",
+      "text": "Verified artifact: ref_df60f345.png (PNG 160×120)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:05:24",
+      "text": "Verified artifact: ref_a34bd9e8.png (PNG 160×120)",
+      "step": "s1"
+    },
+    {
+      "ts": "11:05:24",
+      "text": "Done: Researched 'Build a compliance checklist app for a non-profit food bank ' across 3 inspected source(s); 6 cited evidence items; presets: GitHub research, UI / design references.",
+      "step": "s1"
+    },
+    {
+      "ts": "11:05:24",
+      "text": "Starting: Build and verify the project",
+      "step": "s2"
+    },
+    {
+      "ts": "11:05:24",
+      "text": "Software: delegating to Crown Code in compliance-checklist-app-for-a-non-profi",
+      "step": "s2"
+    },
+    {
+      "ts": "11:05:24",
+      "text": "Software: 1 file(s) produced",
+      "step": "s2"
+    },
+    {
+      "ts": "11:05:24",
+      "text": "Verified artifact: index.html (171 chars)",
+      "step": "s2"
+    },
+    {
+      "ts": "11:05:24",
+      "text": "Done: built in the test environment",
+      "step": "s2"
+    },
+    {
+      "ts": "11:05:24",
+      "text": "Validation: 5 artifact(s) verified",
+      "step": ""
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "results": [
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2\\research-report.md",
+        "kind": "md",
+        "detail": "4221 chars",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2\\references\\ref_d60510af.png",
+        "kind": "png",
+        "detail": "PNG 160×120",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2\\references\\ref_df60f345.png",
+        "kind": "png",
+        "detail": "PNG 160×120",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2\\references\\ref_a34bd9e8.png",
+        "kind": "png",
+        "detail": "PNG 160×120",
+        "warning": ""
+      },
+      {
+        "ok": true,
+        "path": "C:\\Users\\harma\\AppData\\Local\\Temp\\loadtest_ws_y3gq7r36\\20261027-build-a-compliance-checklist-app-for-a-9b6cac4681c2\\compliance-checklist-app-for-a-non-profi\\index.html",
+        "kind": "html",
+        "detail": "171 chars",
+        "warning": ""
+      }
+    ],
+    "failures": [],
+    "detail": "5 artifact(s) verified"
+  }
+}

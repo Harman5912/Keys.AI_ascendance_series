@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "skills": {
+    "agent-architecture-audit": {
+      "source": "affaan-m/ecc",
+      "sourceType": "github",
+      "skillPath": "skills/agent-architecture-audit/SKILL.md",
+      "computedHash": "8db8e5f849a924a58080345423ad6ed5f383a3bbd7b6f8ba842cf2dc917ebda2"
+    },
+    "agent-harness-construction": {
+      "source": "affaan-m/ecc",
+      "sourceType": "github",
+      "skillPath": "skills/agent-harness-construction/SKILL.md",
+      "computedHash": "e034f38aa212f6eedb43382ce1c22c4af4fa3fc0545faa4fe09a3754a4c5a3df"
+    },
+    "agent-introspection-debugging": {
+      "source": "affaan-m/ecc",
+      "sourceType": "github",
+      "skillPath": "skills/agent-introspection-debugging/SKILL.md",
+      "computedHash": "a362c8480d33f227f25a156969ecc2106287d242126f15246a4b13f1c4288bac"
+    },
+    "agent-security-hardening": {
+      "source": "affaan-m/ecc",
+      "sourceType": "github",
+      "skillPath": "skills/agent-security-hardening/SKILL.md",
+      "computedHash": "26e4589f4526b50036b496f9f73ed0a78f5abe28d3e3b858d9b13d8e1df688b4"
+    },
+    "ai-regression-testing": {
+      "source": "affaan-m/ecc",
+      "sourceType": "github",
+      "skillPath": "skills/ai-regression-testing/SKILL.md",
+      "computedHash": "ffa6db9bcee7b4ad5c6a1e7a79b75038acb33aab21f78f24ba62e67a0f1f569f"
+    },
+    "architecture-decision-records": {
+      "source": "affaan-m/ecc",
+      "sourceType": "github",
+      "skillPath": "skills/architecture-decision-records/SKILL.md",
+      "computedHash": "6445f8dea6792460ab29da38a9a055a2957b7fc73defebd663d3bf059b638c56"
+    },
+    "benchmark": {
+      "source": "affaan-m/ecc",
+      "sourceType": "github",
+      "skillPath": "skills/benchmark/SKILL.md",
+      "computedHash": "07ac32ff04de9bb3f877102eb5c8501f92c9cbeb2081f274321b6dfa4dfd4a9b"
+    },
+    "coding-standards": {
+      "source": "affaan-m/ecc",
+      "sourceType": "github",
+      "skillPath": "skills/coding-standards/SKILL.md",
+      "computedHash": "94f8d33db00faef148fb7a9f88c2e37e4d2afe109cdb9978b06fe280892de405"
+    },
+    "e2e-testing": {
+      "source": "affaan-m/ecc",
+      "sourceType": "github",
+      "skillPath": "skills/e2e-testing/SKILL.md",
+      "computedHash": "ae1a9cb885532edccb80682df28f269ada8bda86deedd00b282a82b03e011b2e"
+    },
+    "module-regression": {
+      "source": "affaan-m/ecc",
+      "sourceType": "github",
+      "skillPath": "skills/module-regression/SKILL.md",
+      "computedHash": "ddfd0c8306e848bb31cd79903999ab26077d51ff073af44581b81d8ea4dbe137"
+    },
+    "production-audit": {
+      "source": "affaan-m/ecc",
+      "sourceType": "github",
+      "skillPath": "skills/production-audit/SKILL.md",
+      "computedHash": "3c38cf12fdb504f6ce53fa9d33f4f0fff1aee3df8e96fbb4fdb76831b5fd51ce"
+    },
+    "python-patterns": {
+      "source": "affaan-m/ecc",
+      "sourceType": "github",
+      "skillPath": "skills/python-patterns/SKILL.md",
+      "computedHash": "3ce7d51e18d3e2fa79635e569e73a8d269bc484ff1095fae7c414543f023e95e"
+    },
+    "python-testing": {
+      "source": "affaan-m/ecc",
+      "sourceType": "github",
+      "skillPath": "skills/python-testing/SKILL.md",
+      "computedHash": "f057c2d50d29efe29a1f9e7ac3bc11ebb60f773c5b3831fe2b9cf9ad6786d755"
+    },
+    "security-review": {
+      "source": "affaan-m/ecc",
+      "sourceType": "github",
+      "skillPath": "skills/security-review/SKILL.md",
+      "computedHash": "90f2b514aa106496fd0911d2a0e0ef5aac28515ce218a82574984ad7d9d6b4d2"
+    },
+    "tdd-workflow": {
+      "source": "affaan-m/ecc",
+      "sourceType": "github",
+      "skillPath": "skills/tdd-workflow/SKILL.md",
+      "computedHash": "4ee1bd12885d1b8092a03bf9e815503e36cfd76d595760c0b29621272884ace0"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"scenario": "trace_14_cancel_empty", "params": {"action": "cancel", "job_id": ""}, "response": "Stopping Coding automate_file_conversion \u2014 it will stop after the current step."}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Fern & Flint</title>
+    <style>
+        * { box-sizing: border-box; max-width: 100%; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #4CAF50; color: white; padding: 1em; text-align: center; }
+        main { display: flex; flex-wrap: wrap; justify-content: space-around; padding: 2em; }
+        .product-card { border: 1px solid #ddd; margin: 1em; padding: 1em; width: 30%; text-align: center; }
+        .product-card h3 { font-size: 1.5em; }
+        .product-card p { font-size: 1em; }
+        button, a { cursor: pointer; outline: none; border: none; padding: 0.5em 1em; background-color: #4CAF50; color: white; text-decoration: none; display: inline-block; margin-top: 0.5em; transition: background-color 0.3s; }
+        button:hover, a:hover { background-color: #45a049; }
+        button:focus-visible, a:focus-visible { outline: 2px solid #4CAF50; }
+        footer { text-align: center; padding: 1em; background-color: #f1f1f1; }
+        .cart-counter { font-size: 1.5em; color: #4CAF50; }
+        .checkout-form { display: none; margin-top: 2em; }
+        .checkout-form.show { display: block; }
+        .confirmation-message { margin-top: 1em; color: green; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fern & Flint</h1>
+        <span class='cart-counter'>0</span> items in cart
+    </header>
+    <main>
+        <div class='product-card' data-name='Fern Seed Packet' data-price='5.99'>
+            <h3>Fern Seed Packet</h3>
+            <p>Price: $5.99</p>
+            <button onclick='addToCart(this)'>Add to cart</button>
+        </div>
+        <div class='product-card' data-name='Flint Tool Kit' data-price='20.99'>
+            <h3>Flint Tool Kit</h3>
+            <p>Price: $20.99</p>
+            <button onclick='addToCart(this)'>Add to cart</button>
+        </div>
+        <div class='product-card' data-name='Fern Bush Plant' data-price='15.99'>
+            <h3>Fern Bush Plant</h3>
+            <p>Price: $15.99</p>
+            <button onclick='addToCart(this)'>Add to cart</button>
+        </div>
+        <div class='product-card' data-name='Flint Torch' data-price='7.99'>
+            <h3>Flint Torch</h3>
+            <p>Price: $7.99</p>
+            <button onclick='addToCart(this)'>Add to cart</button>
+        </div>
+        <div class='product-card' data-name='Fern Pot' data-price='12.99'>
+            <h3>Fern Pot</h3>
+            <p>Price: $12.99</p>
+            <button onclick='addToCart(this)'>Add to cart</button>
+        </div>
+        <div class='product-card' data-name='Flint Knife Set' data-price='8.99'>
+            <h3>Flint Knife Set</h3>
+            <p>Price: $8.99</p>
+            <button onclick='addToCart(this)'>Add to cart</button>
+        </div>
+    </main>
+    <footer>
+        <button onclick='showCheckout()'>Proceed to checkout</button>
+        <div class='checkout-form' id='checkoutForm'>
+            <h2>Checkout</h2>
+            <form onsubmit='return validateForm()'>
+                <label for='name'>Name:</label>
+                <input type='text' id='name' name='name' required><br><br>
+                <label for='email'>Email:</label>
+                <input type='email' id='email' name='email' required><br><br>
+                <label for='cardNumber'>Card Number:</label>
+                <input type='text' id='cardNumber' name='cardNumber' required><br><br>
+                <button type='submit'>Submit</button>
+            </form>
+            <div class='confirmation-message' id='confirmationMessage'></div>
+        </div>
+    </footer>
+
+    <script>
+        let cartCounter = document.querySelector('.cart-counter');
+        let checkoutForm = document.getElementById('checkoutForm');
+        let confirmationMessage = document.getElementById('confirmationMessage');
+
+        function addToCart(button) {
+            let productName = button.parentElement.getAttribute('data-name');
+            let productPrice = parseFloat(button.parentElement.getAttribute('data-price'));
+            cartCounter.textContent = parseInt(cartCounter.textContent) + 1;
+            alert(`Added ${productName} to cart for $${productPrice.toFixed(2)}.`);
+        }
+
+        function showCheckout() {
+            checkoutForm.classList.toggle('show');
+        }
+
+        function validateForm() {
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let cardNumber = document.getElementById('cardNumber').value;
+
+            if (name && email && cardNumber) {
+                confirmationMessage.textContent = 'Thank you for your purchase!';
+                checkoutForm.style.display = 'none';
+                return false;
+            } else {
+                confirmationMessage.textContent = 'Please fill in all required fields.';
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

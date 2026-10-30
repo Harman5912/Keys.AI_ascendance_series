@@ -1,0 +1,33 @@
+timestamp,suite,result,seconds,model,provider,detail,evidence
+2026-10-22T09:51:22+00:00,repo:test_agent_control.py,PASS,0.35,-,-,exit=0,qa_artifacts/logs/baseline_test_agent_control.log
+2026-10-22T09:51:22+00:00,repo:test_brain.py,PASS,0.58,-,-,exit=0,qa_artifacts/logs/baseline_test_brain.log
+2026-10-22T09:51:22+00:00,repo:test_computer_use.py,PASS,2.21,-,-,exit=0,qa_artifacts/logs/baseline_test_computer_use.log
+2026-10-22T09:51:22+00:00,repo:test_crown_ui.py,PASS,2.04,-,-,exit=0,qa_artifacts/logs/baseline_test_crown_ui.log
+2026-10-22T09:51:22+00:00,repo:test_editor_control.py,PASS,1.45,-,-,exit=0,qa_artifacts/logs/baseline_test_editor_control.log
+2026-10-22T09:51:22+00:00,repo:test_firebase_feature.py,FAIL,497.77,-,-,exit=-9,qa_artifacts/logs/baseline_test_firebase_feature.log
+2026-10-22T09:51:22+00:00,repo:test_gemini_ladder.py,PASS,0.14,-,-,exit=0,qa_artifacts/logs/baseline_test_gemini_ladder.log
+2026-10-22T09:51:22+00:00,repo:test_google_accounts.py,PASS,0.41,-,-,exit=0,qa_artifacts/logs/baseline_test_google_accounts.log
+2026-10-22T09:51:22+00:00,repo:test_hybrid_automation.py,PASS,0.67,-,-,exit=0,qa_artifacts/logs/baseline_test_hybrid_automation.log
+2026-10-22T09:51:22+00:00,repo:test_install.py,PASS,2.24,-,-,exit=0,qa_artifacts/logs/baseline_test_install.log
+2026-10-22T09:51:22+00:00,repo:test_intelligence.py,PASS,0.85,-,-,exit=0,qa_artifacts/logs/baseline_test_intelligence.log
+2026-10-22T09:51:22+00:00,repo:test_targeting.py,PASS,0.57,-,-,exit=0,qa_artifacts/logs/baseline_test_targeting.log
+2026-10-22T09:51:22+00:00,repo:test_window_chrome.py,PASS,0.6,-,-,exit=0,qa_artifacts/logs/baseline_test_window_chrome.log
+2026-10-22T09:51:22+00:00,repo:baseline-total,FAIL,510.0,-,-,12/13 test files passed,qa_artifacts/reports/baseline_results.json
+2026-10-22T09:51:30+00:00,qa:test_app_builder,PASS,7.5,-,-,18/18 tests passed,qa_artifacts/logs/run_all_test_app_builder.log
+2026-10-22T09:51:31+00:00,qa:test_brief_spec,PASS,1.2,-,-,32/32 tests passed,qa_artifacts/logs/run_all_test_brief_spec.log
+2026-10-22T09:51:33+00:00,qa:test_crown_bridge,PASS,2.4,-,-,27/27 tests passed,qa_artifacts/logs/run_all_test_crown_bridge.log
+2026-10-22T09:51:34+00:00,qa:test_crown_jobs,PASS,0.5,-,-,6/6 tests passed,qa_artifacts/logs/run_all_test_crown_jobs.log
+2026-10-22T09:51:38+00:00,qa:test_file_ops,PASS,4.2,-,-,34/34 tests passed,qa_artifacts/logs/run_all_test_file_ops.log
+2026-10-22T09:51:39+00:00,qa:test_messaging,PASS,0.4,-,-,13/13 tests passed,qa_artifacts/logs/run_all_test_messaging.log
+2026-10-22T09:51:41+00:00,qa:test_office_builder,PASS,2.5,-,-,5/5 tests passed,qa_artifacts/logs/run_all_test_office_builder.log
+2026-10-22T09:51:41+00:00,qa:test_openai_compat,PASS,0.3,-,-,11/11 tests passed,qa_artifacts/logs/run_all_test_openai_compat.log
+2026-10-22T09:51:42+00:00,qa:test_pdf_pipeline,PASS,1.1,-,-,7/7 tests passed,qa_artifacts/logs/run_all_test_pdf_pipeline.log
+2026-10-22T09:51:43+00:00,qa:test_provider_fallback,PASS,0.2,-,-,10/10 tests passed,qa_artifacts/logs/run_all_test_provider_fallback.log
+2026-10-22T09:51:45+00:00,qa:test_security,PASS,2.1,-,-,9/9 tests passed,qa_artifacts/logs/run_all_test_security.log
+2026-10-22T09:51:46+00:00,qa:test_site_builder,PASS,1.6,-,-,22/22 tests passed,qa_artifacts/logs/run_all_test_site_builder.log
+2026-10-22T09:51:47+00:00,qa:test_site_studio,PASS,0.8,-,-,10/10 tests passed,qa_artifacts/logs/run_all_test_site_studio.log
+2026-10-22T09:51:55+00:00,qa:security_scan,PASS,8.0,-,-,findings=0,qa_artifacts/reports/security_scan.txt
+2026-10-22T09:51:56+00:00,artifacts:docx,PASS,0.4,-,-,10/10 validated,qa_artifacts/reports/doc_validation.csv
+2026-10-22T09:51:56+00:00,artifacts:pptx,PASS,0.5,-,-,10/10 validated,qa_artifacts/reports/doc_validation.csv
+2026-10-22T09:52:15+00:00,artifacts:website-audit,FAIL,19.3,-,-,4/10 passed,qa_artifacts/reports/site_audit_website.csv
+2026-10-22T09:52:26+00:00,artifacts:webapp-audit,FAIL,10.3,-,-,1/10 passed,qa_artifacts/reports/site_audit_webapp.csv

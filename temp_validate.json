@@ -1,0 +1,31 @@
+{
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "validate": [
+    {
+      "url": "https://api.github.com/repos/Autognosi/Actions",
+      "status": 404,
+      "body_preview": "Not Found"
+    },
+    {
+      "url": "https://api.github.com/repos/Autognosi/Actions/contents/JSON",
+      "status": 404,
+      "body_preview": "Not Found"
+    },
+    {
+      "url": "https://api.github.com/repos/Autognosi/Actions/git/trees/main?recursive=1",
+      "status": 404,
+      "body_preview": "Not Found"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Autognosi/Actions/main/JSON/action.json",
+      "status": 404,
+      "body_preview": "404: Not Found"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Autognosi/Actions/e680bf1ad34a88fe81568d6a594169c000d215a9/JSON/action.json",
+      "status": 404,
+      "body_preview": "404: Not Found"
+    }
+  ]
+}

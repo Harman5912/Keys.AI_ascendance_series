@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'">
+  <title>Field Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Field Notes</h1>
+    <p class="meta" id="meta">loading…</p>
+  </header>
+
+  <form id="composer">
+    <label for="note" class="visually-hidden">New note</label>
+    <input id="note" name="note" type="text" placeholder="What happened?" autocomplete="off">
+    <button type="submit">Save</button>
+  </form>
+  <p class="error" id="error" hidden></p>
+
+  <ul class="notes" id="notes"></ul>
+  <p class="empty" id="empty" hidden>No notes yet — write the first one above.</p>
+
+  <script src="app.js"></script>
+</body>
+</html>

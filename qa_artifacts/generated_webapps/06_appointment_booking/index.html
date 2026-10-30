@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking App</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header, footer { background-color: #4CAF50; color: white; padding: 1em; text-align: center; }
+        main { margin: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input, button { width: calc(100% - 22px); padding: 10px; box-sizing: border-box; }
+        button:focus-visible { outline: none; border: 2px solid #4CAF50; }
+        .time-slot { margin-bottom: 10px; padding: 10px; background-color: #f0f0f0; border: 1px solid #ddd; }
+        .booked { background-color: #ff6347 !important; color: white; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Appointment Booking App</h1>
+    </header>
+    <main>
+        <section id="availability">
+            <h2>Select a Date</h2>
+            <form id="dateForm">
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" required>
+                </div>
+                <button type="submit">Show Availability</button>
+            </form>
+        </section>
+        <section id="timeSlots" style="display: none;">
+            <h2>Time Slots</h2>
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <button id="bookBtn" disabled>Book Slot</button>
+            <ul id="slots"></ul>
+        </section>
+        <section id="bookedAppointments" style="display: none;">
+            <h2>Booked Appointments</h2>
+            <ul id="appointments"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Appointment Booking App</p>
+    </footer>
+    <script>
+        const slots = {
+            '2023-10-01': ['10:00', '11:00', '12:00'],
+            '2023-10-02': ['10:00', '11:00', '12:00'],
+            // Add more dates and slots as needed
+        };
+
+        let bookedSlots = JSON.parse(localStorage.getItem('bookedSlots')) || {};
+
+        document.getElementById('dateForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const selectedDate = document.getElementById('date').value;
+            if (!slots[selectedDate] || slots[selectedDate].length === 0) {
+                alert('No available slots on that date.');
+                return;
+            }
+
+            const timeSlotsDiv = document.getElementById('timeSlots');
+            const slotsList = document.getElementById('slots');
+            slotsList.innerHTML = '';
+
+            slots[selectedDate].forEach((slot, index) => {
+                const slotEl = document.createElement('div');
+                slotEl.className = 'time-slot';
+                if (bookedSlots[selectedDate] && bookedSlots[selectedDate].includes(slot)) {
+                    slotEl.classList.add('booked');
+                } else {
+                    slotEl.addEventListener('click', () => {
+                        const nameInput = document.getElementById('name');
+                        const bookBtn = document.getElementById('bookBtn');
+                        bookBtn.disabled = false;
+                        bookBtn.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            if (!nameInput.value.trim()) {
+                                alert('Please enter your name.');
+                                return;
+                            }
+
+                            if (!bookedSlots[selectedDate]) {
+                                bookedSlots[selectedDate] = [];
+                            }
+
+                            bookedSlots[selectedDate].push(slot);
+                            localStorage.setItem('bookedSlots', JSON.stringify(bookedSlots));
+
+                            alert(`Slot ${slot} booked for ${nameInput.value}.`);
+                            document.getElementById('timeSlots').style.display = 'none';
+                            showBookedAppointments();
+                        });
+                    });
+                }
+                slotEl.textContent = `Slot ${index + 1}: ${slot}`;
+                slotsList.appendChild(slotEl);
+            });
+
+            timeSlotsDiv.style.display = 'block';
+        });
+
+        function showBookedAppointments() {
+            const bookedAppointmentsList = document.getElementById('appointments');
+            bookedAppointmentsList.innerHTML = '';
+
+            for (const date in bookedSlots) {
+                if (!bookedSlots[date].length) continue;
+                const slotList = bookedSlots[date].map(slot => `Slot: ${slot}`).join(', ');
+                const li = document.createElement('li');
+                li.textContent = `${date}: ${slotList}`;
+                bookedAppointmentsList.appendChild(li);
+            }
+
+            document.getElementById('bookedAppointments').style.display = 'block';
+        }
+
+        function checkAvailability() {
+            const selectedDate = document.getElementById('date').value;
+            if (slots[selectedDate] && slots[selectedDate].length > 0) {
+                document.getElementById('timeSlots').style.display = 'none';
+                showBookedAppointments();
+            } else {
+                alert('No available slots on that date.');
+            }
+        }
+
+        if (Object.keys(bookedSlots).length > 0) {
+            document.getElementById('bookedAppointments').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

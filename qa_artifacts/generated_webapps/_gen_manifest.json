@@ -1,0 +1,369 @@
+[
+  {
+    "kind": "webapp",
+    "id": "01_task_manager",
+    "name": "Task management app",
+    "slug": "01_task_manager",
+    "dir": "qa_artifacts/generated_webapps/01_task_manager",
+    "passed": false,
+    "attempts": [
+      {
+        "attempt": 1,
+        "seconds": 71.1,
+        "tools": [],
+        "bridge_ok": false,
+        "summary": "The model wrote a tool call as plain text instead of invoking a tool, so nothing was executed. Choose a model that emits native tool calls (see /model). Model output: ```json\n{\n  \"name\": \"write_file\",\n  \"arguments\": {\n    \"path\": \"index.html\",\n    \"content\": \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<he",
+        "tool_errors": [],
+        "problems": [
+          "the model called no tool (it only produced text)",
+          "index.html was not created"
+        ],
+        "passed": false,
+        "bytes": 0
+      },
+      {
+        "attempt": 2,
+        "seconds": 83.2,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "index.html has been created. Open it in your web browser to see the task manager in action. If you encounter any issues or need further assistance, feel free to ask!",
+        "tool_errors": [],
+        "problems": [
+          "no :focus / :focus-visible styles"
+        ],
+        "passed": false,
+        "bytes": 4424
+      }
+    ],
+    "bytes": 4424,
+    "model": "qwen2.5-coder:7b",
+    "timestamp": "2026-10-17T13:11:20+00:00"
+  },
+  {
+    "kind": "webapp",
+    "id": "02_inventory_manager",
+    "name": "Inventory management app",
+    "slug": "02_inventory_manager",
+    "dir": "qa_artifacts/generated_webapps/02_inventory_manager",
+    "passed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "seconds": 85.0,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "index.html has been created. Open it in your browser using `file://C:/Users/harman/Desktop/PROJECTS/Keys-acendence-series/acendence-VIII_GEN-I/qa_artifacts/generated_webapps/02_inventory_manager/index.html` to see the Inventory Manager app.",
+        "tool_errors": [],
+        "problems": [],
+        "passed": true,
+        "bytes": 5268
+      }
+    ],
+    "bytes": 5268,
+    "model": "qwen2.5-coder:7b",
+    "timestamp": "2026-10-17T13:12:45+00:00"
+  },
+  {
+    "kind": "webapp",
+    "id": "03_crm",
+    "name": "CRM with customer records",
+    "slug": "03_crm",
+    "dir": "qa_artifacts/generated_webapps/03_crm",
+    "passed": false,
+    "attempts": [
+      {
+        "attempt": 1,
+        "seconds": 83.3,
+        "tools": [],
+        "bridge_ok": false,
+        "summary": "The model wrote a tool call as plain text instead of invoking a tool, so nothing was executed. Choose a model that emits native tool calls (see /model). Model output: ```json\n{\n  \"name\": \"write_file\",\n  \"arguments\": {\n    \"path\": \"index.html\",\n    \"content\": \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<he",
+        "tool_errors": [],
+        "problems": [
+          "the model called no tool (it only produced text)",
+          "index.html was not created"
+        ],
+        "passed": false,
+        "bytes": 0
+      },
+      {
+        "attempt": 2,
+        "seconds": 97.2,
+        "tools": [],
+        "bridge_ok": false,
+        "summary": "The model wrote a tool call as plain text instead of invoking a tool, so nothing was executed. Choose a model that emits native tool calls (see /model). Model output: ```json\n{\"name\": \"write_file\", \"arguments\": {\"path\": \"./index.html\", \"content\": \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <me",
+        "tool_errors": [],
+        "problems": [
+          "the model called no tool (it only produced text)",
+          "index.html was not created"
+        ],
+        "passed": false,
+        "bytes": 0
+      }
+    ],
+    "bytes": 0,
+    "model": "qwen2.5-coder:7b",
+    "timestamp": "2026-10-17T13:15:46+00:00"
+  },
+  {
+    "kind": "webapp",
+    "id": "04_expense_tracker",
+    "name": "Expense tracker",
+    "slug": "04_expense_tracker",
+    "dir": "qa_artifacts/generated_webapps/04_expense_tracker",
+    "passed": false,
+    "attempts": [
+      {
+        "attempt": 1,
+        "seconds": 63.3,
+        "tools": [],
+        "bridge_ok": false,
+        "summary": "The model wrote a tool call as plain text instead of invoking a tool, so nothing was executed. Choose a model that emits native tool calls (see /model). Model output: {\"name\": \"write_file\", \"arguments\": {\"path\": \"index.html\", \"content\": \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <meta charset",
+        "tool_errors": [],
+        "problems": [
+          "the model called no tool (it only produced text)",
+          "index.html was not created"
+        ],
+        "passed": false,
+        "bytes": 0
+      },
+      {
+        "attempt": 2,
+        "seconds": 65.1,
+        "tools": [],
+        "bridge_ok": false,
+        "summary": "The model wrote a tool call as plain text instead of invoking a tool, so nothing was executed. Choose a model that emits native tool calls (see /model). Model output: ```json\n{\"name\": \"write_file\", \"arguments\": {\"path\": \"C:\\\\Users\\\\harma\\\\Desktop\\\\PROJECTS\\\\Keys-acendence-series\\\\acendence-VIII_GEN-",
+        "tool_errors": [],
+        "problems": [
+          "the model called no tool (it only produced text)",
+          "index.html was not created"
+        ],
+        "passed": false,
+        "bytes": 0
+      }
+    ],
+    "bytes": 0,
+    "model": "qwen2.5-coder:7b",
+    "timestamp": "2026-10-17T13:17:54+00:00"
+  },
+  {
+    "kind": "webapp",
+    "id": "05_analytics_dashboard",
+    "name": "Analytics dashboard app",
+    "slug": "05_analytics_dashboard",
+    "dir": "qa_artifacts/generated_webapps/05_analytics_dashboard",
+    "passed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "seconds": 78.8,
+        "tools": [],
+        "bridge_ok": false,
+        "summary": "The model wrote a tool call as plain text instead of invoking a tool, so nothing was executed. Choose a model that emits native tool calls (see /model). Model output: {\"name\": \"write_file\", \"arguments\": {\"path\": \"index.html\", \"content\": \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <meta charset",
+        "tool_errors": [],
+        "problems": [
+          "the model called no tool (it only produced text)",
+          "index.html was not created"
+        ],
+        "passed": false,
+        "bytes": 0
+      },
+      {
+        "attempt": 2,
+        "seconds": 90.6,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "```\nindex.html has been created in the current directory. Open it using a web browser to see the Analytics Dashboard.\n```",
+        "tool_errors": [],
+        "problems": [],
+        "passed": true,
+        "bytes": 4967
+      }
+    ],
+    "bytes": 4967,
+    "model": "qwen2.5-coder:7b",
+    "timestamp": "2026-10-17T13:20:43+00:00"
+  },
+  {
+    "kind": "webapp",
+    "id": "06_appointment_booking",
+    "name": "Appointment booking app",
+    "slug": "06_appointment_booking",
+    "dir": "qa_artifacts/generated_webapps/06_appointment_booking",
+    "passed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "seconds": 97.1,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "Great! The `index.html` file has been created with the specified content. This includes a basic HTML structure, inline CSS for styling, and JavaScript to handle the booking logic, availability display, and persistence of booked appointments using localStorage.\n\nTo test this app:\n1. Open the `index.h",
+        "tool_errors": [],
+        "problems": [],
+        "passed": true,
+        "bytes": 5713
+      }
+    ],
+    "bytes": 5713,
+    "model": "qwen2.5-coder:7b",
+    "timestamp": "2026-10-17T13:22:21+00:00"
+  },
+  {
+    "kind": "webapp",
+    "id": "07_kanban_board",
+    "name": "Kanban project board",
+    "slug": "07_kanban_board",
+    "dir": "qa_artifacts/generated_webapps/07_kanban_board",
+    "passed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "seconds": 72.1,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "Great! The `index.html` file has been created with the Kanban board functionality you requested. You can now open this file in a web browser using the `file://` protocol to see and interact with your Kanban board.\n\nTo open it, simply navigate to the file location in your file explorer, right-click o",
+        "tool_errors": [],
+        "problems": [],
+        "passed": true,
+        "bytes": 3568
+      }
+    ],
+    "bytes": 3568,
+    "model": "qwen2.5-coder:7b",
+    "timestamp": "2026-10-17T13:23:33+00:00"
+  },
+  {
+    "kind": "webapp",
+    "id": "08_notes_app",
+    "name": "Notes app",
+    "slug": "08_notes_app",
+    "dir": "qa_artifacts/generated_webapps/08_notes_app",
+    "passed": false,
+    "attempts": [
+      {
+        "attempt": 1,
+        "seconds": 67.8,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "Great! I've created the `index.html` file with the specified features and functionality. You can now open this file in your browser to see and interact with the notes app. If you encounter any issues or need further assistance, feel free to ask!",
+        "tool_errors": [],
+        "problems": [
+          "index.html is only 3186 bytes (a finished page needs >= 3500)"
+        ],
+        "passed": false,
+        "bytes": 3186
+      },
+      {
+        "attempt": 2,
+        "seconds": 88.0,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "Great! The `index.html` file has been updated with the Notes App code. This includes a header, a main section for displaying notes and details, and JavaScript to handle adding, editing, deleting, and searching notes. All operations are persisted using `localStorage`.\n\nTo see this app in action, you ",
+        "tool_errors": [],
+        "problems": [
+          "no <input> controls"
+        ],
+        "passed": false,
+        "bytes": 4652
+      }
+    ],
+    "bytes": 4652,
+    "model": "qwen2.5-coder:7b",
+    "timestamp": "2026-10-17T13:26:09+00:00"
+  },
+  {
+    "kind": "webapp",
+    "id": "09_quiz_app",
+    "name": "Quiz and learning app",
+    "slug": "09_quiz_app",
+    "dir": "qa_artifacts/generated_webapps/09_quiz_app",
+    "passed": false,
+    "attempts": [
+      {
+        "attempt": 1,
+        "seconds": 71.8,
+        "tools": [],
+        "bridge_ok": false,
+        "summary": "The model wrote a tool call as plain text instead of invoking a tool, so nothing was executed. Choose a model that emits native tool calls (see /model). Model output: {\"name\": \"write_file\", \"arguments\": {\"path\": \"index.html\", \"content\": \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <meta charset",
+        "tool_errors": [],
+        "problems": [
+          "the model called no tool (it only produced text)",
+          "index.html was not created"
+        ],
+        "passed": false,
+        "bytes": 0
+      },
+      {
+        "attempt": 2,
+        "seconds": 91.9,
+        "tools": [],
+        "bridge_ok": false,
+        "summary": "The model wrote a tool call as plain text instead of invoking a tool, so nothing was executed. Choose a model that emits native tool calls (see /model). Model output: {\"name\": \"write_file\", \"arguments\": {\"path\": \"index.html\", \"content\": \"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n    <meta charset",
+        "tool_errors": [],
+        "problems": [
+          "the model called no tool (it only produced text)",
+          "index.html was not created"
+        ],
+        "passed": false,
+        "bytes": 0
+      }
+    ],
+    "bytes": 0,
+    "model": "qwen2.5-coder:7b",
+    "timestamp": "2026-10-17T13:28:52+00:00"
+  },
+  {
+    "kind": "webapp",
+    "id": "10_document_manager",
+    "name": "Document management app",
+    "slug": "10_document_manager",
+    "dir": "qa_artifacts/generated_webapps/10_document_manager",
+    "passed": true,
+    "attempts": [
+      {
+        "attempt": 1,
+        "seconds": 81.2,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "index.html has been created. This file contains a document manager with basic functionality such as searching, filtering, uploading, previewing, and deleting documents. It persists data using localStorage and includes validation for input fields. The app should now work directly from `file://`. If y",
+        "tool_errors": [],
+        "problems": [
+          "no :focus / :focus-visible styles"
+        ],
+        "passed": false,
+        "bytes": 4508
+      },
+      {
+        "attempt": 2,
+        "seconds": 113.5,
+        "tools": [
+          "write_file"
+        ],
+        "bridge_ok": true,
+        "summary": "Great! The `index.html` file has been written with the specified features and styles. Here's a brief summary of what was done:\n\n1. **HTML Structure**: A complete HTML structure was created with sections for search, filter, document table, upload form, and preview.\n2. **CSS Styling**: Basic styling w",
+        "tool_errors": [],
+        "problems": [],
+        "passed": true,
+        "bytes": 6600
+      }
+    ],
+    "bytes": 6600,
+    "model": "qwen2.5-coder:7b",
+    "timestamp": "2026-10-17T13:32:07+00:00"
+  }
+]

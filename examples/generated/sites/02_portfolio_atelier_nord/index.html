@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Small architecture studio with a focus on innovative design solutions.">
+<meta name="generator" content="Crown Code Studio — Swiss">
+<title>Atelier Nord Portfolio</title>
+<style>
+/* functional foundation — identical in every studio, aesthetics are not */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;max-width:100%;overflow-x:hidden}
+img,svg,video,canvas{max-width:100%;height:auto;display:block}
+a{color:inherit}
+button,input,select,textarea{font:inherit}
+:focus-visible{outline:3px solid var(--crown-focus,#ffd166);outline-offset:3px}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--crown-focus,#ffd166);outline-offset:3px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:1rem;top:1rem;z-index:99;padding:.6rem 1rem;border-radius:6px;background:#111;color:#fff}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.is-in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .reveal{opacity:1;transform:none}
+}
+
+
+:root{--paper:#f7f7f4;--ink:#111;--muted:#6d6d6d;--red:#e0002b;--line:#d8d8d2;--crown-focus:#e0002b;
+--sans:"Helvetica Neue",Helvetica,Arial,sans-serif;--mono:"Roboto Mono",Consolas,monospace}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--sans);letter-spacing:-.01em}
+.wrap{width:min(1240px,100% - 3rem);margin-inline:auto}
+.site-header{border-bottom:1px solid var(--ink)}
+.bar{display:flex;align-items:center;gap:1rem;padding:1rem 0}
+.brand{font-weight:700;letter-spacing:-.04em;font-size:1rem;text-decoration:none;display:flex;align-items:center;gap:.55rem}
+.brand i{width:10px;height:10px;background:var(--red);display:inline-block;font-style:normal}
+nav{margin-inline-start:auto}
+nav ul{display:flex;gap:1.8rem;list-style:none;margin:0;padding:0}
+nav a{font-size:.8rem;letter-spacing:.02em;text-decoration:none;color:var(--muted);padding-bottom:.2rem;
+ border-bottom:1px solid transparent}
+nav a:hover{color:var(--ink);border-color:var(--red)}
+.nav-toggle{display:none;margin-inline-start:auto;background:none;border:1px solid var(--ink);
+ padding:.4rem .7rem;font-size:.8rem;cursor:pointer}
+.hero{padding:4.5rem 0 3rem;display:grid;grid-template-columns:repeat(12,1fr);gap:1.5rem;align-items:start}
+.hero .kicker{grid-column:1/-1;display:flex;align-items:center;gap:.6rem;
+ font:400 .72rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 1rem}
+.hero .kicker::before{content:"";width:22px;height:22px;background:var(--red);animation:square-in .6s cubic-bezier(.2,.8,.2,1) both}
+@keyframes square-in{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+h1{grid-column:1/10;font-size:clamp(2.4rem,6.4vw,5.2rem);line-height:.98;letter-spacing:-.055em;margin:0 0 1.4rem;font-weight:500}
+h1 em{font-style:normal;color:var(--red)}
+.tagline{grid-column:1/6;color:var(--muted);font-size:1.05rem;margin:0 0 2rem;max-width:44ch}
+.hero-actions{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.5rem}
+.hero-index{grid-column:10/13;grid-row:1/4;border-top:1px solid var(--ink);padding-top:.7rem}
+.hero-index ol{list-style:none;margin:0;padding:0;display:grid;gap:.9rem}
+.hero-index li{display:grid;grid-template-columns:1.4rem 1fr;gap:.6rem;font-size:.78rem;color:var(--muted)}
+.hero-index b{color:var(--red);font-family:var(--mono);font-weight:400}
+.btn{display:inline-block;font-size:.78rem;letter-spacing:.03em;padding:.75rem 1.1rem;text-decoration:none;
+ border:1px solid var(--ink);background:none;color:var(--ink);cursor:pointer;transition:background .15s,color .15s}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn-primary{background:var(--red);border-color:var(--red);color:#fff}
+.btn-primary:hover{background:var(--ink);border-color:var(--ink)}
+.metrics{grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+ border-top:1px solid var(--ink);margin-top:2.5rem}
+.metric{padding:1rem 0;border-right:1px solid var(--line)}
+.metric:last-child{border-right:0}
+.metric strong{display:block;font-size:1.7rem;font-weight:500;letter-spacing:-.03em;line-height:1}
+.metric span{font-size:.7rem;font-family:var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.section{padding:3.5rem 0;border-top:1px solid var(--line)}
+.sec-head{display:grid;grid-template-columns:repeat(12,1fr);gap:1.5rem;margin-bottom:2.2rem}
+.eyebrow{grid-column:1/3;font:400 .7rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin:0}
+h2{grid-column:3/10;font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.1;letter-spacing:-.04em;margin:0;font-weight:500}
+.lead{grid-column:3/8;color:var(--muted);font-size:.95rem;margin:.6rem 0 0;max-width:52ch}
+h3{font-size:1rem;font-weight:600;margin:0 0 .3rem;letter-spacing:-.01em}
+.rows{display:grid;border-top:1px solid var(--ink)}
+.row{display:grid;grid-template-columns:5rem 1.1fr 1.4fr 2rem;gap:1.2rem;padding:1.2rem 0;
+ border-bottom:1px solid var(--line);align-items:baseline}
+.row .num{font:400 .78rem var(--mono);color:var(--red)}
+.row strong{font-size:1.15rem;font-weight:500;letter-spacing:-.02em}
+.row p{color:var(--muted);font-size:.9rem;margin:0}
+.row .arrow{font-size:1rem;color:var(--red)}
+.row:hover strong{color:var(--red)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:var(--line);
+ border:1px solid var(--line)}
+.card{background:var(--paper);padding:1.5rem}
+.card p{color:var(--muted);font-size:.9rem;margin:.4rem 0 0}
+.meta{font:400 .68rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--red);margin:0}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;padding:0;margin:.9rem 0 0}
+.tags li{font-size:.68rem;border:1px solid var(--line);padding:.1rem .4rem;color:var(--muted)}
+.filters{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 1.2rem}
+.filter{background:none;border:1px solid var(--line);padding:.35rem .7rem;font-size:.75rem;cursor:pointer}
+.filter.is-active{background:var(--red);border-color:var(--red);color:#fff}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;border-top:1px solid var(--ink)}
+.step{border-right:1px solid var(--line);padding:1.4rem 1.2rem 1.4rem 0}
+.step b{display:block;font:400 .75rem var(--mono);color:var(--red);margin-bottom:.8rem}
+.step p{color:var(--muted);font-size:.9rem;margin:.3rem 0 0}
+.pullquote{font-size:clamp(1.6rem,3.6vw,2.8rem);line-height:1.15;letter-spacing:-.04em;margin:0;max-width:26ch;font-weight:400}
+.pullquote cite{display:block;font:400 .72rem var(--mono);letter-spacing:.08em;text-transform:uppercase;
+ color:var(--muted);font-style:normal;margin-top:1.2rem}
+.split{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+.split h3{color:var(--ink)}
+.split p{color:var(--muted);font-size:.92rem}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:1rem 0 0}
+.chip{border:1px solid var(--line);padding:.35rem .7rem;font-size:.78rem}
+.faq details{border-bottom:1px solid var(--line);padding:1rem 0}
+.faq summary{cursor:pointer;font-weight:500;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--red);font-family:var(--mono)}
+.faq details[open] summary::after{content:"−"}
+.faq p{color:var(--muted);max-width:70ch;margin:.7rem 0 0;font-size:.92rem}
+.contact-form{display:grid;gap:1rem;max-width:600px}
+.contact-form label{display:grid;gap:.3rem;font:400 .7rem var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.contact-form input,.contact-form textarea,.contact-form select{border:0;border-bottom:1px solid var(--ink);
+ background:transparent;padding:.6rem 0;width:100%;border-radius:0}
+.contact-form textarea{min-height:6rem;resize:vertical}
+.form-status{min-height:1.4rem;font-size:.82rem;color:var(--red)}
+.site-footer{border-top:1px solid var(--ink);padding:1.5rem 0 2.5rem;display:flex;flex-wrap:wrap;gap:1rem;
+ justify-content:space-between;font-size:.72rem;color:var(--muted);font-family:var(--mono)}
+@media (max-width:860px){
+ h1{grid-column:1/-1}
+ .tagline{grid-column:1/-1}
+ .hero-index{grid-column:1/-1;grid-row:auto}
+ .sec-head{grid-template-columns:1fr}
+ .eyebrow,h2,.lead{grid-column:1/-1}
+ nav{display:none;width:100%}
+ nav.is-open{display:block}
+ nav ul{flex-direction:column;gap:.7rem;padding-top:.8rem}
+ .nav-toggle{display:block}
+ .bar{flex-wrap:wrap}
+ .row{grid-template-columns:2.6rem 1fr;gap:.6rem}
+ .row p,.row .arrow{grid-column:2}
+ .step{border-right:0;border-bottom:1px solid var(--line);padding-right:0}
+ .metrics{grid-template-columns:1fr 1fr}
+}
+</style>
+<style>/* crown-base: page-level correctness rules */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;max-width:100%;overflow-x:hidden}
+img,svg,video,canvas{max-width:100%;height:auto}
+:focus-visible{outline:3px solid var(--crown-focus,#ffd166);outline-offset:3px;border-radius:2px}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--crown-focus,#ffd166);outline-offset:3px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style></head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap bar">
+  <a class="brand" href="#main"><i></i>Atelier Nord</a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <nav id="site-nav" aria-label="Main"><ul><li><a href="#about">About Atelier Nord</a></li><li><a href="#work">Selected Projects</a></li><li><a href="#skills">Our Skills</a></li><li><a href="#contact">Contact Us</a></li></ul></nav>
+</div></header>
+<main id="main">
+  <section class="hero wrap">
+    <p class="kicker">Architecture Studio in Oslo</p>
+    <h1>Discover Our Projects <em>and Work</em></h1>
+    <p class="tagline">Small architecture studio with a focus on innovative design solutions.</p>
+    <aside class="hero-index"><ol><li><b>01</b><span>About Atelier Nord</span></li><li><b>02</b><span>Selected Projects</span></li><li><b>03</b><span>Our Skills</span></li><li><b>05</b><span>Contact Us</span></li></ol></aside>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#about">Explore More</a>
+      <a class="btn btn-ghost" href="#contact">Contact Us</a>
+    </div>
+    <div class="metrics" id="stats"><div class="metric"><strong data-count="6+">6+</strong><span>years shipping</span></div></div>
+  </section>
+  <section class="section" id="about"><div class="wrap"><div class="sec-head"><p class="eyebrow">text</p><h2>About Atelier Nord</h2><p class="lead">Atelier Nord is a small architecture studio based in Oslo, Norway. We specialize in creating unique and sustainable designs for both residential and commercial projects.</p></div><p>To create spaces that are not only functional but also aesthetically pleasing and environmentally friendly.</p><p>Our team consists of experienced architects, designers, and engineers who work together to bring your vision to life.</p><p>Atelier Nord is committed to sustainability, innovation, and excellence in all our projects.</p></div></section><section class="section" id="work"><div class="wrap"><div class="sec-head"><p class="eyebrow">gallery</p><h2>Selected Projects</h2><p class="lead">Explore some of the projects we have completed for our clients.</p></div><div class="grid"><article class="card" data-tags="sustainable design energy efficiency green building"><p class="meta">2023 · Client: XYZ Company</p><h3>The Green House</h3><p>A sustainable residential building that features energy-efficient design and natural materials.</p><ul class="tags"><li>Sustainable Design</li><li>Energy Efficiency</li><li>Green Building</li></ul></article><article class="card" data-tags="commercial architecture skyscrapers urban design"><p class="meta">2021 · Client: ABC Corporation</p><h3>The Skyline Tower</h3><p>A commercial skyscraper that offers panoramic views of the city skyline.</p><ul class="tags"><li>Commercial Architecture</li><li>Skyscrapers</li><li>Urban Design</li></ul></article><article class="card" data-tags="cultural space artistic spaces community engagement"><p class="meta">2020 · Client: DEF Foundation</p><h3>The Cultural Center</h3><p>A cultural center that provides a space for art, music, and community events.</p><ul class="tags"><li>Cultural Space</li><li>Artistic Spaces</li><li>Community Engagement</li></ul></article></div></div></section><section class="section" id="skills"><div class="wrap"><div class="sec-head"><p class="eyebrow">text</p><h2>Our Skills</h2><p class="lead">Atelier Nord has a strong team of architects, designers, and engineers who are dedicated to delivering high-quality projects.</p></div><p>We have experience in designing buildings that meet the needs of our clients while also being aesthetically pleasing.</p><p>Our team is skilled at creating functional and comfortable interior spaces for residential and commercial projects.</p><p>We use project management tools to ensure that all aspects of a project are completed on time and within budget.</p></div></section><section class="section" id="faq"><div class="wrap"><div class="sec-head"><p class="eyebrow">faq</p><h2>Frequently Asked Questions</h2></div><div class="faq "><details><summary>What is your process for designing a building?</summary><p>We start by understanding the client&#x27;s needs and goals, then we create a detailed design that meets their requirements.</p></details><details><summary>How do you ensure sustainability in your projects?</summary><p>We use sustainable materials and design practices to minimize our impact on the environment.</p></details><details><summary>What is your approach to project management?</summary><p>We use agile methodologies to keep all aspects of a project on track and within budget.</p></details></div></div></section><section class="section" id="contact"><div class="wrap"><div class="sec-head"><p class="eyebrow">text</p><h2>Contact Us</h2><p class="lead">If you have any questions or would like to discuss your next project, please contact us.</p></div><p>info@atelier-nord.com</p><p>+47 21 00 00 00</p><p>Atelier Nord, Oslo, Norway</p></div></section><section class="section" id="contact"><div class="wrap"><div class="sec-head"><p class="eyebrow">contact</p><h2>Get in touch</h2><p class="lead">Send a message with what you need and the deadline you are working towards.</p></div><div class="split"><div><h3>Get in touch</h3><p>Send a message with what you need and the deadline you are working towards.</p></div><form class="contact-form " data-contact novalidate><label for="f-name">Name<input id="f-name" name="name" type="text" required placeholder="Your name"></label><label for="f-email">Email<input id="f-email" name="email" type="email" required placeholder="you@example.com"></label><label for="f-message">Message<textarea id="f-message" name="message" required placeholder="What are you building?"></textarea></label><button type="submit" class="btn btn-primary">Send message</button><p class="form-status" data-form-status role="status" aria-live="polite"></p><p class="hero-note">We reply within two working days.</p></form></div></div></section>
+</main>
+<footer class="site-footer wrap"><p>Atelier Nord | Contact Us</p><p><a href="#main">Top ↑</a></p></footer>
+
+<script>
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var nav = document.getElementById('site-nav');
+  document.querySelectorAll('.nav-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      if (!nav) return;
+      var open = nav.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+  if (nav) nav.addEventListener('click', function (e) {
+    if (e.target.closest('a')) {
+      nav.classList.remove('is-open');
+      var t = document.querySelector('.nav-toggle');
+      if (t) t.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // counters
+  document.querySelectorAll('[data-count]').forEach(function (el) {
+    var raw = el.getAttribute('data-count') || el.textContent || '';
+    var m = raw.match(/-?[\d.,]+/);
+    if (!m) return;
+    var target = parseFloat(m[0].replace(/,/g, ''));
+    if (!isFinite(target)) return;
+    var prefix = raw.slice(0, m.index), suffix = raw.slice(m.index + m[0].length);
+    var decimals = (m[0].split('.')[1] || '').length;
+    if (reduce) return;
+    var t0 = performance.now(), dur = 1100;
+    function frame(t) {
+      var p = Math.min(1, (t - t0) / dur);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var val = (target * eased).toFixed(decimals);
+      el.textContent = prefix + Number(val).toLocaleString(undefined,
+        {minimumFractionDigits: decimals, maximumFractionDigits: decimals}) + suffix;
+      if (p < 1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  });
+
+  // reveal
+  var reveals = document.querySelectorAll('[data-reveal], .section > *, .card, .product, .still, .story');
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) { entry.target.classList.add('is-in'); io.unobserve(entry.target); }
+      });
+    }, { rootMargin: '0px 0px -6% 0px' });
+    reveals.forEach(function (el, i) {
+      el.classList.add('reveal');
+      el.style.transitionDelay = Math.min(i % 6, 5) * 45 + 'ms';
+      io.observe(el);
+    });
+  } else {
+    reveals.forEach(function (el) { el.classList.add('is-in'); });
+  }
+
+  // filters
+  document.querySelectorAll('.filters').forEach(function (group) {
+    group.querySelectorAll('.filter').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        group.querySelectorAll('.filter').forEach(function (b) {
+          b.classList.toggle('is-active', b === btn);
+        });
+        var want = btn.getAttribute('data-filter');
+        document.querySelectorAll('[data-tags]').forEach(function (card) {
+          var tags = (card.getAttribute('data-tags') || '').split(/\s+/);
+          card.hidden = want !== 'all' && tags.indexOf(want) === -1;
+        });
+      });
+    });
+  });
+
+  // contact forms
+  document.querySelectorAll('form[data-contact]').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var status = form.querySelector('[data-form-status]');
+      var bad = null;
+      form.querySelectorAll('input, textarea, select').forEach(function (field) {
+        if (field.hasAttribute('required') && !String(field.value).trim()) bad = field;
+        if (!bad && field.type === 'email' &&
+            !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(String(field.value).trim())) bad = field;
+      });
+      if (bad) {
+        if (status) status.textContent = 'Please complete the highlighted field' +
+          (bad.type === 'email' ? ' with a valid email address.' : '.');
+        bad.focus();
+        return;
+      }
+      var nameField = form.querySelector('input[name="name"]');
+      var who = nameField ? String(nameField.value).trim().split(/\s+/)[0] : '';
+      if (status) status.textContent = (who ? 'Thanks ' + who + ' — ' : 'Thanks — ') +
+        'your message is queued. A person will reply, not an autoresponder.';
+      form.reset();
+    });
+  });
+
+  // drag a filmstrip
+  document.querySelectorAll('[data-drag]').forEach(function (strip) {
+    var down = false, startX = 0, startLeft = 0;
+    strip.addEventListener('pointerdown', function (e) {
+      down = true; startX = e.clientX; startLeft = strip.scrollLeft;
+      strip.setPointerCapture && strip.setPointerCapture(e.pointerId);
+      strip.style.cursor = 'grabbing';
+    });
+    strip.addEventListener('pointermove', function (e) {
+      if (!down) return;
+      strip.scrollLeft = startLeft - (e.clientX - startX);
+    });
+    function up() { down = false; strip.style.cursor = 'grab'; }
+    strip.addEventListener('pointerup', up);
+    strip.addEventListener('pointercancel', up);
+    strip.addEventListener('pointerleave', up);
+  });
+
+  // add-to-cart counters
+  document.querySelectorAll('[data-add]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var counter = document.querySelector('[data-cart]');
+      if (!counter) return;
+      var n = parseInt(counter.textContent, 10) || 0;
+      counter.textContent = String(n + 1);
+      counter.classList.add('bump');
+      setTimeout(function () { counter.classList.remove('bump'); }, 320);
+      var old = btn.textContent;
+      btn.textContent = 'Added ✓';
+      setTimeout(function () { btn.textContent = old; }, 1200);
+    });
+  });
+
+  // sticker spin
+  document.querySelectorAll('[data-spin]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      el.classList.remove('spin');
+      void el.offsetWidth;
+      el.classList.add('spin');
+    });
+  });
+
+  // editorial reading rule
+  var bar = document.querySelector('[data-readbar]');
+  if (bar) {
+    var fill = bar.firstElementChild;
+    function progress() {
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      var pct = max > 0 ? Math.min(1, window.scrollY / max) : 0;
+      fill.style.width = (pct * 100).toFixed(2) + '%';
+    }
+    window.addEventListener('scroll', progress, { passive: true });
+    progress();
+  }
+
+  // copy a command
+  document.querySelectorAll('[data-copy]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var box = btn.closest('.code-card');
+      var text = box ? (box.querySelector('code') || {}).textContent || '' : '';
+      if (!text) return;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).catch(function () {});
+      }
+      var old = btn.textContent;
+      btn.textContent = 'copied';
+      setTimeout(function () { btn.textContent = old; }, 1200);
+    });
+  });
+
+  // hero pointer parallax (aurora / cinematic)
+  document.querySelectorAll('[data-parallax]').forEach(function (root) {
+    if (reduce) return;
+    var layers = root.querySelectorAll('[data-depth]');
+    root.addEventListener('pointermove', function (e) {
+      var r = root.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - 0.5;
+      var y = (e.clientY - r.top) / r.height - 0.5;
+      layers.forEach(function (layer) {
+        var d = parseFloat(layer.getAttribute('data-depth')) || 10;
+        layer.style.transform = 'translate3d(' + (-x * d) + 'px,' + (-y * d) + 'px,0)';
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>

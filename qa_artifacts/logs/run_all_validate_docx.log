@@ -1,0 +1,19 @@
+$ C:\Users\harma\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -X utf8 qa_artifacts/validate_docs.py --kind docx
+exit=0 seconds=0.4
+
+---- stdout ----
+PASS  D01_business_proposal.docx  (39774 B)
+PASS  D02_ats_resume.docx  (38518 B)
+PASS  D03_technical_project_report.docx  (39271 B)
+PASS  D04_standard_operating_procedure.docx  (38881 B)
+PASS  D05_meeting_minutes.docx  (38603 B)
+PASS  D06_software_requirements_spec.docx  (38716 B)
+PASS  D07_release_notes.docx  (38339 B)
+PASS  D08_research_summary.docx  (38657 B)
+PASS  D09_invoice.docx  (38467 B)
+PASS  D10_user_manual.docx  (38893 B)
+
+VALIDATION: 10/10 artifacts pass all structural checks
+
+---- stderr ----
+

@@ -1,0 +1,90 @@
+[attempt 1]
+{
+  "brand": "Maya Osei",
+  "title": "Maya Osei Photography Portfolio",
+  "eyebrow": "Portrait & Documentary Photographer in Accra",
+  "headline": "Capturing Moments, Captivating Hearts",
+  "tagline": "Explore the world through my lens, one photo at a time.",
+  "accent": "#3498db",
+  "cta_primary": "View Portfolio",
+  "cta_secondary": "Contact Me",
+  "sections": [
+    {
+      "id": "about",
+      "kind": "about",
+      "heading": "About Maya Osei",
+      "lead": "A passionate portrait and documentary photographer based in Accra, Ghana.",
+      "items": [
+        {"title": "Experience", "text": "Over 10 years of experience in the industry."},
+        {"title": "Specialization", "text": "Portraits, landscapes, and studio photography."},
+        {"title": "Clients", "text": "Work with renowned clients across Africa and beyond."}
+      ]
+    },
+    {
+      "id": "work",
+      "kind": "gallery",
+      "heading": "Selected Work",
+      "lead": "Explore my portfolio of stunning images that capture the essence of people and places.",
+      "items": [
+        {"title": "Portrait Series", "text": "Portraits of individuals from diverse backgrounds."},
+        {"title": "Landscape Photography", "text": "Capturing the beauty of Ghana's landscapes."},
+        {"title": "Studio Portraits", "text": "Creating timeless portraits in a controlled environment."},
+        {"title": "Travel Photos", "text": "Documenting my travels across Africa and beyond."},
+        {"title": "Event Photography", "text": "Photographing special occasions and events."},
+        {"title": "Commercial Work", "text": "Working with businesses to create impactful visuals."},
+        {"title": "Fashion Portraits", "text": "Capturing the essence of fashion models."},
+        {"title": "Wedding Photography", "text": "Documenting love stories through photography."},
+        {"title": "Children's Portraits", "text": "Photographing children in a fun and playful way."}
+      ]
+    },
+    {
+      "id": "skills",
+      "kind": "skills",
+      "heading": "Skills & Expertise",
+      "lead": "A blend of technical skills and creative vision.",
+      "items": [
+        {"title": "Software", "text": "Adobe Lightroom, Photoshop, Canva."},
+        {"title": "Equipment", "text": "Canon EOS 5D Mark IV, Sigma 12-30mm f/2.8 lens."},
+        {"title": "Techniques", "text": "Portrait lighting, composition, and storytelling."},
+        {"title": "Languages", "text": "English, French (fluent), and some German."},
+        {"title": "Experience", "text": "Over 10 years of experience in the industry."},
+        {"title": "Certifications", "text": "Photography certification from the International Society of Professional Photographers (ISOP)."}
+      ]
+    },
+    {
+      "id": "faq",
+      "kind": "faq",
+      "heading": "Frequently Asked Questions",
+      "items": [
+        {"q": "What is your photography style?", "a": "My style is a blend of documentary and portrait, capturing the essence of people and places."},
+        {"q": "How do you approach client projects?", "a": "I work closely with clients to understand their vision and create high-quality images that meet their needs."},
+        {"q": "What kind of photography do you specialize in?", "a": "My specialties include portrait, landscape, studio, travel, event, commercial, fashion, wedding, and children's photography."},
+        {"q": "Where do you work?", "a": "I work out of my studio in Accra, Ghana, but I also travel to capture images across Africa and beyond."},
+        {"q": "What is your pricing model?", "a": "My pricing model varies depending on the project and scope. Please contact me for a quote."}
+      ]
+    },
+    {
+      "id": "contact",
+      "kind": "contact",
+      "heading": "Contact Me",
+      "lead": "Let's connect.",
+      "items": [
+        {"title": "Email", "text": "mayaosei@gmail.com"},
+        {"title": "Phone", "text": "+233 546789012"},
+        {"title": "Website", "text": "www.mayaosei.com"}
+      ]
+    }
+  ],
+  "metrics": [{"value": "6+", "label": "years shipping"}],
+  "faq": [
+    {
+      "q": "What is your photography style?",
+      "a": "My style is a blend of documentary and portrait, capturing the essence of people and places."
+    },
+    {
+      "q": "How do you approach client projects?",
+      "a": "I work closely with clients to understand their vision and create high-quality images that meet their needs."
+    }
+  ],
+  "footer": "Explore my portfolio and let's connect."
+}

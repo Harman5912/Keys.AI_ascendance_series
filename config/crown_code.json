@@ -1,0 +1,9 @@
+{
+  "crown_dir": "C:\\Users\\harma\\Desktop\\PROJECTS\\Crown CODE",
+  "provider": "gemini",
+  "model": "gemma-4-31b-it",
+  "ollama_url": "http://localhost:11434",
+  "policy": "safe",
+  "max_iterations": 60,
+  "workspace": ""
+}

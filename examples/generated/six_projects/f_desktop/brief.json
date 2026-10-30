@@ -1,0 +1,14 @@
+{
+  "request": "Build a PyQt6 desktop app named NoteCanvas: a personal note canvas where notes are cards on a grid, each with a title, body, colour tag and pin state, persisted locally.",
+  "requirements": "PyQt6; main.py launches the app; app/window.py: grid of note cards with add/edit/delete/pin, colour tags, and a search box filtering live; app/db.py: SQLite persistence (notes.db) with a schema migration on first run; app/theme.py: dark theme with a restrained accent palette; seed.py creating 6 sample notes; tests/ covering db CRUD; README.md with run instructions.",
+  "artifact": "app",
+  "answered": [
+    "stack",
+    "scope"
+  ],
+  "assumptions": [],
+  "recipes": [
+    "python-desktop"
+  ],
+  "path": "code"
+}

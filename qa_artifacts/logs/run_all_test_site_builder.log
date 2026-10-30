@@ -1,0 +1,36 @@
+$ C:\Users\harma\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -X utf8 -m unittest qa_artifacts.regression_tests.test_site_builder -v
+exit=0 seconds=1.6
+
+---- stdout ----
+
+---- stderr ----
+test_background_start_returns_a_job_id_immediately (qa_artifacts.regression_tests.test_site_builder.ActionLayerTest.test_background_start_returns_a_job_id_immediately) ... ok
+test_progress_and_cancel_actions_answer_without_a_model (qa_artifacts.regression_tests.test_site_builder.ActionLayerTest.test_progress_and_cancel_actions_answer_without_a_model) ... ok
+test_site_job_reports_progress_files_and_checklist (qa_artifacts.regression_tests.test_site_builder.ActionLayerTest.test_site_job_reports_progress_files_and_checklist) ... ok
+test_task_routing_site_vs_code (qa_artifacts.regression_tests.test_site_builder.ActionLayerTest.test_task_routing_site_vs_code) ... ok
+test_cancelled_build_stops_before_rendering (qa_artifacts.regression_tests.test_site_builder.BuilderTest.test_cancelled_build_stops_before_rendering) ... ok
+test_extract_html_handles_fences_prose_and_truncation (qa_artifacts.regression_tests.test_site_builder.BuilderTest.test_extract_html_handles_fences_prose_and_truncation) ... ok
+test_fallback_plan_reads_the_name_from_the_brief (qa_artifacts.regression_tests.test_site_builder.BuilderTest.test_fallback_plan_reads_the_name_from_the_brief) ... ok
+test_fast_mode_delivers_the_page_without_waiting_for_the_model (qa_artifacts.regression_tests.test_site_builder.BuilderTest.test_fast_mode_delivers_the_page_without_waiting_for_the_model)
+Default speed: plan → render → verify. No writer call at all. ... ok
+test_garbage_planner_still_yields_a_working_page (qa_artifacts.regression_tests.test_site_builder.BuilderTest.test_garbage_planner_still_yields_a_working_page) ... ok
+test_model_path_writes_verified_page (qa_artifacts.regression_tests.test_site_builder.BuilderTest.test_model_path_writes_verified_page) ... ok
+test_no_planner_available_still_produces_a_passing_page (qa_artifacts.regression_tests.test_site_builder.BuilderTest.test_no_planner_available_still_produces_a_passing_page) ... ok
+test_normalise_plan_accepts_a_two_section_plan (qa_artifacts.regression_tests.test_site_builder.BuilderTest.test_normalise_plan_accepts_a_two_section_plan)
+A small model often returns fewer sections than asked for; its copy ... ok
+test_normalise_plan_keeps_model_content (qa_artifacts.regression_tests.test_site_builder.BuilderTest.test_normalise_plan_keeps_model_content) ... ok
+test_normalise_plan_rejects_thin_plans (qa_artifacts.regression_tests.test_site_builder.BuilderTest.test_normalise_plan_rejects_thin_plans) ... ok
+test_provider_without_streaming_still_builds (qa_artifacts.regression_tests.test_site_builder.BuilderTest.test_provider_without_streaming_still_builds) ... ok
+test_truncated_file_is_continued_not_restarted (qa_artifacts.regression_tests.test_site_builder.BuilderTest.test_truncated_file_is_continued_not_restarted) ... ok
+test_write_is_streamed_and_reports_file_progress (qa_artifacts.regression_tests.test_site_builder.BuilderTest.test_write_is_streamed_and_reports_file_progress) ... ok
+test_check_flags_placeholder_copy_and_external_assets (qa_artifacts.regression_tests.test_site_builder.ChecksTest.test_check_flags_placeholder_copy_and_external_assets) ... ok
+test_checklist_flags_a_page_that_misses_the_plan (qa_artifacts.regression_tests.test_site_builder.ChecksTest.test_checklist_flags_a_page_that_misses_the_plan) ... ok
+test_rendered_plan_meets_its_own_acceptance_checklist (qa_artifacts.regression_tests.test_site_builder.ChecksTest.test_rendered_plan_meets_its_own_acceptance_checklist) ... ok
+test_repair_closes_truncated_markup (qa_artifacts.regression_tests.test_site_builder.ChecksTest.test_repair_closes_truncated_markup) ... ok
+test_repair_fixes_mechanical_defects (qa_artifacts.regression_tests.test_site_builder.ChecksTest.test_repair_fixes_mechanical_defects) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 1.371s
+
+OK
+

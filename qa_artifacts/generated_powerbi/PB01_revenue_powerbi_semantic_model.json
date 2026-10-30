@@ -1,0 +1,162 @@
+{
+  "tables": [
+    {
+      "name": "Fact",
+      "description": "Transactional/fact records for Executive revenue and margin report with time intelligence and regional RLS..",
+      "columns": [
+        {
+          "name": "Key",
+          "data_type": "Text",
+          "is_key": true,
+          "is_measure": false
+        },
+        {
+          "name": "Date",
+          "data_type": "Date",
+          "is_key": false,
+          "is_measure": false
+        },
+        {
+          "name": "Category",
+          "data_type": "Text",
+          "is_key": false,
+          "is_measure": false
+        },
+        {
+          "name": "Subcategory",
+          "data_type": "Text",
+          "is_key": false,
+          "is_measure": false
+        },
+        {
+          "name": "Value",
+          "data_type": "Decimal Number",
+          "is_key": false,
+          "is_measure": false
+        },
+        {
+          "name": "Quantity",
+          "data_type": "Whole Number",
+          "is_key": false,
+          "is_measure": false
+        },
+        {
+          "name": "Cost",
+          "data_type": "Decimal Number",
+          "is_key": false,
+          "is_measure": false
+        }
+      ],
+      "measures": [
+        {
+          "name": "Total Value",
+          "expression": "SUM(Fact[Value])",
+          "format_string": "Currency"
+        },
+        {
+          "name": "Total Cost",
+          "expression": "SUM(Fact[Cost])",
+          "format_string": "Currency"
+        },
+        {
+          "name": "Count",
+          "expression": "COUNTROWS(Fact)",
+          "format_string": "0"
+        },
+        {
+          "name": "Average",
+          "expression": "AVERAGE(Fact[Value])",
+          "format_string": "Currency"
+        },
+        {
+          "name": "Margin",
+          "expression": "[Total Value] - [Total Cost]",
+          "format_string": "Currency"
+        },
+        {
+          "name": "Margin %",
+          "expression": "DIVIDE([Margin], [Total Value])",
+          "format_string": "0.00%"
+        }
+      ],
+      "key_columns": [
+        "Key"
+      ]
+    },
+    {
+      "name": "Date",
+      "description": "Standard calendar/date table for time intelligence.",
+      "columns": [
+        {
+          "name": "Date",
+          "data_type": "Date",
+          "is_key": true,
+          "is_measure": false
+        },
+        {
+          "name": "Year",
+          "data_type": "Whole Number",
+          "is_key": false,
+          "is_measure": false
+        },
+        {
+          "name": "Quarter",
+          "data_type": "Text",
+          "is_key": false,
+          "is_measure": false
+        },
+        {
+          "name": "Month",
+          "data_type": "Text",
+          "is_key": false,
+          "is_measure": false
+        },
+        {
+          "name": "MonthNo",
+          "data_type": "Whole Number",
+          "is_key": false,
+          "is_measure": false
+        }
+      ],
+      "measures": [
+        {
+          "name": "Days in Period",
+          "expression": "COUNTROWS('Date')",
+          "format_string": "0"
+        }
+      ],
+      "key_columns": [
+        "Date"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from_table": "Fact",
+      "from_column": "Date",
+      "to_table": "Date",
+      "to_column": "Date",
+      "cross_filter": "single"
+    }
+  ],
+  "calculation_groups": [
+    {
+      "name": "Time:",
+      "expressions": {
+        "YTD": "CALCULATE(SELECTEDMEASURE(), DATESYTD('Date'[Date]))",
+        "MTD": "CALCULATE(SELECTEDMEASURE(), DATESMTD('Date'[Date]))",
+        "PY": "CALCULATE(SELECTEDMEASURE(), SAMEPERIODLASTYEAR('Date'[Date]))",
+        "YoY %": "VAR PY = CALCULATE(SELECTEDMEASURE(), SAMEPERIODLASTYEAR('Date'[Date])) RETURN DIVIDE(SELECTEDMEASURE() - PY, PY)"
+      }
+    }
+  ],
+  "roles": [
+    {
+      "name": "Regional Reader",
+      "description": "Read-only access scoped to a region.",
+      "filters": [
+        "Fact[Region] = \"North\""
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# P02 exit=0 timeout=False seconds=51.1
+# ---- stdout ----
+[FileProcessor] CREATE PPTX | P02_technical_architecture.pptx
+[P02] 50.9s  exists=True  bytes=36465  result=Created PowerPoint presentation: P02_technical_architecture.pptx (35.6 KB)
+Saved to: C:\Users\harma\Desktop\PR
+restored file_processor task model -> {'provider': 'ollama', 'model': 'qwen3:8b', 'url': ''}
+
+DONE 1 pptx artifact(s) in C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\generated_presentations
+
+# ---- stderr ----
+

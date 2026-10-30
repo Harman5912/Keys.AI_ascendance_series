@@ -1,0 +1,1 @@
+{"scenario": "trace_12_empty_task", "params": {"action": "build", "task": "", "confirmed": false}, "response": "Tell me what to build or fix and I'll run Crown Code on it."}

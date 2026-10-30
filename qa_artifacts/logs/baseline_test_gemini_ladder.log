@@ -1,0 +1,13 @@
+# test_gemini_ladder.py  exit=0  seconds=0.1  timeout=False
+# ---- stdout ----
+  classify(): OK
+  order + cooldown skip: OK
+  steps to next rung + rests failed model: OK
+  success returns: OK
+  key rotation on auth error: OK
+  status() shape: OK
+
+PASS — 6/6 passed
+
+# ---- stderr ----
+

@@ -1,0 +1,21 @@
+$ C:\Users\harma\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe -X utf8 -m unittest qa_artifacts.regression_tests.test_pdf_pipeline -v
+exit=0 seconds=1.1
+
+---- stdout ----
+
+---- stderr ----
+test_ten_fixtures_present (qa_artifacts.regression_tests.test_pdf_pipeline.TestPdfManifest.test_ten_fixtures_present) ... ok
+test_all_text_pdfs_extract_and_convert (qa_artifacts.regression_tests.test_pdf_pipeline.TestPdfReadPipeline.test_all_text_pdfs_extract_and_convert) ... ok
+test_image_only_pdf_reports_no_text (qa_artifacts.regression_tests.test_pdf_pipeline.TestPdfReadPipeline.test_image_only_pdf_reports_no_text) ... ok
+test_pdf_creation_is_not_supported (qa_artifacts.regression_tests.test_pdf_pipeline.TestPdfReadPipeline.test_pdf_creation_is_not_supported)
+Documented gap: no PDF writer exists, so create must say so clearly. ... ok
+test_pptx_to_pdf_is_advertised_but_missing (qa_artifacts.regression_tests.test_pdf_pipeline.TestPdfReadPipeline.test_pptx_to_pdf_is_advertised_but_missing)
+Docstring advertises pptx->pdf; the handler does not implement it. ... ok
+test_unicode_survives_pdf_roundtrip (qa_artifacts.regression_tests.test_pdf_pipeline.TestPdfReadPipeline.test_unicode_survives_pdf_roundtrip) ... ok
+test_unknown_action_is_reported (qa_artifacts.regression_tests.test_pdf_pipeline.TestPdfReadPipeline.test_unknown_action_is_reported) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.880s
+
+OK
+

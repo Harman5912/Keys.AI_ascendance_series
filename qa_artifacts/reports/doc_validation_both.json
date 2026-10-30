@@ -1,0 +1,1634 @@
+[
+  {
+    "file": "D01_business_proposal.docx",
+    "kind": "docx",
+    "path": "qa_artifacts/generated_documents/D01_business_proposal.docx",
+    "bytes": 39774,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "wordml_present": {
+        "ok": true,
+        "detail": "18 parts"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "36 paragraphs"
+      },
+      "title_present": {
+        "ok": true,
+        "detail": "first='BUSINESS PROPOSAL'"
+      },
+      "headings": {
+        "ok": true,
+        "detail": "8 heading paragraphs"
+      },
+      "paragraph_count": {
+        "ok": true,
+        "detail": "33 non-empty (min 12)"
+      },
+      "lists": {
+        "ok": true,
+        "detail": "10 bullets, 4 numbered"
+      },
+      "required_content": {
+        "ok": true,
+        "detail": "all present"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "no_duplicate_sections": {
+        "ok": true,
+        "detail": "none"
+      },
+      "unicode_preserved": {
+        "ok": true,
+        "detail": "10 non-ascii chars"
+      },
+      "word_count": {
+        "ok": true,
+        "detail": "484 words"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "39774 bytes"
+      }
+    },
+    "headings": [
+      "Executive Summary",
+      "Business Opportunity",
+      "Objectives",
+      "Target Market",
+      "Implementation Timeline",
+      "Budget Summary",
+      "Risks and Mitigation",
+      "Recommendation"
+    ],
+    "words": 484,
+    "paragraphs": 33
+  },
+  {
+    "file": "D02_ats_resume.docx",
+    "kind": "docx",
+    "path": "qa_artifacts/generated_documents/D02_ats_resume.docx",
+    "bytes": 38518,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "wordml_present": {
+        "ok": true,
+        "detail": "18 parts"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "29 paragraphs"
+      },
+      "title_present": {
+        "ok": true,
+        "detail": "first='R\u00c9SUM\u00c9'"
+      },
+      "headings": {
+        "ok": true,
+        "detail": "5 heading paragraphs"
+      },
+      "paragraph_count": {
+        "ok": true,
+        "detail": "28 non-empty (min 10)"
+      },
+      "lists": {
+        "ok": true,
+        "detail": "14 bullets, 0 numbered"
+      },
+      "required_content": {
+        "ok": true,
+        "detail": "all present"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "no_duplicate_sections": {
+        "ok": true,
+        "detail": "none"
+      },
+      "unicode_preserved": {
+        "ok": true,
+        "detail": "26 non-ascii chars"
+      },
+      "word_count": {
+        "ok": true,
+        "detail": "223 words"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "38518 bytes"
+      }
+    },
+    "headings": [
+      "Professional Summary",
+      "Core Skills",
+      "Professional Experience",
+      "Education",
+      "Certifications"
+    ],
+    "words": 223,
+    "paragraphs": 28
+  },
+  {
+    "file": "D03_technical_project_report.docx",
+    "kind": "docx",
+    "path": "qa_artifacts/generated_documents/D03_technical_project_report.docx",
+    "bytes": 39271,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "wordml_present": {
+        "ok": true,
+        "detail": "18 parts"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "36 paragraphs"
+      },
+      "title_present": {
+        "ok": true,
+        "detail": "first='TECHNICAL PROJECT REPORT'"
+      },
+      "headings": {
+        "ok": true,
+        "detail": "7 heading paragraphs"
+      },
+      "paragraph_count": {
+        "ok": true,
+        "detail": "33 non-empty (min 12)"
+      },
+      "lists": {
+        "ok": true,
+        "detail": "8 bullets, 10 numbered"
+      },
+      "required_content": {
+        "ok": true,
+        "detail": "all present"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "no_duplicate_sections": {
+        "ok": true,
+        "detail": "none"
+      },
+      "unicode_preserved": {
+        "ok": true,
+        "detail": "5 non-ascii chars"
+      },
+      "word_count": {
+        "ok": true,
+        "detail": "362 words"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "39271 bytes"
+      }
+    },
+    "headings": [
+      "Project Overview",
+      "System Architecture",
+      "Components",
+      "Data Flow",
+      "Performance Results",
+      "Known Limitations",
+      "Future Work"
+    ],
+    "words": 362,
+    "paragraphs": 33
+  },
+  {
+    "file": "D04_standard_operating_procedure.docx",
+    "kind": "docx",
+    "path": "qa_artifacts/generated_documents/D04_standard_operating_procedure.docx",
+    "bytes": 38881,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "wordml_present": {
+        "ok": true,
+        "detail": "18 parts"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "30 paragraphs"
+      },
+      "title_present": {
+        "ok": true,
+        "detail": "first='STANDARD OPERATING PROCEDURE'"
+      },
+      "headings": {
+        "ok": true,
+        "detail": "8 heading paragraphs"
+      },
+      "paragraph_count": {
+        "ok": true,
+        "detail": "27 non-empty (min 12)"
+      },
+      "lists": {
+        "ok": true,
+        "detail": "6 bullets, 6 numbered"
+      },
+      "required_content": {
+        "ok": true,
+        "detail": "all present"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "no_duplicate_sections": {
+        "ok": true,
+        "detail": "none"
+      },
+      "unicode_preserved": {
+        "ok": true,
+        "detail": "8 non-ascii chars"
+      },
+      "word_count": {
+        "ok": true,
+        "detail": "248 words"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "38881 bytes"
+      }
+    },
+    "headings": [
+      "Purpose",
+      "Scope",
+      "Roles and Responsibilities",
+      "Prerequisites",
+      "Procedure",
+      "Verification Checks",
+      "Escalation",
+      "Revision History"
+    ],
+    "words": 248,
+    "paragraphs": 27
+  },
+  {
+    "file": "D05_meeting_minutes.docx",
+    "kind": "docx",
+    "path": "qa_artifacts/generated_documents/D05_meeting_minutes.docx",
+    "bytes": 38603,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "wordml_present": {
+        "ok": true,
+        "detail": "18 parts"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "25 paragraphs"
+      },
+      "title_present": {
+        "ok": true,
+        "detail": "first='MEETING MINUTES'"
+      },
+      "headings": {
+        "ok": true,
+        "detail": "6 heading paragraphs"
+      },
+      "paragraph_count": {
+        "ok": true,
+        "detail": "23 non-empty (min 8)"
+      },
+      "lists": {
+        "ok": true,
+        "detail": "3 bullets, 5 numbered"
+      },
+      "required_content": {
+        "ok": true,
+        "detail": "all present"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "no_duplicate_sections": {
+        "ok": true,
+        "detail": "none"
+      },
+      "unicode_preserved": {
+        "ok": true,
+        "detail": "5 non-ascii chars"
+      },
+      "word_count": {
+        "ok": true,
+        "detail": "216 words"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "38603 bytes"
+      }
+    },
+    "headings": [
+      "Attendees",
+      "Agenda",
+      "Discussion Summary",
+      "Decisions",
+      "Action Items",
+      "Next Meeting"
+    ],
+    "words": 216,
+    "paragraphs": 23
+  },
+  {
+    "file": "D06_software_requirements_spec.docx",
+    "kind": "docx",
+    "path": "qa_artifacts/generated_documents/D06_software_requirements_spec.docx",
+    "bytes": 38716,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "wordml_present": {
+        "ok": true,
+        "detail": "18 parts"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "40 paragraphs"
+      },
+      "title_present": {
+        "ok": true,
+        "detail": "first='SOFTWARE REQUIREMENTS SPECIFICATION'"
+      },
+      "headings": {
+        "ok": true,
+        "detail": "8 heading paragraphs"
+      },
+      "paragraph_count": {
+        "ok": true,
+        "detail": "39 non-empty (min 14)"
+      },
+      "lists": {
+        "ok": true,
+        "detail": "12 bullets, 13 numbered"
+      },
+      "required_content": {
+        "ok": true,
+        "detail": "all present"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "no_duplicate_sections": {
+        "ok": true,
+        "detail": "none"
+      },
+      "unicode_preserved": {
+        "ok": true,
+        "detail": "8 non-ascii chars"
+      },
+      "word_count": {
+        "ok": true,
+        "detail": "362 words"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "38716 bytes"
+      }
+    },
+    "headings": [
+      "Introduction",
+      "Purpose",
+      "Scope",
+      "Definitions",
+      "Functional Requirements",
+      "Non-Functional Requirements",
+      "Assumptions",
+      "Constraints"
+    ],
+    "words": 362,
+    "paragraphs": 39
+  },
+  {
+    "file": "D07_release_notes.docx",
+    "kind": "docx",
+    "path": "qa_artifacts/generated_documents/D07_release_notes.docx",
+    "bytes": 38339,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "wordml_present": {
+        "ok": true,
+        "detail": "18 parts"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "29 paragraphs"
+      },
+      "title_present": {
+        "ok": true,
+        "detail": "first='RELEASE NOTES'"
+      },
+      "headings": {
+        "ok": true,
+        "detail": "6 heading paragraphs"
+      },
+      "paragraph_count": {
+        "ok": true,
+        "detail": "28 non-empty (min 8)"
+      },
+      "lists": {
+        "ok": true,
+        "detail": "13 bullets, 4 numbered"
+      },
+      "required_content": {
+        "ok": true,
+        "detail": "all present"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "no_duplicate_sections": {
+        "ok": true,
+        "detail": "none"
+      },
+      "unicode_preserved": {
+        "ok": true,
+        "detail": "5 non-ascii chars"
+      },
+      "word_count": {
+        "ok": true,
+        "detail": "228 words"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "38339 bytes"
+      }
+    },
+    "headings": [
+      "Release Summary",
+      "New Features",
+      "Improvements",
+      "Bug Fixes",
+      "Known Issues",
+      "Upgrade Notes"
+    ],
+    "words": 228,
+    "paragraphs": 28
+  },
+  {
+    "file": "D08_research_summary.docx",
+    "kind": "docx",
+    "path": "qa_artifacts/generated_documents/D08_research_summary.docx",
+    "bytes": 38657,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "wordml_present": {
+        "ok": true,
+        "detail": "18 parts"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "32 paragraphs"
+      },
+      "title_present": {
+        "ok": true,
+        "detail": "first='RESEARCH SUMMARY'"
+      },
+      "headings": {
+        "ok": true,
+        "detail": "7 heading paragraphs"
+      },
+      "paragraph_count": {
+        "ok": true,
+        "detail": "31 non-empty (min 12)"
+      },
+      "lists": {
+        "ok": true,
+        "detail": "10 bullets, 8 numbered"
+      },
+      "required_content": {
+        "ok": true,
+        "detail": "all present"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "no_duplicate_sections": {
+        "ok": true,
+        "detail": "none"
+      },
+      "unicode_preserved": {
+        "ok": true,
+        "detail": "9 non-ascii chars"
+      },
+      "word_count": {
+        "ok": true,
+        "detail": "303 words"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "38657 bytes"
+      }
+    },
+    "headings": [
+      "Background",
+      "Objective",
+      "Methods Overview",
+      "Key Findings",
+      "Limitations",
+      "Recommendations",
+      "References"
+    ],
+    "words": 303,
+    "paragraphs": 31
+  },
+  {
+    "file": "D09_invoice.docx",
+    "kind": "docx",
+    "path": "qa_artifacts/generated_documents/D09_invoice.docx",
+    "bytes": 38467,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "wordml_present": {
+        "ok": true,
+        "detail": "18 parts"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "19 paragraphs"
+      },
+      "title_present": {
+        "ok": true,
+        "detail": "first='INVOICE'"
+      },
+      "headings": {
+        "ok": true,
+        "detail": "4 heading paragraphs"
+      },
+      "paragraph_count": {
+        "ok": true,
+        "detail": "16 non-empty (min 7)"
+      },
+      "lists": {
+        "ok": true,
+        "detail": "4 bullets, 0 numbered"
+      },
+      "required_content": {
+        "ok": true,
+        "detail": "all present"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "no_duplicate_sections": {
+        "ok": true,
+        "detail": "none"
+      },
+      "unicode_preserved": {
+        "ok": true,
+        "detail": "7 non-ascii chars"
+      },
+      "word_count": {
+        "ok": true,
+        "detail": "152 words"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "38467 bytes"
+      }
+    },
+    "headings": [
+      "Invoice",
+      "Line Items",
+      "Subtotal and Tax",
+      "Payment Terms"
+    ],
+    "words": 152,
+    "paragraphs": 16
+  },
+  {
+    "file": "D10_user_manual.docx",
+    "kind": "docx",
+    "path": "qa_artifacts/generated_documents/D10_user_manual.docx",
+    "bytes": 38893,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "wordml_present": {
+        "ok": true,
+        "detail": "18 parts"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "37 paragraphs"
+      },
+      "title_present": {
+        "ok": true,
+        "detail": "first='TECHNICAL USER MANUAL'"
+      },
+      "headings": {
+        "ok": true,
+        "detail": "8 heading paragraphs"
+      },
+      "paragraph_count": {
+        "ok": true,
+        "detail": "35 non-empty (min 14)"
+      },
+      "lists": {
+        "ok": true,
+        "detail": "12 bullets, 9 numbered"
+      },
+      "required_content": {
+        "ok": true,
+        "detail": "all present"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "no_duplicate_sections": {
+        "ok": true,
+        "detail": "none"
+      },
+      "unicode_preserved": {
+        "ok": true,
+        "detail": "5 non-ascii chars"
+      },
+      "word_count": {
+        "ok": true,
+        "detail": "302 words"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "38893 bytes"
+      }
+    },
+    "headings": [
+      "Introduction",
+      "Package Contents",
+      "Installation",
+      "Initial Setup",
+      "Using the App",
+      "Troubleshooting",
+      "Safety Information",
+      "Support"
+    ],
+    "words": 302,
+    "paragraphs": 35
+  },
+  {
+    "file": "P01_startup_pitch.pptx",
+    "kind": "pptx",
+    "path": "qa_artifacts/generated_presentations/P01_startup_pitch.pptx",
+    "bytes": 46217,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "presentation_part": {
+        "ok": true,
+        "detail": "55 parts"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "8 slides"
+      },
+      "slide_count": {
+        "ok": true,
+        "detail": "8 slides (min 0)"
+      },
+      "titles_on_every_slide": {
+        "ok": true,
+        "detail": "untitled slides=[]"
+      },
+      "distinct_titles": {
+        "ok": true,
+        "detail": "8 unique of 8"
+      },
+      "body_content": {
+        "ok": true,
+        "detail": "1245 body chars"
+      },
+      "no_blank_slides": {
+        "ok": true,
+        "detail": "8 slides checked"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "not_fallback_template": {
+        "ok": true,
+        "detail": "model content"
+      },
+      "widescreen": {
+        "ok": true,
+        "detail": "width=12192000 height=6858000"
+      },
+      "no_overflow": {
+        "ok": true,
+        "detail": "none"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "46217 bytes"
+      }
+    },
+    "titles": [
+      "Seed round",
+      "The problem",
+      "The solution",
+      "Product",
+      "Market",
+      "Traction",
+      "The team",
+      "The ask"
+    ],
+    "slides": 8
+  },
+  {
+    "file": "P02_technical_architecture.pptx",
+    "kind": "pptx",
+    "path": "qa_artifacts/generated_presentations/P02_technical_architecture.pptx",
+    "bytes": 38182,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "presentation_part": {
+        "ok": true,
+        "detail": "50 parts"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "7 slides"
+      },
+      "slide_count": {
+        "ok": true,
+        "detail": "7 slides (min 0)"
+      },
+      "titles_on_every_slide": {
+        "ok": true,
+        "detail": "untitled slides=[]"
+      },
+      "distinct_titles": {
+        "ok": true,
+        "detail": "7 unique of 7"
+      },
+      "body_content": {
+        "ok": true,
+        "detail": "989 body chars"
+      },
+      "no_blank_slides": {
+        "ok": true,
+        "detail": "7 slides checked"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "not_fallback_template": {
+        "ok": true,
+        "detail": "model content"
+      },
+      "widescreen": {
+        "ok": true,
+        "detail": "width=12192000 height=6858000"
+      },
+      "no_overflow": {
+        "ok": true,
+        "detail": "none"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "38182 bytes"
+      }
+    },
+    "titles": [
+      "Platform architecture",
+      "Context",
+      "Components",
+      "Data flow",
+      "Storage",
+      "Security",
+      "Deployment and observability"
+    ],
+    "slides": 7
+  },
+  {
+    "file": "P03_product_demo.pptx",
+    "kind": "pptx",
+    "path": "qa_artifacts/generated_presentations/P03_product_demo.pptx",
+    "bytes": 38152,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "presentation_part": {
+        "ok": true,
+        "detail": "50 parts"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "7 slides"
+      },
+      "slide_count": {
+        "ok": true,
+        "detail": "7 slides (min 0)"
+      },
+      "titles_on_every_slide": {
+        "ok": true,
+        "detail": "untitled slides=[]"
+      },
+      "distinct_titles": {
+        "ok": true,
+        "detail": "7 unique of 7"
+      },
+      "body_content": {
+        "ok": true,
+        "detail": "923 body chars"
+      },
+      "no_blank_slides": {
+        "ok": true,
+        "detail": "7 slides checked"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "not_fallback_template": {
+        "ok": true,
+        "detail": "model content"
+      },
+      "widescreen": {
+        "ok": true,
+        "detail": "width=12192000 height=6858000"
+      },
+      "no_overflow": {
+        "ok": true,
+        "detail": "none"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "38152 bytes"
+      }
+    },
+    "titles": [
+      "Product demonstration",
+      "Overview",
+      "Key workflows",
+      "Live walkthrough",
+      "Integrations",
+      "Security",
+      "Pricing and next steps"
+    ],
+    "slides": 7
+  },
+  {
+    "file": "P04_data_analytics_report.pptx",
+    "kind": "pptx",
+    "path": "qa_artifacts/generated_presentations/P04_data_analytics_report.pptx",
+    "bytes": 46092,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "presentation_part": {
+        "ok": true,
+        "detail": "55 parts"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "8 slides"
+      },
+      "slide_count": {
+        "ok": true,
+        "detail": "8 slides (min 0)"
+      },
+      "titles_on_every_slide": {
+        "ok": true,
+        "detail": "untitled slides=[]"
+      },
+      "distinct_titles": {
+        "ok": true,
+        "detail": "8 unique of 8"
+      },
+      "body_content": {
+        "ok": true,
+        "detail": "1031 body chars"
+      },
+      "no_blank_slides": {
+        "ok": true,
+        "detail": "8 slides checked"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "not_fallback_template": {
+        "ok": true,
+        "detail": "model content"
+      },
+      "widescreen": {
+        "ok": true,
+        "detail": "width=12192000 height=6858000"
+      },
+      "no_overflow": {
+        "ok": true,
+        "detail": "none"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "46092 bytes"
+      }
+    },
+    "titles": [
+      "Q3 analytics review",
+      "Headline metrics",
+      "Acquisition",
+      "Activation",
+      "Retention",
+      "Revenue",
+      "Risks",
+      "Recommendations"
+    ],
+    "slides": 8
+  },
+  {
+    "file": "P05_education_lesson.pptx",
+    "kind": "pptx",
+    "path": "qa_artifacts/generated_presentations/P05_education_lesson.pptx",
+    "bytes": 39804,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "presentation_part": {
+        "ok": true,
+        "detail": "52 parts"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "8 slides"
+      },
+      "slide_count": {
+        "ok": true,
+        "detail": "8 slides (min 0)"
+      },
+      "titles_on_every_slide": {
+        "ok": true,
+        "detail": "untitled slides=[]"
+      },
+      "distinct_titles": {
+        "ok": true,
+        "detail": "8 unique of 8"
+      },
+      "body_content": {
+        "ok": true,
+        "detail": "1258 body chars"
+      },
+      "no_blank_slides": {
+        "ok": true,
+        "detail": "8 slides checked"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "not_fallback_template": {
+        "ok": true,
+        "detail": "model content"
+      },
+      "widescreen": {
+        "ok": true,
+        "detail": "width=12192000 height=6858000"
+      },
+      "no_overflow": {
+        "ok": true,
+        "detail": "none"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "39804 bytes"
+      }
+    },
+    "titles": [
+      "Introduction to data normalisation",
+      "Objectives",
+      "Why it matters",
+      "First normal form",
+      "Second normal form",
+      "Third normal form",
+      "Worked example",
+      "Common mistakes and recap"
+    ],
+    "slides": 8
+  },
+  {
+    "file": "P06_business_strategy.pptx",
+    "kind": "pptx",
+    "path": "qa_artifacts/generated_presentations/P06_business_strategy.pptx",
+    "bytes": 46129,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "presentation_part": {
+        "ok": true,
+        "detail": "55 parts"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "8 slides"
+      },
+      "slide_count": {
+        "ok": true,
+        "detail": "8 slides (min 0)"
+      },
+      "titles_on_every_slide": {
+        "ok": true,
+        "detail": "untitled slides=[]"
+      },
+      "distinct_titles": {
+        "ok": true,
+        "detail": "8 unique of 8"
+      },
+      "body_content": {
+        "ok": true,
+        "detail": "1099 body chars"
+      },
+      "no_blank_slides": {
+        "ok": true,
+        "detail": "8 slides checked"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "not_fallback_template": {
+        "ok": true,
+        "detail": "model content"
+      },
+      "widescreen": {
+        "ok": true,
+        "detail": "width=12192000 height=6858000"
+      },
+      "no_overflow": {
+        "ok": true,
+        "detail": "none"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "46129 bytes"
+      }
+    },
+    "titles": [
+      "Strategy plan",
+      "Situation",
+      "Objectives",
+      "Market trends",
+      "Strategic pillars",
+      "Initiatives",
+      "KPIs and risks",
+      "Roadmap"
+    ],
+    "slides": 8
+  },
+  {
+    "file": "P07_research_conference.pptx",
+    "kind": "pptx",
+    "path": "qa_artifacts/generated_presentations/P07_research_conference.pptx",
+    "bytes": 46236,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "presentation_part": {
+        "ok": true,
+        "detail": "55 parts"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "8 slides"
+      },
+      "slide_count": {
+        "ok": true,
+        "detail": "8 slides (min 0)"
+      },
+      "titles_on_every_slide": {
+        "ok": true,
+        "detail": "untitled slides=[]"
+      },
+      "distinct_titles": {
+        "ok": true,
+        "detail": "8 unique of 8"
+      },
+      "body_content": {
+        "ok": true,
+        "detail": "1282 body chars"
+      },
+      "no_blank_slides": {
+        "ok": true,
+        "detail": "8 slides checked"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "not_fallback_template": {
+        "ok": true,
+        "detail": "model content"
+      },
+      "widescreen": {
+        "ok": true,
+        "detail": "width=12192000 height=6858000"
+      },
+      "no_overflow": {
+        "ok": true,
+        "detail": "none"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "46236 bytes"
+      }
+    },
+    "titles": [
+      "Sparse retrieval at scale",
+      "Motivation",
+      "Related work",
+      "Method",
+      "Experimental setup",
+      "Results",
+      "Limitations",
+      "Conclusion and references"
+    ],
+    "slides": 8
+  },
+  {
+    "file": "P08_security_awareness.pptx",
+    "kind": "pptx",
+    "path": "qa_artifacts/generated_presentations/P08_security_awareness.pptx",
+    "bytes": 38171,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "presentation_part": {
+        "ok": true,
+        "detail": "50 parts"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "7 slides"
+      },
+      "slide_count": {
+        "ok": true,
+        "detail": "7 slides (min 0)"
+      },
+      "titles_on_every_slide": {
+        "ok": true,
+        "detail": "untitled slides=[]"
+      },
+      "distinct_titles": {
+        "ok": true,
+        "detail": "7 unique of 7"
+      },
+      "body_content": {
+        "ok": true,
+        "detail": "981 body chars"
+      },
+      "no_blank_slides": {
+        "ok": true,
+        "detail": "7 slides checked"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "not_fallback_template": {
+        "ok": true,
+        "detail": "model content"
+      },
+      "widescreen": {
+        "ok": true,
+        "detail": "width=12192000 height=6858000"
+      },
+      "no_overflow": {
+        "ok": true,
+        "detail": "none"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "38171 bytes"
+      }
+    },
+    "titles": [
+      "Phishing defence",
+      "Why it matters",
+      "Phishing types",
+      "Red flags",
+      "Reporting process",
+      "Password and MFA hygiene",
+      "Quiz and recap"
+    ],
+    "slides": 7
+  },
+  {
+    "file": "P09_project_status.pptx",
+    "kind": "pptx",
+    "path": "qa_artifacts/generated_presentations/P09_project_status.pptx",
+    "bytes": 38119,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "presentation_part": {
+        "ok": true,
+        "detail": "50 parts"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "7 slides"
+      },
+      "slide_count": {
+        "ok": true,
+        "detail": "7 slides (min 0)"
+      },
+      "titles_on_every_slide": {
+        "ok": true,
+        "detail": "untitled slides=[]"
+      },
+      "distinct_titles": {
+        "ok": true,
+        "detail": "7 unique of 7"
+      },
+      "body_content": {
+        "ok": true,
+        "detail": "868 body chars"
+      },
+      "no_blank_slides": {
+        "ok": true,
+        "detail": "7 slides checked"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "not_fallback_template": {
+        "ok": true,
+        "detail": "model content"
+      },
+      "widescreen": {
+        "ok": true,
+        "detail": "width=12192000 height=6858000"
+      },
+      "no_overflow": {
+        "ok": true,
+        "detail": "none"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "38119 bytes"
+      }
+    },
+    "titles": [
+      "Project status review",
+      "Scope",
+      "Timeline vs actual",
+      "Completed milestones",
+      "In-flight work",
+      "Risks and budget",
+      "Decisions and next period"
+    ],
+    "slides": 7
+  },
+  {
+    "file": "P10_product_launch.pptx",
+    "kind": "pptx",
+    "path": "qa_artifacts/generated_presentations/P10_product_launch.pptx",
+    "bytes": 44611,
+    "error": "",
+    "passed": true,
+    "fails": [],
+    "checks": {
+      "zip_signature": {
+        "ok": true,
+        "detail": "signature=b'PK\\x03\\x04'"
+      },
+      "zip_integrity": {
+        "ok": true,
+        "detail": "testzip()"
+      },
+      "presentation_part": {
+        "ok": true,
+        "detail": "53 parts"
+      },
+      "opens": {
+        "ok": true,
+        "detail": "7 slides"
+      },
+      "slide_count": {
+        "ok": true,
+        "detail": "7 slides (min 0)"
+      },
+      "titles_on_every_slide": {
+        "ok": true,
+        "detail": "untitled slides=[]"
+      },
+      "distinct_titles": {
+        "ok": true,
+        "detail": "7 unique of 7"
+      },
+      "body_content": {
+        "ok": true,
+        "detail": "930 body chars"
+      },
+      "no_blank_slides": {
+        "ok": true,
+        "detail": "7 slides checked"
+      },
+      "no_markdown_artifacts": {
+        "ok": true,
+        "detail": "0 '**' markers"
+      },
+      "no_placeholders": {
+        "ok": true,
+        "detail": "clean"
+      },
+      "not_fallback_template": {
+        "ok": true,
+        "detail": "model content"
+      },
+      "widescreen": {
+        "ok": true,
+        "detail": "width=12192000 height=6858000"
+      },
+      "no_overflow": {
+        "ok": true,
+        "detail": "none"
+      },
+      "file_size": {
+        "ok": true,
+        "detail": "44611 bytes"
+      }
+    },
+    "titles": [
+      "Product launch",
+      "Market context",
+      "Product overview",
+      "Features and specifications",
+      "Pricing and availability",
+      "Go-to-market",
+      "Timeline and call to action"
+    ],
+    "slides": 7
+  }
+]

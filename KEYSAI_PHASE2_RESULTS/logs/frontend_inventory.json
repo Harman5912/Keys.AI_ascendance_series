@@ -1,0 +1,102 @@
+{
+  "checks": [
+    {
+      "check": "seed.py exits 0",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "server answers /api/health",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "KPI total value is 54,200.00",
+      "ok": true,
+      "detail": "54,200.00"
+    },
+    {
+      "check": "KPI product count is 5",
+      "ok": true,
+      "detail": "5"
+    },
+    {
+      "check": "KPI low-stock count is 2",
+      "ok": true,
+      "detail": "2"
+    },
+    {
+      "check": "table shows 5 products",
+      "ok": true,
+      "detail": "5"
+    },
+    {
+      "check": "2 rows flagged low stock",
+      "ok": true,
+      "detail": "2"
+    },
+    {
+      "check": "Mouse and Laptop Stand are the low-stock rows",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "search narrows to one row",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "category filter shows only Monitor",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "invalid form shows a field error",
+      "ok": true,
+      "detail": "validation failed \u2014 name: must be a non-empty string"
+    },
+    {
+      "check": "add product appears in the table",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "KPI total updated to 55,550.00",
+      "ok": true,
+      "detail": "55,550.00"
+    },
+    {
+      "check": "edit changes the quantity and the low-stock count",
+      "ok": true,
+      "detail": "3"
+    },
+    {
+      "check": "movement is recorded and listed",
+      "ok": true,
+      "detail": "Recorded 5 (now 6 in stock)"
+    },
+    {
+      "check": "movement updated the product quantity",
+      "ok": true,
+      "detail": "Keyboard (10)\nMouse (2)\nMonitor (4)\nLaptop Stand (0)\nUSB Hub (8)\nWebcam (6)"
+    },
+    {
+      "check": "delete removes the row",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "no unexpected console errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "the intentional bad request produced a handled error",
+      "ok": true,
+      "detail": "Failed to load resource: the server responded with a status of 400 (BAD REQUEST)"
+    }
+  ],
+  "passed": 19,
+  "total": 19,
+  "screenshot": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\KEYSAI_PHASE2_RESULTS\\screenshots\\inventory_dashboard.png"
+}

@@ -1,0 +1,111 @@
+[attempt 1]
+{
+  "brand": "Halo Notes",
+  "title": "Unlocking Field Research Efficiency with Halo Notes",
+  "eyebrow": "Offline-first note app for field researchers",
+  "headline": "Effortless, Secure, and Reliable",
+  "tagline": "Streamline your research notes with Halo Notes. Our offline-first approach ensures you can capture data anywhere, anytime.",
+  "accent": "#3498db",
+  "cta_primary": "Get Started",
+  "cta_secondary": "Learn More",
+  "sections": [
+    {
+      "id": "about",
+      "kind": "text",
+      "heading": "About Halo Notes",
+      "lead": "Halo Notes is a secure, offline-first note app designed for field researchers. Our mission is to help you capture and organize your research notes efficiently.",
+      "items": [
+        {"title": "Secure Data Storage", "text": "Our end-to-end encryption ensures that all your data is protected from unauthorized access."},
+        {"title": "Offline First Experience", "text": "Halo Notes allows you to work offline, ensuring that you can capture and organize your research notes even when there's no internet connection."},
+        {"title": "User-Friendly Interface", "text": "Our intuitive interface makes it easy for you to create, edit, and share your notes with others."}
+      ]
+    },
+    {
+      "id": "work",
+      "kind": "gallery",
+      "heading": "Selected Work",
+      "lead": "See how Halo Notes has helped field researchers capture and organize their research notes.",
+      "items": [
+        {"title": "Field Research Journal", "text": "Capture your observations, thoughts, and insights in real-time with our offline-first note app."},
+        {"title": "Data Collection Tool", "text": "Streamline your data collection process by capturing all your field notes in one place."},
+        {"title": "Collaboration Platform", "text": "Share your research notes with colleagues and collaborate on projects from anywhere."},
+        {"title": "Research Management System", "text": "Organize your research notes, tasks, and timelines to stay on top of your work."},
+        {"title": "Field Research Diary", "text": "Keep track of your field experiences, observations, and insights in a secure and efficient manner."},
+        {"title": "Data Analysis Tool", "text": "Analyze your data with our powerful note-taking app and gain valuable insights into your research findings."},
+        {"title": "Research Project Management", "text": "Manage your research projects from start to finish with our offline-first note app."},
+        {"title": "Field Research Notebook", "text": "Capture your field experiences, observations, and insights in a secure and efficient manner."},
+        {"title": "Data Visualization Tool", "text": "Visualize your data with our powerful note-taking app and gain valuable insights into your research findings."}
+      ]
+    },
+    {
+      "id": "skills",
+      "kind": "cards",
+      "heading": "Our Skills",
+      "lead": "We are a team of experienced developers, designers, and project managers who specialize in creating offline-first note apps for field researchers.",
+      "items": [
+        {"title": "React", "text": "Build fast, scalable, and maintainable web applications with React."},
+        {"title": "Node.js", "text": "Create server-side applications using Node.js and Express."},
+        {"title": "MongoDB", "text": "Store and manage large amounts of data efficiently with MongoDB."},
+        {"title": "AWS", "text": "Deploy and scale your application on AWS to ensure high availability and performance."},
+        {"title": "Git", "text": "Version control your code using Git and GitHub for collaboration and versioning."},
+        {"title": "Agile Methodology", "text": "Work collaboratively with cross-functional teams to deliver high-quality products on time and within budget."},
+        {"title": "User Experience Design", "text": "Design intuitive, user-friendly interfaces that meet the needs of our clients and users."},
+        {"title": "Data Analysis", "text": "Analyze data using statistical methods and tools to gain valuable insights into research findings."},
+        {"title": "Project Management", "text": "Manage complex projects from start to finish with effective project management techniques and tools."}
+      ]
+    },
+    {
+      "id": "faq",
+      "kind": "faq",
+      "heading": "Frequently Asked Questions",
+      "lead": "We are here to answer any questions you may have about Halo Notes.",
+      "items": [
+        {"q": "What is Halo Notes?", "a": "Halo Notes is a secure, offline-first note app designed for field researchers."},
+        {"q": "How does Halo Notes work?", "a": "Our offline-first approach ensures that all your data is protected from unauthorized access and allows you to capture and organize your notes even when there's no internet connection."},
+        {"q": "What are the benefits of using Halo Notes?", "a": "Halo Notes helps field researchers streamline their research notes, capture and organize them efficiently, and collaborate with colleagues and share them with others."},
+        {"q": "Is Halo Notes secure?", "a": "Our end-to-end encryption ensures that all your data is protected from unauthorized access."},
+        {"q": "What are the pricing options for Halo Notes?", "a": "Halo Notes offers a free trial, as well as paid plans starting at $9.99 per month."},
+        {"q": "How can I get started with Halo Notes?", "a": "Sign up for a free trial or contact us to learn more about our pricing options and how to get started."}
+      ]
+    },
+    {
+      "id": "contact",
+      "kind": "text",
+      "heading": "Contact Us",
+      "lead": "We are here to help you with any questions you may have about Halo Notes.",
+      "items": [
+        {"title": "Email", "text": "info@halonotes.com"},
+        {"title": "Phone", "text": "+1 (555) 555-5555"},
+        {"title": "Address", "text": "123 Main St, Anytown, USA"}
+      ]
+    }
+  ],
+  "metrics": [{"value": "6+", "label": "years shipping"}],
+  "faq": [
+    {
+      "q": "What is Halo Notes?",
+      "a": "Halo Notes is a secure, offline-first note app designed for field researchers."
+    },
+    {
+      "q": "How does Halo Notes work?",
+      "a": "Our offline-first approach ensures that all your data is protected from unauthorized access and allows you to capture and organize your notes even when there's no internet connection."
+    },
+    {
+      "q": "What are the benefits of using Halo Notes?",
+      "a": "Halo Notes helps field researchers streamline their research notes, capture and organize them efficiently, and collaborate with colleagues and share them with others."
+    },
+    {
+      "q": "Is Halo Notes secure?",
+      "a": "Our end-to-end encryption ensures that all your data is protected from unauthorized access."
+    },
+    {
+      "q": "What are the pricing options for Halo Notes?",
+      "a": "Halo Notes offers a free trial, as well as paid plans starting at $9.99 per month."
+    },
+    {
+      "q": "How can I get started with Halo Notes?",
+      "a": "Sign up for a free trial or contact us to learn more about our pricing options and how to get started."
+    }
+  ],
+  "footer": "© 2023 Halo Notes. All rights reserved."
+}

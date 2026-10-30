@@ -1,0 +1,89 @@
+[14:45:37] USER_REQUEST Hey Keys, can you help me create a small project?
+[14:45:37] INTENT_DETECTED QUESTION tags=['QUESTION', 'CONVERSATION'] conf=0.84
+[14:45:37] ROUTED chat →  {}
+[Brain][Reasoning] ⚠️ Gemini generate failed: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+[14:45:57] USER_REQUEST Make me a website for my portfolio.
+[14:45:57] INTENT_DETECTED COMMAND tags=['COMMAND'] conf=0.48
+[14:45:57] ROUTED plan →  {}
+[Brain][Planner] ⚠️ LLM plan failed, falling back: Gemini structured output failed: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+[14:46:09] USER_REQUEST Build me a portfolio website using Python and HTML.
+[14:46:09] INTENT_DETECTED CODING tags=['CODING'] conf=0.48
+[14:46:09] ROUTED single_tool → live_code {'action': 'start', 'description': 'Build me a portfolio website using Python and HTML.'}
+[14:46:09] PLAN_CREATED Single step (1 steps)
+[14:46:09] STEP 1/1 live_code — coding intent → live_code
+[14:46:09] TOOL_SELECTED live_code {'action': 'start', 'description': 'Build me a portfolio website using Python and HTML.'}
+[14:46:09] WAITING_FOR_USER 'live_code' needs your confirmation: {'action': 'start', 'description': 'Build me a portfolio website using Python and HTML.'}
+[14:46:09] WAITING_FOR_USER waiting on: coding intent → live_code
+[14:46:09] USER_REQUEST Use SQLite for the database.
+[14:46:09] CONFIRM_SUPERSEDED dropped pending step 0 and handled the new request instead
+[14:46:09] INTENT_DETECTED CONVERSATION tags=[] conf=0.25
+[14:46:09] ROUTED chat →  {}
+[Brain][Reasoning] ⚠️ Gemini generate failed: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+[14:46:12] USER_REQUEST Make the theme dark with gold accents.
+[14:46:12] INTENT_DETECTED COMMAND tags=['COMMAND'] conf=0.48
+[14:46:12] ROUTED plan →  {}
+[Brain][Planner] ⚠️ LLM plan failed, falling back: Gemini structured output failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 44.951103713s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '44s'}]}}
+[Brain][Reasoning] ⚠️ Gemini generate failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 44.535704996s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '44s'}]}}
+[14:46:15] USER_REQUEST Now add a contact form.
+[14:46:15] INTENT_DETECTED CONVERSATION tags=[] conf=0.25
+[14:46:15] ROUTED chat →  {}
+[Brain][Reasoning] ⚠️ Gemini generate failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 44.117936562s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '44s'}]}}
+[14:46:15] USER_REQUEST Create a Python Flask website.
+[14:46:15] INTENT_DETECTED CODING tags=['CODING', 'COMMAND'] conf=0.58
+[14:46:15] ROUTED single_tool → live_code {'action': 'start', 'description': 'Create a Python Flask website.'}
+[14:46:15] PLAN_CREATED Single step (1 steps)
+[14:46:15] STEP 1/1 live_code — coding intent → live_code
+[14:46:15] TOOL_SELECTED live_code {'action': 'start', 'description': 'Create a Python Flask website.'}
+[14:46:15] WAITING_FOR_USER 'live_code' needs your confirmation: {'action': 'start', 'description': 'Create a Python Flask website.'}
+[14:46:15] WAITING_FOR_USER waiting on: coding intent → live_code
+[14:46:15] USER_REQUEST Actually, use FastAPI instead.
+[14:46:15] CONFIRM_SUPERSEDED dropped pending step 0 and handled the new request instead
+[14:46:15] INTENT_DETECTED CONVERSATION tags=[] conf=0.25
+[14:46:16] ROUTED chat →  {}
+[Brain][Reasoning] ⚠️ Gemini generate failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 42.265069019s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '42s'}]}}
+[14:46:17] USER_REQUEST Did you actually run my application, or did you only write the code?
+[14:46:17] INTENT_DETECTED QUESTION tags=['COMPUTER_ACTION', 'CODING', 'QUESTION'] conf=0.94
+[14:46:17] ROUTED chat →  {}
+[Brain][Reasoning] ⚠️ Gemini generate failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 40.501660335s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '40s'}]}}
+[14:46:19] USER_REQUEST What can you do with spreadsheets?
+[14:46:19] INTENT_DETECTED QUESTION tags=['QUESTION', 'CONVERSATION'] conf=0.84
+[14:46:19] ROUTED chat →  {}
+[Brain][Reasoning] ⚠️ Gemini generate failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-2.5-flash\nPlease retry in 38.560642753s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '5'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '38s'}]}}
+
+=== C01 ===
+  user: Hey Keys, can you help me create a small project?
+  keys: ''  [20.0s intent=]
+
+=== C02 ===
+  user: Make me a website for my portfolio.
+  keys: "Understood, sir. I can certainly help you build a portfolio website.\n\nTo get started, could you tell me a bit more about what you envision for it? For example:\n*   What kind of content will it feature (e.g., projects, resume, contact info, blog)?\n*   Do you have any design preferences or examples you like?\n*   Are there any specific technologies you'd prefer to use (e.g., React, plain HTML/CSS/JS,"  [11.3s intent=COMMAND]
+
+=== C03 ===
+  user: Build me a portfolio website using Python and HTML.
+  keys: 'I need your confirmation before I coding intent → live_code. Say yes to proceed, or no to skip it.'  [0.0s intent=CODING]
+  user: Use SQLite for the database.
+  keys: ''  [3.4s intent=]
+  user: Make the theme dark with gold accents.
+  keys: ''  [3.0s intent=]
+  user: Now add a contact form.
+  keys: ''  [0.4s intent=]
+
+=== C04 ===
+  user: Create a Python Flask website.
+  keys: 'I need your confirmation before I coding intent → live_code. Say yes to proceed, or no to skip it.'  [0.0s intent=CODING]
+  user: Actually, use FastAPI instead.
+  keys: ''  [1.9s intent=]
+
+=== C11 ===
+  user: Did you actually run my application, or did you only write the code?
+  keys: ''  [1.7s intent=]
+
+=== C12 ===
+  user: What can you do with spreadsheets?
+  keys: ''  [1.9s intent=]
+
+=== decision layer (not executed) ===
+  'Deploy this to my production server right now.' -> intent=CONVERSATION conf=0.25 route=chat
+  'Create a PowerPoint about renewable energy.' -> intent=APP_CONTROL conf=0.58 route=chat
+  'Separately, build a Python inventory application.' -> intent=CODING conf=0.48 route=single_tool
+  'Did you actually run my application, or did you on' -> intent=QUESTION conf=0.94 route=chat

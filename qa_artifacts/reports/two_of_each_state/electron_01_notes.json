@@ -1,0 +1,37 @@
+{
+  "slug": "electron_01_notes",
+  "artifact": "electron",
+  "files": [
+    "brief.json",
+    "main.js",
+    "package-lock.json",
+    "package.json",
+    "preload.js",
+    "renderer/app.js",
+    "renderer/index.html",
+    "renderer/style.css"
+  ],
+  "file_count": 8,
+  "missing_files": [],
+  "checks": [
+    {
+      "check": "node --check main.js",
+      "ok": true,
+      "output": ""
+    },
+    {
+      "check": "node --check preload.js",
+      "ok": true,
+      "output": ""
+    },
+    {
+      "check": "node --check app.js",
+      "ok": true,
+      "output": ""
+    }
+  ],
+  "ok": true,
+  "finished": true,
+  "adopted": true,
+  "message": "verified from disk: recipe files present"
+}

@@ -1,0 +1,210 @@
+{
+  "brand": "Verdant",
+  "title": "Discover Verdant - Small-Batch Organic Skincare in Somerset",
+  "eyebrow": "Organic Skincare for the Modern Woman",
+  "headline": "Experience Pure, Natural Beauty",
+  "tagline": "Our products are crafted with love and care to nourish your skin.",
+  "accent": "#5a7382",
+  "cta_primary": "Shop Now",
+  "cta_secondary": "Learn More",
+  "sections": [
+    {
+      "id": "about",
+      "kind": "text",
+      "heading": "About Verdant",
+      "lead": "Verdant is a small-batch organic skincare brand in Somerset, known for its nourishing and effective products.",
+      "items": [
+        {
+          "title": "Our Story",
+          "text": "Founded by Sarah and Tom, Verdant has been making natural skincare since 2015.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Our Mission",
+          "text": "To provide high-quality organic skincare that is gentle on the skin and good for the planet.",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "Our Values",
+          "text": "We believe in transparency, sustainability, and ethical practices in all aspects of our business.",
+          "meta": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "work",
+      "kind": "gallery",
+      "heading": "Selected Products",
+      "lead": "Experience the power of organic skincare with our six products.",
+      "items": [
+        {
+          "title": "Cream",
+          "text": "A luxurious cream that nourishes and hydrates your skin.",
+          "meta": "2023 \u00b7 Client",
+          "tags": [
+            "organic",
+            "hydrating"
+          ]
+        },
+        {
+          "title": "Sage",
+          "text": "A refreshing toner that balances the skin's pH and soothes irritation.",
+          "meta": "2024 \u00b7 Client",
+          "tags": [
+            "organic",
+            "balancing"
+          ]
+        },
+        {
+          "title": "Rose Petal",
+          "text": "A floral essence that brightens your complexion and calms sensitive skin.",
+          "meta": "2025 \u00b7 Client",
+          "tags": [
+            "organic",
+            "brightening"
+          ]
+        },
+        {
+          "title": "Cactus Oil",
+          "text": "A rich oil that nourishes and protects the skin from environmental stressors.",
+          "meta": "2026 \u00b7 Client",
+          "tags": [
+            "organic",
+            "protective"
+          ]
+        },
+        {
+          "title": "Ginger Extract",
+          "text": "A warming extract that boosts circulation and reduces inflammation.",
+          "meta": "2027 \u00b7 Client",
+          "tags": [
+            "organic",
+            "anti-inflammatory"
+          ]
+        },
+        {
+          "title": "Mint Oil",
+          "text": "A refreshing oil that soothes the skin and promotes relaxation.",
+          "meta": "2028 \u00b7 Client",
+          "tags": [
+            "organic",
+            "relaxing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "kind": "cards",
+      "heading": "Our Skills",
+      "lead": "We are skilled in creating natural skincare products that are safe for your skin and the environment.",
+      "items": [
+        {
+          "title": "Organic Ingredients",
+          "text": "All of our products are made with 100% organic ingredients.",
+          "meta": "",
+          "tags": [
+            "organic"
+          ]
+        },
+        {
+          "title": "Sustainable Practices",
+          "text": "We use sustainable practices in all aspects of our business, from sourcing materials to packaging.",
+          "meta": "",
+          "tags": [
+            "sustainability"
+          ]
+        },
+        {
+          "title": "Ethical Business Practices",
+          "text": "We believe in transparency and ethical practices in all aspects of our business.",
+          "meta": "",
+          "tags": [
+            "ethics"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faq",
+      "kind": "faq",
+      "heading": "Frequently Asked Questions",
+      "lead": "",
+      "items": [
+        {
+          "title": "",
+          "text": "",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "",
+          "text": "",
+          "meta": "",
+          "tags": []
+        },
+        {
+          "title": "",
+          "text": "",
+          "meta": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "kind": "text",
+      "heading": "Contact Us",
+      "lead": "Have questions or need more information? Contact us today!",
+      "items": [
+        {
+          "title": "Email",
+          "text": "info@verdant.com",
+          "meta": "",
+          "tags": [
+            "email"
+          ]
+        },
+        {
+          "title": "Phone",
+          "text": "(123) 456-7890",
+          "meta": "",
+          "tags": [
+            "phone"
+          ]
+        },
+        {
+          "title": "Address",
+          "text": "123 Main St, Somerset, MA 02705",
+          "meta": "",
+          "tags": [
+            "address"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "kind": "contact",
+      "heading": "Get in touch",
+      "lead": "Send a message with what you need and the deadline you are working towards.",
+      "items": []
+    }
+  ],
+  "metrics": [
+    {
+      "value": "6+",
+      "label": "years shipping"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is Verdant?",
+      "a": "Verdant is a small-batch organic skincare brand in Somerset, known for its nourishing and effective products."
+    }
+  ],
+  "footer": "Experience pure, natural beauty with Verdant."
+}

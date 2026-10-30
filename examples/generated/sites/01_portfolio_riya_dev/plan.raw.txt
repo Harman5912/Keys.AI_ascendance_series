@@ -1,0 +1,83 @@
+[attempt 1]
+{
+  "brand": "Riya Nair",
+  "title": "Riya Nair - Portfolio",
+  "eyebrow": "Front-end Developer",
+  "headline": "A Journey Through My Projects",
+  "tagline": "Crafting digital experiences with passion and precision.",
+  "accent": "#3498db",
+  "cta_primary": "View More Work",
+  "cta_secondary": "Contact Me",
+  "sections": [
+    {
+      "id": "about",
+      "kind": "text",
+      "heading": "About Me",
+      "lead": "A full-stack developer with a passion for creating intuitive and efficient digital solutions.",
+      "items": [
+        {"title": "Experience", "text": "6+ years of experience in web development, specializing in React and Node.js."},
+        {"title": "Skills", "text": "Proficient in HTML5, CSS3, JavaScript (ES6+), and various front-end frameworks."},
+        {"title": "Languages", "text": "Fluent in English and conversational Spanish."}
+      ]
+    },
+    {
+      "id": "work",
+      "kind": "gallery",
+      "heading": "Selected Work",
+      "lead": "A selection of projects that showcase my expertise in web development.",
+      "items": [
+        {"title": "Project 1", "text": "E-commerce website for a local bookstore, featuring React.js and Node.js.", "meta": "2023 · Client", "tags": ["React", "Node", "e-commerce"]},
+        {"title": "Project 2", "text": "Real estate platform, allowing users to search and book properties with React and MongoDB.", "meta": "2022 · Client", "tags": ["React", "MongoDB", "real estate"]},
+        {"title": "Project 3", "text": "Social media management tool, enabling businesses to automate their social media presence with Node.js and Express.", "meta": "2021 · Client", "tags": ["Node.js", "Express", "social media"]}
+      ]
+    },
+    {
+      "id": "skills",
+      "kind": "text",
+      "heading": "Skills",
+      "lead": "A comprehensive overview of my skills and expertise.",
+      "items": [
+        {"title": "Front-end Development", "text": "Proficient in React.js, Vue.js, and Angular for building dynamic user interfaces."},
+        {"title": "Back-end Development", "text": "Skilled in Node.js, Express.js, and MongoDB for server-side development."},
+        {"title": "Database Management", "text": "Experience with MySQL, PostgreSQL, and NoSQL databases like MongoDB and Firebase Firestore."}
+      ]
+    },
+    {
+      "id": "faq",
+      "kind": "faq",
+      "heading": "Frequently Asked Questions",
+      "items": [
+        {"q": "What is your approach to web development?", "a": "I follow a structured, iterative process that emphasizes user experience and performance."},
+        {"q": "Can you provide examples of my previous work?", "a": "Yes, I can share links to my portfolio projects on GitHub or other platforms."},
+        {"q": "What are your rates for web development services?", "a": "I offer competitive rates based on project complexity and scope. Please contact me for a quote."}
+      ]
+    },
+    {
+      "id": "contact",
+      "kind": "text",
+      "heading": "Contact Me",
+      "lead": "Ready to collaborate on your next project? Let's get in touch!",
+      "items": [
+        {"title": "Email", "text": "riyanair@example.com"},
+        {"title": "Phone", "text": "+1 (555) 123-4567"},
+        {"title": "LinkedIn", "text": "https://www.linkedin.com/in/riya-nair/"}
+      ]
+    }
+  ],
+  "metrics": [{"value": "6+", "label": "years shipping"}],
+  "faq": [
+    {
+      "q": "What is your approach to web development?",
+      "a": "I follow a structured, iterative process that emphasizes user experience and performance."
+    },
+    {
+      "q": "Can you provide examples of my previous work?",
+      "a": "Yes, I can share links to my portfolio projects on GitHub or other platforms."
+    },
+    {
+      "q": "What are your rates for web development services?",
+      "a": "I offer competitive rates based on project complexity and scope. Please contact me for a quote."
+    }
+  ],
+  "footer": "Crafting digital experiences with passion and precision."
+}

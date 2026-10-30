@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulseboard</title>
+    <style>
+        * { box-sizing: border-box; }
+        max-width: 100%;
+        font-family: Arial, sans-serif;
+        body { margin: 0; padding: 0; }
+        header, footer { background-color: #333; color: white; text-align: center; padding: 1rem; }
+        main { padding: 2rem; }
+        h1 { margin-top: 0; }
+        .kpi-row { display: flex; justify-content: space-around; align-items: center; margin-bottom: 2rem; }
+        .kpi-item { text-align: center; }
+        .bar-chart { width: 100%; height: 150px; position: relative; background-color: #f4f4f4; }
+        .bar { position: absolute; top: 0; left: 0; width: calc(25% - 10px); height: 100%; background-color: #333; transition: height 0.3s ease; }
+        .table-container { max-height: 400px; overflow-y: auto; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .filter-container { margin-bottom: 2rem; }
+        .filter-input { width: 100%; padding: 8px; box-sizing: border-box; }
+        button, a { outline: none; text-decoration: none; color: #333; background-color: #f4f4f4; padding: 8px 16px; margin-right: 1rem; transition: background-color 0.3s ease; }
+        button:hover, a:hover { background-color: #ddd; }
+        button:focus-visible, a:focus-visible { outline: 2px solid #333; outline-offset: -2px; }
+    </style>
+</head>
+<body>
+    <header><h1>Pulseboard</h1></header>
+    <main>
+        <div class="kpi-row">
+            <div class="kpi-item" id="kpi1">Metric 1: $1,200</div>
+            <div class="kpi-item" id="kpi2">Metric 2: 345</div>
+            <div class="kpi-item" id="kpi3">Metric 3: 78.9%</div>
+            <div class="kpi-item" id="kpi4">Metric 4: 100 units</div>
+        </div>
+        <div class="bar-chart">
+            <div class="bar" style="height: 50%;" id="bar1"></div>
+            <div class="bar" style="height: 30%;" id="bar2"></div>
+            <div class="bar" style="height: 80%;" id="bar3"></div>
+            <div class="bar" style="height: 40%;" id="bar4"></div>
+        </div>
+        <div class="filter-container">
+            <label for="dateRange">Date Range:</label>
+            <input type="text" id="dateRange" class="filter-input" placeholder="Select date range">
+        </div>
+        <table id="sortableTable">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Item 1</td><td>$50.00</td><td>2023-10-01</td></tr>
+                <tr><td>Item 2</td><td>$75.00</td><td>2023-10-02</td></tr>
+                <tr><td>Item 3</td><td>$100.00</td><td>2023-10-03</td></tr>
+                <tr><td>Item 4</td><td>$125.00</td><td>2023-10-04</td></tr>
+                <tr><td>Item 5</td><td>$150.00</td><td>2023-10-05</td></tr>
+                <tr><td>Item 6</td><td>$175.00</td><td>2023-10-06</td></tr>
+            </tbody>
+        </table>
+        <div style="margin-top: 2rem;">
+            <button onclick="changeDateRange('2023-09-01', '2023-09-30');">Change Date Range</button>
+            <a href="#" onclick="alert('Link clicked!'); return false;">Click Me</a>
+        </div>
+    </main>
+    <footer><p>© 2023 Pulseboard. All rights reserved.</p></footer>
+
+    <script>
+        const data = [
+            { metric1: 500, metric2: 100, metric3: 60, metric4: 50 },
+            { metric1: 750, metric2: 150, metric3: 80, metric4: 60 },
+            { metric1: 1000, metric2: 200, metric3: 90, metric4: 70 },
+            { metric1: 1250, metric2: 250, metric3: 85, metric4: 80 },
+            { metric1: 1500, metric2: 300, metric3: 95, metric4: 90 }
+        ];
+
+        function updateKPIs() {
+            data.forEach((item, index) => {
+                document.getElementById(`kpi${index + 1}`).textContent = `Metric ${index + 1}: $${item[`metric${index + 1}`]}
+`;
+                document.getElementById(`bar${index + 1}`).style.height = `${Math.floor(item[`metric${index + 1}`] / Math.max(...data.map(d => d[`metric${index + 1}`]))) * 100}%`; // Adjust heights
+            });
+        }
+
+        function changeDateRange(start, end) {
+            document.getElementById('dateRange').value = `${start} - ${end}`;
+            updateKPIs();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updateKPIs();
+        });
+    </script>
+</body>
+</html>

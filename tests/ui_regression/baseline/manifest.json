@@ -1,0 +1,122 @@
+{
+  "main_hud_100.png": {
+    "size": [
+      800,
+      600
+    ],
+    "scale": 1.0,
+    "sha256": "b1f9fd1d297c86cd0b3a41d349be6f84b9f484300e7b7df50a81d1079ccf820d"
+  },
+  "main_hud_125.png": {
+    "size": [
+      1000,
+      750
+    ],
+    "scale": 1.25,
+    "sha256": "305bb23529a0ce5519357bb76886c1468a5b0013030d5ac481eac315962523bb"
+  },
+  "main_hud_150.png": {
+    "size": [
+      1200,
+      900
+    ],
+    "scale": 1.5,
+    "sha256": "eba1ac671ef59e29339585dbba7d03e81177906e0e040ce514d224e12680c848"
+  },
+  "crown_code_terminal_100.png": {
+    "size": [
+      900,
+      550
+    ],
+    "scale": 1.0,
+    "sha256": "c26848641ee2ee6eca7c789904cfa5a80e1a4e3058898b2fa02b153076bbd439"
+  },
+  "crown_code_terminal_125.png": {
+    "size": [
+      1125,
+      687
+    ],
+    "scale": 1.25,
+    "sha256": "9cd8d02799c428429d653a9397140e3f7bab3ffb7945709511e91beeb73956bd"
+  },
+  "crown_code_terminal_150.png": {
+    "size": [
+      1350,
+      825
+    ],
+    "scale": 1.5,
+    "sha256": "99fb553b8a77df640b3081084f1935c4091c5e59586f0b496c52f3901957f0ef"
+  },
+  "clarification_dialog_100.png": {
+    "size": [
+      600,
+      400
+    ],
+    "scale": 1.0,
+    "sha256": "43a5b6f5abd89b0790f871ef2b460378afd4c014949e0504969b3fca680d7524"
+  },
+  "clarification_dialog_125.png": {
+    "size": [
+      750,
+      500
+    ],
+    "scale": 1.25,
+    "sha256": "d3efc20bf19645c39dcda2508031a9cdbc2ec186eccb58bd4eb91aa8bf1437fe"
+  },
+  "clarification_dialog_150.png": {
+    "size": [
+      900,
+      600
+    ],
+    "scale": 1.5,
+    "sha256": "e215f446da9859f6616ae5ea32b8b053eacb39b0d68373c0664162c0da8c7705"
+  },
+  "approval_dialog_100.png": {
+    "size": [
+      550,
+      300
+    ],
+    "scale": 1.0,
+    "sha256": "7aff25b471024936d2689a44fb02e185bc530dcf8fb5d6db9ba156cbce1681c2"
+  },
+  "approval_dialog_125.png": {
+    "size": [
+      687,
+      375
+    ],
+    "scale": 1.25,
+    "sha256": "5bef9440024602cd32879f5ca2535b82110c892e510b5d5efe23bc717cb95993"
+  },
+  "approval_dialog_150.png": {
+    "size": [
+      825,
+      450
+    ],
+    "scale": 1.5,
+    "sha256": "99fe51aaf747fbde86f2445a1be1841c3c4dcffa54e20784960ac09f5cdd52be"
+  },
+  "settings_panel_100.png": {
+    "size": [
+      700,
+      500
+    ],
+    "scale": 1.0,
+    "sha256": "5c4f56e56fc402a2f4209920657e9cdba435d59ced71d19b6c8306de0a5f0c22"
+  },
+  "settings_panel_125.png": {
+    "size": [
+      875,
+      625
+    ],
+    "scale": 1.25,
+    "sha256": "bc3b6749119f8e113cce7d62fc4a1368d9956df3916ba8543a206e7384522f5e"
+  },
+  "settings_panel_150.png": {
+    "size": [
+      1050,
+      750
+    ],
+    "scale": 1.5,
+    "sha256": "5ed37f73efa502c466282ceb7a8051565b3b605a8a0f879a2a8eddc9787c2427"
+  }
+}

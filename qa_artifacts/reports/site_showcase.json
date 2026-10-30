@@ -1,0 +1,472 @@
+{
+  "generated_at": "2026-10-19T09:58:53+00:00",
+  "all_ok": true,
+  "sites": [
+    {
+      "id": "01",
+      "brand": "Halcyon",
+      "studio": "aurora",
+      "folder": "01_halcyon_aurora",
+      "bytes": 24452,
+      "lines": 367,
+      "seconds": 8.72,
+      "ok": true,
+      "problems": [],
+      "browser": "ok",
+      "overflow": {
+        "375": 0,
+        "1280": 0
+      },
+      "interactions": [
+        {
+          "name": "mobile nav opens",
+          "ok": true,
+          "detail": "none -> block"
+        },
+        {
+          "name": "empty form is rejected",
+          "ok": true,
+          "detail": "Please complete the highlighted field."
+        },
+        {
+          "name": "valid form confirms",
+          "ok": true,
+          "detail": "Thanks \u2014 your message is queued. A person will reply, not an autoresponder."
+        },
+        {
+          "name": "counter renders a value",
+          "ok": true,
+          "detail": "38M -> 38M"
+        },
+        {
+          "name": "no page errors",
+          "ok": true,
+          "detail": ""
+        }
+      ],
+      "screenshot": "_shots/01_halcyon_aurora.jpg"
+    },
+    {
+      "id": "02",
+      "brand": "The Quiet Index",
+      "studio": "editorial",
+      "folder": "02_quiet_index_editorial",
+      "bytes": 23657,
+      "lines": 368,
+      "seconds": 7.85,
+      "ok": true,
+      "problems": [],
+      "browser": "ok",
+      "overflow": {
+        "375": 0,
+        "1280": 0
+      },
+      "interactions": [
+        {
+          "name": "mobile nav opens",
+          "ok": true,
+          "detail": "none -> block"
+        },
+        {
+          "name": "empty form is rejected",
+          "ok": true,
+          "detail": "Please complete the highlighted field."
+        },
+        {
+          "name": "valid form confirms",
+          "ok": true,
+          "detail": "Thanks Test \u2014 your message is queued. A person will reply, not an autoresponder."
+        },
+        {
+          "name": "counter renders a value",
+          "ok": true,
+          "detail": "14 -> 14"
+        },
+        {
+          "name": "no page errors",
+          "ok": true,
+          "detail": ""
+        }
+      ],
+      "screenshot": "_shots/02_quiet_index_editorial.jpg"
+    },
+    {
+      "id": "03",
+      "brand": "STUDIO LOUD",
+      "studio": "brutalist",
+      "folder": "03_studio_loud_brutalist",
+      "bytes": 22831,
+      "lines": 362,
+      "seconds": 8.21,
+      "ok": true,
+      "problems": [],
+      "browser": "ok",
+      "overflow": {
+        "375": 0,
+        "1280": 0
+      },
+      "interactions": [
+        {
+          "name": "mobile nav opens",
+          "ok": true,
+          "detail": "none -> block"
+        },
+        {
+          "name": "empty form is rejected",
+          "ok": true,
+          "detail": "Please complete the highlighted field."
+        },
+        {
+          "name": "valid form confirms",
+          "ok": true,
+          "detail": "Thanks Test \u2014 your message is queued. A person will reply, not an autoresponder."
+        },
+        {
+          "name": "counter renders a value",
+          "ok": true,
+          "detail": "41 -> 41"
+        },
+        {
+          "name": "no page errors",
+          "ok": true,
+          "detail": ""
+        }
+      ],
+      "screenshot": "_shots/03_studio_loud_brutalist.jpg"
+    },
+    {
+      "id": "04",
+      "brand": "M\u00fcller & Co.",
+      "studio": "swiss",
+      "folder": "04_muller_swiss",
+      "bytes": 22404,
+      "lines": 349,
+      "seconds": 8.05,
+      "ok": true,
+      "problems": [],
+      "browser": "ok",
+      "overflow": {
+        "375": 0,
+        "1280": 0
+      },
+      "interactions": [
+        {
+          "name": "mobile nav opens",
+          "ok": true,
+          "detail": "none -> block"
+        },
+        {
+          "name": "empty form is rejected",
+          "ok": true,
+          "detail": "Please complete the highlighted field."
+        },
+        {
+          "name": "valid form confirms",
+          "ok": true,
+          "detail": "Thanks Test \u2014 your message is queued. A person will reply, not an autoresponder."
+        },
+        {
+          "name": "counter renders a value",
+          "ok": true,
+          "detail": "1994 -> 1,994"
+        },
+        {
+          "name": "no page errors",
+          "ok": true,
+          "detail": ""
+        }
+      ],
+      "screenshot": "_shots/04_muller_swiss.jpg"
+    },
+    {
+      "id": "05",
+      "brand": "ferry",
+      "studio": "terminal",
+      "folder": "05_ferry_terminal",
+      "bytes": 22586,
+      "lines": 355,
+      "seconds": 7.73,
+      "ok": true,
+      "problems": [],
+      "browser": "ok",
+      "overflow": {
+        "375": 0,
+        "1280": 0
+      },
+      "interactions": [
+        {
+          "name": "mobile nav opens",
+          "ok": true,
+          "detail": "none -> block"
+        },
+        {
+          "name": "empty form is rejected",
+          "ok": true,
+          "detail": "Please complete the highlighted field."
+        },
+        {
+          "name": "valid form confirms",
+          "ok": true,
+          "detail": "Thanks \u2014 your message is queued. A person will reply, not an autoresponder."
+        },
+        {
+          "name": "counter renders a value",
+          "ok": true,
+          "detail": "2.4 MB -> 2.4 MB"
+        },
+        {
+          "name": "no page errors",
+          "ok": true,
+          "detail": ""
+        }
+      ],
+      "screenshot": "_shots/05_ferry_terminal.jpg"
+    },
+    {
+      "id": "06",
+      "brand": "Fern & Flint",
+      "studio": "organic",
+      "folder": "06_fern_flint_organic",
+      "bytes": 26077,
+      "lines": 376,
+      "seconds": 13.65,
+      "ok": true,
+      "problems": [],
+      "browser": "ok",
+      "overflow": {
+        "375": 0,
+        "1280": 0
+      },
+      "interactions": [
+        {
+          "name": "mobile nav opens",
+          "ok": true,
+          "detail": "none -> block"
+        },
+        {
+          "name": "category filter hides cards",
+          "ok": true,
+          "detail": "6/6 hidden"
+        },
+        {
+          "name": "empty form is rejected",
+          "ok": true,
+          "detail": "Please complete the highlighted field."
+        },
+        {
+          "name": "valid form confirms",
+          "ok": true,
+          "detail": "Thanks Test \u2014 your message is queued. A person will reply, not an autoresponder."
+        },
+        {
+          "name": "counter renders a value",
+          "ok": true,
+          "detail": "63 -> 63"
+        },
+        {
+          "name": "add-to-cart increments",
+          "ok": true,
+          "detail": "0 -> 1"
+        },
+        {
+          "name": "no page errors",
+          "ok": true,
+          "detail": ""
+        }
+      ],
+      "screenshot": "_shots/06_fern_flint_organic.jpg"
+    },
+    {
+      "id": "07",
+      "brand": "Casa Aurelia",
+      "studio": "luxury",
+      "folder": "07_casa_aurelia_luxury",
+      "bytes": 23182,
+      "lines": 361,
+      "seconds": 9.7,
+      "ok": true,
+      "problems": [],
+      "browser": "ok",
+      "overflow": {
+        "375": 0,
+        "1280": 0
+      },
+      "interactions": [
+        {
+          "name": "mobile nav opens",
+          "ok": true,
+          "detail": "none -> block"
+        },
+        {
+          "name": "empty form is rejected",
+          "ok": true,
+          "detail": "Please complete the highlighted field."
+        },
+        {
+          "name": "valid form confirms",
+          "ok": true,
+          "detail": "Thanks Test \u2014 your message is queued. A person will reply, not an autoresponder."
+        },
+        {
+          "name": "counter renders a value",
+          "ok": true,
+          "detail": "9 -> 9"
+        },
+        {
+          "name": "no page errors",
+          "ok": true,
+          "detail": ""
+        }
+      ],
+      "screenshot": "_shots/07_casa_aurelia_luxury.jpg"
+    },
+    {
+      "id": "08",
+      "brand": "Mochi & Co.",
+      "studio": "pop",
+      "folder": "08_mochi_pop",
+      "bytes": 26573,
+      "lines": 383,
+      "seconds": 10.5,
+      "ok": true,
+      "problems": [],
+      "browser": "ok",
+      "overflow": {
+        "375": 0,
+        "1280": 0
+      },
+      "interactions": [
+        {
+          "name": "mobile nav opens",
+          "ok": true,
+          "detail": "none -> block"
+        },
+        {
+          "name": "category filter hides cards",
+          "ok": true,
+          "detail": "4/6 hidden"
+        },
+        {
+          "name": "empty form is rejected",
+          "ok": true,
+          "detail": "Please complete the highlighted field."
+        },
+        {
+          "name": "valid form confirms",
+          "ok": true,
+          "detail": "Thanks Test \u2014 your message is queued. A person will reply, not an autoresponder."
+        },
+        {
+          "name": "counter renders a value",
+          "ok": true,
+          "detail": "6 -> 6"
+        },
+        {
+          "name": "no page errors",
+          "ok": true,
+          "detail": ""
+        }
+      ],
+      "screenshot": "_shots/08_mochi_pop.jpg"
+    },
+    {
+      "id": "09",
+      "brand": "NIGHTFALL",
+      "studio": "cinematic",
+      "folder": "09_nightfall_cinematic",
+      "bytes": 24048,
+      "lines": 368,
+      "seconds": 10.9,
+      "ok": true,
+      "problems": [],
+      "browser": "ok",
+      "overflow": {
+        "375": 0,
+        "1280": 0
+      },
+      "interactions": [
+        {
+          "name": "mobile nav opens",
+          "ok": true,
+          "detail": "none -> block"
+        },
+        {
+          "name": "empty form is rejected",
+          "ok": true,
+          "detail": "Please complete the highlighted field."
+        },
+        {
+          "name": "valid form confirms",
+          "ok": true,
+          "detail": "Thanks \u2014 your message is queued. A person will reply, not an autoresponder."
+        },
+        {
+          "name": "counter renders a value",
+          "ok": true,
+          "detail": "19 -> 19"
+        },
+        {
+          "name": "filmstrip scrolls",
+          "ok": true,
+          "detail": "0 -> 339"
+        },
+        {
+          "name": "no page errors",
+          "ok": true,
+          "detail": ""
+        }
+      ],
+      "screenshot": "_shots/09_nightfall_cinematic.jpg"
+    },
+    {
+      "id": "10",
+      "brand": "The Meridian",
+      "studio": "newsroom",
+      "folder": "10_meridian_newsroom",
+      "bytes": 26639,
+      "lines": 379,
+      "seconds": 8.83,
+      "ok": true,
+      "problems": [],
+      "browser": "ok",
+      "overflow": {
+        "375": 0,
+        "1280": 0
+      },
+      "interactions": [
+        {
+          "name": "mobile nav opens",
+          "ok": true,
+          "detail": "none -> block"
+        },
+        {
+          "name": "empty form is rejected",
+          "ok": true,
+          "detail": "Please complete the highlighted field."
+        },
+        {
+          "name": "valid form confirms",
+          "ok": true,
+          "detail": "Thanks Test \u2014 your message is queued. A person will reply, not an autoresponder."
+        },
+        {
+          "name": "counter renders a value",
+          "ok": true,
+          "detail": "FTSE 100 -> FTSE 100"
+        },
+        {
+          "name": "sparkline has geometry",
+          "ok": true,
+          "detail": "16.0,161.3 114.0,117.5 212.0,174.0 310.0"
+        },
+        {
+          "name": "no page errors",
+          "ok": true,
+          "detail": ""
+        }
+      ],
+      "screenshot": "_shots/10_meridian_newsroom.jpg"
+    }
+  ],
+  "gallery": "crown_sites/showcase/index.html"
+}

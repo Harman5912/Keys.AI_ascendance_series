@@ -1,0 +1,9 @@
+{
+  "request": "Build a command-line file-hygiene utility named tidyup: recursively clean a folder of text files (trim trailing whitespace, normalise line endings, de-duplicate adjacent blank lines, optional lowercase filenames) with a dry-run mode that prints a per-file diff summary.",
+  "requirements": "single-file CLI in tidyup.py plus a README.md and a tests/ folder; argparse interface: tidyup.py PATH [--dry-run] [--lowercase] [--ext .md .txt]; pure standard library, no third-party dependencies; dry-run must change nothing on disk; include 3 sample files under samples/ and unittest tests that cover trim, line-ending normalisation and dry-run safety.",
+  "artifact": "task",
+  "answered": [],
+  "assumptions": [],
+  "recipes": [],
+  "path": "code"
+}

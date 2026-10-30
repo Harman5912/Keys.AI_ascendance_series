@@ -1,0 +1,49 @@
+# test_agent_control.py  exit=0  seconds=0.26  timeout=False
+# ---- stdout ----
+
+# ---- stderr ----
+test_add_and_update (__main__.TestActionLog.test_add_and_update) ... ok
+test_clear_and_cap (__main__.TestActionLog.test_clear_and_cap) ... ok
+test_privacy_scrub (__main__.TestActionLog.test_privacy_scrub) ... ok
+test_render (__main__.TestActionLog.test_render) ... ok
+test_status_icons_present (__main__.TestActionLog.test_status_icons_present) ... ok
+test_classify_description_markers (__main__.TestConfirmation.test_classify_description_markers) ... ok
+test_classify_harmless (__main__.TestConfirmation.test_classify_harmless) ... ok
+test_classify_high_impact (__main__.TestConfirmation.test_classify_high_impact) ... ok
+test_gate_disabled_by_settings (__main__.TestConfirmation.test_gate_disabled_by_settings) ... ok
+test_gate_without_bridge_is_honest (__main__.TestConfirmation.test_gate_without_bridge_is_honest) ... ok
+test_comment_never_crashes (__main__.TestHumour.test_comment_never_crashes) ... ok
+test_off_disables (__main__.TestHumour.test_off_disables) ... ok
+test_professional_mode_disables (__main__.TestHumour.test_professional_mode_disables) ... ok
+test_sample_returns_comment (__main__.TestHumour.test_sample_returns_comment) ... ok
+test_unknown_event_falls_back_to_generic (__main__.TestHumour.test_unknown_event_falls_back_to_generic) ... ok
+test_persistence_roundtrip (__main__.TestSettings.test_persistence_roundtrip) ... ok
+test_summary (__main__.TestSettings.test_summary) ... ok
+test_validation (__main__.TestSettings.test_validation) ... ok
+test_emergency_stop_priority (__main__.TestStateMachine.test_emergency_stop_priority) ... ok
+test_happy_path_flow (__main__.TestStateMachine.test_happy_path_flow) ... ok
+test_invalid_transitions_rejected (__main__.TestStateMachine.test_invalid_transitions_rejected) ... ok
+test_pause_resume (__main__.TestStateMachine.test_pause_resume) ... ok
+test_recover_path (__main__.TestStateMachine.test_recover_path) ... ok
+test_ui_status_mapping (__main__.TestStateMachine.test_ui_status_mapping) ... ok
+test_unknown_state_rejected (__main__.TestStateMachine.test_unknown_state_rejected) ... ok
+test_user_takeover (__main__.TestStateMachine.test_user_takeover) ... ok
+test_agent_control_history (__main__.TestTools.test_agent_control_history) ... ok
+test_agent_control_humour_action (__main__.TestTools.test_agent_control_humour_action) ... ok
+test_agent_control_move_requires_coords (__main__.TestTools.test_agent_control_move_requires_coords) ... ok
+test_agent_control_no_action (__main__.TestTools.test_agent_control_no_action) ... ok
+test_agent_control_open_app_requires_name (__main__.TestTools.test_agent_control_open_app_requires_name) ... ok
+test_agent_control_press_requires_key (__main__.TestTools.test_agent_control_press_requires_key) ... ok
+test_agent_control_scroll_validates_direction (__main__.TestTools.test_agent_control_scroll_validates_direction) ... ok
+test_agent_control_type_requires_text (__main__.TestTools.test_agent_control_type_requires_text) ... ok
+test_agent_control_unknown_action (__main__.TestTools.test_agent_control_unknown_action) ... ok
+test_agent_settings_get (__main__.TestTools.test_agent_settings_get) ... ok
+test_agent_settings_reset (__main__.TestTools.test_agent_settings_reset) ... ok
+test_agent_settings_set (__main__.TestTools.test_agent_settings_set) ... ok
+test_agent_settings_set_invalid (__main__.TestTools.test_agent_settings_set_invalid) ... ok
+
+----------------------------------------------------------------------
+Ran 39 tests in 0.107s
+
+OK
+

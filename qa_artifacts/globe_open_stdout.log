@@ -1,0 +1,38 @@
+QPixmap::setMask() mask size differs from pixmap size
+[HUD] Face loaded via Qt: icon.png (1219x1219)
+Windows fatal exception: code 0x8001010d
+
+Thread 0x00000794 (most recent call first):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 359 in wait
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 655 in wait
+  File "C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\regression_tests\globe_open_cost.py", line 49 in sampler
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1012 in run
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1032 in _bootstrap
+
+Thread 0x00005f38 (most recent call first):
+  File "C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\ui.py", line 237 in _loop
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1012 in run
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1075 in _bootstrap_inner
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1032 in _bootstrap
+
+Current thread 0x00005eec (most recent call first):
+  File "C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\regression_tests\globe_open_cost.py", line 146 in main
+  File "C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\regression_tests\globe_open_cost.py", line 163 in <module>
+    webengine: loaded
+[09:40:14] 1 construct GlobeWorkspace (QWebEngineView) …
+[09:40:14] 1 construct GlobeWorkspace (QWebEngineView) -> 0.0s
+    available=True
+[09:40:14] 2 attach + show the stack page …
+[09:40:14] 2 attach + show the stack page -> 0.0s
+[09:40:14] 3 setUrl …
+[09:40:15] 3 setUrl -> 0.1s
+[09:40:15] 4 wait_for_load(120) …
+js: [Init] Google 3D Tiles unavailable, using the keyless globe: Error: Google 3D tokens are not offered
+[09:40:17] 4 wait_for_load(120) -> 2.9s
+    load finished: True
+[09:40:17] 5 first runJavaScript …
+[09:40:17] 5 first runJavaScript -> 0.0s
+
+============================================================
+GUI-silence samples written to C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\globe_open_stacks.txt

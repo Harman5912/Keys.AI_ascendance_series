@@ -1,0 +1,11 @@
+slug,passed,failed_checks,console_errors,page_errors
+01_saas_landing,False,"no_horizontal_overflow: {""mobile"": ""400>375"", ""tablet"": ""768>768"", ""desktop"": ""1440>1440""}",0,0
+02_ecommerce_storefront,True,,0,0
+03_restaurant_menu,True,,0,0
+04_education_institution,True,,0,0
+05_marketing_agency,True,,0,0
+06_event_conference,False,landmarks: header=True main=False footer=True,0,0
+07_news_editorial,False,buttons_clickable: 0 buttons | keyboard_reachable: 0 focusable elements | tab_focus_visible: focus -> BODY | focus_styles: no :focus rule,0,0
+08_nonprofit,False,"no_horizontal_overflow: {""mobile"": ""429>375"", ""tablet"": ""768>768"", ""desktop"": ""1440>1440""}",0,0
+09_analytics_dashboard,False,no_js_errors: Cannot set properties of null (setting 'textContent') | no_errors_after_clicks: Cannot set properties of null (setting 'textContent'); Cannot set properties of null (setting 'textContent') | no_errors_after_reload: Cannot set properties of null (setting 'textContent'); Cannot set properties of null (setting 'textContent'),0,3
+10_business_services,False,"no_horizontal_overflow: {""mobile"": ""410>375"", ""tablet"": ""768>768"", ""desktop"": ""1440>1440""}",0,0

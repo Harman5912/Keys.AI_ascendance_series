@@ -1,0 +1,67 @@
+{
+  "enabled": true,
+  "provider": "gemini",
+  "model": "gemini-2.5-flash",
+  "max_iterations": 10,
+  "max_retries": 2,
+  "autonomous_mode": true,
+  "confirm_moderate": true,
+  "confirm_dangerous": true,
+  "polish_response": false,
+  "memory": {
+    "enabled": true,
+    "long_term": true,
+    "llm_extract": false
+  },
+  "intent": {
+    "llm_refine": false
+  },
+  "context": {
+    "max_history": 12
+  },
+  "logging": {
+    "level": "info"
+  },
+  "permissions": {
+    "DANGEROUS": [
+      "file_controller"
+    ],
+    "MODERATE": [
+      "send_message",
+      "send_email",
+      "reminder",
+      "code_helper",
+      "dev_agent",
+      "file_processor",
+      "editor_control",
+      "whatsapp_control",
+      "agent_control",
+      "agent_settings",
+      "ai_settings",
+      "computer_use",
+      "game_updater",
+      "youtube_video"
+    ],
+    "SAFE": [
+      "open_app",
+      "web_search",
+      "system_status",
+      "weather_report",
+      "screen_process",
+      "close_camera",
+      "browser_control",
+      "desktop_control",
+      "computer_control",
+      "computer_settings",
+      "hybrid_control",
+      "flight_finder",
+      "google_account",
+      "save_memory",
+      "recall_memory",
+      "undo",
+      "manage_monitor",
+      "repo_inspect"
+    ]
+  },
+  "blocked_tools": []
+}

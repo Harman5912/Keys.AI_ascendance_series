@@ -1,0 +1,25 @@
+{
+  "repository": "unknown",
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "files_read": [],
+  "operations_applied": [],
+  "validate": [
+    {
+      "pkg": "pyinstaller",
+      "pypi_version": "6.22.3"
+    },
+    {
+      "repository_source": "github api",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "action.json_inline_loaded": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "pkg": "Pillow",
+      "pypi_version": "13.0.0"
+    }
+  ]
+}

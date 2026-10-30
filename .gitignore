@@ -1,0 +1,52 @@
+# ── credentials — never commit ────────────────────────────────────────────
+config/api_keys.json
+config/api_keys.json.*
+config/secrets.enc
+config/secrets.enc.*
+config/certs/
+config/dashboard_token.txt
+*.pem
+*.key
+*.pfx
+*.p12
+.env
+.env.*
+!.env.example
+.credentials/
+token.json
+credentials.json
+
+# ── local runtime state (contains user data / conversation) ───────────────
+memory/*.json
+config/window_state.json
+config/session_state.json
+config/agent_control.json
+bench.log
+
+# ── python ────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+htmlcov/
+.coverage
+
+# ── build output ──────────────────────────────────────────────────────────
+build/
+dist/
+*.spec.bak
+crown_sites/
+crown_sites_multi/
+qa_artifacts/e2e/workspace/out/
+
+# ── editors / OS ──────────────────────────────────────────────────────────
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

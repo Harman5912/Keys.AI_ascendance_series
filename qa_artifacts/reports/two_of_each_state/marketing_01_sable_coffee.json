@@ -1,0 +1,18 @@
+{
+  "slug": "marketing_01_sable_coffee",
+  "artifact": "page",
+  "kind": "website",
+  "studio_requested": "organic",
+  "studio": "Organic",
+  "studio_used": "Crown Code Studio \u2014 Organic",
+  "path": "C:\\Users\\harma\\Desktop\\PROJECTS\\Keys-acendence-series\\acendence-VIII_GEN-I\\examples\\generated\\two_of_each\\pages\\marketing_01_sable_coffee\\index.html",
+  "bytes": 26107,
+  "ok": true,
+  "finished": true,
+  "problems": [],
+  "browser": "ok",
+  "browser_problems": [],
+  "checklist_score": "",
+  "adopted": true,
+  "message": "verified from disk with check_html + browser_audit"
+}

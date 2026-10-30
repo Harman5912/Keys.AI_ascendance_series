@@ -1,0 +1,11 @@
+# D10 exit=0 timeout=False seconds=114.1
+# ---- stdout ----
+[FileProcessor] CREATE DOCX | D10_user_manual.docx
+[D10] 114.0s  exists=True  bytes=38936  result=Created Word document: D10_user_manual.docx (38.0 KB)
+Saved to: C:\Users\harma\Desktop\PROJECTS\Keys-acendence
+restored file_processor task model -> {'provider': 'gemini', 'model': 'gemini-2.5-flash', 'url': ''}
+
+DONE 1 docx artifact(s) in C:\Users\harma\Desktop\PROJECTS\Keys-acendence-series\acendence-VIII_GEN-I\qa_artifacts\generated_documents
+
+# ---- stderr ----
+

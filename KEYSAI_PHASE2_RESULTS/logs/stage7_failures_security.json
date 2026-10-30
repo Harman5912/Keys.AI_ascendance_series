@@ -1,0 +1,88 @@
+{
+  "checks": [
+    {
+      "test_id": "F02",
+      "check": "syntax error is detected",
+      "ok": true,
+      "detail": "failed: compiles (6 files) \u2014 File \"models.py\", line 153\n    def dashboard() -> dict\n                           ^\nSyntaxError: expected ':'"
+    },
+    {
+      "test_id": "F02",
+      "check": "the failing file is named in the error",
+      "ok": true,
+      "detail": "failed: compiles (6 files) \u2014 File \"models.py\", line 153\n    def dashboard() -> dict\n                           ^\nSyntaxError: expected ':'"
+    },
+    {
+      "test_id": "F02",
+      "check": "repair is confirmed by re-running the check",
+      "ok": true,
+      "detail": "1 checks passed (1 compiles)"
+    },
+    {
+      "test_id": "F03",
+      "check": "schema mismatch surfaces as a handled error",
+      "ok": true,
+      "detail": "status=503 body={\"error\":{\"message\":\"database unavailable: no such column: bogus_column\"}}\n"
+    },
+    {
+      "test_id": "F03",
+      "check": "no traceback is leaked to the caller",
+      "ok": true,
+      "detail": "{\"error\":{\"message\":\"database unavailable: no such column: bogus_column\"}}\n"
+    },
+    {
+      "test_id": "F03",
+      "check": "query repaired",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test_id": "F05",
+      "check": "corrupt DOCX fails to parse as expected",
+      "ok": true,
+      "detail": "PackageNotFoundError"
+    },
+    {
+      "test_id": "F05",
+      "check": "regenerated document parses",
+      "ok": true,
+      "detail": "20 paragraphs"
+    },
+    {
+      "test_id": "SEC-01",
+      "check": "path traversal is refused",
+      "ok": true,
+      "detail": "refusing to write outside the workspace: '../escaped.txt'"
+    },
+    {
+      "test_id": "SEC-01",
+      "check": "normal writes still work",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test_id": "SEC-02",
+      "check": "no credential-shaped strings in the shipped front end",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test_id": "ISO-01",
+      "check": "both parallel builds succeeded",
+      "ok": true,
+      "detail": "8 checks passed (1 compiles, 1 executes, 6 serves) | 2 checks passed (1 compiles, 1 executes)"
+    },
+    {
+      "test_id": "ISO-01",
+      "check": "each workspace contains only its own artifact",
+      "ok": true,
+      "detail": "A=['.env.example', 'README.md', 'app.py', 'dashboard.db', 'dashboard.js'] B=['README.md', '__init__.py', 'db.py', 'main.py', 'requirements.txt']"
+    },
+    {
+      "test_id": "ISO-01",
+      "check": "no zip/cross-write corruption",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}

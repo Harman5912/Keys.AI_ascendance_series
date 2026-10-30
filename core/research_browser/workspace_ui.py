@@ -127,8 +127,13 @@ class BrowserWorkspace(QWidget):
         go.clicked.connect(self._navigate_from_bar)
         bar.addWidget(go)
         self.search_combo = QComboBox()
-        self.search_combo.addItems(["duckduckgo", "google", "bing"])
+        self.search_combo.addItems(["google", "duckduckgo", "bing"])
+        engine = str(paths.load().get("search_engine") or "google").lower()
+        if engine not in ("google", "duckduckgo", "bing"):
+            engine = "google"
+        self.search_combo.setCurrentText(engine)
         self.search_combo.setFixedWidth(105)
+        self.search_combo.currentTextChanged.connect(self._set_search_engine)
         bar.addWidget(self.search_combo)
         root.addLayout(bar)
 
@@ -282,6 +287,13 @@ class BrowserWorkspace(QWidget):
         if folder:
             self.project_root = folder
             self.project_edit.setText(folder)
+
+    def _set_search_engine(self, engine: str) -> None:
+        """Remember the chosen engine — Google is the default, not DuckDuckGo."""
+        try:
+            paths.save({"search_engine": str(engine or "google").lower()})
+        except Exception:
+            pass
 
     def _navigate_from_bar(self) -> None:
         target = self.address.text().strip()

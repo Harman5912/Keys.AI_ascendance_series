@@ -111,7 +111,7 @@ class TestBrowserAndTabs(BrowserCase):
     def test_a13_text_input_becomes_a_search_not_a_url(self):
         kind, target = urls.normalise_input("modern portfolio design")
         self.assertEqual(kind, "search")
-        self.assertIn("duckduckgo.com", target)
+        self.assertIn("google.com", target)
         self.assertIn("modern", target)
 
     def test_a14_blocks_the_file_scheme(self):

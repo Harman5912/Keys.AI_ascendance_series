@@ -6100,7 +6100,12 @@ class MainWindow(QMainWindow):
         try:
             self._open_research_browser()
             from core.research_browser.tools import execute as _rb_execute
-            _rb_execute({"action": "navigate_to_url", "url": url}, player=self)
+            reply = str(_rb_execute({"action": "navigate_to_url", "url": url}, player=self))
+            if reply.startswith("Could not navigate"):
+                # A preview that was refused must say so instead of leaving an
+                # empty page that looks like a broken build.
+                self.add_event("!", f"Preview failed: {reply}", color="#F0A500")
+                return
             try:
                 self.add_event("🌐", f"Preview opened in the Research Browser: {url}",
                                color="#648CFF")

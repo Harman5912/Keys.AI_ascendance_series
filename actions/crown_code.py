@@ -201,7 +201,15 @@ def _launch_artifact(result: dict, workspace: Path, player=None) -> str:
             return ""
 
     if entry.endswith(".html"):
-        url = (workspace / entry).resolve().as_uri()
+        # Serve the page over localhost: the Research Browser refuses file:
+        # URLs on purpose, so a file:// preview reached the browser as a
+        # blocked address and the built site was never displayed.
+        try:
+            from core.preview_server import preview_url
+            url = preview_url(workspace, entry)
+        except Exception as e:
+            print(f"[Crown] preview server unavailable: {e}")
+            url = (workspace / entry).resolve().as_uri()
         _open_url(url, player, f"{workspace.name} — {entry}")
         return url
     key = str(workspace.resolve())

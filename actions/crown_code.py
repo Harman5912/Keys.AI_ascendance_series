@@ -1186,7 +1186,21 @@ def crown_code(parameters: dict, player=None, speak=None, session_memory=None) -
             brief += "\n\n" + _ref_brief(_refs, seed=task, kind=_design_kind)
         else:
             from core.design_system import design_brief as _design_brief
-            brief += "\n\n" + _design_brief(task, kind=_design_kind)
+            # Application presets: a dashboard, web app or Python app is built
+            # from one of the 100+ presets, so its palette and structure follow
+            # the preset instead of one generic token set for every brief.
+            from core.app_presets import (choose_app_preset as _choose_preset,
+                                          describe as _describe_preset,
+                                          token_kwargs as _preset_tokens)
+            _preset_kind = ("dashboard" if _design_kind == "dashboard"
+                            else "python" if _design_kind == "python-desktop"
+                            else "webapp")
+            _app_preset = _choose_preset(task, _preset_kind, seed=task)
+            _preset_design = _preset_tokens(_app_preset)
+            brief += "\n\n" + _design_brief(task, kind=_design_kind,
+                                             mood=_preset_design["mood"],
+                                             hue=_preset_design["hue"])
+            brief += "\n\n" + _describe_preset(_app_preset)
     except Exception as exc:
         print(f"[Crown] design brief skipped: {exc}")
 

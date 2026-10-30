@@ -429,9 +429,14 @@ def layout_guidance(kind: str) -> str:
     return "\n".join(out) + "\n"
 
 
-def design_brief(seed: str, *, kind: str = "web", mood: str = "dark") -> str:
-    """Everything a build prompt needs: tokens plus structure."""
-    tokens = build_tokens(seed, kind=normalise_kind(kind), mood=mood)
+def design_brief(seed: str, *, kind: str = "web", mood: str = "dark",
+                 hue: float | None = None) -> str:
+    """Everything a build prompt needs: tokens plus structure.
+
+    ``hue`` comes from an application preset when one was chosen, so the
+    palette follows the preset instead of being derived from the seed alone.
+    """
+    tokens = build_tokens(seed, kind=normalise_kind(kind), mood=mood, hue=hue)
     return tokens.to_prompt_block() + "\n" + layout_guidance(kind)
 
 

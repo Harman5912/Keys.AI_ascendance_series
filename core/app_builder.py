@@ -37,6 +37,7 @@ import time
 from pathlib import Path
 
 from core.app_checks import verify_workspace
+from core.app_presets import choose_app_preset, token_kwargs
 from core.app_specs import pick_dashboard, pick_desktop
 
 # ── templates: dashboard ──────────────────────────────────────────────────
@@ -1371,6 +1372,11 @@ def build_dashboard(brief: str, out_dir: Path | str,
     spec_key, spec = pick_dashboard(brief)
     title = spec["title"]
     db_file = "dashboard.db"
+    # The dashboard's look: best of the 50 dashboard presets for this brief.
+    # Its hue and mood feed the design tokens, so two dashboards in different
+    # domains do not share one palette.
+    preset = choose_app_preset(brief, "dashboard", seed=workspace.name)
+    design = token_kwargs(preset)
 
     def phase(name: str, pct: float, detail: str = "") -> None:
         if on_phase:
@@ -1383,6 +1389,7 @@ def build_dashboard(brief: str, out_dir: Path | str,
     phase("plan", 0.05, f"{spec_key} dashboard")
     log(f"Plan: {spec['title']} — {len(spec['categories'])} categories, "
         f"{spec['amount_unit'].lower()} as the measure")
+    log(f"Design preset: {preset['label']} (hue {preset['hue']}, {preset['mood']})")
 
     tokens = dict(
         title=title,
@@ -1415,7 +1422,7 @@ def build_dashboard(brief: str, out_dir: Path | str,
     _css = _DASH_CSS
     try:
         from core.design_system import build_tokens as _build_tokens
-        _root = _build_tokens(brief or title, kind="dashboard").to_css()
+        _root = _build_tokens(brief or title, kind="dashboard", **design).to_css()
         if _css.lstrip().startswith(":root"):
             _css = _root + _css.split("}", 1)[1]
     except Exception as _exc:
@@ -1452,6 +1459,8 @@ def build_dashboard(brief: str, out_dir: Path | str,
         "ok": bool(verification["ok"]),
         "kind": "dashboard",
         "spec": spec_key,
+        "preset": preset["id"],
+        "preset_label": preset["label"],
         "title": title,
         "path": str(workspace),
         "entry": "app.py",
@@ -1484,6 +1493,8 @@ def build_python_desktop(brief: str, out_dir: Path | str,
     spec_key, spec = pick_desktop(brief)
     title = spec["title"]
     db_file = "app.db"
+    preset = choose_app_preset(brief, "python", seed=workspace.name)
+    design = token_kwargs(preset)
 
     def phase(name: str, pct: float, detail: str = "") -> None:
         if on_phase:
@@ -1495,6 +1506,7 @@ def build_python_desktop(brief: str, out_dir: Path | str,
 
     phase("plan", 0.05, f"{spec_key} desktop app")
     log(f"Plan: {title} — table, live search, add form, running total")
+    log(f"Design preset: {preset['label']} (hue {preset['hue']}, {preset['mood']})")
 
     tokens = dict(
         title=title,
@@ -1524,8 +1536,8 @@ def build_python_desktop(brief: str, out_dir: Path | str,
     # generated, so the built-in theme meets the same bar as everything else.
     try:
         from core.design_system import build_tokens as _build_tokens
-        theme_source = _build_tokens(brief or title,
-                                     kind="python-desktop").to_qt_theme(title)
+        theme_source = _build_tokens(brief or title, kind="python-desktop",
+                                     **design).to_qt_theme(title)
     except Exception as _exc:
         log(f"design tokens unavailable ({_exc}); using the fixed theme")
         theme_source = _render(_DESK_THEME_PY, **tokens)
@@ -1555,6 +1567,8 @@ def build_python_desktop(brief: str, out_dir: Path | str,
         "ok": bool(verification["ok"]),
         "kind": "python-desktop",
         "spec": spec_key,
+        "preset": preset["id"],
+        "preset_label": preset["label"],
         "title": title,
         "path": str(workspace),
         "entry": "main.py",

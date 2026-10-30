@@ -42,6 +42,7 @@ from core.brief_spec import is_app_brief
 from core.site_checks import (acceptance_checklist, browser_audit, check_html,
                               checklist_summary, repair_html)
 from core.site_studio import ORDER, choose_studio, plan_to_content, render_site
+from core.site_studio.presets import apply_preset_css, choose_preset
 
 # Tile gradients for the gallery renderer — the page never loads an image
 # from the network, so a photography portfolio is built from CSS art.
@@ -646,7 +647,54 @@ def render_plan_site(plan: dict, kind: str = "portfolio") -> str:
 
 # ── Model plumbing ────────────────────────────────────────────────────────
 
+def _gemini_provider(timeout: float = 900.0):
+    """Gemini provider when a Gemini key is configured, else None.
+
+    Site builds are Gemini-first: the configured key is used whenever one is
+    stored, and the local model stays the fallback for installs with no key, a
+    failed call, or a page that cannot be verified.
+    """
+    try:
+        from core.api_config import get_api_key, get_task_model
+        key = get_api_key("gemini")
+        if not key:
+            return None
+        model = ""
+        for task in ("crown_code", "dev_agent"):
+            try:
+                task_cfg = get_task_model(task)
+            except Exception:
+                continue
+            if (str(task_cfg.get("provider") or "").lower() == "gemini"
+                    and task_cfg.get("model")):
+                model = str(task_cfg["model"])
+                break
+        if not model:
+            from core.model_catalog import default_model_for
+            model = default_model_for("gemini")
+        from brain.providers.gemini import GeminiProvider
+        return GeminiProvider(api_key=key, model=model, timeout_s=timeout), model
+    except Exception as e:
+        print(f"[site_builder] Gemini unavailable: {e}")
+        return None
+
+
 def _provider(model: str = "", timeout: float = 900.0, num_ctx: int = 8192):
+    """Cloud first, local second: Gemini when a key exists, else Ollama.
+
+    `model` names a local model explicitly (the tool's model override); without
+    it the configured Gemini model is tried first and the local model is the
+    fallback.
+    """
+    if not model:
+        cloud = _gemini_provider(timeout)
+        if cloud is not None:
+            provider, chosen = cloud
+            return provider, chosen, "gemini"
+    return _local_provider(model, timeout, num_ctx)
+
+
+def _local_provider(model: str = "", timeout: float = 900.0, num_ctx: int = 8192):
     """OpenAI-compatible provider pointed at the local Ollama server.
 
     num_ctx is raised above the runtime default: the plan plus the writing
@@ -817,6 +865,22 @@ def _plan_prompt(brief: str, kind: str) -> str:
     return (f"Brief: {brief}\n\nDesign {goal}. {PLAN_RULES}")
 
 
+def _design_block(preset: dict | None) -> str:
+    """The chosen preset, stated plainly so a model-written page matches it."""
+    if not preset:
+        return ""
+    accent2 = str(preset.get("accent2") or "")
+    secondary = (f" with {accent2} as the secondary accent"
+                 if accent2 and accent2.lower() != str(preset.get("accent")).lower() else "")
+    return (
+        f"\n\nDESIGN PRESET — {preset.get('label')} "
+        f"(studio: {preset.get('studio')}): {preset.get('summary')}\n"
+        f"- Use {preset.get('accent')}{secondary}. No other accent colours.\n"
+        "- Keep the studio's typographic character and spacing rhythm; do not\n"
+        "  restyle it into a generic template.\n"
+    )
+
+
 def _image_block(images: list[dict]) -> str:
     """Local photos the page must use, with the credit line they require."""
     if not images:
@@ -839,19 +903,21 @@ def _image_block(images: list[dict]) -> str:
     )
 
 
-def _write_prompt(brief: str, plan: dict, images: list[dict] | None = None) -> str:
+def _write_prompt(brief: str, plan: dict, images: list[dict] | None = None,
+                  preset: dict | None = None) -> str:
     return (f"Brief: {brief}\n\nApproved plan (JSON):\n{json.dumps(plan, indent=2)}\n"
-            f"{_image_block(images or [])}\n{WRITE_RULES}")
+            f"{_image_block(images or [])}{_design_block(preset)}\n{WRITE_RULES}")
 
 
 def _repair_prompt(brief: str, plan: dict, problems: list[str], current: str,
-                   images: list[dict] | None = None) -> str:
+                   images: list[dict] | None = None,
+                   preset: dict | None = None) -> str:
     listed = "\n".join(f"- {p}" for p in problems[:8])
     head = current[:6000]
     return (f"Brief: {brief}\n\nYou wrote an index.html that fails these checks:\n{listed}\n\n"
             f"Here is the start of your file:\n{head}\n\n"
             f"Rewrite the COMPLETE file, fixing every item above and keeping the plan:\n"
-            f"{json.dumps(plan, indent=2)}\n{_image_block(images or [])}\n{WRITE_RULES}")
+            f"{json.dumps(plan, indent=2)}\n{_image_block(images or [])}{_design_block(preset)}\n{WRITE_RULES}")
 
 
 # ── Build pipeline ────────────────────────────────────────────────────────
@@ -873,7 +939,16 @@ WRITER_TIMEOUT = 180.0
 
 
 def _planner_provider(preferred: str = ""):
-    """Provider for the plan step: the fastest installed model that plans well."""
+    """Provider for the plan step: Gemini when configured, else the fastest local model."""
+    if not preferred:
+        cloud = _gemini_provider(420)
+        if cloud is not None:
+            return cloud
+    return _local_planner_provider(preferred)
+
+
+def _local_planner_provider(preferred: str = ""):
+    """The fastest installed local model that plans well."""
     from core.crown_bridge import list_models, load_config
     from brain.providers.openai_compat import OpenAICompatProvider
 
@@ -944,8 +1019,17 @@ def build_site(brief: str, out_dir: Path | str, kind: str = "portfolio",
         "ok": False, "path": str(index), "kind": kind, "model": model,
         "plan": {}, "attempts": [], "notes": [], "bytes": 0, "mode": "render",
         "checks": {}, "browser": {}, "seconds": 0.0, "used_fallback": False,
-        "planner_model": "", "studio": "",
+        "planner_model": "", "studio": "", "preset": "",
     }
+
+    # 0 ── the look. Fifty-plus presets are scored against the brief, the best
+    # matches are kept, and the brief's own hash picks between near-ties: the
+    # same brief rebuilds the same way, a different one usually gets a
+    # different design instead of the category's first preset every time.
+    preset = choose_preset(brief, kind, seed=out_dir.name)
+    result["preset"] = preset["id"]
+    result["studio"] = preset["studio"]
+    log(f"design preset: {preset['label']} — {preset['studio']} studio")
 
     # Defensive: an application must never be dressed up as a page. The action
     # layer routes these to the coding agent, and this refuses rather than
@@ -987,7 +1071,8 @@ def build_site(brief: str, out_dir: Path | str, kind: str = "portfolio",
     plan = fallback_plan(brief, kind)
     phase("rendering", 0.08, "Rendering a first page from the built-in plan")
     html, studio_key = render_studio_page(plan, kind, brief, seed=out_dir.name,
-                                          studio=studio)
+                                          studio=studio or preset["studio"])
+    html = apply_preset_css(html, preset)
     index.write_text(html, encoding="utf-8")
     result["studio"] = studio_key
     ok, problems, audit = verify(index)
@@ -1020,6 +1105,24 @@ def build_site(brief: str, out_dir: Path | str, kind: str = "portfolio",
         raw_sink=raw_plan, on_log=log,
         on_progress=lambda f: phase("planning", 0.12 + 0.10 * f,
                                     f"Planning the copy — {int(f * 100)}% of the plan"))
+    if not model_plan and plan_provider is not None:
+        # Gemini-first, local fallback: a cloud call that produced no plan must
+        # not cost the page its real copy when the local planner is available.
+        try:
+            local_plan_provider, local_planner = _local_planner_provider(planner_model)
+            if local_plan_provider is not plan_provider:
+                log(f"no plan from {result.get('planner_model') or 'the cloud planner'} "
+                    f"— trying {local_planner}")
+                model_plan = _ask_json(
+                    local_plan_provider, _plan_prompt(brief, kind), PLAN_SYSTEM,
+                    raw_sink=raw_plan, on_log=log,
+                    on_progress=lambda f: phase(
+                        "planning", 0.12 + 0.10 * f,
+                        f"Planning the copy — {int(f * 100)}% of the plan"))
+                if model_plan:
+                    result["planner_model"] = local_planner
+        except Exception as e:
+            result["notes"].append(f"local planner unavailable: {e}")
     plan, from_model = normalise_plan(model_plan, brief, kind)
     result["plan"] = plan
     (out_dir / "plan.json").write_text(json.dumps(plan, indent=2), encoding="utf-8")
@@ -1031,7 +1134,8 @@ def build_site(brief: str, out_dir: Path | str, kind: str = "portfolio",
     else:
         phase("re-rendering", 0.26, "Re-rendering the page with the planner's copy")
         html, studio_key = render_studio_page(plan, kind, brief, seed=out_dir.name,
-                                              studio=studio)
+                                              studio=studio or preset["studio"])
+        html = apply_preset_css(html, preset)
         index.write_text(html, encoding="utf-8")
         result["studio"] = studio_key
         ok2, problems2, audit2 = verify(index)
@@ -1074,6 +1178,7 @@ def build_site(brief: str, out_dir: Path | str, kind: str = "portfolio",
     # 3 ── optional bespoke design from the writer model
     if speed != "fast" and not stopped():
         writer = provider
+        writer_is_local = True
         if writer is None:
             try:
                 # A writer that never finishes must not hold the verified page
@@ -1081,8 +1186,10 @@ def build_site(brief: str, out_dir: Path | str, kind: str = "portfolio",
                 # pass gets a budget and then the page ships as rendered.
                 writer, writer_model, note = _provider(model, timeout=WRITER_TIMEOUT)
                 result["model"] = writer_model
+                writer_is_local = str(note) != "gemini"
                 if note:
-                    result["notes"].append(note)
+                    result["notes"].append(
+                        "writer: gemini" if note == "gemini" else note)
             except Exception as e:
                 result["notes"].append(f"writer unavailable: {e}")
                 log(f"writer unavailable: {e}")
@@ -1104,12 +1211,12 @@ def build_site(brief: str, out_dir: Path | str, kind: str = "portfolio",
 
                 html = ""
                 try:
-                    prompt = (_write_prompt(brief, plan, images) if attempt == 1
+                    prompt = (_write_prompt(brief, plan, images, preset) if attempt == 1
                               else _repair_prompt(
                                   brief, plan, result["attempts"][-1]["problems"],
                                   custom.read_text(encoding="utf-8", errors="replace")
                                   if custom.exists() else index.read_text(encoding="utf-8", errors="replace"),
-                                  images))
+                                  images, preset))
                     html = _ask_html(writer, prompt, on_progress=on_write_progress)
                     html = _finish_truncated(writer, html, brief, on_log=log)
                 except Exception as e:
@@ -1119,6 +1226,18 @@ def build_site(brief: str, out_dir: Path | str, kind: str = "portfolio",
                     phase("writing", 0.8, f"Model wrote {len(html)} chars — verifying")
                 else:
                     log("model returned no usable HTML")
+                    if not writer_is_local:
+                        # Gemini-first, local fallback: one failed cloud write
+                        # does not end the bespoke pass while Ollama can write.
+                        try:
+                            writer, writer_model, _note = _local_provider(
+                                model, timeout=WRITER_TIMEOUT)
+                            writer_is_local = True
+                            result["model"] = writer_model
+                            log(f"falling back to the local model: {writer_model}")
+                            continue
+                        except Exception as e:
+                            result["notes"].append(f"local writer unavailable: {e}")
                     break
 
                 phase("verifying", 0.85, "Checking the model's design")

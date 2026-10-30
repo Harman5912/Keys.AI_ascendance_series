@@ -22,13 +22,17 @@ class GeminiProvider(LLMProvider):
     GEMMA_TIMEOUT_S = 60.0
 
     def __init__(self, api_key: str = "", model: str = "gemini-2.5-flash",
-                 http_options: dict | None = None):
+                 http_options: dict | None = None,
+                 timeout_s: float | None = None):
         self.api_key     = api_key or ""
         self.model       = model
         self.http_options = http_options
         self._client     = None
-        self.timeout_s   = (self.GEMMA_TIMEOUT_S if model.lower().startswith("gemma")
-                            else self.DEFAULT_TIMEOUT_S)
+        # A caller that writes a whole page needs longer than a chat turn, so
+        # the deadline can be raised without changing the chat default.
+        self.timeout_s   = (float(timeout_s) if timeout_s
+                            else (self.GEMMA_TIMEOUT_S if model.lower().startswith("gemma")
+                                  else self.DEFAULT_TIMEOUT_S))
 
     # ── lazy client (heavy import on first call only) ────────────────────
     def _get_client(self):
